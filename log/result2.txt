@@ -1,0 +1,29 @@
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+
+[INFO] Using device: cuda
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:25<00:25, 26.00s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:46<00:00, 23.01s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:46<00:00, 23.46s/it]
+
+[INFO] Using model: deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+
+Response:
+
+
+**Subject:** Donation Acknowledgment and Encouragement
+
+Dear [Donor's Name],
+
+Thank you for your generous contribution to the [Campaign Name] at the University of Sheffield. Your support has made a significant difference to [specific impact or achievement, e.g., "our academic research, innovative teaching, or impactful alumni engagement initiatives"].
+
+Your donation has been processed and will be acknowledged shortly. If you have any questions or need further information, please contact [Your Contact Information] at [Your Contact Address].
+
+We are deeply grateful for your contribution and look forward to continuing our partnership with you. Please keep in touch if there are ways we can recognize your support in a meaningful way.
+
+Thank you once again for your trust and generosity. We value your support and appreciate the opportunity to work with you on this important campaign.
+
+Warm regards,
+
+[Your Full Name]  
+[Your Job Title]  
+[Your Contact Information]  
+[University of Sheffield]
+

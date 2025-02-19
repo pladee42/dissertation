@@ -1,0 +1,22 @@
+no change     /opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1/condabin/conda
+no change     /opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1/bin/conda
+no change     /opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1/bin/conda-env
+no change     /opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1/bin/activate
+no change     /opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1/bin/deactivate
+no change     /opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1/etc/profile.d/conda.sh
+no change     /opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1/etc/fish/conf.d/conda.fish
+no change     /opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1/shell/condabin/Conda.psm1
+no change     /opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1/shell/condabin/conda-hook.ps1
+no change     /opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1/lib/python3.11/site-packages/xontrib/conda.xsh
+no change     /opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1/etc/profile.d/conda.csh
+no change     /users/liq23wr/.bashrc
+No action taken.
+
+CondaError: Run 'conda init' before 'conda activate'
+
+Traceback (most recent call last):
+  File "/mnt/parscratch/users/liq23wr/dissertation/main.py", line 1, in <module>
+    from models import chat
+  File "/mnt/parscratch/users/liq23wr/dissertation/models.py", line 1, in <module>
+    from transformers import AutoTokenizer, AutoModelForCausalLM
+ModuleNotFoundError: No module named 'transformers'

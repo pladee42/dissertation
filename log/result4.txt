@@ -1,0 +1,110 @@
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+
+[INFO] Using device: cuda
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:08<00:08,  8.19s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.23s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:13<00:00,  6.52s/it]
+
+[INFO] Using model: deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
+
+Response:
+
+
+**Subject:** Support Our Fight Against Global Challenges: Donate to the University of Sheffield Campaign  
+
+**Header**  
+Dear Valued Donor,  
+
+**Greeting**  
+At the University of Sheffield, we are dedicated to advancing groundbreaking research and fostering innovation that addresses some of the world's most pressing challenges. We are currently launching our annual appeal to support our mission and inspire the community to contribute.  
+
+**Body**  
+Your generosity can make a profound difference. Every donation you provide will help us invest in cutting-edge research, scholarships, and public outreach initiatives that aim to improve lives and create a better future.  
+
+Your support will enable us to:  
+- **Advance medical breakthroughs** to enhance healthcare solutions.  
+- **Foster engineering innovation** to address infrastructure and sustainable development needs.  
+- **Promote computer science advancements** that drive technological progress and accessibility.  
+
+Your contribution, no matter the size, is invaluable. Together, we can amplify the impact of our research and raise awareness about the critical role of funding in shaping a better world.  
+
+**Closing**  
+Thank you for your commitment to our cause. By donating, you become part of a community dedicated to driving progress.  
+
+**Signature**  
+[Your Name]  
+[Your Title]  
+University of Sheffield  
+[Your Contact Information]  
+
+**Footnote**  
+To learn more about how your donation can make an even greater impact, please visit our website: [www.sheffieldcampaign.com](http://www.sheffieldcampaign.com)
+
+
+[INFO] Using device: cuda
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:29<01:29, 29.90s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:55<00:54, 27.10s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [01:35<00:33, 33.36s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:56<00:00, 28.23s/it]Loading checkpoint shards: 100%|██████████| 4/4 [01:56<00:00, 29.05s/it]
+
+[INFO] Using model: deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
+
+Response:
+
+
+**Subject:** Join Us in Shaping a Brighter Future for the University of Sheffield  
+
+Dear [Recipient's Name],  
+
+We are excited to invite you to be part of a transformative journey at the University of Sheffield. Your support can help us inspire the next generation of leaders, researchers, and thinkers through our *Imagine Tomorrow* campaign.  
+
+**Imagine Tomorrow** is a groundbreaking initiative focused on three key pillars: enhancing student mental health, advancing academic research, and promoting campus sustainability. By investing in our students and faculty, we can ensure that the University of Sheffield continues to be a place where innovation thrives and futures are made.  
+
+Your donation, no matter the size, will make a profound impact. Whether it’s supporting a student’s academic journey, funding cutting-edge research, or contributing to sustainable practices, your gift will help us build a brighter, more inclusive tomorrow.  
+
+**Join us today by making a donation to the *Imagine Tomorrow* campaign.** Click the button below to explore how you can contribute:  
+[Donate Now to Imagine Tomorrow](https://www.sheffield.ac.uk/imagine-tomorrow)  
+
+Together, we can create a legacy of excellence and opportunity for generations to come. Thank you for your generosity and belief in the power of education to change lives.  
+
+If you have any questions or would like to discuss how you can support our campaign, please don’t hesitate to contact us at:  
+- Email: donations@sheffield.ac.uk  
+- Phone: +44 114 265 2222  
+
+We look forward to welcoming you as a valued member of the University of Sheffield community.  
+
+Warm regards,  
+[Your Name]  
+University of Sheffield  
+*Imagine Tomorrow Campaign Team*
+
+
+[INFO] Using device: cuda
+Downloading shards:   0%|          | 0/8 [00:00<?, ?it/s]Downloading shards:  12%|█▎        | 1/8 [00:07<00:50,  7.17s/it]
+Traceback (most recent call last):
+  File "/mnt/parscratch/users/liq23wr/dissertation/main.py", line 16, in <module>
+    response = chat(model_id, query)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/parscratch/users/liq23wr/dissertation/models.py", line 11, in chat
+    model = AutoModelForCausalLM.from_pretrained(model_name,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 3944, in from_pretrained
+    resolved_archive_file, sharded_metadata = get_checkpoint_shard_files(
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 1098, in get_checkpoint_shard_files
+    cached_filename = cached_file(
+                      ^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/transformers/utils/hub.py", line 403, in cached_file
+    resolved_file = hf_hub_download(
+                    ^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 860, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1009, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 1543, in _download_to_tmp_and_move
+    http_get(
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/huggingface_hub/file_download.py", line 455, in http_get
+    temp_file.write(chunk)
+OSError: [Errno 122] Disk quota exceeded
