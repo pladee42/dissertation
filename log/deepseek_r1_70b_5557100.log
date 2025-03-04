@@ -1,0 +1,217 @@
+Checking and installing required packages...
+Verifying PyTorch installation...
+PyTorch version: 2.6.0+cu124
+CUDA available: True
+CUDA version: 12.4
+GPU count: 4
+GPU status before execution:
+Tue Mar  4 09:03:34 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.144.03             Driver Version: 550.144.03     CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:01:00.0 Off |                    0 |
+| N/A   36C    P0             59W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-SXM4-80GB          On  |   00000000:41:00.0 Off |                    0 |
+| N/A   30C    P0             57W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA A100-SXM4-80GB          On  |   00000000:81:00.0 Off |                    0 |
+| N/A   31C    P0             61W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA A100-SXM4-80GB          On  |   00000000:C1:00.0 Off |                    0 |
+| N/A   34C    P0             62W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Running main.py with native model parallelism...
+Opening file: 01.txt
+Opening file: 02.txt
+Opening file: 03.txt
+Opening file: 04.txt
+
+[INFO] CUDA available: True
+[INFO] Number of GPUs: 4
+[INFO] GPU 0: NVIDIA A100-SXM4-80GB
+[INFO] GPU 0 Memory: 84.97 GB
+[INFO] GPU 1: NVIDIA A100-SXM4-80GB
+[INFO] GPU 1 Memory: 84.97 GB
+[INFO] GPU 2: NVIDIA A100-SXM4-80GB
+[INFO] GPU 2 Memory: 84.97 GB
+[INFO] GPU 3: NVIDIA A100-SXM4-80GB
+[INFO] GPU 3 Memory: 84.97 GB
+[INFO] Using 4-bit quantization for large model
+[INFO] Loading model deepseek-ai/DeepSeek-R1-Distill-Llama-70B...
+False
+
+===================================BUG REPORT===================================
+/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/bitsandbytes/cuda_setup/main.py:167: UserWarning: Welcome to bitsandbytes. For bug reports, please run
+
+python -m bitsandbytes
+
+
+  warn(msg)
+================================================================================
+/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/bitsandbytes/cuda_setup/main.py:167: UserWarning: /users/liq23wr/.conda/envs/dis-venv did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/bitsandbytes/cuda_setup/main.py:167: UserWarning: Found duplicate ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] files: {PosixPath('/opt/apps/testapps/el7-znver3/software/staging/CUDA/11.8.0/lib/libcudart.so.11.0'), PosixPath('/opt/apps/testapps/el7-znver3/software/staging/CUDA/11.8.0/lib/libcudart.so')}.. We select the PyTorch default libcudart.so, which is {torch.version.cuda},but this might missmatch with the CUDA version that is needed for bitsandbytes.To override this behavior set the BNB_CUDA_VERSION=<version string, e.g. 122> environmental variableFor example, if you want to use the CUDA version 122BNB_CUDA_VERSION=122 python ...OR set the environmental variable in your .bashrc: export BNB_CUDA_VERSION=122In the case of a manual override, make sure you set the LD_LIBRARY_PATH, e.g.export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.2
+  warn(msg)
+/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/bitsandbytes/cuda_setup/main.py:167: UserWarning: /opt/apps/testapps/el7-znver3/software/staging/CUDA/11.8.0/nvvm/lib64:/opt/apps/testapps/el7-znver3/software/staging/CUDA/11.8.0/extras/CUPTI/lib64:/opt/apps/testapps/el7-znver3/software/staging/CUDA/11.8.0/lib did not contain ['libcudart.so', 'libcudart.so.11.0', 'libcudart.so.12.0'] as expected! Searching further paths...
+  warn(msg)
+The following directories listed in your path were found to be non-existent: {PosixPath('1')}
+The following directories listed in your path were found to be non-existent: {PosixPath('/usr/bin,TERM'), PosixPath('HOME,PATH=/usr/local/bin')}
+The following directories listed in your path were found to be non-existent: {PosixPath('1;/opt/apps/testapps/common/modules/easybuild-only/all'), PosixPath('1'), PosixPath('1;/opt/apps/testapps/common/modules/staging/all')}
+The following directories listed in your path were found to be non-existent: {PosixPath('/opt/apps/testapps/common/module-system/current/installation/Lmod/8.7.19/modulefiles')}
+The following directories listed in your path were found to be non-existent: {PosixPath('1')}
+The following directories listed in your path were found to be non-existent: {PosixPath('/usr/bin,TERM'), PosixPath('HOME,PATH=/usr/local/bin')}
+The following directories listed in your path were found to be non-existent: {PosixPath('Anaconda3/2024.02-1'), PosixPath('CUDA/11.8.0')}
+The following directories listed in your path were found to be non-existent: {PosixPath('/users/liq23wr/.cache/torch_extensions')}
+The following directories listed in your path were found to be non-existent: {PosixPath('1;/opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1/bin'), PosixPath('1;/opt/apps/testapps/el7-znver3/software/staging/CUDA/11.8.0/bin'), PosixPath('1;/usr/bin'), PosixPath('1;/opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1'), PosixPath('1'), PosixPath('1;/usr/local/bin'), PosixPath('1;/opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1/sbin')}
+The following directories listed in your path were found to be non-existent: {PosixPath('1;/opt/apps/testapps/el7-znver3/software/staging/CUDA/11.8.0/include'), PosixPath('1'), PosixPath('1;/opt/apps/testapps/el7-znver3/software/staging/CUDA/11.8.0/extras/CUPTI/include')}
+The following directories listed in your path were found to be non-existent: {PosixPath('1;/opt/apps/testapps/el7-znver3/software/staging/CUDA/11.8.0/lib'), PosixPath('1')}
+The following directories listed in your path were found to be non-existent: {PosixPath('1;/opt/apps/testapps/el7-znver3/software/staging/CUDA/11.8.0/extras/CUPTI/lib64'), PosixPath('1;/opt/apps/testapps/el7-znver3/software/staging/CUDA/11.8.0/lib'), PosixPath('1')}
+The following directories listed in your path were found to be non-existent: {PosixPath('1'), PosixPath('1;/opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1/lib/pkgconfig')}
+The following directories listed in your path were found to be non-existent: {PosixPath('1;/opt/apps/testapps/common/software/staging/Anaconda3/2024.02-1/man'), PosixPath('1;/opt/apps/testapps/common/module-system/current/installation/Lmod/8.7.19/lmod/lmod/share/man'), PosixPath('1')}
+The following directories listed in your path were found to be non-existent: {PosixPath('() {  local op tmpf rc flight_ENV_eval;\n if [ -x $flight_ENV_root/bin/flenv ]; then\n export FLIGHT_PROGRAM_NAME=${FLIGHT_PROGRAM_NAME'), PosixPath('-flenv};\n op="$1";\n case $op in \n activate | deactivate | switch)\n tmpf=$(mktemp -t flenv.XXXXXXXX);\n flight_ENV_eval=true flexec ruby $flight_ENV_root/bin/flenv "$@" > $tmpf;\n rc=$?;\n if [ $rc -gt 0 ]; then\n cat $tmpf;\n unset FLIGHT_PROGRAM_NAME;\n return $rc;\n else\n source $tmpf;\n fi;\n rm -f $tmpf\n ;;\n *)\n flexec ruby $flight_ENV_root/bin/flenv "$@"\n ;;\n esac;\n fi;\n unset FLIGHT_PROGRAM_NAME\n}')}
+The following directories listed in your path were found to be non-existent: {PosixPath('2}";\n return;\n fi;\n fi;\n flexec flight "$@"\n}'), PosixPath('() {  local cmd;\n if [ "$1" ]; then\n cmd=$("${flight_ROOT}"/bin/flight --resolve $1);\n if [ "$(type -t flight_$cmd)" == "function" ]; then\n flight_${cmd} "${@')}
+The following directories listed in your path were found to be non-existent: {PosixPath('() {  local op;\n op="$1";\n case $op in \n help | hel | he | h | --help | -h)\n flexec flight stop "$@"\n ;;\n \'\')\n source "${flight_ROOT}"/libexec/flight-starter/stop.sh --shell "$@"\n ;;\n *)\n echo "Usage'), PosixPath(' flight stop [--help]"\n ;;\n esac\n}')}
+The following directories listed in your path were found to be non-existent: {PosixPath('() {  eval "$($LMOD_DIR/ml_cmd "$@")"\n}')}
+The following directories listed in your path were found to be non-existent: {PosixPath(' usage'), PosixPath('() {  if [ -z "$1" ]; then\n echo "flexec'), PosixPath('2}";\n exit_code=$?;\n unset flight_MODE;\n return $exit_code;\n else\n echo "flexec'), PosixPath(' $1" 1>&2;\n return 1;\n fi;\n fi\n}'), PosixPath(' flexec <command> [<arg>...]";\n return 1;\n else\n if [ -x "${flight_ROOT}/bin/$1" ]; then\n if [ "${-#*i}" != "$-" ]; then\n flight_MODE=interactive;\n else\n flight_MODE=batch;\n fi;\n local exit_code;\n flight_MODE=${flight_MODE} "${flight_ROOT}/bin/$1" "${@'), PosixPath(' not found')}
+DEBUG: Possible options found for libcudart.so: {PosixPath('/opt/apps/testapps/el7-znver3/software/staging/CUDA/11.8.0/lib/libcudart.so.11.0'), PosixPath('/opt/apps/testapps/el7-znver3/software/staging/CUDA/11.8.0/lib/libcudart.so')}
+CUDA SETUP: PyTorch settings found: CUDA_VERSION=124, Highest Compute Capability: 8.0.
+CUDA SETUP: To manually override the PyTorch CUDA version please see:https://github.com/TimDettmers/bitsandbytes/blob/main/how_to_use_nonpytorch_cuda.md
+CUDA SETUP: Required library version not found: libbitsandbytes_cuda124.so. Maybe you need to compile it from source?
+CUDA SETUP: Defaulting to libbitsandbytes_cpu.so...
+
+================================================ERROR=====================================
+CUDA SETUP: CUDA detection failed! Possible reasons:
+1. You need to manually override the PyTorch CUDA version. Please see: "https://github.com/TimDettmers/bitsandbytes/blob/main/how_to_use_nonpytorch_cuda.md
+2. CUDA driver not installed
+3. CUDA not installed
+4. You have multiple conflicting CUDA libraries
+5. Required library not pre-compiled for this bitsandbytes release!
+CUDA SETUP: If you compiled from source, try again with `make CUDA_VERSION=DETECTED_CUDA_VERSION` for example, `make CUDA_VERSION=113`.
+CUDA SETUP: The CUDA version for the compile might depend on your conda install. Inspect CUDA version via `conda list | grep cuda`.
+================================================================================
+
+CUDA SETUP: Something unexpected happened. Please compile from source:
+git clone https://github.com/TimDettmers/bitsandbytes.git
+cd bitsandbytes
+CUDA_VERSION=124
+python setup.py install
+CUDA SETUP: Setup Failed!
+Traceback (most recent call last):
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1817, in _get_module
+    return importlib.import_module("." + module_name, self.__name__)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/transformers/integrations/bitsandbytes.py", line 21, in <module>
+    import bitsandbytes as bnb
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/bitsandbytes/__init__.py", line 6, in <module>
+    from . import cuda_setup, utils, research
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/bitsandbytes/research/__init__.py", line 1, in <module>
+    from . import nn
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/bitsandbytes/research/nn/__init__.py", line 1, in <module>
+    from .modules import LinearFP8Mixed, LinearFP8Global
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/bitsandbytes/research/nn/modules.py", line 8, in <module>
+    from bitsandbytes.optim import GlobalOptimManager
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/bitsandbytes/optim/__init__.py", line 6, in <module>
+    from bitsandbytes.cextension import COMPILED_WITH_CUDA
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/bitsandbytes/cextension.py", line 20, in <module>
+    raise RuntimeError('''
+RuntimeError: 
+        CUDA Setup failed despite GPU being available. Please run the following command to get more information:
+
+        python -m bitsandbytes
+
+        Inspect the output of the command and see if you can locate CUDA libraries. You might need to add them
+        to your LD_LIBRARY_PATH. If you suspect a bug, please take the information from python -m bitsandbytes
+        and open an issue at: https://github.com/TimDettmers/bitsandbytes/issues
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/parscratch/users/liq23wr/dissertation/main.py", line 37, in <module>
+    response = chat(model_id, query)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/parscratch/users/liq23wr/dissertation/models.py", line 59, in chat
+    model = AutoModelForCausalLM.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 3620, in from_pretrained
+    hf_quantizer.validate_environment(
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/transformers/quantizers/quantizer_bnb_4bit.py", line 79, in validate_environment
+    from ..integrations import validate_bnb_backend_availability
+  File "<frozen importlib._bootstrap>", line 1412, in _handle_fromlist
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1805, in __getattr__
+    module = self._get_module(self._class_to_module[name])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/transformers/utils/import_utils.py", line 1819, in _get_module
+    raise RuntimeError(
+RuntimeError: Failed to import transformers.integrations.bitsandbytes because of the following error (look up to see its traceback):
+
+        CUDA Setup failed despite GPU being available. Please run the following command to get more information:
+
+        python -m bitsandbytes
+
+        Inspect the output of the command and see if you can locate CUDA libraries. You might need to add them
+        to your LD_LIBRARY_PATH. If you suspect a bug, please take the information from python -m bitsandbytes
+        and open an issue at: https://github.com/TimDettmers/bitsandbytes/issues
+Execution failed with error code 1
+GPU status after execution:
+Tue Mar  4 09:03:58 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.144.03             Driver Version: 550.144.03     CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:01:00.0 Off |                    0 |
+| N/A   34C    P0             59W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-SXM4-80GB          On  |   00000000:41:00.0 Off |                    0 |
+| N/A   30C    P0             57W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA A100-SXM4-80GB          On  |   00000000:81:00.0 Off |                    0 |
+| N/A   31C    P0             59W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA A100-SXM4-80GB          On  |   00000000:C1:00.0 Off |                    0 |
+| N/A   32C    P0             61W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Job completed

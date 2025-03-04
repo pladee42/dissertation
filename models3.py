@@ -1,9 +1,12 @@
 from dotenv import load_dotenv
+from deepspeed.accelerator import get_accelerator
+import deepspeed
 import os
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import torch
 import time
 import gc
+from contextlib import nullcontext
 
 # Load environment variables once at module level
 load_dotenv(override=True)
@@ -12,17 +15,12 @@ hf_token = os.getenv('HUGGINGFACE_TOKEN')
 def chat(model_name: str, query: str, hf_token: str = hf_token) -> str:
     """
     Download Open-source models from Hugging Face and Send the query to the model.
-    Optimized for maximum performance on multi-GPU HPC systems using native model parallelism.
+    Optimized for maximum performance on multi-GPU HPC systems.
     """
     # Clear CUDA cache before loading model
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
         gc.collect()
-    
-    # Set CUDA optimization flags
-    torch.backends.cudnn.benchmark = True
-    if torch.cuda.is_available():
-        torch.backends.cuda.matmul.allow_tf32 = True  # Enable TF32 for faster computation on Ampere+ GPUs
     
     # Print GPU information
     print(f"\n[INFO] CUDA available: {torch.cuda.is_available()}")
@@ -33,7 +31,7 @@ def chat(model_name: str, query: str, hf_token: str = hf_token) -> str:
 
     # Configure quantization for memory efficiency
     # Use 4-bit quantization if model is large
-    use_4bit = False#"70b" in model_name.lower() or "65b" in model_name.lower()
+    use_4bit = "70b" in model_name.lower() or "65b" in model_name.lower()
     
     if use_4bit:
         print("[INFO] Using 4-bit quantization for large model")
@@ -79,6 +77,16 @@ def chat(model_name: str, query: str, hf_token: str = hf_token) -> str:
             tokenizer.pad_token_id = 0
             model.generation_config.pad_token_id = 0
     
+    # Initialize DeepSpeed for inference
+    ds_engine = deepspeed.init_inference(
+        model=model,
+        mp_size=torch.cuda.device_count(),
+        dtype=torch.bfloat16,
+        replace_method="auto",
+        replace_with_kernel_inject=False
+    )
+    model = ds_engine.module
+    
     # Print model device mapping information
     if hasattr(model, 'hf_device_map'):
         print(f"[INFO] Model distributed across devices: {model.hf_device_map}")
@@ -109,14 +117,20 @@ def chat(model_name: str, query: str, hf_token: str = hf_token) -> str:
         max_length=4096  # Set appropriate context length
     )
     
-    # Move inputs to the appropriate device
-    # For device_map="auto", we need to place inputs on the same device as the model's first layer
-    device_map = getattr(model, 'hf_device_map', {})
-    first_device = next(iter(device_map.values())) if device_map else "cuda:0"
-    inputs = {k: v.to(first_device) for k, v in inputs.items()}
+    # Move inputs to the same device as the first model parameter
+    first_param_device = next(model.parameters()).device
+    inputs = {k: v.to(first_param_device) for k, v in inputs.items()}
+    
+    # Determine if we can use CUDA graphs for optimization
+    use_cuda_graphs = torch.cuda.is_available() and hasattr(torch.cuda, 'is_current_stream_capturing') and \
+                     not torch.cuda.is_current_stream_capturing() and \
+                     torch.cuda.device_count() == 1  # Only for single GPU
+    
+    # Context manager for CUDA graphs if applicable
+    cuda_graph_context = torch.cuda.graph(enabled=use_cuda_graphs) if use_cuda_graphs else nullcontext()
     
     # Generate outputs with optimized settings
-    with torch.inference_mode():
+    with cuda_graph_context:
         outputs = model.generate(
             **inputs, 
             max_new_tokens=4096,

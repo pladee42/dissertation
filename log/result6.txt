@@ -1,0 +1,40 @@
+Detected kernel version 3.10.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+Opening file: 01.txt
+Opening file: 02.txt
+Opening file: 03.txt
+Opening file: 04.txt
+
+[INFO] Using device: cuda
+Downloading shards:   0%|          | 0/17 [00:00<?, ?it/s]Downloading shards:   6%|▌         | 1/17 [03:33<56:55, 213.46s/it]Downloading shards:  12%|█▏        | 2/17 [07:00<52:24, 209.60s/it]Downloading shards:  18%|█▊        | 3/17 [07:37<30:33, 130.97s/it]Downloading shards:  24%|██▎       | 4/17 [11:04<34:50, 160.83s/it]Downloading shards:  29%|██▉       | 5/17 [14:24<35:02, 175.17s/it]Downloading shards:  35%|███▌      | 6/17 [17:51<34:03, 185.79s/it]Downloading shards:  41%|████      | 7/17 [21:11<31:46, 190.63s/it]Downloading shards:  47%|████▋     | 8/17 [24:39<29:23, 195.97s/it]Downloading shards:  53%|█████▎    | 9/17 [28:02<26:26, 198.30s/it]Downloading shards:  59%|█████▉    | 10/17 [31:29<23:25, 200.86s/it]Downloading shards:  65%|██████▍   | 11/17 [34:49<20:04, 200.77s/it]Downloading shards:  71%|███████   | 12/17 [38:16<16:52, 202.49s/it]Downloading shards:  76%|███████▋  | 13/17 [41:36<13:27, 201.91s/it]Downloading shards:  82%|████████▏ | 14/17 [45:03<10:09, 203.27s/it]Downloading shards:  88%|████████▊ | 15/17 [48:23<06:44, 202.48s/it]Downloading shards:  94%|█████████▍| 16/17 [51:51<03:23, 203.95s/it]Downloading shards: 100%|██████████| 17/17 [56:02<00:00, 218.01s/it]Downloading shards: 100%|██████████| 17/17 [56:02<00:00, 197.77s/it]
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:16<04:19, 16.22s/it]Loading checkpoint shards:  12%|█▏        | 2/17 [00:31<03:52, 15.52s/it]Loading checkpoint shards:  18%|█▊        | 3/17 [00:34<02:16,  9.73s/it]Loading checkpoint shards:  24%|██▎       | 4/17 [00:48<02:29, 11.53s/it]Loading checkpoint shards:  29%|██▉       | 5/17 [01:06<02:47, 13.94s/it]Loading checkpoint shards:  35%|███▌      | 6/17 [01:20<02:34, 14.05s/it]Loading checkpoint shards:  41%|████      | 7/17 [01:37<02:27, 14.74s/it]Loading checkpoint shards:  47%|████▋     | 8/17 [01:55<02:24, 16.05s/it]Loading checkpoint shards:  53%|█████▎    | 9/17 [02:08<02:00, 15.11s/it]Loading checkpoint shards:  59%|█████▉    | 10/17 [02:34<02:08, 18.32s/it]Loading checkpoint shards:  65%|██████▍   | 11/17 [02:49<01:44, 17.47s/it]Loading checkpoint shards:  71%|███████   | 12/17 [03:05<01:24, 17.00s/it]Loading checkpoint shards:  76%|███████▋  | 13/17 [03:19<01:04, 16.05s/it]Loading checkpoint shards:  82%|████████▏ | 14/17 [04:13<01:22, 27.58s/it]Loading checkpoint shards:  88%|████████▊ | 15/17 [04:30<00:48, 24.22s/it]Loading checkpoint shards:  94%|█████████▍| 16/17 [04:41<00:20, 20.25s/it]Loading checkpoint shards: 100%|██████████| 17/17 [04:53<00:00, 17.90s/it]Loading checkpoint shards: 100%|██████████| 17/17 [04:53<00:00, 17.29s/it]
+You shouldn't move a model that is dispatched using accelerate hooks.
+Traceback (most recent call last):
+  File "/mnt/parscratch/users/liq23wr/dissertation/main.py", line 37, in <module>
+    response = chat(model_id, query)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/parscratch/users/liq23wr/dissertation/models.py", line 29, in chat
+    token=hf_token).to(device)
+                    ^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/accelerate/big_modeling.py", line 459, in wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/transformers/modeling_utils.py", line 3110, in to
+    return super().to(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1343, in to
+    return self._apply(convert)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 903, in _apply
+    module._apply(fn)
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 903, in _apply
+    module._apply(fn)
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 903, in _apply
+    module._apply(fn)
+  [Previous line repeated 2 more times]
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 930, in _apply
+    param_applied = fn(param)
+                    ^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1329, in convert
+    return t.to(
+           ^^^^^
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 128.00 MiB. GPU 0 has a total capacity of 79.14 GiB of which 111.50 MiB is free. Including non-PyTorch memory, this process has 79.02 GiB memory in use. Of the allocated memory 78.61 GiB is allocated by PyTorch, and 512.00 KiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

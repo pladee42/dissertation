@@ -18,13 +18,16 @@ for filename in files:
             prompt_list.append(content)
 
 models = {
-    'deepseek-r1-7b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-7B',
-    'deepseek-r1-14b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-14B',
-    'deepseek-r1-32b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-32B',
-    'gemma-2-9b': 'google/gemma-2-9b-it',
-    'gemma-2-27b': 'google/gemma-2-27b-it',
-    'llama-2-7b': 'unsloth/llama-2-7b-chat',
-    'llama-2-13b': 'daryl149/llama-2-13b-chat-hf'
+    # 'deepseek-r1-1.5b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B',
+    # 'deepseek-r1-7b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-7B',
+    # 'deepseek-r1-14b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-14B',
+    # 'deepseek-r1-32b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-32B',
+    'deepseek-r1-70b': 'deepseek-ai/DeepSeek-R1-Distill-Llama-70B',
+    # 'gemma-2-9b': 'google/gemma-2-9b-it',
+    # 'gemma-2-27b': 'google/gemma-2-27b-it',
+    # 'llama-2-7b': 'unsloth/llama-2-7b-chat',
+    # 'llama-2-13b': 'daryl149/llama-2-13b-chat-hf',
+    'llama-3-70b': 'unsloth/Llama-3.3-70B-Instruct'
 }
 
 topic = 'Polar Bears Rescue by University of Sheffield'

@@ -1,0 +1,137 @@
+PyTorch version: 2.6.0+cu124
+CUDA available: True
+CUDA version: 12.4
+GPU count: 4
+Attempting to run with torchrun...
+W0301 13:40:10.390000 24652 site-packages/torch/distributed/run.py:792] 
+W0301 13:40:10.390000 24652 site-packages/torch/distributed/run.py:792] *****************************************
+W0301 13:40:10.390000 24652 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0301 13:40:10.390000 24652 site-packages/torch/distributed/run.py:792] *****************************************
+Traceback (most recent call last):
+  File "/mnt/parscratch/users/liq23wr/dissertation/main.py", line 1, in <module>
+    from dissertation.models import chat
+ModuleNotFoundError: No module named 'dissertation'
+Traceback (most recent call last):
+  File "/mnt/parscratch/users/liq23wr/dissertation/main.py", line 1, in <module>
+    from dissertation.models import chat
+ModuleNotFoundError: No module named 'dissertation'
+Traceback (most recent call last):
+  File "/mnt/parscratch/users/liq23wr/dissertation/main.py", line 1, in <module>
+    from dissertation.models import chat
+ModuleNotFoundError: No module named 'dissertation'
+Traceback (most recent call last):
+  File "/mnt/parscratch/users/liq23wr/dissertation/main.py", line 1, in <module>
+    from dissertation.models import chat
+ModuleNotFoundError: No module named 'dissertation'
+E0301 13:40:10.627000 24652 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 24654) of binary: /users/liq23wr/.conda/envs/dis-venv/bin/python
+Traceback (most recent call last):
+  File "/users/liq23wr/.conda/envs/dis-venv/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+main.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-03-01_13:40:10
+  host      : gpu08.pri.stanage.alces.network
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 24655)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2025-03-01_13:40:10
+  host      : gpu08.pri.stanage.alces.network
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 24656)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2025-03-01_13:40:10
+  host      : gpu08.pri.stanage.alces.network
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 24657)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-03-01_13:40:10
+  host      : gpu08.pri.stanage.alces.network
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 24654)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+torchrun failed, attempting to run with deepspeed directly...
+[2025-03-01 13:40:21,884] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/tmp/job.5544211/tmpchoasuo6/main.c:6:23: fatal error: stdatomic.h: No such file or directory
+ #include <stdatomic.h>
+                       ^
+compilation terminated.
+Traceback (most recent call last):
+  File "/users/liq23wr/.conda/envs/dis-venv/bin/deepspeed", line 3, in <module>
+    from deepspeed.launcher.runner import main
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/deepspeed/__init__.py", line 25, in <module>
+    from . import ops
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/deepspeed/ops/__init__.py", line 11, in <module>
+    from . import transformer
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/deepspeed/ops/transformer/__init__.py", line 7, in <module>
+    from .inference.config import DeepSpeedInferenceConfig
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/deepspeed/ops/transformer/inference/__init__.py", line 7, in <module>
+    from ....model_implementations.transformers.ds_transformer import DeepSpeedTransformerInference
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/deepspeed/model_implementations/__init__.py", line 6, in <module>
+    from .transformers.ds_transformer import DeepSpeedTransformerInference
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/deepspeed/model_implementations/transformers/ds_transformer.py", line 18, in <module>
+    from deepspeed.ops.transformer.inference.triton.mlp import TritonMLP
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/deepspeed/ops/transformer/inference/triton/__init__.py", line 10, in <module>
+    from .ops import *
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/deepspeed/ops/transformer/inference/triton/ops.py", line 6, in <module>
+    import deepspeed.ops.transformer.inference.triton.matmul_ext as matmul_ext
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/deepspeed/ops/transformer/inference/triton/matmul_ext.py", line 10, in <module>
+    import deepspeed.ops.transformer.inference.triton.triton_matmul_kernel as triton_matmul_kernel
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/deepspeed/ops/transformer/inference/triton/triton_matmul_kernel.py", line 51, in <module>
+    @triton.autotune(
+     ^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/triton/runtime/autotuner.py", line 368, in decorator
+    return Autotuner(fn, fn.arg_names, configs, key, reset_to_zero, restore_value, pre_hook=pre_hook,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/triton/runtime/autotuner.py", line 130, in __init__
+    self.do_bench = driver.active.get_benchmarker()
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/triton/runtime/driver.py", line 23, in __getattr__
+    self._initialize_obj()
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/triton/runtime/driver.py", line 20, in _initialize_obj
+    self._obj = self._init_fn()
+                ^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/triton/runtime/driver.py", line 9, in _create_driver
+    return actives[0]()
+           ^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/triton/backends/nvidia/driver.py", line 450, in __init__
+    self.utils = CudaUtils()  # TODO: make static
+                 ^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/triton/backends/nvidia/driver.py", line 80, in __init__
+    mod = compile_module_from_src(Path(os.path.join(dirname, "driver.c")).read_text(), "cuda_utils")
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/triton/backends/nvidia/driver.py", line 57, in compile_module_from_src
+    so = _build(name, src_path, tmpdir, library_dirs(), include_dir, libraries)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/triton/runtime/build.py", line 50, in _build
+    ret = subprocess.check_call(cc_cmd)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['/usr/bin/gcc', '/tmp/job.5544211/tmpchoasuo6/main.c', '-O3', '-shared', '-fPIC', '-Wno-psabi', '-o', '/tmp/job.5544211/tmpchoasuo6/cuda_utils.cpython-312-x86_64-linux-gnu.so', '-lcuda', '-L/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/triton/backends/nvidia/lib', '-L/lib64', '-L/lib', '-I/users/liq23wr/.conda/envs/dis-venv/lib/python3.12/site-packages/triton/backends/nvidia/include', '-I/tmp/job.5544211/tmpchoasuo6', '-I/users/liq23wr/.conda/envs/dis-venv/include/python3.12']' returned non-zero exit status 1.
