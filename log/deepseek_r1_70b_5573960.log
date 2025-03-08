@@ -1,0 +1,701 @@
+Python version: Python 3.12.2
+Checking and installing required packages...
+Verifying PyTorch installation...
+PyTorch version: 2.5.1+cu124
+CUDA available: True
+CUDA version: 12.4
+GPU count: 4
+GPU status before execution:
+Thu Mar  6 07:12:31 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.144.03             Driver Version: 550.144.03     CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:01:00.0 Off |                    0 |
+| N/A   31C    P0             61W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-SXM4-80GB          On  |   00000000:41:00.0 Off |                    0 |
+| N/A   29C    P0             58W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA A100-SXM4-80GB          On  |   00000000:81:00.0 Off |                    0 |
+| N/A   31C    P0             60W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA A100-SXM4-80GB          On  |   00000000:C1:00.0 Off |                    0 |
+| N/A   30C    P0             59W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Running main.py with native model parallelism...
+Opening file: 01.txt
+Opening file: 02.txt
+Opening file: 03.txt
+Opening file: 04.txt
+
+[INFO] CUDA available: True
+[INFO] Number of GPUs: 4
+[INFO] GPU 0: NVIDIA A100-SXM4-80GB
+[INFO] GPU 0 Memory: 84.97 GB
+[INFO] GPU 1: NVIDIA A100-SXM4-80GB
+[INFO] GPU 1 Memory: 84.97 GB
+[INFO] GPU 2: NVIDIA A100-SXM4-80GB
+[INFO] GPU 2 Memory: 84.97 GB
+[INFO] GPU 3: NVIDIA A100-SXM4-80GB
+[INFO] GPU 3 Memory: 84.97 GB
+[INFO] Loading model deepseek-ai/DeepSeek-R1-Distill-Llama-70B...
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:19<05:08, 19.26s/it]Loading checkpoint shards:  12%|█▏        | 2/17 [00:38<04:47, 19.15s/it]Loading checkpoint shards:  18%|█▊        | 3/17 [00:40<02:40, 11.46s/it]Loading checkpoint shards:  24%|██▎       | 4/17 [00:54<02:39, 12.31s/it]Loading checkpoint shards:  29%|██▉       | 5/17 [01:08<02:36, 13.05s/it]Loading checkpoint shards:  35%|███▌      | 6/17 [01:21<02:24, 13.09s/it]Loading checkpoint shards:  41%|████      | 7/17 [01:41<02:32, 15.21s/it]Loading checkpoint shards:  47%|████▋     | 8/17 [01:58<02:22, 15.82s/it]Loading checkpoint shards:  53%|█████▎    | 9/17 [02:13<02:03, 15.48s/it]Loading checkpoint shards:  59%|█████▉    | 10/17 [02:28<01:48, 15.51s/it]Loading checkpoint shards:  65%|██████▍   | 11/17 [02:44<01:33, 15.62s/it]Loading checkpoint shards:  71%|███████   | 12/17 [03:03<01:22, 16.54s/it]Loading checkpoint shards:  76%|███████▋  | 13/17 [03:16<01:01, 15.48s/it]Loading checkpoint shards:  82%|████████▏ | 14/17 [03:33<00:47, 15.94s/it]Loading checkpoint shards:  88%|████████▊ | 15/17 [03:46<00:30, 15.23s/it]Loading checkpoint shards:  94%|█████████▍| 16/17 [04:03<00:15, 15.75s/it]Loading checkpoint shards: 100%|██████████| 17/17 [04:17<00:00, 15.12s/it]Loading checkpoint shards: 100%|██████████| 17/17 [04:17<00:00, 15.15s/it]
+[INFO] Model distributed across devices: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 0, 'model.layers.17': 0, 'model.layers.18': 0, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 2, 'model.layers.41': 2, 'model.layers.42': 2, 'model.layers.43': 2, 'model.layers.44': 2, 'model.layers.45': 2, 'model.layers.46': 2, 'model.layers.47': 2, 'model.layers.48': 2, 'model.layers.49': 2, 'model.layers.50': 2, 'model.layers.51': 2, 'model.layers.52': 2, 'model.layers.53': 2, 'model.layers.54': 2, 'model.layers.55': 2, 'model.layers.56': 2, 'model.layers.57': 2, 'model.layers.58': 2, 'model.layers.59': 2, 'model.layers.60': 2, 'model.layers.61': 3, 'model.layers.62': 3, 'model.layers.63': 3, 'model.layers.64': 3, 'model.layers.65': 3, 'model.layers.66': 3, 'model.layers.67': 3, 'model.layers.68': 3, 'model.layers.69': 3, 'model.layers.70': 3, 'model.layers.71': 3, 'model.layers.72': 3, 'model.layers.73': 3, 'model.layers.74': 3, 'model.layers.75': 3, 'model.layers.76': 3, 'model.layers.77': 3, 'model.layers.78': 3, 'model.layers.79': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+[INFO] Using model: deepseek-ai/DeepSeek-R1-Distill-Llama-70B
+
+Response:
+
+
+**Subject:** Emergency Alert: Help Us Save Polar Bears Before It's Too Late  
+
+Dear [Recipient's Name],  
+
+Polar bears are running out of time. Their Arctic home is melting at an unprecedented rate, leaving them stranded, starving, and facing extinction. At the University of Sheffield, we’re leading a critical mission to protect these majestic creatures and their fragile ecosystem—but we urgently need your help.  
+
+Right now, our researchers are on the front lines of this crisis, working tirelessly to study polar bear behavior, advocate for climate action, and develop innovative solutions to safeguard their future. But without immediate funding, their vital work is at risk of being derailed just when it’s needed most.  
+
+Here’s the truth: Polar bears aren’t just losing their homes—they’re losing their chance to survive. Melting sea ice is threatening their ability to hunt, feed, and raise their cubs. The clock is ticking, and every day counts.  
+
+That’s where you come in. Your support today will directly fuel our lifesaving research and advocacy efforts. Every pound, dollar, or euro you give will help us:  
+- Fund cutting-edge research to understand and mitigate the impacts of climate change on polar bears.  
+- Advocate for global policies that protect Arctic habitats and reduce carbon emissions.  
+- Educate communities around the world about the urgent need for action.  
+
+But time is running out. Without your help, we risk losing not just polar bears, but the entire balance of our planet’s ecosystems. Will you stand with us in this fight?  
+
+**Your gift today can make the difference:**  
+- £50 could support a day of field research in the Arctic.  
+- £100 could help fund education programs for schools worldwide.  
+- £250 could contribute to lobbying for stronger climate policies.  
+
+No amount is too small—every gift brings us closer to saving polar bears.  
+
+This isn’t just about polar bears; it’s about all of us. Climate change affects every corner of our planet, and protecting polar bears is a fight for our shared future. Together, we can be the generation that acts boldly to save them.  
+
+Please, don’t wait. Donate now and join the fight for polar bears before it’s too late.  
+
+[Donate Here]  
+
+Thank you for being a beacon of hope for polar bears and our planet. Together, we can make a difference—one that will echo for generations to come.  
+
+With gratitude,  
+[Your Name]  
+[Your Title]  
+University of Sheffield Polar Bears Rescue Initiative  
+
+P.S. Time is critical. Please share this urgent appeal with friends and family who care about our planet’s future. Together, we can ensure polar bears thrive for years to come.
+
+[INFO] deepseek-ai/DeepSeek-R1-Distill-Llama-70B took: 132.62 seconds for response
+[INFO] Generated 1145 tokens at 8.63 tokens/sec
+
+
+[INFO] CUDA available: True
+[INFO] Number of GPUs: 4
+[INFO] GPU 0: NVIDIA A100-SXM4-80GB
+[INFO] GPU 0 Memory: 84.97 GB
+[INFO] GPU 1: NVIDIA A100-SXM4-80GB
+[INFO] GPU 1 Memory: 84.97 GB
+[INFO] GPU 2: NVIDIA A100-SXM4-80GB
+[INFO] GPU 2 Memory: 84.97 GB
+[INFO] GPU 3: NVIDIA A100-SXM4-80GB
+[INFO] GPU 3 Memory: 84.97 GB
+[INFO] Loading model unsloth/Llama-3.3-70B-Instruct...
+Downloading shards:   0%|          | 0/30 [00:00<?, ?it/s]Downloading shards:   3%|▎         | 1/30 [01:12<35:11, 72.80s/it]Downloading shards:   7%|▋         | 2/30 [03:41<54:47, 117.40s/it]Downloading shards:  10%|█         | 3/30 [04:53<43:34, 96.84s/it] Downloading shards:  13%|█▎        | 4/30 [06:13<39:02, 90.11s/it]Downloading shards:  17%|█▋        | 5/30 [08:05<40:51, 98.04s/it]Downloading shards:  20%|██        | 6/30 [09:21<36:12, 90.52s/it]Downloading shards:  23%|██▎       | 7/30 [10:34<32:29, 84.74s/it]Downloading shards:  27%|██▋       | 8/30 [10:59<24:06, 65.74s/it]Downloading shards:  30%|███       | 9/30 [12:34<26:11, 74.81s/it]Downloading shards:  33%|███▎      | 10/30 [15:33<35:41, 107.06s/it]Downloading shards:  37%|███▋      | 11/30 [18:34<41:05, 129.78s/it]Downloading shards:  40%|████      | 12/30 [20:16<36:20, 121.13s/it]Downloading shards:  43%|████▎     | 13/30 [21:38<30:57, 109.28s/it]Downloading shards:  47%|████▋     | 14/30 [22:57<26:45, 100.36s/it]Downloading shards:  50%|█████     | 15/30 [24:06<22:40, 90.67s/it] Downloading shards:  53%|█████▎    | 16/30 [25:14<19:33, 83.80s/it]Downloading shards:  57%|█████▋    | 17/30 [26:28<17:31, 80.89s/it]Downloading shards:  60%|██████    | 18/30 [27:47<16:06, 80.52s/it]Downloading shards:  63%|██████▎   | 19/30 [29:08<14:45, 80.48s/it]Downloading shards:  67%|██████▋   | 20/30 [34:04<24:13, 145.37s/it]Downloading shards:  70%|███████   | 21/30 [35:19<18:38, 124.28s/it]Downloading shards:  73%|███████▎  | 22/30 [36:44<14:59, 112.40s/it]Downloading shards:  77%|███████▋  | 23/30 [38:05<12:00, 102.91s/it]Downloading shards:  80%|████████  | 24/30 [39:24<09:35, 95.88s/it] Downloading shards:  83%|████████▎ | 25/30 [40:45<07:37, 91.46s/it]Downloading shards:  87%|████████▋ | 26/30 [42:06<05:52, 88.15s/it]Downloading shards:  90%|█████████ | 27/30 [43:24<04:15, 85.03s/it]Downloading shards:  93%|█████████▎| 28/30 [43:49<02:14, 67.09s/it]Downloading shards:  97%|█████████▋| 29/30 [44:13<00:54, 54.10s/it]Downloading shards: 100%|██████████| 30/30 [45:29<00:00, 60.76s/it]Downloading shards: 100%|██████████| 30/30 [45:29<00:00, 90.98s/it]
+Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/30 [00:11<05:31, 11.43s/it]Loading checkpoint shards:   7%|▋         | 2/30 [00:12<02:32,  5.44s/it]Loading checkpoint shards:  10%|█         | 3/30 [00:14<01:37,  3.61s/it]Loading checkpoint shards:  13%|█▎        | 4/30 [00:15<01:11,  2.73s/it]Loading checkpoint shards:  17%|█▋        | 5/30 [00:16<00:55,  2.22s/it]Loading checkpoint shards:  20%|██        | 6/30 [00:18<00:45,  1.90s/it]Loading checkpoint shards:  23%|██▎       | 7/30 [00:19<00:39,  1.71s/it]Loading checkpoint shards:  27%|██▋       | 8/30 [00:20<00:35,  1.60s/it]Loading checkpoint shards:  30%|███       | 9/30 [00:22<00:32,  1.53s/it]Loading checkpoint shards:  33%|███▎      | 10/30 [00:23<00:29,  1.46s/it]Loading checkpoint shards:  37%|███▋      | 11/30 [00:24<00:26,  1.41s/it]Loading checkpoint shards:  40%|████      | 12/30 [00:26<00:24,  1.38s/it]Loading checkpoint shards:  43%|████▎     | 13/30 [00:27<00:23,  1.37s/it]Loading checkpoint shards:  47%|████▋     | 14/30 [00:28<00:21,  1.37s/it]Loading checkpoint shards:  50%|█████     | 15/30 [00:30<00:20,  1.35s/it]Loading checkpoint shards:  53%|█████▎    | 16/30 [00:44<01:13,  5.22s/it]Loading checkpoint shards:  57%|█████▋    | 17/30 [00:50<01:09,  5.37s/it]Loading checkpoint shards:  60%|██████    | 18/30 [00:52<00:52,  4.38s/it]Loading checkpoint shards:  63%|██████▎   | 19/30 [00:53<00:39,  3.55s/it]Loading checkpoint shards:  67%|██████▋   | 20/30 [00:55<00:31,  3.15s/it]Loading checkpoint shards:  70%|███████   | 21/30 [00:57<00:25,  2.78s/it]Loading checkpoint shards:  73%|███████▎  | 22/30 [00:59<00:20,  2.52s/it]Loading checkpoint shards:  77%|███████▋  | 23/30 [01:02<00:17,  2.53s/it]Loading checkpoint shards:  80%|████████  | 24/30 [01:13<00:30,  5.06s/it]Loading checkpoint shards:  83%|████████▎ | 25/30 [01:16<00:22,  4.48s/it]Loading checkpoint shards:  87%|████████▋ | 26/30 [01:17<00:14,  3.52s/it]Loading checkpoint shards:  90%|█████████ | 27/30 [01:18<00:08,  2.85s/it]Loading checkpoint shards:  93%|█████████▎| 28/30 [01:20<00:05,  2.54s/it]Loading checkpoint shards:  97%|█████████▋| 29/30 [01:23<00:02,  2.58s/it]Loading checkpoint shards: 100%|██████████| 30/30 [01:24<00:00,  2.06s/it]Loading checkpoint shards: 100%|██████████| 30/30 [01:24<00:00,  2.81s/it]
+[INFO] Model distributed across devices: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 0, 'model.layers.17': 0, 'model.layers.18': 0, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 2, 'model.layers.41': 2, 'model.layers.42': 2, 'model.layers.43': 2, 'model.layers.44': 2, 'model.layers.45': 2, 'model.layers.46': 2, 'model.layers.47': 2, 'model.layers.48': 2, 'model.layers.49': 2, 'model.layers.50': 2, 'model.layers.51': 2, 'model.layers.52': 2, 'model.layers.53': 2, 'model.layers.54': 2, 'model.layers.55': 2, 'model.layers.56': 2, 'model.layers.57': 2, 'model.layers.58': 2, 'model.layers.59': 2, 'model.layers.60': 2, 'model.layers.61': 3, 'model.layers.62': 3, 'model.layers.63': 3, 'model.layers.64': 3, 'model.layers.65': 3, 'model.layers.66': 3, 'model.layers.67': 3, 'model.layers.68': 3, 'model.layers.69': 3, 'model.layers.70': 3, 'model.layers.71': 3, 'model.layers.72': 3, 'model.layers.73': 3, 'model.layers.74': 3, 'model.layers.75': 3, 'model.layers.76': 3, 'model.layers.77': 3, 'model.layers.78': 3, 'model.layers.79': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+[INFO] Using model: unsloth/Llama-3.3-70B-Instruct
+
+Response:
+system
+
+Cutting Knowledge Date: December 2023
+Today Date: 26 Jul 2024
+
+user
+
+Write a persuasive and engaging Polar Bears Rescue by University of Sheffield email that motivates recipients to take immediate action. 
+The email should start with a strong, attention-grabbing opening that establishes urgency and emotional connection to Polar Bears Rescue by University of Sheffield. 
+It should use vivid storytelling or a localized approach (if applicable) to highlight why the recipient's support is needed now.
+
+Tailor the tone and structure depending on the objective:  
+
+- **For donation requests:** Emphasize the severity of the crisis related to Polar Bears Rescue by University of Sheffield (e.g., climate change, human rights violations, endangered wildlife, or marginalized communities) and make it clear that donor support is critical for fighting back. 
+Introduce the obstacle (corporate greed, political inaction, environmental destruction) and position the recipient as the hero who can help overcome it. End with a direct, compelling call to action that reinforces urgency.  
+
+- **For volunteer recruitment:** Focus on community impact and inclusivity. Highlight opportunities to get involved in Polar Bears Rescue by University of Sheffield, making it clear how volunteers can contribute (e.g., fundraising events, advocacy work, or community engagement). 
+Use an inviting and enthusiastic tone, emphasizing how easy and rewarding it is to participate. Provide clear next steps, such as sign-up links, contact information, or deadlines.  
+
+In either case, the email should make the recipient feel empowered and essential to Polar Bears Rescue by University of Sheffield. Keep the message concise (400-600 words), emotionally compelling, and action-oriented. 
+Ensure that the closing leaves a lasting impression, thanking the recipient and reinforcing their role in making a difference.assistant
+
+Subject: Urgent: Help Save the Polar Bears with the University of Sheffield
+
+Dear Fellow Animal Lover,
+
+Imagine a world where polar bears roam free, thriving in their Arctic habitats. But sadly, that reality is under threat. Climate change, driven by human activities, is melting their homes at an alarming rate. The University of Sheffield's Polar Bears Rescue initiative is working tirelessly to protect these majestic creatures, but we need your help – now.
+
+As I write this, polar bears are struggling to find food, shelter, and breeding grounds due to the devastating effects of climate change. The consequences are heartbreaking: malnutrition, reduced reproduction rates, and even extinction. It's a crisis that demands our collective attention and action. The University of Sheffield's research has shown that the Arctic ice cap has lost approximately 75% of its thickness since the 1980s, leaving polar bears with limited access to their primary source of food, seals.
+
+Our team has been working closely with local communities, conducting groundbreaking research, and developing innovative solutions to mitigate the impact of climate change on polar bear populations. For instance, we're collaborating with the Inuit community in Greenland to develop sustainable hunting practices and reduce human-polar bear conflicts. However, we're facing a significant obstacle: corporate greed and political inaction. Powerful interests are prioritizing profits over the planet, and it's up to us to fight back.
+
+That's where you come in. Your donation will be used to support our research initiatives, such as:
+
+* Developing more accurate climate models to predict sea ice coverage and polar bear migration patterns
+* Implementing conservation efforts, including the creation of protected areas and education programs for local communities
+* Advocating for policy changes that address the root causes of climate change and promote sustainable practices
+
+Every contribution, no matter how small, brings us closer to our goal of protecting polar bears and their habitats. Here's how your donation will make a tangible difference:
+
+* £10: Supports the development of educational materials for local communities on sustainable coexistence with polar bears
+* £50: Contributes to the deployment of camera traps to monitor polar bear populations and track habitat changes
+* £100: Funds a research expedition to study polar bear behavior and develop effective conservation strategies
+
+Will you join the fight? Donate today and help us:
+
+* Support cutting-edge research and conservation efforts
+* Advocate for policy changes that prioritize the planet over profits
+* Educate and engage local communities in polar bear conservation
+
+Click this link to donate now: [insert link]. Every pound counts, and every minute matters. We're counting on your support to make a difference.
+
+Alternatively, if you'd like to get involved in a more hands-on way, we invite you to join our volunteering program. You can participate in fundraising events, help with advocacy work, or assist with community engagement. Together, we can make a real impact. Sign up here: [insert link] or contact us at [insert email/phone number].
+
+Time is running out for polar bears, but with your help, we can turn the tide. Thank you for considering our appeal. Your support means the world to us and to the polar bears. Let's act now and ensure a future where these incredible animals continue to thrive.
+
+Sincerely,
+
+[Your Name]
+Polar Bears Rescue Team, University of Sheffield
+
+P.S. Don't let polar bears disappear on our watch. Donate or volunteer today and be part of the solution. [Insert link/contact info]
+
+[INFO] unsloth/Llama-3.3-70B-Instruct took: 82.24 seconds for response
+[INFO] Generated 700 tokens at 8.51 tokens/sec
+
+
+[INFO] CUDA available: True
+[INFO] Number of GPUs: 4
+[INFO] GPU 0: NVIDIA A100-SXM4-80GB
+[INFO] GPU 0 Memory: 84.97 GB
+[INFO] GPU 1: NVIDIA A100-SXM4-80GB
+[INFO] GPU 1 Memory: 84.97 GB
+[INFO] GPU 2: NVIDIA A100-SXM4-80GB
+[INFO] GPU 2 Memory: 84.97 GB
+[INFO] GPU 3: NVIDIA A100-SXM4-80GB
+[INFO] GPU 3 Memory: 84.97 GB
+[INFO] Loading model deepseek-ai/DeepSeek-R1-Distill-Llama-70B...
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:11<02:56, 11.04s/it]Loading checkpoint shards:  12%|█▏        | 2/17 [00:19<02:26,  9.78s/it]Loading checkpoint shards:  18%|█▊        | 3/17 [00:21<01:22,  5.88s/it]Loading checkpoint shards:  24%|██▎       | 4/17 [00:24<01:05,  5.02s/it]Loading checkpoint shards:  29%|██▉       | 5/17 [00:28<00:54,  4.52s/it]Loading checkpoint shards:  35%|███▌      | 6/17 [00:39<01:13,  6.64s/it]Loading checkpoint shards:  41%|████      | 7/17 [00:41<00:52,  5.28s/it]Loading checkpoint shards:  47%|████▋     | 8/17 [00:48<00:51,  5.74s/it]Loading checkpoint shards:  53%|█████▎    | 9/17 [01:00<01:02,  7.81s/it]Loading checkpoint shards:  59%|█████▉    | 10/17 [01:16<01:11, 10.23s/it]Loading checkpoint shards:  65%|██████▍   | 11/17 [01:18<00:46,  7.82s/it]Loading checkpoint shards:  71%|███████   | 12/17 [01:21<00:30,  6.16s/it]Loading checkpoint shards:  76%|███████▋  | 13/17 [01:28<00:26,  6.63s/it]Loading checkpoint shards:  82%|████████▏ | 14/17 [01:45<00:28,  9.55s/it]Loading checkpoint shards:  88%|████████▊ | 15/17 [01:49<00:15,  7.88s/it]Loading checkpoint shards:  94%|█████████▍| 16/17 [01:51<00:06,  6.23s/it]Loading checkpoint shards: 100%|██████████| 17/17 [01:54<00:00,  5.35s/it]Loading checkpoint shards: 100%|██████████| 17/17 [01:54<00:00,  6.76s/it]
+[INFO] Model distributed across devices: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 0, 'model.layers.17': 0, 'model.layers.18': 0, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 2, 'model.layers.41': 2, 'model.layers.42': 2, 'model.layers.43': 2, 'model.layers.44': 2, 'model.layers.45': 2, 'model.layers.46': 2, 'model.layers.47': 2, 'model.layers.48': 2, 'model.layers.49': 2, 'model.layers.50': 2, 'model.layers.51': 2, 'model.layers.52': 2, 'model.layers.53': 2, 'model.layers.54': 2, 'model.layers.55': 2, 'model.layers.56': 2, 'model.layers.57': 2, 'model.layers.58': 2, 'model.layers.59': 2, 'model.layers.60': 2, 'model.layers.61': 3, 'model.layers.62': 3, 'model.layers.63': 3, 'model.layers.64': 3, 'model.layers.65': 3, 'model.layers.66': 3, 'model.layers.67': 3, 'model.layers.68': 3, 'model.layers.69': 3, 'model.layers.70': 3, 'model.layers.71': 3, 'model.layers.72': 3, 'model.layers.73': 3, 'model.layers.74': 3, 'model.layers.75': 3, 'model.layers.76': 3, 'model.layers.77': 3, 'model.layers.78': 3, 'model.layers.79': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+[INFO] Using model: deepseek-ai/DeepSeek-R1-Distill-Llama-70B
+
+Response:
+
+
+**Subject:** Urgent: Help Save Polar Bears Before It’s Too Late  
+
+Dear [Recipient's Name],  
+
+Imagine a world without the majestic polar bear roaming the Arctic. It’s a heartbreaking reality we’re dangerously close to unless we act NOW.  
+
+Right now, polar bears are battling the harshest conditions imaginable due to climate change. Their icy homes are melting at an alarming rate, leaving them stranded and starving. Mothers are struggling to feed their cubs, and entire populations are teetering on the brink of extinction. This isn’t just an environmental crisis—it’s a moral one.  
+
+At the University of Sheffield, our team of scientists and researchers is leading groundbreaking efforts to protect polar bears and their habitats. From studying the impact of melting sea ice to advocating for global climate policies, we’re working tirelessly to ensure these incredible creatures have a future. But we can’t do it alone—we need your urgent support.  
+
+Here’s the truth: corporate greed and political inaction are accelerating the destruction of polar bear habitats. Oil drilling, deforestation, and carbon emissions are pushing these animals closer to extinction every day. But together, we can fight back. Your donation today will directly fund critical research, conservation efforts, and advocacy campaigns to protect polar bears and their fragile ecosystems.  
+
+Every pound you give brings us one step closer to saving polar bears. Here’s how your support makes a difference:  
+- **£50** helps fund vital research into polar bear behavior and habitat preservation.  
+- **£100** supports our advocacy work to push governments and corporations to act on climate change.  
+- **£250** contributes to emergency conservation efforts to protect polar bears in the most vulnerable regions.  
+
+This isn’t just about polar bears—it’s about preserving the health of our planet for future generations. Will you stand with us in this fight?  
+
+The clock is ticking. Polar bears don’t have time for delays, and neither do we. Your generosity today is their only hope for tomorrow.  
+
+**ACT NOW:** [Donate Here to Save Polar Bears]  
+
+Together, we can rewrite the story of polar bears—one where they thrive, not vanish. Thank you for being a champion for these incredible animals. Your support means everything.  
+
+With gratitude,  
+
+[Your Name]  
+[Your Position]  
+University of Sheffield  
+Polar Bears Rescue Initiative  
+
+P.S. Every donation, no matter the size, brings us closer to saving polar bears. Please don’t wait—act now before it’s too late.
+
+[INFO] deepseek-ai/DeepSeek-R1-Distill-Llama-70B took: 130.34 seconds for response
+[INFO] Generated 1127 tokens at 8.65 tokens/sec
+
+
+[INFO] CUDA available: True
+[INFO] Number of GPUs: 4
+[INFO] GPU 0: NVIDIA A100-SXM4-80GB
+[INFO] GPU 0 Memory: 84.97 GB
+[INFO] GPU 1: NVIDIA A100-SXM4-80GB
+[INFO] GPU 1 Memory: 84.97 GB
+[INFO] GPU 2: NVIDIA A100-SXM4-80GB
+[INFO] GPU 2 Memory: 84.97 GB
+[INFO] GPU 3: NVIDIA A100-SXM4-80GB
+[INFO] GPU 3 Memory: 84.97 GB
+[INFO] Loading model unsloth/Llama-3.3-70B-Instruct...
+Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/30 [00:11<05:37, 11.65s/it]Loading checkpoint shards:   7%|▋         | 2/30 [00:15<03:11,  6.84s/it]Loading checkpoint shards:  10%|█         | 3/30 [00:18<02:16,  5.06s/it]Loading checkpoint shards:  13%|█▎        | 4/30 [00:19<01:33,  3.59s/it]Loading checkpoint shards:  17%|█▋        | 5/30 [00:20<01:08,  2.75s/it]Loading checkpoint shards:  20%|██        | 6/30 [00:21<00:53,  2.24s/it]Loading checkpoint shards:  23%|██▎       | 7/30 [00:25<01:02,  2.72s/it]Loading checkpoint shards:  27%|██▋       | 8/30 [00:26<00:50,  2.28s/it]Loading checkpoint shards:  30%|███       | 9/30 [00:28<00:41,  1.98s/it]Loading checkpoint shards:  33%|███▎      | 10/30 [00:35<01:09,  3.49s/it]Loading checkpoint shards:  37%|███▋      | 11/30 [00:39<01:09,  3.67s/it]Loading checkpoint shards:  40%|████      | 12/30 [00:43<01:11,  3.96s/it]Loading checkpoint shards:  43%|████▎     | 13/30 [00:47<01:03,  3.73s/it]Loading checkpoint shards:  47%|████▋     | 14/30 [00:51<01:03,  3.99s/it]Loading checkpoint shards:  50%|█████     | 15/30 [00:57<01:06,  4.43s/it]Loading checkpoint shards:  53%|█████▎    | 16/30 [01:08<01:32,  6.60s/it]Loading checkpoint shards:  57%|█████▋    | 17/30 [01:15<01:25,  6.61s/it]Loading checkpoint shards:  60%|██████    | 18/30 [01:20<01:12,  6.08s/it]Loading checkpoint shards:  63%|██████▎   | 19/30 [01:21<00:51,  4.73s/it]Loading checkpoint shards:  67%|██████▋   | 20/30 [01:29<00:56,  5.66s/it]Loading checkpoint shards:  70%|███████   | 21/30 [01:36<00:53,  5.98s/it]Loading checkpoint shards:  73%|███████▎  | 22/30 [01:44<00:52,  6.54s/it]Loading checkpoint shards:  77%|███████▋  | 23/30 [01:49<00:43,  6.27s/it]Loading checkpoint shards:  80%|████████  | 24/30 [02:01<00:47,  7.89s/it]Loading checkpoint shards:  83%|████████▎ | 25/30 [02:04<00:32,  6.44s/it]Loading checkpoint shards:  87%|████████▋ | 26/30 [02:05<00:19,  4.88s/it]Loading checkpoint shards:  90%|█████████ | 27/30 [02:07<00:11,  3.79s/it]Loading checkpoint shards:  93%|█████████▎| 28/30 [02:17<00:11,  5.84s/it]Loading checkpoint shards:  97%|█████████▋| 29/30 [02:20<00:04,  4.89s/it]Loading checkpoint shards: 100%|██████████| 30/30 [02:21<00:00,  3.66s/it]Loading checkpoint shards: 100%|██████████| 30/30 [02:21<00:00,  4.71s/it]
+[INFO] Model distributed across devices: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 0, 'model.layers.17': 0, 'model.layers.18': 0, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 2, 'model.layers.41': 2, 'model.layers.42': 2, 'model.layers.43': 2, 'model.layers.44': 2, 'model.layers.45': 2, 'model.layers.46': 2, 'model.layers.47': 2, 'model.layers.48': 2, 'model.layers.49': 2, 'model.layers.50': 2, 'model.layers.51': 2, 'model.layers.52': 2, 'model.layers.53': 2, 'model.layers.54': 2, 'model.layers.55': 2, 'model.layers.56': 2, 'model.layers.57': 2, 'model.layers.58': 2, 'model.layers.59': 2, 'model.layers.60': 2, 'model.layers.61': 3, 'model.layers.62': 3, 'model.layers.63': 3, 'model.layers.64': 3, 'model.layers.65': 3, 'model.layers.66': 3, 'model.layers.67': 3, 'model.layers.68': 3, 'model.layers.69': 3, 'model.layers.70': 3, 'model.layers.71': 3, 'model.layers.72': 3, 'model.layers.73': 3, 'model.layers.74': 3, 'model.layers.75': 3, 'model.layers.76': 3, 'model.layers.77': 3, 'model.layers.78': 3, 'model.layers.79': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+[INFO] Using model: unsloth/Llama-3.3-70B-Instruct
+
+Response:
+system
+
+Cutting Knowledge Date: December 2023
+Today Date: 26 Jul 2024
+
+user
+
+## Instruction:
+
+Write a persuasive and engaging Polar Bears Rescue by University of Sheffield email that motivates recipients to take immediate action. 
+The email should start with a strong, attention-grabbing opening that establishes urgency and emotional connection to Polar Bears Rescue by University of Sheffield. 
+It should use vivid storytelling or a localized approach (if applicable) to highlight why the recipient's support is needed now.
+
+Tailor the tone and structure depending on the objective:  
+
+- **For donation requests:** Emphasize the severity of the crisis related to Polar Bears Rescue by University of Sheffield (e.g., climate change, human rights violations, endangered wildlife, or marginalized communities) and make it clear that donor support is critical for fighting back. 
+Introduce the obstacle (corporate greed, political inaction, environmental destruction) and position the recipient as the hero who can help overcome it. End with a direct, compelling call to action that reinforces urgency.  
+
+- **For volunteer recruitment:** Focus on community impact and inclusivity. Highlight opportunities to get involved in Polar Bears Rescue by University of Sheffield, making it clear how volunteers can contribute (e.g., fundraising events, advocacy work, or community engagement). 
+Use an inviting and enthusiastic tone, emphasizing how easy and rewarding it is to participate. Provide clear next steps, such as sign-up links, contact information, or deadlines.  
+
+In either case, the email should make the recipient feel empowered and essential to Polar Bears Rescue by University of Sheffield. Keep the message concise (400-600 words), emotionally compelling, and action-oriented. 
+Ensure that the closing leaves a lasting impression, thanking the recipient and reinforcing their role in making a difference.
+
+## Example:
+
+Defender,
+
+Polar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!
+Critical habitat for polar bears is threatened by Big Oil’s planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive – reckless oil development could be the final nail in the coffin for the region’s declining bear population.
+Your representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!
+
+TAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!
+
+Friend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.
+But polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals – about half as many bears as three decades ago.
+Oil exploration on the Refuge’s coastal plain is a direct threat to these bears’ survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears’ snow caves to collapse.
+Don’t let polar bears die for Big Oil’s profits. Support legislation to keep these bears safe!
+
+The Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge’s coastal plain to ensure denning mothers and cubs are protected.
+Congress needs to do what the Trump administration won’t. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.
+Thank you in advance for your dedication to protecting wildlife.
+
+Sincerely,
+[Name]
+[Position]
+[Company]assistant
+
+Subject: Urgent: Help Us Save the Polar Bears of the Arctic
+
+Dear Defender of the Wild,
+
+Imagine a world where polar bears roam free, their icy habitats untouched and pristine. But sadly, that world is disappearing before our eyes. Climate change, driven by human activities, is melting the Arctic ice at an alarming rate, leaving polar bears without a home. The University of Sheffield's Polar Bears Rescue initiative is racing against time to protect these majestic creatures, and we urgently need your support.
+
+As I write this, polar bears are struggling to find food, shelter, and breeding grounds. The consequences of inaction will be catastrophic: malnutrition, reduced reproduction rates, and eventually, extinction. It's a grim reality that we cannot ignore. The science is clear: human-induced climate change is the primary driver of this crisis, and it's up to us to act.
+
+That's why the University of Sheffield has launched the Polar Bears Rescue initiative, a comprehensive program aimed at mitigating the effects of climate change on polar bear populations. Our team of experts is working tirelessly to develop innovative solutions, from reducing carbon emissions to preserving Arctic habitats. However, we cannot do it alone. We need your help to overcome the obstacles that stand in our way.
+
+Corporate greed, political inaction, and environmental destruction are just a few of the challenges we face. But together, we can overcome them. Your donation will be used to support cutting-edge research, conservation efforts, and community engagement initiatives. Every contribution, no matter how small, brings us closer to our goal of protecting polar bears and their habitats.
+
+Here are some ways your donation can make a difference:
+
+* $10: Supports research into the impacts of climate change on polar bear behavior and ecology
+* $50: Helps develop educational programs for local communities, promoting coexistence with polar bears
+* $100: Contributes to the creation of protected areas, safeguarding polar bear habitats
+
+The clock is ticking. We have a narrow window of opportunity to act, and every moment counts. Will you join us in this fight? Your support is crucial in helping us:
+
+* Conduct vital research into polar bear behavior and ecology
+* Develop effective conservation strategies
+* Engage local communities in polar bear conservation efforts
+
+Take action today and help us ensure the long-term survival of polar bears. Donate now and become a part of our mission to protect these incredible animals.
+
+**Donate Now:** [Insert link]
+
+Every donation, every share, and every voice raised in support of polar bears brings us closer to a future where these magnificent creatures thrive. Thank you for being a defender of the wild and for standing with us in this critical moment.
+
+Together, we can make a difference.
+
+Sincerely,
+
+[Your Name]
+Polar Bears Rescue Team
+University of Sheffield
+
+P.S. Time is running out for polar bears. Please donate today and help us secure their future. [Insert link]
+
+[INFO] unsloth/Llama-3.3-70B-Instruct took: 69.17 seconds for response
+[INFO] Generated 586 tokens at 8.47 tokens/sec
+
+
+[INFO] CUDA available: True
+[INFO] Number of GPUs: 4
+[INFO] GPU 0: NVIDIA A100-SXM4-80GB
+[INFO] GPU 0 Memory: 84.97 GB
+[INFO] GPU 1: NVIDIA A100-SXM4-80GB
+[INFO] GPU 1 Memory: 84.97 GB
+[INFO] GPU 2: NVIDIA A100-SXM4-80GB
+[INFO] GPU 2 Memory: 84.97 GB
+[INFO] GPU 3: NVIDIA A100-SXM4-80GB
+[INFO] GPU 3 Memory: 84.97 GB
+[INFO] Loading model deepseek-ai/DeepSeek-R1-Distill-Llama-70B...
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:08<02:15,  8.47s/it]Loading checkpoint shards:  12%|█▏        | 2/17 [00:15<01:58,  7.88s/it]Loading checkpoint shards:  18%|█▊        | 3/17 [00:17<01:12,  5.21s/it]Loading checkpoint shards:  24%|██▎       | 4/17 [00:28<01:37,  7.47s/it]Loading checkpoint shards:  29%|██▉       | 5/17 [00:43<01:59,  9.98s/it]Loading checkpoint shards:  35%|███▌      | 6/17 [00:51<01:42,  9.29s/it]Loading checkpoint shards:  41%|████      | 7/17 [00:53<01:09,  6.98s/it]Loading checkpoint shards:  47%|████▋     | 8/17 [01:11<01:34, 10.45s/it]Loading checkpoint shards:  53%|█████▎    | 9/17 [01:22<01:26, 10.75s/it]Loading checkpoint shards:  59%|█████▉    | 10/17 [01:38<01:26, 12.35s/it]Loading checkpoint shards:  65%|██████▍   | 11/17 [01:40<00:55,  9.26s/it]Loading checkpoint shards:  71%|███████   | 12/17 [01:43<00:35,  7.12s/it]Loading checkpoint shards:  76%|███████▋  | 13/17 [01:56<00:36,  9.08s/it]Loading checkpoint shards:  82%|████████▏ | 14/17 [02:00<00:22,  7.34s/it]Loading checkpoint shards:  88%|████████▊ | 15/17 [02:16<00:20, 10.14s/it]Loading checkpoint shards:  94%|█████████▍| 16/17 [02:34<00:12, 12.34s/it]Loading checkpoint shards: 100%|██████████| 17/17 [02:42<00:00, 11.23s/it]Loading checkpoint shards: 100%|██████████| 17/17 [02:42<00:00,  9.58s/it]
+[INFO] Model distributed across devices: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 0, 'model.layers.17': 0, 'model.layers.18': 0, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 2, 'model.layers.41': 2, 'model.layers.42': 2, 'model.layers.43': 2, 'model.layers.44': 2, 'model.layers.45': 2, 'model.layers.46': 2, 'model.layers.47': 2, 'model.layers.48': 2, 'model.layers.49': 2, 'model.layers.50': 2, 'model.layers.51': 2, 'model.layers.52': 2, 'model.layers.53': 2, 'model.layers.54': 2, 'model.layers.55': 2, 'model.layers.56': 2, 'model.layers.57': 2, 'model.layers.58': 2, 'model.layers.59': 2, 'model.layers.60': 2, 'model.layers.61': 3, 'model.layers.62': 3, 'model.layers.63': 3, 'model.layers.64': 3, 'model.layers.65': 3, 'model.layers.66': 3, 'model.layers.67': 3, 'model.layers.68': 3, 'model.layers.69': 3, 'model.layers.70': 3, 'model.layers.71': 3, 'model.layers.72': 3, 'model.layers.73': 3, 'model.layers.74': 3, 'model.layers.75': 3, 'model.layers.76': 3, 'model.layers.77': 3, 'model.layers.78': 3, 'model.layers.79': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+[INFO] Using model: deepseek-ai/DeepSeek-R1-Distill-Llama-70B
+
+Response:
+
+
+**Subject:** Urgent: Help Us Save Polar Bears from Extinction  
+
+Dear [Recipient's Name],  
+
+The Arctic ice is melting at an alarming rate, and polar bears are running out of time. Today, I’m reaching out to you with an urgent plea: **will you help us save these majestic creatures before it’s too late?**  
+
+Imagine a mother polar bear, her strength waning as she searches for food on thinning ice. Her cubs cling close, their future uncertain. This heartbreaking scene is becoming all too common. Climate change is pushing polar bears to the brink, and without immediate action, we could lose them forever.  
+
+At the University of Sheffield, our team of scientists is on the front lines of this crisis. We’re conducting critical research to understand the impact of melting sea ice, developing innovative solutions to protect polar bears, and advocating for global policies to combat climate change. But we can’t do it alone.  
+
+Here’s the truth: **every dollar you give today will directly fund our life-saving work.** Whether it’s $25, $50, or $100, your generosity will help us:  
+- Fund cutting-edge research to track polar bear populations and develop conservation strategies.  
+- Support education programs that inspire the next generation of environmental leaders.  
+- Advocate for policies that address the root causes of climate change.  
+
+But time is running out. Polar bears can’t wait. Your gift today will bring us one step closer to ensuring these incredible animals thrive for generations to come.  
+
+Will you join us in this fight? Every moment counts, and every gift matters.  
+
+Click here to make your urgent donation now: [Insert Donation Link]  
+
+Together, we can be the lifeline polar bears so desperately need. Thank you for standing with us during this critical moment.  
+
+With gratitude,  
+[Your Name]  
+[Your Title]  
+Polar Bears Rescue Team  
+University of Sheffield  
+
+P.S. Your support is the hope polar bears need. Please don’t wait—give today and help us save them before it’s too late.
+
+[INFO] deepseek-ai/DeepSeek-R1-Distill-Llama-70B took: 104.37 seconds for response
+[INFO] Generated 901 tokens at 8.63 tokens/sec
+
+
+[INFO] CUDA available: True
+[INFO] Number of GPUs: 4
+[INFO] GPU 0: NVIDIA A100-SXM4-80GB
+[INFO] GPU 0 Memory: 84.97 GB
+[INFO] GPU 1: NVIDIA A100-SXM4-80GB
+[INFO] GPU 1 Memory: 84.97 GB
+[INFO] GPU 2: NVIDIA A100-SXM4-80GB
+[INFO] GPU 2 Memory: 84.97 GB
+[INFO] GPU 3: NVIDIA A100-SXM4-80GB
+[INFO] GPU 3 Memory: 84.97 GB
+[INFO] Loading model unsloth/Llama-3.3-70B-Instruct...
+Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/30 [00:12<06:07, 12.68s/it]Loading checkpoint shards:   7%|▋         | 2/30 [00:19<04:24,  9.46s/it]Loading checkpoint shards:  10%|█         | 3/30 [00:29<04:16,  9.50s/it]Loading checkpoint shards:  13%|█▎        | 4/30 [00:30<02:43,  6.30s/it]Loading checkpoint shards:  17%|█▋        | 5/30 [00:32<01:52,  4.51s/it]Loading checkpoint shards:  20%|██        | 6/30 [00:39<02:10,  5.44s/it]Loading checkpoint shards:  23%|██▎       | 7/30 [00:47<02:23,  6.26s/it]Loading checkpoint shards:  27%|██▋       | 8/30 [00:48<01:44,  4.74s/it]Loading checkpoint shards:  30%|███       | 9/30 [00:56<01:55,  5.52s/it]Loading checkpoint shards:  33%|███▎      | 10/30 [01:02<01:58,  5.93s/it]Loading checkpoint shards:  37%|███▋      | 11/30 [01:10<02:02,  6.46s/it]Loading checkpoint shards:  40%|████      | 12/30 [01:17<02:00,  6.68s/it]Loading checkpoint shards:  43%|████▎     | 13/30 [01:24<01:51,  6.55s/it]Loading checkpoint shards:  47%|████▋     | 14/30 [01:32<01:52,  7.03s/it]Loading checkpoint shards:  50%|█████     | 15/30 [01:40<01:53,  7.55s/it]Loading checkpoint shards:  53%|█████▎    | 16/30 [01:52<02:04,  8.87s/it]Loading checkpoint shards:  57%|█████▋    | 17/30 [02:02<01:57,  9.03s/it]Loading checkpoint shards:  60%|██████    | 18/30 [02:10<01:43,  8.65s/it]Loading checkpoint shards:  63%|██████▎   | 19/30 [02:12<01:15,  6.86s/it]Loading checkpoint shards:  67%|██████▋   | 20/30 [02:22<01:18,  7.80s/it]Loading checkpoint shards:  70%|███████   | 21/30 [02:35<01:22,  9.21s/it]Loading checkpoint shards:  73%|███████▎  | 22/30 [02:42<01:09,  8.68s/it]Loading checkpoint shards:  77%|███████▋  | 23/30 [02:49<00:57,  8.24s/it]Loading checkpoint shards:  80%|████████  | 24/30 [03:02<00:57,  9.56s/it]Loading checkpoint shards:  83%|████████▎ | 25/30 [03:13<00:50, 10.05s/it]Loading checkpoint shards:  87%|████████▋ | 26/30 [03:23<00:39,  9.88s/it]Loading checkpoint shards:  90%|█████████ | 27/30 [03:24<00:21,  7.29s/it]Loading checkpoint shards:  93%|█████████▎| 28/30 [03:34<00:16,  8.05s/it]Loading checkpoint shards:  97%|█████████▋| 29/30 [03:40<00:07,  7.60s/it]Loading checkpoint shards: 100%|██████████| 30/30 [03:44<00:00,  6.29s/it]Loading checkpoint shards: 100%|██████████| 30/30 [03:44<00:00,  7.47s/it]
+[INFO] Model distributed across devices: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 0, 'model.layers.17': 0, 'model.layers.18': 0, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 2, 'model.layers.41': 2, 'model.layers.42': 2, 'model.layers.43': 2, 'model.layers.44': 2, 'model.layers.45': 2, 'model.layers.46': 2, 'model.layers.47': 2, 'model.layers.48': 2, 'model.layers.49': 2, 'model.layers.50': 2, 'model.layers.51': 2, 'model.layers.52': 2, 'model.layers.53': 2, 'model.layers.54': 2, 'model.layers.55': 2, 'model.layers.56': 2, 'model.layers.57': 2, 'model.layers.58': 2, 'model.layers.59': 2, 'model.layers.60': 2, 'model.layers.61': 3, 'model.layers.62': 3, 'model.layers.63': 3, 'model.layers.64': 3, 'model.layers.65': 3, 'model.layers.66': 3, 'model.layers.67': 3, 'model.layers.68': 3, 'model.layers.69': 3, 'model.layers.70': 3, 'model.layers.71': 3, 'model.layers.72': 3, 'model.layers.73': 3, 'model.layers.74': 3, 'model.layers.75': 3, 'model.layers.76': 3, 'model.layers.77': 3, 'model.layers.78': 3, 'model.layers.79': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+[INFO] Using model: unsloth/Llama-3.3-70B-Instruct
+
+Response:
+system
+
+Cutting Knowledge Date: December 2023
+Today Date: 26 Jul 2024
+
+user
+
+## Personality:
+
+You are a persuasive and community-driven email-writing assistant that helps nonprofits, charities, and advocacy groups engage supporters. 
+You will craft emotionally compelling, urgency-driven, and action-oriented messages that inspire people to donate, volunteer, or take action.
+You will ensure that every email feels personal, urgent, and impactful, using storytelling, data, and direct calls to action to inspire supporters.
+
+## Instruction:
+
+Write a persuasive and engaging Polar Bears Rescue by University of Sheffield email that motivates recipients to take immediate action. 
+The email should start with a strong, attention-grabbing opening that establishes urgency and emotional connection to Polar Bears Rescue by University of Sheffield. 
+It should use vivid storytelling or a localized approach (if applicable) to highlight why the recipient's support is needed now.
+
+Tailor the tone and structure depending on the objective:  
+
+- **For donation requests:** Emphasize the severity of the crisis related to Polar Bears Rescue by University of Sheffield (e.g., climate change, human rights violations, endangered wildlife, or marginalized communities) and make it clear that donor support is critical for fighting back. 
+Introduce the obstacle (corporate greed, political inaction, environmental destruction) and position the recipient as the hero who can help overcome it. End with a direct, compelling call to action that reinforces urgency.  
+
+- **For volunteer recruitment:** Focus on community impact and inclusivity. Highlight opportunities to get involved in Polar Bears Rescue by University of Sheffield, making it clear how volunteers can contribute (e.g., fundraising events, advocacy work, or community engagement). 
+Use an inviting and enthusiastic tone, emphasizing how easy and rewarding it is to participate. Provide clear next steps, such as sign-up links, contact information, or deadlines.  
+
+In either case, the email should make the recipient feel empowered and essential to Polar Bears Rescue by University of Sheffield. Keep the message concise (400-600 words), emotionally compelling, and action-oriented. 
+Ensure that the closing leaves a lasting impression, thanking the recipient and reinforcing their role in making a difference.assistant
+
+Subject: Urgent: Help Us Save the Polar Bears from Extinction
+
+Dear fellow animal lovers,
+
+I'm writing to you today with a sense of urgency and desperation. The polar bears at the Arctic are facing an unprecedented crisis, and we need your help to save them. As a valued supporter of the University of Sheffield's Polar Bears Rescue initiative, I'm counting on you to join us in this fight against time.
+
+Climate change is melting the Arctic ice at an alarming rate, leaving polar bears without a home or a chance to survive. The consequences are devastating: malnutrition, starvation, and even death. It's heartbreaking to think that these majestic creatures, which have roamed our planet for thousands of years, might disappear forever if we don't act now.
+
+Our team at the University of Sheffield has been working tirelessly to rescue and rehabilitate polar bears affected by climate change. We've made significant progress, but the scale of the problem is overwhelming. That's where you come in – we need your support to continue our life-saving work.
+
+Every donation, no matter how small, brings us closer to our goal of protecting polar bears and their habitats. Your contribution will help us:
+
+* Rescue and care for orphaned and injured polar bears
+* Conduct vital research to understand the impact of climate change on polar bear populations
+* Advocate for policy changes to reduce carbon emissions and protect the Arctic ecosystem
+
+But time is running out. The Arctic ice is melting at a rate of 13% per decade, and polar bears are running out of time. We urgently need your help to:
+
+* Raise £50,000 to fund our rescue operations and research programs
+* Reach 1,000 new donors to amplify our impact and create a wave of change
+
+Will you be one of the heroes who helps us overcome this crisis? Every pound counts, and every voice matters. Your donation will be used efficiently and effectively to make a tangible difference in the lives of polar bears.
+
+Here's how you can help:
+
+* Donate £25 to provide food and shelter for a rescued polar bear
+* Donate £50 to support our research program and help us better understand the impact of climate change
+* Donate £100 to become a Polar Bear Champion and receive exclusive updates on our work
+
+Click this link to donate now and help us save the polar bears: [insert link]
+
+Or, if you'd like to get involved in a more hands-on way, we're always looking for passionate volunteers to join our team. Whether you can spare a few hours or a few days, your time and energy will be invaluable in helping us spread awareness and raise funds for our cause.
+
+Together, we can make a difference. Together, we can save the polar bears. Please don't hesitate to reach out to me directly if you have any questions or would like to learn more about our work.
+
+Thank you for being part of this journey with us. Your support means the world to us, and to the polar bears who depend on our help.
+
+With gratitude and urgency,
+
+[Your Name]
+Polar Bears Rescue Team, University of Sheffield
+
+P.S. Don't forget to follow us on social media to stay up-to-date on our latest news and updates: [insert links]
+
+[INFO] unsloth/Llama-3.3-70B-Instruct took: 76.05 seconds for response
+[INFO] Generated 651 tokens at 8.56 tokens/sec
+
+
+[INFO] CUDA available: True
+[INFO] Number of GPUs: 4
+[INFO] GPU 0: NVIDIA A100-SXM4-80GB
+[INFO] GPU 0 Memory: 84.97 GB
+[INFO] GPU 1: NVIDIA A100-SXM4-80GB
+[INFO] GPU 1 Memory: 84.97 GB
+[INFO] GPU 2: NVIDIA A100-SXM4-80GB
+[INFO] GPU 2 Memory: 84.97 GB
+[INFO] GPU 3: NVIDIA A100-SXM4-80GB
+[INFO] GPU 3 Memory: 84.97 GB
+[INFO] Loading model deepseek-ai/DeepSeek-R1-Distill-Llama-70B...
+Loading checkpoint shards:   0%|          | 0/17 [00:00<?, ?it/s]Loading checkpoint shards:   6%|▌         | 1/17 [00:10<02:48, 10.55s/it]Loading checkpoint shards:  12%|█▏        | 2/17 [00:25<03:15, 13.03s/it]Loading checkpoint shards:  18%|█▊        | 3/17 [00:27<01:50,  7.92s/it]Loading checkpoint shards:  24%|██▎       | 4/17 [00:40<02:11, 10.10s/it]Loading checkpoint shards:  29%|██▉       | 5/17 [00:55<02:21, 11.76s/it]Loading checkpoint shards:  35%|███▌      | 6/17 [01:08<02:15, 12.28s/it]Loading checkpoint shards:  41%|████      | 7/17 [01:29<02:31, 15.16s/it]Loading checkpoint shards:  47%|████▋     | 8/17 [01:48<02:26, 16.31s/it]Loading checkpoint shards:  53%|█████▎    | 9/17 [02:00<01:59, 14.95s/it]Loading checkpoint shards:  59%|█████▉    | 10/17 [02:15<01:45, 15.06s/it]Loading checkpoint shards:  65%|██████▍   | 11/17 [02:32<01:34, 15.69s/it]Loading checkpoint shards:  71%|███████   | 12/17 [02:49<01:20, 16.05s/it]Loading checkpoint shards:  76%|███████▋  | 13/17 [03:03<01:01, 15.27s/it]Loading checkpoint shards:  82%|████████▏ | 14/17 [03:19<00:47, 15.67s/it]Loading checkpoint shards:  88%|████████▊ | 15/17 [03:34<00:30, 15.29s/it]Loading checkpoint shards:  94%|█████████▍| 16/17 [03:51<00:15, 15.89s/it]Loading checkpoint shards: 100%|██████████| 17/17 [04:07<00:00, 15.81s/it]Loading checkpoint shards: 100%|██████████| 17/17 [04:07<00:00, 14.54s/it]
+[INFO] Model distributed across devices: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 0, 'model.layers.17': 0, 'model.layers.18': 0, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 2, 'model.layers.41': 2, 'model.layers.42': 2, 'model.layers.43': 2, 'model.layers.44': 2, 'model.layers.45': 2, 'model.layers.46': 2, 'model.layers.47': 2, 'model.layers.48': 2, 'model.layers.49': 2, 'model.layers.50': 2, 'model.layers.51': 2, 'model.layers.52': 2, 'model.layers.53': 2, 'model.layers.54': 2, 'model.layers.55': 2, 'model.layers.56': 2, 'model.layers.57': 2, 'model.layers.58': 2, 'model.layers.59': 2, 'model.layers.60': 2, 'model.layers.61': 3, 'model.layers.62': 3, 'model.layers.63': 3, 'model.layers.64': 3, 'model.layers.65': 3, 'model.layers.66': 3, 'model.layers.67': 3, 'model.layers.68': 3, 'model.layers.69': 3, 'model.layers.70': 3, 'model.layers.71': 3, 'model.layers.72': 3, 'model.layers.73': 3, 'model.layers.74': 3, 'model.layers.75': 3, 'model.layers.76': 3, 'model.layers.77': 3, 'model.layers.78': 3, 'model.layers.79': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+[INFO] Using model: deepseek-ai/DeepSeek-R1-Distill-Llama-70B
+
+Response:
+
+
+**Subject:** Urgent: Help Save Polar Bears with the University of Sheffield  
+
+Dear [Recipient's Name],  
+
+Imagine a mother polar bear and her cubs, struggling to find food as the ice melts beneath their paws. This heartbreaking scene is becoming all too common due to climate change. At the University of Sheffield, our Polar Bears Rescue initiative is dedicated to combating this crisis, but we urgently need your help.  
+
+Climate change is ravaging polar bear habitats, with melting ice caps reducing their hunting grounds and threatening their survival. Our researchers are on the front lines, working tirelessly to develop innovative solutions—from tracking devices to conservation strategies—but without adequate funding, their crucial work is at risk.  
+
+Every donation you make brings us closer to safeguarding polar bears. For instance, your contribution could fund a research expedition to monitor polar bear behavior, providing vital insights for conservation efforts. Just last year, donations from supporters like you enabled us to launch a project that reduced habitat disruption in critical areas.  
+
+Your support today can make a real difference. Please consider donating to the Polar Bears Rescue initiative. Every amount counts, and together, we can ensure that polar bears continue to thrive for generations to come.  
+
+Time is running out. Will you join us in this fight?  
+
+With gratitude,  
+[Your Name]  
+[Your Position]  
+University of Sheffield  
+
+---
+
+This email aims to evoke emotion, provide a clear call to action, and illustrate the tangible impact of donations, all while fostering a sense of community and urgency.
+
+[INFO] deepseek-ai/DeepSeek-R1-Distill-Llama-70B took: 111.90 seconds for response
+[INFO] Generated 938 tokens at 8.38 tokens/sec
+
+
+[INFO] CUDA available: True
+[INFO] Number of GPUs: 4
+[INFO] GPU 0: NVIDIA A100-SXM4-80GB
+[INFO] GPU 0 Memory: 84.97 GB
+[INFO] GPU 1: NVIDIA A100-SXM4-80GB
+[INFO] GPU 1 Memory: 84.97 GB
+[INFO] GPU 2: NVIDIA A100-SXM4-80GB
+[INFO] GPU 2 Memory: 84.97 GB
+[INFO] GPU 3: NVIDIA A100-SXM4-80GB
+[INFO] GPU 3 Memory: 84.97 GB
+[INFO] Loading model unsloth/Llama-3.3-70B-Instruct...
+Loading checkpoint shards:   0%|          | 0/30 [00:00<?, ?it/s]Loading checkpoint shards:   3%|▎         | 1/30 [00:11<05:46, 11.94s/it]Loading checkpoint shards:   7%|▋         | 2/30 [00:19<04:22,  9.38s/it]Loading checkpoint shards:  10%|█         | 3/30 [00:29<04:16,  9.51s/it]Loading checkpoint shards:  13%|█▎        | 4/30 [00:38<04:06,  9.49s/it]Loading checkpoint shards:  17%|█▋        | 5/30 [00:47<03:55,  9.42s/it]Loading checkpoint shards:  20%|██        | 6/30 [00:55<03:32,  8.85s/it]Loading checkpoint shards:  23%|██▎       | 7/30 [01:02<03:10,  8.30s/it]Loading checkpoint shards:  27%|██▋       | 8/30 [01:10<03:00,  8.22s/it]Loading checkpoint shards:  30%|███       | 9/30 [01:17<02:43,  7.80s/it]Loading checkpoint shards:  33%|███▎      | 10/30 [01:24<02:29,  7.49s/it]Loading checkpoint shards:  37%|███▋      | 11/30 [01:32<02:26,  7.69s/it]Loading checkpoint shards:  40%|████      | 12/30 [01:39<02:15,  7.54s/it]Loading checkpoint shards:  43%|████▎     | 13/30 [01:46<02:01,  7.16s/it]Loading checkpoint shards:  47%|████▋     | 14/30 [01:54<02:00,  7.55s/it]Loading checkpoint shards:  50%|█████     | 15/30 [02:02<01:56,  7.74s/it]Loading checkpoint shards:  53%|█████▎    | 16/30 [02:14<02:06,  9.01s/it]Loading checkpoint shards:  57%|█████▋    | 17/30 [02:24<02:00,  9.28s/it]Loading checkpoint shards:  60%|██████    | 18/30 [02:32<01:44,  8.72s/it]Loading checkpoint shards:  63%|██████▎   | 19/30 [02:40<01:34,  8.60s/it]Loading checkpoint shards:  67%|██████▋   | 20/30 [02:50<01:29,  8.97s/it]Loading checkpoint shards:  70%|███████   | 21/30 [03:02<01:28,  9.85s/it]Loading checkpoint shards:  73%|███████▎  | 22/30 [03:09<01:13,  9.19s/it]Loading checkpoint shards:  77%|███████▋  | 23/30 [03:17<01:00,  8.61s/it]Loading checkpoint shards:  80%|████████  | 24/30 [03:29<00:58,  9.67s/it]Loading checkpoint shards:  83%|████████▎ | 25/30 [03:45<00:58, 11.62s/it]Loading checkpoint shards:  87%|████████▋ | 26/30 [03:52<00:41, 10.39s/it]Loading checkpoint shards:  90%|█████████ | 27/30 [04:02<00:30, 10.16s/it]Loading checkpoint shards:  93%|█████████▎| 28/30 [04:14<00:21, 10.77s/it]Loading checkpoint shards:  97%|█████████▋| 29/30 [04:21<00:09,  9.51s/it]Loading checkpoint shards: 100%|██████████| 30/30 [04:24<00:00,  7.63s/it]Loading checkpoint shards: 100%|██████████| 30/30 [04:24<00:00,  8.82s/it]
+[INFO] Model distributed across devices: {'model.embed_tokens': 0, 'model.layers.0': 0, 'model.layers.1': 0, 'model.layers.2': 0, 'model.layers.3': 0, 'model.layers.4': 0, 'model.layers.5': 0, 'model.layers.6': 0, 'model.layers.7': 0, 'model.layers.8': 0, 'model.layers.9': 0, 'model.layers.10': 0, 'model.layers.11': 0, 'model.layers.12': 0, 'model.layers.13': 0, 'model.layers.14': 0, 'model.layers.15': 0, 'model.layers.16': 0, 'model.layers.17': 0, 'model.layers.18': 0, 'model.layers.19': 1, 'model.layers.20': 1, 'model.layers.21': 1, 'model.layers.22': 1, 'model.layers.23': 1, 'model.layers.24': 1, 'model.layers.25': 1, 'model.layers.26': 1, 'model.layers.27': 1, 'model.layers.28': 1, 'model.layers.29': 1, 'model.layers.30': 1, 'model.layers.31': 1, 'model.layers.32': 1, 'model.layers.33': 1, 'model.layers.34': 1, 'model.layers.35': 1, 'model.layers.36': 1, 'model.layers.37': 1, 'model.layers.38': 1, 'model.layers.39': 1, 'model.layers.40': 2, 'model.layers.41': 2, 'model.layers.42': 2, 'model.layers.43': 2, 'model.layers.44': 2, 'model.layers.45': 2, 'model.layers.46': 2, 'model.layers.47': 2, 'model.layers.48': 2, 'model.layers.49': 2, 'model.layers.50': 2, 'model.layers.51': 2, 'model.layers.52': 2, 'model.layers.53': 2, 'model.layers.54': 2, 'model.layers.55': 2, 'model.layers.56': 2, 'model.layers.57': 2, 'model.layers.58': 2, 'model.layers.59': 2, 'model.layers.60': 2, 'model.layers.61': 3, 'model.layers.62': 3, 'model.layers.63': 3, 'model.layers.64': 3, 'model.layers.65': 3, 'model.layers.66': 3, 'model.layers.67': 3, 'model.layers.68': 3, 'model.layers.69': 3, 'model.layers.70': 3, 'model.layers.71': 3, 'model.layers.72': 3, 'model.layers.73': 3, 'model.layers.74': 3, 'model.layers.75': 3, 'model.layers.76': 3, 'model.layers.77': 3, 'model.layers.78': 3, 'model.layers.79': 3, 'model.norm': 3, 'model.rotary_emb': 3, 'lm_head': 3}
+
+[INFO] Using model: unsloth/Llama-3.3-70B-Instruct
+
+Response:
+system
+
+Cutting Knowledge Date: December 2023
+Today Date: 26 Jul 2024
+
+user
+
+## Personality:
+
+You are a persuasive and community-driven email-writing assistant that helps nonprofits, charities, and advocacy groups engage supporters. 
+You will craft emotionally compelling, urgency-driven, and action-oriented messages that inspire people to donate, volunteer, or take action.
+You will ensure that every email feels personal, urgent, and impactful, using storytelling, data, and direct calls to action to inspire supporters.
+
+## Instruction:
+
+Write a persuasive and engaging Polar Bears Rescue by University of Sheffield email that motivates recipients to take immediate action. 
+The email should start with a strong, attention-grabbing opening that establishes urgency and emotional connection to Polar Bears Rescue by University of Sheffield. 
+It should use vivid storytelling or a localized approach (if applicable) to highlight why the recipient's support is needed now.
+
+Tailor the tone and structure depending on the objective:  
+
+- **For donation requests:** Emphasize the severity of the crisis related to Polar Bears Rescue by University of Sheffield (e.g., climate change, human rights violations, endangered wildlife, or marginalized communities) and make it clear that donor support is critical for fighting back. 
+Introduce the obstacle (corporate greed, political inaction, environmental destruction) and position the recipient as the hero who can help overcome it. End with a direct, compelling call to action that reinforces urgency.  
+
+- **For volunteer recruitment:** Focus on community impact and inclusivity. Highlight opportunities to get involved in Polar Bears Rescue by University of Sheffield, making it clear how volunteers can contribute (e.g., fundraising events, advocacy work, or community engagement). 
+Use an inviting and enthusiastic tone, emphasizing how easy and rewarding it is to participate. Provide clear next steps, such as sign-up links, contact information, or deadlines.  
+
+In either case, the email should make the recipient feel empowered and essential to Polar Bears Rescue by University of Sheffield. Keep the message concise (400-600 words), emotionally compelling, and action-oriented. 
+Ensure that the closing leaves a lasting impression, thanking the recipient and reinforcing their role in making a difference.
+
+## Example:
+
+Defender,
+
+Polar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!
+Critical habitat for polar bears is threatened by Big Oil’s planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive – reckless oil development could be the final nail in the coffin for the region’s declining bear population.
+Your representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!
+
+TAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!
+
+Friend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.
+But polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals – about half as many bears as three decades ago.
+Oil exploration on the Refuge’s coastal plain is a direct threat to these bears’ survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears’ snow caves to collapse.
+Don’t let polar bears die for Big Oil’s profits. Support legislation to keep these bears safe!
+
+The Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge’s coastal plain to ensure denning mothers and cubs are protected.
+Congress needs to do what the Trump administration won’t. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.
+Thank you in advance for your dedication to protecting wildlife.
+
+Sincerely,
+[Name]
+[Position]
+[Company]assistant
+
+Subject: Urgent: Help Protect Polar Bears from Climate Change Devastation
+
+Dear Fellow Animal Lover,
+
+I'm writing to you today with a sense of urgency and desperation. The polar bears at the University of Sheffield's research program are facing a catastrophic crisis, and their very existence hangs in the balance. As someone who cares deeply about these majestic creatures, I implore you to take immediate action to help us rescue them from the devastating effects of climate change.
+
+Rising temperatures are melting the polar bears' habitats at an alarming rate, leaving them without food, shelter, or a future. The University of Sheffield's team has been working tirelessly to study and protect these incredible animals, but they desperately need our support. Every day counts, and every donation brings us closer to saving the polar bears from extinction.
+
+The science is clear: human activities are driving climate change, and it's up to us to take responsibility for our actions. The polar bears are innocent victims of our addiction to fossil fuels, deforestation, and pollution. It's time for us to act, and we need your help to overcome the obstacles standing in our way. Corporate interests, government inaction, and environmental destruction are all contributing to the decline of polar bear populations. But together, we can fight back.
+
+By donating to the University of Sheffield's Polar Bears Rescue program, you'll be directly supporting:
+
+1. **Critical research**: Our team will continue to study the impacts of climate change on polar bears, identifying effective solutions to mitigate its effects.
+2. **Habitat preservation**: We'll work to protect and restore the polar bears' natural habitats, ensuring they have a safe place to live, hunt, and thrive.
+3. **Community engagement**: We'll educate and empower local communities to become polar bear advocates, promoting coexistence and conservation.
+
+Every gift, no matter the size, brings us closer to our goal of safeguarding the polar bears' future. Your contribution will be used efficiently and effectively to address the most pressing needs of our research and conservation efforts.
+
+**Will you join the fight to save the polar bears?**
+
+Donate now and help us:
+
+* $25: Support a researcher in the field for a day
+* $50: Fund a community outreach program to promote polar bear conservation
+* $100: Contribute to the development of a new habitat restoration project
+
+Click here to donate: [insert link]
+
+Time is running out, and the polar bears need your help now. Your generosity will be the catalyst for change, inspiring others to join the movement. Together, we can make a difference and ensure the long-term survival of these incredible creatures.
+
+On behalf of the University of Sheffield's Polar Bears Rescue team, I thank you for your compassion, urgency, and commitment to protecting our planet's most vulnerable species. Your support will be the beacon of hope that guides us toward a brighter future for polar bears.
+
+Sincerely,
+
+[Your Name]
+Polar Bears Rescue Team
+University of Sheffield
+
+[INFO] unsloth/Llama-3.3-70B-Instruct took: 73.82 seconds for response
+[INFO] Generated 599 tokens at 8.11 tokens/sec
+
+Execution completed successfully!
+GPU status after execution:
+Thu Mar  6 08:38:13 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.144.03             Driver Version: 550.144.03     CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:01:00.0 Off |                    0 |
+| N/A   33C    P0             75W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-SXM4-80GB          On  |   00000000:41:00.0 Off |                    0 |
+| N/A   31C    P0             72W /  500W |       1MiB /  81920MiB |     28%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA A100-SXM4-80GB          On  |   00000000:81:00.0 Off |                    0 |
+| N/A   33C    P0             84W /  500W |       1MiB /  81920MiB |     47%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA A100-SXM4-80GB          On  |   00000000:C1:00.0 Off |                    0 |
+| N/A   32C    P0             84W /  500W |       1MiB /  81920MiB |     90%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Job completed
