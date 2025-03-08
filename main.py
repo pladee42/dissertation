@@ -1,4 +1,4 @@
-from models import ModelInference
+from models.models import ModelInference
 import os
 from argparse import ArgumentParser
 
@@ -53,10 +53,10 @@ def generate_responses(prompt_dict: dict, topic: str, lm_model: str) -> None:
     # Generate responses for each prompt and model
     for model_name, model_id in lm_model.items():
         # Load Model
-        llm = ModelInference(model_id=model_id)
+        llm = ModelInference(model_id=model_id, quantization='fp8')
         for prompt_type, prompt_content in prompt_dict.items():
             prompt_content = prompt_content.replace('[TOPIC]', topic)
-            response = llm.generate(query=prompt_content, model_name=model_name)
+            response = llm.generate(query=prompt_content, model_name=model_name, remove_cot=True)
             file_name = f'{prompt_type}|{model_name}.txt'
 
             # Save the response
@@ -71,17 +71,17 @@ if __name__ == "__main__":
                         default='all', 
                         required=False,
                         help="Select prompt type to use. e.g. 01.txt / all")
-    parser.add_argument("--topic", 
-                        type=str, 
-                        default='Polar Bears Rescue by University of Sheffield', 
-                        required=False,
-                        help="Topic of the email.")
     parser.add_argument("--language_model", 
                         type=str, 
                         default='deepseek-r1-1.5b', 
                         required=False,
                         choices=models_dict.keys(),
                         help="Select languege model to use. e.g. deepseek-r1-1.5b / all")
+    parser.add_argument("--topic", 
+                        type=str, 
+                        default='Polar Bears Rescue by University of Sheffield', 
+                        required=False,
+                        help="Topic of the email.")
     args = parser.parse_args()
     
     prompt_dict = open_prompt_files(args.prompt_mode)

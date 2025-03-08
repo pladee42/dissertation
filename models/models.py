@@ -9,7 +9,10 @@ load_dotenv(override=True)
 os.environ['HF_TOKEN'] = os.getenv('HUGGINGFACE_TOKEN')
 
 class ModelInference:
-    def __init__(self, model_id, dtype="bfloat16", token=None):
+    def __init__(self, 
+                 model_id: str, 
+                 dtype: str = "bfloat16",
+                 quantization: str = None):
         """Initialize the model once and keep it in memory"""
         
         print(f"Loading model {model_id}...")
@@ -19,10 +22,10 @@ class ModelInference:
         self.llm = LLM(
             model=model_id,
             dtype=dtype,
-            download_dir='./models',
+            download_dir='../downloaded_models',
             tensor_parallel_size=torch.cuda.device_count(),
             gpu_memory_utilization=0.95,
-            quantization='fp8',
+            quantization=quantization,
             trust_remote_code=True
         )
         
@@ -30,13 +33,16 @@ class ModelInference:
         self.default_params = SamplingParams(
             temperature=0.7,
             top_p=0.95,
+            repetition_penalty=1.2,
             max_tokens=4096
         )
         
         load_time = time.time() - start_time
         print(f"Model loaded in {load_time:.2f} seconds")
     
-    def format_prompt(self, query, model_name):
+    def format_prompt(self, 
+                      query: str, 
+                      model_name: str) -> str:
         """Format prompt based on model type"""
         
         model_lower = model_name.lower()
@@ -56,7 +62,11 @@ class ModelInference:
         else:
             return f"User: {query}\nAssistant:"
     
-    def generate(self, query, model_name, custom_params=None):
+    def generate(self, 
+                 query: str, 
+                 model_name: str, 
+                 custom_params: dict = None, 
+                 remove_cot: bool = False) -> str:
         """Generate response for a given query"""
         prompt = self.format_prompt(query, model_name)
         params = custom_params if custom_params else self.default_params
@@ -78,7 +88,7 @@ class ModelInference:
         print(f"Generated response in {gen_time:.2f} seconds")
         
         # Remove the Chain of Thought part from DeepSeek's responses
-        if '</think>' in output_text:
+        if remove_cot:
             output_text = output_text.split('</think>\n')[1]
         
         return output_text

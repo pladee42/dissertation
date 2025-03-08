@@ -1,16 +1,18 @@
-# from dissertation.models import chat
+from ..models.models import ModelInference
 import os
 from pathlib import Path
 
-data_folder = Path("dissertation/prompts/")
+data_folder = Path("./prompts/")
 file_to_open = data_folder / "01.txt"
 
 cur_path = os.path.dirname(__file__)
-new_path = os.path.relpath('..', cur_path)
 print(file_to_open)
-print(new_path)
 with open(file_to_open) as f:
     prompt = f.read()
+
+print(prompt)
+
+ModelInference(model_id='deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B')
     
 # with open('dissertation/output/1|deepseek-r1-1.5b.txt') as f:
 #     response = f.read()
