@@ -1,4 +1,4 @@
-from models import chat
+from models import ModelInference
 import os
 from argparse import ArgumentParser
 
@@ -52,11 +52,14 @@ def generate_responses(prompt_dict: dict, topic: str, lm_model: str) -> None:
     
     # Generate responses for each prompt and model
     for model_name, model_id in lm_model.items():
+        # Load Model
+        llm = ModelInference(model_id=model_id)
         for prompt_type, prompt_content in prompt_dict.items():
             prompt_content = prompt_content.replace('[TOPIC]', topic)
-            response = chat(model_id, prompt_content)
+            response = llm.generate(query=prompt_content, model_name=model_name)
             file_name = f'{prompt_type}|{model_name}.txt'
 
+            # Save the response
             with open(f"output/{file_name}", encoding='utf-8', mode='w') as f:
                 f.write(response)
 

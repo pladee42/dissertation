@@ -14,6 +14,7 @@
 # Load required modules
 module load Anaconda3/2024.02-1
 module load CUDA/12.4.0
+module load GCC/12.2.0
 
 # Activate conda environment
 source activate dis-venv3
