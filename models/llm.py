@@ -12,6 +12,7 @@ class ModelInference:
     def __init__(self, 
                  model_id: str, 
                  dtype: str = "bfloat16",
+                 task: str = "generate", # Supported Tasks = {'embed', 'classify', 'generate', 'reward', 'score'}
                  quantization: str = None):
         """Initialize the model once and keep it in memory"""
         
@@ -26,6 +27,7 @@ class ModelInference:
             tensor_parallel_size=torch.cuda.device_count(),
             gpu_memory_utilization=0.95,
             quantization=quantization,
+            task=task,
             trust_remote_code=True
         )
         

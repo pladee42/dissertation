@@ -1,6 +1,8 @@
 from models.llm import ModelInference
 import os
 from argparse import ArgumentParser
+from evaluation.checklist import create_checklist
+from evaluation.judge import generate_scores
 
 models_dict = {
     'deepseek-r1-1.5b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B',
@@ -42,8 +44,10 @@ def open_prompt_files(file_names: str = 'all') -> dict:
     return prompt_dict
     
             
-def generate_responses(prompt_dict: dict, topic: str, lm_model: str) -> None:
+def generate_responses(prompt_dict: dict, topic: str, lm_model: str) -> dict:
     """Generate responses from Selected Language Models"""
+    
+    response_dict = {}
     
     if lm_model == 'all':
         lm_model = models_dict
@@ -62,6 +66,11 @@ def generate_responses(prompt_dict: dict, topic: str, lm_model: str) -> None:
             # Save the response
             with open(f"output/responses/{file_name}", encoding='utf-8', mode='w') as f:
                 f.write(response)
+                
+            response_dict[f"{prompt_type}|{model_name}"] = response
+            
+    return response_dict
+        
 
 if __name__ == "__main__":
     # Argument Parsing from Command Line
@@ -71,22 +80,44 @@ if __name__ == "__main__":
                         default='all', 
                         required=False,
                         help="Select prompt type to use. e.g. 01.txt / all")
+    parser.add_argument("--topic", 
+                        type=str, 
+                        default='Polar Bears Rescue by University of Sheffield', 
+                        required=False,
+                        help="Topic of the email.")
     parser.add_argument("--language_model", 
                         type=str, 
                         default='deepseek-r1-1.5b', 
                         required=False,
                         choices=models_dict.keys(),
                         help="Select languege model to use. e.g. deepseek-r1-1.5b / all")
-    parser.add_argument("--topic", 
+    parser.add_argument("--checklist_generator", 
                         type=str, 
-                        default='Polar Bears Rescue by University of Sheffield', 
+                        default=None, 
                         required=False,
-                        help="Topic of the email.")
+                        choices=models_dict.keys(),
+                        help="Select languege model to generate checklist. e.g. deepseek-r1-1.5b / None")
+    parser.add_argument("--judge", 
+                        type=str, 
+                        default=None, 
+                        required=False,
+                        choices=models_dict.keys(),
+                        help="Select languege model to generate judgement score. e.g. deepseek-r1-1.5b / None")
+
     args = parser.parse_args()
     
     prompt_dict = open_prompt_files(args.prompt_mode)
-    generate_responses(prompt_dict=prompt_dict,
-                       topic=args.topic,
-                       lm_model=args.language_model)
+    response_dict = generate_responses(prompt_dict=prompt_dict,
+                                       topic=args.topic,
+                                       lm_model=args.language_model)
     
-    
+    if args.checklist_generator != None:
+        print('[INFO] Creating Checklist')
+        checklist_dict = create_checklist(response_dict=response_dict, 
+                                          model_id=models_dict[args.checklist_generator],
+                                          topic=args.topic)
+        print('[INFO] Generating Judgement Score')
+        judge_dict = generate_scores(response_dict=response_dict,
+                                     checklist_dict=checklist_dict,
+                                     model_id=models_dict[args.judge],
+                                     topic=args.topic)

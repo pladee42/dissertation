@@ -4,8 +4,8 @@
 #SBATCH --nodes=1
 #SBATCH --partition=gpu
 #SBATCH --qos=gpu
-#SBATCH --gres=gpu:3
-#SBATCH --gpus-per-node=3
+#SBATCH --gres=gpu:4
+#SBATCH --gpus-per-node=4
 #SBATCH --mem=240G
 #SBATCH --output=./log/deepseek_r1_70b_%j.log
 #SBATCH --mail-user=wratthapoom1@sheffield.ac.uk
@@ -34,7 +34,7 @@ nvidia-smi
 
 # Run script without distributed launcher (using built-in model parallelism)
 echo "Running main.py with native model parallelism..."
-python main.py --prompt_mode=01.txt --language_model=deepseek-r1-70b --topic='Polar Bears Rescue by University of Sheffield'
+python -m main --prompt_mode=all --language_model=deepseek-r1-70b --topic='Polar Bears Rescue by University of Sheffield'
 
 # Check execution status
 if [ $? -eq 0 ]; then
