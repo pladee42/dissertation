@@ -23,6 +23,7 @@ source activate dis-venv3
 export PYTHONUNBUFFERED=1
 export CUDA_DEVICE_MAX_CONNECTIONS=1  # For multi-GPU setups
 export TORCH_EXTENSIONS_DIR=$HOME/.cache/torch_extensions
+export VLLM_WORKER_MULTIPROC_METHOD=spawn
 
 # Verify PyTorch installation and print version information
 echo "Verifying PyTorch installation..."

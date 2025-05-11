@@ -1,0 +1,197 @@
+Verifying PyTorch installation...
+PyTorch version: 2.5.1+cu124
+/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: CUDA driver initialization failed, you might not have a CUDA gpu. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+CUDA available: False
+CUDA version: 12.4
+GPU count: 4
+GPU status before execution:
+Mon Mar 10 10:44:37 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.144.03             Driver Version: 550.144.03     CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:01:00.0 Off |                    0 |
+| N/A   32C    P0             62W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-SXM4-80GB          On  |   00000000:41:00.0 Off |                    0 |
+| N/A   31C    P0             70W /  500W |    4305MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA A100-SXM4-80GB          On  |   00000000:81:00.0 Off |                    0 |
+| N/A   31C    P0             59W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA A100-SXM4-80GB          On  |   00000000:C1:00.0 Off |                 ERR! |
+|ERR!  ERR! ERR!             ERR! / ERR!  |    4305MiB /  81920MiB |    ERR!      Default |
+|                                         |                        |                 ERR! |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    3   N/A  N/A      6710      C   .../acs23mc/.conda/envs/nlp/bin/python       4294MiB |
++-----------------------------------------------------------------------------------------+
+Running main.py with native model parallelism...
+INFO 03-10 10:47:27 __init__.py:190] Automatically detected platform cuda.
+Opening file: 01.txt
+Opening file: 02.txt
+Opening file: 03.txt
+Opening file: 04.txt
+Loading model deepseek-ai/DeepSeek-R1-Distill-Llama-70B...
+INFO 03-10 10:48:42 config.py:1401] Defaulting to use mp for distributed inference
+WARNING 03-10 10:48:42 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-10 10:48:42 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: CUDA driver initialization failed, you might not have a CUDA gpu. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+  return torch._C._cuda_getDeviceCount() > 0
+INFO 03-10 10:48:58 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='deepseek-ai/DeepSeek-R1-Distill-Llama-70B', speculative_config=None, tokenizer='deepseek-ai/DeepSeek-R1-Distill-Llama-70B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir='../downloaded_models', load_format=LoadFormat.AUTO, tensor_parallel_size=4, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=fp8, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=deepseek-ai/DeepSeek-R1-Distill-Llama-70B, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-10 10:49:01 custom_cache_manager.py:19] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager
+INFO 03-10 10:49:03 cuda.py:230] Using Flash Attention backend.
+INFO 03-10 10:49:14 __init__.py:190] Automatically detected platform cuda.
+INFO 03-10 10:49:14 __init__.py:190] Automatically detected platform cuda.
+INFO 03-10 10:49:14 __init__.py:190] Automatically detected platform cuda.
+[1;36m(VllmWorkerProcess pid=26261)[0;0m INFO 03-10 10:49:33 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=26262)[0;0m INFO 03-10 10:49:33 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=26263)[0;0m INFO 03-10 10:49:33 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=26263)[0;0m /mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: CUDA driver initialization failed, you might not have a CUDA gpu. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+[1;36m(VllmWorkerProcess pid=26263)[0;0m   return torch._C._cuda_getDeviceCount() > 0
+[1;36m(VllmWorkerProcess pid=26262)[0;0m /mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: CUDA driver initialization failed, you might not have a CUDA gpu. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+[1;36m(VllmWorkerProcess pid=26262)[0;0m   return torch._C._cuda_getDeviceCount() > 0
+[1;36m(VllmWorkerProcess pid=26261)[0;0m /mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/torch/cuda/__init__.py:129: UserWarning: CUDA initialization: CUDA driver initialization failed, you might not have a CUDA gpu. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
+[1;36m(VllmWorkerProcess pid=26261)[0;0m   return torch._C._cuda_getDeviceCount() > 0
+[1;36m(VllmWorkerProcess pid=26263)[0;0m INFO 03-10 10:50:07 cuda.py:230] Using Flash Attention backend.
+[1;36m(VllmWorkerProcess pid=26262)[0;0m INFO 03-10 10:50:07 cuda.py:230] Using Flash Attention backend.
+[1;36m(VllmWorkerProcess pid=26261)[0;0m INFO 03-10 10:50:07 cuda.py:230] Using Flash Attention backend.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/parscratch/users/liq23wr/dissertation/main.py", line 88, in <module>
+    generate_responses(prompt_dict=prompt_dict,
+  File "/mnt/parscratch/users/liq23wr/dissertation/main.py", line 56, in generate_responses
+    llm = ModelInference(model_id=model_id, quantization='fp8')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/parscratch/users/liq23wr/dissertation/models/llm.py", line 23, in __init__
+    self.llm = LLM(
+               ^^^^
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/utils.py", line 1051, in inner
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/entrypoints/llm.py", line 242, in __init__
+    self.llm_engine = self.engine_class.from_engine_args(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/engine/llm_engine.py", line 484, in from_engine_args
+[1;36m(VllmWorkerProcess pid=26263)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242] Exception in worker VllmWorkerProcess while processing method init_device.
+[1;36m(VllmWorkerProcess pid=26263)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242] Traceback (most recent call last):
+[1;36m(VllmWorkerProcess pid=26263)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]   File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/executor/multiproc_worker_utils.py", line 236, in _run_worker_process
+[1;36m(VllmWorkerProcess pid=26263)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]     output = run_method(worker, method, args, kwargs)
+[1;36m(VllmWorkerProcess pid=26263)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=26263)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]   File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/utils.py", line 2220, in run_method
+[1;36m(VllmWorkerProcess pid=26263)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]     return func(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=26263)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]            ^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=26263)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]   File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/worker/worker.py", line 155, in init_device
+[1;36m(VllmWorkerProcess pid=26263)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]     torch.cuda.set_device(self.device)
+[1;36m(VllmWorkerProcess pid=26263)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]   File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/torch/cuda/__init__.py", line 478, in set_device
+[1;36m(VllmWorkerProcess pid=26263)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]     torch._C._cuda_setDevice(device)
+[1;36m(VllmWorkerProcess pid=26263)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]   File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/torch/cuda/__init__.py", line 319, in _lazy_init
+[1;36m(VllmWorkerProcess pid=26263)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]     torch._C._cuda_init()
+[1;36m(VllmWorkerProcess pid=26263)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242] RuntimeError: CUDA driver initialization failed, you might not have a CUDA gpu.
+[1;36m(VllmWorkerProcess pid=26261)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242] Exception in worker VllmWorkerProcess while processing method init_device.
+[1;36m(VllmWorkerProcess pid=26261)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242] Traceback (most recent call last):
+[1;36m(VllmWorkerProcess pid=26261)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]   File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/executor/multiproc_worker_utils.py", line 236, in _run_worker_process
+[1;36m(VllmWorkerProcess pid=26261)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]     output = run_method(worker, method, args, kwargs)
+[1;36m(VllmWorkerProcess pid=26261)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=26261)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]   File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/utils.py", line 2220, in run_method
+[1;36m(VllmWorkerProcess pid=26261)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]     return func(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=26261)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]            ^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=26261)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]   File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/worker/worker.py", line 155, in init_device
+[1;36m(VllmWorkerProcess pid=26261)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]     torch.cuda.set_device(self.device)
+[1;36m(VllmWorkerProcess pid=26261)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]   File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/torch/cuda/__init__.py", line 478, in set_device
+[1;36m(VllmWorkerProcess pid=26261)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]     torch._C._cuda_setDevice(device)
+[1;36m(VllmWorkerProcess pid=26261)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]   File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/torch/cuda/__init__.py", line 319, in _lazy_init
+[1;36m(VllmWorkerProcess pid=26261)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]     torch._C._cuda_init()
+[1;36m(VllmWorkerProcess pid=26261)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242] RuntimeError: CUDA driver initialization failed, you might not have a CUDA gpu.
+[1;36m(VllmWorkerProcess pid=26262)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242] Exception in worker VllmWorkerProcess while processing method init_device.
+[1;36m(VllmWorkerProcess pid=26262)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242] Traceback (most recent call last):
+[1;36m(VllmWorkerProcess pid=26262)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]   File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/executor/multiproc_worker_utils.py", line 236, in _run_worker_process
+[1;36m(VllmWorkerProcess pid=26262)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]     output = run_method(worker, method, args, kwargs)
+[1;36m(VllmWorkerProcess pid=26262)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=26262)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]   File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/utils.py", line 2220, in run_method
+[1;36m(VllmWorkerProcess pid=26262)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]     return func(*args, **kwargs)
+[1;36m(VllmWorkerProcess pid=26262)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]            ^^^^^^^^^^^^^^^^^^^^^
+[1;36m(VllmWorkerProcess pid=26262)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]   File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/worker/worker.py", line 155, in init_device
+[1;36m(VllmWorkerProcess pid=26262)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]     torch.cuda.set_device(self.device)
+[1;36m(VllmWorkerProcess pid=26262)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]   File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/torch/cuda/__init__.py", line 478, in set_device
+[1;36m(VllmWorkerProcess pid=26262)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]     torch._C._cuda_setDevice(device)
+[1;36m(VllmWorkerProcess pid=26262)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]   File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/torch/cuda/__init__.py", line 319, in _lazy_init
+[1;36m(VllmWorkerProcess pid=26262)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242]     torch._C._cuda_init()
+[1;36m(VllmWorkerProcess pid=26262)[0;0m ERROR 03-10 10:50:08 multiproc_worker_utils.py:242] RuntimeError: CUDA driver initialization failed, you might not have a CUDA gpu.
+    engine = cls(
+             ^^^^
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/engine/llm_engine.py", line 273, in __init__
+    self.model_executor = executor_class(vllm_config=vllm_config, )
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/executor/executor_base.py", line 262, in __init__
+    super().__init__(*args, **kwargs)
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/executor/executor_base.py", line 51, in __init__
+    self._init_executor()
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/executor/mp_distributed_executor.py", line 124, in _init_executor
+    self._run_workers("init_device")
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/executor/mp_distributed_executor.py", line 185, in _run_workers
+    driver_worker_output = run_method(self.driver_worker, sent_method,
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/utils.py", line 2220, in run_method
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/worker/worker.py", line 155, in init_device
+    torch.cuda.set_device(self.device)
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/torch/cuda/__init__.py", line 478, in set_device
+    torch._C._cuda_setDevice(device)
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/torch/cuda/__init__.py", line 319, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: CUDA driver initialization failed, you might not have a CUDA gpu.
+ERROR 03-10 10:50:08 multiproc_worker_utils.py:124] Worker VllmWorkerProcess pid 26263 died, exit code: -15
+INFO 03-10 10:50:08 multiproc_worker_utils.py:128] Killing local vLLM worker processes
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+Execution failed with error code 1
+GPU status after execution:
+Mon Mar 10 10:50:14 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.144.03             Driver Version: 550.144.03     CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:01:00.0 Off |                    0 |
+| N/A   32C    P0             62W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-SXM4-80GB          On  |   00000000:41:00.0 Off |                    0 |
+| N/A   31C    P0             70W /  500W |    4305MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA A100-SXM4-80GB          On  |   00000000:81:00.0 Off |                    0 |
+| N/A   31C    P0             59W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA A100-SXM4-80GB          On  |   00000000:C1:00.0 Off |                 ERR! |
+|ERR!  ERR! ERR!             ERR! / ERR!  |    4305MiB /  81920MiB |    ERR!      Default |
+|                                         |                        |                 ERR! |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    3   N/A  N/A      6710      C   .../acs23mc/.conda/envs/nlp/bin/python       4294MiB |
++-----------------------------------------------------------------------------------------+
+Job completed

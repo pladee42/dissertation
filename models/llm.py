@@ -90,7 +90,7 @@ class ModelInference:
         print(f"Generated response in {gen_time:.2f} seconds")
         
         # Remove the Chain of Thought part from DeepSeek's responses
-        if remove_cot:
+        if remove_cot and '</think>' in output_text :
             output_text = output_text.split('</think>\n')[1]
         
         return output_text

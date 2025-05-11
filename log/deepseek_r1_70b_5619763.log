@@ -1,0 +1,212 @@
+Verifying PyTorch installation...
+PyTorch version: 2.5.1+cu124
+CUDA available: True
+CUDA version: 12.4
+GPU count: 4
+GPU status before execution:
+Tue Mar 11 06:18:18 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.144.03             Driver Version: 550.144.03     CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:01:00.0 Off |                    0 |
+| N/A   32C    P0             58W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-SXM4-80GB          On  |   00000000:41:00.0 Off |                    0 |
+| N/A   30C    P0             58W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA A100-SXM4-80GB          On  |   00000000:81:00.0 Off |                    0 |
+| N/A   32C    P0             60W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA A100-SXM4-80GB          On  |   00000000:C1:00.0 Off |                    0 |
+| N/A   30C    P0             61W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Running main.py with native model parallelism...
+INFO 03-11 06:20:03 __init__.py:190] Automatically detected platform cuda.
+Opening file: 01.txt
+Opening file: 02.txt
+Opening file: 03.txt
+Opening file: 04.txt
+Loading model deepseek-ai/DeepSeek-R1-Distill-Llama-70B...
+INFO 03-11 06:20:49 config.py:1401] Defaulting to use mp for distributed inference
+WARNING 03-11 06:20:49 arg_utils.py:1135] Chunked prefill is enabled by default for models with max_model_len > 32K. Currently, chunked prefill might not work with some features or models. If you encounter any issues, please disable chunked prefill by setting --enable-chunked-prefill=False.
+INFO 03-11 06:20:49 config.py:1556] Chunked prefill is enabled with max_num_batched_tokens=2048.
+INFO 03-11 06:20:54 llm_engine.py:234] Initializing a V0 LLM engine (v0.7.2) with config: model='deepseek-ai/DeepSeek-R1-Distill-Llama-70B', speculative_config=None, tokenizer='deepseek-ai/DeepSeek-R1-Distill-Llama-70B', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=131072, download_dir='../downloaded_models', load_format=LoadFormat.AUTO, tensor_parallel_size=4, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=fp8, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='xgrammar'), observability_config=ObservabilityConfig(otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=0, served_model_name=deepseek-ai/DeepSeek-R1-Distill-Llama-70B, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=False, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"splitting_ops":[],"compile_sizes":[],"cudagraph_capture_sizes":[256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":256}, use_cached_outputs=False, 
+INFO 03-11 06:20:56 custom_cache_manager.py:19] Setting Triton cache manager to: vllm.triton_utils.custom_cache_manager:CustomCacheManager
+INFO 03-11 06:20:57 cuda.py:230] Using Flash Attention backend.
+INFO 03-11 06:21:08 __init__.py:190] Automatically detected platform cuda.
+INFO 03-11 06:21:08 __init__.py:190] Automatically detected platform cuda.
+INFO 03-11 06:21:08 __init__.py:190] Automatically detected platform cuda.
+[1;36m(VllmWorkerProcess pid=38922)[0;0m INFO 03-11 06:21:12 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=38924)[0;0m INFO 03-11 06:21:12 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=38923)[0;0m INFO 03-11 06:21:12 multiproc_worker_utils.py:229] Worker ready; awaiting tasks
+[1;36m(VllmWorkerProcess pid=38924)[0;0m INFO 03-11 06:21:13 cuda.py:230] Using Flash Attention backend.
+[1;36m(VllmWorkerProcess pid=38922)[0;0m INFO 03-11 06:21:13 cuda.py:230] Using Flash Attention backend.
+[1;36m(VllmWorkerProcess pid=38923)[0;0m INFO 03-11 06:21:13 cuda.py:230] Using Flash Attention backend.
+[1;36m(VllmWorkerProcess pid=38923)[0;0m INFO 03-11 06:21:15 utils.py:950] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=38923)[0;0m INFO 03-11 06:21:15 pynccl.py:69] vLLM is using nccl==2.21.5
+[1;36m(VllmWorkerProcess pid=38922)[0;0m INFO 03-11 06:21:15 utils.py:950] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=38922)[0;0m INFO 03-11 06:21:15 pynccl.py:69] vLLM is using nccl==2.21.5
+INFO 03-11 06:21:15 utils.py:950] Found nccl from library libnccl.so.2
+INFO 03-11 06:21:15 pynccl.py:69] vLLM is using nccl==2.21.5
+[1;36m(VllmWorkerProcess pid=38924)[0;0m INFO 03-11 06:21:15 utils.py:950] Found nccl from library libnccl.so.2
+[1;36m(VllmWorkerProcess pid=38924)[0;0m INFO 03-11 06:21:15 pynccl.py:69] vLLM is using nccl==2.21.5
+INFO 03-11 06:21:23 custom_all_reduce_utils.py:206] generating GPU P2P access cache in /users/liq23wr/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3.json
+[1;36m(VllmWorkerProcess pid=38922)[0;0m INFO 03-11 06:21:43 custom_all_reduce_utils.py:244] reading GPU P2P access cache from /users/liq23wr/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3.json
+[1;36m(VllmWorkerProcess pid=38924)[0;0m INFO 03-11 06:21:43 custom_all_reduce_utils.py:244] reading GPU P2P access cache from /users/liq23wr/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3.json
+[1;36m(VllmWorkerProcess pid=38923)[0;0m INFO 03-11 06:21:43 custom_all_reduce_utils.py:244] reading GPU P2P access cache from /users/liq23wr/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3.json
+INFO 03-11 06:21:43 custom_all_reduce_utils.py:244] reading GPU P2P access cache from /users/liq23wr/.cache/vllm/gpu_p2p_access_cache_for_0,1,2,3.json
+INFO 03-11 06:21:43 shm_broadcast.py:258] vLLM message queue communication handle: Handle(connect_ip='127.0.0.1', local_reader_ranks=[1, 2, 3], buffer_handle=(3, 4194304, 6, 'psm_832d88f4'), local_subscribe_port=36897, remote_subscribe_port=None)
+[1;36m(VllmWorkerProcess pid=38922)[0;0m INFO 03-11 06:21:43 model_runner.py:1110] Starting to load model deepseek-ai/DeepSeek-R1-Distill-Llama-70B...
+[1;36m(VllmWorkerProcess pid=38923)[0;0m INFO 03-11 06:21:43 model_runner.py:1110] Starting to load model deepseek-ai/DeepSeek-R1-Distill-Llama-70B...
+[1;36m(VllmWorkerProcess pid=38924)[0;0m INFO 03-11 06:21:43 model_runner.py:1110] Starting to load model deepseek-ai/DeepSeek-R1-Distill-Llama-70B...
+INFO 03-11 06:21:43 model_runner.py:1110] Starting to load model deepseek-ai/DeepSeek-R1-Distill-Llama-70B...
+[1;36m(VllmWorkerProcess pid=38922)[0;0m INFO 03-11 06:21:45 weight_utils.py:252] Using model weights format ['*.safetensors']
+[1;36m(VllmWorkerProcess pid=38924)[0;0m INFO 03-11 06:21:45 weight_utils.py:252] Using model weights format ['*.safetensors']
+[1;36m(VllmWorkerProcess pid=38923)[0;0m INFO 03-11 06:21:45 weight_utils.py:252] Using model weights format ['*.safetensors']
+INFO 03-11 06:21:45 weight_utils.py:252] Using model weights format ['*.safetensors']
+Loading safetensors checkpoint shards:   0% Completed | 0/17 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:   6% Completed | 1/17 [00:00<00:03,  4.34it/s]
+Loading safetensors checkpoint shards:  12% Completed | 2/17 [00:02<00:23,  1.57s/it]
+Loading safetensors checkpoint shards:  18% Completed | 3/17 [00:05<00:29,  2.11s/it]
+Loading safetensors checkpoint shards:  24% Completed | 4/17 [00:08<00:31,  2.39s/it]
+Loading safetensors checkpoint shards:  29% Completed | 5/17 [00:11<00:30,  2.57s/it]
+Loading safetensors checkpoint shards:  35% Completed | 6/17 [00:13<00:29,  2.64s/it]
+Loading safetensors checkpoint shards:  41% Completed | 7/17 [00:16<00:26,  2.68s/it]
+Loading safetensors checkpoint shards:  47% Completed | 8/17 [00:19<00:24,  2.68s/it]
+Loading safetensors checkpoint shards:  53% Completed | 9/17 [00:22<00:23,  2.88s/it]
+Loading safetensors checkpoint shards:  59% Completed | 10/17 [00:25<00:19,  2.85s/it]
+Loading safetensors checkpoint shards:  65% Completed | 11/17 [00:28<00:16,  2.82s/it]
+Loading safetensors checkpoint shards:  71% Completed | 12/17 [00:31<00:14,  2.81s/it]
+Loading safetensors checkpoint shards:  76% Completed | 13/17 [00:33<00:11,  2.80s/it]
+Loading safetensors checkpoint shards:  82% Completed | 14/17 [00:36<00:08,  2.81s/it]
+Loading safetensors checkpoint shards:  88% Completed | 15/17 [00:39<00:05,  2.84s/it]
+Loading safetensors checkpoint shards:  94% Completed | 16/17 [00:42<00:02,  2.81s/it]
+Loading safetensors checkpoint shards: 100% Completed | 17/17 [00:44<00:00,  2.77s/it]
+Loading safetensors checkpoint shards: 100% Completed | 17/17 [00:44<00:00,  2.65s/it]
+
+WARNING 03-11 06:27:33 marlin_utils_fp8.py:54] Your GPU does not have native support for FP8 computation but FP8 quantization is being used. Weight-only FP8 compression will be used leveraging the Marlin kernel. This may degrade performance for compute-heavy workloads.
+[1;36m(VllmWorkerProcess pid=38922)[0;0m WARNING 03-11 06:27:33 marlin_utils_fp8.py:54] Your GPU does not have native support for FP8 computation but FP8 quantization is being used. Weight-only FP8 compression will be used leveraging the Marlin kernel. This may degrade performance for compute-heavy workloads.
+INFO 03-11 06:27:37 model_runner.py:1115] Loading model weights took 16.9593 GB
+[1;36m(VllmWorkerProcess pid=38922)[0;0m INFO 03-11 06:27:37 model_runner.py:1115] Loading model weights took 16.9593 GB
+[1;36m(VllmWorkerProcess pid=38923)[0;0m WARNING 03-11 06:27:40 marlin_utils_fp8.py:54] Your GPU does not have native support for FP8 computation but FP8 quantization is being used. Weight-only FP8 compression will be used leveraging the Marlin kernel. This may degrade performance for compute-heavy workloads.
+[1;36m(VllmWorkerProcess pid=38924)[0;0m WARNING 03-11 06:27:41 marlin_utils_fp8.py:54] Your GPU does not have native support for FP8 computation but FP8 quantization is being used. Weight-only FP8 compression will be used leveraging the Marlin kernel. This may degrade performance for compute-heavy workloads.
+[1;36m(VllmWorkerProcess pid=38923)[0;0m INFO 03-11 06:27:42 model_runner.py:1115] Loading model weights took 16.9593 GB
+[1;36m(VllmWorkerProcess pid=38924)[0;0m INFO 03-11 06:27:42 model_runner.py:1115] Loading model weights took 16.9593 GB
+[1;36m(VllmWorkerProcess pid=38923)[0;0m INFO 03-11 06:28:27 worker.py:267] Memory profiling takes 44.72 seconds
+[1;36m(VllmWorkerProcess pid=38923)[0;0m INFO 03-11 06:28:27 worker.py:267] the current vLLM instance can use total_gpu_memory (79.14GiB) x gpu_memory_utilization (0.95) = 75.18GiB
+[1;36m(VllmWorkerProcess pid=38923)[0;0m INFO 03-11 06:28:27 worker.py:267] model weights take 16.96GiB; non_torch_memory takes 2.05GiB; PyTorch activation peak memory takes 0.24GiB; the rest of the memory reserved for KV Cache is 55.93GiB.
+[1;36m(VllmWorkerProcess pid=38924)[0;0m INFO 03-11 06:28:27 worker.py:267] Memory profiling takes 44.69 seconds
+[1;36m(VllmWorkerProcess pid=38924)[0;0m INFO 03-11 06:28:27 worker.py:267] the current vLLM instance can use total_gpu_memory (79.14GiB) x gpu_memory_utilization (0.95) = 75.18GiB
+[1;36m(VllmWorkerProcess pid=38924)[0;0m INFO 03-11 06:28:27 worker.py:267] model weights take 16.96GiB; non_torch_memory takes 1.91GiB; PyTorch activation peak memory takes 0.24GiB; the rest of the memory reserved for KV Cache is 56.07GiB.
+[1;36m(VllmWorkerProcess pid=38922)[0;0m INFO 03-11 06:28:27 worker.py:267] Memory profiling takes 44.75 seconds
+[1;36m(VllmWorkerProcess pid=38922)[0;0m INFO 03-11 06:28:27 worker.py:267] the current vLLM instance can use total_gpu_memory (79.14GiB) x gpu_memory_utilization (0.95) = 75.18GiB
+[1;36m(VllmWorkerProcess pid=38922)[0;0m INFO 03-11 06:28:27 worker.py:267] model weights take 16.96GiB; non_torch_memory takes 2.05GiB; PyTorch activation peak memory takes 0.24GiB; the rest of the memory reserved for KV Cache is 55.93GiB.
+INFO 03-11 06:28:28 worker.py:267] Memory profiling takes 44.94 seconds
+INFO 03-11 06:28:28 worker.py:267] the current vLLM instance can use total_gpu_memory (79.14GiB) x gpu_memory_utilization (0.95) = 75.18GiB
+INFO 03-11 06:28:28 worker.py:267] model weights take 16.96GiB; non_torch_memory takes 2.01GiB; PyTorch activation peak memory takes 1.20GiB; the rest of the memory reserved for KV Cache is 55.01GiB.
+INFO 03-11 06:28:28 executor_base.py:110] # CUDA blocks: 45064, # CPU blocks: 3276
+INFO 03-11 06:28:28 executor_base.py:115] Maximum concurrency for 131072 tokens per request: 5.50x
+[1;36m(VllmWorkerProcess pid=38922)[0;0m INFO 03-11 06:28:34 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[1;36m(VllmWorkerProcess pid=38924)[0;0m INFO 03-11 06:28:34 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+[1;36m(VllmWorkerProcess pid=38923)[0;0m INFO 03-11 06:28:34 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 03-11 06:28:34 model_runner.py:1434] Capturing cudagraphs for decoding. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI. If out-of-memory error occurs during cudagraph capture, consider decreasing `gpu_memory_utilization` or switching to eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+Capturing CUDA graph shapes:   0%|          | 0/35 [00:00<?, ?it/s]Capturing CUDA graph shapes:   3%|▎         | 1/35 [00:01<01:02,  1.85s/it]Capturing CUDA graph shapes:   6%|▌         | 2/35 [00:03<01:00,  1.84s/it]Capturing CUDA graph shapes:   9%|▊         | 3/35 [00:05<00:59,  1.84s/it]Capturing CUDA graph shapes:  11%|█▏        | 4/35 [00:07<00:57,  1.86s/it]Capturing CUDA graph shapes:  14%|█▍        | 5/35 [00:09<00:55,  1.86s/it]Capturing CUDA graph shapes:  17%|█▋        | 6/35 [00:11<00:53,  1.85s/it]Capturing CUDA graph shapes:  20%|██        | 7/35 [00:12<00:51,  1.85s/it]Capturing CUDA graph shapes:  23%|██▎       | 8/35 [00:14<00:49,  1.84s/it]Capturing CUDA graph shapes:  26%|██▌       | 9/35 [00:16<00:47,  1.84s/it]Capturing CUDA graph shapes:  29%|██▊       | 10/35 [00:18<00:45,  1.83s/it]Capturing CUDA graph shapes:  31%|███▏      | 11/35 [00:20<00:44,  1.83s/it]Capturing CUDA graph shapes:  34%|███▍      | 12/35 [00:22<00:42,  1.83s/it]Capturing CUDA graph shapes:  37%|███▋      | 13/35 [00:23<00:40,  1.85s/it]Capturing CUDA graph shapes:  40%|████      | 14/35 [00:25<00:38,  1.84s/it]Capturing CUDA graph shapes:  43%|████▎     | 15/35 [00:27<00:36,  1.84s/it]Capturing CUDA graph shapes:  46%|████▌     | 16/35 [00:29<00:34,  1.84s/it]Capturing CUDA graph shapes:  49%|████▊     | 17/35 [00:31<00:33,  1.84s/it]Capturing CUDA graph shapes:  51%|█████▏    | 18/35 [00:33<00:31,  1.83s/it]Capturing CUDA graph shapes:  54%|█████▍    | 19/35 [00:34<00:29,  1.83s/it]Capturing CUDA graph shapes:  57%|█████▋    | 20/35 [00:36<00:27,  1.83s/it]Capturing CUDA graph shapes:  60%|██████    | 21/35 [00:38<00:25,  1.84s/it]Capturing CUDA graph shapes:  63%|██████▎   | 22/35 [00:40<00:23,  1.84s/it]Capturing CUDA graph shapes:  66%|██████▌   | 23/35 [00:42<00:22,  1.85s/it]Capturing CUDA graph shapes:  69%|██████▊   | 24/35 [00:44<00:20,  1.85s/it]Capturing CUDA graph shapes:  71%|███████▏  | 25/35 [00:46<00:18,  1.85s/it]Capturing CUDA graph shapes:  74%|███████▍  | 26/35 [00:47<00:16,  1.85s/it]Capturing CUDA graph shapes:  77%|███████▋  | 27/35 [00:49<00:14,  1.85s/it]Capturing CUDA graph shapes:  80%|████████  | 28/35 [00:51<00:12,  1.84s/it]Capturing CUDA graph shapes:  83%|████████▎ | 29/35 [00:53<00:11,  1.84s/it]Capturing CUDA graph shapes:  86%|████████▌ | 30/35 [00:55<00:09,  1.84s/it]Capturing CUDA graph shapes:  89%|████████▊ | 31/35 [00:57<00:07,  1.84s/it]Capturing CUDA graph shapes:  91%|█████████▏| 32/35 [00:58<00:05,  1.84s/it]Capturing CUDA graph shapes:  94%|█████████▍| 33/35 [01:00<00:03,  1.84s/it]Capturing CUDA graph shapes:  97%|█████████▋| 34/35 [01:02<00:01,  1.84s/it][1;36m(VllmWorkerProcess pid=38922)[0;0m INFO 03-11 06:29:39 custom_all_reduce.py:226] Registering 5635 cuda graph addresses
+[1;36m(VllmWorkerProcess pid=38924)[0;0m INFO 03-11 06:29:39 custom_all_reduce.py:226] Registering 5635 cuda graph addresses
+[1;36m(VllmWorkerProcess pid=38923)[0;0m INFO 03-11 06:29:39 custom_all_reduce.py:226] Registering 5635 cuda graph addresses
+Capturing CUDA graph shapes: 100%|██████████| 35/35 [01:05<00:00,  2.19s/it]Capturing CUDA graph shapes: 100%|██████████| 35/35 [01:05<00:00,  1.88s/it]
+INFO 03-11 06:29:39 custom_all_reduce.py:226] Registering 5635 cuda graph addresses
+[1;36m(VllmWorkerProcess pid=38923)[0;0m INFO 03-11 06:29:40 model_runner.py:1562] Graph capturing finished in 66 secs, took 0.45 GiB
+[1;36m(VllmWorkerProcess pid=38924)[0;0m INFO 03-11 06:29:40 model_runner.py:1562] Graph capturing finished in 66 secs, took 0.45 GiB
+[1;36m(VllmWorkerProcess pid=38922)[0;0m INFO 03-11 06:29:40 model_runner.py:1562] Graph capturing finished in 66 secs, took 0.45 GiB
+INFO 03-11 06:29:40 model_runner.py:1562] Graph capturing finished in 66 secs, took 0.44 GiB
+INFO 03-11 06:29:40 llm_engine.py:431] init engine (profile, create kv cache, warmup model) took 117.79 seconds
+Model loaded in 554.25 seconds
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:44<00:00, 44.14s/it, est. speed input: 7.61 toks/s, output: 31.49 toks/s]Processed prompts: 100%|██████████| 1/1 [00:44<00:00, 44.14s/it, est. speed input: 7.61 toks/s, output: 31.49 toks/s]
+Generated response in 44.56 seconds
+Processed prompts:   0%|          | 0/1 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]Processed prompts: 100%|██████████| 1/1 [00:51<00:00, 51.90s/it, est. speed input: 14.66 toks/s, output: 32.41 toks/s]Processed prompts: 100%|██████████| 1/1 [00:51<00:00, 51.90s/it, est. speed input: 14.66 toks/s, output: 32.41 toks/s]
+Generated response in 51.90 seconds
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/mnt/parscratch/users/liq23wr/dissertation/main.py", line 88, in <module>
+[rank0]:     generate_responses(prompt_dict=prompt_dict,
+[rank0]:   File "/mnt/parscratch/users/liq23wr/dissertation/main.py", line 59, in generate_responses
+[rank0]:     response = llm.generate(query=prompt_content, model_name=model_name, remove_cot=True)
+[rank0]:                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/mnt/parscratch/users/liq23wr/dissertation/models/llm.py", line 94, in generate
+[rank0]:     output_text = output_text.split('</think>\n')[1]
+[rank0]:                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+[rank0]: IndexError: list index out of range
+ERROR 03-11 06:31:19 multiproc_worker_utils.py:124] Worker VllmWorkerProcess pid 38922 died, exit code: -15
+INFO 03-11 06:31:19 multiproc_worker_utils.py:128] Killing local vLLM worker processes
+Exception in thread Thread-2:
+Traceback (most recent call last):
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/executor/multiproc_worker_utils.py", line 132, in run
+    self.result_handler.close()
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/site-packages/vllm/executor/multiproc_worker_utils.py", line 99, in close
+    self.result_queue.put(_TERMINATE)
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/multiprocessing/queues.py", line 94, in put
+    self._start_thread()
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/multiprocessing/queues.py", line 192, in _start_thread
+    self._thread.start()
+  File "/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/threading.py", line 992, in start
+    _start_new_thread(self._bootstrap, ())
+RuntimeError: can't create new thread at interpreter shutdown
+[rank0]:[W311 06:31:20.962839648 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 3 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+/mnt/parscratch/users/liq23wr/anaconda/.envs/dis-venv3/lib/python3.12/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 1 leaked shared_memory objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+Execution failed with error code 1
+GPU status after execution:
+Tue Mar 11 06:31:23 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.144.03             Driver Version: 550.144.03     CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:01:00.0 Off |                    0 |
+| N/A   40C    P0             74W /  500W |       1MiB /  81920MiB |    100%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-SXM4-80GB          On  |   00000000:41:00.0 Off |                    0 |
+| N/A   35C    P0             59W /  500W |       1MiB /  81920MiB |     14%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA A100-SXM4-80GB          On  |   00000000:81:00.0 Off |                    0 |
+| N/A   39C    P0             64W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA A100-SXM4-80GB          On  |   00000000:C1:00.0 Off |                    0 |
+| N/A   36C    P0             83W /  500W |       1MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Job completed
