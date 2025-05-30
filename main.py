@@ -8,8 +8,8 @@ models_dict = {
     'deepseek-r1-14b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-14B',
     'deepseek-r1-32b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-32B',
     'deepseek-r1-70b': 'deepseek-ai/DeepSeek-R1-Distill-Llama-70B',
-    'gemma-2-9b': 'google/gemma-2-9b-it',
-    'gemma-2-27b': 'google/gemma-2-27b-it',
+    'gemma-3-12b': 'google/gemma-3-12b-it',
+    'gemma-3-27b': 'google/gemma-3-27b-it',
     'llama-2-7b': 'unsloth/llama-2-7b-chat',
     'llama-2-13b': 'daryl149/llama-2-13b-chat-hf',
     'llama-3-70b': 'unsloth/Llama-3.3-70B-Instruct'

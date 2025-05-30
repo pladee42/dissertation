@@ -1,0 +1,49 @@
+
+Here is a structured list of binary evaluation questions tailored to assess emails generated based on the provided query:
+
+```json
+[
+    {
+        "question": "Does the subject line effectively convey urgency and relevance?",
+        "best_ans": "Yes",
+        "priority": "Very High"
+    },
+    {
+        "question": "Does the email open with a vivid, attention-grabbing story or image?",
+        "best_ans": "Yes",
+        "priority": "High"
+    },
+    {
+        "question": "Are specific obstacles mentioned (e.g., corporate greed, climate change)?",
+        "best_ans": "Yes",
+        "priority": "Medium"
+    },
+    {
+        "question": "Is there a clear call to action with a deadline or link?",
+        "best_ans": "Yes",
+        "priority": "High"
+    },
+    {
+        "question": "Does the email emphasize the recipient's pivotal role?",
+        "best_ans": "Yes",
+        "priority": "Medium"
+    },
+    {
+        "question": "Are key funding areas listed clearly (e.g., conservation, research)?",
+        "best_ans": "Yes",
+        "priority": "Low"
+    },
+    {
+        "question": "Is the email concise within the word limit?",
+        "best_ans": "Yes",
+        "priority": "Low"
+    },
+    {
+        "question": "Does the P.S. reinforce the urgency and encourage prompt action?",
+        "best_ans": "Yes",
+        "priority": "Medium"
+    }
+]
+```
+
+These questions systematically guide evaluators to check if generated emails meet the specified criteria, ensuring comprehensive assessment without redundancy.

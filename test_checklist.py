@@ -10,8 +10,8 @@ models_dict = {
     'deepseek-r1-14b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-14B',
     'deepseek-r1-32b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-32B',
     'deepseek-r1-70b': 'deepseek-ai/DeepSeek-R1-Distill-Llama-70B',
-    'gemma-2-9b': 'google/gemma-2-9b-it',
-    'gemma-2-27b': 'google/gemma-2-27b-it',
+    'gemma-3-12b': 'google/gemma-3-12b-it',
+    'gemma-3-27b': 'google/gemma-3-27b-it',
     'llama-2-7b': 'unsloth/llama-2-7b-chat',
     'llama-2-13b': 'daryl149/llama-2-13b-chat-hf',
     'llama-3-70b': 'unsloth/Llama-3.3-70B-Instruct'
@@ -107,17 +107,17 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     prompt_dict = open_prompt_files(args.prompt_mode)
-    response_dict = generate_responses(prompt_dict=prompt_dict,
-                                       topic=args.topic,
-                                       lm_model=args.language_model)
+    # response_dict = generate_responses(prompt_dict=prompt_dict,
+                                    #    topic=args.topic,
+                                    #    lm_model=args.language_model)
     
-    if args.checklist_generator != None:
+    if args.checklist_generator:
         print('[INFO] Creating Checklist')
-        checklist_dict = create_checklist(response_dict=response_dict, 
+        checklist_dict = create_checklist(response_file=None, 
                                           model_id=models_dict[args.checklist_generator],
                                           topic=args.topic)
-        print('[INFO] Generating Judgement Score')
-        judge_dict = generate_scores(response_dict=response_dict,
-                                     checklist_dict=checklist_dict,
-                                     model_id=models_dict[args.judge],
-                                     topic=args.topic)
+        # print('[INFO] Generating Judgement Score')
+        # judge_dict = generate_scores(response_dict=response_dict,
+        #                              checklist_dict=checklist_dict,
+        #                              model_id=models_dict[args.judge],
+        #                              topic=args.topic)

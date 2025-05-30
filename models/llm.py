@@ -1,4 +1,5 @@
 from dotenv import load_dotenv
+import numpy as np
 import os
 import torch
 import time
@@ -25,10 +26,12 @@ class ModelInference:
             dtype=dtype,
             download_dir='../downloaded_models',
             tensor_parallel_size=torch.cuda.device_count(),
-            gpu_memory_utilization=0.95,
+            gpu_memory_utilization=0.9,
             quantization=quantization,
             task=task,
-            trust_remote_code=True
+            trust_remote_code=True,
+            # enforce_eager=True,  # Disable CUDA graphs
+            # disable_custom_all_reduce=True,  # Disable custom all-reduce
         )
         
         # Default sampling parameters
@@ -94,3 +97,26 @@ class ModelInference:
             output_text = output_text.split('</think>\n')[1]
         
         return output_text
+    
+    def compute_yes_no_probability(self, query: str, model_name: str) -> dict:
+        """Calculate the normalized probability of Yes vs No responses"""
+        prompt = self.format_prompt(query, model_name)
+
+        # Create special sampling parameters for token probability
+        prob_params = SamplingParams(
+            temperature=0.0,  # Use zero temperature for deterministic output
+            top_p=1.0,
+            max_tokens=1
+        )
+
+        # Get probabilities for "Yes" and "No" tokens
+        yes_prob = self.llm.generate(prompt + " Yes", prob_params)[0].outputs[0].logprobs[0]
+        no_prob = self.llm.generate(prompt + " No", prob_params)[0].outputs[0].logprobs[0]
+
+        # Normalize probabilities
+        total = np.exp(yes_prob) + np.exp(no_prob)
+        yes_normalized = np.exp(yes_prob) / total
+        no_normalized = np.exp(no_prob) / total
+
+        return {"yes": yes_normalized, "no": no_normalized}
+

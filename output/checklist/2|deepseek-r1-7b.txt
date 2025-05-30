@@ -1,0 +1,59 @@
+
+Here is a structured set of questions designed to evaluate emails based on the provided guidelines:
+
+```json
+[
+    {
+        "question": "Does the email open with a strong, attention-grabbing statement?",
+        "best_ans": "Yes",
+        "priority": "Very High"
+    },
+    {
+        "question": "Is there a clear establishment of urgency in the opening paragraph?",
+        "best_ans": "Yes",
+        "priority": "High"
+    },
+    {
+        "question": "Does the email include vivid storytelling or a localized perspective?",
+        "best_ans": "Yes",
+        "priority": "Medium"
+    },
+    {
+        "question": "Are specific obstacles mentioned (e.g., corporate greed, environmental destruction)?",
+        "best_ans": "Yes",
+        "priority": "Medium"
+    },
+    {
+        "question": "Is the target audience positioned as heroes capable of overcoming challenges?",
+        "best_ans": "Yes",
+        "priority": "High"
+    },
+    {
+        "question": "Does the email emphasize the necessity of immediate action?",
+        "best_ans": "Yes",
+        "priority": "Very High"
+    },
+    {
+        "question": "Are specific details about funding needs included (amount or deadline)?",
+        "best_ans": "Yes",
+        "priority": "Low"
+    },
+    {
+        "question": "Does the email mention multiple ways donors/volunteers can contribute?",
+        "best_ans": "Yes",
+        "priority": "Medium"
+    },
+    {
+        "question": "Is the length of the email within the specified range (400-600 words)?",
+        "best_ans": "Yes",
+        "priority": "Low"
+    },
+    {
+        "question": "Do the closing statements leave a memorable and impactful impression?",
+        "best_ans": "Yes",
+        "priority": "High"
+    }
+]
+```
+
+These questions cover all aspects outlined in the original prompt, ensuring comprehensive evaluation of compliance and effectiveness.

@@ -3,7 +3,7 @@ from models.llm import ModelInference
 def generate_scores(response_dict: dict, checklist_dict: dict, model_id: str, topic: str) -> dict: 
     """Generate judgement score for each checklist from Language Model"""
     
-    judge_dict = {}
+    judgment_results = {}
     
     # Read Prompt template for judgement score generation
     prompt_folder = "./prompts"
@@ -18,10 +18,10 @@ def generate_scores(response_dict: dict, checklist_dict: dict, model_id: str, to
         # Open instruction prompt and format
         with open(f'{prompt_folder}/instructions/{prompt_type}.txt') as f:
             query = f.read()
-        query.replace('[TOPIC]', topic)
+        query = query.replace('[TOPIC]', topic)
+        judgment_results[key] = {}
         
         for _ , checklist in checklist_dict.items():
-            
         
             # Replace checklist prompt's placeholders
             prompt = prompt.replace('{user_query}', query)
@@ -29,11 +29,14 @@ def generate_scores(response_dict: dict, checklist_dict: dict, model_id: str, to
             prompt = prompt.replace('{checklist}', checklist)
 
             # Generate Checklist
-            response = llm.generate(query=prompt, model_name=model_name, remove_cot=True)
-
-            # Save the response
-            with open(f"output/judge/{key}.txt", encoding='utf-8', mode='w') as f:
-                f.write(response)
+            probabilities = llm.compute_yes_no_probability(query=prompt, model_name=model_name)
+            
+            judgment_results[key][checklist_id] = {
+                "question": checklist_dict['question'],
+                "yes_probability": probabilities["yes"],
+                "no_probability": probabilities["no"],
+                "judgment": "Yes" if probabilities["yes"] > probabilities["no"] else "No"
+            }
 
     judge_dict[key] = response
     

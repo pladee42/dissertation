@@ -32,14 +32,15 @@ Your question should be concise and include any necessary key content and
     → possible responses. Avoid creating duplicate, cumbersome or vague
     → questions. For example, you should ask "Is this response contain the
     → correct answer ..." instead of "Is this response’s answer correct?". Ask
-    → fewer questions by aggregating questions with repeated contexts into
-    → one question.
+    → fewer questions by aggregating questions with repeated contexts into one question.
+    → you should include the best answer to each question ("yes" / "no") to ensure
+    → the response aligns with user's requirements.
+    → you should include the priority ("very low", "low", "medium", "high", "very high") 
+    → that indicate the importance of each question to the response
+You should generate at least 8 - 10 questions
 
 ## Output Format
-Please provide your outputs in the following markdown format by filling in the
-    → placeholders in {{}}:
-‘‘‘
-1. {{question1}}
-2. {{question2}}
-...
-‘‘‘
+Please provide your outputs in the following example JSON format.
+
+[{"question": "Is the email generated in the same style as example email?", "best_ans": "yes", "priority": "very high"},
+{"question": "Is this response contain the correct answer?", "best_ans": "no", "priority": "medium"}]
