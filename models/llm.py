@@ -323,18 +323,46 @@ class ModelInference:
         
         try:
             # Enhanced VLLM cleanup with proper coordination
-            if hasattr(self, 'llm'):
+            if hasattr(self, 'llm') and self.llm is not None:
                 try:
                     logger.info("Starting VLLM model cleanup")
                     
-                    # First, try graceful VLLM shutdown
+                    # First, try graceful VLLM shutdown with timeout
                     try:
-                        # VLLM models don't have a direct shutdown method, but we can destroy the object
                         logger.info("Destroying VLLM model instance")
-                        del self.llm
-                        logger.info("VLLM model instance destroyed")
+                        
+                        # Use threading to timeout VLLM destruction
+                        destruction_success = [False]
+                        
+                        def destroy_vllm():
+                            try:
+                                del self.llm
+                                destruction_success[0] = True
+                                logger.info("VLLM model instance destroyed successfully")
+                            except Exception as e:
+                                logger.warning(f"VLLM destruction failed in thread: {e}")
+                        
+                        # Start destruction in separate thread
+                        destruction_thread = threading.Thread(target=destroy_vllm, daemon=True)
+                        destruction_thread.start()
+                        
+                        # Wait for destruction with timeout
+                        destruction_thread.join(timeout=15.0)
+                        
+                        if destruction_thread.is_alive() or not destruction_success[0]:
+                            logger.warning("VLLM destruction timed out or failed, proceeding with force cleanup")
+                            # Don't wait for the thread, just proceed
+                        else:
+                            logger.info("VLLM model destruction completed successfully")
                     except Exception as e:
                         logger.warning(f"Error destroying VLLM model: {e}")
+                    
+                    # Ensure llm attribute is cleared regardless of destruction outcome
+                    try:
+                        self.llm = None
+                        logger.debug("VLLM attribute cleared")
+                    except Exception as e:
+                        logger.debug(f"Error clearing VLLM attribute: {e}")
                     
                     # Force Ray cleanup after model destruction
                     self._force_ray_cleanup()
