@@ -59,3 +59,23 @@ class ChecklistAgent:
                 f.write(f"{i}. {item.question}\n")
                 f.write(f"   Expected: {item.correct_answer}\n")
                 f.write(f"   Priority: {item.priority.value}\n\n")
+    
+    def cleanup(self):
+        """Cleanup the checklist agent and release resources"""
+        logger = logging.getLogger(__name__)
+        logger.info(f"Cleaning up ChecklistAgent with model: {self.model_id.split('/')[-1]}")
+        
+        try:
+            if hasattr(self, 'llm') and self.llm is not None:
+                self.llm.cleanup()
+                logger.info("ChecklistAgent cleanup completed successfully")
+        except Exception as e:
+            logger.error(f"Error during ChecklistAgent cleanup: {e}")
+    
+    def __enter__(self):
+        """Context manager entry"""
+        return self
+    
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        """Context manager exit with cleanup"""
+        self.cleanup()

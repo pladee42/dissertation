@@ -78,3 +78,24 @@ class JudgeAgent:
                 weighted_sum += weight
         
         return weighted_sum / total_weight if total_weight > 0 else 0.0
+    
+    def cleanup(self):
+        """Cleanup the judge agent and release resources"""
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.info(f"Cleaning up JudgeAgent with model: {self.model_id.split('/')[-1]}")
+        
+        try:
+            if hasattr(self, 'llm') and self.llm is not None:
+                self.llm.cleanup()
+                logger.info("JudgeAgent cleanup completed successfully")
+        except Exception as e:
+            logger.error(f"Error during JudgeAgent cleanup: {e}")
+    
+    def __enter__(self):
+        """Context manager entry"""
+        return self
+    
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        """Context manager exit with cleanup"""
+        self.cleanup()

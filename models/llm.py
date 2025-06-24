@@ -9,8 +9,12 @@ import logging
 import atexit
 import signal
 import sys
+import threading
+import uuid
 from contextlib import contextmanager
-from typing import Dict, Optional, Union, Any
+from typing import Dict, Optional, Union, Any, List
+from dataclasses import dataclass, field
+from datetime import datetime
 from vllm import LLM, SamplingParams
 from utils.retry import retry_with_backoff
 from config.settings import settings
@@ -23,8 +27,180 @@ os.environ['HF_TOKEN'] = os.getenv('HUGGINGFACE_TOKEN')
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+@dataclass
+class InstanceMetadata:
+    """Enhanced metadata for model instances"""
+    instance_id: str
+    model_id: str
+    model_name: str
+    created_at: datetime
+    dtype: str
+    quantization: Optional[str]
+    memory_allocated_gb: float
+    device_type: str
+    process_id: int
+    thread_id: int
+    is_active: bool = True
+    last_used: Optional[datetime] = None
+    usage_count: int = 0
+    cleanup_callbacks: List[callable] = field(default_factory=list)
+
+class GlobalInstanceTracker:
+    """Enhanced global instance tracking with coordination"""
+    
+    def __init__(self):
+        self._instances: Dict[str, InstanceMetadata] = {}
+        self._lock = threading.RLock()
+        self._cleanup_in_progress = False
+        self._max_instances = getattr(settings, 'max_concurrent_models', 2)
+        self._memory_budget_gb = getattr(settings, 'max_gpu_memory_per_model', 24.0)
+        
+        # Register cleanup handlers
+        atexit.register(self.cleanup_all_instances)
+        signal.signal(signal.SIGTERM, self._signal_handler)
+        signal.signal(signal.SIGINT, self._signal_handler)
+        
+        logger.info("GlobalInstanceTracker initialized")
+    
+    def register_instance(self, 
+                         instance: 'ModelInference',
+                         memory_allocated_gb: float = 0.0) -> str:
+        """Register a new model instance with enhanced metadata"""
+        
+        with self._lock:
+            instance_id = str(uuid.uuid4())
+            
+            metadata = InstanceMetadata(
+                instance_id=instance_id,
+                model_id=instance.model_id,
+                model_name=instance.model_name,
+                created_at=datetime.now(),
+                dtype=getattr(instance, 'dtype', 'unknown'),
+                quantization=getattr(instance, 'quantization', None),
+                memory_allocated_gb=memory_allocated_gb,
+                device_type="gpu" if torch.cuda.is_available() else "cpu",
+                process_id=os.getpid(),
+                thread_id=threading.get_ident(),
+                last_used=datetime.now()
+            )
+            
+            self._instances[instance_id] = metadata
+            
+            logger.info(f"Registered instance {instance_id[:8]} for model {metadata.model_name}")
+            
+            # Check if we exceed limits
+            self._enforce_instance_limits()
+            
+            return instance_id
+    
+    def update_instance_usage(self, instance_id: str):
+        """Update instance usage statistics"""
+        
+        with self._lock:
+            if instance_id in self._instances:
+                metadata = self._instances[instance_id]
+                metadata.last_used = datetime.now()
+                metadata.usage_count += 1
+    
+    def deregister_instance(self, instance_id: str):
+        """Deregister an instance"""
+        
+        with self._lock:
+            if instance_id in self._instances:
+                metadata = self._instances[instance_id]
+                metadata.is_active = False
+                
+                # Execute cleanup callbacks
+                for callback in metadata.cleanup_callbacks:
+                    try:
+                        callback()
+                    except Exception as e:
+                        logger.warning(f"Cleanup callback failed for {instance_id}: {e}")
+                
+                del self._instances[instance_id]
+                logger.info(f"Deregistered instance {instance_id[:8]}")
+    
+    def get_instance_stats(self) -> Dict[str, Any]:
+        """Get comprehensive instance statistics"""
+        
+        with self._lock:
+            active_instances = [m for m in self._instances.values() if m.is_active]
+            
+            total_memory = sum(m.memory_allocated_gb for m in active_instances)
+            
+            by_model = {}
+            for metadata in active_instances:
+                model_name = metadata.model_name
+                if model_name not in by_model:
+                    by_model[model_name] = {"count": 0, "memory_gb": 0.0}
+                by_model[model_name]["count"] += 1
+                by_model[model_name]["memory_gb"] += metadata.memory_allocated_gb
+            
+            return {
+                "total_instances": len(active_instances),
+                "total_memory_gb": total_memory,
+                "max_instances": self._max_instances,
+                "memory_budget_gb": self._memory_budget_gb,
+                "memory_utilization": total_memory / self._memory_budget_gb if self._memory_budget_gb > 0 else 0,
+                "instances_by_model": by_model,
+                "oldest_instance": min(active_instances, key=lambda m: m.created_at).created_at if active_instances else None,
+                "cleanup_in_progress": self._cleanup_in_progress
+            }
+    
+    def _enforce_instance_limits(self):
+        """Enforce instance limits by cleaning up oldest instances"""
+        
+        active_instances = [m for m in self._instances.values() if m.is_active]
+        
+        # Check instance count limit
+        if len(active_instances) > self._max_instances:
+            logger.warning(f"Instance limit ({self._max_instances}) exceeded, cleaning up oldest instances")
+            
+            # Sort by last used (oldest first)
+            sorted_instances = sorted(active_instances, key=lambda m: m.last_used or m.created_at)
+            
+            instances_to_cleanup = len(active_instances) - self._max_instances
+            for metadata in sorted_instances[:instances_to_cleanup]:
+                logger.info(f"Auto-cleanup of instance {metadata.instance_id[:8]} due to limit")
+                self.deregister_instance(metadata.instance_id)
+        
+        # Check memory limit
+        total_memory = sum(m.memory_allocated_gb for m in active_instances)
+        if total_memory > self._memory_budget_gb:
+            logger.warning(f"Memory budget ({self._memory_budget_gb}GB) exceeded: {total_memory:.2f}GB")
+    
+    def cleanup_all_instances(self):
+        """Cleanup all tracked instances"""
+        
+        with self._lock:
+            if self._cleanup_in_progress:
+                return
+            
+            self._cleanup_in_progress = True
+            logger.info("Starting global instance cleanup")
+            
+            instance_ids = list(self._instances.keys())
+            for instance_id in instance_ids:
+                try:
+                    self.deregister_instance(instance_id)
+                except Exception as e:
+                    logger.error(f"Error cleaning up instance {instance_id}: {e}")
+            
+            self._instances.clear()
+            logger.info("Global instance cleanup completed")
+            self._cleanup_in_progress = False
+    
+    def _signal_handler(self, signum, frame):
+        """Handle system signals for graceful shutdown"""
+        logger.info(f"Received signal {signum}, initiating cleanup")
+        self.cleanup_all_instances()
+        sys.exit(0)
+
+# Global instance tracker
+_global_tracker = GlobalInstanceTracker()
+
 class ModelInference:
-    _instances = []  # Track all instances for global cleanup
+    _instances = []  # Legacy tracking for backward compatibility
     
     def __init__(self,
                  model_id: str,
@@ -36,9 +212,13 @@ class ModelInference:
         
         self.model_id = model_id
         self.model_name = model_id.split('/')[-1]
+        self.dtype = dtype
+        self.quantization = quantization
+        self.task = task
         self.is_cleaned_up = False
+        self.instance_id = None
         
-        # Track this instance for cleanup
+        # Legacy tracking for backward compatibility
         ModelInference._instances.append(self)
         
         logger.info(f"Loading model {model_id}...")
@@ -88,37 +268,99 @@ class ModelInference:
         
         load_time = time.time() - start_time
         logger.info(f"Model {self.model_name} loaded in {load_time:.2f} seconds")
+        
+        # Register with enhanced tracker
+        memory_allocated = 0.0
+        if torch.cuda.is_available():
+            memory_allocated = torch.cuda.memory_allocated() / (1024**3)
+        
+        self.instance_id = _global_tracker.register_instance(self, memory_allocated)
     
     def cleanup(self):
-        """Explicitly cleanup the model and associated processes"""
+        """Explicitly cleanup the model and associated processes with enhanced VLLM support"""
         if self.is_cleaned_up:
             return
+        
+        # Log memory usage before cleanup
+        if torch.cuda.is_available():
+            memory_before = torch.cuda.memory_allocated()
+            logger.info(f"GPU memory before cleanup of {self.model_name}: {memory_before / 1024**3:.2f} GB")
             
-        logger.info(f"Cleaning up model {self.model_name}")
+        logger.info(f"Starting comprehensive cleanup for model {self.model_name}")
         self.is_cleaned_up = True
         
         try:
-            # Remove from instances list
+            # Enhanced VLLM cleanup
+            if hasattr(self, 'llm'):
+                try:
+                    # Try to access VLLM-specific cleanup methods if available
+                    if hasattr(self.llm, 'shutdown'):
+                        logger.info("Calling VLLM shutdown method")
+                        self.llm.shutdown()
+                    
+                    # Explicit destruction of VLLM model
+                    logger.info("Deleting VLLM model instance")
+                    del self.llm
+                    
+                except Exception as e:
+                    logger.warning(f"VLLM cleanup failed: {e}")
+            
+            # Remove from both tracking systems
             if self in ModelInference._instances:
                 ModelInference._instances.remove(self)
+                logger.info("Removed from legacy instances list")
             
-            # Delete the model instance
-            if hasattr(self, 'llm'):
-                del self.llm
+            # Deregister from enhanced tracker
+            if self.instance_id:
+                _global_tracker.deregister_instance(self.instance_id)
+                self.instance_id = None
             
-            # Force garbage collection
-            gc.collect()
+            # Aggressive memory cleanup sequence
+            self._aggressive_memory_cleanup()
             
-            # Clear CUDA cache and synchronize
-            if torch.cuda.is_available():
-                torch.cuda.empty_cache()
-                torch.cuda.synchronize()
-            
-            # More comprehensive process cleanup
+            # Terminate background processes
             self._terminate_background_processes()
             
+            # Final memory verification
+            if torch.cuda.is_available():
+                memory_after = torch.cuda.memory_allocated()
+                memory_freed = (memory_before - memory_after) / 1024**3
+                logger.info(f"GPU memory after cleanup: {memory_after / 1024**3:.2f} GB (freed: {memory_freed:.2f} GB)")
+            
+            logger.info(f"Cleanup completed successfully for {self.model_name}")
+            
         except Exception as e:
-            logger.warning(f"Error during cleanup: {e}")
+            logger.error(f"Critical error during cleanup: {e}")
+            # Even if cleanup fails, mark as cleaned to prevent loops
+            self.is_cleaned_up = True
+    
+    def _aggressive_memory_cleanup(self):
+        """Perform aggressive memory cleanup with multiple techniques"""
+        logger.info("Starting aggressive memory cleanup sequence")
+        
+        # Multiple rounds of garbage collection
+        for i in range(3):
+            collected = gc.collect()
+            logger.debug(f"Garbage collection round {i+1}: {collected} objects collected")
+        
+        if torch.cuda.is_available():
+            # Multiple CUDA cleanup operations
+            torch.cuda.empty_cache()
+            torch.cuda.ipc_collect()
+            torch.cuda.synchronize()
+            
+            # Reset memory stats to get accurate readings
+            torch.cuda.reset_peak_memory_stats()
+            
+            # Additional cleanup for stubborn memory
+            try:
+                # Force memory defragmentation if available
+                if hasattr(torch.cuda, 'memory_allocated'):
+                    current_memory = torch.cuda.memory_allocated()
+                    if current_memory > 0:
+                        logger.debug(f"Remaining GPU memory after cleanup: {current_memory / 1024**3:.2f} GB")
+            except Exception as e:
+                logger.debug(f"Memory stat collection failed: {e}")
     
     def _terminate_background_processes(self):
         """Terminate all background processes related to vLLM and Ray"""
@@ -214,6 +456,10 @@ class ModelInference:
         
         if self.is_cleaned_up:
             raise RuntimeError("Model has been cleaned up and is no longer available")
+        
+        # Update usage tracking
+        if self.instance_id:
+            _global_tracker.update_instance_usage(self.instance_id)
         
         if model_name is None:
             model_name = self.model_name
@@ -399,6 +645,33 @@ class ModelInference:
     @classmethod
     def cleanup_all(cls):
         """Cleanup all model instances"""
+        # Legacy cleanup
         for instance in cls._instances.copy():
             instance.cleanup()
         cls._instances.clear()
+        
+        # Enhanced tracker cleanup
+        _global_tracker.cleanup_all_instances()
+    
+    @classmethod
+    def get_global_instance_stats(cls) -> Dict[str, Any]:
+        """Get comprehensive instance statistics"""
+        return _global_tracker.get_instance_stats()
+    
+    @classmethod
+    def get_memory_budget_status(cls) -> Dict[str, Any]:
+        """Get memory budget status across all instances"""
+        stats = _global_tracker.get_instance_stats()
+        
+        return {
+            "memory_utilization_percent": stats["memory_utilization"] * 100,
+            "total_memory_used_gb": stats["total_memory_gb"],
+            "memory_budget_gb": stats["memory_budget_gb"],
+            "available_memory_gb": max(0, stats["memory_budget_gb"] - stats["total_memory_gb"]),
+            "instance_count": stats["total_instances"],
+            "max_instances": stats["max_instances"],
+            "can_load_new_instance": (
+                stats["total_instances"] < stats["max_instances"] and 
+                stats["memory_utilization"] < 0.8
+            )
+        }

@@ -238,6 +238,25 @@ Please generate a complete email response:"""
         logger.info(f"Email saved to: {file_path}")
         return file_path
     
+    def cleanup(self):
+        """Cleanup the email agent and release resources"""
+        logger.info(f"Cleaning up EmailAgent with model: {self.model_name}")
+        
+        try:
+            if hasattr(self, 'llm') and self.llm is not None:
+                self.llm.cleanup()
+                logger.info("EmailAgent cleanup completed successfully")
+        except Exception as e:
+            logger.error(f"Error during EmailAgent cleanup: {e}")
+    
+    def __enter__(self):
+        """Context manager entry"""
+        return self
+    
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        """Context manager exit with cleanup"""
+        self.cleanup()
+    
     def get_agent_info(self) -> Dict[str, Any]:
         """Get information about the email agent"""
         return {
