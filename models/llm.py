@@ -55,10 +55,20 @@ class GlobalInstanceTracker:
         self._max_instances = getattr(settings, 'max_concurrent_models', 2)
         self._memory_budget_gb = getattr(settings, 'max_gpu_memory_per_model', 24.0)
         
-        # Register cleanup handlers
-        atexit.register(self.cleanup_all_instances)
-        signal.signal(signal.SIGTERM, self._signal_handler)
-        signal.signal(signal.SIGINT, self._signal_handler)
+        # Register cleanup handlers only for main process
+        if os.getpid() == os.getpid():  # Simple check, but we need more sophisticated detection
+            try:
+                # Only register in main process, not in VLLM worker processes
+                import multiprocessing
+                if multiprocessing.current_process().name == 'MainProcess':
+                    atexit.register(self.cleanup_all_instances)
+                    signal.signal(signal.SIGTERM, self._signal_handler)
+                    signal.signal(signal.SIGINT, self._signal_handler)
+                    logger.debug("Cleanup handlers registered for main process")
+                else:
+                    logger.debug("Skipping cleanup handler registration for worker process")
+            except Exception as e:
+                logger.debug(f"Error registering cleanup handlers: {e}")
         
         logger.info("GlobalInstanceTracker initialized")
     
@@ -170,25 +180,34 @@ class GlobalInstanceTracker:
             logger.warning(f"Memory budget ({self._memory_budget_gb}GB) exceeded: {total_memory:.2f}GB")
     
     def cleanup_all_instances(self):
-        """Cleanup all tracked instances"""
+        """Cleanup all tracked instances with coordination"""
         
         with self._lock:
             if self._cleanup_in_progress:
+                logger.debug("Global cleanup already in progress, skipping")
                 return
             
             self._cleanup_in_progress = True
+            
+        try:
             logger.info("Starting global instance cleanup")
             
             instance_ids = list(self._instances.keys())
+            logger.info(f"Cleaning up {len(instance_ids)} instances")
+            
             for instance_id in instance_ids:
                 try:
+                    logger.debug(f"Cleaning up instance {instance_id[:8]}")
                     self.deregister_instance(instance_id)
                 except Exception as e:
                     logger.error(f"Error cleaning up instance {instance_id}: {e}")
             
             self._instances.clear()
             logger.info("Global instance cleanup completed")
-            self._cleanup_in_progress = False
+            
+        finally:
+            with self._lock:
+                self._cleanup_in_progress = False
     
     def _signal_handler(self, signum, frame):
         """Handle system signals for graceful shutdown"""
@@ -198,6 +217,10 @@ class GlobalInstanceTracker:
 
 # Global instance tracker
 _global_tracker = GlobalInstanceTracker()
+
+# Global cleanup coordination
+_global_cleanup_lock = threading.Lock()
+_global_cleanup_in_progress = False
 
 class ModelInference:
     _instances = []  # Legacy tracking for backward compatibility
@@ -278,8 +301,17 @@ class ModelInference:
     
     def cleanup(self):
         """Explicitly cleanup the model and associated processes with enhanced VLLM support"""
+        global _global_cleanup_in_progress
+        
         if self.is_cleaned_up:
             return
+        
+        # Check if global cleanup is in progress
+        with _global_cleanup_lock:
+            if _global_cleanup_in_progress:
+                logger.info(f"Global cleanup in progress, skipping individual cleanup for {self.model_name}")
+                self.is_cleaned_up = True
+                return
         
         # Log memory usage before cleanup
         if torch.cuda.is_available():
@@ -290,17 +322,22 @@ class ModelInference:
         self.is_cleaned_up = True
         
         try:
-            # Enhanced VLLM cleanup
+            # Enhanced VLLM cleanup with proper coordination
             if hasattr(self, 'llm'):
                 try:
-                    # Try to access VLLM-specific cleanup methods if available
-                    if hasattr(self.llm, 'shutdown'):
-                        logger.info("Calling VLLM shutdown method")
-                        self.llm.shutdown()
+                    logger.info("Starting VLLM model cleanup")
                     
-                    # Explicit destruction of VLLM model
-                    logger.info("Deleting VLLM model instance")
-                    del self.llm
+                    # First, try graceful VLLM shutdown
+                    try:
+                        # VLLM models don't have a direct shutdown method, but we can destroy the object
+                        logger.info("Destroying VLLM model instance")
+                        del self.llm
+                        logger.info("VLLM model instance destroyed")
+                    except Exception as e:
+                        logger.warning(f"Error destroying VLLM model: {e}")
+                    
+                    # Force Ray cleanup after model destruction
+                    self._force_ray_cleanup()
                     
                 except Exception as e:
                     logger.warning(f"VLLM cleanup failed: {e}")
@@ -318,8 +355,8 @@ class ModelInference:
             # Aggressive memory cleanup sequence
             self._aggressive_memory_cleanup()
             
-            # Terminate background processes
-            self._terminate_background_processes()
+            # Terminate background processes (but not Ray workers immediately)
+            self._terminate_background_processes_safe()
             
             # Final memory verification
             if torch.cuda.is_available():
@@ -361,6 +398,107 @@ class ModelInference:
                         logger.debug(f"Remaining GPU memory after cleanup: {current_memory / 1024**3:.2f} GB")
             except Exception as e:
                 logger.debug(f"Memory stat collection failed: {e}")
+    
+    def _force_ray_cleanup(self):
+        """Force Ray cleanup with timeout and coordination"""
+        logger.info("Starting coordinated Ray cleanup")
+        
+        try:
+            import ray
+            
+            # Check if Ray is initialized
+            if ray.is_initialized():
+                logger.info("Ray is initialized, attempting shutdown")
+                
+                # Give a moment for VLLM workers to finish
+                time.sleep(2)
+                
+                # Shutdown Ray with timeout using threading
+                try:
+                    import threading
+                    
+                    shutdown_success = [False]  # Use list for mutable reference
+                    
+                    def shutdown_ray():
+                        try:
+                            ray.shutdown()
+                            shutdown_success[0] = True
+                            logger.info("Ray shutdown completed successfully")
+                        except Exception as e:
+                            logger.warning(f"Ray shutdown failed in thread: {e}")
+                    
+                    # Start shutdown in separate thread
+                    shutdown_thread = threading.Thread(target=shutdown_ray, daemon=True)
+                    shutdown_thread.start()
+                    
+                    # Wait for shutdown with timeout
+                    shutdown_thread.join(timeout=10.0)
+                    
+                    if shutdown_thread.is_alive() or not shutdown_success[0]:
+                        logger.warning("Ray shutdown timed out or failed, forcing process termination")
+                        self._force_kill_ray_processes()
+                    
+                except Exception as e:
+                    logger.warning(f"Ray shutdown coordination failed: {e}, attempting force cleanup")
+                    self._force_kill_ray_processes()
+            else:
+                logger.info("Ray not initialized, skipping Ray cleanup")
+                
+        except ImportError:
+            logger.debug("Ray not available, skipping Ray cleanup")
+        except Exception as e:
+            logger.warning(f"Error during Ray cleanup: {e}")
+    
+    def _force_kill_ray_processes(self):
+        """Force kill Ray processes if graceful shutdown fails"""
+        logger.warning("Force killing Ray processes")
+        
+        ray_processes = [
+            'ray::IDLE',
+            'ray::CoreWorker', 
+            'ray::RayletMonitor',
+            'ray::NodeManager',
+            'ray::ObjectManager',
+            'raylet',
+            'gcs_server'
+        ]
+        
+        for process_name in ray_processes:
+            try:
+                subprocess.run(['pkill', '-9', '-f', process_name], 
+                             check=False, timeout=3,
+                             stdout=subprocess.DEVNULL, 
+                             stderr=subprocess.DEVNULL)
+            except Exception:
+                pass
+        
+        # Also kill any remaining VLLM workers
+        try:
+            subprocess.run(['pkill', '-9', '-f', 'VllmWorker'], 
+                         check=False, timeout=3,
+                         stdout=subprocess.DEVNULL, 
+                         stderr=subprocess.DEVNULL)
+        except Exception:
+            pass
+    
+    def _terminate_background_processes_safe(self):
+        """Safely terminate background processes without hanging"""
+        logger.info("Starting safe background process termination")
+        
+        # Don't immediately kill Ray processes - let them cleanup naturally
+        # Only kill non-Ray processes
+        non_ray_processes = [
+            'vllm',  # But not VllmWorker
+        ]
+        
+        for process_name in non_ray_processes:
+            try:
+                subprocess.run(['pkill', '-f', process_name], 
+                             check=False, timeout=2,
+                             stdout=subprocess.DEVNULL, 
+                             stderr=subprocess.DEVNULL)
+            except Exception:
+                pass
     
     def _terminate_background_processes(self):
         """Terminate all background processes related to vLLM and Ray"""
@@ -644,14 +782,67 @@ class ModelInference:
 
     @classmethod
     def cleanup_all(cls):
-        """Cleanup all model instances"""
-        # Legacy cleanup
-        for instance in cls._instances.copy():
-            instance.cleanup()
-        cls._instances.clear()
+        """Cleanup all model instances with coordination"""
+        global _global_cleanup_in_progress
         
-        # Enhanced tracker cleanup
-        _global_tracker.cleanup_all_instances()
+        with _global_cleanup_lock:
+            if _global_cleanup_in_progress:
+                logger.info("Global cleanup already in progress, skipping")
+                return
+            _global_cleanup_in_progress = True
+        
+        try:
+            logger.info("Starting coordinated cleanup of all model instances")
+            
+            # Legacy cleanup
+            for instance in cls._instances.copy():
+                try:
+                    instance.cleanup()
+                except Exception as e:
+                    logger.error(f"Error cleaning up legacy instance: {e}")
+            cls._instances.clear()
+            
+            # Enhanced tracker cleanup
+            _global_tracker.cleanup_all_instances()
+            
+            # Final Ray cleanup
+            cls._final_ray_cleanup()
+            
+            logger.info("Coordinated cleanup completed")
+            
+        finally:
+            with _global_cleanup_lock:
+                _global_cleanup_in_progress = False
+    
+    @classmethod
+    def _final_ray_cleanup(cls):
+        """Perform final Ray cleanup after all instances are cleaned"""
+        logger.info("Performing final Ray cleanup")
+        
+        try:
+            import ray
+            if ray.is_initialized():
+                logger.info("Final Ray shutdown")
+                ray.shutdown()
+                
+                # Wait a moment for cleanup
+                time.sleep(1)
+                
+        except Exception as e:
+            logger.warning(f"Final Ray cleanup failed: {e}")
+        
+        # Force kill any remaining processes
+        try:
+            subprocess.run(['pkill', '-9', '-f', 'ray'], 
+                         check=False, timeout=3,
+                         stdout=subprocess.DEVNULL, 
+                         stderr=subprocess.DEVNULL)
+            subprocess.run(['pkill', '-9', '-f', 'VllmWorker'], 
+                         check=False, timeout=3,
+                         stdout=subprocess.DEVNULL, 
+                         stderr=subprocess.DEVNULL)
+        except Exception:
+            pass
     
     @classmethod
     def get_global_instance_stats(cls) -> Dict[str, Any]:
