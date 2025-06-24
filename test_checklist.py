@@ -1,123 +1,57 @@
-from models.llm import ModelInference
-import os
 from argparse import ArgumentParser
-from evaluation.checklist import create_checklist
-from evaluation.judge import generate_scores
+from pathlib import Path
+from agents.email_agent import EmailAgent
+from agents.checklist_agent import ChecklistAgent
+from agents.judge_agent import JudgeAgent
+from config.models import MODELS_CONFIG
+from config.settings import settings
+import json
+from utils.cleanup import agent_session
 
-models_dict = {
-    'deepseek-r1-1.5b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B',
-    'deepseek-r1-7b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-7B',
-    'deepseek-r1-14b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-14B',
-    'deepseek-r1-32b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-32B',
-    'deepseek-r1-70b': 'deepseek-ai/DeepSeek-R1-Distill-Llama-70B',
-    'gemma-3-12b': 'google/gemma-3-12b-it',
-    'gemma-3-27b': 'google/gemma-3-27b-it',
-    'llama-2-7b': 'unsloth/llama-2-7b-chat',
-    'llama-2-13b': 'daryl149/llama-2-13b-chat-hf',
-    'llama-3-70b': 'unsloth/Llama-3.3-70B-Instruct'
-}
-
-folder_path = './prompts/instructions'
-
-def open_prompt_files(file_names: str = 'all') -> dict:
-    """Open prompts files to experiment"""
-    
-    prompt_dict = {}
-    
-    # Check prompt_mode
-    if file_names == 'all':
-        # Get the list of files in the folder, sorted by filename
-        files = sorted(os.listdir(folder_path))
-    else:
-        files = [file_names]
-
-    # Loop through each file in the prompts folder
-    for filename in files:
-        file_path = os.path.join(folder_path, filename)
-
-        if os.path.isfile(file_path):
-            with open(file_path, 'r', encoding='utf-8') as file:
-                print(f"Opening file: {filename}")
-                content = file.read()
-                prompt_dict[filename.removesuffix('.txt')] = (content)
-    
-    return prompt_dict
-    
-            
-def generate_responses(prompt_dict: dict, topic: str, lm_model: str) -> dict:
-    """Generate responses from Selected Language Models"""
-    
-    response_dict = {}
-    
-    if lm_model == 'all':
-        lm_model = models_dict
-    else:
-        lm_model = {lm_model: models_dict[lm_model]} if lm_model in models_dict else None
-    
-    # Generate responses for each prompt and model
-    for model_name, model_id in lm_model.items():
-        # Load Model
-        llm = ModelInference(model_id=model_id, quantization='fp8')
-        for prompt_type, prompt_content in prompt_dict.items():
-            prompt_content = prompt_content.replace('[TOPIC]', topic)
-            response = llm.generate(query=prompt_content, model_name=model_name, remove_cot=True)
-            file_name = f'{prompt_type}|{model_name}.txt'
-
-            # Save the response
-            with open(f"output/responses/{file_name}", encoding='utf-8', mode='w') as f:
-                f.write(response)
-                
-            response_dict[f"{prompt_type}|{model_name}"] = response
-            
-    return response_dict
-        
-
-if __name__ == "__main__":
-    # Argument Parsing from Command Line
+def main():
     parser = ArgumentParser()
-    parser.add_argument("--prompt_mode", 
-                        type=str, 
-                        default='all', 
-                        required=False,
-                        help="Select prompt type to use. e.g. 01.txt / all")
-    parser.add_argument("--topic", 
-                        type=str, 
-                        default='Polar Bears Rescue by University of Sheffield', 
-                        required=False,
-                        help="Topic of the email.")
-    parser.add_argument("--language_model", 
-                        type=str, 
-                        default='deepseek-r1-1.5b', 
-                        required=False,
-                        choices=models_dict.keys(),
-                        help="Select languege model to use. e.g. deepseek-r1-1.5b / all")
-    parser.add_argument("--checklist_generator", 
-                        type=str, 
-                        default=None, 
-                        required=False,
-                        choices=models_dict.keys(),
-                        help="Select languege model to generate checklist. e.g. deepseek-r1-1.5b / None")
-    parser.add_argument("--judge", 
-                        type=str, 
-                        default=None, 
-                        required=False,
-                        choices=models_dict.keys(),
-                        help="Select languege model to generate judgement score. e.g. deepseek-r1-1.5b / None")
-
+    parser.add_argument("--prompt_mode", type=str, default='2', help="Select prompt type to use. e.g. 1.txt")
+    parser.add_argument("--topic", type=str, default="Polar Bears Rescue by University of Sheffield")
+    parser.add_argument("--email_model", type=str, default="deepseek-r1-1.5b", choices=MODELS_CONFIG.keys())
+    parser.add_argument("--checklist_model", type=str, default="deepseek-r1-8b", choices=MODELS_CONFIG.keys())
+    parser.add_argument("--judge_model", type=str, default="gemma-3-12b", choices=MODELS_CONFIG.keys())
+    
     args = parser.parse_args()
     
-    prompt_dict = open_prompt_files(args.prompt_mode)
-    # response_dict = generate_responses(prompt_dict=prompt_dict,
-                                    #    topic=args.topic,
-                                    #    lm_model=args.language_model)
+    # Initialize agents
+    print("Initializing agents...")
+    email_agent = EmailAgent(MODELS_CONFIG[args.email_model]['model_id'], MODELS_CONFIG[args.email_model]['dtype'], MODELS_CONFIG[args.email_model]['quantization'])
+    checklist_agent = ChecklistAgent(MODELS_CONFIG[args.checklist_model]['model_id'], MODELS_CONFIG[args.checklist_model]['dtype'], MODELS_CONFIG[args.checklist_model]['quantization'])
+    judge_agent = JudgeAgent(MODELS_CONFIG[args.judge_model]['model_id'], MODELS_CONFIG[args.judge_model]['dtype'], MODELS_CONFIG[args.judge_model]['quantization'])
     
-    if args.checklist_generator:
-        print('[INFO] Creating Checklist')
-        checklist_dict = create_checklist(response_file=None, 
-                                          model_id=models_dict[args.checklist_generator],
-                                          topic=args.topic)
-        # print('[INFO] Generating Judgement Score')
-        # judge_dict = generate_scores(response_dict=response_dict,
-        #                              checklist_dict=checklist_dict,
-        #                              model_id=models_dict[args.judge],
-        #                              topic=args.topic)
+    # Load email prompt
+    with open(f"prompts/instructions/{args.prompt_mode}.txt", 'r', encoding='utf-8') as f:
+        email_prompt = f.read().replace('[TOPIC]', args.topic)
+    
+    # Generate email
+    print("Generating email...")
+    with agent_session(email_agent):
+        email_content = email_agent.generate_email(email_prompt, args.topic)
+        email_agent.save_email(email_content=email_content, topic=args.topic, filename=f"{args.prompt_mode}|{args.email_model}.txt")
+    
+    # Generate checklist
+    print("Generating checklist...")
+    checklist = checklist_agent.generate_checklist(email_prompt, email_content, args.topic)
+    checklist_agent.save_checklist(checklist, f"{args.prompt_mode}|{args.email_model}.txt")
+    
+    # Evaluate email
+    print("Evaluating email...")
+    evaluation = judge_agent.evaluate_email(email_content, checklist, email_prompt)
+    
+    # Save results
+    output_dir = Path(settings.output_dir) / "evaluations"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    with open(output_dir / f"evaluation_{args.topic.replace(' ', '_')}.json", 'w') as f:
+        json.dump(evaluation.model_dump(), f, indent=2)
+    
+    print(f"Overall Score: {evaluation.overall_score:.2f}")
+    print(f"Weighted Score: {evaluation.weighted_score:.2f}")
+
+if __name__ == "__main__":
+    main()

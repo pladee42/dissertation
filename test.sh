@@ -18,6 +18,7 @@ module load GCC/12.2.0
 
 # Activate conda environment
 source activate dis-venv3
+conda env export > dis-venv3.yml
 
 # Set environment variables for better performance
 export PYTHONUNBUFFERED=1
@@ -32,7 +33,7 @@ python -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f
 
 # Run script without distributed launcher (using built-in model parallelism)
 echo "Running main.py with native model parallelism..."
-python -m test_checklist --prompt_mode=1 --checklist_generator=deepseek-r1-32b
+python -m test_checklist --prompt_mode=2 --email_model=deepseek-r1-1.5b --checklist_model=llama-3-3b --judge_model=llama-3-8b
 
 # Check execution status
 if [ $? -eq 0 ]; then
