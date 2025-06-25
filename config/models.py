@@ -3,13 +3,27 @@ MODELS_CONFIG = {
         'model_id': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B',
         'recommended_for': ['email_generation'],
         'quantization': 'experts_int8',
-        'dtype': 'bfloat16'
+        'dtype': 'bfloat16',
+        'sglang_config': {
+            'tp_size': 1,
+            'max_running_requests': 128,
+            'context_length': 4096,
+            'mem_fraction_static': 0.7,
+            'attention_backend': 'flashinfer'
+        }
     },
     'deepseek-r1-8b': {
         'model_id': 'deepseek-ai/DeepSeek-R1-0528-Qwen3-8B',
         'recommended_for': ['email_generation'],
         'quantization': 'experts_int8',
-        'dtype': 'bfloat16'
+        'dtype': 'bfloat16',
+        'sglang_config': {
+            'tp_size': 2,
+            'max_running_requests': 64,
+            'context_length': 4096,
+            'mem_fraction_static': 0.8,
+            'attention_backend': 'flashinfer'
+        }
     },
     'llama-3-3b':{
         'model_id': 'unsloth/Llama-3.2-3B-Instruct',
@@ -39,7 +53,14 @@ MODELS_CONFIG = {
         'model_id': 'deepseek-ai/DeepSeek-R1-Distill-Llama-70B',
         'recommended_for': ['checklist_generation', 'judge'],
         'quantization': 'experts_int8',
-        'dtype': 'bfloat16'
+        'dtype': 'bfloat16',
+        'sglang_config': {
+            'tp_size': 4,
+            'max_running_requests': 32,
+            'context_length': 4096,
+            'mem_fraction_static': 0.85,
+            'attention_backend': 'flashinfer'
+        }
     },
     'llama-4-109b': {
         'model_id': 'kishizaki-sci/Llama-4-Scout-17B-16E-Instruct-AWQ',
