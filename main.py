@@ -1,92 +1,95 @@
-from models.llm import ModelInference
+"""
+Simplified Main Script
+
+This provides simple email generation with:
+- Basic model selection
+- Simple argument handling
+- Minimal complexity
+"""
+
+import logging
 import os
-from argparse import ArgumentParser
+from config.config import MODELS, get_model_config
+from agents.email_agent import EmailAgent
 
-models_dict = {
-    'deepseek-r1-1.5b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B',
-    'deepseek-r1-7b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-7B',
-    'deepseek-r1-14b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-14B',
-    'deepseek-r1-32b': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-32B',
-    'deepseek-r1-70b': 'deepseek-ai/DeepSeek-R1-Distill-Llama-70B',
-    'gemma-3-12b': 'google/gemma-3-12b-it',
-    'gemma-3-27b': 'google/gemma-3-27b-it',
-    'llama-2-7b': 'unsloth/llama-2-7b-chat',
-    'llama-2-13b': 'daryl149/llama-2-13b-chat-hf',
-    'llama-3-70b': 'unsloth/Llama-3.3-70B-Instruct'
-}
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
-folder_path = './prompts/instructions'
+def load_prompt(prompt_file: str = "1.txt") -> str:
+    """Load a simple prompt from file"""
+    prompt_path = f"./prompts/instructions/{prompt_file}"
+    
+    try:
+        with open(prompt_path, 'r', encoding='utf-8') as file:
+            return file.read().strip()
+    except FileNotFoundError:
+        logger.warning(f"Prompt file not found: {prompt_path}")
+        return "Write a professional email about [TOPIC]"
 
-def open_prompt_files(file_names: str = 'all') -> dict:
-    """Open prompts files to experiment"""
+def generate_simple_email(model_name: str, topic: str, prompt: str) -> str:
+    """Generate email using specified model"""
+    logger.info(f"Generating email with {model_name} for topic: {topic}")
     
-    prompt_dict = {}
-    
-    # Check prompt_mode
-    if file_names == 'all':
-        # Get the list of files in the folder, sorted by filename
-        files = sorted(os.listdir(folder_path))
-    else:
-        files = [file_names]
+    try:
+        # Get model config
+        model_config = get_model_config(model_name)
+        if not model_config:
+            raise ValueError(f"Unknown model: {model_name}")
+        
+        # Create agent
+        agent = EmailAgent(
+            model_id=model_config['model_id'],
+            dtype="bfloat16",  # Simple default
+            quantization="experts_int8"  # Simple default
+        )
+        
+        # Generate email
+        email_content = agent.generate_email(prompt, topic)
+        
+        # Save output
+        output_file = f"./output/emails/{model_name}_{topic.replace(' ', '_')}.txt"
+        os.makedirs(os.path.dirname(output_file), exist_ok=True)
+        
+        with open(output_file, 'w', encoding='utf-8') as f:
+            f.write(email_content)
+        
+        logger.info(f"Email saved to: {output_file}")
+        return email_content
+        
+    except Exception as e:
+        logger.error(f"Error generating email with {model_name}: {e}")
+        return f"Error: {str(e)}"
 
-    # Loop through each file in the prompts folder
-    for filename in files:
-        file_path = os.path.join(folder_path, filename)
-
-        if os.path.isfile(file_path):
-            with open(file_path, 'r', encoding='utf-8') as file:
-                print(f"Opening file: {filename}")
-                content = file.read()
-                prompt_dict[filename.removesuffix('.txt')] = (content)
+def main():
+    """Simple main function"""
+    logger.info("Starting simple email generation")
     
-    return prompt_dict
+    # Simple configuration - no complex argument parsing
+    model_name = "deepseek-r1-1.5b"  # Default model
+    topic = "AI Research Collaboration"  # Default topic
+    prompt_file = "1.txt"  # Default prompt
     
-            
-def generate_responses(prompt_dict: dict, topic: str, lm_model: str) -> None:
-    """Generate responses from Selected Language Models"""
+    # Allow simple environment variable overrides
+    model_name = os.environ.get("EMAIL_MODEL", model_name)
+    topic = os.environ.get("EMAIL_TOPIC", topic)
+    prompt_file = os.environ.get("PROMPT_FILE", prompt_file)
     
-    if lm_model == 'all':
-        lm_model = models_dict
-    else:
-        lm_model = {lm_model: models_dict[lm_model]} if lm_model in models_dict else None
+    logger.info(f"Configuration: model={model_name}, topic={topic}, prompt={prompt_file}")
     
-    # Generate responses for each prompt and model
-    for model_name, model_id in lm_model.items():
-        # Load Model
-        llm = ModelInference(model_id=model_id, quantization='fp8')
-        for prompt_type, prompt_content in prompt_dict.items():
-            prompt_content = prompt_content.replace('[TOPIC]', topic)
-            response = llm.generate(query=prompt_content, model_name=model_name, remove_cot=True)
-            file_name = f'{prompt_type}|{model_name}.txt'
-
-            # Save the response
-            with open(f"output/responses/{file_name}", encoding='utf-8', mode='w') as f:
-                f.write(response)
+    # Load prompt
+    prompt = load_prompt(prompt_file)
+    
+    # Generate email
+    email_content = generate_simple_email(model_name, topic, prompt)
+    
+    # Print result
+    print("\n" + "="*50)
+    print("GENERATED EMAIL:")
+    print("="*50)
+    print(email_content)
+    print("="*50 + "\n")
+    
+    logger.info("Email generation completed")
 
 if __name__ == "__main__":
-    # Argument Parsing from Command Line
-    parser = ArgumentParser()
-    parser.add_argument("--prompt_mode", 
-                        type=str, 
-                        default='all', 
-                        required=False,
-                        help="Select prompt type to use. e.g. 01.txt / all")
-    parser.add_argument("--language_model", 
-                        type=str, 
-                        default='deepseek-r1-1.5b', 
-                        required=False,
-                        choices=models_dict.keys(),
-                        help="Select languege model to use. e.g. deepseek-r1-1.5b / all")
-    parser.add_argument("--topic", 
-                        type=str, 
-                        default='Polar Bears Rescue by University of Sheffield', 
-                        required=False,
-                        help="Topic of the email.")
-    args = parser.parse_args()
-    
-    prompt_dict = open_prompt_files(args.prompt_mode)
-    generate_responses(prompt_dict=prompt_dict,
-                       topic=args.topic,
-                       lm_model=args.language_model)
-    
-    
+    main()

@@ -24,7 +24,6 @@ conda env export > dis-venv3.yml
 export PYTHONUNBUFFERED=1
 export CUDA_DEVICE_MAX_CONNECTIONS=1  # For multi-GPU setups
 export TORCH_EXTENSIONS_DIR=$HOME/.cache/torch_extensions
-export VLLM_WORKER_MULTIPROC_METHOD=spawn
 export MKL_THREADING_LAYER=GNU
 # SGLang environment variables
 export SGLANG_BACKEND=flashinfer
