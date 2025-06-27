@@ -41,7 +41,7 @@ def main():
     
     # Load email prompt
     try:
-        with open("prompts/instructions/1.txt", 'r', encoding='utf-8') as f:
+        with open("prompts/instructions/2.txt", 'r', encoding='utf-8') as f:
             email_prompt = f.read()
     except FileNotFoundError:
         email_prompt = "Write a professional email about [TOPIC]"

@@ -23,6 +23,11 @@ source activate dis-venv3
 export PYTHONUNBUFFERED=1
 export CUDA_DEVICE_MAX_CONNECTIONS=1  # For multi-GPU setups
 export TORCH_EXTENSIONS_DIR=$HOME/.cache/torch_extensions
+# SGLang environment variables
+export SGLANG_BACKEND=flashinfer
+export SGLANG_DISABLE_DISK_CACHE=false
+export SGLANG_CHUNK_PREFILL_BUDGET=512
+export SGLANG_MEM_FRACTION_STATIC=0.85
 
 # Verify PyTorch installation and print version information
 echo "Verifying PyTorch installation..."
@@ -33,8 +38,8 @@ echo "GPU status before execution:"
 nvidia-smi
 
 # Run script without distributed launcher (using built-in model parallelism)
-echo "Running simplified main.py..."
-python -m main
+echo "Running main.py with native model parallelism..."
+python -m multi_model_runner
 
 # Check execution status
 if [ $? -eq 0 ]; then
