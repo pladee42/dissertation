@@ -1,7 +1,7 @@
 from argparse import ArgumentParser
 from pathlib import Path
-from models.multi_email_generator import MultiModelEmailGenerator
-from config.models import MODELS_CONFIG
+from models.orchestrator import SimpleModelOrchestrator
+from config.config import MODELS_CONFIG
 from utils.cleanup import get_gpu_memory_info, check_memory_availability, _aggressive_memory_cleanup
 import json
 import logging
@@ -77,7 +77,7 @@ def main():
     logger.info(f"Sequential mode: {args.sequential_mode}")
     
     try:
-        generator = MultiModelEmailGenerator(
+        generator = SimpleModelOrchestrator(
             email_models=args.email_models,
             checklist_model=args.checklist_model,
             judge_model=args.judge_model,
