@@ -17,22 +17,10 @@ logger = logging.getLogger(__name__)
 class SimpleChecklistAgent:
     """Simplified Checklist Generation Agent"""
     
-<<<<<<< HEAD
-    def save_checklist(self, checklist: Checklist, filename: str):
-        """Save checklist to both JSON and text formats"""
-        output_dir = Path(settings.output_dir) / "checklist"
-        output_dir.mkdir(parents=True, exist_ok=True)
-        
-        # Save JSON
-        json_path = output_dir / f"{filename}.json"
-        with open(json_path, 'w', encoding='utf-8') as f:
-            json.dump(checklist.model_dump(), f)
-=======
     def __init__(self, model_id: str, dtype: str = "bfloat16", quantization: str = "experts_int8"):
         """Initialize with basic configuration"""
         self.model_id = model_id
         self.model_name = model_id.split('/')[-1]
->>>>>>> bac19899e38533d0f62ed13c62c82216c70d462b
         
         logger.info(f"SimpleChecklistAgent initialized with model: {self.model_name}")
     

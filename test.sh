@@ -25,19 +25,14 @@ export PYTHONUNBUFFERED=1
 export CUDA_DEVICE_MAX_CONNECTIONS=1  # For multi-GPU setups
 export TORCH_EXTENSIONS_DIR=$HOME/.cache/torch_extensions
 export MKL_THREADING_LAYER=GNU
-# SGLang environment variables
-export SGLANG_BACKEND=flashinfer
-export SGLANG_DISABLE_DISK_CACHE=false
-export SGLANG_CHUNK_PREFILL_BUDGET=512
-export SGLANG_MEM_FRACTION_STATIC=0.85
 
 # Verify PyTorch installation and print version information
 echo "Verifying PyTorch installation..."
 python -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f'CUDA available: {torch.cuda.is_available()}'); print(f'CUDA version: {torch.version.cuda}'); print(f'GPU count: {torch.cuda.device_count()}')"
 
 # Run script without distributed launcher (using built-in model parallelism)
-echo "Running main.py with native model parallelism..."
-python -m test_sglang_checklist --prompt_mode=2 --email_model=deepseek-r1-1.5b --checklist_model=llama-3-3b --judge_model=llama-3-8b
+echo "Running test pipeline..."
+python -m test_pipeline
 
 # Check execution status
 if [ $? -eq 0 ]; then
