@@ -49,7 +49,7 @@ class ChecklistAgent:
         # Save JSON
         json_path = output_dir / f"{filename}.json"
         with open(json_path, 'w', encoding='utf-8') as f:
-            json.dump(checklist.model_dump(), f, indent=2)
+            json.dump(checklist.model_dump(), f)
         
         # Save readable text
         txt_path = output_dir / f"{filename}.txt"
