@@ -23,15 +23,11 @@ source activate dis-venv3
 export PYTHONUNBUFFERED=1
 export CUDA_DEVICE_MAX_CONNECTIONS=1  # For multi-GPU setups
 export TORCH_EXTENSIONS_DIR=$HOME/.cache/torch_extensions
-<<<<<<< HEAD
-export VLLM_WORKER_MULTIPROC_METHOD=spawn
 # SGLang environment variables
 export SGLANG_BACKEND=flashinfer
 export SGLANG_DISABLE_DISK_CACHE=false
 export SGLANG_CHUNK_PREFILL_BUDGET=512
 export SGLANG_MEM_FRACTION_STATIC=0.85
-=======
->>>>>>> 4efae1e (simplify code)
 
 # Verify PyTorch installation and print version information
 echo "Verifying PyTorch installation..."
@@ -43,7 +39,7 @@ nvidia-smi
 
 # Run script without distributed launcher (using built-in model parallelism)
 echo "Running main.py with native model parallelism..."
-python -m main --prompt_mode=all --language_model=deepseek-r1-70b --topic='Polar Bears Rescue by University of Sheffield'
+python -m multi_model_runner --prompt_mode=all --language_model=deepseek-r1-1.5b --topic='Polar Bears Rescue by University of Sheffield' --checklist_model=llama-3-3b --judge_model=llama-3-8b
 
 # Check execution status
 if [ $? -eq 0 ]; then
