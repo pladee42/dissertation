@@ -15,7 +15,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from agents.email_agent import EmailAgent
 from agents.checklist_agent import ChecklistAgent
 from agents.judge_agent import JudgeAgent
-from config.models import MODELS_CONFIG
+from config.config import MODELS_CONFIG
 
 logger = logging.getLogger(__name__)
 
