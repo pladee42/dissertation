@@ -56,7 +56,7 @@ class EmailAgent:
             full_prompt = f"{formatted_template}\n\nEmail:"
             
             # Generate with retry logic
-            email_content = self._generate_with_retry(full_prompt)
+            email_content = self._generate_with_retry(full_prompt, topic)
             
             generation_time = time.time() - start_time
             logger.info(f"Email generated in {generation_time:.2f}s for topic: {topic}")
@@ -65,9 +65,9 @@ class EmailAgent:
             
         except Exception as e:
             logger.error(f"Error generating email: {e}")
-            return f"Error generating email for topic '{topic}': {str(e)}"
+            return self._generate_fallback_email(topic)
     
-    def _generate_with_retry(self, prompt: str) -> str:
+    def _generate_with_retry(self, prompt: str, topic: str) -> str:
         """Generate text with simple retry logic"""
         last_error = None
         
