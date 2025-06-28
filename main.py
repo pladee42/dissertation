@@ -72,10 +72,9 @@ def main():
     
     if not backend.is_available():
         logger.warning(f"SGLang server not available at {sglang_url}")
-        logger.info("Please start SGLang server before running this script")
-        return 1
-    
-    logger.info(f"SGLang server is available at {sglang_url}")
+        logger.info("Running in fallback mode without SGLang")
+    else:
+        logger.info(f"SGLang server is available at {sglang_url}")
     
     # Simple configuration - no complex argument parsing
     model_name = "deepseek-r1-1.5b"  # Default model

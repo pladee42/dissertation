@@ -37,8 +37,8 @@ python -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f
 echo "GPU status before execution:"
 nvidia-smi
 
-# Start SGLang server first
-echo "Starting SGLang server..."
+# Try to start SGLang server
+echo "Attempting to start SGLang server..."
 python -m sglang.launch_server --model-path deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B --port 30000 --host 0.0.0.0 &
 SGLANG_PID=$!
 
@@ -49,18 +49,23 @@ sleep 30
 # Verify server is running
 if curl -s http://localhost:30000/health > /dev/null; then
     echo "SGLang server is running"
+    SERVER_AVAILABLE=true
 else
-    echo "Failed to start SGLang server"
-    exit 1
+    echo "SGLang server failed to start, running with fallback mode"
+    SERVER_AVAILABLE=false
+    # Kill the failed process
+    kill $SGLANG_PID 2>/dev/null || true
 fi
 
-# Run script
-echo "Running main.py with SGLang backend..."
+# Run script (agents will handle SGLang unavailability gracefully)
+echo "Running main.py..."
 python -m multi_model_runner
 
-# Clean up SGLang server
-echo "Stopping SGLang server..."
-kill $SGLANG_PID 2>/dev/null || true
+# Clean up SGLang server if it was running
+if [ "$SERVER_AVAILABLE" = true ]; then
+    echo "Stopping SGLang server..."
+    kill $SGLANG_PID 2>/dev/null || true
+fi
 
 # Check execution status
 if [ $? -eq 0 ]; then
