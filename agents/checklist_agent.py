@@ -1,36 +1,72 @@
 """
-Simplified Checklist Generation Agent
+SGLang Checklist Generation Agent
 
-This module provides simple checklist generation with:
-- Basic model interaction
-- Simple dictionary returns
-- Minimal configuration
+This module provides checklist generation with:
+- SGLang backend integration
+- Template-based prompts
+- Simple retry logic
 """
 
 import logging
 import time
 import json
-from typing import Optional, Dict, Any
+from typing import Dict, Any
+
+from models.sglang_backend import SGLangBackend
+from utils.template_manager import get_template_manager
+from config.config import get_setting
 
 logger = logging.getLogger(__name__)
 
-class SimpleChecklistAgent:
-    """Simplified Checklist Generation Agent"""
+class ChecklistAgent:
+    """SGLang-based Checklist Generation Agent"""
     
     def __init__(self, model_id: str, dtype: str = "bfloat16", quantization: str = "experts_int8"):
-        """Initialize with basic configuration"""
+        """Initialize with SGLang backend"""
         self.model_id = model_id
         self.model_name = model_id.split('/')[-1]
         
-        logger.info(f"SimpleChecklistAgent initialized with model: {self.model_name}")
+        # Initialize SGLang backend
+        sglang_url = get_setting('sglang_server_url', 'http://localhost:30000')
+        sglang_timeout = get_setting('sglang_timeout', 60)
+        self.backend = SGLangBackend(base_url=sglang_url, timeout=sglang_timeout)
+        
+        # Get template manager
+        self.template_manager = get_template_manager()
+        
+        # Retry settings
+        self.max_retries = get_setting('max_retries', 3)
+        
+        logger.info(f"ChecklistAgent initialized with model: {self.model_name}")
     
     def generate_checklist(self, user_query: str, reference_response: str, topic: str) -> Dict[str, Any]:
-        """Generate evaluation checklist and return simple dictionary"""
+        """Generate evaluation checklist using SGLang backend and templates"""
         start_time = time.time()
         
         try:
-            # Create simple checklist based on topic
-            checklist = self._create_simple_checklist(topic, user_query)
+            # Get checklist template
+            checklist_template = self.template_manager.get_checklist_template()
+            
+            # Format template with variables
+            formatted_template = self.template_manager.format_template(
+                checklist_template,
+                topic=topic,
+                user_query=user_query,
+                reference_response=reference_response[:500]  # Truncate for brevity
+            )
+            
+            # Create full prompt
+            full_prompt = f"{formatted_template}\n\nChecklist (JSON format):"
+            
+            # Generate with retry logic
+            checklist_json = self._generate_with_retry(full_prompt)
+            
+            # Parse JSON response
+            try:
+                checklist = json.loads(checklist_json)
+            except json.JSONDecodeError:
+                # Fallback to simple checklist if JSON parsing fails
+                checklist = self._create_fallback_checklist(topic)
             
             generation_time = time.time() - start_time
             logger.info(f"Checklist generated in {generation_time:.2f}s for topic: {topic}")
@@ -39,12 +75,39 @@ class SimpleChecklistAgent:
             
         except Exception as e:
             logger.error(f"Error generating checklist: {e}")
-            return {"error": f"Error generating checklist: {str(e)}"}
+            return self._create_fallback_checklist(topic)
     
-    def _create_simple_checklist(self, topic: str, user_query: str) -> Dict[str, Any]:
-        """Create a simple checklist structure"""
-        # Simple checklist template
-        checklist = {
+    def _generate_with_retry(self, prompt: str) -> str:
+        """Generate text with simple retry logic"""
+        last_error = None
+        
+        for attempt in range(self.max_retries):
+            try:
+                # Generate using SGLang backend
+                result = self.backend.generate(
+                    prompt=prompt,
+                    model=self.model_id,
+                    max_tokens=get_setting('max_tokens', 2048),
+                    temperature=get_setting('temperature', 0.7)
+                )
+                
+                if result.strip():
+                    return result.strip()
+                else:
+                    raise Exception("Empty response from SGLang")
+                    
+            except Exception as e:
+                last_error = e
+                logger.warning(f"Attempt {attempt + 1} failed: {e}")
+                if attempt < self.max_retries - 1:
+                    time.sleep(1)  # Simple delay between retries
+        
+        # If all retries failed, raise exception
+        raise Exception(f"Failed to generate checklist after {self.max_retries} attempts. Last error: {last_error}")
+    
+    def _create_fallback_checklist(self, topic: str) -> Dict[str, Any]:
+        """Create a simple fallback checklist"""
+        return {
             "topic": topic,
             "criteria": [
                 {
@@ -66,18 +129,10 @@ class SimpleChecklistAgent:
                     "id": 4,
                     "description": "Email has proper greeting and closing",
                     "priority": "medium"
-                },
-                {
-                    "id": 5,
-                    "description": "Grammar and spelling are correct",
-                    "priority": "low"
                 }
             ],
             "generated_by": self.model_name,
-            "timestamp": time.time()
+            "timestamp": time.time(),
+            "fallback": True
         }
-        
-        return checklist
 
-# Backward compatibility
-ChecklistAgent = SimpleChecklistAgent

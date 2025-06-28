@@ -11,7 +11,8 @@ import logging
 import os
 from argparse import ArgumentParser
 from models.orchestrator import SimpleModelOrchestrator
-from config.config import MODELS_CONFIG
+from config.config import MODELS_CONFIG, get_setting
+from models.sglang_backend import SGLangBackend
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -33,7 +34,17 @@ def main():
     
     args = parser.parse_args()
     
+    # Check SGLang server connectivity first
+    sglang_url = get_setting('sglang_server_url', 'http://localhost:30000')
+    backend = SGLangBackend(base_url=sglang_url)
+    
+    if not backend.is_available():
+        logger.error(f"SGLang server not available at {sglang_url}")
+        logger.info("Please start SGLang server before running this script")
+        return 1
+    
     logger.info("=== Starting Simplified Multi-Model Pipeline ===")
+    logger.info(f"SGLang server: {sglang_url} (available)")
     logger.info(f"Topic: {args.topic}")
     logger.info(f"Email models: {args.email_models}")
     logger.info(f"Checklist model: {args.checklist_model}")

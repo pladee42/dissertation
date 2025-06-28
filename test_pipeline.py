@@ -9,8 +9,9 @@ This module provides basic testing of the email generation pipeline:
 
 import logging
 import time
-from config.config import MODELS, get_model_config
+from config.config import MODELS, get_model_config, get_setting
 from models.orchestrator import SimpleModelOrchestrator
+from models.sglang_backend import SGLangBackend
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -18,6 +19,16 @@ logger = logging.getLogger(__name__)
 def test_simple_pipeline():
     """Test the simplified pipeline with basic models"""
     logger.info("Starting simplified pipeline test")
+    
+    # Check SGLang server connectivity first
+    sglang_url = get_setting('sglang_server_url', 'http://localhost:30000')
+    backend = SGLangBackend(base_url=sglang_url)
+    
+    if not backend.is_available():
+        logger.error(f"SGLang server not available at {sglang_url}")
+        return {"success": False, "error": "SGLang server not available"}
+    
+    logger.info(f"SGLang server is available at {sglang_url}")
     
     # Use simple models for testing
     email_models = ["deepseek-r1-1.5b", "llama-3-3b"]

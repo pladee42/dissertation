@@ -30,9 +30,30 @@ export MKL_THREADING_LAYER=GNU
 echo "Verifying PyTorch installation..."
 python -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f'CUDA available: {torch.cuda.is_available()}'); print(f'CUDA version: {torch.version.cuda}'); print(f'GPU count: {torch.cuda.device_count()}')"
 
-# Run script without distributed launcher (using built-in model parallelism)
+# Start SGLang server first
+echo "Starting SGLang server..."
+python -m sglang.launch_server --model-path deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B --port 30000 --host 0.0.0.0 &
+SGLANG_PID=$!
+
+# Wait for server to start
+echo "Waiting for SGLang server to start..."
+sleep 30
+
+# Verify server is running
+if curl -s http://localhost:30000/health > /dev/null; then
+    echo "SGLang server is running"
+else
+    echo "Failed to start SGLang server"
+    exit 1
+fi
+
+# Run script
 echo "Running test pipeline..."
 python -m test_pipeline
+
+# Clean up SGLang server
+echo "Stopping SGLang server..."
+kill $SGLANG_PID 2>/dev/null || true
 
 # Check execution status
 if [ $? -eq 0 ]; then

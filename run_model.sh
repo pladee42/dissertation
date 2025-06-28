@@ -37,9 +37,30 @@ python -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f
 echo "GPU status before execution:"
 nvidia-smi
 
-# Run script without distributed launcher (using built-in model parallelism)
-echo "Running main.py with native model parallelism..."
+# Start SGLang server first
+echo "Starting SGLang server..."
+python -m sglang.launch_server --model-path deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B --port 30000 --host 0.0.0.0 &
+SGLANG_PID=$!
+
+# Wait for server to start
+echo "Waiting for SGLang server to start..."
+sleep 30
+
+# Verify server is running
+if curl -s http://localhost:30000/health > /dev/null; then
+    echo "SGLang server is running"
+else
+    echo "Failed to start SGLang server"
+    exit 1
+fi
+
+# Run script
+echo "Running main.py with SGLang backend..."
 python -m multi_model_runner
+
+# Clean up SGLang server
+echo "Stopping SGLang server..."
+kill $SGLANG_PID 2>/dev/null || true
 
 # Check execution status
 if [ $? -eq 0 ]; then

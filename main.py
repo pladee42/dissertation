@@ -9,8 +9,9 @@ This provides simple email generation with:
 
 import logging
 import os
-from config.config import MODELS, get_model_config
+from config.config import MODELS, get_model_config, get_setting
 from agents.email_agent import EmailAgent
+from models.sglang_backend import SGLangBackend
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -43,8 +44,9 @@ def generate_simple_email(model_name: str, topic: str, prompt: str) -> str:
             quantization="experts_int8"  # Simple default
         )
         
-        # Generate email
-        email_content = agent.generate_email(prompt, topic)
+        # Generate email with template_id
+        template_id = os.environ.get("TEMPLATE_ID", "1")
+        email_content = agent.generate_email(prompt, topic, template_id)
         
         # Save output
         output_file = f"./output/emails/{model_name}_{topic.replace(' ', '_')}.txt"
@@ -63,6 +65,17 @@ def generate_simple_email(model_name: str, topic: str, prompt: str) -> str:
 def main():
     """Simple main function"""
     logger.info("Starting simple email generation")
+    
+    # Check SGLang server connectivity first
+    sglang_url = get_setting('sglang_server_url', 'http://localhost:30000')
+    backend = SGLangBackend(base_url=sglang_url)
+    
+    if not backend.is_available():
+        logger.warning(f"SGLang server not available at {sglang_url}")
+        logger.info("Please start SGLang server before running this script")
+        return 1
+    
+    logger.info(f"SGLang server is available at {sglang_url}")
     
     # Simple configuration - no complex argument parsing
     model_name = "deepseek-r1-1.5b"  # Default model

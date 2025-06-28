@@ -70,7 +70,12 @@ SETTINGS = {
     
     # Paths
     'prompt_dir': './prompts',
-    'log_dir': './log'
+    'log_dir': './log',
+    
+    # SGLang settings
+    'sglang_server_url': 'http://localhost:30000',
+    'sglang_timeout': 60,
+    'sglang_health_check': True
 }
 
 # Memory requirements by model size

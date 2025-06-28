@@ -68,7 +68,9 @@ class SimpleModelOrchestrator:
                     quantization=model_config.get('quantization', 'experts_int8')
                 )
                 
-                email_content = agent.generate_email(prompt, topic)
+                # Extract template_id from prompt if available, default to "1"
+                template_id = "1"
+                email_content = agent.generate_email(prompt, topic, template_id)
                 
                 # Simple result dictionary
                 result = {
@@ -173,7 +175,7 @@ class SimpleModelOrchestrator:
                     
                     # Add evaluation to result
                     email_result["evaluation"] = evaluation
-                    email_result["overall_score"] = evaluation.overall_score if hasattr(evaluation, 'overall_score') else 0.0
+                    email_result["overall_score"] = evaluation.get('overall_score', 0.0) if isinstance(evaluation, dict) else 0.0
                     
                 except Exception as e:
                     logger.error(f"Failed to evaluate email from {email_result['model_name']}: {e}")
