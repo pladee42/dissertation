@@ -140,7 +140,7 @@ class ModelOrchestrator:
         
         return result
     
-    def create_checklist(self, user_query: str, reference_response: str, topic: str) -> Dict[str, Any]:
+    def create_checklist(self, user_query: str, topic: str) -> Dict[str, Any]:
         """Create evaluation checklist"""
         logger.info("Creating evaluation checklist")
         start_time = time.time()
@@ -158,7 +158,7 @@ class ModelOrchestrator:
                 quantization=model_config.get('quantization', 'experts_int8')
             )
             
-            checklist = agent.generate_checklist(user_query, reference_response, topic)
+            checklist = agent.generate_checklist(user_query, topic)
             
             result = {
                 "checklist": checklist,
@@ -250,8 +250,7 @@ class ModelOrchestrator:
         email_results = self.generate_emails(prompt, topic)
         
         # Step 2: Create checklist
-        reference_email = email_results[0]["email_content"] if email_results and email_results[0].get("success") else ""
-        checklist_result = self.create_checklist(user_query or f"Email about {topic}", reference_email, topic)
+        checklist_result = self.create_checklist(user_query or f"Email about {topic}", topic)
         
         # Step 3: Evaluate emails
         if checklist_result.get("success"):

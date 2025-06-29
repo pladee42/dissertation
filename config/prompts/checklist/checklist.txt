@@ -16,10 +16,6 @@ I’ll provide you with a user query. Your task is to identify those key factors
 {user_query}
 <|end_of_query|>
 
-## Reference Response
-<|begin_of_reference_response|>
-{reference_response}
-<|end_of_reference_response|>
 
 # Task
 Given the above information, I need you to create a binary question list, so
@@ -28,7 +24,7 @@ Given the above information, I need you to create a binary question list, so
 Your question should be concise and include any necessary key content and
     → information (such as keywords, formats, correct counts and values) in
     → the user query or expected to be shown in responses. Your questions
-    → should not only consider evaluating the reference response, but all
+    → should evaluate all
     → possible responses. Avoid creating duplicate, cumbersome or vague
     → questions. For example, you should ask "Is this response contain the
     → correct answer ..." instead of "Is this response’s answer correct?". Ask

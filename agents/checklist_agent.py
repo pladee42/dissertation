@@ -39,7 +39,7 @@ class ChecklistAgent:
         
         logger.info(f"ChecklistAgent initialized with model: {self.model_name}")
     
-    def generate_checklist(self, user_query: str, reference_response: str, topic: str) -> Dict[str, Any]:
+    def generate_checklist(self, user_query: str, topic: str) -> Dict[str, Any]:
         """Generate evaluation checklist using SGLang backend and templates"""
         start_time = time.time()
         
@@ -51,8 +51,7 @@ class ChecklistAgent:
             formatted_template = self.template_manager.format_template(
                 checklist_template,
                 topic=topic,
-                user_query=user_query,
-                reference_response=reference_response[:500]  # Truncate for brevity
+                user_query=user_query
             )
             
             # Create full prompt
