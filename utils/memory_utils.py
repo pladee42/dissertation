@@ -12,7 +12,9 @@ import logging
 import time
 import psutil
 import torch
+import os
 from typing import Dict, List, Optional, Any
+from config.config import get_setting
 
 logger = logging.getLogger(__name__)
 
@@ -28,6 +30,17 @@ class SimpleMemoryManager:
     def __init__(self, strategy: str = "conservative"):
         self.strategy = MEMORY_STRATEGIES.get(strategy, MEMORY_STRATEGIES["conservative"])
         self.active_models: Dict[str, Any] = {}
+        
+        # Set model cache directory
+        models_cache_dir = get_setting('models_cache_dir', './downloaded_models')
+        os.makedirs(models_cache_dir, exist_ok=True)
+        
+        # Set HuggingFace cache directory
+        os.environ['HF_HOME'] = models_cache_dir
+        os.environ['TRANSFORMERS_CACHE'] = models_cache_dir
+        os.environ['HF_DATASETS_CACHE'] = models_cache_dir
+        
+        logger.info(f"Models cache directory set to: {models_cache_dir}")
         
         logger.info(f"SimpleMemoryManager initialized with {strategy} strategy")
     

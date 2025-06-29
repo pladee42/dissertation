@@ -50,55 +50,95 @@ class ModelOrchestrator:
         
         email_results = []
         
-        # Use simple sequential execution for reliability
-        for model_name in self.email_models:
-            try:
-                logger.info(f"Generating email with model: {model_name}")
+        # Use parallel execution for improved performance
+        if self.max_concurrent > 1 and len(self.email_models) > 1:
+            logger.info(f"Using parallel execution with {self.max_concurrent} concurrent models")
+            with ThreadPoolExecutor(max_workers=self.max_concurrent) as executor:
+                future_to_model = {}
                 
-                # Get model config
-                model_config = MODELS_CONFIG.get(model_name, {})
-                if not model_config:
-                    logger.warning(f"No config found for model: {model_name}")
-                    continue
+                for model_name in self.email_models:
+                    model_config = MODELS_CONFIG.get(model_name, {})
+                    if not model_config:
+                        logger.warning(f"No config found for model: {model_name}")
+                        continue
+                    
+                    future = executor.submit(
+                        self._generate_single_email,
+                        model_name, model_config, prompt, topic, start_time
+                    )
+                    future_to_model[future] = model_name
                 
-                # Create agent and generate email
-                agent = EmailAgent(
-                    model_id=model_config['model_id'],
-                    dtype=model_config.get('dtype', 'bfloat16'),
-                    quantization=model_config.get('quantization', 'experts_int8')
-                )
-                
-                # Extract template_id from prompt if available, default to "1"
-                template_id = "1"
-                email_content = agent.generate_email(prompt, topic, template_id)
-                
-                # Simple result dictionary
-                result = {
-                    "model_name": model_name,
-                    "model_id": model_config['model_id'],
-                    "email_content": email_content,
-                    "generation_time": time.time() - start_time,
-                    "success": True
-                }
-                
-                email_results.append(result)
-                logger.info(f"Successfully generated email with {model_name}")
-                
-            except Exception as e:
-                logger.error(f"Failed to generate email with {model_name}: {e}")
-                # Add failed result
-                email_results.append({
-                    "model_name": model_name,
-                    "email_content": "",
-                    "generation_time": 0,
-                    "success": False,
-                    "error": str(e)
-                })
+                # Collect results
+                for future in as_completed(future_to_model):
+                    model_name = future_to_model[future]
+                    try:
+                        result = future.result()
+                        email_results.append(result)
+                        logger.info(f"Successfully generated email with {model_name}")
+                    except Exception as e:
+                        logger.error(f"Failed to generate email with {model_name}: {e}")
+                        email_results.append({
+                            "model_name": model_name,
+                            "email_content": "",
+                            "generation_time": 0,
+                            "success": False,
+                            "error": str(e)
+                        })
+        else:
+            # Sequential execution fallback
+            for model_name in self.email_models:
+                try:
+                    model_config = MODELS_CONFIG.get(model_name, {})
+                    if not model_config:
+                        logger.warning(f"No config found for model: {model_name}")
+                        continue
+                    
+                    result = self._generate_single_email(
+                        model_name, model_config, prompt, topic, start_time
+                    )
+                    email_results.append(result)
+                    logger.info(f"Successfully generated email with {model_name}")
+                    
+                except Exception as e:
+                    logger.error(f"Failed to generate email with {model_name}: {e}")
+                    email_results.append({
+                        "model_name": model_name,
+                        "email_content": "",
+                        "generation_time": 0,
+                        "success": False,
+                        "error": str(e)
+                    })
         
         total_time = time.time() - start_time
         logger.info(f"Email generation completed in {total_time:.2f}s")
         
         return email_results
+    
+    def _generate_single_email(self, model_name: str, model_config: dict, prompt: str, topic: str, start_time: float) -> Dict[str, Any]:
+        """Generate email with a single model (for parallel execution)"""
+        logger.info(f"Generating email with model: {model_name}")
+        
+        # Create agent and generate email
+        agent = EmailAgent(
+            model_id=model_config['model_id'],
+            dtype=model_config.get('dtype', 'bfloat16'),
+            quantization=model_config.get('quantization', 'experts_int8')
+        )
+        
+        # Extract template_id from prompt if available, default to "1"
+        template_id = "1"
+        email_content = agent.generate_email(prompt, topic, template_id)
+        
+        # Simple result dictionary
+        result = {
+            "model_name": model_name,
+            "model_id": model_config['model_id'],
+            "email_content": email_content,
+            "generation_time": time.time() - start_time,
+            "success": True
+        }
+        
+        return result
     
     def create_checklist(self, user_query: str, reference_response: str, topic: str) -> Dict[str, Any]:
         """Create evaluation checklist"""

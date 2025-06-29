@@ -1,13 +1,3 @@
-"""
-Simplified Configuration
-
-This module provides all configuration in one place with:
-- Basic model configurations
-- Simple settings
-- Minimal complexity
-"""
-
-# Simple model configurations
 MODELS = {
     'deepseek-r1-1.5b': {
         'uid': 'M0001',
@@ -77,8 +67,9 @@ SETTINGS = {
     'default_quantization': 'experts_int8',
     
     # Paths
-    'prompt_dir': './prompts',
+    'prompt_dir': './config/prompts',
     'log_dir': './log',
+    'models_cache_dir': './downloaded_models',
     
     # SGLang settings
     'sglang_server_url': 'http://localhost:30000',
