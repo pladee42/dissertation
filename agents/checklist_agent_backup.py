@@ -16,7 +16,7 @@ class ChecklistAgent:
         """Generate structured checklist with validation and retry logic"""
         
         # Load prompt template
-        prompt_path = Path("prompts/checklist/checklist.txt")
+        prompt_path = Path("config/prompts/checklist/checklist.txt")
         with open(prompt_path, 'r', encoding='utf-8') as f:
             prompt_template = f.read()
         

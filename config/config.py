@@ -10,41 +10,49 @@ This module provides all configuration in one place with:
 # Simple model configurations
 MODELS = {
     'deepseek-r1-1.5b': {
+        'uid': 'M0001',
         'model_id': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B',
         'recommended_for': 'email_generation',
         'size': 'small'
     },
     'deepseek-r1-8b': {
+        'uid': 'M0002',
         'model_id': 'deepseek-ai/DeepSeek-R1-0528-Qwen3-8B',
         'recommended_for': 'email_generation',
         'size': 'medium'
     },
     'llama-3-3b': {
+        'uid': 'M0003',
         'model_id': 'unsloth/Llama-3.2-3B-Instruct',
         'recommended_for': 'email_generation',
         'size': 'small'
     },
     'llama-3-8b': {
+        'uid': 'M0004',
         'model_id': 'casperhansen/llama-3-8b-instruct-awq',
         'recommended_for': 'email_generation',
         'size': 'medium'
     },
     'gemma-3-4b': {
+        'uid': 'M0005',
         'model_id': 'gaunernst/gemma-3-4b-it-qat-autoawq',
         'recommended_for': 'email_generation',
         'size': 'small'
     },
     'qwen-3-8b': {
+        'uid': 'M0006',
         'model_id': 'Qwen/Qwen3-8B-AWQ',
         'recommended_for': 'email_generation',
         'size': 'medium'
     },
     'deepseek-r1-70b': {
+        'uid': 'M0007',
         'model_id': 'deepseek-ai/DeepSeek-R1-Distill-Llama-70B',
         'recommended_for': 'checklist_generation',
         'size': 'large'
     },
     'llama-4-109b': {
+        'uid': 'M0008',
         'model_id': 'kishizaki-sci/Llama-4-Scout-17B-16E-Instruct-AWQ',
         'recommended_for': 'judge',
         'size': 'large'
@@ -98,6 +106,33 @@ def get_memory_requirement(model_name: str) -> dict:
     model_config = get_model_config(model_name)
     size = model_config.get('size', 'medium')
     return MEMORY_REQUIREMENTS.get(size, MEMORY_REQUIREMENTS['medium'])
+
+def get_model_by_uid(uid: str) -> dict:
+    """Get model configuration by UID"""
+    for model_name, config in MODELS.items():
+        if config.get('uid') == uid:
+            return {model_name: config}
+    return {}
+
+def get_uid_by_model_name(model_name: str) -> str:
+    """Get UID by model name"""
+    model_config = MODELS.get(model_name, {})
+    return model_config.get('uid', '')
+
+def get_model_name_by_uid(uid: str) -> str:
+    """Get model name by UID"""
+    for model_name, config in MODELS.items():
+        if config.get('uid') == uid:
+            return model_name
+    return ''
+
+def list_models_by_size(size: str) -> list:
+    """Get list of model names by size category"""
+    models = []
+    for model_name, config in MODELS.items():
+        if config.get('size') == size:
+            models.append(model_name)
+    return models
 
 # Legacy compatibility (for existing imports)
 MODELS_CONFIG = MODELS

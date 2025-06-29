@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 class TemplateManager:
     """Simple template manager for loading prompt templates"""
     
-    def __init__(self, base_path: str = "./prompts"):
+    def __init__(self, base_path: str = "./config/prompts"):
         """
         Initialize template manager
         

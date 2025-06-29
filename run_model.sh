@@ -58,8 +58,8 @@ else
 fi
 
 # Run script (agents will handle SGLang unavailability gracefully)
-echo "Running main.py..."
-python -m multi_model_runner
+echo "Running runner.py..."
+python -m runner
 
 # Clean up SGLang server if it was running
 if [ "$SERVER_AVAILABLE" = true ]; then

@@ -19,8 +19,8 @@ from config.config import MODELS_CONFIG
 
 logger = logging.getLogger(__name__)
 
-class SimpleModelOrchestrator:
-    """Simplified orchestrator for multiple models"""
+class ModelOrchestrator:
+    """Orchestrator for multiple models"""
     
     def __init__(self, 
                  email_models: List[str],

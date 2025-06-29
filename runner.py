@@ -10,21 +10,35 @@ This provides simple multi-model email generation with:
 import logging
 import os
 from argparse import ArgumentParser
-from models.orchestrator import SimpleModelOrchestrator
-from config.config import MODELS_CONFIG, get_setting
+from models.orchestrator import ModelOrchestrator
+from config.config import MODELS_CONFIG, get_setting, MODELS
 from models.sglang_backend import SGLangBackend
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+def get_models_by_size(size_categories):
+    """Get models by size categories (small, medium, large)"""
+    if isinstance(size_categories, str):
+        size_categories = [size_categories]
+    
+    models = []
+    for model_name, config in MODELS.items():
+        if config.get('size') in size_categories:
+            models.append(model_name)
+    return models
+
 def main():
-    parser = ArgumentParser(description="Simplified multi-model email generation")
+    parser = ArgumentParser(description="Multi-model email generation")
     parser.add_argument("--topic", type=str, 
                        default="Polar Bears Rescue by University of Sheffield")
+    parser.add_argument("--email_generation", type=str, 
+                       choices=['small', 'medium', 'large', 'all'],
+                       help="Size category for email models (small, medium uses small+medium, large, all)")
     parser.add_argument("--email_models", nargs='+', 
                        default=["deepseek-r1-1.5b", "llama-3-3b"],
                        choices=list(MODELS_CONFIG.keys()),
-                       help="List of models for email generation")
+                       help="List of models for email generation (overrides --email_generation)")
     parser.add_argument("--checklist_model", type=str, 
                        default="deepseek-r1-8b",
                        choices=list(MODELS_CONFIG.keys()))
@@ -33,6 +47,19 @@ def main():
                        choices=list(MODELS_CONFIG.keys()))
     
     args = parser.parse_args()
+    
+    # Handle email_generation mode
+    if args.email_generation and not hasattr(args, 'email_models_specified'):
+        if args.email_generation == 'small':
+            args.email_models = get_models_by_size('small')
+        elif args.email_generation == 'medium':
+            args.email_models = get_models_by_size(['small', 'medium'])
+        elif args.email_generation == 'large':
+            args.email_models = get_models_by_size('large')
+        elif args.email_generation == 'all':
+            args.email_models = get_models_by_size(['small', 'medium', 'large'])
+        
+        logger.info(f"Email generation mode '{args.email_generation}' selected models: {args.email_models}")
     
     # Check SGLang server connectivity first
     sglang_url = get_setting('sglang_server_url', 'http://localhost:30000')
@@ -52,7 +79,7 @@ def main():
     
     # Load email prompt
     try:
-        with open("prompts/instructions/2.txt", 'r', encoding='utf-8') as f:
+        with open("config/prompts/instructions/2.txt", 'r', encoding='utf-8') as f:
             email_prompt = f.read()
     except FileNotFoundError:
         email_prompt = "Write a professional email about [TOPIC]"
@@ -60,11 +87,11 @@ def main():
     
     # Create orchestrator
     try:
-        orchestrator = SimpleModelOrchestrator(
+        orchestrator = ModelOrchestrator(
             email_models=args.email_models,
             checklist_model=args.checklist_model,
             judge_model=args.judge_model,
-            max_concurrent=1  # Keep it simple
+            max_concurrent=1
         )
         
         # Run the pipeline

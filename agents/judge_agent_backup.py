@@ -14,7 +14,7 @@ class JudgeAgent:
         """Evaluate a single checklist item"""
         
         # Load judge prompt template
-        with open("prompts/judge/judge.txt", 'r', encoding='utf-8') as f:
+        with open("config/prompts/judge/judge.txt", 'r', encoding='utf-8') as f:
             prompt_template = f.read()
         
         # Format prompt
