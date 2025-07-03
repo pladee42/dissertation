@@ -12,6 +12,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from models.orchestrator import ModelOrchestrator
 from config.topic_manager import get_topic_manager
 from config.config import get_setting
+from utils.data_collector import DataCollector
 
 logger = logging.getLogger(__name__)
 
@@ -40,6 +41,9 @@ class MultiTopicOrchestrator:
         self.max_concurrent = max_concurrent
         self.max_concurrent_topics = max_concurrent_topics
         self.topic_manager = get_topic_manager()
+        
+        # Initialize data collector for aggregated data
+        self.data_collector = DataCollector()
         
         logger.info(f"MultiTopicOrchestrator initialized for {len(email_models)} email models")
     

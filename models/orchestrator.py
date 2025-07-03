@@ -16,6 +16,8 @@ from agents.email_agent import EmailAgent
 from agents.checklist_agent import ChecklistAgent
 from agents.judge_agent import JudgeAgent
 from config.config import MODELS_CONFIG
+from utils.data_collector import DataCollector
+from config.topic_manager import get_topic_manager
 
 logger = logging.getLogger(__name__)
 
@@ -41,7 +43,31 @@ class ModelOrchestrator:
         self.judge_model = judge_model
         self.max_concurrent = min(max_concurrent, 2)  # Keep it simple
         
+        # Initialize data collector
+        self.data_collector = DataCollector()
+        
+        # Initialize topic manager for UID lookup
+        try:
+            self.topic_manager = get_topic_manager()
+        except:
+            self.topic_manager = None
+        
         logger.info(f"SimpleModelOrchestrator initialized with {len(email_models)} email models")
+    
+    def _find_topic_uid(self, topic_name: str) -> str:
+        """Find topic UID by matching topic name"""
+        if not self.topic_manager:
+            return ""
+        
+        try:
+            all_topics = self.topic_manager.list_all_topics()
+            for topic_data in all_topics:
+                if topic_data.get('topic_name', '').lower() == topic_name.lower():
+                    return topic_data.get('uid', '')
+        except:
+            pass
+        
+        return ""
     
     def generate_emails(self, prompt: str, topic: str) -> List[Dict[str, Any]]:
         """Generate emails from multiple models"""
@@ -270,6 +296,24 @@ class ModelOrchestrator:
             "total_time": time.time() - start_time,
             "success": len([r for r in evaluated_results if r.get("success")]) > 0
         }
+        
+        # Collect training data
+        try:
+            topic_uid = self._find_topic_uid(topic)
+            topic_data = {"uid": topic_uid, "name": topic}
+            input_data = {"prompt": prompt, "user_query": user_query or f"Email about {topic}"}
+            
+            saved_path = self.data_collector.save_session_data(
+                results=result,
+                topic_data=topic_data,
+                input_data=input_data
+            )
+            
+            if saved_path:
+                logger.info(f"Training data collected: {saved_path}")
+            
+        except Exception as e:
+            logger.warning(f"Failed to collect training data: {e}")
         
         logger.info(f"Pipeline completed in {result['total_time']:.2f}s")
         return result
