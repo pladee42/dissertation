@@ -89,14 +89,10 @@ SETTINGS = {
     
     # Backend settings
     'backend_type': 'vllm',
-    'server_url': 'http://localhost:30000',
-    'server_timeout': 60,
-    'server_health_check': True,
     
-    # Legacy SGLang settings (for backward compatibility)
-    'sglang_server_url': 'http://localhost:30000',
-    'sglang_timeout': 60,
-    'sglang_health_check': True
+    # vLLM settings
+    'vllm_max_parallel': 4,
+    'vllm_gpu_memory_utilization': 0.6
 }
 
 # Memory requirements by model size

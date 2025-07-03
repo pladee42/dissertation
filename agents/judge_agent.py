@@ -1,8 +1,8 @@
 """
-SGLang Judge Agent
+vLLM Judge Agent
 
 This module provides email evaluation with:
-- SGLang backend integration
+- vLLM backend integration
 - Template-based prompts
 - Simple retry logic
 """
@@ -12,7 +12,6 @@ import time
 import json
 from typing import Dict, Any
 
-from models.sglang_backend import SGLangBackend
 from models.vllm_backend import VLLMBackend
 from utils.template_manager import get_template_manager
 from config.config import get_setting
@@ -20,22 +19,16 @@ from config.config import get_setting
 logger = logging.getLogger(__name__)
 
 class JudgeAgent:
-    """SGLang-based Judge Agent for email evaluation"""
+    """vLLM-based Judge Agent for email evaluation"""
     
     def __init__(self, model_id: str, dtype: str = "bfloat16", quantization: str = "experts_int8", backend_type: str = "vllm", model_key: str = None):
-        """Initialize with configurable backend"""
+        """Initialize with vLLM backend"""
         self.model_id = model_id
         self.model_key = model_key  # Model configuration key
         self.model_name = model_id.split('/')[-1]
         
-        # Initialize backend based on type
-        server_url = get_setting('server_url', 'http://localhost:30000')
-        server_timeout = get_setting('server_timeout', 60)
-        
-        if backend_type.lower() == "sglang":
-            self.backend = SGLangBackend(base_url=server_url, timeout=server_timeout)
-        else:  # default to vllm
-            self.backend = VLLMBackend(base_url=server_url, timeout=server_timeout)
+        # Initialize vLLM backend
+        self.backend = VLLMBackend()
         
         # Get template manager
         self.template_manager = get_template_manager()
@@ -46,7 +39,7 @@ class JudgeAgent:
         logger.info(f"JudgeAgent initialized with model: {self.model_name}")
     
     def evaluate_email(self, email_content: str, checklist: Dict[str, Any]) -> Dict[str, Any]:
-        """Evaluate email using SGLang backend and templates"""
+        """Evaluate email using vLLM backend and templates"""
         start_time = time.time()
         
         try:
@@ -94,7 +87,7 @@ class JudgeAgent:
         
         for attempt in range(self.max_retries):
             try:
-                # Generate using SGLang backend
+                # Generate using vLLM backend
                 result = self.backend.generate(
                     prompt=prompt,
                     model=self.model_key or self.model_id,

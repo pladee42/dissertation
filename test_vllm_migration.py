@@ -29,7 +29,6 @@ def test_email_agent_with_vllm():
     try:
         agent = EmailAgent(
             model_id="deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
-            backend_type="vllm",
             model_key="deepseek-r1-1.5b"
         )
         
@@ -64,7 +63,7 @@ def main():
         logger.info("✅ All tests passed - Migration successful!")
         return 0
     else:
-        logger.error("❌ Some tests failed - Check vLLM server and configuration")
+        logger.error("❌ Some tests failed - Check vLLM library and configuration")
         return 1
 
 if __name__ == "__main__":

@@ -66,9 +66,9 @@ def main():
     
     if not backend.is_available():
         logger.warning("vLLM library not available")
-        logger.info("Running in fallback mode without vLLM")
+        logger.info("Running in fallback mode")
     else:
-        logger.info("vLLM library available (direct usage)")
+        logger.info("vLLM library available")
     
     logger.info("=== Starting Simplified Multi-Model Pipeline ===")
     logger.info(f"Topic: {args.topic}")

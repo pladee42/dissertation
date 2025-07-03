@@ -1,8 +1,8 @@
 """
-SGLang Checklist Generation Agent
+vLLM Checklist Generation Agent
 
 This module provides checklist generation with:
-- SGLang backend integration
+- vLLM backend integration
 - Template-based prompts
 - Simple retry logic
 """
@@ -12,7 +12,6 @@ import time
 import json
 from typing import Dict, Any
 
-from models.sglang_backend import SGLangBackend
 from models.vllm_backend import VLLMBackend
 from utils.template_manager import get_template_manager
 from config.config import get_setting
@@ -20,22 +19,16 @@ from config.config import get_setting
 logger = logging.getLogger(__name__)
 
 class ChecklistAgent:
-    """SGLang-based Checklist Generation Agent"""
+    """vLLM-based Checklist Generation Agent"""
     
     def __init__(self, model_id: str, dtype: str = "bfloat16", quantization: str = "experts_int8", backend_type: str = "vllm", model_key: str = None):
-        """Initialize with configurable backend"""
+        """Initialize with vLLM backend"""
         self.model_id = model_id
         self.model_key = model_key  # Model configuration key
         self.model_name = model_id.split('/')[-1]
         
-        # Initialize backend based on type
-        server_url = get_setting('server_url', 'http://localhost:30000')
-        server_timeout = get_setting('server_timeout', 60)
-        
-        if backend_type.lower() == "sglang":
-            self.backend = SGLangBackend(base_url=server_url, timeout=server_timeout)
-        else:  # default to vllm
-            self.backend = VLLMBackend(base_url=server_url, timeout=server_timeout)
+        # Initialize vLLM backend
+        self.backend = VLLMBackend()
         
         # Get template manager
         self.template_manager = get_template_manager()
@@ -46,7 +39,7 @@ class ChecklistAgent:
         logger.info(f"ChecklistAgent initialized with model: {self.model_name}")
     
     def generate_checklist(self, user_query: str, topic: str) -> Dict[str, Any]:
-        """Generate evaluation checklist using SGLang backend and templates"""
+        """Generate evaluation checklist using vLLM backend and templates"""
         start_time = time.time()
         
         try:
@@ -88,7 +81,7 @@ class ChecklistAgent:
         
         for attempt in range(self.max_retries):
             try:
-                # Generate using SGLang backend
+                # Generate using vLLM backend
                 result = self.backend.generate(
                     prompt=prompt,
                     model=self.model_key or self.model_id,

@@ -8,23 +8,22 @@ logger = logging.getLogger(__name__)
 class VLLMBackend:
     """vLLM backend for LLM inference using direct Python library"""
     
-    def __init__(self, base_url: str = "http://localhost:30000", timeout: int = 60, max_parallel: int = 4):
+    def __init__(self, max_parallel: int = 4):
         """
         Initialize vLLM backend
         
         Args:
-            base_url: Unused (kept for compatibility)
-            timeout: Unused (kept for compatibility)
             max_parallel: Maximum parallel requests
         """
         self.max_parallel = max_parallel
         self.executor = ThreadPoolExecutor(max_workers=max_parallel)
         self.engines = {}  # Cache for loaded models
         
-        # Set cache directory
+        # Set cache directory and GPU memory settings
         cache_dir = "./downloaded_models"
         os.makedirs(cache_dir, exist_ok=True)
         os.environ["HF_HOME"] = cache_dir
+        os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
         
         logger.info(f"vLLM backend initialized with max_parallel: {max_parallel}")
     

@@ -23,6 +23,7 @@ source activate agent-env
 export PYTHONUNBUFFERED=1
 export CUDA_DEVICE_MAX_CONNECTIONS=1  # For multi-GPU setups
 export TORCH_EXTENSIONS_DIR=$HOME/.cache/torch_extensions
+export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
 # Set model cache directories
 export HF_HOME=./downloaded_models
@@ -36,8 +37,10 @@ export VLLM_ENGINE_ITERATION_TIMEOUT_S=600
 echo "Verifying PyTorch installation..."
 python -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f'CUDA available: {torch.cuda.is_available()}'); print(f'CUDA version: {torch.version.cuda}'); print(f'GPU count: {torch.cuda.device_count()}')"
 
-# Monitor GPU status before running
-echo "GPU status before execution:"
+# Clean up GPU memory and check status
+echo "Cleaning up GPU processes..."
+nvidia-smi --query-compute-apps=pid --format=csv,noheader,nounits | xargs -r kill -9
+echo "GPU status after cleanup:"
 nvidia-smi
 
 # Run script (agents will handle SGLang unavailability gracefully)
