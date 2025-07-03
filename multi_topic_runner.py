@@ -127,7 +127,7 @@ def main():
     
     # Load email prompt
     try:
-        with open("config/prompts/instructions/instruction.txt", 'r', encoding='utf-8') as f:
+        with open("config/prompts/instructions/instruction.md", 'r', encoding='utf-8') as f:
             email_prompt = f.read()
     except FileNotFoundError:
         email_prompt = "Write a professional email about [TOPIC]"

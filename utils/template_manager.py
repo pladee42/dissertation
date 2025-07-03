@@ -36,20 +36,20 @@ class TemplateManager:
             if os.path.exists(instructions_path):
                 self.templates["email"] = {}
                 for file in os.listdir(instructions_path):
-                    if file.endswith(".txt"):
-                        template_name = file.replace(".txt", "")
+                    if file.endswith(".md"):
+                        template_name = file.replace(".md", "")
                         file_path = os.path.join(instructions_path, file)
                         with open(file_path, 'r', encoding='utf-8') as f:
                             self.templates["email"][template_name] = f.read().strip()
             
             # Load checklist template
-            checklist_path = os.path.join(self.base_path, "checklist", "checklist.txt")
+            checklist_path = os.path.join(self.base_path, "checklist", "checklist.md")
             if os.path.exists(checklist_path):
                 with open(checklist_path, 'r', encoding='utf-8') as f:
                     self.templates["checklist"] = f.read().strip()
             
             # Load judge template
-            judge_path = os.path.join(self.base_path, "judge", "judge.txt")
+            judge_path = os.path.join(self.base_path, "judge", "judge.md")
             if os.path.exists(judge_path):
                 with open(judge_path, 'r', encoding='utf-8') as f:
                     self.templates["judge"] = f.read().strip()
