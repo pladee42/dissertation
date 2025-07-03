@@ -15,7 +15,7 @@ from pathlib import Path
 from models.multi_topic_orchestrator import MultiTopicOrchestrator
 from config.config import MODELS_CONFIG, get_setting, MODELS
 from config.topic_manager import get_topic_manager
-from models.sglang_backend import SGLangBackend
+from models.vllm_backend import VLLMBackend
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -115,15 +115,15 @@ def main():
         
         logger.info(f"Email generation mode '{args.email_generation}' selected models: {args.email_models}")
     
-    # Check SGLang server connectivity
-    sglang_url = get_setting('sglang_server_url', 'http://localhost:30000')
-    backend = SGLangBackend(base_url=sglang_url)
+    # Check vLLM server connectivity
+    server_url = get_setting('server_url', 'http://localhost:30000')
+    backend = VLLMBackend(base_url=server_url)
     
     if not backend.is_available():
-        logger.warning(f"SGLang server not available at {sglang_url}")
-        logger.info("Running in fallback mode without SGLang")
+        logger.warning(f"vLLM server not available at {server_url}")
+        logger.info("Running in fallback mode without vLLM")
     else:
-        logger.info(f"SGLang server: {sglang_url} (available)")
+        logger.info(f"vLLM server: {server_url} (available)")
     
     # Load email prompt
     try:

@@ -12,7 +12,7 @@ import os
 from argparse import ArgumentParser
 from models.orchestrator import ModelOrchestrator
 from config.config import MODELS_CONFIG, get_setting, MODELS
-from models.sglang_backend import SGLangBackend
+from models.vllm_backend import VLLMBackend
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -61,15 +61,15 @@ def main():
         
         logger.info(f"Email generation mode '{args.email_generation}' selected models: {args.email_models}")
     
-    # Check SGLang server connectivity first
-    sglang_url = get_setting('sglang_server_url', 'http://localhost:30000')
-    backend = SGLangBackend(base_url=sglang_url)
+    # Check vLLM server connectivity first
+    server_url = get_setting('server_url', 'http://localhost:30000')
+    backend = VLLMBackend(base_url=server_url)
     
     if not backend.is_available():
-        logger.warning(f"SGLang server not available at {sglang_url}")
-        logger.info("Running in fallback mode without SGLang")
+        logger.warning(f"vLLM server not available at {server_url}")
+        logger.info("Running in fallback mode without vLLM")
     else:
-        logger.info(f"SGLang server: {sglang_url} (available)")
+        logger.info(f"vLLM server: {server_url} (available)")
     
     logger.info("=== Starting Simplified Multi-Model Pipeline ===")
     logger.info(f"Topic: {args.topic}")

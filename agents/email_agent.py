@@ -12,6 +12,7 @@ import time
 from typing import Optional
 
 from models.sglang_backend import SGLangBackend
+from models.vllm_backend import VLLMBackend
 from utils.template_manager import get_template_manager
 from config.config import get_setting
 
@@ -20,15 +21,19 @@ logger = logging.getLogger(__name__)
 class EmailAgent:
     """SGLang-based Email Generation Agent"""
     
-    def __init__(self, model_id: str, dtype: str = "bfloat16", quantization: str = "experts_int8"):
-        """Initialize with SGLang backend"""
+    def __init__(self, model_id: str, dtype: str = "bfloat16", quantization: str = "experts_int8", backend_type: str = "vllm"):
+        """Initialize with configurable backend"""
         self.model_id = model_id
         self.model_name = model_id.split('/')[-1]
         
-        # Initialize SGLang backend
-        sglang_url = get_setting('sglang_server_url', 'http://localhost:30000')
-        sglang_timeout = get_setting('sglang_timeout', 60)
-        self.backend = SGLangBackend(base_url=sglang_url, timeout=sglang_timeout)
+        # Initialize backend based on type
+        server_url = get_setting('server_url', 'http://localhost:30000')
+        server_timeout = get_setting('server_timeout', 60)
+        
+        if backend_type.lower() == "sglang":
+            self.backend = SGLangBackend(base_url=server_url, timeout=server_timeout)
+        else:  # default to vllm
+            self.backend = VLLMBackend(base_url=server_url, timeout=server_timeout)
         
         # Get template manager
         self.template_manager = get_template_manager()
@@ -84,7 +89,7 @@ class EmailAgent:
                 if result.strip():
                     return result.strip()
                 else:
-                    raise Exception("Empty response from SGLang")
+                    raise Exception("Empty response from backend")
                     
             except Exception as e:
                 last_error = e
@@ -93,7 +98,7 @@ class EmailAgent:
                     time.sleep(1)  # Simple delay between retries
         
         # If all retries failed, return fallback email
-        logger.warning(f"SGLang generation failed, using fallback for topic: {topic}")
+        logger.warning(f"Backend generation failed, using fallback for topic: {topic}")
         return self._generate_fallback_email(topic)
     
     def _generate_fallback_email(self, topic: str) -> str:
@@ -104,7 +109,7 @@ Dear Recipient,
 
 I hope this email finds you well. I am writing to discuss {topic}.
 
-This email was generated using a fallback mechanism as the primary SGLang backend was unavailable. In a production environment, this would be replaced with actual LLM-generated content.
+This email was generated using a fallback mechanism as the primary backend was unavailable. In a production environment, this would be replaced with actual LLM-generated content.
 
 Key points regarding {topic}:
 - Important discussion topic
