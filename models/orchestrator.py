@@ -122,7 +122,8 @@ class ModelOrchestrator:
         agent = EmailAgent(
             model_id=model_config['model_id'],
             dtype=model_config.get('dtype', 'bfloat16'),
-            quantization=model_config.get('quantization', 'experts_int8')
+            quantization=model_config.get('quantization', 'experts_int8'),
+            model_key=model_name
         )
         
         # Extract template_id from prompt if available, default to "1"
@@ -155,7 +156,8 @@ class ModelOrchestrator:
             agent = ChecklistAgent(
                 model_id=model_config['model_id'],
                 dtype=model_config.get('dtype', 'bfloat16'),
-                quantization=model_config.get('quantization', 'experts_int8')
+                quantization=model_config.get('quantization', 'experts_int8'),
+                model_key=self.checklist_model
             )
             
             checklist = agent.generate_checklist(user_query, topic)
@@ -197,7 +199,8 @@ class ModelOrchestrator:
             judge_agent = JudgeAgent(
                 model_id=model_config['model_id'],
                 dtype=model_config.get('dtype', 'bfloat16'),
-                quantization=model_config.get('quantization', 'experts_int8')
+                quantization=model_config.get('quantization', 'experts_int8'),
+                model_key=self.judge_model
             )
             
             # Evaluate each email

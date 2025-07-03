@@ -29,7 +29,8 @@ def test_email_agent_with_vllm():
     try:
         agent = EmailAgent(
             model_id="deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
-            backend_type="vllm"
+            backend_type="vllm",
+            model_key="deepseek-r1-1.5b"
         )
         
         email = agent.generate_email(

@@ -2,50 +2,66 @@ MODELS = {
     'deepseek-r1-1.5b': {
         'uid': 'M0001',
         'model_id': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B',
-        'recommended_for': 'email_generation',
-        'size': 'small'
+        'recommended_for': ['email_generation'],
+        'size': 'small',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16'
     },
     'deepseek-r1-8b': {
         'uid': 'M0002',
         'model_id': 'deepseek-ai/DeepSeek-R1-0528-Qwen3-8B',
-        'recommended_for': 'email_generation',
-        'size': 'medium'
+        'recommended_for': ['email_generation'],
+        'size': 'medium',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16'
     },
     'llama-3-3b': {
         'uid': 'M0003',
         'model_id': 'unsloth/Llama-3.2-3B-Instruct',
-        'recommended_for': 'email_generation',
-        'size': 'small'
+        'recommended_for': ['email_generation'],
+        'size': 'small',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16'
     },
     'llama-3-8b': {
         'uid': 'M0004',
         'model_id': 'casperhansen/llama-3-8b-instruct-awq',
-        'recommended_for': 'email_generation',
-        'size': 'medium'
+        'recommended_for': ['email_generation'],
+        'size': 'medium',
+        'quantization': 'awq',
+        'dtype': 'float16'
     },
     'gemma-3-4b': {
         'uid': 'M0005',
         'model_id': 'gaunernst/gemma-3-4b-it-qat-autoawq',
-        'recommended_for': 'email_generation',
-        'size': 'small'
+        'recommended_for': ['email_generation'],
+        'size': 'small',
+        'quantization': 'awq',
+        'dtype': 'float16'
     },
     'qwen-3-8b': {
         'uid': 'M0006',
         'model_id': 'Qwen/Qwen3-8B-AWQ',
-        'recommended_for': 'email_generation',
-        'size': 'medium'
+        'recommended_for': ['email_generation'],
+        'size': 'medium',
+        'quantization': 'awq',
+        'dtype': 'float16'
     },
     'deepseek-r1-70b': {
         'uid': 'M0007',
         'model_id': 'deepseek-ai/DeepSeek-R1-Distill-Llama-70B',
-        'recommended_for': 'checklist_generation',
-        'size': 'large'
+        'recommended_for': ['checklist_generation', 'judge'],
+        'size': 'large',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16'
     },
     'llama-4-109b': {
         'uid': 'M0008',
         'model_id': 'kishizaki-sci/Llama-4-Scout-17B-16E-Instruct-AWQ',
-        'recommended_for': 'judge',
-        'size': 'large'
+        'recommended_for': ['checklist_generation', 'judge'],
+        'size': 'large',
+        'quantization': 'awq',
+        'dtype': 'float16'
     }
 }
 

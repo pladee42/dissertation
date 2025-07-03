@@ -22,9 +22,10 @@ logger = logging.getLogger(__name__)
 class ChecklistAgent:
     """SGLang-based Checklist Generation Agent"""
     
-    def __init__(self, model_id: str, dtype: str = "bfloat16", quantization: str = "experts_int8", backend_type: str = "vllm"):
+    def __init__(self, model_id: str, dtype: str = "bfloat16", quantization: str = "experts_int8", backend_type: str = "vllm", model_key: str = None):
         """Initialize with configurable backend"""
         self.model_id = model_id
+        self.model_key = model_key  # Model configuration key
         self.model_name = model_id.split('/')[-1]
         
         # Initialize backend based on type
@@ -90,7 +91,7 @@ class ChecklistAgent:
                 # Generate using SGLang backend
                 result = self.backend.generate(
                     prompt=prompt,
-                    model=self.model_id,
+                    model=self.model_key or self.model_id,
                     max_tokens=get_setting('max_tokens', 2048),
                     temperature=get_setting('temperature', 0.7)
                 )

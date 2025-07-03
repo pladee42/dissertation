@@ -33,17 +33,41 @@ class VLLMBackend:
         if model not in self.engines:
             try:
                 from vllm import LLM
+                from config.config import get_model_config
+                
                 logger.info(f"Loading vLLM model: {model}")
                 
-                # Initialize vLLM engine with cache directory
-                self.engines[model] = LLM(
-                    model=model,
-                    download_dir="./downloaded_models",
-                    trust_remote_code=True,
-                    max_model_len=4096,  # Reasonable default
-                    gpu_memory_utilization=0.8
-                )
+                # Get model configuration
+                model_config = get_model_config(model)
+                model_id = model_config.get('model_id', model)
+                quantization = model_config.get('quantization', 'experts_int8')
+                dtype = model_config.get('dtype', 'bfloat16')
+                
+                logger.info(f"Model config - ID: {model_id}, Quantization: {quantization}, Dtype: {dtype}")
+                
+                # Prepare vLLM initialization parameters
+                vllm_kwargs = {
+                    "model": model_id,
+                    "download_dir": "./downloaded_models",
+                    "trust_remote_code": True,
+                    "max_model_len": 2048,  # Reduced for memory efficiency
+                    "gpu_memory_utilization": 0.6,  # Conservative memory usage
+                    "dtype": dtype,
+                    "enforce_eager": True,  # Disable CUDA graphs for memory efficiency
+                    "disable_custom_all_reduce": True  # Better memory management
+                }
+                
+                # Add quantization if specified
+                if quantization == "awq":
+                    vllm_kwargs["quantization"] = "awq"
+                elif quantization == "experts_int8":
+                    # For experts_int8, we'll use load_format instead
+                    vllm_kwargs["load_format"] = "auto"
+                
+                # Initialize vLLM engine
+                self.engines[model] = LLM(**vllm_kwargs)
                 logger.info(f"Successfully loaded vLLM model: {model}")
+                
             except Exception as e:
                 logger.error(f"Failed to load vLLM model {model}: {e}")
                 raise
