@@ -25,7 +25,6 @@ class VLLMBackend:
         cache_dir = "./downloaded_models"
         os.makedirs(cache_dir, exist_ok=True)
         os.environ["HF_HOME"] = cache_dir
-        os.environ["TRANSFORMERS_CACHE"] = cache_dir
         
         logger.info(f"vLLM backend initialized with max_parallel: {max_parallel}")
     
