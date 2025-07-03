@@ -43,7 +43,7 @@ def main():
                        default="deepseek-r1-8b",
                        choices=list(MODELS_CONFIG.keys()))
     parser.add_argument("--judge_model", type=str, 
-                       default="gemma-3-4b",
+                       default="llama-3-8b",
                        choices=list(MODELS_CONFIG.keys()))
     
     args = parser.parse_args()
