@@ -41,14 +41,9 @@ python -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f
 echo "GPU status before execution:"
 nvidia-smi
 
-# vLLM will be used as direct Python library (no server needed)
-echo "Using vLLM as direct Python library"
-
 # Run script (agents will handle SGLang unavailability gracefully)
 echo "Running multi_topic_runner.py..."
 python -m multi_topic_runner
-
-# No server cleanup needed for direct library usage
 
 # Check execution status
 if [ $? -eq 0 ]; then
