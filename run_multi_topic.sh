@@ -17,12 +17,18 @@ module load CUDA/12.4.0
 module load GCC/12.2.0
 
 # Activate conda environment
-source activate dis-venv3
+source activate agent-env
 
 # Set environment variables for better performance
 export PYTHONUNBUFFERED=1
 export CUDA_DEVICE_MAX_CONNECTIONS=1  # For multi-GPU setups
 export TORCH_EXTENSIONS_DIR=$HOME/.cache/torch_extensions
+
+# Set model cache directories
+export HF_HOME=./downloaded_models
+export TRANSFORMERS_CACHE=./downloaded_models
+export HF_HUB_CACHE=./downloaded_models
+
 # vLLM environment variables
 export VLLM_WORKER_MULTIPROC_METHOD=spawn
 export VLLM_ENGINE_ITERATION_TIMEOUT_S=600
@@ -37,7 +43,7 @@ nvidia-smi
 
 # Try to start vLLM server
 echo "Attempting to start vLLM server..."
-python -m vllm.entrypoints.openai.api_server --model deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B --port 30000 --host 0.0.0.0 &
+python -m vllm.entrypoints.openai.api_server --model deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B --download-dir ./downloaded_models --port 30000 --host 0.0.0.0 &
 VLLM_PID=$!
 
 # Wait for server to start
