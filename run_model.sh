@@ -26,7 +26,6 @@ export TORCH_EXTENSIONS_DIR=$HOME/.cache/torch_extensions
 
 # Set model cache directories
 export HF_HOME=./downloaded_models
-export TRANSFORMERS_CACHE=./downloaded_models
 export HF_HUB_CACHE=./downloaded_models
 
 # vLLM environment variables
