@@ -41,35 +41,14 @@ python -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f
 echo "GPU status before execution:"
 nvidia-smi
 
-# Try to start vLLM server
-echo "Attempting to start vLLM server..."
-python -m vllm.entrypoints.openai.api_server --model deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B --download-dir ./downloaded_models --port 30000 --host 0.0.0.0 &
-VLLM_PID=$!
-
-# Wait for server to start
-echo "Waiting for vLLM server to start..."
-sleep 30
-
-# Verify server is running
-if curl -s http://localhost:30000/health > /dev/null; then
-    echo "vLLM server is running"
-    SERVER_AVAILABLE=true
-else
-    echo "vLLM server failed to start, running with fallback mode"
-    SERVER_AVAILABLE=false
-    # Kill the failed process
-    kill $VLLM_PID 2>/dev/null || true
-fi
+# vLLM will be used as direct Python library (no server needed)
+echo "Using vLLM as direct Python library"
 
 # Run script (agents will handle SGLang unavailability gracefully)
 echo "Running multi_topic_runner.py..."
 python -m multi_topic_runner
 
-# Clean up vLLM server if it was running
-if [ "$SERVER_AVAILABLE" = true ]; then
-    echo "Stopping vLLM server..."
-    kill $VLLM_PID 2>/dev/null || true
-fi
+# No server cleanup needed for direct library usage
 
 # Check execution status
 if [ $? -eq 0 ]; then

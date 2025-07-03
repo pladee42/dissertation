@@ -1,37 +1,55 @@
-"""
-vLLM Backend
-
-Simple vLLM backend for unified model inference with minimal complexity.
-Compatible with SGLang backend interface.
-"""
-
-import requests
 import logging
 from typing import Dict, Any, Optional, List
-import json
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import os
 
 logger = logging.getLogger(__name__)
 
 class VLLMBackend:
-    """vLLM backend for LLM inference with parallel support"""
+    """vLLM backend for LLM inference using direct Python library"""
     
     def __init__(self, base_url: str = "http://localhost:30000", timeout: int = 60, max_parallel: int = 4):
         """
         Initialize vLLM backend
         
         Args:
-            base_url: vLLM server URL
-            timeout: Request timeout in seconds
+            base_url: Unused (kept for compatibility)
+            timeout: Unused (kept for compatibility)
             max_parallel: Maximum parallel requests
         """
-        self.base_url = base_url.rstrip('/')
-        self.timeout = timeout
         self.max_parallel = max_parallel
-        self.session = requests.Session()
         self.executor = ThreadPoolExecutor(max_workers=max_parallel)
+        self.engines = {}  # Cache for loaded models
         
-        logger.info(f"vLLM backend initialized with URL: {base_url}, max_parallel: {max_parallel}")
+        # Set cache directory
+        cache_dir = "./downloaded_models"
+        os.makedirs(cache_dir, exist_ok=True)
+        os.environ["HF_HOME"] = cache_dir
+        os.environ["TRANSFORMERS_CACHE"] = cache_dir
+        
+        logger.info(f"vLLM backend initialized with max_parallel: {max_parallel}")
+    
+    def _get_engine(self, model: str):
+        """Get or create vLLM engine for model"""
+        if model not in self.engines:
+            try:
+                from vllm import LLM
+                logger.info(f"Loading vLLM model: {model}")
+                
+                # Initialize vLLM engine with cache directory
+                self.engines[model] = LLM(
+                    model=model,
+                    download_dir="./downloaded_models",
+                    trust_remote_code=True,
+                    max_model_len=4096,  # Reasonable default
+                    gpu_memory_utilization=0.8
+                )
+                logger.info(f"Successfully loaded vLLM model: {model}")
+            except Exception as e:
+                logger.error(f"Failed to load vLLM model {model}: {e}")
+                raise
+        
+        return self.engines[model]
     
     def generate(self, 
                 prompt: str, 
@@ -53,55 +71,38 @@ class VLLMBackend:
             Generated text
         """
         try:
-            # vLLM OpenAI-compatible API call
-            payload = {
-                "model": model,
-                "prompt": prompt,
-                "max_tokens": max_tokens,
-                "temperature": temperature,
-                "stop": stop or []
-            }
+            from vllm import SamplingParams
             
-            url = f"{self.base_url}/v1/completions"
+            # Get vLLM engine
+            engine = self._get_engine(model)
             
-            logger.debug(f"Sending request to {url}")
-            response = self.session.post(
-                url,
-                json=payload,
-                timeout=self.timeout,
-                headers={"Content-Type": "application/json"}
+            # Create sampling parameters
+            sampling_params = SamplingParams(
+                max_tokens=max_tokens,
+                temperature=temperature,
+                stop=stop or []
             )
             
-            response.raise_for_status()
-            result = response.json()
+            # Generate
+            outputs = engine.generate([prompt], sampling_params)
             
-            # Extract generated text from OpenAI format
-            if "choices" in result and len(result["choices"]) > 0:
-                generated_text = result["choices"][0]["text"]
+            if outputs and len(outputs) > 0:
+                generated_text = outputs[0].outputs[0].text
                 return generated_text.strip()
             else:
-                logger.error(f"Unexpected response format: {result}")
+                logger.error("No output generated from vLLM")
                 return ""
                 
-        except requests.exceptions.RequestException as e:
-            logger.error(f"vLLM request failed: {e}")
-            raise Exception(f"vLLM backend error: {e}")
-        except json.JSONDecodeError as e:
-            logger.error(f"Failed to parse vLLM response: {e}")
-            raise Exception(f"vLLM response parsing error: {e}")
         except Exception as e:
             logger.error(f"vLLM generation error: {e}")
-            raise
+            raise Exception(f"vLLM backend error: {e}")
     
     def is_available(self) -> bool:
-        """Check if vLLM server is available"""
+        """Check if vLLM is available"""
         try:
-            response = self.session.get(
-                f"{self.base_url}/health",
-                timeout=5
-            )
-            return response.status_code == 200
-        except:
+            import vllm
+            return True
+        except ImportError:
             return False
     
     def generate_parallel(self, requests_data: List[Dict]) -> List[str]:
@@ -156,7 +157,7 @@ class VLLMBackend:
                       temperature: float = 0.7,
                       stop: Optional[list] = None) -> List[str]:
         """
-        Generate text for multiple prompts in parallel
+        Generate text for multiple prompts in batch
         
         Args:
             prompts: List of input prompts
@@ -168,32 +169,49 @@ class VLLMBackend:
         Returns:
             List of generated text strings
         """
-        requests_data = [
-            {
-                'prompt': prompt,
-                'model': model,
-                'max_tokens': max_tokens,
-                'temperature': temperature,
-                'stop': stop
-            }
-            for prompt in prompts
-        ]
-        
-        return self.generate_parallel(requests_data)
+        try:
+            from vllm import SamplingParams
+            
+            # Get vLLM engine
+            engine = self._get_engine(model)
+            
+            # Create sampling parameters
+            sampling_params = SamplingParams(
+                max_tokens=max_tokens,
+                temperature=temperature,
+                stop=stop or []
+            )
+            
+            # Generate batch
+            outputs = engine.generate(prompts, sampling_params)
+            
+            # Extract generated texts
+            results = []
+            for output in outputs:
+                if output.outputs and len(output.outputs) > 0:
+                    results.append(output.outputs[0].text.strip())
+                else:
+                    results.append("")
+            
+            return results
+            
+        except Exception as e:
+            logger.error(f"vLLM batch generation error: {e}")
+            # Fallback to parallel generation
+            return self.generate_parallel([
+                {
+                    'prompt': prompt,
+                    'model': model,
+                    'max_tokens': max_tokens,
+                    'temperature': temperature,
+                    'stop': stop
+                }
+                for prompt in prompts
+            ])
     
     def get_models(self) -> list:
-        """Get available models from vLLM server"""
-        try:
-            response = self.session.get(
-                f"{self.base_url}/v1/models",
-                timeout=10
-            )
-            response.raise_for_status()
-            result = response.json()
-            return [model["id"] for model in result.get("data", [])]
-        except Exception as e:
-            logger.error(f"Failed to get models: {e}")
-            return []
+        """Get available models (returns loaded models)"""
+        return list(self.engines.keys())
     
     def get_model_info(self) -> dict:
         """Get model info (compatibility method)"""
@@ -201,6 +219,14 @@ class VLLMBackend:
         return {"model_path": models[0] if models else ""}
     
     def __del__(self):
-        """Cleanup thread pool on destruction"""
+        """Cleanup thread pool and engines on destruction"""
         if hasattr(self, 'executor'):
             self.executor.shutdown(wait=True)
+        
+        # Clean up vLLM engines
+        if hasattr(self, 'engines'):
+            for engine in self.engines.values():
+                try:
+                    del engine
+                except:
+                    pass

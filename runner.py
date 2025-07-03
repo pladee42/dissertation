@@ -61,15 +61,14 @@ def main():
         
         logger.info(f"Email generation mode '{args.email_generation}' selected models: {args.email_models}")
     
-    # Check vLLM server connectivity first
-    server_url = get_setting('server_url', 'http://localhost:30000')
-    backend = VLLMBackend(base_url=server_url)
+    # Check vLLM library availability
+    backend = VLLMBackend()
     
     if not backend.is_available():
-        logger.warning(f"vLLM server not available at {server_url}")
+        logger.warning("vLLM library not available")
         logger.info("Running in fallback mode without vLLM")
     else:
-        logger.info(f"vLLM server: {server_url} (available)")
+        logger.info("vLLM library available (direct usage)")
     
     logger.info("=== Starting Simplified Multi-Model Pipeline ===")
     logger.info(f"Topic: {args.topic}")

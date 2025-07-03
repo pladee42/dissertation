@@ -14,15 +14,14 @@ logger = logging.getLogger(__name__)
 
 def test_vllm_backend():
     """Test vLLM backend basic functionality"""
-    server_url = get_setting('server_url', 'http://localhost:30000')
-    backend = VLLMBackend(base_url=server_url)
+    backend = VLLMBackend()
     
     logger.info("Testing vLLM backend availability...")
     if backend.is_available():
-        logger.info("✅ vLLM server is available")
+        logger.info("✅ vLLM library is available")
         return True
     else:
-        logger.warning("❌ vLLM server is not available")
+        logger.warning("❌ vLLM library is not available")
         return False
 
 def test_email_agent_with_vllm():
