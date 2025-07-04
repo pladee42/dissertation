@@ -31,25 +31,20 @@ class TemplateManager:
     def _load_templates(self):
         """Load all template files from prompts directory"""
         try:
-            # Load email instruction templates
-            instructions_path = os.path.join(self.base_path, "instructions")
-            if os.path.exists(instructions_path):
-                self.templates["email"] = {}
-                for file in os.listdir(instructions_path):
-                    if file.endswith(".md"):
-                        template_name = file.replace(".md", "")
-                        file_path = os.path.join(instructions_path, file)
-                        with open(file_path, 'r', encoding='utf-8') as f:
-                            self.templates["email"][template_name] = f.read().strip()
+            # Load email template
+            email_path = os.path.join(self.base_path, "email.md")
+            if os.path.exists(email_path):
+                with open(email_path, 'r', encoding='utf-8') as f:
+                    self.templates["email"] = f.read().strip()
             
             # Load checklist template
-            checklist_path = os.path.join(self.base_path, "checklist", "checklist.md")
+            checklist_path = os.path.join(self.base_path, "checklist.md")
             if os.path.exists(checklist_path):
                 with open(checklist_path, 'r', encoding='utf-8') as f:
                     self.templates["checklist"] = f.read().strip()
             
             # Load judge template
-            judge_path = os.path.join(self.base_path, "judge", "judge.md")
+            judge_path = os.path.join(self.base_path, "judge.md")
             if os.path.exists(judge_path):
                 with open(judge_path, 'r', encoding='utf-8') as f:
                     self.templates["judge"] = f.read().strip()
@@ -65,16 +60,15 @@ class TemplateManager:
         Get email instruction template
         
         Args:
-            template_id: Template ID (1, 2, 3, 4)
+            template_id: Template ID (ignored - only one email template now)
             
         Returns:
             Email template string
         """
-        email_templates = self.templates.get("email", {})
-        template = email_templates.get(template_id, "")
+        template = self.templates.get("email", "")
         
         if not template:
-            logger.warning(f"Email template '{template_id}' not found")
+            logger.warning("Email template not found")
             return "Write a professional email about [TOPIC]"
         
         return template
@@ -143,7 +137,7 @@ class TemplateManager:
         available = {}
         
         if "email" in self.templates:
-            available["email"] = list(self.templates["email"].keys())
+            available["email"] = ["email"]
         
         if "checklist" in self.templates:
             available["checklist"] = ["checklist"]
