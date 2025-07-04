@@ -99,6 +99,9 @@ def main():
     parser.add_argument("--user_query_template", type=str, 
                        default="Email about {topic}",
                        help="Template for user query (use {topic} placeholder)")
+    parser.add_argument("--example_email", type=str, 
+                       default="1",
+                       help="Example email file to use (e.g., '1' for example_email/1.md)")
     
     args = parser.parse_args()
     
@@ -126,11 +129,20 @@ def main():
     
     # Load email prompt
     try:
-        with open("config/prompts/instructions/instruction.md", 'r', encoding='utf-8') as f:
+        with open("config/prompts/instructions/2.md", 'r', encoding='utf-8') as f:
             email_prompt = f.read()
     except FileNotFoundError:
         email_prompt = "Write a professional email about [TOPIC]"
         logger.warning("Using default prompt")
+    
+    # Load example email and replace placeholder
+    try:
+        with open(f"config/prompts/example_email/{args.example_email}.md", 'r', encoding='utf-8') as f:
+            example_email_content = f.read()
+        email_prompt = email_prompt.replace("[EXAMPLE_EMAIL]", example_email_content)
+    except FileNotFoundError:
+        logger.warning(f"Example email file not found: {args.example_email}.md")
+        email_prompt = email_prompt.replace("[EXAMPLE_EMAIL]", "No example available")
     
     # Initialize topic manager
     topic_manager = get_topic_manager()
