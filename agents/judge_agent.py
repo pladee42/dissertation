@@ -126,6 +126,13 @@ class JudgeAgent:
                 
                 if result.strip():
                     logger.info(f"Judge response (first 500 chars): {result.strip()[:500]}")
+                    
+                    # Save raw response to file for debugging
+                    import os
+                    os.makedirs("output/judge", exist_ok=True)
+                    with open(f"output/judge/raw_response_{int(time.time())}.txt", "w") as f:
+                        f.write(result.strip())
+                    
                     # Try to extract JSON if the response contains extra text
                     cleaned_result = self._extract_json_from_response(result.strip())
                     # Fix common JSON formatting issues
