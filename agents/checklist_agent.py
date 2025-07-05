@@ -98,8 +98,7 @@ IMPORTANT: Respond ONLY with valid JSON array. Do not include any thinking proce
                     prompt=json_prompt,
                     model=self.model_key or self.model_id,
                     max_tokens=get_setting('checklist_max_tokens', 8192),
-                    temperature=get_setting('temperature', 0.7),
-                    stop=["</think>", "\n\n#", "\n\nI think", "\n\nLet me"]
+                    temperature=get_setting('temperature', 0.7)
                 )
                 
                 if result.strip():

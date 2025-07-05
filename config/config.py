@@ -1,15 +1,15 @@
 MODELS = {
-    'deepseek-r1-1.5b': {
+    'tinyllama-1.1b': {
         'uid': 'M0001',
-        'model_id': 'deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B',
+        'model_id': 'TinyLlama/TinyLlama-1.1B-Chat-v1.0',
         'recommended_for': ['email_generation'],
         'size': 'small',
         'quantization': 'experts_int8',
         'dtype': 'bfloat16'
     },
-    'deepseek-r1-8b': {
+    'vicuna-7b': {
         'uid': 'M0002',
-        'model_id': 'deepseek-ai/DeepSeek-R1-0528-Qwen3-8B',
+        'model_id': 'lmsys/vicuna-7b-v1.5',
         'recommended_for': ['email_generation'],
         'size': 'medium',
         'quantization': 'experts_int8',
@@ -39,9 +39,9 @@ MODELS = {
         'quantization': 'experts_int8',
         'dtype': 'bfloat16'
     },
-    'deepseek-r1-70b': {
+    'yi-34b': {
         'uid': 'M0006',
-        'model_id': 'casperhansen/deepseek-r1-distill-llama-70b-awq',
+        'model_id': '01-ai/Yi-34B-Chat-4bits',
         'recommended_for': ['checklist_generation', 'judge'],
         'size': 'large',
         'quantization': 'awq',
