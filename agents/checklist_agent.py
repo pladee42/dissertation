@@ -84,14 +84,24 @@ class ChecklistAgent:
         
         for attempt in range(self.max_retries):
             try:
-                # Enhanced prompt for better JSON output
-                json_prompt = f"""{prompt}
+                # Simplified prompt that works better with Vicuna
+                json_prompt = f"""Create an evaluation checklist for an email about: {topic}
 
-IMPORTANT: Respond ONLY with valid JSON array. Do not include any thinking process, explanations, or additional text. Start immediately with [ and end with ]. Example format:
+Generate a JSON array with 8-10 evaluation questions. Each question should be a yes/no question to evaluate the email quality.
+
+Use this exact format:
 [
-    {{"question": "Does the email...", "best_ans": "yes", "priority": "high"}},
-    {{"question": "Is the tone...", "best_ans": "yes", "priority": "medium"}}
-]"""
+    {{"question": "Does the email have a clear subject line?", "best_ans": "yes", "priority": "high"}},
+    {{"question": "Is the tone professional and appropriate?", "best_ans": "yes", "priority": "medium"}},
+    {{"question": "Does the content relate to the topic '{topic}'?", "best_ans": "yes", "priority": "high"}},
+    {{"question": "Is there a proper greeting and closing?", "best_ans": "yes", "priority": "medium"}},
+    {{"question": "Is the message clear and easy to understand?", "best_ans": "yes", "priority": "high"}},
+    {{"question": "Does the email have a call-to-action?", "best_ans": "yes", "priority": "medium"}},
+    {{"question": "Is the email free of grammatical errors?", "best_ans": "yes", "priority": "medium"}},
+    {{"question": "Is the email length appropriate?", "best_ans": "yes", "priority": "low"}}
+]
+
+Return only the JSON array:"""
                 
                 # Generate using vLLM backend
                 model_to_use = self.model_key or self.model_id
@@ -109,7 +119,9 @@ IMPORTANT: Respond ONLY with valid JSON array. Do not include any thinking proce
                 )
                 
                 if result.strip():
-                    return result.strip()
+                    # Try to extract JSON if the response contains extra text
+                    cleaned_result = self._extract_json_from_response(result.strip())
+                    return cleaned_result
                 else:
                     raise Exception("Empty response from backend")
                     
@@ -121,6 +133,37 @@ IMPORTANT: Respond ONLY with valid JSON array. Do not include any thinking proce
         
         # If all retries failed, raise exception
         raise Exception(f"Failed to generate checklist after {self.max_retries} attempts. Last error: {last_error}")
+    
+    def _extract_json_from_response(self, response: str) -> str:
+        """Extract JSON array from response text"""
+        try:
+            # Look for JSON array pattern
+            import re
+            
+            # Try to find JSON array pattern [...]
+            json_pattern = r'\[.*?\]'
+            matches = re.findall(json_pattern, response, re.DOTALL)
+            
+            if matches:
+                # Return the longest match (most likely to be complete)
+                json_str = max(matches, key=len)
+                logger.debug(f"Extracted JSON: {json_str[:200]}...")
+                return json_str
+            
+            # If no JSON array found, check if the response looks like it should be JSON
+            if response.strip().startswith('[') and response.strip().endswith(']'):
+                return response.strip()
+            
+            # If response contains instructions instead of JSON, create fallback
+            if any(phrase in response.lower() for phrase in ["provide a list", "json format", "please", "here is"]):
+                logger.warning("Model provided instructions instead of JSON, using fallback")
+                raise Exception("Model provided instructions instead of JSON")
+            
+            return response
+            
+        except Exception as e:
+            logger.warning(f"Failed to extract JSON from response: {e}")
+            raise Exception(f"Failed to extract valid JSON: {e}")
     
     def _create_fallback_checklist(self, topic: str) -> Dict[str, Any]:
         """Create a simple fallback checklist"""
