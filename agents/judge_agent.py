@@ -112,7 +112,7 @@ class JudgeAgent:
                 if 'vicuna' in model_to_use.lower():
                     temperature = 0.3  # Lower temperature for more focused output
                 elif 'llama' in model_to_use.lower():
-                    temperature = 0.1  # Very low temperature for Llama models to prevent empty outputs
+                    temperature = 0.3  # Moderate temperature for Llama models to encourage generation
                 
                 logger.debug(f"Generating evaluation with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}")
                 logger.debug(f"Prompt length: {len(prompt)} characters")
@@ -125,6 +125,7 @@ class JudgeAgent:
                 )
                 
                 if result.strip():
+                    logger.info(f"Judge response (first 500 chars): {result.strip()[:500]}")
                     # Try to extract JSON if the response contains extra text
                     cleaned_result = self._extract_json_from_response(result.strip())
                     # Fix common JSON formatting issues
