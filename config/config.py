@@ -49,11 +49,11 @@ MODELS = {
     },
     'deepseek-r1-70b': {
         'uid': 'M0007',
-        'model_id': 'deepseek-ai/DeepSeek-R1-Distill-Llama-70B',
+        'model_id': 'casperhansen/deepseek-r1-distill-llama-70b-awq',
         'recommended_for': ['checklist_generation', 'judge'],
         'size': 'large',
-        'quantization': 'experts_int8',
-        'dtype': 'bfloat16'
+        'quantization': 'awq',
+        'dtype': 'float16'
     },
     'llama-3-70b': {
         'uid': 'M0008',
@@ -92,7 +92,7 @@ SETTINGS = {
     
     # vLLM settings
     'vllm_max_parallel': 4,
-    'vllm_gpu_memory_utilization': 0.9
+    'vllm_gpu_memory_utilization': 0.3
 }
 
 # Memory requirements by model size (with 30% GPU utilization)
