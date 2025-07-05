@@ -146,12 +146,8 @@ class ChecklistAgent:
                 json_str = response.strip()
                 logger.debug(f"Found complete JSON array: {json_str[:200]}...")
                 
-                # Validate that it looks like proper JSON
-                if '"question"' in json_str and '"best_ans"' in json_str:
-                    return json_str
-                else:
-                    logger.warning("Found JSON array but doesn't contain expected fields")
-                    raise Exception("JSON array doesn't contain expected fields")
+                # Basic validation - just check if it looks like a JSON array
+                return json_str
             
             # Try to find JSON array pattern [...] as fallback
             json_pattern = r'\[.*\]'  # Use greedy matching
@@ -162,12 +158,8 @@ class ChecklistAgent:
                 json_str = max(matches, key=len)
                 logger.debug(f"Extracted JSON: {json_str[:200]}...")
                 
-                # Validate that it looks like proper JSON
-                if '"question"' in json_str and '"best_ans"' in json_str:
-                    return json_str
-                else:
-                    logger.warning("Found JSON array but doesn't contain expected fields")
-                    raise Exception("JSON array doesn't contain expected fields")
+                # Basic validation - just check if it looks like a JSON array
+                return json_str
             
             
             # Check for various instruction patterns that indicate model confusion

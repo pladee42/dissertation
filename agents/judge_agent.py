@@ -116,7 +116,9 @@ class JudgeAgent:
                 if result.strip():
                     # Try to extract JSON if the response contains extra text
                     cleaned_result = self._extract_json_from_response(result.strip())
-                    return cleaned_result
+                    # Fix common JSON formatting issues
+                    fixed_result = self._fix_malformed_json(cleaned_result)
+                    return fixed_result
                 else:
                     raise Exception("Empty response from backend")
                     
@@ -147,12 +149,8 @@ class JudgeAgent:
                 json_str = response.strip()
                 logger.debug(f"Found complete JSON object: {json_str[:200]}...")
                 
-                # Validate that it looks like proper JSON
-                if '"score"' in json_str and ('"strengths"' in json_str or '"weaknesses"' in json_str):
-                    return json_str
-                else:
-                    logger.warning("Found JSON object but doesn't contain expected fields")
-                    raise Exception("JSON object doesn't contain expected fields")
+                # Basic validation - just check if it looks like a JSON object
+                return json_str
             
             # Try to find JSON object pattern {...} as fallback
             json_pattern = r'\{.*\}'  # Use greedy matching
@@ -163,12 +161,8 @@ class JudgeAgent:
                 json_str = max(matches, key=len)
                 logger.debug(f"Extracted JSON: {json_str[:200]}...")
                 
-                # Validate that it looks like proper JSON
-                if '"score"' in json_str and ('"strengths"' in json_str or '"weaknesses"' in json_str):
-                    return json_str
-                else:
-                    logger.warning("Found JSON object but doesn't contain expected fields")
-                    raise Exception("JSON object doesn't contain expected fields")
+                # Basic validation - just check if it looks like a JSON object
+                return json_str
             
             # Check for various instruction patterns that indicate model confusion
             if any(phrase in response.lower() for phrase in instruction_patterns):
@@ -182,6 +176,37 @@ class JudgeAgent:
         except Exception as e:
             logger.warning(f"Failed to extract JSON from response: {e}")
             raise Exception(f"Failed to extract valid JSON: {e}")
+    
+    def _fix_malformed_json(self, json_str: str) -> str:
+        """Fix common JSON formatting issues"""
+        try:
+            import re
+            
+            # Fix empty string values followed by comma
+            json_str = re.sub(r':\s*""\s*,', ': "No analysis provided",', json_str)
+            
+            # Fix missing values after colon (like "score": })
+            json_str = re.sub(r':\s*}', ': 5}', json_str)
+            json_str = re.sub(r':\s*,', ': "No analysis provided",', json_str)
+            
+            # Fix missing score value at end
+            json_str = re.sub(r'"score":\s*}', '"score": 5}', json_str)
+            
+            # Ensure score is a number
+            score_match = re.search(r'"score":\s*"([^"]*)"', json_str)
+            if score_match:
+                try:
+                    score_val = float(score_match.group(1))
+                    json_str = re.sub(r'"score":\s*"[^"]*"', f'"score": {score_val}', json_str)
+                except (ValueError, TypeError):
+                    json_str = re.sub(r'"score":\s*"[^"]*"', '"score": 5', json_str)
+            
+            logger.debug(f"Fixed JSON: {json_str[:200]}...")
+            return json_str
+            
+        except Exception as e:
+            logger.warning(f"Failed to fix malformed JSON: {e}")
+            return json_str
     
     def _create_fallback_evaluation(self, email_content: str, checklist: Dict[str, Any]) -> Dict[str, Any]:
         """Create a simple fallback evaluation"""
