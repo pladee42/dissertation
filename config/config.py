@@ -15,9 +15,9 @@ MODELS = {
         'quantization': 'experts_int8',
         'dtype': 'bfloat16'
     },
-    'llama-3-3b': {
+    'phi-3-mini': {
         'uid': 'M0003',
-        'model_id': 'unsloth/Llama-3.2-3B-Instruct',
+        'model_id': 'microsoft/Phi-3-mini-4k-instruct',
         'recommended_for': ['email_generation'],
         'size': 'small',
         'quantization': 'experts_int8',
@@ -31,12 +31,12 @@ MODELS = {
         'quantization': 'awq',
         'dtype': 'float16'
     },
-    'gemma-3-4b': {
+    'stablelm-2-1.6b': {
         'uid': 'M0005',
-        'model_id': 'gaunernst/gemma-3-4b-it-qat-autoawq',
+        'model_id': 'stabilityai/stablelm-2-1_6b-chat',
         'recommended_for': ['email_generation'],
         'size': 'small',
-        'quantization': 'awq',
+        'quantization': 'experts_int8',
         'dtype': 'bfloat16'
     },
     'mistral-7b': {
@@ -92,7 +92,7 @@ SETTINGS = {
     
     # vLLM settings
     'vllm_max_parallel': 4,
-    'vllm_gpu_memory_utilization': 0.2
+    'vllm_gpu_memory_utilization': 0.9
 }
 
 # Memory requirements by model size (with 30% GPU utilization)
