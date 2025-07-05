@@ -59,10 +59,13 @@ class ChecklistAgent:
             # Generate with retry logic
             checklist_json = self._generate_with_retry(full_prompt)
             
-            # Parse JSON response
+            # Parse JSON response with better error handling
             try:
+                # First try basic JSON parsing
                 checklist = json.loads(checklist_json)
-            except json.JSONDecodeError:
+            except json.JSONDecodeError as e:
+                logger.warning(f"JSON parsing failed: {e}")
+                logger.warning(f"Raw response (first 500 chars): {checklist_json[:500]}")
                 # Fallback to simple checklist if JSON parsing fails
                 checklist = self._create_fallback_checklist(topic)
             

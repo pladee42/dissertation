@@ -113,6 +113,13 @@ class VLLMBackend:
                 ]
                 stop_tokens.extend(qwen_stop_tokens)
             
+            # Add stop tokens for DeepSeek models to prevent thinking process
+            if 'deepseek' in model.lower():
+                deepseek_stop_tokens = [
+                    "<think>", "</think>"
+                ]
+                stop_tokens.extend(deepseek_stop_tokens)
+            
             # Create sampling parameters
             sampling_params = SamplingParams(
                 max_tokens=max_tokens,
@@ -224,6 +231,13 @@ class VLLMBackend:
                     "\n\nLet me", "\n\nI need to"
                 ]
                 stop_tokens.extend(qwen_stop_tokens)
+            
+            # Add stop tokens for DeepSeek models to prevent thinking process
+            if 'deepseek' in model.lower():
+                deepseek_stop_tokens = [
+                    "<think>", "</think>"
+                ]
+                stop_tokens.extend(deepseek_stop_tokens)
             
             # Create sampling parameters
             sampling_params = SamplingParams(
