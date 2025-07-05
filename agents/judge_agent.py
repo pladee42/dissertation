@@ -192,6 +192,12 @@ class JudgeAgent:
             # Fix missing score value at end
             json_str = re.sub(r'"score":\s*}', '"score": 5}', json_str)
             
+            # Remove any trailing text after the JSON object
+            # Find the last } and cut everything after it
+            last_brace = json_str.rfind('}')
+            if last_brace != -1:
+                json_str = json_str[:last_brace + 1]
+            
             # Ensure score is a number
             score_match = re.search(r'"score":\s*"([^"]*)"', json_str)
             if score_match:

@@ -116,7 +116,9 @@ class ChecklistAgent:
                 if result.strip():
                     # Try to extract JSON if the response contains extra text
                     cleaned_result = self._extract_json_from_response(result.strip())
-                    return cleaned_result
+                    # Fix common JSON formatting issues
+                    fixed_result = self._fix_malformed_json(cleaned_result)
+                    return fixed_result
                 else:
                     raise Exception("Empty response from backend")
                     
@@ -179,6 +181,30 @@ class ChecklistAgent:
         except Exception as e:
             logger.warning(f"Failed to extract JSON from response: {e}")
             raise Exception(f"Failed to extract valid JSON: {e}")
+    
+    def _fix_malformed_json(self, json_str: str) -> str:
+        """Fix common JSON formatting issues"""
+        try:
+            import re
+            
+            # Fix invalid escape sequences (best\_ans -> best_ans)
+            json_str = re.sub(r'best\\_ans', 'best_ans', json_str)
+            
+            # Fix other common escape issues
+            json_str = re.sub(r'\\_', '_', json_str)
+            
+            # Remove any trailing text after the JSON array
+            # Find the last ] and cut everything after it
+            last_bracket = json_str.rfind(']')
+            if last_bracket != -1:
+                json_str = json_str[:last_bracket + 1]
+            
+            logger.debug(f"Fixed JSON: {json_str[:200]}...")
+            return json_str
+            
+        except Exception as e:
+            logger.warning(f"Failed to fix malformed JSON: {e}")
+            return json_str
     
     def _create_fallback_checklist(self, topic: str) -> Dict[str, Any]:
         """Create a simple fallback checklist"""
