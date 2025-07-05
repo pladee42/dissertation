@@ -84,30 +84,22 @@ class ChecklistAgent:
         
         for attempt in range(self.max_retries):
             try:
-                # Create JSON schema for checklist guided decoding
-                checklist_schema = {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "properties": {
-                            "question": {"type": "string"},
-                            "best_ans": {"type": "string", "enum": ["yes", "no"]},
-                            "priority": {"type": "string", "enum": ["very low", "low", "medium", "high", "very high"]}
-                        },
-                        "required": ["question", "best_ans", "priority"],
-                        "additionalProperties": False
-                    },
-                    "minItems": 8,
-                    "maxItems": 15
-                }
+                # Enhanced prompt for better JSON output
+                json_prompt = f"""{prompt}
+
+IMPORTANT: Respond ONLY with valid JSON array. Do not include any thinking process, explanations, or additional text. Start immediately with [ and end with ]. Example format:
+[
+    {{"question": "Does the email...", "best_ans": "yes", "priority": "high"}},
+    {{"question": "Is the tone...", "best_ans": "yes", "priority": "medium"}}
+]"""
                 
-                # Generate using vLLM backend with guided JSON
+                # Generate using vLLM backend
                 result = self.backend.generate(
-                    prompt=prompt,
+                    prompt=json_prompt,
                     model=self.model_key or self.model_id,
                     max_tokens=get_setting('checklist_max_tokens', 8192),
                     temperature=get_setting('temperature', 0.7),
-                    guided_json=checklist_schema
+                    stop=["</think>", "\n\n#", "\n\nI think", "\n\nLet me"]
                 )
                 
                 if result.strip():

@@ -124,20 +124,12 @@ class VLLMBackend:
                 ]
                 stop_tokens.extend(deepseek_stop_tokens)
             
-            # Create sampling parameters with optional guided decoding
-            sampling_params_kwargs = {
-                "max_tokens": max_tokens,
-                "temperature": temperature,
-                "stop": stop_tokens
-            }
-            
-            # Add guided decoding if JSON schema provided
-            if guided_json:
-                sampling_params_kwargs["guided_json"] = guided_json
-            elif json_schema:
-                sampling_params_kwargs["guided_json"] = json_schema
-                
-            sampling_params = SamplingParams(**sampling_params_kwargs)
+            # Create sampling parameters
+            sampling_params = SamplingParams(
+                max_tokens=max_tokens,
+                temperature=temperature,
+                stop=stop_tokens
+            )
             
             # Generate
             outputs = engine.generate([prompt], sampling_params)
