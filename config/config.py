@@ -92,7 +92,7 @@ SETTINGS = {
     
     # vLLM settings
     'vllm_max_parallel': 4,
-    'vllm_gpu_memory_utilization': 0.3
+    'vllm_gpu_memory_utilization': 0.2
 }
 
 # Memory requirements by model size (with 30% GPU utilization)

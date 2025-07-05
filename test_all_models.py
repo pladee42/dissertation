@@ -85,6 +85,11 @@ class ModelTester:
         }
         
         try:
+            # Check available GPU memory before loading
+            if torch.cuda.is_available():
+                free_memory = torch.cuda.get_device_properties(0).total_memory - torch.cuda.memory_allocated(0)
+                logger.info(f"Available GPU memory: {free_memory / 1024**3:.2f} GB")
+            
             # Test model loading and inference
             start_time = datetime.now()
             

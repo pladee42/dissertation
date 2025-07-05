@@ -2,6 +2,8 @@ import logging
 from typing import Dict, Any, Optional, List
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import os
+import gc
+import torch
 
 logger = logging.getLogger(__name__)
 
@@ -240,6 +242,13 @@ class VLLMBackend:
         models = self.get_models()
         return {"model_path": models[0] if models else ""}
     
+    def cleanup_memory(self):
+        """Clean up GPU memory"""
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+            gc.collect()
+            logger.info("GPU memory cleaned up")
+    
     def __del__(self):
         """Cleanup thread pool and engines on destruction"""
         if hasattr(self, 'executor'):
@@ -252,3 +261,6 @@ class VLLMBackend:
                     del engine
                 except:
                     pass
+        
+        # Clean up GPU memory
+        self.cleanup_memory()
