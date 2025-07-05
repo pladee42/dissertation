@@ -12,6 +12,7 @@ from datetime import datetime
 from typing import Dict, List, Any
 import torch
 import gc
+from argparse import ArgumentParser
 
 # Add project root to path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -128,12 +129,24 @@ class ModelTester:
         
         return result
     
-    def test_all_models(self) -> Dict[str, Any]:
-        """Test all models in the configuration"""
-        logger.info(f"Starting tests for {len(MODELS)} models")
+    def test_models(self, model_names: List[str] = None) -> Dict[str, Any]:
+        """Test specified models or all models in the configuration"""
+        if model_names is None:
+            model_names = list(MODELS.keys())
+            logger.info(f"Testing all {len(model_names)} models")
+        else:
+            # Validate model names
+            valid_models = []
+            for name in model_names:
+                if name in MODELS:
+                    valid_models.append(name)
+                else:
+                    logger.warning(f"Model '{name}' not found in config. Available models: {list(MODELS.keys())}")
+            model_names = valid_models
+            logger.info(f"Testing {len(model_names)} specified models: {model_names}")
         
         summary = {
-            'total_models': len(MODELS),
+            'total_models': len(model_names),
             'successful': 0,
             'failed': 0,
             'test_start_time': datetime.now().isoformat(),
@@ -141,7 +154,8 @@ class ModelTester:
             'results': {}
         }
         
-        for model_name, model_config in MODELS.items():
+        for model_name in model_names:
+            model_config = MODELS[model_name]
             try:
                 result = self.test_model(model_name, model_config)
                 self.results[model_name] = result
@@ -164,6 +178,10 @@ class ModelTester:
         summary['test_end_time'] = datetime.now().isoformat()
         
         return summary
+    
+    def test_all_models(self) -> Dict[str, Any]:
+        """Test all models in the configuration (backward compatibility)"""
+        return self.test_models()
     
     def generate_report(self, summary: Dict[str, Any]):
         """Generate test report"""
@@ -249,6 +267,23 @@ class ModelTester:
 
 def main():
     """Main testing function"""
+    parser = ArgumentParser(description="Test models individually or in groups")
+    parser.add_argument("--models", nargs="+", 
+                       help="Specific model names to test (default: all models)")
+    parser.add_argument("--size", choices=["small", "medium", "large"],
+                       help="Test models by size category")
+    parser.add_argument("--list", action="store_true",
+                       help="List available models and exit")
+    
+    args = parser.parse_args()
+    
+    # List models if requested
+    if args.list:
+        print("Available models:")
+        for name, config in MODELS.items():
+            print(f"  {name} ({config.get('uid', 'N/A')}) - {config.get('size', 'N/A')} - {config.get('model_id', 'N/A')}")
+        sys.exit(0)
+    
     logger.info("Starting model testing script")
     
     # Check if vLLM is available
@@ -266,11 +301,20 @@ def main():
     else:
         logger.warning("CUDA is not available - testing may be limited")
     
+    # Determine which models to test
+    models_to_test = None
+    if args.models:
+        models_to_test = args.models
+    elif args.size:
+        models_to_test = [name for name, config in MODELS.items() 
+                         if config.get('size') == args.size]
+        logger.info(f"Selected {len(models_to_test)} {args.size} models: {models_to_test}")
+    
     # Create tester and run tests
     tester = ModelTester()
     
     try:
-        summary = tester.test_all_models()
+        summary = tester.test_models(models_to_test)
         
         # Generate report and print summary
         report_file = tester.generate_report(summary)
