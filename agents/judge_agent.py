@@ -62,10 +62,17 @@ class JudgeAgent:
             # Parse JSON response
             try:
                 evaluation = json.loads(evaluation_json)
-                # Ensure overall_score exists
-                if 'overall_score' not in evaluation:
+                # Convert score to overall_score and normalize to 0-1 range
+                if 'score' in evaluation:
+                    score = evaluation['score']
+                    if isinstance(score, str):
+                        score = float(score)
+                    evaluation['overall_score'] = score / 10.0  # Convert 1-10 to 0-1
+                else:
                     evaluation['overall_score'] = 0.5
-            except json.JSONDecodeError:
+            except (json.JSONDecodeError, ValueError, TypeError) as e:
+                logger.warning(f"JSON parsing failed: {e}")
+                logger.warning(f"Raw response (first 500 chars): {evaluation_json[:500]}")
                 # Fallback to simple evaluation if JSON parsing fails
                 evaluation = self._create_fallback_evaluation(email_content, checklist)
             
@@ -87,16 +94,29 @@ class JudgeAgent:
         
         for attempt in range(self.max_retries):
             try:
-                # Generate using vLLM backend
+                # Generate using vLLM backend with model-specific adjustments
+                model_to_use = self.model_key or self.model_id
+                max_tokens = get_setting('judge_max_tokens', 6144)
+                temperature = get_setting('temperature', 0.7)
+                
+                # Adjust temperature for better JSON output with Vicuna
+                if 'vicuna' in model_to_use.lower():
+                    temperature = 0.3  # Lower temperature for more focused output
+                
+                logger.debug(f"Generating evaluation with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}")
+                logger.debug(f"Prompt length: {len(prompt)} characters")
+                
                 result = self.backend.generate(
                     prompt=prompt,
-                    model=self.model_key or self.model_id,
-                    max_tokens=get_setting('max_tokens', 2048),
-                    temperature=get_setting('temperature', 0.7)
+                    model=model_to_use,
+                    max_tokens=max_tokens,
+                    temperature=temperature
                 )
                 
                 if result.strip():
-                    return result.strip()
+                    # Try to extract JSON if the response contains extra text
+                    cleaned_result = self._extract_json_from_response(result.strip())
+                    return cleaned_result
                 else:
                     raise Exception("Empty response from backend")
                     
@@ -108,6 +128,60 @@ class JudgeAgent:
         
         # If all retries failed, raise exception
         raise Exception(f"Failed to evaluate email after {self.max_retries} attempts. Last error: {last_error}")
+    
+    def _extract_json_from_response(self, response: str) -> str:
+        """Extract JSON object from response text"""
+        try:
+            import re
+            
+            logger.debug(f"Original response: {response[:500]}...")
+            
+            # Check if the response contains instruction patterns instead of JSON
+            instruction_patterns = [
+                "provide", "analysis", "please", "here is", "i will", "first",
+                "let me", "based on", "following", "assessment"
+            ]
+            
+            # If response starts and ends with braces, treat it as JSON
+            if response.strip().startswith('{') and response.strip().endswith('}'):
+                json_str = response.strip()
+                logger.debug(f"Found complete JSON object: {json_str[:200]}...")
+                
+                # Validate that it looks like proper JSON
+                if '"score"' in json_str and ('"strengths"' in json_str or '"weaknesses"' in json_str):
+                    return json_str
+                else:
+                    logger.warning("Found JSON object but doesn't contain expected fields")
+                    raise Exception("JSON object doesn't contain expected fields")
+            
+            # Try to find JSON object pattern {...} as fallback
+            json_pattern = r'\{.*\}'  # Use greedy matching
+            matches = re.findall(json_pattern, response, re.DOTALL)
+            
+            if matches:
+                # Return the longest match (most likely to be complete)
+                json_str = max(matches, key=len)
+                logger.debug(f"Extracted JSON: {json_str[:200]}...")
+                
+                # Validate that it looks like proper JSON
+                if '"score"' in json_str and ('"strengths"' in json_str or '"weaknesses"' in json_str):
+                    return json_str
+                else:
+                    logger.warning("Found JSON object but doesn't contain expected fields")
+                    raise Exception("JSON object doesn't contain expected fields")
+            
+            # Check for various instruction patterns that indicate model confusion
+            if any(phrase in response.lower() for phrase in instruction_patterns):
+                logger.warning("Model provided analysis text instead of JSON, triggering retry")
+                raise Exception("Model provided analysis text instead of JSON")
+            
+            # If we get here, the response doesn't contain recognizable JSON
+            logger.warning(f"No valid JSON found in response: {response[:200]}...")
+            raise Exception("No valid JSON object found in response")
+            
+        except Exception as e:
+            logger.warning(f"Failed to extract JSON from response: {e}")
+            raise Exception(f"Failed to extract valid JSON: {e}")
     
     def _create_fallback_evaluation(self, email_content: str, checklist: Dict[str, Any]) -> Dict[str, Any]:
         """Create a simple fallback evaluation"""

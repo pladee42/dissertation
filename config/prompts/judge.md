@@ -49,17 +49,12 @@ Here are more detailed criteria for the scores:
     that can help user solve the problem.
 
 ## Output Format
-First, please output your analysis for the model response, and then
-    summarize your assessment to two aspects: "strengths" and "
-    weaknesses"; Finally, please write down your rating for the
-    assessment.
-Please provide your evaluation results in the following json format by
-    filling in the placeholders in []:
+CRITICAL: You must respond ONLY with a valid JSON object. No explanations, no extra text, no thinking process. Start immediately with { and end with }.
 
-'''
+Please provide your evaluation results in the following JSON format:
+
 {
-"strengths": "[analysis for the strengths of the response]",
-"weaknesses": "[analysis for the weaknesses of the response]",
-"score": "[1~10]"
+"strengths": "analysis for the strengths of the response",
+"weaknesses": "analysis for the weaknesses of the response", 
+"score": 7
 }
-'''

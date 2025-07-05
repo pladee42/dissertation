@@ -88,19 +88,8 @@ class ChecklistAgent:
         
         for attempt in range(self.max_retries):
             try:
-                # Use the formatted template from the prompt parameter
-                json_prompt = f"""{prompt}
-
-CRITICAL: You must respond ONLY with a valid JSON array. No explanations, no extra text, no thinking process. Start immediately with [ and end with ].
-
-Example of the EXACT format required:
-[
-    {{"question": "Does the email begin with a direct, personal address (e.g., 'Dear Friend,')?", "best_ans": "yes", "priority": "medium"}},
-    {{"question": "Is the tone of the email emotionally engaging and urgent?", "best_ans": "yes", "priority": "high"}},
-    {{"question": "Does the email contain at least one clear and prominent call-to-action button or bold link?", "best_ans": "yes", "priority": "very high"}}
-]
-
-JSON RESPONSE:"""
+                # Use the prompt as-is from the template
+                json_prompt = prompt
                 
                 # Generate using vLLM backend with model-specific adjustments
                 model_to_use = self.model_key or self.model_id
@@ -152,8 +141,20 @@ JSON RESPONSE:"""
                 logger.warning("Model provided instructions instead of JSON, triggering retry")
                 raise Exception("Model provided instructions instead of JSON")
             
-            # Try to find JSON array pattern [...]
-            json_pattern = r'\[.*?\]'
+            # If response starts and ends with brackets, treat it as JSON
+            if response.strip().startswith('[') and response.strip().endswith(']'):
+                json_str = response.strip()
+                logger.debug(f"Found complete JSON array: {json_str[:200]}...")
+                
+                # Validate that it looks like proper JSON
+                if '"question"' in json_str and '"best_ans"' in json_str:
+                    return json_str
+                else:
+                    logger.warning("Found JSON array but doesn't contain expected fields")
+                    raise Exception("JSON array doesn't contain expected fields")
+            
+            # Try to find JSON array pattern [...] as fallback
+            json_pattern = r'\[.*\]'  # Use greedy matching
             matches = re.findall(json_pattern, response, re.DOTALL)
             
             if matches:
@@ -168,9 +169,6 @@ JSON RESPONSE:"""
                     logger.warning("Found JSON array but doesn't contain expected fields")
                     raise Exception("JSON array doesn't contain expected fields")
             
-            # If no JSON array found, check if the response looks like it should be JSON
-            if response.strip().startswith('[') and response.strip().endswith(']'):
-                return response.strip()
             
             # Check for various instruction patterns that indicate model confusion
             instruction_patterns = [

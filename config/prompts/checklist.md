@@ -51,7 +51,9 @@ For each question, you must provide:
 You should generate at least 8 - 10 questions.
 
 ## Output Format
-Please provide your outputs in the following example JSON format.
+CRITICAL: You must respond ONLY with a valid JSON array. No explanations, no extra text, no thinking process. Start immediately with [ and end with ].
+
+Please provide your outputs in the following example JSON format:
 
 [
     {"question": "Does the email begin with a direct, personal address (e.g., 'Dear Friend,')?", "best_ans": "yes", "priority": "medium"},
