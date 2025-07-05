@@ -10,19 +10,19 @@ You should first read the user query and the conversation history carefully for
 
 ## Current User Query
 <|begin_of_query|>
-{user_query}
+[USER_QUERY]
 <|end_of_query|>
 
 ## AI Response
 <|begin_of_response|>
-{model_output}
+[MODEL_OUTPUT]
 <|end_of_response|>
 
 # Evaluation
 
 ## Checklist
 <|begin_of_checklist|>
-{checklist}
+[CHECKLIST]
 <|end_of_checklist|>
 
 Please use this checklist to guide your evaluation, but do not limit your

@@ -39,13 +39,13 @@ MODELS = {
         'quantization': 'awq',
         'dtype': 'bfloat16'
     },
-    'qwen-3-8b': {
+    'mistral-7b': {
         'uid': 'M0006',
-        'model_id': 'Qwen/Qwen3-8B-AWQ',
+        'model_id': 'mistralai/Mistral-7B-Instruct-v0.3',
         'recommended_for': ['email_generation'],
         'size': 'medium',
-        'quantization': 'awq',
-        'dtype': 'float16'
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16'
     },
     'deepseek-r1-70b': {
         'uid': 'M0007',
@@ -55,12 +55,12 @@ MODELS = {
         'quantization': 'experts_int8',
         'dtype': 'bfloat16'
     },
-    'llama-4-109b': {
+    'llama-3-70b': {
         'uid': 'M0008',
-        'model_id': 'kishizaki-sci/Llama-4-Scout-17B-16E-Instruct-AWQ',
+        'model_id': 'casperhansen/llama-3-70b-instruct-awq',
         'recommended_for': ['checklist_generation', 'judge'],
         'size': 'large',
-        'quantization': 'auto',
+        'quantization': 'awq',
         'dtype': 'float16'
     }
 }

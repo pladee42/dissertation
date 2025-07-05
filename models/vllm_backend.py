@@ -100,11 +100,24 @@ class VLLMBackend:
             # Get vLLM engine
             engine = self._get_engine(model)
             
+            # Add model-specific stop tokens
+            stop_tokens = stop or []
+            
+            # Add stop tokens for Qwen models to prevent thinking process
+            if 'qwen' in model.lower():
+                qwen_stop_tokens = [
+                    "<|thinking|>", "</thinking>", "<thinking>", 
+                    "<|im_start|>thinking", "<|im_end|>thinking",
+                    "Let me think", "I need to think", "Thinking:",
+                    "\n\nLet me", "\n\nI need to"
+                ]
+                stop_tokens.extend(qwen_stop_tokens)
+            
             # Create sampling parameters
             sampling_params = SamplingParams(
                 max_tokens=max_tokens,
                 temperature=temperature,
-                stop=stop or []
+                stop=stop_tokens
             )
             
             # Generate
@@ -199,11 +212,24 @@ class VLLMBackend:
             # Get vLLM engine
             engine = self._get_engine(model)
             
+            # Add model-specific stop tokens
+            stop_tokens = stop or []
+            
+            # Add stop tokens for Qwen models to prevent thinking process
+            if 'qwen' in model.lower():
+                qwen_stop_tokens = [
+                    "<|thinking|>", "</thinking>", "<thinking>", 
+                    "<|im_start|>thinking", "<|im_end|>thinking",
+                    "Let me think", "I need to think", "Thinking:",
+                    "\n\nLet me", "\n\nI need to"
+                ]
+                stop_tokens.extend(qwen_stop_tokens)
+            
             # Create sampling parameters
             sampling_params = SamplingParams(
                 max_tokens=max_tokens,
                 temperature=temperature,
-                stop=stop or []
+                stop=stop_tokens
             )
             
             # Generate batch

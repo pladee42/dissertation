@@ -35,7 +35,7 @@ Based on the user's request, the generated email should adhere to one of the fol
 
 ## Current User Query
 <|begin_of_query|>
-{user_query}
+[USER_QUERY]
 <|end_of_query|>
 
 # Task
