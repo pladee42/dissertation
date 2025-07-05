@@ -39,16 +39,8 @@ MODELS = {
         'quantization': 'experts_int8',
         'dtype': 'bfloat16'
     },
-    'mistral-7b': {
-        'uid': 'M0006',
-        'model_id': 'mistralai/Mistral-7B-Instruct-v0.3',
-        'recommended_for': ['email_generation'],
-        'size': 'medium',
-        'quantization': 'experts_int8',
-        'dtype': 'bfloat16'
-    },
     'deepseek-r1-70b': {
-        'uid': 'M0007',
+        'uid': 'M0006',
         'model_id': 'casperhansen/deepseek-r1-distill-llama-70b-awq',
         'recommended_for': ['checklist_generation', 'judge'],
         'size': 'large',
@@ -56,7 +48,7 @@ MODELS = {
         'dtype': 'float16'
     },
     'llama-3-70b': {
-        'uid': 'M0008',
+        'uid': 'M0007',
         'model_id': 'casperhansen/llama-3-70b-instruct-awq',
         'recommended_for': ['checklist_generation', 'judge'],
         'size': 'large',
