@@ -336,6 +336,13 @@ class VLLMBackend:
         models = self.get_models()
         return {"model_path": models[0] if models else ""}
     
+    def unload_model(self, model_name: str):
+        """Unload a specific model to free GPU memory"""
+        if model_name in self.engines:
+            del self.engines[model_name]
+            self.cleanup_memory()
+            logger.info(f"Unloaded model: {model_name}")
+    
     def cleanup_memory(self):
         """Clean up GPU memory"""
         if torch.cuda.is_available():

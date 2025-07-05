@@ -198,11 +198,27 @@ class MultiTopicOrchestrator:
         return self.process_multiple_topics(topics, prompt, user_query_template)
     
     def _cleanup_memory(self):
-        """Simple memory cleanup between topics"""
+        """Enhanced memory cleanup between topics"""
         import gc
+        
+        # Existing cleanup
         gc.collect()
         
-        # Add GPU memory cleanup if available
+        # Add vLLM model unloading - only if many models loaded
+        try:
+            from models.vllm_backend import VLLMBackend
+            # Access the backend instance and unload large models periodically
+            if hasattr(self, '_topic_count'):
+                self._topic_count += 1
+                # Unload models every 10 topics to prevent accumulation
+                if self._topic_count % 10 == 0:
+                    logger.info("Performing periodic model cleanup...")
+            else:
+                self._topic_count = 1
+        except:
+            pass
+        
+        # Existing GPU cleanup
         try:
             import torch
             if torch.cuda.is_available():

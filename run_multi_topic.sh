@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=deepseek_r1_70b
-#SBATCH --time=04:30:00
+#SBATCH --time=08:00:00
 #SBATCH --nodes=1
 #SBATCH --partition=gpu
 #SBATCH --qos=gpu
