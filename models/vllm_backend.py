@@ -146,12 +146,9 @@ class VLLMBackend:
                 ]
                 stop_tokens.extend(yi_stop_tokens)
             
-            # Add minimal stop tokens for Llama models
+            # No stop tokens for Llama models - let them generate freely
             if 'llama' in model.lower():
-                llama_stop_tokens = [
-                    "<|eot_id|>"  # Only the most essential stop token
-                ]
-                stop_tokens.extend(llama_stop_tokens)
+                pass  # Don't add any stop tokens for now
             
             # Create sampling parameters
             # Note: vLLM uses temperature to control sampling automatically
@@ -311,12 +308,9 @@ class VLLMBackend:
                 ]
                 stop_tokens.extend(yi_stop_tokens)
             
-            # Add minimal stop tokens for Llama models
+            # No stop tokens for Llama models - let them generate freely
             if 'llama' in model.lower():
-                llama_stop_tokens = [
-                    "<|eot_id|>"  # Only the most essential stop token
-                ]
-                stop_tokens.extend(llama_stop_tokens)
+                pass  # Don't add any stop tokens for now
             
             # Create sampling parameters
             # Note: vLLM uses temperature to control sampling automatically
