@@ -37,7 +37,7 @@ MODELS = {
         'recommended_for': ['email_generation'],
         'size': 'small',
         'quantization': 'awq',
-        'dtype': 'float16'
+        'dtype': 'bfloat16'
     },
     'qwen-3-8b': {
         'uid': 'M0006',
@@ -92,14 +92,14 @@ SETTINGS = {
     
     # vLLM settings
     'vllm_max_parallel': 4,
-    'vllm_gpu_memory_utilization': 0.6
+    'vllm_gpu_memory_utilization': 0.3
 }
 
-# Memory requirements by model size
+# Memory requirements by model size (with 30% GPU utilization)
 MEMORY_REQUIREMENTS = {
-    'small': {'min_gb': 2, 'recommended_gb': 4},
-    'medium': {'min_gb': 8, 'recommended_gb': 12},
-    'large': {'min_gb': 24, 'recommended_gb': 32}
+    'small': {'min_gb': 2, 'recommended_gb': 6, 'vram_gb': 14},
+    'medium': {'min_gb': 8, 'recommended_gb': 12, 'vram_gb': 16}, 
+    'large': {'min_gb': 24, 'recommended_gb': 32, 'vram_gb': 40}
 }
 
 def get_model_config(model_name: str) -> dict:
