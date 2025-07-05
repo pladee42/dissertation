@@ -47,13 +47,13 @@ MODELS = {
         'quantization': 'awq',
         'dtype': 'float16'
     },
-    'judgelm-33b': {
+    'llama-3-70b': {
         'uid': 'M0007',
-        'model_id': 'BAAI/JudgeLM-33B-v1.0',
-        'recommended_for': ['judge'],
+        'model_id': 'casperhansen/llama-3-70b-instruct-awq',
+        'recommended_for': ['checklist_generation', 'judge'],
         'size': 'large',
-        'quantization': 'experts_int8',
-        'dtype': 'bfloat16'
+        'quantization': 'awq',
+        'dtype': 'float16'
     },
     'gemini-2.5-flash': {
         'uid': 'M0008',

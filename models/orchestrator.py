@@ -226,6 +226,7 @@ class ModelOrchestrator:
                 model_id=model_config['model_id'],
                 dtype=model_config.get('dtype', 'bfloat16'),
                 quantization=model_config.get('quantization', 'experts_int8'),
+                backend_type=model_config.get('backend_type', 'vllm'),
                 model_key=self.judge_model
             )
             

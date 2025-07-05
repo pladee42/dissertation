@@ -45,8 +45,8 @@ nvidia-smi
 
 # Run script (agents will handle SGLang unavailability gracefully)
 echo "Running multi_topic_runner.py..."
-# Option 1: Use local JudgeLM model
-python -m multi_topic_runner --email_generation=medium --checklist_model=yi-34b --judge_model=judgelm-33b
+# Option 1: Use local Llama-3-70B model
+python -m multi_topic_runner --email_generation=medium --checklist_model=yi-34b --judge_model=llama-3-70b
 
 # Option 2: Use OpenRouter Gemini model (uncomment to use)
 # python -m multi_topic_runner --email_generation=medium --checklist_model=yi-34b --judge_model=gemini-2.5-flash
