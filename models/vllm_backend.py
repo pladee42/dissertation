@@ -64,11 +64,16 @@ class VLLMBackend:
                     "download_dir": "./downloaded_models",
                     "trust_remote_code": True,
                     "max_model_len": 2048,  # Reduced for memory efficiency
-                    "gpu_memory_utilization": 0.6,  # Conservative memory usage
+                    "gpu_memory_utilization": 0.85,  # Higher memory usage for large models
                     "dtype": dtype,
                     "enforce_eager": True,  # Disable CUDA graphs for memory efficiency
                     "disable_custom_all_reduce": True  # Better memory management
                 }
+                
+                # Adjust memory utilization for different model sizes
+                if 'judgelm' in model.lower() or 'yi' in model.lower():
+                    vllm_kwargs["gpu_memory_utilization"] = 0.9  # Very high for 33B+ models
+                    vllm_kwargs["max_model_len"] = 1024  # Reduce sequence length for large models
                 
                 # Add quantization if specified
                 if quantization == "awq":

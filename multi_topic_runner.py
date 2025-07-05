@@ -11,6 +11,10 @@ import time
 from datetime import datetime
 from argparse import ArgumentParser
 from pathlib import Path
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 from models.multi_topic_orchestrator import MultiTopicOrchestrator
 from config.config import MODELS_CONFIG, get_setting, MODELS

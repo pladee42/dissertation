@@ -54,6 +54,13 @@ MODELS = {
         'size': 'large',
         'quantization': 'experts_int8',
         'dtype': 'bfloat16'
+    },
+    'gemini-2.5-flash': {
+        'uid': 'M0008',
+        'model_id': 'google/gemini-2.5-flash-lite-preview-06-17',
+        'recommended_for': ['judge'],
+        'size': 'api',
+        'backend_type': 'openrouter'
     }
 }
 

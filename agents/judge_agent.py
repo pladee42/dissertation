@@ -13,8 +13,9 @@ import json
 from typing import Dict, Any
 
 from models.vllm_backend import VLLMBackend
+from models.openrouter_backend import OpenRouterBackend
 from utils.template_manager import get_template_manager
-from config.config import get_setting
+from config.config import get_setting, get_model_config
 
 logger = logging.getLogger(__name__)
 
@@ -22,21 +23,31 @@ class JudgeAgent:
     """vLLM-based Judge Agent for email evaluation"""
     
     def __init__(self, model_id: str, dtype: str = "bfloat16", quantization: str = "experts_int8", backend_type: str = "vllm", model_key: str = None):
-        """Initialize with vLLM backend"""
+        """Initialize with appropriate backend"""
         self.model_id = model_id
         self.model_key = model_key  # Model configuration key
         self.model_name = model_id.split('/')[-1]
         
-        # Initialize vLLM backend
-        self.backend = VLLMBackend()
+        # Detect backend type from model config if not specified
+        if model_key:
+            model_config = get_model_config(model_key)
+            backend_type = model_config.get('backend_type', backend_type)
+        
+        # Initialize appropriate backend
+        if backend_type == 'openrouter':
+            self.backend = OpenRouterBackend()
+            self.backend_type = 'openrouter'
+            logger.info(f"JudgeAgent initialized with OpenRouter backend for model: {self.model_name}")
+        else:
+            self.backend = VLLMBackend()
+            self.backend_type = 'vllm'
+            logger.info(f"JudgeAgent initialized with vLLM backend for model: {self.model_name}")
         
         # Get template manager
         self.template_manager = get_template_manager()
         
         # Retry settings
         self.max_retries = get_setting('max_retries', 3)
-        
-        logger.info(f"JudgeAgent initialized with model: {self.model_name}")
     
     def evaluate_email(self, email_content: str, checklist: Dict[str, Any]) -> Dict[str, Any]:
         """Evaluate email using vLLM backend and templates"""
@@ -113,6 +124,8 @@ class JudgeAgent:
                     temperature = 0.3  # Lower temperature for more focused output
                 elif 'llama' in model_to_use.lower():
                     temperature = 0.3  # Moderate temperature for Llama models to encourage generation
+                elif 'gemini' in model_to_use.lower() or self.backend_type == 'openrouter':
+                    temperature = 0.1  # Very low temperature for consistent JSON from API models
                 
                 logger.debug(f"Generating evaluation with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}")
                 logger.debug(f"Prompt length: {len(prompt)} characters")

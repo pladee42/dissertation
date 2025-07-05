@@ -10,6 +10,10 @@ This provides simple multi-model email generation with:
 import logging
 import os
 from argparse import ArgumentParser
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 from models.orchestrator import ModelOrchestrator
 from config.config import MODELS_CONFIG, get_setting, MODELS
 from models.vllm_backend import VLLMBackend
