@@ -45,7 +45,7 @@ nvidia-smi
 
 # Run script (agents will handle SGLang unavailability gracefully)
 echo "Running multi_topic_runner.py..."
-python -m multi_topic_runner
+python -m multi_topic_runner --email_generation=medium --checklist_model=yi-34b --judge_model=llama-3-70b
 
 # Check execution status
 if [ $? -eq 0 ]; then
