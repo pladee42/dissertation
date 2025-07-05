@@ -59,10 +59,6 @@ class ChecklistAgent:
             # Generate with retry logic
             checklist_json = self._generate_with_retry(full_prompt)
             
-            # Debug
-            with open('checklist_response2.txt', 'w', encoding='utf-8') as f:
-                f.write(checklist_json)
-            
             # Parse JSON response with better error handling
             try:
                 # First try basic JSON parsing
@@ -109,9 +105,6 @@ class ChecklistAgent:
                     max_tokens=max_tokens,
                     temperature=temperature
                 )
-                
-                with open('checklist_response1.txt', 'w', encoding='utf-8') as f:
-                    f.write(result)
                 
                 if result.strip():
                     # Try to extract JSON if the response contains extra text
