@@ -137,6 +137,21 @@ class VLLMBackend:
                 ]
                 stop_tokens.extend(deepseek_stop_tokens)
             
+            # Add stop tokens for Yi models to prevent format tags
+            if 'yi' in model.lower():
+                yi_stop_tokens = [
+                    "<|output_json_array|>", "</|output_json_array|>",
+                    "<|im_end|>", "<|im_start|>"
+                ]
+                stop_tokens.extend(yi_stop_tokens)
+            
+            # Add stop tokens for Llama models to prevent empty outputs
+            if 'llama' in model.lower():
+                llama_stop_tokens = [
+                    "<|end_of_text|>", "<|eot_id|>", "</s>"
+                ]
+                stop_tokens.extend(llama_stop_tokens)
+            
             # Create sampling parameters
             # Note: vLLM uses temperature to control sampling automatically
             # temperature=0.0 -> deterministic, temperature>0.0 -> sampling enabled
@@ -276,6 +291,21 @@ class VLLMBackend:
                     "<think>", "</think>"
                 ]
                 stop_tokens.extend(deepseek_stop_tokens)
+            
+            # Add stop tokens for Yi models to prevent format tags
+            if 'yi' in model.lower():
+                yi_stop_tokens = [
+                    "<|output_json_array|>", "</|output_json_array|>",
+                    "<|im_end|>", "<|im_start|>"
+                ]
+                stop_tokens.extend(yi_stop_tokens)
+            
+            # Add stop tokens for Llama models to prevent empty outputs
+            if 'llama' in model.lower():
+                llama_stop_tokens = [
+                    "<|end_of_text|>", "<|eot_id|>", "</s>"
+                ]
+                stop_tokens.extend(llama_stop_tokens)
             
             # Create sampling parameters
             # Note: vLLM uses temperature to control sampling automatically
