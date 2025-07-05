@@ -108,9 +108,11 @@ class JudgeAgent:
                 max_tokens = get_setting('judge_max_tokens', 6144)
                 temperature = get_setting('temperature', 0.7)
                 
-                # Adjust temperature for better JSON output with Vicuna
+                # Adjust temperature for better JSON output with specific models
                 if 'vicuna' in model_to_use.lower():
                     temperature = 0.3  # Lower temperature for more focused output
+                elif 'llama' in model_to_use.lower():
+                    temperature = 0.1  # Very low temperature for Llama models to prevent empty outputs
                 
                 logger.debug(f"Generating evaluation with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}")
                 logger.debug(f"Prompt length: {len(prompt)} characters")

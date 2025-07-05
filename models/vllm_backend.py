@@ -148,7 +148,10 @@ class VLLMBackend:
             # Add stop tokens for Llama models to prevent empty outputs
             if 'llama' in model.lower():
                 llama_stop_tokens = [
-                    "<|end_of_text|>", "<|eot_id|>", "</s>"
+                    "<|end_of_text|>", "<|eot_id|>", "</s>",
+                    "<|begin_of_query|>", "<|end_of_query|>",
+                    "<|begin_of_response|>", "<|end_of_response|>",
+                    "<|begin_of_checklist|>", "<|end_of_checklist|>"
                 ]
                 stop_tokens.extend(llama_stop_tokens)
             
@@ -303,7 +306,10 @@ class VLLMBackend:
             # Add stop tokens for Llama models to prevent empty outputs
             if 'llama' in model.lower():
                 llama_stop_tokens = [
-                    "<|end_of_text|>", "<|eot_id|>", "</s>"
+                    "<|end_of_text|>", "<|eot_id|>", "</s>",
+                    "<|begin_of_query|>", "<|end_of_query|>",
+                    "<|begin_of_response|>", "<|end_of_response|>",
+                    "<|begin_of_checklist|>", "<|end_of_checklist|>"
                 ]
                 stop_tokens.extend(llama_stop_tokens)
             
