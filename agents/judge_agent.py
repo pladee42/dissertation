@@ -46,11 +46,20 @@ class JudgeAgent:
             # Get judge template
             judge_template = self.template_manager.get_judge_template()
             
-            # Format template with variables
+            # Format template with variables - handle checklist format
+            logger.debug(f"Checklist type: {type(checklist)}, content: {str(checklist)[:200]}...")
+            
+            # Ensure checklist is properly formatted for the template
+            if isinstance(checklist, list):
+                # If it's already a list, wrap it in a dict for consistency
+                checklist_for_template = {"criteria": checklist}
+            else:
+                checklist_for_template = checklist
+            
             formatted_template = self.template_manager.format_template(
                 judge_template,
                 email_content=email_content[:1000],  # Truncate for brevity
-                checklist=json.dumps(checklist, indent=2)
+                checklist=json.dumps(checklist_for_template, indent=2)
             )
             
             # Create full prompt
@@ -193,10 +202,18 @@ class JudgeAgent:
             json_str = re.sub(r'"score":\s*}', '"score": 5}', json_str)
             
             # Remove any trailing text after the JSON object
-            # Find the last } and cut everything after it
-            last_brace = json_str.rfind('}')
-            if last_brace != -1:
-                json_str = json_str[:last_brace + 1]
+            # Look for the first complete JSON object pattern
+            import re
+            
+            # Find JSON object pattern and extract only the first complete one
+            json_match = re.search(r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', json_str)
+            if json_match:
+                json_str = json_match.group(0)
+            else:
+                # Fallback: find the last } and cut everything after it
+                last_brace = json_str.rfind('}')
+                if last_brace != -1:
+                    json_str = json_str[:last_brace + 1]
             
             # Ensure score is a number
             score_match = re.search(r'"score":\s*"([^"]*)"', json_str)
@@ -216,7 +233,17 @@ class JudgeAgent:
     
     def _create_fallback_evaluation(self, email_content: str, checklist: Dict[str, Any]) -> Dict[str, Any]:
         """Create a simple fallback evaluation"""
-        criteria = checklist.get("criteria", [])
+        # Handle both dict and list formats for checklist
+        if isinstance(checklist, list):
+            # If checklist is already a list of criteria
+            criteria = checklist
+        elif isinstance(checklist, dict):
+            # If checklist is a dict with 'criteria' key
+            criteria = checklist.get("criteria", [])
+        else:
+            # Fallback if checklist is neither
+            criteria = []
+            logger.warning(f"Unexpected checklist format: {type(checklist)}")
         evaluations = []
         total_score = 0
         total_weight = 0
@@ -225,12 +252,24 @@ class JudgeAgent:
         weight_map = {"high": 3, "medium": 2, "low": 1}
         
         for criterion in criteria:
+            # Handle both dict and simple formats
+            if isinstance(criterion, dict):
+                # Standard checklist format
+                priority = criterion.get("priority", "medium")
+                criterion_id = criterion.get("id")
+                description = criterion.get("description", "")
+            else:
+                # Fallback for unexpected formats
+                priority = "medium"
+                criterion_id = None
+                description = str(criterion)
+            
             score = self._score_criterion_simple(email_content, criterion)
-            weight = weight_map.get(criterion.get("priority", "medium"), 2)
+            weight = weight_map.get(priority, 2)
             
             evaluation_item = {
-                "criterion_id": criterion.get("id"),
-                "description": criterion.get("description"),
+                "criterion_id": criterion_id,
+                "description": description,
                 "score": score,
                 "weight": weight,
                 "weighted_score": score * weight
@@ -250,9 +289,14 @@ class JudgeAgent:
             "fallback": True
         }
     
-    def _score_criterion_simple(self, email_content: str, criterion: Dict[str, Any]) -> float:
+    def _score_criterion_simple(self, email_content: str, criterion: Any) -> float:
         """Simple fallback scoring logic"""
-        description = criterion.get("description", "").lower()
+        # Handle both dict and other formats
+        if isinstance(criterion, dict):
+            description = criterion.get("description", "").lower()
+        else:
+            description = str(criterion).lower()
+        
         email_lower = email_content.lower()
         
         # Simple keyword-based scoring
