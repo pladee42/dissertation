@@ -128,18 +128,31 @@ class VLLMBackend:
             sampling_params = SamplingParams(
                 max_tokens=max_tokens,
                 temperature=temperature,
-                stop=stop_tokens
+                stop=stop_tokens,
+                # For deterministic output, use temperature=0.0
+                # For sampling, temperature > 0 automatically enables sampling
             )
             
             # Generate
+            logger.debug(f"Generating with model: {model}, max_tokens: {max_tokens}, temperature: {temperature}")
             outputs = engine.generate([prompt], sampling_params)
             
             if outputs and len(outputs) > 0:
-                generated_text = outputs[0].outputs[0].text
-                return generated_text.strip()
+                output = outputs[0]
+                if output.outputs and len(output.outputs) > 0:
+                    generated_text = output.outputs[0].text
+                    logger.debug(f"Generated text length: {len(generated_text)}")
+                    if generated_text.strip():
+                        return generated_text.strip()
+                    else:
+                        logger.error(f"Empty output generated from vLLM for model: {model}")
+                        raise Exception(f"Empty output generated from vLLM for model: {model}")
+                else:
+                    logger.error(f"No outputs in vLLM response for model: {model}")
+                    raise Exception(f"No outputs in vLLM response for model: {model}")
             else:
-                logger.error("No output generated from vLLM")
-                return ""
+                logger.error(f"No output generated from vLLM for model: {model}")
+                raise Exception(f"No output generated from vLLM for model: {model}")
                 
         except Exception as e:
             logger.error(f"vLLM generation error: {e}")
@@ -247,7 +260,9 @@ class VLLMBackend:
             sampling_params = SamplingParams(
                 max_tokens=max_tokens,
                 temperature=temperature,
-                stop=stop_tokens
+                stop=stop_tokens,
+                # For deterministic output, use temperature=0.0
+                # For sampling, temperature > 0 automatically enables sampling
             )
             
             # Generate batch
@@ -255,10 +270,16 @@ class VLLMBackend:
             
             # Extract generated texts
             results = []
-            for output in outputs:
+            for i, output in enumerate(outputs):
                 if output.outputs and len(output.outputs) > 0:
-                    results.append(output.outputs[0].text.strip())
+                    generated_text = output.outputs[0].text.strip()
+                    if generated_text:
+                        results.append(generated_text)
+                    else:
+                        logger.warning(f"Empty output for prompt {i}")
+                        results.append("")
                 else:
+                    logger.warning(f"No output for prompt {i}")
                     results.append("")
             
             return results

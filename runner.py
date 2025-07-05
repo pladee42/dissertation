@@ -36,11 +36,11 @@ def main():
                        choices=['small', 'medium', 'large', 'all'],
                        help="Size category for email models (small, medium uses small+medium, large, all)")
     parser.add_argument("--email_models", nargs='+', 
-                       default=["deepseek-r1-1.5b", "llama-3-3b"],
+                       default=["tinyllama-1.1b", "phi-3-mini"],
                        choices=list(MODELS_CONFIG.keys()),
                        help="List of models for email generation (overrides --email_generation)")
     parser.add_argument("--checklist_model", type=str, 
-                       default="deepseek-r1-8b",
+                       default="vicuna-7b",
                        choices=list(MODELS_CONFIG.keys()))
     parser.add_argument("--judge_model", type=str, 
                        default="llama-3-8b",

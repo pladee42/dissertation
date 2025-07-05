@@ -94,11 +94,18 @@ IMPORTANT: Respond ONLY with valid JSON array. Do not include any thinking proce
 ]"""
                 
                 # Generate using vLLM backend
+                model_to_use = self.model_key or self.model_id
+                max_tokens = get_setting('checklist_max_tokens', 8192)
+                temperature = get_setting('temperature', 0.7)
+                
+                logger.debug(f"Generating checklist with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}")
+                logger.debug(f"Prompt length: {len(json_prompt)} characters")
+                
                 result = self.backend.generate(
                     prompt=json_prompt,
-                    model=self.model_key or self.model_id,
-                    max_tokens=get_setting('checklist_max_tokens', 8192),
-                    temperature=get_setting('temperature', 0.7)
+                    model=model_to_use,
+                    max_tokens=max_tokens,
+                    temperature=temperature
                 )
                 
                 if result.strip():
