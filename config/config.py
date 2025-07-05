@@ -60,7 +60,7 @@ MODELS = {
         'model_id': 'kishizaki-sci/Llama-4-Scout-17B-16E-Instruct-AWQ',
         'recommended_for': ['checklist_generation', 'judge'],
         'size': 'large',
-        'quantization': 'awq',
+        'quantization': 'auto',
         'dtype': 'float16'
     }
 }
