@@ -80,7 +80,9 @@ class VLLMBackend:
                 model: str,
                 max_tokens: int = 1000,
                 temperature: float = 0.7,
-                stop: Optional[list] = None) -> str:
+                stop: Optional[list] = None,
+                json_schema: Optional[dict] = None,
+                guided_json: Optional[dict] = None) -> str:
         """
         Generate text using vLLM
         
@@ -90,6 +92,8 @@ class VLLMBackend:
             max_tokens: Maximum tokens to generate
             temperature: Sampling temperature
             stop: Stop sequences
+            json_schema: JSON schema for guided decoding
+            guided_json: Guided JSON schema for structured output
             
         Returns:
             Generated text
@@ -120,12 +124,20 @@ class VLLMBackend:
                 ]
                 stop_tokens.extend(deepseek_stop_tokens)
             
-            # Create sampling parameters
-            sampling_params = SamplingParams(
-                max_tokens=max_tokens,
-                temperature=temperature,
-                stop=stop_tokens
-            )
+            # Create sampling parameters with optional guided decoding
+            sampling_params_kwargs = {
+                "max_tokens": max_tokens,
+                "temperature": temperature,
+                "stop": stop_tokens
+            }
+            
+            # Add guided decoding if JSON schema provided
+            if guided_json:
+                sampling_params_kwargs["guided_json"] = guided_json
+            elif json_schema:
+                sampling_params_kwargs["guided_json"] = json_schema
+                
+            sampling_params = SamplingParams(**sampling_params_kwargs)
             
             # Generate
             outputs = engine.generate([prompt], sampling_params)

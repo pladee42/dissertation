@@ -84,12 +84,30 @@ class ChecklistAgent:
         
         for attempt in range(self.max_retries):
             try:
-                # Generate using vLLM backend
+                # Create JSON schema for checklist guided decoding
+                checklist_schema = {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "question": {"type": "string"},
+                            "best_ans": {"type": "string", "enum": ["yes", "no"]},
+                            "priority": {"type": "string", "enum": ["very low", "low", "medium", "high", "very high"]}
+                        },
+                        "required": ["question", "best_ans", "priority"],
+                        "additionalProperties": False
+                    },
+                    "minItems": 8,
+                    "maxItems": 15
+                }
+                
+                # Generate using vLLM backend with guided JSON
                 result = self.backend.generate(
                     prompt=prompt,
                     model=self.model_key or self.model_id,
                     max_tokens=get_setting('checklist_max_tokens', 8192),
-                    temperature=get_setting('temperature', 0.7)
+                    temperature=get_setting('temperature', 0.7),
+                    guided_json=checklist_schema
                 )
                 
                 if result.strip():
