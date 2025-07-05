@@ -4,6 +4,14 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import os
 import gc
 import torch
+import warnings
+
+# Suppress specific warnings that might occur during model loading
+warnings.filterwarnings("ignore", message=".*do_sample.*")
+warnings.filterwarnings("ignore", message=".*top_p.*")
+warnings.filterwarnings("ignore", message=".*temperature.*")
+warnings.filterwarnings("ignore", category=UserWarning, module="transformers.*")
+warnings.filterwarnings("ignore", category=FutureWarning, module="transformers.*")
 
 logger = logging.getLogger(__name__)
 
@@ -33,8 +41,11 @@ class VLLMBackend:
         """Get or create vLLM engine for model"""
         if model not in self.engines:
             try:
-                from vllm import LLM
-                from config.config import get_model_config
+                # Suppress warnings during model loading
+                with warnings.catch_warnings():
+                    warnings.simplefilter("ignore")
+                    from vllm import LLM
+                    from config.config import get_model_config
                 
                 logger.info(f"Loading vLLM model: {model}")
                 
@@ -65,8 +76,10 @@ class VLLMBackend:
                     # For experts_int8, we'll use load_format instead
                     vllm_kwargs["load_format"] = "auto"
                 
-                # Initialize vLLM engine
-                self.engines[model] = LLM(**vllm_kwargs)
+                # Initialize vLLM engine with warning suppression
+                with warnings.catch_warnings():
+                    warnings.simplefilter("ignore")
+                    self.engines[model] = LLM(**vllm_kwargs)
                 logger.info(f"Successfully loaded vLLM model: {model}")
                 
             except Exception as e:
@@ -125,17 +138,29 @@ class VLLMBackend:
                 stop_tokens.extend(deepseek_stop_tokens)
             
             # Create sampling parameters
-            sampling_params = SamplingParams(
-                max_tokens=max_tokens,
-                temperature=temperature,
-                stop=stop_tokens,
-                # For deterministic output, use temperature=0.0
-                # For sampling, temperature > 0 automatically enables sampling
-            )
+            # Note: vLLM uses temperature to control sampling automatically
+            # temperature=0.0 -> deterministic, temperature>0.0 -> sampling enabled
+            sampling_params_dict = {
+                'max_tokens': max_tokens,
+                'temperature': temperature,
+                'stop': stop_tokens,
+                'top_k': -1,  # Disable top_k
+                'use_beam_search': False,
+                'frequency_penalty': 0.0,
+                'presence_penalty': 0.0
+            }
             
-            # Generate
+            # Only add top_p when sampling (temperature > 0)
+            if temperature > 0:
+                sampling_params_dict['top_p'] = 1.0
+            
+            sampling_params = SamplingParams(**sampling_params_dict)
+            
+            # Generate with warning suppression
             logger.debug(f"Generating with model: {model}, max_tokens: {max_tokens}, temperature: {temperature}")
-            outputs = engine.generate([prompt], sampling_params)
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                outputs = engine.generate([prompt], sampling_params)
             
             if outputs and len(outputs) > 0:
                 output = outputs[0]
@@ -257,16 +282,28 @@ class VLLMBackend:
                 stop_tokens.extend(deepseek_stop_tokens)
             
             # Create sampling parameters
-            sampling_params = SamplingParams(
-                max_tokens=max_tokens,
-                temperature=temperature,
-                stop=stop_tokens,
-                # For deterministic output, use temperature=0.0
-                # For sampling, temperature > 0 automatically enables sampling
-            )
+            # Note: vLLM uses temperature to control sampling automatically
+            # temperature=0.0 -> deterministic, temperature>0.0 -> sampling enabled
+            sampling_params_dict = {
+                'max_tokens': max_tokens,
+                'temperature': temperature,
+                'stop': stop_tokens,
+                'top_k': -1,  # Disable top_k
+                'use_beam_search': False,
+                'frequency_penalty': 0.0,
+                'presence_penalty': 0.0
+            }
             
-            # Generate batch
-            outputs = engine.generate(prompts, sampling_params)
+            # Only add top_p when sampling (temperature > 0)
+            if temperature > 0:
+                sampling_params_dict['top_p'] = 1.0
+            
+            sampling_params = SamplingParams(**sampling_params_dict)
+            
+            # Generate batch with warning suppression
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                outputs = engine.generate(prompts, sampling_params)
             
             # Extract generated texts
             results = []
