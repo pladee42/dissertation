@@ -150,6 +150,13 @@ class VLLMBackend:
             if 'llama' in model.lower():
                 pass  # Don't add any stop tokens for now
             
+            # Add stop tokens for JudgeLM models for clean JSON output
+            if 'judgelm' in model.lower():
+                judgelm_stop_tokens = [
+                    "```", "\n\n\n"  # Stop at code blocks or excessive newlines
+                ]
+                stop_tokens.extend(judgelm_stop_tokens)
+            
             # Create sampling parameters
             # Note: vLLM uses temperature to control sampling automatically
             # temperature=0.0 -> deterministic, temperature>0.0 -> sampling enabled
@@ -311,6 +318,13 @@ class VLLMBackend:
             # No stop tokens for Llama models - let them generate freely
             if 'llama' in model.lower():
                 pass  # Don't add any stop tokens for now
+            
+            # Add stop tokens for JudgeLM models for clean JSON output
+            if 'judgelm' in model.lower():
+                judgelm_stop_tokens = [
+                    "```", "\n\n\n"  # Stop at code blocks or excessive newlines
+                ]
+                stop_tokens.extend(judgelm_stop_tokens)
             
             # Create sampling parameters
             # Note: vLLM uses temperature to control sampling automatically
