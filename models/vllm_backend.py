@@ -5,6 +5,7 @@ import os
 import gc
 import torch
 import warnings
+import time
 
 # Suppress specific warnings that might occur during model loading
 warnings.filterwarnings("ignore", message=".*do_sample.*")
@@ -177,7 +178,14 @@ class VLLMBackend:
                 output = outputs[0]
                 if output.outputs and len(output.outputs) > 0:
                     generated_text = output.outputs[0].text
-                    logger.debug(f"Generated text length: {len(generated_text)}")
+                    logger.info(f"vLLM raw output: '{generated_text}' (length: {len(generated_text)})")
+                    
+                    # Save raw output for debugging
+                    import os
+                    os.makedirs("output/debug", exist_ok=True)
+                    with open(f"output/debug/vllm_raw_{model.replace('/', '_')}_{int(time.time())}.txt", "w") as f:
+                        f.write(f"Model: {model}\nGenerated text: '{generated_text}'\nLength: {len(generated_text)}\n")
+                    
                     if generated_text.strip():
                         return generated_text.strip()
                     else:
