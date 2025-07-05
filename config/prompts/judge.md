@@ -9,21 +9,21 @@ You should first read the user query and the conversation history carefully for
 # Conversation between User and AI
 
 ## Current User Query
-<|begin_of_query|>
+```
 [USER_QUERY]
-<|end_of_query|>
+```
 
 ## AI Response
-<|begin_of_response|>
+```
 [MODEL_OUTPUT]
-<|end_of_response|>
+```
 
 # Evaluation
 
 ## Checklist
-<|begin_of_checklist|>
+```
 [CHECKLIST]
-<|end_of_checklist|>
+```
 
 Please use this checklist to guide your evaluation, but do not limit your
     assessment to the checklist.
