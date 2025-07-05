@@ -1,0 +1,31 @@
+services:
+  dissertation:
+    build:
+      context: ..
+      dockerfile: Docker/Dockerfile.foundation
+    volumes:
+      - model_cache:/workspace/downloaded_models
+      - project_outputs:/workspace/output
+      - project_logs:/workspace/log
+      - ../:/workspace/code
+    environment:
+      - HF_HOME=/workspace/downloaded_models
+      - PYTHONUNBUFFERED=1
+      - CUDA_DEVICE_MAX_CONNECTIONS=1
+      - PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+    working_dir: /workspace/code
+    ports:
+      - "8888:8888"
+      - "6006:6006"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+volumes:
+  model_cache:
+  project_outputs:
+  project_logs:
