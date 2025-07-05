@@ -143,11 +143,7 @@ class VLLMBackend:
             sampling_params_dict = {
                 'max_tokens': max_tokens,
                 'temperature': temperature,
-                'stop': stop_tokens,
-                'top_k': -1,  # Disable top_k
-                'use_beam_search': False,
-                'frequency_penalty': 0.0,
-                'presence_penalty': 0.0
+                'stop': stop_tokens
             }
             
             # Only add top_p when sampling (temperature > 0)
@@ -287,11 +283,7 @@ class VLLMBackend:
             sampling_params_dict = {
                 'max_tokens': max_tokens,
                 'temperature': temperature,
-                'stop': stop_tokens,
-                'top_k': -1,  # Disable top_k
-                'use_beam_search': False,
-                'frequency_penalty': 0.0,
-                'presence_penalty': 0.0
+                'stop': stop_tokens
             }
             
             # Only add top_p when sampling (temperature > 0)
