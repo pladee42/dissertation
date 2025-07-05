@@ -170,6 +170,9 @@ class VLLMBackend:
             
             # Generate with warning suppression
             logger.debug(f"Generating with model: {model}, max_tokens: {max_tokens}, temperature: {temperature}")
+            logger.info(f"Prompt for {model} (first 500 chars): {prompt[:500]}...")
+            logger.info(f"Stop tokens for {model}: {stop_tokens}")
+            
             with warnings.catch_warnings():
                 warnings.simplefilter("ignore")
                 outputs = engine.generate([prompt], sampling_params)
