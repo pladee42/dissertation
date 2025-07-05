@@ -88,7 +88,7 @@ class ChecklistAgent:
                 result = self.backend.generate(
                     prompt=prompt,
                     model=self.model_key or self.model_id,
-                    max_tokens=get_setting('max_tokens', 2048),
+                    max_tokens=get_setting('checklist_max_tokens', 8192),
                     temperature=get_setting('temperature', 0.7)
                 )
                 

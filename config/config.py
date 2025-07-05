@@ -63,7 +63,12 @@ SETTINGS = {
     'output_dir': './output',
     'max_retries': 3,
     'temperature': 0.7,
-    'max_tokens': 2048,
+    'max_tokens': 4096,
+    
+    # Task-specific token limits
+    'checklist_max_tokens': 8192,
+    'judge_max_tokens': 6144,
+    'email_max_tokens': 2048,
     
     # Memory settings
     'memory_strategy': 'conservative',  # 'conservative' or 'performance'
