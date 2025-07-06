@@ -8,6 +8,7 @@ import logging
 import os
 import json
 import time
+import sys
 from datetime import datetime
 from argparse import ArgumentParser
 from pathlib import Path
@@ -21,8 +22,25 @@ from config.config import MODELS_CONFIG, get_setting, MODELS
 from config.topic_manager import get_topic_manager
 from models.vllm_backend import VLLMBackend
 
-logging.basicConfig(level=logging.INFO)
+# Enhanced logging configuration for long-running jobs
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler('./log/multi_topic_processing.log', mode='a')
+    ]
+)
+
+# Force immediate flushing for all handlers
+for handler in logging.getLogger().handlers:
+    if isinstance(handler, logging.StreamHandler):
+        handler.stream = sys.stdout
+        
 logger = logging.getLogger(__name__)
+
+# Ensure log directory exists
+os.makedirs('./log', exist_ok=True)
 
 def get_models_by_size(size_categories):
     """Get models by size categories (small, medium, large)"""
@@ -200,8 +218,29 @@ def main():
         logger.error("No topics to process")
         return 1
     
+    # Enhanced progress logging
+    total_topics = len(topics_to_process)
+    import sys
+    import datetime
+    
+    print("="*70, flush=True)
+    print(f"🚀 STARTING MULTI-TOPIC PROCESSING", flush=True)
+    print(f"📊 Total topics to process: {total_topics}", flush=True)
+    print(f"⏱️  Estimated processing time: {total_topics * 10}-{total_topics * 15} minutes", flush=True)
+    print(f"🤖 Models: Email={args.email_models}, Checklist={args.checklist_model}, Judge={args.judge_model}", flush=True)
+    print(f"🔄 Consistency sampling: 3x per evaluation", flush=True)
+    print(f"🕒 Started at: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", flush=True)
+    print("="*70, flush=True)
+    
+    # Print topic list for verification
+    print("📋 Topics to process:", flush=True)
+    for i, topic in enumerate(topics_to_process, 1):
+        print(f"   {i:2d}. {topic.get('uid', 'N/A')}: {topic.get('topic_name', 'Unknown')[:50]}...", flush=True)
+    print("="*70, flush=True)
+    sys.stdout.flush()
+    
     logger.info("=== Starting Multi-Topic Pipeline ===")
-    logger.info(f"Topics to process: {len(topics_to_process)}")
+    logger.info(f"Topics to process: {total_topics}")
     logger.info(f"Email models: {args.email_models}")
     logger.info(f"Checklist model: {args.checklist_model}")
     logger.info(f"Judge model: {args.judge_model}")

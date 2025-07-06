@@ -6,6 +6,8 @@ Extends ModelOrchestrator functionality to handle batch processing of multiple t
 
 import logging
 import time
+import json
+from pathlib import Path
 from typing import List, Dict, Any, Optional
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -46,11 +48,26 @@ class MultiTopicOrchestrator:
         self.data_collector = DataCollector()
         
         logger.info(f"MultiTopicOrchestrator initialized for {len(email_models)} email models")
+        
+        # Checkpoint directory
+        self.checkpoint_dir = Path("./log/checkpoints")
+        self.checkpoint_dir.mkdir(parents=True, exist_ok=True)
     
-    def process_single_topic(self, topic_data: Dict, prompt: str, user_query_template: str) -> Dict[str, Any]:
-        """Process a single topic"""
+    def process_single_topic(self, topic_data: Dict, prompt: str, user_query_template: str, topic_index: int = 0, total_topics: int = 0) -> Dict[str, Any]:
+        """Process a single topic with enhanced progress tracking"""
         topic_uid = topic_data.get('uid', '')
         topic_name = topic_data.get('topic_name', '')
+        
+        import sys
+        import datetime
+        
+        # Enhanced progress logging with flush
+        progress_msg = f"🔄 [{topic_index}/{total_topics}] Processing {topic_uid}: {topic_name[:40]}..."
+        print("\n" + "="*80, flush=True)
+        print(progress_msg, flush=True)
+        print(f"⏰ Started at: {datetime.datetime.now().strftime('%H:%M:%S')}", flush=True)
+        print("="*80, flush=True)
+        sys.stdout.flush()
         
         logger.info(f"Processing topic {topic_uid}: {topic_name}")
         start_time = time.time()
@@ -79,7 +96,25 @@ class MultiTopicOrchestrator:
             results['topic_name'] = topic_name
             results['processing_time'] = time.time() - start_time
             
-            logger.info(f"✅ Completed topic {topic_uid} in {results['processing_time']:.2f}s")
+            # Enhanced completion logging with flush
+            completion_time = results['processing_time']
+            print(f"✅ COMPLETED [{topic_index}/{total_topics}] {topic_uid} in {completion_time:.1f}s", flush=True)
+            
+            # Calculate and show progress
+            if total_topics > 0:
+                progress_pct = (topic_index / total_topics) * 100
+                remaining = total_topics - topic_index
+                avg_time = completion_time
+                est_remaining = remaining * avg_time / 60  # in minutes
+                print(f"📊 Progress: {progress_pct:.1f}% | Remaining: {remaining} topics (~{est_remaining:.1f} min)", flush=True)
+            
+            print("="*80, flush=True)
+            sys.stdout.flush()
+            
+            # Save checkpoint after each topic
+            self._save_checkpoint(topic_uid, results, topic_index, total_topics)
+            
+            logger.info(f"✅ Completed topic {topic_uid} in {completion_time:.2f}s")
             return results
             
         except Exception as e:
@@ -106,9 +141,10 @@ class MultiTopicOrchestrator:
         
         # Process topics (sequential for simplicity)
         if self.max_concurrent_topics <= 1:
-            # Sequential processing
-            for topic_data in topics:
-                result = self.process_single_topic(topic_data, prompt, user_query_template)
+            # Sequential processing with progress tracking
+            total_topics = len(topics)
+            for topic_index, topic_data in enumerate(topics, 1):
+                result = self.process_single_topic(topic_data, prompt, user_query_template, topic_index, total_topics)
                 all_results.append(result)
                 
                 if result.get('success', False):
@@ -196,6 +232,42 @@ class MultiTopicOrchestrator:
             return {'success': False, 'error': 'No topics available'}
         
         return self.process_multiple_topics(topics, prompt, user_query_template)
+    
+    def _save_checkpoint(self, topic_uid: str, results: Dict[str, Any], topic_index: int, total_topics: int):
+        """Save checkpoint after each topic completion"""
+        try:
+            checkpoint_data = {
+                'topic_uid': topic_uid,
+                'topic_index': topic_index,
+                'total_topics': total_topics,
+                'completion_time': time.time(),
+                'completion_timestamp': time.strftime('%Y-%m-%d %H:%M:%S'),
+                'processing_time': results.get('processing_time', 0),
+                'success': results.get('success', False),
+                'topic_name': results.get('topic_name', ''),
+                'progress_percent': (topic_index / total_topics * 100) if total_topics > 0 else 0
+            }
+            
+            # Save individual topic checkpoint
+            checkpoint_file = self.checkpoint_dir / f"checkpoint_{topic_uid}.json"
+            with open(checkpoint_file, 'w', encoding='utf-8') as f:
+                json.dump(checkpoint_data, f, indent=2)
+            
+            # Save overall progress checkpoint
+            progress_file = self.checkpoint_dir / "overall_progress.json"
+            with open(progress_file, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'last_completed_topic': topic_uid,
+                    'completed_count': topic_index,
+                    'total_topics': total_topics,
+                    'progress_percent': checkpoint_data['progress_percent'],
+                    'last_update': checkpoint_data['completion_timestamp']
+                }, f, indent=2)
+                
+            logger.debug(f"Checkpoint saved for {topic_uid}")
+            
+        except Exception as e:
+            logger.warning(f"Failed to save checkpoint for {topic_uid}: {e}")
     
     def _cleanup_memory(self):
         """Enhanced memory cleanup between topics"""
