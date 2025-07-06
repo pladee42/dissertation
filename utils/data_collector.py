@@ -190,8 +190,14 @@ class DataCollector:
                 eval_data = {
                     "model": evaluation.get("evaluated_by", ""),
                     "email_model": email.get("model_name", ""),
-                    "score": email.get("overall_score", 0),
-                    "detailed_scores": evaluation
+                    "weighted_score": evaluation.get("weighted_score", 0),
+                    "ranking_score": email.get("overall_score", 0),  # Used for ranking
+                    "binary_results": evaluation.get("checklist_scores", []),
+                    "priority_breakdown": evaluation.get("priority_breakdown", {}),
+                    "total_criteria": evaluation.get("total_criteria", 0),
+                    "strengths": evaluation.get("strengths", ""),
+                    "weaknesses": evaluation.get("weaknesses", ""),
+                    "detailed_scores": evaluation  # Keep full evaluation for backward compatibility
                 }
                 outputs["evaluations"].append(eval_data)
         
