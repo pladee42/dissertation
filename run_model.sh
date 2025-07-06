@@ -43,9 +43,9 @@ nvidia-smi --query-compute-apps=pid --format=csv,noheader,nounits | xargs -r kil
 echo "GPU status after cleanup:"
 nvidia-smi
 
-# Run script (agents will handle SGLang unavailability gracefully)
+# Run script
 echo "Running runner.py..."
-python -m runner
+python -m runner --judge_model=gemini-2.5-flash
 
 # Check execution status
 if [ $? -eq 0 ]; then

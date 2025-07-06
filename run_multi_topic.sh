@@ -43,13 +43,9 @@ nvidia-smi --query-compute-apps=pid --format=csv,noheader,nounits | xargs -r kil
 echo "GPU status after cleanup:"
 nvidia-smi
 
-# Run script (agents will handle SGLang unavailability gracefully)
+# Run script
 echo "Running multi_topic_runner.py..."
-# Option 1: Use local Llama-3-70B model
-python -m multi_topic_runner --email_generation=medium --checklist_model=yi-34b --judge_model=llama-3-70b
-
-# Option 2: Use OpenRouter Gemini model (uncomment to use)
-# python -m multi_topic_runner --email_generation=medium --checklist_model=yi-34b --judge_model=gemini-2.5-flash
+python -m multi_topic_runner --email_generation=medium --judge_model=gemini-2.5-flash
 
 # Check execution status
 if [ $? -eq 0 ]; then
