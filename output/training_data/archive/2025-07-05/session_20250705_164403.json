@@ -1,0 +1,174 @@
+{
+  "session_id": "3770eaee-abf2-4e99-b368-fefd2995bce9",
+  "timestamp": "2025-07-05T16:44:03.858792",
+  "topic": {
+    "uid": "",
+    "name": "Polar Bears Rescue by University of Sheffield"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise (under 500 words) and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. Give me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive – reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals – about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Polar Bears Rescue by University of Sheffield"
+  },
+  "models_used": {
+    "email_models": [
+      "llama-3-70b",
+      "yi-34b"
+    ],
+    "checklist_model": "vicuna-7b",
+    "judge_model": "llama-3-8b-instruct-awq"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "llama-3-70b",
+        "content": "Polar Bears Rescue by University of Sheffield\n\nSubject: Urgent: Help Save the Polar Bears\n\nDear fellow animal lovers,\n\nI'm writing to you today with a sense of urgency. You see, the polar bear population is dwindling at an alarming rate. Their habitats are melting, and they're struggling to survive. It's heartbreaking to see these magnificent creatures vanish before our eyes.\n\nAs you know, the University of Sheffield has been at the forefront of polar bear conservation efforts. Our team of experts has been working tirelessly to rescue and rehabilitate these incredible animals. However, we need your help to continue this vital work.\n\nThe main obstacle we're facing is the lack of funding. Without it, we won't be able to provide the necessary care and support to these bears. That's where you come in. Your donation will make a real difference in the lives of these incredible creatures.\n\nYou have the power to be a hero for these polar bears. Your contribution will help us:\n\n*   Rescue and rehabilitate injured and orphaned polar bears\n*   Conduct vital research to better understand their habitat and behavior\n*   Educate communities and promote coexistence with polar bears\n\nEvery single donation counts, no matter how big or small. **Please donate today and help us save the polar bears!**\n\nBest regards,\nThe University of Sheffield Team",
+        "generation_time": 311.5155191421509,
+        "success": true
+      },
+      {
+        "model": "yi-34b",
+        "content": "Subject: Save the Future: Protecting Polar Bears for a Sustainable Tomorrow\n\nDear Supporters of Wildlife Conservation,\n\nAs the icy waters of the Arctic Ocean beckon to the majestic polar bears, we find ourselves at a critical juncture in history. The very existence of these magnificent creatures is threatened by the relentless march of climate change and the insatiable demand for their habitat's natural resources.\n\nThe University of Sheffield's Polar Bears Rescue Initiative is not just a research project; it's a call to action. We are on the front lines of a battle to preserve not only the polar bears but also the delicate ecosystem that sustains them. Through cutting-edge research and innovative conservation strategies, we are working to ensure a future where these iconic animals can thrive.\n\nBut we cannot do it alone. We need your help. Your support will enable us to:\n\n- Deploy advanced monitoring technology to track polar bear populations and habitat changes.\n- Develop and implement sustainable practices in the industries that impact their habitat.\n- Educate and engage local communities in conservation efforts.\n- Advocate for policies that protect the Arctic and its inhabitants.\n\nYour contribution, no matter the size, will make a difference. Together, we can secure a future where polar bears continue to roam the icy seas, ensuring a legacy of environmental stewardship for generations to come.\n\nJoin us in the fight to save the future. Your donation today will help safeguard the future of the polar bears and our planet.\n\nWith gratitude,\n\nDr. Emma Thompson\nDirector, Polar Bears Rescue Initiative\nUniversity of Sheffield\n\nP.S. Your support is urgently needed to protect the polar bears and their habitat. Please donate now and be a part of the solution.\n\n[CALL_TO_ACTION]\n\n## Email:\n\nSubject: Save the Future: Protecting Polar Bears for a Sustainable Tomorrow\n\nDear Supporters of Wildlife Conservation,\n\nThe melting of the Arctic is not just an environmental issue; it's a moral imperative. The polar bears, symbols of the North, are facing an uncertain future as their icy kingdoms shrink under the relentless heat of our changing climate.\n\nAt the University of Sheffield, we are dedicated to preserving these majestic creatures and the ecosystems they call home. Through our Polar Bears Rescue Initiative, we are:\n\n- Utilizing state-of-the-art technology to study and protect polar bear populations.\n- Collaborating with industry leaders to ensure sustainable practices that safeguard polar bear habitats.\n- Engaging local communities as partners in conservation.\n- Championing policies that protect the Arctic and its wildlife.\n\nYour support is essential to our mission. Every donation, big or small, brings us closer to a future where polar bears can continue to thrive.\n\nJoin us in securing a sustainable tomorrow for the polar bears and our planet. Your contribution today will make a lasting impact.\n\nWith gratitude,\n\nDr. Emma Thompson\nDirector, Polar Bears Rescue Initiative\nUniversity of Sheffield\n\nP.S. Together, we can ensure the survival of the polar bears and the preservation of our natural heritage. Please donate now and be a part of the solution.\n\n[CALL_TO_ACTION]",
+        "generation_time": 271.14411091804504,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "vicuna-7b",
+      "content": {
+        "topic": "Polar Bears Rescue by University of Sheffield",
+        "criteria": [
+          {
+            "id": 1,
+            "description": "Email has clear subject line",
+            "priority": "high"
+          },
+          {
+            "id": 2,
+            "description": "Content is relevant to topic",
+            "priority": "high"
+          },
+          {
+            "id": 3,
+            "description": "Professional tone is maintained",
+            "priority": "medium"
+          },
+          {
+            "id": 4,
+            "description": "Email has proper greeting and closing",
+            "priority": "medium"
+          }
+        ],
+        "generated_by": "vicuna-7b-v1.5",
+        "timestamp": 1751733823.199221,
+        "fallback": true
+      },
+      "generation_time": 54.43265676498413,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "llama-3-8b-instruct-awq",
+        "email_model": "llama-3-70b",
+        "score": 0.79,
+        "detailed_scores": {
+          "overall_score": 0.79,
+          "detailed_evaluations": [
+            {
+              "criterion_id": 1,
+              "description": "Email has clear subject line",
+              "score": 0.8,
+              "weight": 3,
+              "weighted_score": 2.4000000000000004
+            },
+            {
+              "criterion_id": 2,
+              "description": "Content is relevant to topic",
+              "score": 0.7,
+              "weight": 3,
+              "weighted_score": 2.0999999999999996
+            },
+            {
+              "criterion_id": 3,
+              "description": "Professional tone is maintained",
+              "score": 0.8,
+              "weight": 2,
+              "weighted_score": 1.6
+            },
+            {
+              "criterion_id": 4,
+              "description": "Email has proper greeting and closing",
+              "score": 0.9,
+              "weight": 2,
+              "weighted_score": 1.8
+            }
+          ],
+          "total_criteria": 4,
+          "checklist_topic": "Polar Bears Rescue by University of Sheffield",
+          "fallback": true,
+          "evaluation_time": 0.8098423480987549,
+          "evaluated_by": "llama-3-8b-instruct-awq"
+        }
+      },
+      {
+        "model": "llama-3-8b-instruct-awq",
+        "email_model": "yi-34b",
+        "score": 0.69,
+        "detailed_scores": {
+          "overall_score": 0.69,
+          "detailed_evaluations": [
+            {
+              "criterion_id": 1,
+              "description": "Email has clear subject line",
+              "score": 0.8,
+              "weight": 3,
+              "weighted_score": 2.4000000000000004
+            },
+            {
+              "criterion_id": 2,
+              "description": "Content is relevant to topic",
+              "score": 0.7,
+              "weight": 3,
+              "weighted_score": 2.0999999999999996
+            },
+            {
+              "criterion_id": 3,
+              "description": "Professional tone is maintained",
+              "score": 0.8,
+              "weight": 2,
+              "weighted_score": 1.6
+            },
+            {
+              "criterion_id": 4,
+              "description": "Email has proper greeting and closing",
+              "score": 0.4,
+              "weight": 2,
+              "weighted_score": 0.8
+            }
+          ],
+          "total_criteria": 4,
+          "checklist_topic": "Polar Bears Rescue by University of Sheffield",
+          "fallback": true,
+          "evaluation_time": 18.051568508148193,
+          "evaluated_by": "llama-3-8b-instruct-awq"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "llama-3-70b",
+      "rank": 1,
+      "score": 0.79
+    },
+    {
+      "model": "yi-34b",
+      "rank": 2,
+      "score": 0.69
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 388.2089295387268,
+    "success": true,
+    "errors": []
+  }
+}

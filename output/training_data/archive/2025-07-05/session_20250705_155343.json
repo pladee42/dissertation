@@ -1,0 +1,119 @@
+{
+  "session_id": "7c02bf3e-737b-4075-9ae7-5da92ac761b2",
+  "timestamp": "2025-07-05T15:53:43.110229",
+  "topic": {
+    "uid": "",
+    "name": "Polar Bears Rescue by University of Sheffield"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise (under 500 words) and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. Give me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive – reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals – about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Polar Bears Rescue by University of Sheffield"
+  },
+  "models_used": {
+    "email_models": [
+      "tinyllama-1.1b"
+    ],
+    "checklist_model": "vicuna-7b",
+    "judge_model": "llama-3-8b-instruct-awq"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "tinyllama-1.1b",
+        "content": "[USER_NAME]\n\nSubject: Save Our Polar Bears\n\nDear [NAME],\n\nWe are writing to you today to raise awareness about the critical need for action and the urgent situation facing the polar bears. Our planet has never been in such a dire state, and the human activity is to blame. Polar bears are now facing a looming extinction crisis, with just a few hundred left in the wild. The polar ice caps are melting at an alarming rate, and the Arctic Ocean is becoming more and more inaccessible to polar bears. It is our duty to act now and save our precious polar bear species.\n\nAs a concerned citizen, we would like to take the lead in this cause by organizing our community to raise funds and awareness. We are hosting a charity event on [DATE] at [LOCATION] to support the polar bear rescue mission. Your help will be invaluable in this matter.\n\nTo participate, you can either donate or volunteer your time and skills. Please let us know if you can help in any way by filling out the attached form or by contacting us at [EMAIL ADDRESS]. We will gladly respond to any queries or questions you may have.\n\nWe believe that together, we can make a significant difference in protecting these majestic creatures. We hope to see you at our charity event, and we look forward to your participation.\n\nThank you for your support and for taking an active role in our efforts to save our polar bears.\n\nSincerely,\n\n[SENDING ORGANIZATION NAME]",
+        "generation_time": 49.49041032791138,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "vicuna-7b",
+      "content": {
+        "topic": "Polar Bears Rescue by University of Sheffield",
+        "criteria": [
+          {
+            "id": 1,
+            "description": "Email has clear subject line",
+            "priority": "high"
+          },
+          {
+            "id": 2,
+            "description": "Content is relevant to topic",
+            "priority": "high"
+          },
+          {
+            "id": 3,
+            "description": "Professional tone is maintained",
+            "priority": "medium"
+          },
+          {
+            "id": 4,
+            "description": "Email has proper greeting and closing",
+            "priority": "medium"
+          }
+        ],
+        "generated_by": "vicuna-7b-v1.5",
+        "timestamp": 1751730732.3144813,
+        "fallback": true
+      },
+      "generation_time": 204.58391284942627,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "llama-3-8b-instruct-awq",
+        "email_model": "tinyllama-1.1b",
+        "score": 0.69,
+        "detailed_scores": {
+          "overall_score": 0.69,
+          "detailed_evaluations": [
+            {
+              "criterion_id": 1,
+              "description": "Email has clear subject line",
+              "score": 0.8,
+              "weight": 3,
+              "weighted_score": 2.4000000000000004
+            },
+            {
+              "criterion_id": 2,
+              "description": "Content is relevant to topic",
+              "score": 0.7,
+              "weight": 3,
+              "weighted_score": 2.0999999999999996
+            },
+            {
+              "criterion_id": 3,
+              "description": "Professional tone is maintained",
+              "score": 0.8,
+              "weight": 2,
+              "weighted_score": 1.6
+            },
+            {
+              "criterion_id": 4,
+              "description": "Email has proper greeting and closing",
+              "score": 0.4,
+              "weight": 2,
+              "weighted_score": 0.8
+            }
+          ],
+          "total_criteria": 4,
+          "checklist_topic": "Polar Bears Rescue by University of Sheffield",
+          "fallback": true,
+          "evaluation_time": 89.05396509170532,
+          "evaluated_by": "llama-3-8b-instruct-awq"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "tinyllama-1.1b",
+      "rank": 1,
+      "score": 0.69
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 346.52336740493774,
+    "success": true,
+    "errors": []
+  }
+}
