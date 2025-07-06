@@ -89,10 +89,10 @@ def main():
                        choices=list(MODELS_CONFIG.keys()),
                        help="List of models for email generation")
     parser.add_argument("--checklist_model", type=str, 
-                       default="vicuna-7b",
+                       default="gpt-4.1-nano",
                        choices=list(MODELS_CONFIG.keys()))
     parser.add_argument("--judge_model", type=str, 
-                       default="llama-3-8b",
+                       default="gemini-2.5-flash",
                        choices=list(MODELS_CONFIG.keys()))
     
     # Processing arguments

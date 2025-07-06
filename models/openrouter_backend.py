@@ -129,7 +129,11 @@ class OpenRouterBackend:
         """Map internal model names to OpenRouter model IDs"""
         model_mapping = {
             'gemini-2.5-flash': 'google/gemini-2.5-flash-lite-preview-06-17',
-            'google/gemini-2.5-flash-lite-preview-06-17': 'google/gemini-2.5-flash-lite-preview-06-17'
+            'google/gemini-2.5-flash-lite-preview-06-17': 'google/gemini-2.5-flash-lite-preview-06-17',
+            'deepseek-r1': 'deepseek/deepseek-r1-0528',
+            'deepseek/deepseek-r1-0528': 'deepseek/deepseek-r1-0528',
+            'gpt-4.1-nano': 'openai/gpt-4.1-nano-2025-04-14',
+            'openai/gpt-4.1-nano-2025-04-14': 'openai/gpt-4.1-nano-2025-04-14'
         }
         
         return model_mapping.get(model, model)

@@ -61,6 +61,20 @@ MODELS = {
         'recommended_for': ['judge'],
         'size': 'api',
         'backend_type': 'openrouter'
+    },
+    'deepseek-r1': {
+        'uid': 'M0009',
+        'model_id': 'deepseek/deepseek-r1-0528',
+        'recommended_for': ['email_generation', 'judge'],
+        'size': 'api',
+        'backend_type': 'openrouter'
+    },
+    'gpt-4.1-nano': {
+        'uid': 'M0010',
+        'model_id': 'openai/gpt-4.1-nano-2025-04-14',
+        'recommended_for': ['email_generation', 'judge'],
+        'size': 'api',
+        'backend_type': 'openrouter'
     }
 }
 
