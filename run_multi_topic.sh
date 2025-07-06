@@ -45,7 +45,7 @@ nvidia-smi
 
 # Run script
 echo "Running multi_topic_runner.py..."
-python -m multi_topic_runner --email_generation=medium --judge_model=gemini-2.5-flash
+python -m multi_topic_runner --email_generation=medium --judge_model=gemini-2.5-flash --all_topics
 
 # Check execution status
 if [ $? -eq 0 ]; then
