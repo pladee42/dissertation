@@ -258,7 +258,7 @@ class ModelOrchestrator:
                 
                 evaluated_results.append(email_result)
             
-            # Multi-criteria sorting with tie-breaking
+            # Multi-criteria sorting with consistency confidence tie-breaking
             evaluated_results = self._sort_with_tie_breaking(evaluated_results)
             
             # Add rankings
@@ -276,26 +276,24 @@ class ModelOrchestrator:
         return evaluated_results
     
     def _sort_with_tie_breaking(self, email_results: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """Sort emails with multi-criteria tie-breaking"""
+        """Sort emails with multi-criteria tie-breaking using consistency confidence"""
         
         def sort_key(email):
             # Primary: weighted_score (highest first)
             weighted_score = email.get("overall_score", 0.0)
             
-            # Secondary: average_confidence (highest first, when scores tied)  
+            # Secondary: consistency_confidence (highest first)
             evaluation = email.get("evaluation", {})
-            avg_confidence = evaluation.get("average_confidence", 0.0) if evaluation else 0.0
-            if avg_confidence is None:
-                avg_confidence = 0.0
+            consistency_confidence = evaluation.get("consistency_confidence", 0.0) if evaluation else 0.0
             
-            # Tertiary: generation_time (fastest first)
-            generation_time = email.get("generation_time", float('inf'))
+            # Tertiary: average_response_time (fastest first)
+            avg_time = evaluation.get("average_response_time", float('inf')) if evaluation else float('inf')
             
             # Final: model_name (alphabetical for consistency)
             model_name = email.get("model_name", "zzz")
             
             # Return tuple for sorting (negative for descending order)
-            return (-weighted_score, -avg_confidence, generation_time, model_name)
+            return (-weighted_score, -consistency_confidence, avg_time, model_name)
         
         # Sort emails using multi-criteria key
         sorted_results = sorted(email_results, key=sort_key)
@@ -307,7 +305,7 @@ class ModelOrchestrator:
         for result in sorted_results:
             result["tie_info"] = tie_info
         
-        logger.info(f"Sorted {len(sorted_results)} emails with tie-breaking. Ties detected: {tie_info['tie_detected']}")
+        logger.info(f"Sorted {len(sorted_results)} emails with consistency-based tie-breaking. Ties detected: {tie_info['tie_detected']}")
         
         return sorted_results
     
@@ -341,11 +339,8 @@ class ModelOrchestrator:
             for models in tied_groups.values():
                 tied_emails.extend(models)
             
-            # Determine primary tie-breaking method used
-            if any(result.get("evaluation", {}).get("average_confidence") is not None for result in sorted_results):
-                tie_breaking_method = "confidence_first"
-            else:
-                tie_breaking_method = "time_first"
+            # Determine tie-breaking method used
+            tie_breaking_method = "consistency_confidence"
         
         return {
             "tie_detected": tie_detected,

@@ -53,8 +53,6 @@ class JudgeAgent:
         # Retry settings
         self.max_retries = get_setting('max_retries', 3)
         
-        # Confidence tracking
-        self._last_generation_confidence = None
     
     def evaluate_email(self, email_content: str, checklist: Dict[str, Any]) -> Dict[str, Any]:
         """Evaluate email using vLLM backend and templates"""
@@ -83,8 +81,8 @@ class JudgeAgent:
             # Create full prompt
             full_prompt = f"{formatted_template}\n\nEvaluation (JSON format):"
             
-            # Generate with retry logic
-            evaluation_json = self._generate_with_retry(full_prompt)
+            # Generate with consistency sampling
+            evaluation_json = self._generate_consistent_evaluation(full_prompt)
             
             # Parse JSON response
             try:
@@ -98,9 +96,6 @@ class JudgeAgent:
                     
                     for item in criterion_scores:
                         if 'result' in item and item['result'].lower() in ['yes', 'no']:
-                            # Add generation confidence to each criterion if not already present
-                            if 'confidence' not in item and self._last_generation_confidence:
-                                item['confidence'] = self._last_generation_confidence
                             valid_results.append(item)
                         else:
                             logger.warning(f"Invalid binary result: {item.get('result', 'missing')}")
@@ -113,9 +108,7 @@ class JudgeAgent:
                     evaluation['weighted_score'] = weighted_result['weighted_score']
                     evaluation['priority_breakdown'] = weighted_result['priority_breakdown']
                     
-                    # Add confidence data if available
-                    evaluation['generation_confidence'] = self._last_generation_confidence
-                    evaluation['average_confidence'] = self._calculate_average_confidence(valid_results)
+                    # Consistency confidence is already added by _process_consistency_results
                     
                     logger.info(f"Binary evaluation: {len(valid_results)} criteria, weighted score: {weighted_result['weighted_score']:.3f}")
                 else:
@@ -123,8 +116,6 @@ class JudgeAgent:
                     evaluation['total_criteria'] = 0
                     evaluation['weighted_score'] = 0.0
                     evaluation['priority_breakdown'] = {}
-                    evaluation['generation_confidence'] = self._last_generation_confidence
-                    evaluation['average_confidence'] = None
             except (json.JSONDecodeError, ValueError, TypeError) as e:
                 logger.warning(f"JSON parsing failed: {e}")
                 logger.warning(f"Raw response (first 500 chars): {evaluation_json[:500]}")
@@ -185,24 +176,124 @@ class JudgeAgent:
             'priority_breakdown': priority_breakdown
         }
     
-    def _calculate_average_confidence(self, judge_results):
-        """Calculate average confidence from criterion results"""
-        if not judge_results:
-            return None
+    def _generate_consistent_evaluation(self, prompt: str) -> str:
+        """Generate evaluation with consistency sampling (3 attempts)"""
+        evaluations = []
+        generation_times = []
         
-        confidence_scores = []
-        for item in judge_results:
-            confidence = item.get('confidence')
-            if confidence is not None and isinstance(confidence, (int, float)):
-                confidence_scores.append(float(confidence))
+        # Generate 3 evaluations with identical parameters
+        for attempt in range(3):
+            start_time = time.time()
+            try:
+                result = self._generate_with_retry(prompt)
+                generation_time = time.time() - start_time
+                
+                # Try to parse JSON to validate
+                parsed_eval = json.loads(result)
+                evaluations.append(parsed_eval)
+                generation_times.append(generation_time)
+                
+                logger.debug(f"Consistency attempt {attempt + 1} successful, time: {generation_time:.2f}s")
+                
+            except Exception as e:
+                logger.warning(f"Consistency attempt {attempt + 1} failed: {e}")
+                # Continue with other attempts
         
-        if confidence_scores:
-            avg_confidence = sum(confidence_scores) / len(confidence_scores)
-            logger.debug(f"Calculated average confidence: {avg_confidence:.4f} from {len(confidence_scores)} scores")
-            return avg_confidence
-        else:
-            logger.debug("No confidence scores available for averaging")
-            return None
+        if not evaluations:
+            # All attempts failed, use fallback
+            logger.error("All consistency attempts failed, using fallback")
+            raise Exception("All consistency sampling attempts failed")
+        
+        # Calculate consistency and pick best result
+        final_evaluation = self._process_consistency_results(evaluations, generation_times)
+        
+        return json.dumps(final_evaluation)
+    
+    def _process_consistency_results(self, evaluations, generation_times):
+        """Process multiple evaluations to create final consistent result"""
+        if len(evaluations) == 1:
+            # Only one successful evaluation
+            result = evaluations[0]
+            result['consistency_confidence'] = 1.0
+            result['average_response_time'] = generation_times[0]
+            return result
+        
+        # Calculate consistency confidence
+        consistency_confidence = self._calculate_consistency_confidence(evaluations)
+        
+        # Use majority vote for final decisions
+        final_result = self._create_final_evaluation(evaluations)
+        
+        # Add consistency metadata
+        final_result['consistency_confidence'] = consistency_confidence
+        final_result['average_response_time'] = sum(generation_times) / len(generation_times)
+        final_result['generation_attempts'] = len(evaluations)
+        
+        logger.info(f"Consistency confidence: {consistency_confidence:.3f}, avg time: {final_result['average_response_time']:.2f}s")
+        
+        return final_result
+    
+    def _create_final_evaluation(self, evaluations):
+        """Create final evaluation using majority vote"""
+        # Use first evaluation as template
+        final_eval = evaluations[0].copy()
+        
+        if 'checklist_scores' in final_eval:
+            # Apply majority vote to each criterion
+            final_scores = []
+            for i in range(len(final_eval['checklist_scores'])):
+                # Collect results for this criterion from all evaluations
+                results = []
+                for eval_data in evaluations:
+                    if i < len(eval_data.get('checklist_scores', [])):
+                        results.append(eval_data['checklist_scores'][i].get('result', 'no'))
+                
+                # Majority vote
+                yes_count = results.count('yes')
+                no_count = results.count('no')
+                final_result = 'yes' if yes_count > no_count else 'no'
+                
+                # Calculate individual criterion confidence
+                criterion_confidence = max(yes_count, no_count) / len(results) if results else 0.0
+                
+                final_score = final_eval['checklist_scores'][i].copy()
+                final_score['result'] = final_result
+                final_score['confidence'] = criterion_confidence
+                final_scores.append(final_score)
+            
+            final_eval['checklist_scores'] = final_scores
+        
+        return final_eval
+    
+    def _calculate_consistency_confidence(self, evaluations_list):
+        """Calculate confidence based on agreement across multiple generations"""
+        if len(evaluations_list) < 2:
+            return 1.0  # Single evaluation assumed confident
+        
+        # Check if all evaluations have checklist_scores
+        valid_evaluations = [e for e in evaluations_list if 'checklist_scores' in e and e['checklist_scores']]
+        if not valid_evaluations:
+            return 0.0
+        
+        total_criteria = len(valid_evaluations[0]['checklist_scores'])
+        agreements = 0
+        
+        for i in range(total_criteria):
+            # Collect results for this criterion from all evaluations
+            results = []
+            for eval_data in valid_evaluations:
+                if i < len(eval_data['checklist_scores']):
+                    result = eval_data['checklist_scores'][i].get('result', 'no')
+                    results.append(result)
+            
+            # Check if all results agree
+            if len(set(results)) == 1:  # All same
+                agreements += 1
+        
+        confidence = agreements / total_criteria if total_criteria > 0 else 0.0
+        logger.debug(f"Consistency confidence: {agreements}/{total_criteria} = {confidence:.3f}")
+        
+        return confidence
     
     def _generate_with_retry(self, prompt: str) -> str:
         """Generate text with simple retry logic"""
@@ -223,32 +314,14 @@ class JudgeAgent:
                 elif 'gemini' in model_to_use.lower() or self.backend_type == 'openrouter':
                     temperature = 0.1  # Very low temperature for consistent JSON from API models
                 
-                logger.debug(f"Generating evaluation with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}, backend: {self.backend_type}")
+                logger.debug(f"Generating evaluation with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}")
                 
-                # Check if backend supports confidence extraction
-                confidence_score = None
-                if hasattr(self.backend, 'generate_with_confidence') and self.backend_type == 'openrouter':
-                    # Use confidence-enabled generation for OpenRouter
-                    result, confidence_score = self.backend.generate_with_confidence(
-                        prompt=prompt,
-                        model=model_to_use,
-                        max_tokens=max_tokens,
-                        temperature=temperature
-                    )
-                else:
-                    # Standard generation for vLLM backend
-                    result = self.backend.generate(
-                        prompt=prompt,
-                        model=model_to_use,
-                        max_tokens=max_tokens,
-                        temperature=temperature
-                    )
-                    # Try to get confidence if available
-                    if hasattr(self.backend, 'get_last_confidence'):
-                        confidence_score = self.backend.get_last_confidence()
-                
-                # Store confidence for this generation
-                self._last_generation_confidence = confidence_score
+                result = self.backend.generate(
+                    prompt=prompt,
+                    model=model_to_use,
+                    max_tokens=max_tokens,
+                    temperature=temperature
+                )
                 
                 logger.info(f"Raw result from backend: '{result}' (length: {len(result) if result else 0})")
                 
@@ -379,8 +452,9 @@ class JudgeAgent:
             "priority_breakdown": {"very high": 0, "high": 0, "medium": 0, "low": 0, "very low": 0},
             "total_criteria": 0,
             "evaluated_by": self.model_name,
-            "generation_confidence": self._last_generation_confidence,
-            "average_confidence": None,
+            "consistency_confidence": 0.0,
+            "average_response_time": 0.0,
+            "generation_attempts": 0,
             "fallback": True
         }
     

@@ -41,8 +41,6 @@ class OpenRouterBackend:
             "X-Title": "Email Generation System"  # Optional
         }
         
-        # Store last confidence for retrieval
-        self.last_confidence = None
         
         logger.info(f"OpenRouter backend initialized with max_parallel: {max_parallel}")
     
@@ -84,9 +82,7 @@ class OpenRouterBackend:
                 ],
                 "max_tokens": max_tokens,
                 "temperature": temperature,
-                "stream": False,
-                "logprobs": True,
-                "top_logprobs": 2
+                "stream": False
             }
             
             # Add stop sequences if provided
@@ -114,15 +110,10 @@ class OpenRouterBackend:
             if 'choices' not in result or len(result['choices']) == 0:
                 raise Exception("No choices in OpenRouter response")
             
-            choice = result['choices'][0]
-            generated_text = choice['message']['content']
-            
-            # Extract confidence from logprobs if available
-            confidence_score = self._extract_confidence_from_logprobs(choice)
-            self.last_confidence = confidence_score  # Store for retrieval
+            generated_text = result['choices'][0]['message']['content']
             
             if generated_text.strip():
-                logger.debug(f"Generated text length: {len(generated_text)}, confidence: {confidence_score}")
+                logger.debug(f"Generated text length: {len(generated_text)}")
                 return generated_text.strip()
             else:
                 raise Exception("Empty response from OpenRouter API")
@@ -134,55 +125,6 @@ class OpenRouterBackend:
             logger.error(f"OpenRouter generation error: {e}")
             raise Exception(f"OpenRouter backend error: {e}")
     
-    def _extract_confidence_from_logprobs(self, choice: Dict[str, Any]) -> Optional[float]:
-        """
-        Extract confidence score from OpenRouter logprobs data
-        
-        Args:
-            choice: Choice object from OpenRouter response
-            
-        Returns:
-            Confidence score (0-1) or None if unavailable
-        """
-        try:
-            logprobs = choice.get('logprobs')
-            if not logprobs or not logprobs.get('content'):
-                logger.debug("No logprobs data available")
-                return None
-            
-            content_logprobs = logprobs['content']
-            if not content_logprobs or len(content_logprobs) == 0:
-                logger.debug("Empty content logprobs")
-                return None
-            
-            # Look for "yes" or "no" tokens in the first few tokens
-            binary_tokens = ['yes', 'no', 'Yes', 'No', 'YES', 'NO']
-            confidence_scores = []
-            
-            for token_data in content_logprobs[:5]:  # Check first 5 tokens
-                token = token_data.get('token', '').strip().lower()
-                logprob = token_data.get('logprob')
-                
-                if token in [t.lower() for t in binary_tokens] and logprob is not None:
-                    # Convert log probability to probability
-                    import math
-                    probability = math.exp(logprob)
-                    confidence_scores.append(probability)
-                    logger.debug(f"Found binary token '{token}' with confidence: {probability:.4f}")
-            
-            if confidence_scores:
-                # Return the highest confidence score found
-                max_confidence = max(confidence_scores)
-                logger.debug(f"Extracted confidence: {max_confidence:.4f}")
-                return max_confidence
-            else:
-                logger.debug("No binary tokens found in logprobs")
-                return None
-                
-        except Exception as e:
-            logger.warning(f"Failed to extract confidence from logprobs: {e}")
-            return None
-    
     def _get_openrouter_model_id(self, model: str) -> str:
         """Map internal model names to OpenRouter model IDs"""
         model_mapping = {
@@ -191,26 +133,6 @@ class OpenRouterBackend:
         }
         
         return model_mapping.get(model, model)
-    
-    def get_last_confidence(self) -> Optional[float]:
-        """Get confidence score from last generation"""
-        return self.last_confidence
-    
-    def generate_with_confidence(self, 
-                                prompt: str, 
-                                model: str,
-                                max_tokens: int = 1000,
-                                temperature: float = 0.7,
-                                stop: Optional[list] = None) -> tuple:
-        """
-        Generate text and return both text and confidence score
-        
-        Returns:
-            Tuple of (generated_text, confidence_score)
-        """
-        text = self.generate(prompt, model, max_tokens, temperature, stop)
-        confidence = self.last_confidence
-        return text, confidence
     
     def is_available(self) -> bool:
         """Check if OpenRouter is available"""

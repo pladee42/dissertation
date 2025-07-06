@@ -197,10 +197,11 @@ class DataCollector:
                     "total_criteria": evaluation.get("total_criteria", 0),
                     "strengths": evaluation.get("strengths", ""),
                     "weaknesses": evaluation.get("weaknesses", ""),
-                    # Confidence metrics
-                    "generation_confidence": evaluation.get("generation_confidence"),
-                    "average_confidence": evaluation.get("average_confidence"),
-                    "confidence_available": evaluation.get("generation_confidence") is not None,
+                    # Consistency confidence metrics (final results only)
+                    "consistency_confidence": evaluation.get("consistency_confidence", 0.0),
+                    "average_response_time": evaluation.get("average_response_time", 0.0),
+                    "generation_attempts": evaluation.get("generation_attempts", 1),
+                    "confidence_method": "consistency_sampling",
                     # Ranking metadata
                     "rank": email.get("rank", 0),
                     "tie_info": email.get("tie_info", {}),
