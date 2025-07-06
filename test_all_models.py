@@ -19,6 +19,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from config.config import MODELS, get_model_config, get_memory_requirement
 from models.vllm_backend import VLLMBackend
+from models.openrouter_backend import OpenRouterBackend
 
 # Setup logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -29,7 +30,8 @@ class ModelTester:
     
     def __init__(self, output_dir: str = "./test_results"):
         self.output_dir = output_dir
-        self.backend = VLLMBackend(max_parallel=1)  # Single model testing
+        self.vllm_backend = VLLMBackend(max_parallel=1)  # Single model testing
+        self.openrouter_backend = None  # Initialize on demand
         self.results = {}
         self.test_prompt = "Hello, how are you today?"
         
@@ -96,13 +98,33 @@ class ModelTester:
             
             logger.info(f"Loading model: {model_config.get('model_id', model_name)}")
             
-            # Generate response
-            response = self.backend.generate(
-                prompt=self.test_prompt,
-                model=model_name,
-                max_tokens=50,
-                temperature=0.7
-            )
+            # Determine backend type
+            backend_type = model_config.get('backend_type', 'vllm')
+            
+            if backend_type == 'openrouter':
+                # Initialize OpenRouter backend if needed
+                if self.openrouter_backend is None:
+                    try:
+                        self.openrouter_backend = OpenRouterBackend()
+                        logger.info("OpenRouter backend initialized")
+                    except Exception as e:
+                        raise Exception(f"Failed to initialize OpenRouter backend: {e}")
+                
+                # Generate response using OpenRouter
+                response = self.openrouter_backend.generate(
+                    prompt=self.test_prompt,
+                    model=model_name,
+                    max_tokens=50,
+                    temperature=0.7
+                )
+            else:
+                # Generate response using vLLM
+                response = self.vllm_backend.generate(
+                    prompt=self.test_prompt,
+                    model=model_name,
+                    max_tokens=50,
+                    temperature=0.7
+                )
             
             end_time = datetime.now()
             total_time = (end_time - start_time).total_seconds()

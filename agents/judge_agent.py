@@ -31,7 +31,11 @@ class JudgeAgent:
         # Detect backend type from model config if not specified
         if model_key:
             model_config = get_model_config(model_key)
-            backend_type = model_config.get('backend_type', backend_type)
+            detected_backend_type = model_config.get('backend_type', backend_type)
+            logger.info(f"Model key: {model_key}, detected backend_type: {detected_backend_type}")
+            backend_type = detected_backend_type
+        
+        logger.info(f"Final backend_type for {model_key}: {backend_type}")
         
         # Initialize appropriate backend
         if backend_type == 'openrouter':
@@ -82,14 +86,38 @@ class JudgeAgent:
             # Parse JSON response
             try:
                 evaluation = json.loads(evaluation_json)
-                # Convert score to overall_score and normalize to 0-1 range
-                if 'score' in evaluation:
+                
+                # Handle both old and new response formats
+                if 'overall_score' in evaluation:
+                    # New format with per-criterion scoring
+                    score = evaluation['overall_score']
+                    if isinstance(score, str):
+                        score = float(score)
+                    evaluation['overall_score_normalized'] = score / 10.0  # Convert 1-10 to 0-1
+                    evaluation['overall_score'] = score  # Keep original 1-10 score
+                elif 'score' in evaluation:
+                    # Old format with single score
                     score = evaluation['score']
                     if isinstance(score, str):
                         score = float(score)
-                    evaluation['overall_score'] = score / 10.0  # Convert 1-10 to 0-1
+                    evaluation['overall_score'] = score  # Keep original 1-10 score
+                    evaluation['overall_score_normalized'] = score / 10.0  # Convert 1-10 to 0-1
                 else:
-                    evaluation['overall_score'] = 0.5
+                    evaluation['overall_score'] = 5
+                    evaluation['overall_score_normalized'] = 0.5
+                
+                # Process checklist scores if available
+                if 'checklist_scores' in evaluation:
+                    # Calculate average score from individual criterion scores
+                    criterion_scores = evaluation['checklist_scores']
+                    if criterion_scores and len(criterion_scores) > 0:
+                        avg_score = sum(item.get('score', 5) for item in criterion_scores) / len(criterion_scores)
+                        evaluation['average_criterion_score'] = avg_score
+                        evaluation['total_criteria'] = len(criterion_scores)
+                        logger.info(f"Detailed scoring: {len(criterion_scores)} criteria, average: {avg_score:.2f}")
+                    else:
+                        evaluation['average_criterion_score'] = evaluation.get('overall_score', 5)
+                        evaluation['total_criteria'] = 0
             except (json.JSONDecodeError, ValueError, TypeError) as e:
                 logger.warning(f"JSON parsing failed: {e}")
                 logger.warning(f"Raw response (first 500 chars): {evaluation_json[:500]}")
@@ -128,7 +156,6 @@ class JudgeAgent:
                     temperature = 0.1  # Very low temperature for consistent JSON from API models
                 
                 logger.debug(f"Generating evaluation with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}")
-                logger.debug(f"Prompt length: {len(prompt)} characters")
                 
                 result = self.backend.generate(
                     prompt=prompt,
@@ -170,7 +197,7 @@ class JudgeAgent:
         try:
             import re
             
-            logger.debug(f"Original response: {response[:500]}...")
+            logger.debug(f"Extracting JSON from response (length: {len(response)})")
             
             # Check if the response contains instruction patterns instead of JSON
             instruction_patterns = [
@@ -181,7 +208,7 @@ class JudgeAgent:
             # If response starts and ends with braces, treat it as JSON
             if response.strip().startswith('{') and response.strip().endswith('}'):
                 json_str = response.strip()
-                logger.debug(f"Found complete JSON object: {json_str[:200]}...")
+                logger.debug("Found complete JSON object")
                 
                 # Basic validation - just check if it looks like a JSON object
                 return json_str
@@ -193,7 +220,7 @@ class JudgeAgent:
             if matches:
                 # Return the longest match (most likely to be complete)
                 json_str = max(matches, key=len)
-                logger.debug(f"Extracted JSON: {json_str[:200]}...")
+                logger.debug("Extracted JSON from pattern match")
                 
                 # Basic validation - just check if it looks like a JSON object
                 return json_str
@@ -249,7 +276,7 @@ class JudgeAgent:
                 except (ValueError, TypeError):
                     json_str = re.sub(r'"score":\s*"[^"]*"', '"score": 5', json_str)
             
-            logger.debug(f"Fixed JSON: {json_str[:200]}...")
+            logger.debug("Applied JSON formatting fixes")
             return json_str
             
         except Exception as e:

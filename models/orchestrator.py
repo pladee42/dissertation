@@ -221,12 +221,15 @@ class ModelOrchestrator:
             if not model_config:
                 raise ValueError(f"No config found for judge model: {self.judge_model}")
             
+            backend_type = model_config.get('backend_type', 'vllm')
+            logger.info(f"Judge model: {self.judge_model}, backend_type: {backend_type}, model_id: {model_config['model_id']}")
+            
             # Create judge agent
             judge_agent = JudgeAgent(
                 model_id=model_config['model_id'],
                 dtype=model_config.get('dtype', 'bfloat16'),
                 quantization=model_config.get('quantization', 'experts_int8'),
-                backend_type=model_config.get('backend_type', 'vllm'),
+                backend_type=backend_type,
                 model_key=self.judge_model
             )
             
@@ -245,7 +248,8 @@ class ModelOrchestrator:
                     
                     # Add evaluation to result
                     email_result["evaluation"] = evaluation
-                    email_result["overall_score"] = evaluation.get('overall_score', 0.0) if isinstance(evaluation, dict) else 0.0
+                    # Use normalized score for ranking (0-1 range)
+                    email_result["overall_score"] = evaluation.get('overall_score_normalized', 0.0) if isinstance(evaluation, dict) else 0.0
                     
                 except Exception as e:
                     logger.error(f"Failed to evaluate email from {email_result['model_name']}: {e}")

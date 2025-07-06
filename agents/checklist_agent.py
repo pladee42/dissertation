@@ -97,7 +97,6 @@ class ChecklistAgent:
                     temperature = 0.3  # Lower temperature for more focused output
                 
                 logger.debug(f"Generating checklist with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}")
-                logger.debug(f"Prompt length: {len(json_prompt)} characters")
                 
                 result = self.backend.generate(
                     prompt=json_prompt,
@@ -129,7 +128,7 @@ class ChecklistAgent:
         try:
             import re
             
-            logger.debug(f"Original response: {response[:500]}...")
+            logger.debug(f"Extracting JSON from response (length: {len(response)})")
             
             # Check if the response contains the specific problematic text
             if "Please provide a list of questions in the JSON format as described" in response:
@@ -139,7 +138,7 @@ class ChecklistAgent:
             # If response starts and ends with brackets, treat it as JSON
             if response.strip().startswith('[') and response.strip().endswith(']'):
                 json_str = response.strip()
-                logger.debug(f"Found complete JSON array: {json_str[:200]}...")
+                logger.debug("Found complete JSON array")
                 
                 # Basic validation - just check if it looks like a JSON array
                 return json_str
@@ -151,7 +150,7 @@ class ChecklistAgent:
             if matches:
                 # Return the longest match (most likely to be complete)
                 json_str = max(matches, key=len)
-                logger.debug(f"Extracted JSON: {json_str[:200]}...")
+                logger.debug("Extracted JSON from pattern match")
                 
                 # Basic validation - just check if it looks like a JSON array
                 return json_str
@@ -192,7 +191,7 @@ class ChecklistAgent:
             if last_bracket != -1:
                 json_str = json_str[:last_bracket + 1]
             
-            logger.debug(f"Fixed JSON: {json_str[:200]}...")
+            logger.debug("Applied JSON formatting fixes")
             return json_str
             
         except Exception as e:
