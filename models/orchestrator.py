@@ -258,8 +258,8 @@ class ModelOrchestrator:
                 
                 evaluated_results.append(email_result)
             
-            # Sort by score (highest first)
-            evaluated_results.sort(key=lambda x: x.get("overall_score", 0.0), reverse=True)
+            # Multi-criteria sorting with tie-breaking
+            evaluated_results = self._sort_with_tie_breaking(evaluated_results)
             
             # Add rankings
             for i, result in enumerate(evaluated_results):
@@ -274,6 +274,86 @@ class ModelOrchestrator:
             evaluated_results = email_results
         
         return evaluated_results
+    
+    def _sort_with_tie_breaking(self, email_results: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """Sort emails with multi-criteria tie-breaking"""
+        
+        def sort_key(email):
+            # Primary: weighted_score (highest first)
+            weighted_score = email.get("overall_score", 0.0)
+            
+            # Secondary: average_confidence (highest first, when scores tied)  
+            evaluation = email.get("evaluation", {})
+            avg_confidence = evaluation.get("average_confidence", 0.0) if evaluation else 0.0
+            if avg_confidence is None:
+                avg_confidence = 0.0
+            
+            # Tertiary: generation_time (fastest first)
+            generation_time = email.get("generation_time", float('inf'))
+            
+            # Final: model_name (alphabetical for consistency)
+            model_name = email.get("model_name", "zzz")
+            
+            # Return tuple for sorting (negative for descending order)
+            return (-weighted_score, -avg_confidence, generation_time, model_name)
+        
+        # Sort emails using multi-criteria key
+        sorted_results = sorted(email_results, key=sort_key)
+        
+        # Detect ties and add metadata
+        tie_info = self._detect_ties(sorted_results)
+        
+        # Add tie metadata to results
+        for result in sorted_results:
+            result["tie_info"] = tie_info
+        
+        logger.info(f"Sorted {len(sorted_results)} emails with tie-breaking. Ties detected: {tie_info['tie_detected']}")
+        
+        return sorted_results
+    
+    def _detect_ties(self, sorted_results: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """Detect ties in weighted scores and determine tie-breaking method used"""
+        
+        if len(sorted_results) < 2:
+            return {
+                "tie_detected": False,
+                "tied_emails": [],
+                "tie_breaking_method": "none"
+            }
+        
+        # Group emails by weighted score
+        score_groups = {}
+        for result in sorted_results:
+            score = result.get("overall_score", 0.0)
+            if score not in score_groups:
+                score_groups[score] = []
+            score_groups[score].append(result["model_name"])
+        
+        # Find groups with more than one email (ties)
+        tied_groups = {score: models for score, models in score_groups.items() if len(models) > 1}
+        
+        tie_detected = len(tied_groups) > 0
+        tied_emails = []
+        tie_breaking_method = "none"
+        
+        if tie_detected:
+            # Get all tied email model names
+            for models in tied_groups.values():
+                tied_emails.extend(models)
+            
+            # Determine primary tie-breaking method used
+            if any(result.get("evaluation", {}).get("average_confidence") is not None for result in sorted_results):
+                tie_breaking_method = "confidence_first"
+            else:
+                tie_breaking_method = "time_first"
+        
+        return {
+            "tie_detected": tie_detected,
+            "tied_emails": tied_emails,
+            "tied_groups": tied_groups,
+            "tie_breaking_method": tie_breaking_method,
+            "total_groups": len(score_groups)
+        }
     
     def generate_and_rank_emails(self, prompt: str, topic: str, user_query: str = "") -> Dict[str, Any]:
         """Complete pipeline: generate, evaluate, and rank emails"""

@@ -52,6 +52,9 @@ class JudgeAgent:
         
         # Retry settings
         self.max_retries = get_setting('max_retries', 3)
+        
+        # Confidence tracking
+        self._last_generation_confidence = None
     
     def evaluate_email(self, email_content: str, checklist: Dict[str, Any]) -> Dict[str, Any]:
         """Evaluate email using vLLM backend and templates"""
@@ -89,12 +92,15 @@ class JudgeAgent:
                 
                 # Process binary evaluation format
                 if 'checklist_scores' in evaluation:
-                    # Validate binary results
+                    # Validate binary results and add confidence if available
                     criterion_scores = evaluation['checklist_scores']
                     valid_results = []
                     
                     for item in criterion_scores:
                         if 'result' in item and item['result'].lower() in ['yes', 'no']:
+                            # Add generation confidence to each criterion if not already present
+                            if 'confidence' not in item and self._last_generation_confidence:
+                                item['confidence'] = self._last_generation_confidence
                             valid_results.append(item)
                         else:
                             logger.warning(f"Invalid binary result: {item.get('result', 'missing')}")
@@ -107,12 +113,18 @@ class JudgeAgent:
                     evaluation['weighted_score'] = weighted_result['weighted_score']
                     evaluation['priority_breakdown'] = weighted_result['priority_breakdown']
                     
+                    # Add confidence data if available
+                    evaluation['generation_confidence'] = self._last_generation_confidence
+                    evaluation['average_confidence'] = self._calculate_average_confidence(valid_results)
+                    
                     logger.info(f"Binary evaluation: {len(valid_results)} criteria, weighted score: {weighted_result['weighted_score']:.3f}")
                 else:
                     evaluation['checklist_scores'] = []
                     evaluation['total_criteria'] = 0
                     evaluation['weighted_score'] = 0.0
                     evaluation['priority_breakdown'] = {}
+                    evaluation['generation_confidence'] = self._last_generation_confidence
+                    evaluation['average_confidence'] = None
             except (json.JSONDecodeError, ValueError, TypeError) as e:
                 logger.warning(f"JSON parsing failed: {e}")
                 logger.warning(f"Raw response (first 500 chars): {evaluation_json[:500]}")
@@ -173,6 +185,25 @@ class JudgeAgent:
             'priority_breakdown': priority_breakdown
         }
     
+    def _calculate_average_confidence(self, judge_results):
+        """Calculate average confidence from criterion results"""
+        if not judge_results:
+            return None
+        
+        confidence_scores = []
+        for item in judge_results:
+            confidence = item.get('confidence')
+            if confidence is not None and isinstance(confidence, (int, float)):
+                confidence_scores.append(float(confidence))
+        
+        if confidence_scores:
+            avg_confidence = sum(confidence_scores) / len(confidence_scores)
+            logger.debug(f"Calculated average confidence: {avg_confidence:.4f} from {len(confidence_scores)} scores")
+            return avg_confidence
+        else:
+            logger.debug("No confidence scores available for averaging")
+            return None
+    
     def _generate_with_retry(self, prompt: str) -> str:
         """Generate text with simple retry logic"""
         last_error = None
@@ -192,14 +223,32 @@ class JudgeAgent:
                 elif 'gemini' in model_to_use.lower() or self.backend_type == 'openrouter':
                     temperature = 0.1  # Very low temperature for consistent JSON from API models
                 
-                logger.debug(f"Generating evaluation with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}")
+                logger.debug(f"Generating evaluation with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}, backend: {self.backend_type}")
                 
-                result = self.backend.generate(
-                    prompt=prompt,
-                    model=model_to_use,
-                    max_tokens=max_tokens,
-                    temperature=temperature
-                )
+                # Check if backend supports confidence extraction
+                confidence_score = None
+                if hasattr(self.backend, 'generate_with_confidence') and self.backend_type == 'openrouter':
+                    # Use confidence-enabled generation for OpenRouter
+                    result, confidence_score = self.backend.generate_with_confidence(
+                        prompt=prompt,
+                        model=model_to_use,
+                        max_tokens=max_tokens,
+                        temperature=temperature
+                    )
+                else:
+                    # Standard generation for vLLM backend
+                    result = self.backend.generate(
+                        prompt=prompt,
+                        model=model_to_use,
+                        max_tokens=max_tokens,
+                        temperature=temperature
+                    )
+                    # Try to get confidence if available
+                    if hasattr(self.backend, 'get_last_confidence'):
+                        confidence_score = self.backend.get_last_confidence()
+                
+                # Store confidence for this generation
+                self._last_generation_confidence = confidence_score
                 
                 logger.info(f"Raw result from backend: '{result}' (length: {len(result) if result else 0})")
                 
@@ -330,6 +379,8 @@ class JudgeAgent:
             "priority_breakdown": {"very high": 0, "high": 0, "medium": 0, "low": 0, "very low": 0},
             "total_criteria": 0,
             "evaluated_by": self.model_name,
+            "generation_confidence": self._last_generation_confidence,
+            "average_confidence": None,
             "fallback": True
         }
     

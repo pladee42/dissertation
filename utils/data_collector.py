@@ -197,6 +197,13 @@ class DataCollector:
                     "total_criteria": evaluation.get("total_criteria", 0),
                     "strengths": evaluation.get("strengths", ""),
                     "weaknesses": evaluation.get("weaknesses", ""),
+                    # Confidence metrics
+                    "generation_confidence": evaluation.get("generation_confidence"),
+                    "average_confidence": evaluation.get("average_confidence"),
+                    "confidence_available": evaluation.get("generation_confidence") is not None,
+                    # Ranking metadata
+                    "rank": email.get("rank", 0),
+                    "tie_info": email.get("tie_info", {}),
                     "detailed_scores": evaluation  # Keep full evaluation for backward compatibility
                 }
                 outputs["evaluations"].append(eval_data)
