@@ -27,15 +27,11 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.StreamHandler(sys.stdout),
+        logging.StreamHandler(),
         logging.FileHandler('./log/multi_topic_processing.log', mode='a')
-    ]
+    ],
+    force=True
 )
-
-# Force immediate flushing for all handlers
-for handler in logging.getLogger().handlers:
-    if isinstance(handler, logging.StreamHandler):
-        handler.stream = sys.stdout
         
 logger = logging.getLogger(__name__)
 
@@ -220,24 +216,21 @@ def main():
     
     # Enhanced progress logging
     total_topics = len(topics_to_process)
-    import sys
-    import datetime
     
-    print("="*70, flush=True)
-    print(f"🚀 STARTING MULTI-TOPIC PROCESSING", flush=True)
-    print(f"📊 Total topics to process: {total_topics}", flush=True)
-    print(f"⏱️  Estimated processing time: {total_topics * 10}-{total_topics * 15} minutes", flush=True)
-    print(f"🤖 Models: Email={args.email_models}, Checklist={args.checklist_model}, Judge={args.judge_model}", flush=True)
-    print(f"🔄 Consistency sampling: 3x per evaluation", flush=True)
-    print(f"🕒 Started at: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", flush=True)
-    print("="*70, flush=True)
+    logger.info("="*70)
+    logger.info("🚀 STARTING MULTI-TOPIC PROCESSING")
+    logger.info(f"📊 Total topics to process: {total_topics}")
+    logger.info(f"⏱️  Estimated processing time: {total_topics * 10}-{total_topics * 15} minutes")
+    logger.info(f"🤖 Models: Email={args.email_models}, Checklist={args.checklist_model}, Judge={args.judge_model}")
+    logger.info(f"🔄 Consistency sampling: 3x per evaluation")
+    logger.info(f"🕒 Started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    logger.info("="*70)
     
     # Print topic list for verification
-    print("📋 Topics to process:", flush=True)
+    logger.info("📋 Topics to process:")
     for i, topic in enumerate(topics_to_process, 1):
-        print(f"   {i:2d}. {topic.get('uid', 'N/A')}: {topic.get('topic_name', 'Unknown')[:50]}...", flush=True)
-    print("="*70, flush=True)
-    sys.stdout.flush()
+        logger.info(f"   {i:2d}. {topic.get('uid', 'N/A')}: {topic.get('topic_name', 'Unknown')[:50]}...")
+    logger.info("="*70)
     
     logger.info("=== Starting Multi-Topic Pipeline ===")
     logger.info(f"Topics to process: {total_topics}")
@@ -272,45 +265,44 @@ def main():
         if results.get("success"):
             logger.info("✅ Multi-topic pipeline completed successfully")
             
-            print("\n" + "="*60)
-            print("MULTI-TOPIC EMAIL GENERATION RESULTS")
-            print("="*60)
-            print(f"Total topics processed: {results['total_topics']}")
-            print(f"Successful: {results['successful_topics']}")
-            print(f"Failed: {results['failed_topics']}")
-            print(f"Total time: {results['total_time']:.2f}s")
-            print(f"Results saved to: {saved_path}")
+            logger.info("="*60)
+            logger.info("MULTI-TOPIC EMAIL GENERATION RESULTS")
+            logger.info("="*60)
+            logger.info(f"Total topics processed: {results['total_topics']}")
+            logger.info(f"Successful: {results['successful_topics']}")
+            logger.info(f"Failed: {results['failed_topics']}")
+            logger.info(f"Total time: {results['total_time']:.2f}s")
+            logger.info(f"Results saved to: {saved_path}")
             
             # Show summary
             summary = results.get('summary', {})
             if summary:
-                print(f"\nSUMMARY:")
-                print("-" * 40)
-                print(f"Average processing time per topic: {summary.get('avg_processing_time', 0):.2f}s")
-                print(f"Total emails generated: {summary.get('total_emails_generated', 0)}")
-                print(f"Best overall model: {summary.get('best_overall_model', 'N/A')}")
+                logger.info("SUMMARY:")
+                logger.info("-" * 40)
+                logger.info(f"Average processing time per topic: {summary.get('avg_processing_time', 0):.2f}s")
+                logger.info(f"Total emails generated: {summary.get('total_emails_generated', 0)}")
+                logger.info(f"Best overall model: {summary.get('best_overall_model', 'N/A')}")
             
             # Show top results
             successful_results = results.get('successful_results', [])
             if successful_results:
-                print(f"\nTOP RESULTS:")
-                print("-" * 40)
+                logger.info("TOP RESULTS:")
+                logger.info("-" * 40)
                 for i, result in enumerate(successful_results[:5], 1):
                     best_email = result.get('best_email', {})
-                    print(f"#{i}: {result['topic_uid']} - {result['topic_name'][:50]}...")
-                    print(f"   Best model: {best_email.get('model_name', 'N/A')}")
-                    print(f"   Score: {best_email.get('overall_score', 0):.3f}")
-                    print(f"   Time: {result.get('processing_time', 0):.2f}s")
-                    print()
+                    logger.info(f"#{i}: {result['topic_uid']} - {result['topic_name'][:50]}...")
+                    logger.info(f"   Best model: {best_email.get('model_name', 'N/A')}")
+                    logger.info(f"   Score: {best_email.get('overall_score', 0):.3f}")
+                    logger.info(f"   Time: {result.get('processing_time', 0):.2f}s")
         else:
             logger.error("❌ Multi-topic pipeline failed")
-            print("Pipeline failed. Check logs for details.")
+            logger.error("Pipeline failed. Check logs for details.")
             if results.get('failed_results'):
-                print(f"Failed topics: {len(results['failed_results'])}")
+                logger.error(f"Failed topics: {len(results['failed_results'])}")
             
     except Exception as e:
         logger.error(f"Error in multi-topic pipeline: {e}")
-        print(f"Error: {e}")
+        logger.error(f"Error: {e}")
         return 1
     
     logger.info("=== Multi-Topic Pipeline Completed ===")
