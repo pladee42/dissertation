@@ -87,37 +87,32 @@ class JudgeAgent:
             try:
                 evaluation = json.loads(evaluation_json)
                 
-                # Handle both old and new response formats
-                if 'overall_score' in evaluation:
-                    # New format with per-criterion scoring
-                    score = evaluation['overall_score']
-                    if isinstance(score, str):
-                        score = float(score)
-                    evaluation['overall_score_normalized'] = score / 10.0  # Convert 1-10 to 0-1
-                    evaluation['overall_score'] = score  # Keep original 1-10 score
-                elif 'score' in evaluation:
-                    # Old format with single score
-                    score = evaluation['score']
-                    if isinstance(score, str):
-                        score = float(score)
-                    evaluation['overall_score'] = score  # Keep original 1-10 score
-                    evaluation['overall_score_normalized'] = score / 10.0  # Convert 1-10 to 0-1
-                else:
-                    evaluation['overall_score'] = 5
-                    evaluation['overall_score_normalized'] = 0.5
-                
-                # Process checklist scores if available
+                # Process binary evaluation format
                 if 'checklist_scores' in evaluation:
-                    # Calculate average score from individual criterion scores
+                    # Validate binary results
                     criterion_scores = evaluation['checklist_scores']
-                    if criterion_scores and len(criterion_scores) > 0:
-                        avg_score = sum(item.get('score', 5) for item in criterion_scores) / len(criterion_scores)
-                        evaluation['average_criterion_score'] = avg_score
-                        evaluation['total_criteria'] = len(criterion_scores)
-                        logger.info(f"Detailed scoring: {len(criterion_scores)} criteria, average: {avg_score:.2f}")
-                    else:
-                        evaluation['average_criterion_score'] = evaluation.get('overall_score', 5)
-                        evaluation['total_criteria'] = 0
+                    valid_results = []
+                    
+                    for item in criterion_scores:
+                        if 'result' in item and item['result'].lower() in ['yes', 'no']:
+                            valid_results.append(item)
+                        else:
+                            logger.warning(f"Invalid binary result: {item.get('result', 'missing')}")
+                    
+                    evaluation['checklist_scores'] = valid_results
+                    evaluation['total_criteria'] = len(valid_results)
+                    
+                    # Calculate weighted score based on priority
+                    weighted_result = self._calculate_weighted_score(valid_results, checklist)
+                    evaluation['weighted_score'] = weighted_result['weighted_score']
+                    evaluation['priority_breakdown'] = weighted_result['priority_breakdown']
+                    
+                    logger.info(f"Binary evaluation: {len(valid_results)} criteria, weighted score: {weighted_result['weighted_score']:.3f}")
+                else:
+                    evaluation['checklist_scores'] = []
+                    evaluation['total_criteria'] = 0
+                    evaluation['weighted_score'] = 0.0
+                    evaluation['priority_breakdown'] = {}
             except (json.JSONDecodeError, ValueError, TypeError) as e:
                 logger.warning(f"JSON parsing failed: {e}")
                 logger.warning(f"Raw response (first 500 chars): {evaluation_json[:500]}")
@@ -135,6 +130,48 @@ class JudgeAgent:
         except Exception as e:
             logger.error(f"Error evaluating email: {e}")
             return self._create_fallback_evaluation(email_content, checklist)
+    
+    def _calculate_weighted_score(self, judge_results, checklist):
+        """Calculate priority-weighted score from binary judge results"""
+        PRIORITY_WEIGHTS = {
+            "very high": 5, "high": 3, "medium": 2, "low": 1, "very low": 0.5
+        }
+        
+        passed_points = 0
+        total_points = 0
+        priority_breakdown = {"very high": 0, "high": 0, "medium": 0, "low": 0, "very low": 0}
+        
+        # Handle different checklist formats
+        if isinstance(checklist, dict) and 'criteria' in checklist:
+            checklist_criteria = checklist['criteria']
+        elif isinstance(checklist, list):
+            checklist_criteria = checklist
+        else:
+            logger.warning("Unknown checklist format, cannot calculate weighted score")
+            return {'weighted_score': 0.0, 'priority_breakdown': priority_breakdown}
+        
+        # Match judge results with checklist criteria
+        for i, judge_item in enumerate(judge_results):
+            if i < len(checklist_criteria):
+                checklist_item = checklist_criteria[i]
+                priority = checklist_item.get('priority', 'medium')
+                weight = PRIORITY_WEIGHTS.get(priority, 2)
+                total_points += weight
+                
+                # Check if judge result matches expected answer
+                judge_result = judge_item.get('result', '').lower()
+                expected_result = checklist_item.get('best_ans', 'yes').lower()
+                
+                if judge_result == expected_result:
+                    passed_points += weight
+                    priority_breakdown[priority] += 1
+        
+        weighted_score = passed_points / total_points if total_points > 0 else 0.0
+        
+        return {
+            'weighted_score': weighted_score,
+            'priority_breakdown': priority_breakdown
+        }
     
     def _generate_with_retry(self, prompt: str) -> str:
         """Generate text with simple retry logic"""
@@ -284,82 +321,16 @@ class JudgeAgent:
             return json_str
     
     def _create_fallback_evaluation(self, email_content: str, checklist: Dict[str, Any]) -> Dict[str, Any]:
-        """Create a simple fallback evaluation"""
-        # Handle both dict and list formats for checklist
-        if isinstance(checklist, list):
-            # If checklist is already a list of criteria
-            criteria = checklist
-        elif isinstance(checklist, dict):
-            # If checklist is a dict with 'criteria' key
-            criteria = checklist.get("criteria", [])
-        else:
-            # Fallback if checklist is neither
-            criteria = []
-            logger.warning(f"Unexpected checklist format: {type(checklist)}")
-        evaluations = []
-        total_score = 0
-        total_weight = 0
-        
-        # Weight mapping
-        weight_map = {"high": 3, "medium": 2, "low": 1}
-        
-        for criterion in criteria:
-            # Handle both dict and simple formats
-            if isinstance(criterion, dict):
-                # Standard checklist format
-                priority = criterion.get("priority", "medium")
-                criterion_id = criterion.get("id")
-                description = criterion.get("description", "")
-            else:
-                # Fallback for unexpected formats
-                priority = "medium"
-                criterion_id = None
-                description = str(criterion)
-            
-            score = self._score_criterion_simple(email_content, criterion)
-            weight = weight_map.get(priority, 2)
-            
-            evaluation_item = {
-                "criterion_id": criterion_id,
-                "description": description,
-                "score": score,
-                "weight": weight,
-                "weighted_score": score * weight
-            }
-            
-            evaluations.append(evaluation_item)
-            total_score += score * weight
-            total_weight += weight
-        
-        overall_score = total_score / total_weight if total_weight > 0 else 0.5
-        
+        """Create a simple fallback evaluation with binary format"""
         return {
-            "overall_score": round(overall_score, 2),
-            "detailed_evaluations": evaluations,
-            "total_criteria": len(criteria),
-            "checklist_topic": checklist.get("topic", "unknown"),
+            "checklist_scores": [],
+            "strengths": "Unable to evaluate - using fallback",
+            "weaknesses": "Evaluation failed",
+            "weighted_score": 0.0,
+            "priority_breakdown": {"very high": 0, "high": 0, "medium": 0, "low": 0, "very low": 0},
+            "total_criteria": 0,
+            "evaluated_by": self.model_name,
             "fallback": True
         }
     
-    def _score_criterion_simple(self, email_content: str, criterion: Any) -> float:
-        """Simple fallback scoring logic"""
-        # Handle both dict and other formats
-        if isinstance(criterion, dict):
-            description = criterion.get("description", "").lower()
-        else:
-            description = str(criterion).lower()
-        
-        email_lower = email_content.lower()
-        
-        # Simple keyword-based scoring
-        if "subject" in description:
-            return 0.8 if "subject:" in email_lower else 0.3
-        elif "relevant" in description:
-            return 0.7 if len(email_content) > 50 else 0.4
-        elif "professional" in description:
-            return 0.8 if "dear" in email_lower or "regards" in email_lower else 0.5
-        elif "greeting" in description:
-            return 0.9 if "dear" in email_lower and "regards" in email_lower else 0.4
-        else:
-            return 0.6  # Default neutral score
 

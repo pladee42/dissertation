@@ -248,8 +248,8 @@ class ModelOrchestrator:
                     
                     # Add evaluation to result
                     email_result["evaluation"] = evaluation
-                    # Use normalized score for ranking (0-1 range)
-                    email_result["overall_score"] = evaluation.get('overall_score_normalized', 0.0) if isinstance(evaluation, dict) else 0.0
+                    # Use weighted score for ranking (0-1 range)
+                    email_result["overall_score"] = evaluation.get('weighted_score', 0.0) if isinstance(evaluation, dict) else 0.0
                     
                 except Exception as e:
                     logger.error(f"Failed to evaluate email from {email_result['model_name']}: {e}")
