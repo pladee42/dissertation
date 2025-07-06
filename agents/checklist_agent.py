@@ -13,8 +13,9 @@ import json
 from typing import Dict, Any
 
 from models.vllm_backend import VLLMBackend
+from models.openrouter_backend import OpenRouterBackend
 from utils.template_manager import get_template_manager
-from config.config import get_setting
+from config.config import get_setting, get_model_config
 
 logger = logging.getLogger(__name__)
 
@@ -22,21 +23,35 @@ class ChecklistAgent:
     """vLLM-based Checklist Generation Agent"""
     
     def __init__(self, model_id: str, dtype: str = "bfloat16", quantization: str = "experts_int8", backend_type: str = "vllm", model_key: str = None):
-        """Initialize with vLLM backend"""
+        """Initialize with appropriate backend"""
         self.model_id = model_id
         self.model_key = model_key  # Model configuration key
         self.model_name = model_id.split('/')[-1]
         
-        # Initialize vLLM backend
-        self.backend = VLLMBackend()
+        # Detect backend type from model config if not specified
+        if model_key:
+            model_config = get_model_config(model_key)
+            detected_backend_type = model_config.get('backend_type', backend_type)
+            logger.info(f"Model key: {model_key}, detected backend_type: {detected_backend_type}")
+            backend_type = detected_backend_type
+        
+        logger.info(f"Final backend_type for {model_key}: {backend_type}")
+        
+        # Initialize appropriate backend
+        if backend_type == 'openrouter':
+            self.backend = OpenRouterBackend()
+            self.backend_type = 'openrouter'
+            logger.info(f"ChecklistAgent initialized with OpenRouter backend for model: {self.model_name}")
+        else:
+            self.backend = VLLMBackend()
+            self.backend_type = 'vllm'
+            logger.info(f"ChecklistAgent initialized with vLLM backend for model: {self.model_name}")
         
         # Get template manager
         self.template_manager = get_template_manager()
         
         # Retry settings
         self.max_retries = get_setting('max_retries', 3)
-        
-        logger.info(f"ChecklistAgent initialized with model: {self.model_name}")
     
     def generate_checklist(self, user_query: str, topic: str) -> Dict[str, Any]:
         """Generate evaluation checklist using vLLM backend and templates"""
