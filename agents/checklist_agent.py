@@ -198,34 +198,48 @@ class ChecklistAgent:
             logger.warning(f"Failed to fix malformed JSON: {e}")
             return json_str
     
-    def _create_fallback_checklist(self, topic: str) -> Dict[str, Any]:
-        """Create a simple fallback checklist"""
-        return {
-            "topic": topic,
-            "criteria": [
-                {
-                    "id": 1,
-                    "description": "Email has clear subject line",
-                    "priority": "high"
-                },
-                {
-                    "id": 2,
-                    "description": "Content is relevant to topic",
-                    "priority": "high"
-                },
-                {
-                    "id": 3,
-                    "description": "Professional tone is maintained",
-                    "priority": "medium"
-                },
-                {
-                    "id": 4,
-                    "description": "Email has proper greeting and closing",
-                    "priority": "medium"
-                }
-            ],
-            "generated_by": self.model_name,
-            "timestamp": time.time(),
-            "fallback": True
-        }
+    def _create_fallback_checklist(self, topic: str) -> list:
+        """Create a simple fallback checklist in binary format"""
+        return [
+            {
+                "question": "Does the email have a clear and relevant subject line?",
+                "best_ans": "yes", 
+                "priority": "very high"
+            },
+            {
+                "question": "Is the content directly relevant to the topic?",
+                "best_ans": "yes",
+                "priority": "very high" 
+            },
+            {
+                "question": "Does the email include a clear call-to-action?",
+                "best_ans": "yes",
+                "priority": "high"
+            },
+            {
+                "question": "Is the tone appropriate for the intended audience?", 
+                "best_ans": "yes",
+                "priority": "high"
+            },
+            {
+                "question": "Does the email have a proper greeting?",
+                "best_ans": "yes",
+                "priority": "medium"
+            },
+            {
+                "question": "Does the email have a professional closing?",
+                "best_ans": "yes", 
+                "priority": "medium"
+            },
+            {
+                "question": "Is the email length appropriate for the content?",
+                "best_ans": "yes",
+                "priority": "low"
+            },
+            {
+                "question": "Does the email avoid spelling and grammar errors?",
+                "best_ans": "yes",
+                "priority": "low"
+            }
+        ]
 
