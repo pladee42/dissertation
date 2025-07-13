@@ -26,7 +26,8 @@ class MultiTopicOrchestrator:
                  checklist_model: str,
                  judge_model: str,
                  max_concurrent: int = 1,
-                 max_concurrent_topics: int = 1):
+                 max_concurrent_topics: int = 1,
+                 checklist_mode: str = "enhanced"):
         """
         Initialize multi-topic orchestrator
         
@@ -36,16 +37,18 @@ class MultiTopicOrchestrator:
             judge_model: Model name for evaluation
             max_concurrent: Maximum concurrent models per topic
             max_concurrent_topics: Maximum concurrent topics
+            checklist_mode: Checklist generation mode
         """
         self.email_models = email_models
         self.checklist_model = checklist_model
         self.judge_model = judge_model
         self.max_concurrent = max_concurrent
         self.max_concurrent_topics = max_concurrent_topics
+        self.checklist_mode = checklist_mode
         self.topic_manager = get_topic_manager()
         
         # Initialize data collector for aggregated data
-        self.data_collector = DataCollector()
+        self.data_collector = DataCollector(checklist_mode=checklist_mode)
         
         logger.info(f"MultiTopicOrchestrator initialized for {len(email_models)} email models")
         
@@ -78,7 +81,8 @@ class MultiTopicOrchestrator:
                 email_models=self.email_models,
                 checklist_model=self.checklist_model,
                 judge_model=self.judge_model,
-                max_concurrent=self.max_concurrent
+                max_concurrent=self.max_concurrent,
+                checklist_mode=self.checklist_mode
             )
             
             # Format user query for this topic

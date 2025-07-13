@@ -43,6 +43,24 @@ class TemplateManager:
                 with open(checklist_path, 'r', encoding='utf-8') as f:
                     self.templates["checklist"] = f.read().strip()
             
+            # Load checklist extract template
+            checklist_extract_path = os.path.join(self.base_path, "checklist_extract.md")
+            if os.path.exists(checklist_extract_path):
+                with open(checklist_extract_path, 'r', encoding='utf-8') as f:
+                    self.templates["checklist_extract"] = f.read().strip()
+            
+            # Load example analyzer template
+            example_analyzer_path = os.path.join(self.base_path, "example_analyzer.md")
+            if os.path.exists(example_analyzer_path):
+                with open(example_analyzer_path, 'r', encoding='utf-8') as f:
+                    self.templates["example_analyzer"] = f.read().strip()
+            
+            # Load checklist preprocess template
+            checklist_preprocess_path = os.path.join(self.base_path, "checklist_preprocess.md")
+            if os.path.exists(checklist_preprocess_path):
+                with open(checklist_preprocess_path, 'r', encoding='utf-8') as f:
+                    self.templates["checklist_preprocess"] = f.read().strip()
+            
             # Load judge template
             judge_path = os.path.join(self.base_path, "judge.md")
             if os.path.exists(judge_path):
@@ -100,6 +118,24 @@ class TemplateManager:
         if not template:
             logger.warning("Judge template not found")
             return "Evaluate the email against the checklist"
+        
+        return template
+    
+    def get_template(self, template_name: str) -> str:
+        """
+        Get any template by name
+        
+        Args:
+            template_name: Template name (e.g., 'checklist_extract')
+            
+        Returns:
+            Template string
+        """
+        template = self.templates.get(template_name, "")
+        
+        if not template:
+            logger.warning(f"Template '{template_name}' not found")
+            return f"Template {template_name} not available"
         
         return template
     

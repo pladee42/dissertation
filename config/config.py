@@ -78,6 +78,13 @@ MODELS = {
     }
 }
 
+# Checklist mode constants
+CHECKLIST_MODES = {
+    'ENHANCED': 'enhanced',
+    'EXTRACT_ONLY': 'extract_only', 
+    'PREPROCESS': 'preprocess'
+}
+
 # Simple settings
 SETTINGS = {
     # Basic settings
@@ -115,7 +122,10 @@ SETTINGS = {
     # Consistency sampling settings
     'consistency_samples': 3,
     'consistency_enabled': True,
-    'consistency_timeout': 120
+    'consistency_timeout': 120,
+    
+    # Checklist mode settings
+    'default_checklist_mode': CHECKLIST_MODES['ENHANCED']
 }
 
 # Memory requirements by model size (with 30% GPU utilization)

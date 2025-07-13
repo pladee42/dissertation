@@ -28,7 +28,8 @@ class ModelOrchestrator:
                  email_models: List[str],
                  checklist_model: str,
                  judge_model: str,
-                 max_concurrent: int = 2):
+                 max_concurrent: int = 2,
+                 checklist_mode: str = "enhanced"):
         """
         Initialize with model configurations
         
@@ -37,14 +38,16 @@ class ModelOrchestrator:
             checklist_model: Model name for checklist generation
             judge_model: Model name for evaluation
             max_concurrent: Maximum concurrent executions (simplified)
+            checklist_mode: Checklist generation mode
         """
         self.email_models = email_models
         self.checklist_model = checklist_model
         self.judge_model = judge_model
         self.max_concurrent = min(max_concurrent, 2)  # Keep it simple
+        self.checklist_mode = checklist_mode
         
         # Initialize data collector
-        self.data_collector = DataCollector()
+        self.data_collector = DataCollector(checklist_mode=checklist_mode)
         
         # Initialize topic manager for UID lookup
         try:
@@ -183,7 +186,8 @@ class ModelOrchestrator:
                 model_id=model_config['model_id'],
                 dtype=model_config.get('dtype', 'bfloat16'),
                 quantization=model_config.get('quantization', 'experts_int8'),
-                model_key=self.checklist_model
+                model_key=self.checklist_model,
+                checklist_mode=self.checklist_mode
             )
             
             checklist = agent.generate_checklist(user_query, topic)

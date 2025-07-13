@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 from models.orchestrator import ModelOrchestrator
-from config.config import MODELS_CONFIG, get_setting, MODELS
+from config.config import MODELS_CONFIG, get_setting, MODELS, CHECKLIST_MODES
 from models.vllm_backend import VLLMBackend
 
 logging.basicConfig(level=logging.INFO)
@@ -52,6 +52,10 @@ def main():
     parser.add_argument("--example_email", type=str, 
                        default="1",
                        help="Example email file to use (e.g., '1' for example_email/1.md)")
+    parser.add_argument("--checklist_mode", type=str,
+                       default="enhanced",
+                       choices=list(CHECKLIST_MODES.values()),
+                       help="Checklist generation mode: enhanced (full context), extract_only (minimal), or preprocess (two-step)")
     
     args = parser.parse_args()
     
@@ -106,7 +110,8 @@ def main():
             email_models=args.email_models,
             checklist_model=args.checklist_model,
             judge_model=args.judge_model,
-            max_concurrent=1
+            max_concurrent=1,
+            checklist_mode=args.checklist_mode
         )
         
         # Run the pipeline
