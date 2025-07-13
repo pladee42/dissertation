@@ -22,11 +22,12 @@ logger = logging.getLogger(__name__)
 class ChecklistAgent:
     """vLLM-based Checklist Generation Agent"""
     
-    def __init__(self, model_id: str, dtype: str = "bfloat16", quantization: str = "experts_int8", backend_type: str = "vllm", model_key: str = None):
+    def __init__(self, model_id: str, dtype: str = "bfloat16", quantization: str = "experts_int8", backend_type: str = "vllm", model_key: str = None, checklist_mode: str = "enhanced"):
         """Initialize with appropriate backend"""
         self.model_id = model_id
         self.model_key = model_key  # Model configuration key
         self.model_name = model_id.split('/')[-1]
+        self.checklist_mode = checklist_mode
         
         # Detect backend type from model config if not specified
         if model_key:
@@ -58,40 +59,144 @@ class ChecklistAgent:
         start_time = time.time()
         
         try:
-            # Get checklist template
-            checklist_template = self.template_manager.get_checklist_template()
+            if self.checklist_mode == "preprocess":
+                # Two-step process for preprocess mode
+                return self._generate_checklist_preprocess(user_query, topic)
+            else:
+                # Single-step process for enhanced and extract_only modes
+                return self._generate_checklist_single_step(user_query, topic)
+                
+        except Exception as e:
+            logger.error(f"Error generating checklist: {e}")
+            return self._create_fallback_checklist(topic)
+    
+    def _generate_checklist_single_step(self, user_query: str, topic: str) -> Dict[str, Any]:
+        """Generate checklist in single step (enhanced/extract_only modes)"""
+        start_time = time.time()
+        
+        # Get checklist template based on mode
+        checklist_template = self._get_mode_specific_template()
+        
+        # Format template with variables
+        formatted_template = self.template_manager.format_template(
+            checklist_template,
+            topic=topic,
+            user_query=user_query
+        )
+        
+        # Create full prompt
+        full_prompt = f"{formatted_template}\n\nChecklist (JSON format):"
+        
+        # Generate with retry logic
+        checklist_json = self._generate_with_retry(full_prompt)
+        
+        # Parse JSON response with better error handling
+        try:
+            # First try basic JSON parsing
+            checklist = json.loads(checklist_json)
+        except json.JSONDecodeError as e:
+            logger.warning(f"JSON parsing failed: {e}")
+            logger.warning(f"Raw response (first 500 chars): {checklist_json[:500]}")
+            # Fallback to simple checklist if JSON parsing fails
+            checklist = self._create_fallback_checklist(topic)
+        
+        generation_time = time.time() - start_time
+        logger.info(f"Checklist generated in {generation_time:.2f}s for topic: {topic}")
+        
+        return checklist
+    
+    def _generate_checklist_preprocess(self, user_query: str, topic: str) -> Dict[str, Any]:
+        """Generate checklist using two-step preprocess method"""
+        start_time = time.time()
+        
+        # Step 1: Analyze example email
+        extracted_characteristics = self._analyze_example_email(user_query)
+        
+        # Step 2: Generate checklist based on extracted characteristics
+        checklist_template = self.template_manager.get_template("checklist_preprocess")
+        
+        # Format template with extracted characteristics
+        formatted_template = self.template_manager.format_template(
+            checklist_template,
+            topic=topic,
+            extracted_characteristics=json.dumps(extracted_characteristics, indent=2)
+        )
+        
+        # Create full prompt
+        full_prompt = f"{formatted_template}\n\nChecklist (JSON format):"
+        
+        # Generate with retry logic
+        checklist_json = self._generate_with_retry(full_prompt)
+        
+        # Parse JSON response
+        try:
+            checklist = json.loads(checklist_json)
+        except json.JSONDecodeError as e:
+            logger.warning(f"JSON parsing failed in preprocess mode: {e}")
+            checklist = self._create_fallback_checklist(topic)
+        
+        generation_time = time.time() - start_time
+        logger.info(f"Checklist generated in {generation_time:.2f}s for topic: {topic} (preprocess mode)")
+        
+        return checklist
+    
+    def _analyze_example_email(self, user_query: str) -> Dict[str, Any]:
+        """Analyze example email to extract characteristics (Step 1 of preprocess mode)"""
+        try:
+            # Get example analyzer template
+            analyzer_template = self.template_manager.get_template("analyzer")
             
-            # Format template with variables
+            # Format template with user query
             formatted_template = self.template_manager.format_template(
-                checklist_template,
-                topic=topic,
+                analyzer_template,
                 user_query=user_query
             )
             
             # Create full prompt
-            full_prompt = f"{formatted_template}\n\nChecklist (JSON format):"
+            full_prompt = f"{formatted_template}\n\nExtracted characteristics (JSON format):"
             
-            # Generate with retry logic
-            checklist_json = self._generate_with_retry(full_prompt)
+            # Generate analysis with retry logic
+            analysis_json = self._generate_with_retry(full_prompt)
             
-            # Parse JSON response with better error handling
+            # Parse JSON response
             try:
-                # First try basic JSON parsing
-                checklist = json.loads(checklist_json)
+                analysis = json.loads(analysis_json)
+                logger.info("Successfully analyzed example email characteristics")
+                return analysis
             except json.JSONDecodeError as e:
-                logger.warning(f"JSON parsing failed: {e}")
-                logger.warning(f"Raw response (first 500 chars): {checklist_json[:500]}")
-                # Fallback to simple checklist if JSON parsing fails
-                checklist = self._create_fallback_checklist(topic)
-            
-            generation_time = time.time() - start_time
-            logger.info(f"Checklist generated in {generation_time:.2f}s for topic: {topic}")
-            
-            return checklist
-            
+                logger.warning(f"Failed to parse analysis JSON: {e}")
+                # Return fallback analysis
+                return self._create_fallback_analysis()
+                
         except Exception as e:
-            logger.error(f"Error generating checklist: {e}")
-            return self._create_fallback_checklist(topic)
+            logger.error(f"Error analyzing example email: {e}")
+            return self._create_fallback_analysis()
+    
+    def _create_fallback_analysis(self) -> Dict[str, Any]:
+        """Create fallback analysis when extraction fails"""
+        return {
+            "tone_characteristics": {
+                "emotional_language": ["professional", "direct"],
+                "communication_style": "formal business communication",
+                "formality_level": "professional"
+            },
+            "structure_patterns": {
+                "word_count": "approximately 100-200 words",
+                "paragraph_count": 3,
+                "opening_style": "professional greeting",
+                "closing_style": "standard business closing"
+            },
+            "content_elements": {
+                "problem_presentation": "clear issue statement",
+                "solution_approach": "direct request or information",
+                "cta_style": "clear action request"
+            },
+            "language_features": {
+                "key_phrases": ["please", "thank you", "important"],
+                "sentence_structure": "clear and concise sentences",
+                "accessibility": "professional business language"
+            }
+        }
     
     def _generate_with_retry(self, prompt: str) -> str:
         """Generate text with simple retry logic"""
@@ -257,4 +362,13 @@ class ChecklistAgent:
                 "priority": "low"
             }
         ]
+    
+    def _get_mode_specific_template(self) -> str:
+        """Get template based on checklist mode"""
+        if self.checklist_mode == "extract_only":
+            return self.template_manager.get_template("checklist_extract")
+        elif self.checklist_mode == "preprocess":
+            return self.template_manager.get_template("checklist_preprocess")
+        else:  # enhanced mode (default)
+            return self.template_manager.get_checklist_template()
 

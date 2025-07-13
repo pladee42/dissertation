@@ -17,14 +17,16 @@ logger = logging.getLogger(__name__)
 class DataCollector:
     """Simple data collector for training data"""
     
-    def __init__(self, base_dir: str = "./output/training_data"):
+    def __init__(self, base_dir: str = "./output/training_data", checklist_mode: str = "enhanced"):
         """
         Initialize data collector
         
         Args:
             base_dir: Base directory for training data storage
+            checklist_mode: Checklist generation mode for organizing files
         """
         self.base_dir = Path(base_dir)
+        self.checklist_mode = checklist_mode
         self._ensure_directories()
     
     def _ensure_directories(self):
@@ -43,16 +45,16 @@ class DataCollector:
         return datetime.now().isoformat()
     
     def _get_daily_folder(self) -> Path:
-        """Get today's folder path"""
+        """Get today's folder path organized by checklist mode"""
         today = datetime.now().strftime("%Y-%m-%d")
-        daily_folder = self.base_dir / today
-        daily_folder.mkdir(exist_ok=True)
+        daily_folder = self.base_dir / today / self.checklist_mode
+        daily_folder.mkdir(parents=True, exist_ok=True)
         return daily_folder
     
     def _get_filename(self) -> str:
-        """Generate filename for session"""
+        """Generate filename for session with mode suffix"""
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        return f"session_{timestamp}.json"
+        return f"session_{timestamp}_{self.checklist_mode}.json"
     
     def _validate_session_data(self, session_data: Dict[str, Any]) -> bool:
         """Validate session data structure"""
@@ -94,6 +96,8 @@ class DataCollector:
             session_data = {
                 "session_id": self._get_session_id(),
                 "timestamp": self._get_timestamp(),
+                "checklist_mode": self.checklist_mode,
+                "mode_metadata": self._get_mode_metadata(),
                 "topic": topic_data or {},
                 "input": input_data or {},
                 "models_used": self._extract_models_used(results),
@@ -225,6 +229,31 @@ class DataCollector:
             rankings.append(ranking_data)
         
         return rankings
+    
+    def _get_mode_metadata(self) -> Dict[str, Any]:
+        """Get metadata about the checklist mode"""
+        mode_info = {
+            "enhanced": {
+                "prompt_length": "full",
+                "processing_steps": 1,
+                "context_type": "full"
+            },
+            "extract_only": {
+                "prompt_length": "minimal",
+                "processing_steps": 1,
+                "context_type": "minimal"
+            },
+            "preprocess": {
+                "prompt_length": "structured",
+                "processing_steps": 2,
+                "context_type": "extracted"
+            }
+        }
+        return mode_info.get(self.checklist_mode, {
+            "prompt_length": "unknown",
+            "processing_steps": 1,
+            "context_type": "unknown"
+        })
     
     def _extract_metadata(self, results: Dict[str, Any]) -> Dict[str, Any]:
         """Extract pipeline metadata"""

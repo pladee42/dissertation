@@ -18,7 +18,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from models.multi_topic_orchestrator import MultiTopicOrchestrator
-from config.config import MODELS_CONFIG, get_setting, MODELS
+from config.config import MODELS_CONFIG, get_setting, MODELS, CHECKLIST_MODES
 from config.topic_manager import get_topic_manager
 from models.vllm_backend import VLLMBackend
 
@@ -108,6 +108,10 @@ def main():
     parser.add_argument("--judge_model", type=str, 
                        default="gemini-2.5-flash",
                        choices=list(MODELS_CONFIG.keys()))
+    parser.add_argument("--checklist_mode", type=str,
+                       default="enhanced",
+                       choices=list(CHECKLIST_MODES.values()),
+                       help="Checklist generation mode: enhanced (full context), extract_only (minimal), or preprocess (two-step)")
     
     # Processing arguments
     parser.add_argument("--max_concurrent_topics", type=int, default=1,
@@ -246,7 +250,8 @@ def main():
             checklist_model=args.checklist_model,
             judge_model=args.judge_model,
             max_concurrent=args.max_concurrent,
-            max_concurrent_topics=args.max_concurrent_topics
+            max_concurrent_topics=args.max_concurrent_topics,
+            checklist_mode=args.checklist_mode
         )
         
         # Run the pipeline
