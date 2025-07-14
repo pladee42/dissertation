@@ -47,7 +47,7 @@ Respond ONLY with a valid JSON object containing the extracted characteristics. 
     "formality_level": "formal yet emotional"
   },
   "structure_patterns": {
-    "word_count": "approximately 150-200 words",
+    "word_count": "approximately 300-500 words",
     "paragraph_count": 3,
     "opening_style": "direct address with immediate problem statement",
     "closing_style": "call-to-action with personal sign-off"
