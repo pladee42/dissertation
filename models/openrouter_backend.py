@@ -89,7 +89,8 @@ class OpenRouterBackend:
             if stop:
                 payload["stop"] = stop
             
-            logger.debug(f"Sending request to OpenRouter: model={model_id}, max_tokens={max_tokens}, temperature={temperature}")
+            logger.info(f"OpenRouter request: model={model_id}, max_tokens={max_tokens}, temperature={temperature}")
+            logger.debug(f"Full payload: {payload}")
             
             # Make API request
             response = requests.post(
@@ -113,7 +114,15 @@ class OpenRouterBackend:
             generated_text = result['choices'][0]['message']['content']
             
             if generated_text.strip():
-                logger.debug(f"Generated text length: {len(generated_text)}")
+                logger.info(f"OpenRouter response length: {len(generated_text)} characters")
+                
+                # Check if response was truncated by examining finish_reason
+                finish_reason = result['choices'][0].get('finish_reason', 'unknown')
+                if finish_reason == 'length':
+                    logger.warning(f"OpenRouter response was truncated due to max_tokens limit!")
+                elif finish_reason != 'stop':
+                    logger.warning(f"OpenRouter finish_reason: {finish_reason}")
+                
                 return generated_text.strip()
             else:
                 raise Exception("Empty response from OpenRouter API")
