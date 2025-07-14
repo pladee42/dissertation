@@ -144,7 +144,7 @@ class ChecklistAgent:
         """Analyze example email to extract characteristics (Step 1 of preprocess mode)"""
         try:
             # Get example analyzer template
-            analyzer_template = self.template_manager.get_template("analyzer")
+            analyzer_template = self.template_manager.get_template("example_analyzer")
             
             # Format template with user query
             formatted_template = self.template_manager.format_template(

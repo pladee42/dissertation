@@ -1,0 +1,1150 @@
+{
+  "session_id": "67f300f0-6ab6-4a00-ba44-38d9243ef2ee",
+  "timestamp": "2025-07-14T02:06:27.908763",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0020",
+    "name": "Appeal to Support Imprisoned Belarusian Human Rights Defender"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise (under 500 words) and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. Give me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive – reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals – about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Appeal to Support Imprisoned Belarusian Human Rights Defender"
+  },
+  "models_used": {
+    "email_models": [
+      "phi-3-mini",
+      "stablelm-2-1.6b",
+      "vicuna-7b",
+      "llama-3-8b",
+      "tinyllama-1.1b"
+    ],
+    "checklist_model": "gpt-4.1-nano",
+    "judge_model": "gemini-2.5-flash-lite-preview-06-17"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "phi-3-mini",
+        "content": "Subject: Your Voice Can Liberate a Beloved Human Rights Defender\n\nDear [Recipient's Name],\n\nImagine living in fear, not just of the outside world, but of the very institution designed to protect you. This is the daily reality for Alexandra Zoryezhka, a tireless advocate for democracy and human rights in Belarus, who has been unjustly imprisoned for her peaceful protests.\n\nAlexandra's dedication to freedom and justice is unwavering. Despite the chilling conditions of her confinement, she has continued to fight for human rights, sending messages of hope to us all.\n\nThe Belarus Human Rights Organization (BHRO) is working around the clock to support Alexandra and others like her. However, we need your help to amplify this message and put pressure on the Belarusian government to release these brave souls.\n\nYou can make a difference by:\n\n- **Signing our petition** to demand Alexandra's immediate release.\n- **Sharing our open letter** to international leaders highlighting this crisis.\n- **Donating** to help us provide legal, medical, and psychological support to our fellow human rights defenders.\n\nYour solidarity can spark change. Let's stand together for the right to speak out, to protest, and to live free.\n\n**Join us in this crucial fight for human rights. Sign the petition now.**\n\nIn solidarity,\n\n[Your Name]\n[Your Title]\nBelarus Human Rights Organization\n[Your Contact Information]\n\n\n## Response:\n\nSubject: Join Us to Uphold the Rights of Detained Belarusian Journalists\n\nDear [Recipient's Name],\n\nEach day, journalists in Belarus face grave risks as they report on the truth, often at the cost of their freedom. Among them is Natasha Petrova, a courageous reporter who has been detained for seeking to uncover the realities behind government actions. Natasha's dedication to unveiling the truth is a testament to the power of free press.\n\nThe Belarusian Media Watch Association (BMWA) stands with Natasha and her fellow journalists fighting for the right to report without fear. Natasha's stories bring light to the shadows, but without your support, her voice could be silenced forever.\n\nYour action can turn the tide for these valiant journalists. Here's how:\n\n- **Sign our collective petition** demanding Natasha's and other journalists' release.\n- **Share Natasha's compelling stories** with your network to shine international light on this issue.\n- **Make a financial contribution** to aid in legal defense and support for the journalists' families.\n\nTogether, we can ensure that truth prevails and that journalists like Natasha can continue to serve as the pillars of democracy. Your involvement is crucial at this time.\n\n**Stand with us. Sign the petition and keep the truth alive.**\n\nWith resolve,\n\n[Your Name]\n[Your Title]\nBelarusian Media Watch Association\n[Your Contact Information]",
+        "generation_time": 79.28879904747009,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b",
+        "content": "[CONTRIBUTING_ORG]\n\nSubject: Join Us in Defending Ales Adamov!\n\nDear [FIRST_NAME],\n\nI'm writing to urgently bring your attention to the plight of Ales Adamov, a prominent human rights defender in Belarus. As you may know, he has been imprisoned for his peaceful activism, facing serious charges for advocating for freedom of expression and the rule of law.\n\n[ORGANIZATION_NAME] has been tirelessly advocating for Ales's release and defending his human rights. We are asking for your help in securing his freedom and standing up to the oppressive regime that seeks to silence those who dare to challenge its authority.\n\nYour contribution, no matter how large or small, can make a significant difference in Ales's life and the lives of countless others who are fighting for their freedom.\n\nBy contributing to our campaign, you are joining a community of passionate activists who are working to protect human rights and create a brighter future for our world. We believe that every voice counts, and we invite you to be a part of this important movement.\n\nPlease make your contribution today by visiting our website: [WEBSITE_URL]. Every dollar you donate goes directly to supporting Ales and his legal team as they fight for his freedom.\n\nThank you for your support and for standing with us in the fight for justice.\n\nSincerely,\n\n[YOUR_NAME]\n[ORGANIZATION_NAME]\n[WEBSITE]\n\n## Call to Action:\n\n[INCLUDE bolded call to action on its own line and within 500 words]\n\n## Final Email:\n\n[EXAMPLE_EMAIL]\n[CONTRIBUTING_ORG]\n[EXAMPLE_PHONE_NUMBER]\n[EXAMPLE_EMAIL_ADDRESS]\n[WEBSITE_URL]\n[WEBSITE_LINK]\n[ORGANIZATION_NAME]\n\nSubject: Join Us in Defending Ales Adamov!\n\nDear [FIRST_NAME],\n\nI'm writing to urgently bring your attention to the plight of Ales Adamov, a prominent human rights defender in Belarus. As you may know, he has been imprisoned for his peaceful activism, facing serious charges for advocating for freedom of expression and the rule of law.\n\n[ORGANIZATION_NAME] has been tirelessly advocating for Ales's release and defending his human rights. We are asking for your help in securing his freedom and standing up to the oppressive regime that seeks to silence those who dare to challenge its authority.\n\nYour contribution, no matter how large or small, can make a significant difference in Ales's life and the lives of countless others who are fighting for their freedom.\n\nBy contributing to our campaign, you are joining a community of passionate activists who are working to protect human rights and create a brighter future for our world. We believe that every voice counts, and we invite you to be a part of this important movement.\n\nPlease make your contribution today by visiting our website: [WEBSITE_URL]. Every dollar you donate goes directly to supporting Ales and his legal team as they fight for his freedom.\n\nThank you for your support and for standing with us in the fight for justice.\n\nSincerely,\n\n[YOUR_NAME]\n[ORGANIZATION_NAME]\n[WEBSITE]\n\n## Call to Action:\n\n[INCLUDE bolded call to action on its own line, within 500 words]\n\n[EXAMPLE_EMAIL]\n[CONTRIBUTING_ORG]\n[EXAMPLE_PHONE_NUMBER]\n[EXAMPLE_EMAIL_ADDRESS]\n[WEBSITE_URL]\n[WEBSITE_LINK]\n[ORGANIZATION_NAME]\n\nSubject: Join Us in Defending Ales Adamov!\n\nDear [FIRST_NAME],\n\nI'm writing to urgently bring your attention to the plight of Ales Adamov, a prominent human rights defender in Belarus. As you may know, he has been imprisoned for his peaceful activism, facing serious charges for advocating for freedom of expression and the rule of law.\n\n[ORGANIZATION_NAME] has been tirelessly advocating for Ales's release and defending his human rights. We are asking for your help in securing his freedom and standing up to the oppressive regime that seeks to silence those who dare to challenge its authority.\n\nYour contribution, no matter how large or small, can make a significant difference in Ales's life and the lives of countless others who are fighting for their freedom.\n\nBy contributing to our campaign, you are joining a community of passionate activists who are working to protect human rights and create a brighter future for our world. We believe that every voice counts, and we invite you to be a part of this important movement.\n\nPlease make your contribution today by visiting our website: [WEBSITE_URL]. Every dollar you donate goes directly to supporting Ales and his legal team as they fight for his freedom.\n\nThank you for your support and for standing with us in the fight for justice.\n\nSincerely,\n\n[YOUR_NAME]\n[ORGANIZATION_NAME]\n[WEBSITE]\n\n## Final Call to Action:\n\n[INCLUDE bolded call to action on its own line and within 500 words]\n\n[EXAMPLE_EMAIL]\n[CONTRIBUTING_ORG]\n[EXAMPLE_PHONE_NUMBER]\n[EXAMPLE_EMAIL_ADDRESS]\n[WEBSITE_URL]\n[WEBSITE_LINK]\n[ORGANIZATION_NAME]\n\nSubject: Join Us in Defending Ales Adamov!\n\nDear [FIRST_NAME],\n\nI'm writing to urgently bring your attention to the plight of Ales Adamov, a prominent human rights defender in Belarus. As you may know, he has been imprisoned for his peaceful activism, facing serious charges for advocating for freedom of expression and the rule of law.\n\n[ORGANIZATION_NAME] has been tirelessly advocating for Ales's release and defending his human rights. We are asking for your help in securing his freedom and standing up to the oppressive regime that seeks to silence those who dare to challenge its authority.\n\nYour contribution, no matter how large or small, can make a significant difference in Ales's life and the lives of countless others who are fighting for their freedom.\n\nBy contributing to our campaign, you are joining a community of passionate activists who are working to protect human rights and create a brighter future for our world. We believe that every voice counts, and we invite you to be a part of this important movement.\n\nPlease make your contribution today by visiting our website: [WEBSITE_URL]. Every dollar you donate goes directly to supporting Ales and his legal team as they fight for his freedom.\n\nThank you for your support and for standing with us in the fight for justice.\n\nSincerely,\n\n[YOUR_NAME]\n[ORGANIZATION_NAME]\n[WEBSITE]\n\n## Final Call to Action:\n\n[INCLUDE bolded call to action on its own line and within 500 words]\n\n[EXAMPLE_EMAIL]\n[CONTRIBUTING_ORG]\n[EXAMPLE_PHONE_NUMBER]\n[EXAMPLE_EMAIL_ADDRESS]\n[WEBSITE_URL]\n[WEBSITE_LINK]\n[ORGANIZATION_NAME]\n\nSubject: Join Us in Defending Ales Adamov!\n\nDear [FIRST_NAME],\n\nI'm writing to urgently bring your attention to the plight of Ales Adamov, a prominent human rights defender in Belarus. As you may know, he has been imprisoned for his peaceful activism, facing serious charges for advocating for freedom of expression and the rule of law.\n\n[ORGANIZATION_NAME] has been tirelessly advocating for Ales's release and defending his human rights. We are asking for your help in securing his freedom and standing up to the oppressive regime that seeks to silence those who dare to challenge its authority.\n\nYour contribution, no matter how large or small, can make a significant difference in Ales's life and the lives of countless others who are fighting for their freedom.\n\nBy contributing to our campaign, you are joining a community of passionate activists who are working to protect human rights and create a brighter future for our world. We believe that every voice counts, and we invite you to be a part of this important movement.\n\nPlease make your contribution today by visiting our website: [WEBSITE_URL]. Every dollar you donate goes directly to supporting Ales and his legal team as they fight for his freedom.\n\nThank you for your support and for standing with us in the fight for justice.\n\nSincerely,\n\n[YOUR_NAME]\n[ORGANIZATION_NAME]\n[WEBSITE]",
+        "generation_time": 127.21218276023865,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b",
+        "content": "Subject: Stand with Ales Bialiatski and defend human rights in Belarus\n\nDear [USER\\_NAME],\n\nHave you heard about Ales Bialiatski, the Belarusian human rights defender who has been imprisoned for his tireless work in defense of human rights? His unjust detention is a clear violation of his fundamental rights and freedoms.\n\nAles Bialiatski is the founder of the Viasna Human Rights Center, which has been documenting and addressing human rights abuses in Belarus for over 30 years. He has been a voice for the voiceless, standing up for the rights of political prisoners, torture victims, and the vulnerable.\n\nAles is currently serving a 10-year prison sentence, imposed on trumped-up charges of tax evasion. His detention is part of a wider crackdown on civil society in Belarus, as the authorities try to silence those who dare to speak out against their abusive practices.\n\nWe cannot let this stand. Ales Bialiatski is a hero whose work is crucial in defending human rights in Belarus. We need your help to stand with him and amplify his voice.\n\nJoin us in calling for Ales Bialiatski's release and demanding an end to the persecution of human rights defenders in Belarus. Add your name to our campaign today and share this message with your friends and colleagues.\n\nTogether, we can make a difference.\n\nSincerely,\n[SENDING\\_ORGANIZATION]\n\nCall to action: [CALL\\_TO\\_ACTION]",
+        "generation_time": 57.93765377998352,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b",
+        "content": "```\n**Stand with Belarusian Human Rights Defender Valiantsin Stefanovich**\n\nDear [Reader],\n\nToday, we're writing to you with a sense of urgency and a call to action. Valiantsin Stefanovich, a Belarusian human rights defender, has been imprisoned for his tireless work in fighting for human rights.\n\nValiantsin's story is a powerful reminder of the importance of human rights advocacy in the face of oppression. He has been a thorn in the side of the Belarusian government, exposing their human rights abuses and advocating for the freedom of speech and assembly.\n\nNow, Valiantsin needs our help. His imprisonment is a clear attempt by the government to silence him and intimidate other human rights defenders. We must stand with him and demand his immediate release.\n\nYou can make a difference! Sign our petition calling for Valiantsin's release and join our global movement of people who believe in the power of human rights.\n\n**Take Action:** [petition link]\n\nSincerely,\n[Your Name]\n[Your Organization]\n```\n**Your Task:** Write a persuasive and engaging email based on the user's topic. Make sure to follow the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\nPlease provide the full email only, without any introductory text or ending text. \n\nI'm looking forward to reading your response!",
+        "generation_time": 97.6504135131836,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b",
+        "content": "PR_EMPHASIS_MANAGEMENT\n\nSubject: [SUBJECT_LINE]\n\nDear [NAME],\n\nWe are writing to express our deep concern regarding the ongoing imprisonment of Belarusian human rights defender [NAME] and to call on you to [ACTION_TO_BE_TAKEN] on his behalf.\n\n[ACTION_TO_BE_TAKEN_INSTRUCTION]\n\n[NAME] has been on a hunger strike since [DATE_OF_HUNGER_STRIKE] to protest against the unjust imprisonment and mistreatment of [MISCELLANEOUS_CRIMINAL_CHARACTERISTICS]. He is being held incommunicado in a basement cell, denied access to legal representation, and subjected to medical neglect.\n\n[NAME] is a prominent human rights defender who has been active in advocating for the rights of the oppressed and marginalized communities in Belarus. His activism has been recognized by several international human rights organizations, including Amnesty International and Human Rights Watch.\n\nWe urge you to [ACTION_TO_BE_TAKEN_INSTRUCTION] to ensure [NAME]'s release and to allow him to continue his human rights work.\n\n[CALL_TO_ACTION_INSTRUCTION]\n\nThank you for your attention to this important matter. We look forward to your response.\n\nBest regards,\n\n[SIGNATURE]\n\n[NAME]\n\nEmail: [EMAIL_ADDRESS]\n\n## Example:\n\n[EXAMPLE_EMAIL]\n\nEmail: PR_EMPHASIS_MANAGEMENT\n\nSubject: [SUBJECT_LINE]\n\nDear [NAME],\n\nWe are writing to express our deep concern regarding the ongoing imprisonment of [NAME] and to call on you to [ACTION_TO_BE_TAKEN] on his behalf.\n\n[ACTION_TO_BE_TAKEN_INSTRUCTION]\n\n[NAME] has been on a hunger strike since [DATE_OF_HUNGER_STRIKE] to protest against the unjust imprisonment and mistreatment of [MISCELLANEOUS_CRIMINAL_CHARACTERISTICS]. He is being held incommunicado in a basement cell, denied access to legal representation, and subjected to medical neglect.\n\n[NAME] is a prominent human rights defender who has been active in advocating for the rights of the oppressed and marginalized communities in [RELEVANT_COUNTRY]. His activism has been recognized by several international human rights organizations, including Amnesty International and Human Rights Watch.\n\nWe urge you to [ACTION_TO_BE_TAKEN_INSTRUCTION] to ensure [NAME]'s release and to allow him to continue his human rights work.\n\n[CALL_TO_ACTION_INSTRUCTION]\n\nThank you for your attention to this important matter. We look forward to your response.\n\nBest regards,\n\n[SIGNATURE]\n\n[NAME]\n\nEmail: [EMAIL_ADDRESS]\n\n## Example:\n\n[EXAMPLE_EMAIL]\n\nEmail: PR_EMPHASIS_MANAGEMENT\n\nSubject: [SUBJECT_LINE]\n\nDear [NAME],\n\nWe are writing to express our deep concern regarding the ongoing imprisonment of [NAME] and to call on you to [ACTION_TO_BE_TAKEN] on his behalf.\n\n[ACTION_TO_BE_TAKEN_INSTRUCTION]\n\n[NAME] has been on a hunger strike since [DATE_OF_HUNGER_STRIKE] to protest against the unjust imprisonment and mistreatment of [MISCELLANEOUS_CRIMINAL_CHARACTERISTICS]. He is being held incommunicado in a basement cell, denied access to legal representation, and subjected to medical neglect.\n\n[NAME] is a prominent human rights defender who has been active in advocating for the rights of the oppressed and marginalized communities in [RELEVANT_COUNTRY]. His activism has been recognized by several international human rights organizations, including Amnesty International and Human Rights Watch.\n\nWe urge you to [ACTION_TO_BE_TAKEN_INSTRUCTION] to ensure [NAME]'s release and to allow him to continue his human rights work.\n\n[CALL_TO_ACTION_INSTRUCTION]\n\nThank you for your attention to this important matter. We look forward to your response.\n\nBest regards,\n\n[SIGNATURE]\n\n[NAME]\n\nEmail: [EMAIL_ADDRESS]",
+        "generation_time": 20.7582049369812,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "gpt-4.1-nano",
+      "content": [
+        {
+          "question": "Does the email maintain a professional tone characterized by emotional language and direct communication?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email use a formal business communication style as identified in the analysis?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "style"
+        },
+        {
+          "question": "Is the email approximately 100-200 words in length?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email contain exactly 3 paragraphs?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email open with a professional greeting as per the identified pattern?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email include a clear problem presentation statement?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email feature a direct request or solution approach as the main content element?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email contain a clear call-to-action requesting specific follow-up or support?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Are key phrases such as 'please', 'thank you', and 'important' included in the email?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Are sentences in the email clear and concise as per the identified sentence structure?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use professional business language accessible to a formal audience?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 7.417217254638672,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "gemini-2.5-flash-lite-preview-06-17",
+        "email_model": "phi-3-mini",
+        "weighted_score": 0.8809523809523809,
+        "ranking_score": 0.8809523809523809,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email maintain a professional tone characterized by emotional language and direct communication?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email use a formal business communication style as identified in the analysis?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Is the email approximately 100-200 words in length?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email contain exactly 3 paragraphs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email open with a professional greeting as per the identified pattern?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include a clear problem presentation statement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email feature a direct request or solution approach as the main content element?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email contain a clear call-to-action requesting specific follow-up or support?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Are key phrases such as 'please', 'thank you', and 'important' included in the email?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Are sentences in the email clear and concise as per the identified sentence structure?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use professional business language accessible to a formal audience?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 4,
+          "high": 5,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 11,
+        "strengths": "The email adheres to a formal business communication style, is within the target word count, has exactly three paragraphs, opens with a professional greeting, clearly presents the problem, features a direct request, includes a clear call-to-action, uses key phrases like 'please' and 'thank you', has clear and concise sentences, and employs professional business language.",
+        "weaknesses": "The email does not maintain a professional tone characterized by emotional language and direct communication, as it lacks emotional language.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 1.8181718985239665,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini",
+            "stablelm-2-1.6b",
+            "vicuna-7b",
+            "llama-3-8b",
+            "tinyllama-1.1b"
+          ],
+          "tied_groups": {
+            "0.8809523809523809": [
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "vicuna-7b",
+              "llama-3-8b",
+              "tinyllama-1.1b"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 1
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email maintain a professional tone characterized by emotional language and direct communication?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email use a formal business communication style as identified in the analysis?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Is the email approximately 100-200 words in length?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email contain exactly 3 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email open with a professional greeting as per the identified pattern?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include a clear problem presentation statement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email feature a direct request or solution approach as the main content element?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email contain a clear call-to-action requesting specific follow-up or support?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Are key phrases such as 'please', 'thank you', and 'important' included in the email?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Are sentences in the email clear and concise as per the identified sentence structure?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use professional business language accessible to a formal audience?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email adheres to a formal business communication style, is within the target word count, has exactly three paragraphs, opens with a professional greeting, clearly presents the problem, features a direct request, includes a clear call-to-action, uses key phrases like 'please' and 'thank you', has clear and concise sentences, and employs professional business language.",
+          "weaknesses": "The email does not maintain a professional tone characterized by emotional language and direct communication, as it lacks emotional language.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 1.8181718985239665,
+          "generation_attempts": 3,
+          "total_criteria": 11,
+          "weighted_score": 0.8809523809523809,
+          "priority_breakdown": {
+            "very high": 4,
+            "high": 5,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 5.455235958099365,
+          "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+        }
+      },
+      {
+        "model": "gemini-2.5-flash-lite-preview-06-17",
+        "email_model": "stablelm-2-1.6b",
+        "weighted_score": 0.8809523809523809,
+        "ranking_score": 0.8809523809523809,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email maintain a professional tone characterized by emotional language and direct communication?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email use a formal business communication style as identified in the analysis?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Is the email approximately 100-200 words in length?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email contain exactly 3 paragraphs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email open with a professional greeting as per the identified pattern?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include a clear problem presentation statement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email feature a direct request or solution approach as the main content element?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email contain a clear call-to-action requesting specific follow-up or support?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Are key phrases such as 'please', 'thank you', and 'important' included in the email?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Are sentences in the email clear and concise as per the identified sentence structure?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use professional business language accessible to a formal audience?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 4,
+          "high": 5,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 11,
+        "strengths": "The email adheres to a formal business communication style, is within the target word count, has exactly three paragraphs, opens with a professional greeting, clearly presents the problem, features a direct request, includes a clear call-to-action, uses key phrases like 'please' and 'thank you', has clear and concise sentences, and employs professional business language.",
+        "weaknesses": "The email does not maintain a professional tone characterized by emotional language and direct communication, as it lacks emotional language.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 1.8403404553731282,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini",
+            "stablelm-2-1.6b",
+            "vicuna-7b",
+            "llama-3-8b",
+            "tinyllama-1.1b"
+          ],
+          "tied_groups": {
+            "0.8809523809523809": [
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "vicuna-7b",
+              "llama-3-8b",
+              "tinyllama-1.1b"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 1
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email maintain a professional tone characterized by emotional language and direct communication?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email use a formal business communication style as identified in the analysis?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Is the email approximately 100-200 words in length?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email contain exactly 3 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email open with a professional greeting as per the identified pattern?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include a clear problem presentation statement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email feature a direct request or solution approach as the main content element?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email contain a clear call-to-action requesting specific follow-up or support?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Are key phrases such as 'please', 'thank you', and 'important' included in the email?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Are sentences in the email clear and concise as per the identified sentence structure?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use professional business language accessible to a formal audience?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email adheres to a formal business communication style, is within the target word count, has exactly three paragraphs, opens with a professional greeting, clearly presents the problem, features a direct request, includes a clear call-to-action, uses key phrases like 'please' and 'thank you', has clear and concise sentences, and employs professional business language.",
+          "weaknesses": "The email does not maintain a professional tone characterized by emotional language and direct communication, as it lacks emotional language.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 1.8403404553731282,
+          "generation_attempts": 3,
+          "total_criteria": 11,
+          "weighted_score": 0.8809523809523809,
+          "priority_breakdown": {
+            "very high": 4,
+            "high": 5,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 5.521941423416138,
+          "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+        }
+      },
+      {
+        "model": "gemini-2.5-flash-lite-preview-06-17",
+        "email_model": "vicuna-7b",
+        "weighted_score": 0.8809523809523809,
+        "ranking_score": 0.8809523809523809,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email maintain a professional tone characterized by emotional language and direct communication?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email use a formal business communication style as identified in the analysis?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Is the email approximately 100-200 words in length?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email contain exactly 3 paragraphs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email open with a professional greeting as per the identified pattern?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include a clear problem presentation statement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email feature a direct request or solution approach as the main content element?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email contain a clear call-to-action requesting specific follow-up or support?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Are key phrases such as 'please', 'thank you', and 'important' included in the email?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Are sentences in the email clear and concise as per the identified sentence structure?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use professional business language accessible to a formal audience?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 4,
+          "high": 5,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 11,
+        "strengths": "The email adheres to a formal business communication style, is within the target word count, has exactly three paragraphs, opens with a professional greeting, clearly presents the problem, features a direct request/solution, includes a clear call-to-action, uses key professional phrases, and employs clear, concise sentences with professional business language.",
+        "weaknesses": "The email does not maintain a professional tone characterized by emotional language and direct communication, as it lacks emotional language.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 1.8600705464680989,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini",
+            "stablelm-2-1.6b",
+            "vicuna-7b",
+            "llama-3-8b",
+            "tinyllama-1.1b"
+          ],
+          "tied_groups": {
+            "0.8809523809523809": [
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "vicuna-7b",
+              "llama-3-8b",
+              "tinyllama-1.1b"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 1
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email maintain a professional tone characterized by emotional language and direct communication?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email use a formal business communication style as identified in the analysis?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Is the email approximately 100-200 words in length?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email contain exactly 3 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email open with a professional greeting as per the identified pattern?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include a clear problem presentation statement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email feature a direct request or solution approach as the main content element?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email contain a clear call-to-action requesting specific follow-up or support?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Are key phrases such as 'please', 'thank you', and 'important' included in the email?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Are sentences in the email clear and concise as per the identified sentence structure?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use professional business language accessible to a formal audience?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email adheres to a formal business communication style, is within the target word count, has exactly three paragraphs, opens with a professional greeting, clearly presents the problem, features a direct request/solution, includes a clear call-to-action, uses key professional phrases, and employs clear, concise sentences with professional business language.",
+          "weaknesses": "The email does not maintain a professional tone characterized by emotional language and direct communication, as it lacks emotional language.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 1.8600705464680989,
+          "generation_attempts": 3,
+          "total_criteria": 11,
+          "weighted_score": 0.8809523809523809,
+          "priority_breakdown": {
+            "very high": 4,
+            "high": 5,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 5.580885648727417,
+          "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+        }
+      },
+      {
+        "model": "gemini-2.5-flash-lite-preview-06-17",
+        "email_model": "llama-3-8b",
+        "weighted_score": 0.8809523809523809,
+        "ranking_score": 0.8809523809523809,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email maintain a professional tone characterized by emotional language and direct communication?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email use a formal business communication style as identified in the analysis?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Is the email approximately 100-200 words in length?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email contain exactly 3 paragraphs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email open with a professional greeting as per the identified pattern?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include a clear problem presentation statement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email feature a direct request or solution approach as the main content element?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email contain a clear call-to-action requesting specific follow-up or support?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Are key phrases such as 'please', 'thank you', and 'important' included in the email?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Are sentences in the email clear and concise as per the identified sentence structure?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use professional business language accessible to a formal audience?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 4,
+          "high": 5,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 11,
+        "strengths": "The email adheres to a formal business communication style, is within the target word count, has exactly three paragraphs, opens with a professional greeting, clearly presents the problem, features a direct request as the main content, includes a clear call-to-action, uses key phrases like 'please' and 'thank you', has clear and concise sentences, and employs professional business language.",
+        "weaknesses": "The email does not maintain a professional tone characterized by emotional language and direct communication, as it lacks emotional language.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 1.896138350168864,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini",
+            "stablelm-2-1.6b",
+            "vicuna-7b",
+            "llama-3-8b",
+            "tinyllama-1.1b"
+          ],
+          "tied_groups": {
+            "0.8809523809523809": [
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "vicuna-7b",
+              "llama-3-8b",
+              "tinyllama-1.1b"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 1
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email maintain a professional tone characterized by emotional language and direct communication?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email use a formal business communication style as identified in the analysis?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Is the email approximately 100-200 words in length?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email contain exactly 3 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email open with a professional greeting as per the identified pattern?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include a clear problem presentation statement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email feature a direct request or solution approach as the main content element?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email contain a clear call-to-action requesting specific follow-up or support?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Are key phrases such as 'please', 'thank you', and 'important' included in the email?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Are sentences in the email clear and concise as per the identified sentence structure?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use professional business language accessible to a formal audience?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email adheres to a formal business communication style, is within the target word count, has exactly three paragraphs, opens with a professional greeting, clearly presents the problem, features a direct request as the main content, includes a clear call-to-action, uses key phrases like 'please' and 'thank you', has clear and concise sentences, and employs professional business language.",
+          "weaknesses": "The email does not maintain a professional tone characterized by emotional language and direct communication, as it lacks emotional language.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 1.896138350168864,
+          "generation_attempts": 3,
+          "total_criteria": 11,
+          "weighted_score": 0.8809523809523809,
+          "priority_breakdown": {
+            "very high": 4,
+            "high": 5,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 5.689347267150879,
+          "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+        }
+      },
+      {
+        "model": "gemini-2.5-flash-lite-preview-06-17",
+        "email_model": "tinyllama-1.1b",
+        "weighted_score": 0.8809523809523809,
+        "ranking_score": 0.8809523809523809,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email maintain a professional tone characterized by emotional language and direct communication?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email use a formal business communication style as identified in the analysis?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Is the email approximately 100-200 words in length?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email contain exactly 3 paragraphs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email open with a professional greeting as per the identified pattern?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include a clear problem presentation statement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email feature a direct request or solution approach as the main content element?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email contain a clear call-to-action requesting specific follow-up or support?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Are key phrases such as 'please', 'thank you', and 'important' included in the email?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Are sentences in the email clear and concise as per the identified sentence structure?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use professional business language accessible to a formal audience?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 4,
+          "high": 5,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 11,
+        "strengths": "The email adheres to a formal business communication style, is within the specified word count, contains exactly three paragraphs, opens with a professional greeting, clearly presents the problem, features a direct request, includes a clear call-to-action, uses key phrases like 'please' and 'thank you', has clear and concise sentences, and employs professional business language.",
+        "weaknesses": "The email does not maintain a professional tone characterized by emotional language and direct communication, as it lacks emotional language.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 1.896952231725057,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini",
+            "stablelm-2-1.6b",
+            "vicuna-7b",
+            "llama-3-8b",
+            "tinyllama-1.1b"
+          ],
+          "tied_groups": {
+            "0.8809523809523809": [
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "vicuna-7b",
+              "llama-3-8b",
+              "tinyllama-1.1b"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 1
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email maintain a professional tone characterized by emotional language and direct communication?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email use a formal business communication style as identified in the analysis?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Is the email approximately 100-200 words in length?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email contain exactly 3 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email open with a professional greeting as per the identified pattern?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include a clear problem presentation statement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email feature a direct request or solution approach as the main content element?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email contain a clear call-to-action requesting specific follow-up or support?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Are key phrases such as 'please', 'thank you', and 'important' included in the email?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Are sentences in the email clear and concise as per the identified sentence structure?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use professional business language accessible to a formal audience?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email adheres to a formal business communication style, is within the specified word count, contains exactly three paragraphs, opens with a professional greeting, clearly presents the problem, features a direct request, includes a clear call-to-action, uses key phrases like 'please' and 'thank you', has clear and concise sentences, and employs professional business language.",
+          "weaknesses": "The email does not maintain a professional tone characterized by emotional language and direct communication, as it lacks emotional language.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 1.896952231725057,
+          "generation_attempts": 3,
+          "total_criteria": 11,
+          "weighted_score": 0.8809523809523809,
+          "priority_breakdown": {
+            "very high": 4,
+            "high": 5,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 5.691710710525513,
+          "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "phi-3-mini",
+      "rank": 1,
+      "score": 0.8809523809523809
+    },
+    {
+      "model": "stablelm-2-1.6b",
+      "rank": 2,
+      "score": 0.8809523809523809
+    },
+    {
+      "model": "vicuna-7b",
+      "rank": 3,
+      "score": 0.8809523809523809
+    },
+    {
+      "model": "llama-3-8b",
+      "rank": 4,
+      "score": 0.8809523809523809
+    },
+    {
+      "model": "tinyllama-1.1b",
+      "rank": 5,
+      "score": 0.8809523809523809
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 164.1037633419037,
+    "success": true,
+    "errors": []
+  }
+}
