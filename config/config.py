@@ -115,6 +115,9 @@ SETTINGS = {
     # Backend settings
     'backend_type': 'vllm',
     
+    # Debug settings
+    'debug_save_responses': True,  # Set to True to save raw responses for debugging
+    
     # vLLM settings
     'vllm_max_parallel': 4,
     'vllm_gpu_memory_utilization': 0.3,

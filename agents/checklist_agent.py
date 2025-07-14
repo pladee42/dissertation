@@ -90,6 +90,9 @@ class ChecklistAgent:
         # Generate with retry logic
         checklist_json = self._generate_with_retry(full_prompt)
         
+        # Save raw response for debugging
+        self._save_debug_response(checklist_json, "checklist_single", topic)
+        
         # Parse JSON response with enhanced error handling
         try:
             # First try basic JSON parsing
@@ -136,6 +139,9 @@ class ChecklistAgent:
         # Generate with retry logic
         checklist_json = self._generate_with_retry(full_prompt)
         
+        # Save raw response for debugging
+        self._save_debug_response(checklist_json, "checklist_preprocess", topic)
+        
         # Parse JSON response with enhanced error handling
         try:
             checklist = json.loads(checklist_json)
@@ -176,6 +182,9 @@ class ChecklistAgent:
             # Generate analysis with retry logic
             analysis_json = self._generate_with_retry(full_prompt)
             
+            # Save raw response for debugging (especially for problematic models)
+            self._save_debug_response(analysis_json, "analysis", topic)
+            
             # Parse JSON response with enhanced extraction
             try:
                 # Try direct parsing first
@@ -193,6 +202,14 @@ class ChecklistAgent:
                 except Exception as extract_error:
                     logger.warning(f"Enhanced JSON extraction also failed: {extract_error}")
                     logger.warning(f"Raw response (first 500 chars): {analysis_json[:500]}")
+                    
+                    # Check if this looks like truncated JSON (partial structure visible)
+                    if self._is_truncated_analysis(analysis_json):
+                        logger.info("Detected truncated analysis, attempting intelligent reconstruction")
+                        reconstructed = self._reconstruct_truncated_analysis(analysis_json)
+                        if reconstructed:
+                            return reconstructed
+                    
                     # Only use fallback as last resort
                     return self._create_fallback_analysis()
                 
@@ -225,6 +242,126 @@ class ChecklistAgent:
                 "accessibility": "professional business language"
             }
         }
+    
+    def _is_truncated_analysis(self, response: str) -> bool:
+        """Check if response looks like truncated analysis JSON"""
+        response = response.strip()
+        
+        # Signs of truncated analysis
+        indicators = [
+            # Starts with array or property (missing opening brace)
+            (response.startswith('[') or ('"' in response and ':' in response and not response.startswith('{'))),
+            # Contains expected analysis keys
+            any(key in response for key in ['communication_style', 'formality_level', 'word_count', 'content_elements']),
+            # Doesn't end with closing brace or ends abruptly
+            not response.rstrip().endswith('}')
+        ]
+        
+        return any(indicators)
+    
+    def _reconstruct_truncated_analysis(self, response: str) -> dict:
+        """Attempt to reconstruct truncated analysis JSON"""
+        try:
+            response = response.strip()
+            
+            # Basic reconstruction: add missing braces and complete structure
+            if not response.startswith('{'):
+                response = '{' + response
+            
+            if not response.rstrip().endswith('}'):
+                response = response.rstrip() + '}'
+            
+            # Try to parse the reconstructed JSON
+            try:
+                analysis = json.loads(response)
+                logger.info("Successfully reconstructed truncated analysis JSON")
+                return analysis
+            except json.JSONDecodeError:
+                # If simple reconstruction fails, try partial parsing
+                return self._partial_parse_analysis(response)
+                
+        except Exception as e:
+            logger.warning(f"Failed to reconstruct truncated analysis: {e}")
+            return None
+    
+    def _partial_parse_analysis(self, response: str) -> dict:
+        """Extract what we can from partial JSON and fill in reasonable defaults"""
+        import re
+        
+        try:
+            # Start with fallback structure
+            analysis = self._create_fallback_analysis()
+            
+            # Try to extract specific values using regex patterns
+            patterns = {
+                'communication_style': r'"communication_style":\s*"([^"]*)"',
+                'formality_level': r'"formality_level":\s*"([^"]*)"',
+                'word_count': r'"word_count":\s*"([^"]*)"',
+                'paragraph_count': r'"paragraph_count":\s*(\d+)',
+                'emotional_language': r'"emotional_language":\s*\[([^\]]*)\]'
+            }
+            
+            for key, pattern in patterns.items():
+                match = re.search(pattern, response)
+                if match:
+                    value = match.group(1)
+                    # Update the appropriate section of analysis
+                    if key in ['communication_style', 'formality_level']:
+                        analysis['tone_characteristics'][key] = value
+                    elif key in ['word_count', 'paragraph_count']:
+                        analysis['structure_patterns'][key] = int(value) if key == 'paragraph_count' else value
+                    elif key == 'emotional_language':
+                        # Parse the array content
+                        array_content = value.replace('"', '').split(',')
+                        analysis['tone_characteristics'][key] = [item.strip() for item in array_content]
+            
+            logger.info("Successfully performed partial analysis reconstruction")
+            return analysis
+            
+        except Exception as e:
+            logger.warning(f"Partial analysis parsing failed: {e}")
+            return None
+    
+    def _save_debug_response(self, response: str, response_type: str, topic: str) -> None:
+        """Save raw response for debugging purposes"""
+        # Check if debug mode is enabled
+        debug_enabled = get_setting('debug_save_responses', False)
+        if not debug_enabled:
+            return
+            
+        try:
+            from datetime import datetime
+            from pathlib import Path
+            
+            # Create debug directory if it doesn't exist
+            debug_dir = Path("debug_responses")
+            debug_dir.mkdir(exist_ok=True)
+            
+            # Create filename with timestamp and details
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]  # Include milliseconds
+            model_name = (self.model_key or self.model_id).replace('/', '_').replace('-', '_')
+            safe_topic = topic.replace(' ', '_').replace('/', '_')[:50]  # Limit length
+            
+            filename = f"{timestamp}_{model_name}_{response_type}_{safe_topic}.txt"
+            filepath = debug_dir / filename
+            
+            # Save the response
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(f"Model: {self.model_key or self.model_id}\n")
+                f.write(f"Response Type: {response_type}\n")
+                f.write(f"Topic: {topic}\n")
+                f.write(f"Timestamp: {datetime.now().isoformat()}\n")
+                f.write(f"Response Length: {len(response)} characters\n")
+                f.write("-" * 80 + "\n")
+                f.write("RAW RESPONSE:\n")
+                f.write("-" * 80 + "\n")
+                f.write(response)
+                f.write("\n" + "-" * 80 + "\n")
+            
+            logger.debug(f"Debug response saved to: {filepath}")
+            
+        except Exception as e:
+            logger.warning(f"Failed to save debug response: {e}")
     
     def _generate_with_retry(self, prompt: str) -> str:
         """Generate text with simple retry logic"""
@@ -355,6 +492,27 @@ class ChecklistAgent:
             
             # Remove any explanatory text before JSON
             response = response.strip()
+            
+            # Handle case where response is truncated JSON missing opening brace
+            # Pattern: starts with ["something"] or "key": value indicating middle of object
+            if (response.startswith('[') or 
+                ('"' in response and ':' in response and not response.startswith('{'))):
+                logger.debug("Detected truncated JSON missing opening brace")
+                # Try adding opening brace
+                candidate = '{' + response
+                
+                # Check if it ends with a closing brace, if not try to complete it
+                if not candidate.rstrip().endswith('}'):
+                    # Try to add closing brace if it looks incomplete
+                    candidate = candidate.rstrip() + '}'
+                
+                try:
+                    json.loads(candidate)
+                    logger.debug("Successfully reconstructed truncated JSON")
+                    return candidate
+                except json.JSONDecodeError:
+                    # If that doesn't work, continue with other methods
+                    pass
             
             # Try to find JSON object pattern {...}
             # Look for the first { and last } that create a valid JSON structure
