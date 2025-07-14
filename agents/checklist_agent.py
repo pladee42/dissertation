@@ -391,11 +391,8 @@ class ChecklistAgent:
                 )
                 
                 if result.strip():
-                    # Try to extract JSON if the response contains extra text
-                    cleaned_result = self._extract_json_from_response(result.strip())
-                    # Fix common JSON formatting issues
-                    fixed_result = self._fix_malformed_json(cleaned_result)
-                    return fixed_result
+                    # Return the raw result for analysis - don't apply array-focused extraction
+                    return result.strip()
                 else:
                     raise Exception("Empty response from backend")
                     
