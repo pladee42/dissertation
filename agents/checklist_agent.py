@@ -121,7 +121,7 @@ class ChecklistAgent:
         start_time = time.time()
         
         # Step 1: Analyze example email
-        extracted_characteristics = self._analyze_example_email(user_query)
+        extracted_characteristics = self._analyze_example_email(user_query, topic)
         
         # Step 2: Generate checklist based on extracted characteristics
         checklist_template = self.template_manager.get_template("checklist_preprocess")
@@ -164,7 +164,7 @@ class ChecklistAgent:
         
         return checklist
     
-    def _analyze_example_email(self, user_query: str) -> Dict[str, Any]:
+    def _analyze_example_email(self, user_query: str, topic: str) -> Dict[str, Any]:
         """Analyze example email to extract characteristics (Step 1 of preprocess mode)"""
         try:
             # Get example analyzer template
