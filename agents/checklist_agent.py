@@ -90,15 +90,23 @@ class ChecklistAgent:
         # Generate with retry logic
         checklist_json = self._generate_with_retry(full_prompt)
         
-        # Parse JSON response with better error handling
+        # Parse JSON response with enhanced error handling
         try:
             # First try basic JSON parsing
             checklist = json.loads(checklist_json)
         except json.JSONDecodeError as e:
-            logger.warning(f"JSON parsing failed: {e}")
-            logger.warning(f"Raw response (first 500 chars): {checklist_json[:500]}")
-            # Fallback to simple checklist if JSON parsing fails
-            checklist = self._create_fallback_checklist(topic)
+            logger.warning(f"Direct JSON parsing failed: {e}")
+            # Try enhanced JSON extraction before fallback
+            try:
+                cleaned_result = self._extract_json_from_response(checklist_json)
+                fixed_result = self._fix_malformed_json(cleaned_result)
+                checklist = json.loads(fixed_result)
+                logger.info("Successfully extracted checklist after cleaning")
+            except Exception as extract_error:
+                logger.warning(f"Enhanced JSON extraction also failed: {extract_error}")
+                logger.warning(f"Raw response (first 500 chars): {checklist_json[:500]}")
+                # Only use fallback as last resort
+                checklist = self._create_fallback_checklist(topic)
         
         generation_time = time.time() - start_time
         logger.info(f"Checklist generated in {generation_time:.2f}s for topic: {topic}")
@@ -128,12 +136,22 @@ class ChecklistAgent:
         # Generate with retry logic
         checklist_json = self._generate_with_retry(full_prompt)
         
-        # Parse JSON response
+        # Parse JSON response with enhanced error handling
         try:
             checklist = json.loads(checklist_json)
         except json.JSONDecodeError as e:
-            logger.warning(f"JSON parsing failed in preprocess mode: {e}")
-            checklist = self._create_fallback_checklist(topic)
+            logger.warning(f"Direct JSON parsing failed in preprocess mode: {e}")
+            # Try enhanced JSON extraction before fallback
+            try:
+                cleaned_result = self._extract_json_from_response(checklist_json)
+                fixed_result = self._fix_malformed_json(cleaned_result)
+                checklist = json.loads(fixed_result)
+                logger.info("Successfully extracted preprocess checklist after cleaning")
+            except Exception as extract_error:
+                logger.warning(f"Enhanced JSON extraction also failed in preprocess mode: {extract_error}")
+                logger.warning(f"Raw response (first 500 chars): {checklist_json[:500]}")
+                # Only use fallback as last resort
+                checklist = self._create_fallback_checklist(topic)
         
         generation_time = time.time() - start_time
         logger.info(f"Checklist generated in {generation_time:.2f}s for topic: {topic} (preprocess mode)")
@@ -158,15 +176,25 @@ class ChecklistAgent:
             # Generate analysis with retry logic
             analysis_json = self._generate_with_retry(full_prompt)
             
-            # Parse JSON response
+            # Parse JSON response with enhanced extraction
             try:
+                # Try direct parsing first
                 analysis = json.loads(analysis_json)
                 logger.info("Successfully analyzed example email characteristics")
                 return analysis
             except json.JSONDecodeError as e:
-                logger.warning(f"Failed to parse analysis JSON: {e}")
-                # Return fallback analysis
-                return self._create_fallback_analysis()
+                logger.warning(f"Direct JSON parsing failed: {e}")
+                # Try enhanced JSON extraction for objects
+                try:
+                    cleaned_json = self._extract_json_object_from_response(analysis_json)
+                    analysis = json.loads(cleaned_json)
+                    logger.info("Successfully extracted JSON object after cleaning")
+                    return analysis
+                except Exception as extract_error:
+                    logger.warning(f"Enhanced JSON extraction also failed: {extract_error}")
+                    logger.warning(f"Raw response (first 500 chars): {analysis_json[:500]}")
+                    # Only use fallback as last resort
+                    return self._create_fallback_analysis()
                 
         except Exception as e:
             logger.error(f"Error analyzing example email: {e}")
@@ -317,6 +345,67 @@ class ChecklistAgent:
         except Exception as e:
             logger.warning(f"Failed to fix malformed JSON: {e}")
             return json_str
+    
+    def _extract_json_object_from_response(self, response: str) -> str:
+        """Extract JSON object from response text (for analysis step)"""
+        try:
+            import re
+            
+            logger.debug(f"Extracting JSON object from response (length: {len(response)})")
+            
+            # Remove any explanatory text before JSON
+            response = response.strip()
+            
+            # Try to find JSON object pattern {...}
+            # Look for the first { and last } that create a valid JSON structure
+            json_pattern = r'\{.*\}'
+            matches = re.findall(json_pattern, response, re.DOTALL)
+            
+            if matches:
+                # Try each match to see if it's valid JSON
+                for match in matches:
+                    try:
+                        # Test if this is valid JSON
+                        json.loads(match)
+                        logger.debug("Found valid JSON object")
+                        return match
+                    except json.JSONDecodeError:
+                        continue
+                
+                # If no valid JSON found, try the longest match with cleaning
+                longest_match = max(matches, key=len)
+                logger.debug("Trying to clean longest JSON match")
+                
+                # Basic cleaning - remove extra text after the closing brace
+                last_brace = longest_match.rfind('}')
+                if last_brace != -1:
+                    cleaned = longest_match[:last_brace + 1]
+                    try:
+                        json.loads(cleaned)
+                        return cleaned
+                    except json.JSONDecodeError:
+                        pass
+            
+            # Try to extract between first { and last }
+            first_brace = response.find('{')
+            last_brace = response.rfind('}')
+            
+            if first_brace != -1 and last_brace != -1 and last_brace > first_brace:
+                potential_json = response[first_brace:last_brace + 1]
+                try:
+                    json.loads(potential_json)
+                    logger.debug("Extracted JSON between first and last braces")
+                    return potential_json
+                except json.JSONDecodeError:
+                    pass
+            
+            # If we get here, no valid JSON object found
+            logger.warning(f"No valid JSON object found in response: {response[:200]}...")
+            raise Exception("No valid JSON object found in response")
+            
+        except Exception as e:
+            logger.warning(f"Failed to extract JSON object from response: {e}")
+            raise Exception(f"Failed to extract valid JSON object: {e}")
     
     def _create_fallback_checklist(self, topic: str) -> list:
         """Create a simple fallback checklist in binary format"""
