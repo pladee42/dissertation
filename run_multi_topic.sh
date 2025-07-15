@@ -17,7 +17,7 @@ module load CUDA/12.4.0
 module load GCC/12.2.0
 
 # Activate conda environment
-source activate agent-env
+source activate dis-venv3
 
 # Set environment variables for better performance
 export PYTHONUNBUFFERED=1
