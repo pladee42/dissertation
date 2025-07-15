@@ -49,6 +49,7 @@ class OpenRouterBackend:
                 model: str,
                 max_tokens: int = 1000,
                 temperature: float = 0.7,
+                top_p: float = 1.0,
                 stop: Optional[list] = None,
                 json_schema: Optional[dict] = None,
                 guided_json: Optional[dict] = None) -> str:
@@ -60,6 +61,7 @@ class OpenRouterBackend:
             model: Model name (mapped to OpenRouter model ID)
             max_tokens: Maximum tokens to generate
             temperature: Sampling temperature
+            top_p: Top-p (nucleus) sampling parameter
             stop: Stop sequences
             json_schema: JSON schema (not used in OpenRouter)
             guided_json: Guided JSON (not used in OpenRouter)
@@ -82,6 +84,7 @@ class OpenRouterBackend:
                 ],
                 "max_tokens": max_tokens,
                 "temperature": temperature,
+                "top_p": top_p,
                 "stream": False
             }
             
@@ -89,7 +92,7 @@ class OpenRouterBackend:
             if stop:
                 payload["stop"] = stop
             
-            logger.info(f"OpenRouter request: model={model_id}, max_tokens={max_tokens}, temperature={temperature}")
+            logger.info(f"OpenRouter request: model={model_id}, max_tokens={max_tokens}, temperature={temperature}, top_p={top_p}")
             logger.debug(f"Full payload: {payload}")
             
             # Make API request
