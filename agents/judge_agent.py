@@ -304,23 +304,26 @@ class JudgeAgent:
                 # Generate using vLLM backend with model-specific adjustments
                 model_to_use = self.model_key or self.model_id
                 max_tokens = get_setting('judge_max_tokens', 6144)
-                temperature = get_setting('temperature', 0.7)
+                temperature = get_setting('judge_temperature', 0.1)
+                top_p = get_setting('judge_top_p', 0.6)
                 
-                # Adjust temperature for better JSON output with specific models
+                # Model-specific adjustments for temperature (ensure deterministic scoring)
                 if 'vicuna' in model_to_use.lower():
-                    temperature = 0.3  # Lower temperature for more focused output
+                    temperature = min(temperature, 0.1)  # Very low for consistent scoring
                 elif 'llama' in model_to_use.lower():
-                    temperature = 0.3  # Moderate temperature for Llama models to encourage generation
+                    temperature = min(temperature, 0.15)  # Slightly higher for Llama
                 elif 'gemini' in model_to_use.lower() or self.backend_type == 'openrouter':
-                    temperature = 0.1  # Very low temperature for consistent JSON from API models
+                    temperature = 0.05  # Extremely low for API models
+                    top_p = 0.5  # Very focused for API models
                 
-                logger.debug(f"Generating evaluation with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}")
+                logger.debug(f"Generating evaluation with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}, top_p: {top_p}")
                 
                 result = self.backend.generate(
                     prompt=prompt,
                     model=model_to_use,
                     max_tokens=max_tokens,
-                    temperature=temperature
+                    temperature=temperature,
+                    top_p=top_p
                 )
                 
                 logger.info(f"Raw result from backend: '{result}' (length: {len(result) if result else 0})")

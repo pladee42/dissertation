@@ -372,22 +372,26 @@ class ChecklistAgent:
                 # Use the prompt as-is from the template
                 json_prompt = prompt
                 
-                # Generate using vLLM backend with model-specific adjustments
+                # Generate using vLLM backend with agent-specific parameters
                 model_to_use = self.model_key or self.model_id
                 max_tokens = get_setting('checklist_max_tokens', 8192)
-                temperature = get_setting('temperature', 0.7)
+                temperature = get_setting('checklist_temperature', 0.2)
+                top_p = get_setting('checklist_top_p', 0.7)
                 
-                # Adjust temperature for better JSON output with Vicuna
+                # Model-specific adjustments for temperature
                 if 'vicuna' in model_to_use.lower():
-                    temperature = 0.3  # Lower temperature for more focused output
+                    temperature = min(temperature, 0.2)  # Very low for structured output
+                elif 'llama' in model_to_use.lower():
+                    temperature = min(temperature, 0.3)  # Low for JSON structure
                 
-                logger.debug(f"Generating checklist with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}")
+                logger.debug(f"Generating checklist with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}, top_p: {top_p}")
                 
                 result = self.backend.generate(
                     prompt=json_prompt,
                     model=model_to_use,
                     max_tokens=max_tokens,
-                    temperature=temperature
+                    temperature=temperature,
+                    top_p=top_p
                 )
                 
                 if result.strip():

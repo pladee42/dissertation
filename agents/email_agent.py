@@ -87,20 +87,24 @@ class EmailAgent:
         
         for attempt in range(self.max_retries):
             try:
-                # Generate using vLLM backend with model-specific adjustments
+                # Generate using vLLM backend with agent-specific parameters
                 model_to_use = self.model_key or self.model_id
                 max_tokens = get_setting('email_max_tokens', 2048)
-                temperature = get_setting('temperature', 0.7)
+                temperature = get_setting('email_temperature', 0.5)
+                top_p = get_setting('email_top_p', 0.85)
                 
-                # Adjust temperature for better output with Vicuna
+                # Model-specific adjustments for temperature
                 if 'vicuna' in model_to_use.lower():
-                    temperature = 0.7  # Keep normal temperature for email generation
+                    temperature = min(temperature, 0.4)  # Cap at 0.4 for Vicuna
+                elif 'llama' in model_to_use.lower():
+                    temperature = min(temperature, 0.6)  # Cap at 0.6 for Llama
                 
                 result = self.backend.generate(
                     prompt=prompt,
                     model=model_to_use,
                     max_tokens=max_tokens,
-                    temperature=temperature
+                    temperature=temperature,
+                    top_p=top_p
                 )
                 
                 if result.strip():
