@@ -34,9 +34,21 @@ def process_complete_results(results_file: str, config: Dict) -> List[Dict]:
         data = json.load(f)
     
     dpo_samples = []
+    total_topics = len(data.get('results', []))
     
-    for result in data.get('results', []):
+    print(f"Processing {total_topics} topics from {results_file}")
+    
+    for i, result in enumerate(data.get('results', [])):
         emails = result.get('emails', [])
+        print(f"Topic {i+1}/{total_topics}: Found {len(emails)} emails")
+        
+        # Debug: Check email structure
+        if emails:
+            sample_email = emails[0]
+            print(f"  Sample email keys: {list(sample_email.keys())}")
+            if 'evaluation' in sample_email:
+                eval_keys = list(sample_email['evaluation'].keys())
+                print(f"  Evaluation keys: {eval_keys}")
         
         # Filter emails by length
         filtered_emails = [
@@ -46,13 +58,16 @@ def process_complete_results(results_file: str, config: Dict) -> List[Dict]:
                 config['filtering']['max_email_length'])
         ]
         
+        print(f"  After length filtering: {len(filtered_emails)} emails")
+        
         if len(filtered_emails) < 2:
+            print(f"  Skipping: Need at least 2 emails for comparison")
             continue  # Need at least 2 emails for comparison
         
-        # Sort by weighted_score (highest first)
+        # Sort by weighted_score (highest first) - with fallback scoring
         sorted_emails = sorted(
             filtered_emails, 
-            key=lambda x: x.get('evaluation', {}).get('weighted_score', 0),
+            key=lambda x: get_email_score(x),
             reverse=True
         )
         
@@ -60,10 +75,13 @@ def process_complete_results(results_file: str, config: Dict) -> List[Dict]:
         worst_email = sorted_emails[-1]
         
         # Check minimum score difference
-        best_score = best_email.get('evaluation', {}).get('weighted_score', 0)
-        worst_score = worst_email.get('evaluation', {}).get('weighted_score', 0)
+        best_score = get_email_score(best_email)
+        worst_score = get_email_score(worst_email)
+        
+        print(f"  Best score: {best_score}, Worst score: {worst_score}")
         
         if best_score - worst_score < config['dataset']['min_score_difference']:
+            print(f"  Skipping: Score difference {best_score - worst_score} < {config['dataset']['min_score_difference']}")
             continue
         
         # Extract prompt from best email (they should be similar)
@@ -81,8 +99,33 @@ def process_complete_results(results_file: str, config: Dict) -> List[Dict]:
         }
         
         dpo_samples.append(dpo_sample)
+        print(f"  ✅ Created DPO sample for topic {i+1}")
     
+    print(f"\nTotal DPO samples created: {len(dpo_samples)}")
     return dpo_samples
+
+def get_email_score(email: Dict) -> float:
+    """Extract score from email with fallbacks"""
+    evaluation = email.get('evaluation', {})
+    
+    # Try weighted_score first
+    if 'weighted_score' in evaluation:
+        return evaluation['weighted_score']
+    
+    # Try final_score
+    if 'final_score' in evaluation:
+        return evaluation['final_score']
+    
+    # Calculate from checklist scores
+    if 'checklist_scores' in evaluation:
+        checklist_scores = evaluation['checklist_scores']
+        if checklist_scores:
+            # Calculate average confidence of 'yes' answers
+            yes_scores = [item['confidence'] for item in checklist_scores if item.get('result') == 'yes']
+            return sum(yes_scores) / len(checklist_scores) if checklist_scores else 0.0
+    
+    # Default fallback
+    return 0.0
 
 def save_dpo_dataset(samples: List[Dict], output_file: str, config: Dict):
     """Save DPO samples to JSONL format"""
@@ -92,6 +135,30 @@ def save_dpo_dataset(samples: List[Dict], output_file: str, config: Dict):
         samples = samples[:max_samples]
     
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
+    
+    # Handle empty samples case
+    if not samples:
+        print("WARNING: No valid DPO samples were generated!")
+        print("This could be due to:")
+        print("1. All emails being too short/long (check filtering criteria)")
+        print("2. Insufficient score differences between emails")
+        print("3. Data structure mismatch")
+        
+        # Create empty file
+        with open(output_file, 'w') as f:
+            pass
+        
+        # Save empty metadata
+        metadata_file = output_file.replace('.jsonl', '_metadata.json')
+        with open(metadata_file, 'w') as f:
+            metadata = {
+                'total_samples': 0,
+                'avg_score_difference': 0.0,
+                'warning': 'No valid samples generated',
+                'samples_with_metadata': []
+            }
+            json.dump(metadata, f, indent=2)
+        return
     
     with open(output_file, 'w') as f:
         for sample in samples:
