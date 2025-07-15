@@ -75,8 +75,8 @@ dissertation/
 ## What the Script Does
 
 1. **Reads** `complete_results.json` from specified input folder
-2. **Extracts** email evaluation data with rankings
-3. **Creates** preference pairs (chosen vs rejected emails)
+2. **Uses existing ranks** to identify best/worst emails (rank 1 = best)
+3. **Creates** preference pairs (rank 1 as chosen, highest rank as rejected)
 4. **Outputs** JSONL format suitable for DPO training
 5. **Timestamps** output file automatically
 
@@ -85,13 +85,21 @@ dissertation/
 ### **Input Format (complete_results.json):**
 ```json
 {
-  "topic_id": "T0001",
-  "emails": [
+  "results": [
     {
-      "model": "tinyllama",
-      "content": "...",
-      "rank": 1,
-      "final_score": 8.5
+      "topic": {"name": "Children's Hospital Cancer Treatment Fund"},
+      "emails": [
+        {
+          "model_name": "tinyllama",
+          "email_content": "Dear supporters...",
+          "rank": 1
+        },
+        {
+          "model_name": "vicuna",
+          "email_content": "Hello...",
+          "rank": 2
+        }
+      ]
     }
   ]
 }
@@ -99,8 +107,8 @@ dissertation/
 
 ### **Output Format (dpo_data_TIMESTAMP.jsonl):**
 ```json
-{"prompt": "Generate email for: Children's Hospital...", "chosen": "Dear supporters...", "rejected": "Hi there..."}
-{"prompt": "Generate email for: Food Bank...", "chosen": "Dear friends...", "rejected": "Hello..."}
+{"prompt": "Generate a fundraising email for: Children's Hospital Cancer Treatment Fund", "chosen": "Dear supporters...", "rejected": "Hi there..."}
+{"prompt": "Generate a fundraising email for: Food Bank Community Outreach Initiative", "chosen": "Dear friends...", "rejected": "Hello..."}
 ```
 
 ## Resource Requirements
