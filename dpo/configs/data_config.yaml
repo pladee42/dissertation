@@ -1,10 +1,10 @@
 # Data preparation configuration
 dataset:
-  min_score_difference: 0.01  # Minimum difference between chosen/rejected (reduced for fallback data)
+  min_rank_difference: 1      # Minimum rank difference between chosen/rejected (1 = adjacent ranks)
   max_samples_per_topic: 50   # Limit samples per topic
   
 filtering:
-  min_email_length: 50        # Minimum email character length (reduced for fallback data)
+  min_email_length: 50        # Minimum email character length
   max_email_length: 2000      # Maximum email character length
   
 output:
