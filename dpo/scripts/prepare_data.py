@@ -16,17 +16,32 @@ def load_config(config_path: str) -> Dict:
     with open(config_path, 'r') as f:
         return yaml.safe_load(f)
 
-def extract_prompt_from_email(email_content: str) -> str:
-    """Extract clean prompt from email content"""
-    # Remove email headers and extract core topic
-    lines = email_content.split('\n')
-    # Look for subject line or first meaningful content
-    for line in lines:
-        if line.startswith('Subject:'):
-            return line.replace('Subject:', '').strip()
+def load_email_prompt_template() -> str:
+    """Load the real email agent prompt template"""
+    # Path relative to the dpo directory
+    email_prompt_path = "../config/prompts/email.md"
+    with open(email_prompt_path, 'r') as f:
+        return f.read()
+
+def load_example_email(example_number: str = "1") -> str:
+    """Load example email for the prompt"""
+    # Path relative to the dpo directory
+    example_path = f"../config/prompts/example_email/{example_number}.md"
+    try:
+        with open(example_path, 'r') as f:
+            return f.read()
+    except FileNotFoundError:
+        return "Example email not found"
+
+def create_real_email_prompt(topic: str, example_email: str) -> str:
+    """Create the actual prompt used by the email agent"""
+    template = load_email_prompt_template()
     
-    # Fallback: use first paragraph
-    return lines[0][:200] + "..." if len(lines[0]) > 200 else lines[0]
+    # Replace placeholders in the template
+    prompt = template.replace("[TOPIC]", topic)
+    prompt = prompt.replace("[EXAMPLE_EMAIL]", example_email)
+    
+    return prompt
 
 def process_complete_results(results_file: str, config: Dict) -> List[Dict]:
     """Process complete_results.json into DPO format using existing ranks"""
@@ -93,8 +108,10 @@ def process_complete_results(results_file: str, config: Dict) -> List[Dict]:
         else:
             topic_name = 'Unknown Topic'
         
-        # Create a proper prompt based on the topic
-        prompt = f"Generate a fundraising email for: {topic_name}"
+        # Create the real prompt used by the email agent
+        example_email_number = config['dataset'].get('example_email_number', "1")
+        example_email = load_example_email(example_email_number)
+        prompt = create_real_email_prompt(topic_name, example_email)
         
         dpo_sample = {
             'prompt': prompt,
