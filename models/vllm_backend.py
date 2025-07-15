@@ -162,6 +162,19 @@ class VLLMBackend:
                 ]
                 stop_tokens.extend(judgelm_stop_tokens)
             
+            # Add email-specific stop tokens to prevent repetition and over-generation
+            # Check if this is likely an email generation request based on prompt content
+            if any(keyword in prompt.lower() for keyword in ['email', 'subject:', 'dear', 'sincerely', 'best regards']):
+                email_stop_tokens = [
+                    "\n\nBest regards,", "\n\nSincerely,", "\n\nThank you,",
+                    "\n\nWarm regards,", "\n\nKind regards,", "\n\nYours truly,",
+                    "\n---\n", "\n\n---\n", "\n\n\n\n",  # Signature separators and excessive newlines
+                    "\nSubject:", "\n\nSubject:",  # Prevent starting new emails
+                    "\n\n[Your Name]", "\n[Your Name]",  # Template placeholders
+                    "\n\nEmail:", "\n\nEmail Generated"  # Meta content indicators
+                ]
+                stop_tokens.extend(email_stop_tokens)
+            
             # Create sampling parameters
             # Note: vLLM uses temperature to control sampling automatically
             # temperature=0.0 -> deterministic, temperature>0.0 -> sampling enabled
@@ -328,6 +341,19 @@ class VLLMBackend:
                     "```", "\n\n\n"  # Stop at code blocks or excessive newlines
                 ]
                 stop_tokens.extend(judgelm_stop_tokens)
+            
+            # Add email-specific stop tokens to prevent repetition and over-generation
+            # Check if this is likely an email generation request based on prompt content
+            if any(keyword in prompt.lower() for keyword in ['email', 'subject:', 'dear', 'sincerely', 'best regards']):
+                email_stop_tokens = [
+                    "\n\nBest regards,", "\n\nSincerely,", "\n\nThank you,",
+                    "\n\nWarm regards,", "\n\nKind regards,", "\n\nYours truly,",
+                    "\n---\n", "\n\n---\n", "\n\n\n\n",  # Signature separators and excessive newlines
+                    "\nSubject:", "\n\nSubject:",  # Prevent starting new emails
+                    "\n\n[Your Name]", "\n[Your Name]",  # Template placeholders
+                    "\n\nEmail:", "\n\nEmail Generated"  # Meta content indicators
+                ]
+                stop_tokens.extend(email_stop_tokens)
             
             # Create sampling parameters
             # Note: vLLM uses temperature to control sampling automatically

@@ -75,6 +75,14 @@ MODELS = {
         'recommended_for': ['email_generation', 'judge'],
         'size': 'api',
         'backend_type': 'openrouter'
+    },
+    'prometheus-14b': {
+        'uid': 'M0011',
+        'model_id': 'Unbabel/M-Prometheus-14B',
+        'recommended_for': ['judge'],
+        'size': 'large',
+        'quantization': 'auto',
+        'dtype': 'bfloat16'
     }
 }
 
@@ -96,7 +104,7 @@ SETTINGS = {
     # Task-specific token limits
     'checklist_max_tokens': 8192,
     'judge_max_tokens': 6144,
-    'email_max_tokens': 2048,
+    'email_max_tokens': 900,
     
     # Memory settings
     'memory_strategy': 'conservative',  # 'conservative' or 'performance'

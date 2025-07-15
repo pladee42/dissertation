@@ -16,7 +16,11 @@ First, analyze the user's topic to determine the email's primary goal.
     2.  Clearly and engagingly describe the announcement or event.
     3.  Invite the reader to participate or learn more.
 
-Finally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. Give me the full email only, without any introductory text or ending text.
+Finally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. 
+
+**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. Stop immediately after the bolded call to action.
+
+Give me the full email only, without any introductory text or ending text.
 
 ## User's Request:
 
