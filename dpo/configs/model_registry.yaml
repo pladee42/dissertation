@@ -1,0 +1,52 @@
+# Model Registry for DPO Training
+# Maps model keys to configurations and metadata
+
+models:
+  tinyllama:
+    name: "TinyLlama 1.1B"
+    config_file: "configs/models/tinyllama.yaml"
+    size: "1.1B"
+    memory_requirement: "low"
+    training_time: "fast"
+    
+  vicuna:
+    name: "Vicuna 7B"
+    config_file: "configs/models/vicuna.yaml"
+    size: "7B"
+    memory_requirement: "high"
+    training_time: "slow"
+    
+  phi3:
+    name: "Phi-3 Mini"
+    config_file: "configs/models/phi3.yaml"
+    size: "3.8B"
+    memory_requirement: "medium"
+    training_time: "medium"
+    
+  llama3:
+    name: "Llama-3 8B"
+    config_file: "configs/models/llama3.yaml"
+    size: "8B"
+    memory_requirement: "very_high"
+    training_time: "very_slow"
+    
+  stablelm:
+    name: "StableLM 1.6B"
+    config_file: "configs/models/stablelm.yaml"
+    size: "1.6B"
+    memory_requirement: "low"
+    training_time: "fast"
+
+# Model groups for batch processing
+groups:
+  small_models: ["tinyllama", "stablelm"]
+  medium_models: ["phi3", "vicuna"] 
+  large_models: ["llama3"]
+  all_models: ["tinyllama", "vicuna", "phi3", "llama3", "stablelm"]
+  
+# Training recommendations
+recommendations:
+  parallel_training:
+    small_models: "Can train 2-3 simultaneously"
+    medium_models: "Train 1 at a time"
+    large_models: "Requires full GPU resources"

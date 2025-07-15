@@ -1,0 +1,25 @@
+# StableLM-2-1.6B DPO training configuration
+model:
+  base_model: "stabilityai/stablelm-2-zephyr-1_6b"
+  use_quantization: false  # Small model, no quantization needed
+  quantization_config: "none"
+
+training:
+  learning_rate: 2e-5  # Higher LR for small model
+  num_epochs: 3
+  batch_size: 6  # Moderate batch size
+  gradient_accumulation_steps: 3
+  warmup_steps: 50
+  logging_steps: 10
+  save_steps: 250
+  eval_steps: 250
+
+lora:
+  r: 12
+  alpha: 24
+  dropout: 0.1
+  target_modules: ["q_proj", "v_proj", "k_proj", "o_proj"]
+
+dpo:
+  beta: 0.1
+  max_length: 768  # Medium length for 1.6B model

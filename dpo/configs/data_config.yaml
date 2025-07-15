@@ -1,0 +1,12 @@
+# Data preparation configuration
+dataset:
+  min_score_difference: 0.1  # Minimum difference between chosen/rejected
+  max_samples_per_topic: 50  # Limit samples per topic
+  
+filtering:
+  min_email_length: 100      # Minimum email character length
+  max_email_length: 2000     # Maximum email character length
+  
+output:
+  train_split: 0.8           # Training data ratio
+  val_split: 0.2             # Validation data ratio
