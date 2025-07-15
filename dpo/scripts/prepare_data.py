@@ -83,8 +83,15 @@ def process_complete_results(results_file: str, config: Dict) -> List[Dict]:
                 continue
         
         # Extract topic information for prompt
-        topic_info = result.get('topic', {})
-        topic_name = topic_info.get('name', 'Unknown Topic')
+        topic_info = result.get('topic', 'Unknown Topic')
+        
+        # topic_info is a string in this data format
+        if isinstance(topic_info, str):
+            topic_name = topic_info
+        elif isinstance(topic_info, dict):
+            topic_name = topic_info.get('name', 'Unknown Topic')
+        else:
+            topic_name = 'Unknown Topic'
         
         # Create a proper prompt based on the topic
         prompt = f"Generate a fundraising email for: {topic_name}"
