@@ -86,9 +86,9 @@ def setup_model_and_tokenizer(config: Dict, cache_dir: str = "../downloaded_mode
     
     # Setup LoRA
     lora_config = LoraConfig(
-        r=config['lora']['r'],
-        lora_alpha=config['lora']['alpha'],
-        lora_dropout=config['lora']['dropout'],
+        r=int(config['lora']['r']),
+        lora_alpha=int(config['lora']['alpha']),
+        lora_dropout=float(config['lora']['dropout']),
         target_modules=config['lora']['target_modules'],
         bias="none",
         task_type="CAUSAL_LM"
@@ -104,22 +104,24 @@ def create_dpo_trainer(model, tokenizer, train_dataset, val_dataset, config: Dic
     
     training_args = DPOConfig(
         output_dir=output_dir,
-        num_train_epochs=config['training']['num_epochs'],
-        per_device_train_batch_size=config['training']['batch_size'],
-        per_device_eval_batch_size=config['training']['batch_size'],
-        gradient_accumulation_steps=config['training']['gradient_accumulation_steps'],
-        learning_rate=config['training']['learning_rate'],
-        warmup_steps=config['training']['warmup_steps'],
-        logging_steps=config['training']['logging_steps'],
-        save_steps=config['training']['save_steps'],
-        eval_steps=config['training']['eval_steps'],
-        evaluation_strategy="steps",
+        num_train_epochs=int(config['training']['num_epochs']),
+        per_device_train_batch_size=int(config['training']['batch_size']),
+        per_device_eval_batch_size=int(config['training']['batch_size']),
+        gradient_accumulation_steps=int(config['training']['gradient_accumulation_steps']),
+        learning_rate=float(config['training']['learning_rate']),
+        warmup_steps=int(config['training']['warmup_steps']),
+        logging_steps=int(config['training']['logging_steps']),
+        save_steps=int(config['training']['save_steps']),
+        eval_steps=int(config['training']['eval_steps']),
+        eval_strategy="steps",
         save_strategy="steps",
         load_best_model_at_end=True,
-        report_to="wandb",
+        report_to=None,  # Disable wandb reporting to avoid setup issues
         run_name=f"dpo_training_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
         dataloader_pin_memory=False,
         remove_unused_columns=False,
+        beta=float(config['dpo']['beta']),
+        max_length=int(config['dpo']['max_length']),
     )
     
     trainer = DPOTrainer(
@@ -127,9 +129,7 @@ def create_dpo_trainer(model, tokenizer, train_dataset, val_dataset, config: Dic
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=val_dataset,
-        tokenizer=tokenizer,
-        beta=config['dpo']['beta'],
-        max_length=config['dpo']['max_length'],
+        processing_class=tokenizer,
     )
     
     return trainer
