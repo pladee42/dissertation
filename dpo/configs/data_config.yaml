@@ -3,6 +3,7 @@ dataset:
   min_rank_difference: 1      # Minimum rank difference between chosen/rejected (1 = adjacent ranks)
   max_samples_per_topic: 50   # Limit samples per topic
   example_email_number: "1"   # Which example email to use from config/prompts/example_email/
+  add_end_token: true         # Add <END_EMAIL> token to all email content for training consistency
   
 filtering:
   min_email_length: 50        # Minimum email character length

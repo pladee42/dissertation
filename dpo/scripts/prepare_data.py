@@ -43,6 +43,20 @@ def create_real_email_prompt(topic: str, example_email: str) -> str:
     
     return prompt
 
+def ensure_end_token(email_content: str) -> str:
+    """Ensure email content ends with <END_EMAIL> token"""
+    if not email_content:
+        return email_content
+    
+    # Remove any existing end token to avoid duplicates
+    email_content = email_content.replace('<END_EMAIL>', '').strip()
+    
+    # Add the end token
+    if email_content:
+        email_content = email_content + ' <END_EMAIL>'
+    
+    return email_content
+
 def process_complete_results(results_file: str, config: Dict) -> List[Dict]:
     """Process complete_results.json into DPO format using existing ranks"""
     with open(results_file, 'r') as f:
@@ -113,10 +127,19 @@ def process_complete_results(results_file: str, config: Dict) -> List[Dict]:
         example_email = load_example_email(example_email_number)
         prompt = create_real_email_prompt(topic_name, example_email)
         
+        # Process email content to ensure <END_EMAIL> token if configured
+        chosen_content = best_email.get('email_content', '')
+        rejected_content = worst_email.get('email_content', '')
+        
+        if config['dataset'].get('add_end_token', True):
+            chosen_content = ensure_end_token(chosen_content)
+            rejected_content = ensure_end_token(rejected_content)
+            print(f"  Added <END_EMAIL> tokens to chosen and rejected responses")
+        
         dpo_sample = {
             'prompt': prompt,
-            'chosen': best_email.get('email_content', ''),
-            'rejected': worst_email.get('email_content', ''),
+            'chosen': chosen_content,
+            'rejected': rejected_content,
             'chosen_rank': best_rank,
             'rejected_rank': worst_rank,
             'chosen_model': best_email.get('model_name', ''),
