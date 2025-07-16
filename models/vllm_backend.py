@@ -170,12 +170,9 @@ class VLLMBackend:
             # Check if this is likely an email generation request based on prompt content
             if any(keyword in prompt.lower() for keyword in ['email', 'subject:', 'dear', 'sincerely', 'best regards']):
                 email_stop_tokens = [
-                    "\n\nBest regards,", "\n\nSincerely,", "\n\nThank you,",
-                    "\n\nWarm regards,", "\n\nKind regards,", "\n\nYours truly,",
-                    "\n---\n", "\n\n---\n", "\n\n\n\n",  # Signature separators and excessive newlines
+                    "<END_EMAIL>",  # Primary email completion token
                     "\nSubject:", "\n\nSubject:",  # Prevent starting new emails
-                    "\n\n[Your Name]", "\n[Your Name]",  # Template placeholders
-                    "\n\nEmail:", "\n\nEmail Generated"  # Meta content indicators
+                    "\n\n\n\n"  # Prevent excessive newlines/whitespace
                 ]
                 stop_tokens.extend(email_stop_tokens)
             
@@ -357,12 +354,9 @@ class VLLMBackend:
             # Check if this is likely an email generation request based on prompt content
             if any(keyword in prompt.lower() for keyword in ['email', 'subject:', 'dear', 'sincerely', 'best regards']):
                 email_stop_tokens = [
-                    "\n\nBest regards,", "\n\nSincerely,", "\n\nThank you,",
-                    "\n\nWarm regards,", "\n\nKind regards,", "\n\nYours truly,",
-                    "\n---\n", "\n\n---\n", "\n\n\n\n",  # Signature separators and excessive newlines
+                    "<END_EMAIL>",  # Primary email completion token
                     "\nSubject:", "\n\nSubject:",  # Prevent starting new emails
-                    "\n\n[Your Name]", "\n[Your Name]",  # Template placeholders
-                    "\n\nEmail:", "\n\nEmail Generated"  # Meta content indicators
+                    "\n\n\n\n"  # Prevent excessive newlines/whitespace
                 ]
                 stop_tokens.extend(email_stop_tokens)
             
