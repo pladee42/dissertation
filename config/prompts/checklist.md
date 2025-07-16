@@ -15,7 +15,7 @@ First, carefully examine the example email included in the user query to identif
 Generate validation questions that are specific to the example email's characteristics rather than generic fundraising guidelines.
 
 # Task
-Analyze the `[USER_QUERY]` and the example email within it. Generate a JSON array of 10-12 binary questions organized into categories to evaluate how well a generated email matches the example's style and characteristics.
+Analyze the `[USER_QUERY]` and the example email within it. Generate a JSON array of 12-18 binary questions organized into categories to evaluate how well a generated email matches the example's style and characteristics.
 
 Each question object must contain:
 1.  `"question"`: A specific yes/no question based on the example email's characteristics.
@@ -29,6 +29,7 @@ Each question object must contain:
 **Style (3-4 questions)**: Tone matching, emotional appeal, language patterns from example
 **Structure (2-3 questions)**: Format, paragraph organization, opening/closing style matching example
 **Technical (2-3 questions)**: Length constraints, contact information, formatting requirements
+**General (3-4 questions)**: Universal email quality questions (free of false information, doesn't look like scam/spam, well-organized)
 
 # Validation Guidelines
 
@@ -50,6 +51,6 @@ Respond ONLY with a valid JSON array. No other text.
     {"question": "Does the email address the specific problem mentioned in the example (e.g., endangered species crisis)?", "best_ans": "yes", "priority": "high", "category": "content"},
     {"question": "Does the email use similar emotional language patterns as the example (e.g., 'urgent action needed', 'time is running out')?", "best_ans": "yes", "priority": "high", "category": "style"},
     {"question": "Does the email follow the same structural pattern as the example (problem statement, organization role, reader impact)?", "best_ans": "yes", "priority": "high", "category": "structure"},
-    {"question": "Is the email length approximately similar to the example (within 100 words)?", "best_ans": "yes", "priority": "medium", "category": "technical"}
+    {"question": "Is the email length approximately similar to the example (within 300 - 500 words)?", "best_ans": "yes", "priority": "medium", "category": "technical"}
 ]
 ```
