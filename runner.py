@@ -15,14 +15,14 @@ from dotenv import load_dotenv
 # Load environment variables from .env file
 load_dotenv()
 from models.orchestrator import ModelOrchestrator
-from config.config import MODELS_CONFIG, get_setting, MODELS, CHECKLIST_MODES
+from config.config import MODELS_CONFIG, get_setting, MODELS, CHECKLIST_MODES, list_models_by_size_group
 from models.vllm_backend import VLLMBackend
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 def get_models_by_size(size_categories):
-    """Get models by size categories (small, medium, large)"""
+    """Get models by size categories (small, medium, large) - legacy function"""
     if isinstance(size_categories, str):
         size_categories = [size_categories]
     
@@ -32,13 +32,37 @@ def get_models_by_size(size_categories):
             models.append(model_name)
     return models
 
+def get_models_by_generation_type(generation_type):
+    """Get models by generation type with DPO support"""
+    if generation_type == 'small':
+        return list_models_by_size_group('small')
+    elif generation_type == 'medium':
+        return get_models_by_size(['small', 'medium'])  # Legacy behavior
+    elif generation_type == 'large':
+        return list_models_by_size_group('large')
+    elif generation_type == 'all':
+        models = []
+        for size in ['small', 'medium', 'large']:
+            models.extend(list_models_by_size_group(size))
+        return models
+    elif generation_type == 'small-dpo':
+        return list_models_by_size_group('small-dpo')
+    elif generation_type == 'medium-dpo':
+        return list_models_by_size_group('medium-dpo')
+    elif generation_type == 'all-dpo':
+        return list_models_by_size_group('all-dpo')
+    elif generation_type == 'base-only':
+        return list_models_by_size_group('base-only')
+    else:
+        return []
+
 def main():
     parser = ArgumentParser(description="Multi-model email generation")
     parser.add_argument("--topic", type=str, 
                        default="Polar Bears Rescue by University of Sheffield")
     parser.add_argument("--email_generation", type=str, 
-                       choices=['small', 'medium', 'large', 'all'],
-                       help="Size category for email models (small, medium uses small+medium, large, all)")
+                       choices=['small', 'medium', 'large', 'all', 'small-dpo', 'medium-dpo', 'all-dpo', 'base-only'],
+                       help="Size category for email models (supports DPO: small-dpo, medium-dpo, all-dpo, base-only)")
     parser.add_argument("--email_models", nargs='+', 
                        default=["tinyllama-1.1b", "phi-3-mini"],
                        choices=list(MODELS_CONFIG.keys()),
@@ -59,18 +83,21 @@ def main():
     
     args = parser.parse_args()
     
-    # Handle email_generation mode
+    # Handle email_generation mode (including DPO support)
     if args.email_generation and not hasattr(args, 'email_models_specified'):
-        if args.email_generation == 'small':
-            args.email_models = get_models_by_size('small')
-        elif args.email_generation == 'medium':
-            args.email_models = get_models_by_size(['small', 'medium'])
-        elif args.email_generation == 'large':
-            args.email_models = get_models_by_size('large')
-        elif args.email_generation == 'all':
-            args.email_models = get_models_by_size(['small', 'medium', 'large'])
+        args.email_models = get_models_by_generation_type(args.email_generation)
+        
+        if not args.email_models:
+            logger.error(f"No models found for generation type: {args.email_generation}")
+            return
         
         logger.info(f"Email generation mode '{args.email_generation}' selected models: {args.email_models}")
+        
+        # Log DPO model info
+        from config.config import is_dpo_model, get_base_model_for_dpo
+        dpo_count = sum(1 for m in args.email_models if is_dpo_model(m))
+        if dpo_count > 0:
+            logger.info(f"Selected {dpo_count} DPO models and {len(args.email_models) - dpo_count} base models")
     
     # Check vLLM library availability
     backend = VLLMBackend()

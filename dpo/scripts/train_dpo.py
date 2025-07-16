@@ -197,20 +197,72 @@ def train_single_model(data_file: str, model_key: str, output_base_dir: str, res
     print("Starting training...")
     trainer.train(resume_from_checkpoint=resume_checkpoint)
     
-    # Save final model
-    print("Saving final model...")
+    # Get the trained model and merge with base
+    print("Merging LoRA with base model...")
+    from peft import PeftModel
+    import torch
+    
+    # Load base model for merging
+    base_model = AutoModelForCausalLM.from_pretrained(
+        config['model']['base_model'],
+        torch_dtype=torch.bfloat16,
+        device_map="auto",
+        trust_remote_code=True,
+        cache_dir=cache_dir
+    )
+    
+    # Get the trained PEFT model
+    trained_model = trainer.model
+    
+    # Merge and unload
+    merged_model = trained_model.merge_and_unload()
+    
+    # Save LoRA adapter (for backup)
+    print("Saving LoRA adapter...")
     trainer.save_model()
+    
+    # Save tokenizer
     tokenizer.save_pretrained(output_dir)
     
+    # Save merged model locally
+    merged_output_dir = os.path.join(output_dir, 'merged_model')
+    os.makedirs(merged_output_dir, exist_ok=True)
+    
+    print(f"Saving merged model to {merged_output_dir}...")
+    merged_model.save_pretrained(merged_output_dir)
+    tokenizer.save_pretrained(merged_output_dir)
+    
     # Save training config and model info
-    with open(os.path.join(output_dir, 'training_config.yaml'), 'w') as f:
-        yaml.dump(config, f)
+    training_info = {
+        'config': config,
+        'model_info': model_info,
+        'training_completed': datetime.now().isoformat(),
+        'output_dir': output_dir,
+        'merged_model_dir': merged_output_dir,
+        'base_model': config['model']['base_model'],
+        'model_key': model_key
+    }
     
-    with open(os.path.join(output_dir, 'model_info.yaml'), 'w') as f:
-        yaml.dump(model_info, f)
+    with open(os.path.join(output_dir, 'training_info.yaml'), 'w') as f:
+        yaml.dump(training_info, f)
     
-    print(f"Training completed! Model saved to {output_dir}")
-    return output_dir
+    # Cleanup training model from memory
+    del trained_model, base_model
+    torch.cuda.empty_cache()
+    
+    print(f"✅ Training completed!")
+    print(f"📁 LoRA adapter saved to: {output_dir}")
+    print(f"🔗 Merged model saved to: {merged_output_dir}")
+    print(f"📝 Training info saved to: {os.path.join(output_dir, 'training_info.yaml')}")
+    print(f"🚀 Ready for manual upload to HuggingFace!")
+    
+    return {
+        'merged_model_dir': merged_output_dir,
+        'lora_adapter_dir': output_dir,
+        'training_info': training_info,
+        'model_key': model_key,
+        'base_model': config['model']['base_model']
+    }
 
 def main():
     parser = argparse.ArgumentParser(description='Train DPO model(s) for email generation')
@@ -258,21 +310,28 @@ def main():
         trained_models = []
         for model_key in models_to_train:
             try:
-                output_dir = train_single_model(
+                result = train_single_model(
                     args.data_file, 
                     model_key, 
                     args.output_dir, 
                     args.resume_from_checkpoint,
                     args.cache_dir
                 )
-                trained_models.append((model_key, output_dir))
-                print(f"✅ {model_key} training completed: {output_dir}")
+                trained_models.append((model_key, result))
+                print(f"✅ {model_key} training completed")
             except Exception as e:
                 print(f"❌ {model_key} training failed: {e}")
         
         print(f"\n🎉 Multi-model training summary:")
-        for model_key, output_dir in trained_models:
-            print(f"  {model_key}: {output_dir}")
+        for model_key, result in trained_models:
+            print(f"  {model_key}:")
+            print(f"    Merged model: {result['merged_model_dir']}")
+            print(f"    LoRA adapter: {result['lora_adapter_dir']}")
+        
+        print(f"\n📝 Manual upload instructions:")
+        print(f"1. Navigate to each merged_model directory")
+        print(f"2. Use 'huggingface-cli upload' or web interface")
+        print(f"3. Update config with your HF model paths")
         
         return
     

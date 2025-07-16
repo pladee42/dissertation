@@ -83,6 +83,57 @@ MODELS = {
         'size': 'large',
         'quantization': 'auto',
         'dtype': 'bfloat16'
+    },
+    # DPO Fine-tuned Models
+    'tinyllama-1.1b-dpo': {
+        'uid': 'M0012',
+        'model_id': 'pladee42/tinyllama-1.1b-dpo',
+        'recommended_for': ['email_generation'],
+        'size': 'small',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16',
+        'base_model': 'tinyllama-1.1b',
+        'is_dpo': True
+    },
+    'vicuna-7b-dpo': {
+        'uid': 'M0013',
+        'model_id': 'pladee42/vicuna-7b-dpo',
+        'recommended_for': ['email_generation'],
+        'size': 'medium',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16',
+        'base_model': 'vicuna-7b',
+        'is_dpo': True
+    },
+    'phi-3-mini-dpo': {
+        'uid': 'M0014',
+        'model_id': 'pladee42/phi-3-mini-dpo',
+        'recommended_for': ['email_generation'],
+        'size': 'small',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16',
+        'base_model': 'phi-3-mini',
+        'is_dpo': True
+    },
+    'llama-3-8b-dpo': {
+        'uid': 'M0015',
+        'model_id': 'pladee42/llama-3-8b-dpo',
+        'recommended_for': ['email_generation'],
+        'size': 'medium',
+        'quantization': 'awq',
+        'dtype': 'float16',
+        'base_model': 'llama-3-8b',
+        'is_dpo': True
+    },
+    'stablelm-2-1.6b-dpo': {
+        'uid': 'M0016',
+        'model_id': 'pladee42/stablelm-2-1.6b-dpo',
+        'recommended_for': ['email_generation'],
+        'size': 'small',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16',
+        'base_model': 'stablelm-2-1.6b',
+        'is_dpo': True
     }
 }
 
@@ -187,13 +238,91 @@ def get_model_name_by_uid(uid: str) -> str:
             return model_name
     return ''
 
-def list_models_by_size(size: str) -> list:
+def list_models_by_size(size: str, include_dpo: bool = True) -> list:
     """Get list of model names by size category"""
     models = []
     for model_name, config in MODELS.items():
         if config.get('size') == size:
+            # Filter DPO models if requested
+            if not include_dpo and config.get('is_dpo', False):
+                continue
             models.append(model_name)
     return models
+
+def list_models_by_size_group(size_group: str) -> list:
+    """Get models by size group with DPO support"""
+    if size_group == 'small':
+        return list_models_by_size('small', include_dpo=True)
+    elif size_group == 'medium':
+        return list_models_by_size('medium', include_dpo=True)
+    elif size_group == 'large':
+        return list_models_by_size('large', include_dpo=True)
+    elif size_group == 'small-dpo':
+        return [m for m in list_models_by_size('small') if is_dpo_model(m)]
+    elif size_group == 'medium-dpo':
+        return [m for m in list_models_by_size('medium') if is_dpo_model(m)]
+    elif size_group == 'base-only':
+        models = []
+        for size in ['small', 'medium']:
+            models.extend([m for m in list_models_by_size(size) if not is_dpo_model(m)])
+        return models
+    elif size_group == 'all-dpo':
+        return list_dpo_models()
+    else:
+        return []
+
+def list_dpo_models() -> list:
+    """Get list of DPO model names"""
+    dpo_models = []
+    for model_name, config in MODELS.items():
+        if config.get('is_dpo', False):
+            dpo_models.append(model_name)
+    return dpo_models
+
+def get_base_model_for_dpo(dpo_model_name: str) -> str:
+    """Get base model name for a DPO model"""
+    config = get_model_config(dpo_model_name)
+    return config.get('base_model', '')
+
+def is_dpo_model(model_name: str) -> bool:
+    """Check if a model is a DPO fine-tuned model"""
+    config = get_model_config(model_name)
+    return config.get('is_dpo', False)
+
+def get_model_pairs() -> list:
+    """Get list of (base_model, dpo_model) pairs for comparison"""
+    pairs = []
+    dpo_models = list_dpo_models()
+    
+    for dpo_model in dpo_models:
+        base_model = get_base_model_for_dpo(dpo_model)
+        if base_model and base_model in MODELS:
+            pairs.append((base_model, dpo_model))
+    
+    return pairs
+
+def list_available_comparisons() -> dict:
+    """List all available base vs DPO comparisons"""
+    pairs = get_model_pairs()
+    comparisons = {}
+    
+    for base_model, dpo_model in pairs:
+        base_config = get_model_config(base_model)
+        dpo_config = get_model_config(dpo_model)
+        
+        comparisons[f"{base_model}_vs_{dpo_model}"] = {
+            'base': base_model,
+            'dpo': dpo_model,
+            'size': base_config.get('size', 'unknown'),
+            'base_uid': base_config.get('uid', ''),
+            'dpo_uid': dpo_config.get('uid', '')
+        }
+    
+    return comparisons
+
+def get_comparison_command(base_model: str, dpo_model: str) -> str:
+    """Generate runner command for comparing base and DPO models"""
+    return f"python -m runner --email_models {base_model} {dpo_model}"
 
 # Legacy compatibility (for existing imports)
 MODELS_CONFIG = MODELS
