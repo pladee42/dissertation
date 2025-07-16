@@ -50,6 +50,7 @@ class OpenRouterBackend:
                 max_tokens: int = 1000,
                 temperature: float = 0.7,
                 top_p: float = 1.0,
+                repetition_penalty: float = 1.0,
                 stop: Optional[list] = None,
                 json_schema: Optional[dict] = None,
                 guided_json: Optional[dict] = None) -> str:
@@ -91,6 +92,10 @@ class OpenRouterBackend:
             # Add stop sequences if provided
             if stop:
                 payload["stop"] = stop
+            
+            # Add repetition penalty if specified (only when not 1.0)
+            if repetition_penalty != 1.0:
+                payload["repetition_penalty"] = repetition_penalty
             
             logger.info(f"OpenRouter request: model={model_id}, max_tokens={max_tokens}, temperature={temperature}, top_p={top_p}")
             logger.debug(f"Full payload: {payload}")
@@ -145,7 +150,9 @@ class OpenRouterBackend:
             'deepseek-r1': 'deepseek/deepseek-r1-0528',
             'deepseek/deepseek-r1-0528': 'deepseek/deepseek-r1-0528',
             'gpt-4.1-nano': 'openai/gpt-4.1-nano-2025-04-14',
-            'openai/gpt-4.1-nano-2025-04-14': 'openai/gpt-4.1-nano-2025-04-14'
+            'openai/gpt-4.1-nano-2025-04-14': 'openai/gpt-4.1-nano-2025-04-14',
+            'o3-mini-high': 'openai/o3-mini-high',
+            'openai/o3-mini-high': 'openai/o3-mini-high'
         }
         
         return model_mapping.get(model, model)

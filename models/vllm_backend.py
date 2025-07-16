@@ -100,6 +100,7 @@ class VLLMBackend:
                 max_tokens: int = 1000,
                 temperature: float = 0.7,
                 top_p: float = 1.0,
+                repetition_penalty: float = 1.0,
                 stop: Optional[list] = None,
                 json_schema: Optional[dict] = None,
                 guided_json: Optional[dict] = None) -> str:
@@ -112,6 +113,7 @@ class VLLMBackend:
             max_tokens: Maximum tokens to generate
             temperature: Sampling temperature
             top_p: Top-p sampling parameter
+            repetition_penalty: Repetition penalty to reduce repetitive generation
             stop: Stop sequences
             json_schema: JSON schema for guided decoding
             guided_json: Guided JSON schema for structured output
@@ -189,6 +191,10 @@ class VLLMBackend:
             # Only add top_p when sampling (temperature > 0)
             if temperature > 0:
                 sampling_params_dict['top_p'] = top_p
+            
+            # Add repetition penalty if specified (only when not 1.0)
+            if repetition_penalty != 1.0:
+                sampling_params_dict['repetition_penalty'] = repetition_penalty
             
             sampling_params = SamplingParams(**sampling_params_dict)
             
@@ -286,6 +292,7 @@ class VLLMBackend:
                       max_tokens: int = 1000,
                       temperature: float = 0.7,
                       top_p: float = 1.0,
+                      repetition_penalty: float = 1.0,
                       stop: Optional[list] = None) -> List[str]:
         """
         Generate text for multiple prompts in batch
@@ -371,6 +378,10 @@ class VLLMBackend:
             # Only add top_p when sampling (temperature > 0)
             if temperature > 0:
                 sampling_params_dict['top_p'] = top_p
+            
+            # Add repetition penalty if specified (only when not 1.0)
+            if repetition_penalty != 1.0:
+                sampling_params_dict['repetition_penalty'] = repetition_penalty
             
             sampling_params = SamplingParams(**sampling_params_dict)
             

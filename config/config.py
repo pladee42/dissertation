@@ -55,13 +55,6 @@ MODELS = {
         'quantization': 'awq',
         'dtype': 'float16'
     },
-    'gemini-2.5-flash': {
-        'uid': 'M0008',
-        'model_id': 'google/gemini-2.5-flash-lite-preview-06-17',
-        'recommended_for': ['judge'],
-        'size': 'api',
-        'backend_type': 'openrouter'
-    },
     'deepseek-r1': {
         'uid': 'M0009',
         'model_id': 'deepseek/deepseek-r1-0528',
@@ -76,13 +69,12 @@ MODELS = {
         'size': 'api',
         'backend_type': 'openrouter'
     },
-    'prometheus-14b': {
+    'o3-mini-high': {
         'uid': 'M0011',
-        'model_id': 'Unbabel/M-Prometheus-14B',
+        'model_id': 'openai/o3-mini-high',
         'recommended_for': ['judge'],
-        'size': 'large',
-        'quantization': 'auto',
-        'dtype': 'bfloat16'
+        'size': 'api',
+        'backend_type': 'openrouter'
     },
     # DPO Fine-tuned Models
     'tinyllama-1.1b-dpo': {
