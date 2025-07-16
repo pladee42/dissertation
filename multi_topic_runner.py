@@ -106,7 +106,7 @@ def main():
                        default="deepseek-r1",
                        choices=list(MODELS_CONFIG.keys()))
     parser.add_argument("--judge_model", type=str, 
-                       default="o3-mini-high",
+                       default="o3-mini",
                        choices=list(MODELS_CONFIG.keys()))
     parser.add_argument("--checklist_mode", type=str,
                        default="preprocess",

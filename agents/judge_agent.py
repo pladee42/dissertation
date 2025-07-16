@@ -74,7 +74,7 @@ class JudgeAgent:
             
             formatted_template = self.template_manager.format_template(
                 judge_template,
-                email_content=email_content[:1000],  # Truncate for brevity
+                model_output=email_content[:1000],  # Truncate for brevity
                 checklist=json.dumps(checklist_for_template, indent=2)
             )
             
@@ -312,9 +312,6 @@ class JudgeAgent:
                     temperature = min(temperature, 0.1)  # Very low for consistent scoring
                 elif 'llama' in model_to_use.lower():
                     temperature = min(temperature, 0.15)  # Slightly higher for Llama
-                elif 'gemini' in model_to_use.lower() or self.backend_type == 'openrouter':
-                    temperature = 0.05  # Extremely low for API models
-                    top_p = 0.5  # Very focused for API models
                 
                 logger.debug(f"Generating evaluation with model: {model_to_use}, max_tokens: {max_tokens}, temperature: {temperature}, top_p: {top_p}")
                 

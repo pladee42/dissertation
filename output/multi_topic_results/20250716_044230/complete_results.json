@@ -1,0 +1,1662 @@
+{
+  "success": true,
+  "total_topics": 1,
+  "successful_topics": 1,
+  "failed_topics": 0,
+  "total_time": 251.29243874549866,
+  "results": [
+    {
+      "emails": [
+        {
+          "model_name": "llama-3-8b",
+          "model_id": "casperhansen/llama-3-8b-instruct-awq",
+          "email_content": "(Note: Please provide the full email without any introductory text or ending text.)  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n",
+          "generation_time": 182.00601053237915,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email contain emotional language such as 'urgent', 'concerned', or 'passionate'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Is the communication style persuasive and direct as identified in the analysis?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the tone of the email reflect a semi-formal style with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email have approximately 200-400 words?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email contain exactly 3 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the opening of the email introduce the issue with a compelling statement?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email include a clear call-to-action and polite closing as identified?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email highlight the threat to polar bears and emphasize urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email advocate for legislative support through the Polar Bear Cub Survival Act?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Does the email include key phrases such as 'urgent action needed', 'protect our polar bears', or 'support the legislation now'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Is the language accessible and free of jargon, aimed at a general audience?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the sentence structure include a mix of concise impactful sentences and detailed explanations?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively uses emotional language, a persuasive and direct style, and a semi-formal tone with emotional appeal. It opens with a compelling statement, includes a clear call-to-action and polite closing, highlights the threat to polar bears with urgency, advocates for the Polar Bear Cub Survival Act, and incorporates key phrases. The language is accessible, and the sentence structure is varied.",
+            "weaknesses": "The email is not within the specified word count range of 200-400 words.",
+            "consistency_confidence": 1.0,
+            "average_response_time": 1.786786635716756,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9210526315789473,
+            "priority_breakdown": {
+              "very high": 2,
+              "high": 7,
+              "medium": 2,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 5.360922813415527,
+            "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+          },
+          "overall_score": 0.9210526315789473,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9210526315789473": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "stablelm-2-1.6b",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 1
+          },
+          "rank": 1
+        },
+        {
+          "model_name": "vicuna-7b",
+          "model_id": "lmsys/vicuna-7b-v1.5",
+          "email_content": "Subject: Regarding Call to Support the Polar Bear Cub Survival Act\n\nDear Recipient,\n\nI hope this email finds you well. I am writing to discuss Call to Support the Polar Bear Cub Survival Act.\n\nThis email was generated using a fallback mechanism as the primary backend was unavailable. In a production environment, this would be replaced with actual LLM-generated content.\n\nKey points regarding Call to Support the Polar Bear Cub Survival Act:\n- Important discussion topic\n- Requires immediate attention\n- Please review and respond\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n\n---\nGenerated by EmailAgent (Fallback Mode)",
+          "generation_time": 103.85977482795715,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email contain emotional language such as 'urgent', 'concerned', or 'passionate'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Is the communication style persuasive and direct as identified in the analysis?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the tone of the email reflect a semi-formal style with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email have approximately 200-400 words?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email contain exactly 3 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the opening of the email introduce the issue with a compelling statement?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email include a clear call-to-action and polite closing as identified?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email highlight the threat to polar bears and emphasize urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email advocate for legislative support through the Polar Bear Cub Survival Act?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Does the email include key phrases such as 'urgent action needed', 'protect our polar bears', or 'support the legislation now'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Is the language accessible and free of jargon, aimed at a general audience?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the sentence structure include a mix of concise impactful sentences and detailed explanations?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively uses emotional language, a persuasive and direct style, and a semi-formal tone with emotional appeal. It opens with a compelling statement, includes a clear call-to-action and polite closing, highlights the threat to polar bears with urgency, advocates for the Polar Bear Cub Survival Act, and incorporates key phrases. The language is accessible, and the sentence structure is varied.",
+            "weaknesses": "The email does not meet the specified word count of approximately 200-400 words.",
+            "consistency_confidence": 1.0,
+            "average_response_time": 1.8034828503926594,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9210526315789473,
+            "priority_breakdown": {
+              "very high": 2,
+              "high": 7,
+              "medium": 2,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 5.411012649536133,
+            "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+          },
+          "overall_score": 0.9210526315789473,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9210526315789473": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "stablelm-2-1.6b",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 1
+          },
+          "rank": 2
+        },
+        {
+          "model_name": "phi-3-mini",
+          "model_id": "microsoft/Phi-3-mini-4k-instruct",
+          "email_content": "Subject: Regarding Call to Support the Polar Bear Cub Survival Act\n\nDear Recipient,\n\nI hope this email finds you well. I am writing to discuss Call to Support the Polar Bear Cub Survival Act.\n\nThis email was generated using a fallback mechanism as the primary backend was unavailable. In a production environment, this would be replaced with actual LLM-generated content.\n\nKey points regarding Call to Support the Polar Bear Cub Survival Act:\n- Important discussion topic\n- Requires immediate attention\n- Please review and respond\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n\n---\nGenerated by EmailAgent (Fallback Mode)",
+          "generation_time": 139.4055187702179,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email contain emotional language such as 'urgent', 'concerned', or 'passionate'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Is the communication style persuasive and direct as identified in the analysis?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the tone of the email reflect a semi-formal style with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email have approximately 200-400 words?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email contain exactly 3 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the opening of the email introduce the issue with a compelling statement?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email include a clear call-to-action and polite closing as identified?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email highlight the threat to polar bears and emphasize urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email advocate for legislative support through the Polar Bear Cub Survival Act?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Does the email include key phrases such as 'urgent action needed', 'protect our polar bears', or 'support the legislation now'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Is the language accessible and free of jargon, aimed at a general audience?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the sentence structure include a mix of concise impactful sentences and detailed explanations?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively uses emotional language, a persuasive and direct style, and a semi-formal tone with emotional appeal. It also features a compelling opening, a clear call-to-action with a polite closing, highlights the threat to polar bears with urgency, advocates for the Polar Bear Cub Survival Act, and incorporates key phrases. The language is accessible, and the sentence structure is varied.",
+            "weaknesses": "The email does not meet the specified word count of approximately 200-400 words.",
+            "consistency_confidence": 1.0,
+            "average_response_time": 1.819757064183553,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9210526315789473,
+            "priority_breakdown": {
+              "very high": 2,
+              "high": 7,
+              "medium": 2,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 5.459815263748169,
+            "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+          },
+          "overall_score": 0.9210526315789473,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9210526315789473": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "stablelm-2-1.6b",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 1
+          },
+          "rank": 3
+        },
+        {
+          "model_name": "stablelm-2-1.6b",
+          "model_id": "stabilityai/stablelm-2-1_6b-chat",
+          "email_content": "[YOUR_EMAIL]\n",
+          "generation_time": 212.43200087547302,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email contain emotional language such as 'urgent', 'concerned', or 'passionate'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Is the communication style persuasive and direct as identified in the analysis?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the tone of the email reflect a semi-formal style with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email have approximately 200-400 words?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email contain exactly 3 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the opening of the email introduce the issue with a compelling statement?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email include a clear call-to-action and polite closing as identified?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email highlight the threat to polar bears and emphasize urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email advocate for legislative support through the Polar Bear Cub Survival Act?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Does the email include key phrases such as 'urgent action needed', 'protect our polar bears', or 'support the legislation now'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Is the language accessible and free of jargon, aimed at a general audience?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the sentence structure include a mix of concise impactful sentences and detailed explanations?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively uses emotional language, a persuasive and direct style, and a semi-formal tone with emotional appeal. It opens with a compelling statement, includes a clear call-to-action and polite closing, highlights the threat to polar bears with urgency, advocates for the Polar Bear Cub Survival Act, and incorporates key phrases. The language is accessible, and the sentence structure is varied.",
+            "weaknesses": "The email is not within the specified word count range of 200-400 words.",
+            "consistency_confidence": 1.0,
+            "average_response_time": 2.07592781384786,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9210526315789473,
+            "priority_breakdown": {
+              "very high": 2,
+              "high": 7,
+              "medium": 2,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 6.22832727432251,
+            "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+          },
+          "overall_score": 0.9210526315789473,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9210526315789473": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "stablelm-2-1.6b",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 1
+          },
+          "rank": 4
+        },
+        {
+          "model_name": "tinyllama-1.1b",
+          "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+          "email_content": "[USER_EMAIL]\n",
+          "generation_time": 46.85771322250366,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email contain emotional language such as 'urgent', 'concerned', or 'passionate'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Is the communication style persuasive and direct as identified in the analysis?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the tone of the email reflect a semi-formal style with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email have approximately 200-400 words?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email contain exactly 3 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the opening of the email introduce the issue with a compelling statement?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email include a clear call-to-action and polite closing as identified?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email highlight the threat to polar bears and emphasize urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email advocate for legislative support through the Polar Bear Cub Survival Act?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Does the email include key phrases such as 'urgent action needed', 'protect our polar bears', or 'support the legislation now'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Is the language accessible and free of jargon, aimed at a general audience?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the sentence structure include a mix of concise impactful sentences and detailed explanations?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively uses emotional language, a persuasive and direct style, and a semi-formal tone with emotional appeal. It also features a compelling opening, a clear call-to-action with a polite closing, highlights the threat to polar bears with urgency, advocates for the Polar Bear Cub Survival Act, and incorporates key phrases. The language is accessible, and the sentence structure is varied.",
+            "weaknesses": "The email does not meet the specified word count of approximately 200-400 words.",
+            "consistency_confidence": 1.0,
+            "average_response_time": 2.22774076461792,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9210526315789473,
+            "priority_breakdown": {
+              "very high": 2,
+              "high": 7,
+              "medium": 2,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 6.6838109493255615,
+            "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+          },
+          "overall_score": 0.9210526315789473,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9210526315789473": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "stablelm-2-1.6b",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 1
+          },
+          "rank": 5
+        }
+      ],
+      "checklist": {
+        "checklist": [
+          {
+            "question": "Does the email contain emotional language such as 'urgent', 'concerned', or 'passionate'?",
+            "best_ans": "yes",
+            "priority": "very high",
+            "category": "style"
+          },
+          {
+            "question": "Is the communication style persuasive and direct as identified in the analysis?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "style"
+          },
+          {
+            "question": "Does the tone of the email reflect a semi-formal style with emotional appeal?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "style"
+          },
+          {
+            "question": "Does the email have approximately 200-400 words?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "structure"
+          },
+          {
+            "question": "Does the email contain exactly 3 paragraphs?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "structure"
+          },
+          {
+            "question": "Does the opening of the email introduce the issue with a compelling statement?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "structure"
+          },
+          {
+            "question": "Does the email include a clear call-to-action and polite closing as identified?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "structure"
+          },
+          {
+            "question": "Does the email highlight the threat to polar bears and emphasize urgency?",
+            "best_ans": "yes",
+            "priority": "very high",
+            "category": "content"
+          },
+          {
+            "question": "Does the email advocate for legislative support through the Polar Bear Cub Survival Act?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "content"
+          },
+          {
+            "question": "Does the email include key phrases such as 'urgent action needed', 'protect our polar bears', or 'support the legislation now'?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "content"
+          },
+          {
+            "question": "Is the language accessible and free of jargon, aimed at a general audience?",
+            "best_ans": "yes",
+            "priority": "medium",
+            "category": "technical"
+          },
+          {
+            "question": "Does the sentence structure include a mix of concise impactful sentences and detailed explanations?",
+            "best_ans": "yes",
+            "priority": "medium",
+            "category": "technical"
+          }
+        ],
+        "model_name": "gpt-4.1-nano",
+        "generation_time": 7.996106147766113,
+        "success": true
+      },
+      "best_email": {
+        "model_name": "llama-3-8b",
+        "model_id": "casperhansen/llama-3-8b-instruct-awq",
+        "email_content": "(Note: Please provide the full email without any introductory text or ending text.)  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n",
+        "generation_time": 182.00601053237915,
+        "success": true,
+        "evaluation": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email contain emotional language such as 'urgent', 'concerned', or 'passionate'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the communication style persuasive and direct as identified in the analysis?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the tone of the email reflect a semi-formal style with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email have approximately 200-400 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email contain exactly 3 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the opening of the email introduce the issue with a compelling statement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include a clear call-to-action and polite closing as identified?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email highlight the threat to polar bears and emphasize urgency?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email advocate for legislative support through the Polar Bear Cub Survival Act?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases such as 'urgent action needed', 'protect our polar bears', or 'support the legislation now'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the language accessible and free of jargon, aimed at a general audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the sentence structure include a mix of concise impactful sentences and detailed explanations?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively uses emotional language, a persuasive and direct style, and a semi-formal tone with emotional appeal. It opens with a compelling statement, includes a clear call-to-action and polite closing, highlights the threat to polar bears with urgency, advocates for the Polar Bear Cub Survival Act, and incorporates key phrases. The language is accessible, and the sentence structure is varied.",
+          "weaknesses": "The email is not within the specified word count range of 200-400 words.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 1.786786635716756,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.9210526315789473,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 7,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 5.360922813415527,
+          "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+        },
+        "overall_score": 0.9210526315789473,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b",
+            "vicuna-7b",
+            "phi-3-mini",
+            "stablelm-2-1.6b",
+            "tinyllama-1.1b"
+          ],
+          "tied_groups": {
+            "0.9210526315789473": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "tinyllama-1.1b"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 1
+        },
+        "rank": 1
+      },
+      "topic": "Call to Support the Polar Bear Cub Survival Act",
+      "total_time": 251.07275366783142,
+      "success": true,
+      "topic_uid": "T0001",
+      "topic_name": "Call to Support the Polar Bear Cub Survival Act",
+      "processing_time": 251.07710886001587
+    }
+  ],
+  "successful_results": [
+    {
+      "emails": [
+        {
+          "model_name": "llama-3-8b",
+          "model_id": "casperhansen/llama-3-8b-instruct-awq",
+          "email_content": "(Note: Please provide the full email without any introductory text or ending text.)  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n",
+          "generation_time": 182.00601053237915,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email contain emotional language such as 'urgent', 'concerned', or 'passionate'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Is the communication style persuasive and direct as identified in the analysis?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the tone of the email reflect a semi-formal style with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email have approximately 200-400 words?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email contain exactly 3 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the opening of the email introduce the issue with a compelling statement?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email include a clear call-to-action and polite closing as identified?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email highlight the threat to polar bears and emphasize urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email advocate for legislative support through the Polar Bear Cub Survival Act?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Does the email include key phrases such as 'urgent action needed', 'protect our polar bears', or 'support the legislation now'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Is the language accessible and free of jargon, aimed at a general audience?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the sentence structure include a mix of concise impactful sentences and detailed explanations?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively uses emotional language, a persuasive and direct style, and a semi-formal tone with emotional appeal. It opens with a compelling statement, includes a clear call-to-action and polite closing, highlights the threat to polar bears with urgency, advocates for the Polar Bear Cub Survival Act, and incorporates key phrases. The language is accessible, and the sentence structure is varied.",
+            "weaknesses": "The email is not within the specified word count range of 200-400 words.",
+            "consistency_confidence": 1.0,
+            "average_response_time": 1.786786635716756,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9210526315789473,
+            "priority_breakdown": {
+              "very high": 2,
+              "high": 7,
+              "medium": 2,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 5.360922813415527,
+            "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+          },
+          "overall_score": 0.9210526315789473,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9210526315789473": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "stablelm-2-1.6b",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 1
+          },
+          "rank": 1
+        },
+        {
+          "model_name": "vicuna-7b",
+          "model_id": "lmsys/vicuna-7b-v1.5",
+          "email_content": "Subject: Regarding Call to Support the Polar Bear Cub Survival Act\n\nDear Recipient,\n\nI hope this email finds you well. I am writing to discuss Call to Support the Polar Bear Cub Survival Act.\n\nThis email was generated using a fallback mechanism as the primary backend was unavailable. In a production environment, this would be replaced with actual LLM-generated content.\n\nKey points regarding Call to Support the Polar Bear Cub Survival Act:\n- Important discussion topic\n- Requires immediate attention\n- Please review and respond\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n\n---\nGenerated by EmailAgent (Fallback Mode)",
+          "generation_time": 103.85977482795715,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email contain emotional language such as 'urgent', 'concerned', or 'passionate'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Is the communication style persuasive and direct as identified in the analysis?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the tone of the email reflect a semi-formal style with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email have approximately 200-400 words?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email contain exactly 3 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the opening of the email introduce the issue with a compelling statement?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email include a clear call-to-action and polite closing as identified?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email highlight the threat to polar bears and emphasize urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email advocate for legislative support through the Polar Bear Cub Survival Act?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Does the email include key phrases such as 'urgent action needed', 'protect our polar bears', or 'support the legislation now'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Is the language accessible and free of jargon, aimed at a general audience?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the sentence structure include a mix of concise impactful sentences and detailed explanations?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively uses emotional language, a persuasive and direct style, and a semi-formal tone with emotional appeal. It opens with a compelling statement, includes a clear call-to-action and polite closing, highlights the threat to polar bears with urgency, advocates for the Polar Bear Cub Survival Act, and incorporates key phrases. The language is accessible, and the sentence structure is varied.",
+            "weaknesses": "The email does not meet the specified word count of approximately 200-400 words.",
+            "consistency_confidence": 1.0,
+            "average_response_time": 1.8034828503926594,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9210526315789473,
+            "priority_breakdown": {
+              "very high": 2,
+              "high": 7,
+              "medium": 2,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 5.411012649536133,
+            "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+          },
+          "overall_score": 0.9210526315789473,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9210526315789473": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "stablelm-2-1.6b",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 1
+          },
+          "rank": 2
+        },
+        {
+          "model_name": "phi-3-mini",
+          "model_id": "microsoft/Phi-3-mini-4k-instruct",
+          "email_content": "Subject: Regarding Call to Support the Polar Bear Cub Survival Act\n\nDear Recipient,\n\nI hope this email finds you well. I am writing to discuss Call to Support the Polar Bear Cub Survival Act.\n\nThis email was generated using a fallback mechanism as the primary backend was unavailable. In a production environment, this would be replaced with actual LLM-generated content.\n\nKey points regarding Call to Support the Polar Bear Cub Survival Act:\n- Important discussion topic\n- Requires immediate attention\n- Please review and respond\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]\n\n---\nGenerated by EmailAgent (Fallback Mode)",
+          "generation_time": 139.4055187702179,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email contain emotional language such as 'urgent', 'concerned', or 'passionate'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Is the communication style persuasive and direct as identified in the analysis?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the tone of the email reflect a semi-formal style with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email have approximately 200-400 words?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email contain exactly 3 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the opening of the email introduce the issue with a compelling statement?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email include a clear call-to-action and polite closing as identified?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email highlight the threat to polar bears and emphasize urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email advocate for legislative support through the Polar Bear Cub Survival Act?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Does the email include key phrases such as 'urgent action needed', 'protect our polar bears', or 'support the legislation now'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Is the language accessible and free of jargon, aimed at a general audience?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the sentence structure include a mix of concise impactful sentences and detailed explanations?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively uses emotional language, a persuasive and direct style, and a semi-formal tone with emotional appeal. It also features a compelling opening, a clear call-to-action with a polite closing, highlights the threat to polar bears with urgency, advocates for the Polar Bear Cub Survival Act, and incorporates key phrases. The language is accessible, and the sentence structure is varied.",
+            "weaknesses": "The email does not meet the specified word count of approximately 200-400 words.",
+            "consistency_confidence": 1.0,
+            "average_response_time": 1.819757064183553,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9210526315789473,
+            "priority_breakdown": {
+              "very high": 2,
+              "high": 7,
+              "medium": 2,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 5.459815263748169,
+            "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+          },
+          "overall_score": 0.9210526315789473,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9210526315789473": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "stablelm-2-1.6b",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 1
+          },
+          "rank": 3
+        },
+        {
+          "model_name": "stablelm-2-1.6b",
+          "model_id": "stabilityai/stablelm-2-1_6b-chat",
+          "email_content": "[YOUR_EMAIL]\n",
+          "generation_time": 212.43200087547302,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email contain emotional language such as 'urgent', 'concerned', or 'passionate'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Is the communication style persuasive and direct as identified in the analysis?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the tone of the email reflect a semi-formal style with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email have approximately 200-400 words?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email contain exactly 3 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the opening of the email introduce the issue with a compelling statement?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email include a clear call-to-action and polite closing as identified?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email highlight the threat to polar bears and emphasize urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email advocate for legislative support through the Polar Bear Cub Survival Act?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Does the email include key phrases such as 'urgent action needed', 'protect our polar bears', or 'support the legislation now'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Is the language accessible and free of jargon, aimed at a general audience?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the sentence structure include a mix of concise impactful sentences and detailed explanations?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively uses emotional language, a persuasive and direct style, and a semi-formal tone with emotional appeal. It opens with a compelling statement, includes a clear call-to-action and polite closing, highlights the threat to polar bears with urgency, advocates for the Polar Bear Cub Survival Act, and incorporates key phrases. The language is accessible, and the sentence structure is varied.",
+            "weaknesses": "The email is not within the specified word count range of 200-400 words.",
+            "consistency_confidence": 1.0,
+            "average_response_time": 2.07592781384786,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9210526315789473,
+            "priority_breakdown": {
+              "very high": 2,
+              "high": 7,
+              "medium": 2,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 6.22832727432251,
+            "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+          },
+          "overall_score": 0.9210526315789473,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9210526315789473": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "stablelm-2-1.6b",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 1
+          },
+          "rank": 4
+        },
+        {
+          "model_name": "tinyllama-1.1b",
+          "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+          "email_content": "[USER_EMAIL]\n",
+          "generation_time": 46.85771322250366,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email contain emotional language such as 'urgent', 'concerned', or 'passionate'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Is the communication style persuasive and direct as identified in the analysis?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the tone of the email reflect a semi-formal style with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email have approximately 200-400 words?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email contain exactly 3 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the opening of the email introduce the issue with a compelling statement?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email include a clear call-to-action and polite closing as identified?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email highlight the threat to polar bears and emphasize urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email advocate for legislative support through the Polar Bear Cub Survival Act?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Does the email include key phrases such as 'urgent action needed', 'protect our polar bears', or 'support the legislation now'?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Is the language accessible and free of jargon, aimed at a general audience?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the sentence structure include a mix of concise impactful sentences and detailed explanations?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively uses emotional language, a persuasive and direct style, and a semi-formal tone with emotional appeal. It also features a compelling opening, a clear call-to-action with a polite closing, highlights the threat to polar bears with urgency, advocates for the Polar Bear Cub Survival Act, and incorporates key phrases. The language is accessible, and the sentence structure is varied.",
+            "weaknesses": "The email does not meet the specified word count of approximately 200-400 words.",
+            "consistency_confidence": 1.0,
+            "average_response_time": 2.22774076461792,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9210526315789473,
+            "priority_breakdown": {
+              "very high": 2,
+              "high": 7,
+              "medium": 2,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 6.6838109493255615,
+            "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+          },
+          "overall_score": 0.9210526315789473,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9210526315789473": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "stablelm-2-1.6b",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 1
+          },
+          "rank": 5
+        }
+      ],
+      "checklist": {
+        "checklist": [
+          {
+            "question": "Does the email contain emotional language such as 'urgent', 'concerned', or 'passionate'?",
+            "best_ans": "yes",
+            "priority": "very high",
+            "category": "style"
+          },
+          {
+            "question": "Is the communication style persuasive and direct as identified in the analysis?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "style"
+          },
+          {
+            "question": "Does the tone of the email reflect a semi-formal style with emotional appeal?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "style"
+          },
+          {
+            "question": "Does the email have approximately 200-400 words?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "structure"
+          },
+          {
+            "question": "Does the email contain exactly 3 paragraphs?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "structure"
+          },
+          {
+            "question": "Does the opening of the email introduce the issue with a compelling statement?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "structure"
+          },
+          {
+            "question": "Does the email include a clear call-to-action and polite closing as identified?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "structure"
+          },
+          {
+            "question": "Does the email highlight the threat to polar bears and emphasize urgency?",
+            "best_ans": "yes",
+            "priority": "very high",
+            "category": "content"
+          },
+          {
+            "question": "Does the email advocate for legislative support through the Polar Bear Cub Survival Act?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "content"
+          },
+          {
+            "question": "Does the email include key phrases such as 'urgent action needed', 'protect our polar bears', or 'support the legislation now'?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "content"
+          },
+          {
+            "question": "Is the language accessible and free of jargon, aimed at a general audience?",
+            "best_ans": "yes",
+            "priority": "medium",
+            "category": "technical"
+          },
+          {
+            "question": "Does the sentence structure include a mix of concise impactful sentences and detailed explanations?",
+            "best_ans": "yes",
+            "priority": "medium",
+            "category": "technical"
+          }
+        ],
+        "model_name": "gpt-4.1-nano",
+        "generation_time": 7.996106147766113,
+        "success": true
+      },
+      "best_email": {
+        "model_name": "llama-3-8b",
+        "model_id": "casperhansen/llama-3-8b-instruct-awq",
+        "email_content": "(Note: Please provide the full email without any introductory text or ending text.)  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |\n",
+        "generation_time": 182.00601053237915,
+        "success": true,
+        "evaluation": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email contain emotional language such as 'urgent', 'concerned', or 'passionate'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the communication style persuasive and direct as identified in the analysis?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the tone of the email reflect a semi-formal style with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email have approximately 200-400 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email contain exactly 3 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the opening of the email introduce the issue with a compelling statement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include a clear call-to-action and polite closing as identified?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email highlight the threat to polar bears and emphasize urgency?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email advocate for legislative support through the Polar Bear Cub Survival Act?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases such as 'urgent action needed', 'protect our polar bears', or 'support the legislation now'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the language accessible and free of jargon, aimed at a general audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the sentence structure include a mix of concise impactful sentences and detailed explanations?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively uses emotional language, a persuasive and direct style, and a semi-formal tone with emotional appeal. It opens with a compelling statement, includes a clear call-to-action and polite closing, highlights the threat to polar bears with urgency, advocates for the Polar Bear Cub Survival Act, and incorporates key phrases. The language is accessible, and the sentence structure is varied.",
+          "weaknesses": "The email is not within the specified word count range of 200-400 words.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 1.786786635716756,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.9210526315789473,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 7,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 5.360922813415527,
+          "evaluated_by": "gemini-2.5-flash-lite-preview-06-17"
+        },
+        "overall_score": 0.9210526315789473,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b",
+            "vicuna-7b",
+            "phi-3-mini",
+            "stablelm-2-1.6b",
+            "tinyllama-1.1b"
+          ],
+          "tied_groups": {
+            "0.9210526315789473": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "stablelm-2-1.6b",
+              "tinyllama-1.1b"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 1
+        },
+        "rank": 1
+      },
+      "topic": "Call to Support the Polar Bear Cub Survival Act",
+      "total_time": 251.07275366783142,
+      "success": true,
+      "topic_uid": "T0001",
+      "topic_name": "Call to Support the Polar Bear Cub Survival Act",
+      "processing_time": 251.07710886001587
+    }
+  ],
+  "failed_results": [],
+  "summary": {
+    "avg_processing_time": 251.07710886001587,
+    "total_emails_generated": 5,
+    "model_performance": {
+      "llama-3-8b": 0.9210526315789473
+    },
+    "best_overall_model": "llama-3-8b"
+  }
+}

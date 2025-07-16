@@ -166,23 +166,13 @@ class VLLMBackend:
                 ]
                 stop_tokens.extend(judgelm_stop_tokens)
             
-            # Add email-specific stop tokens to prevent repetition and over-generation
-            # Check if this is likely an email generation request based on prompt content
-            if any(keyword in prompt.lower() for keyword in ['email', 'subject:', 'dear', 'sincerely', 'best regards']):
-                email_stop_tokens = [
-                    "<END_EMAIL>",  # Primary email completion token
-                    "\nSubject:", "\n\nSubject:",  # Prevent starting new emails
-                    "\n\n\n\n"  # Prevent excessive newlines/whitespace
-                ]
-                stop_tokens.extend(email_stop_tokens)
-            
             # Create sampling parameters
             # Note: vLLM uses temperature to control sampling automatically
             # temperature=0.0 -> deterministic, temperature>0.0 -> sampling enabled
             sampling_params_dict = {
                 'max_tokens': max_tokens,
                 'temperature': temperature,
-                'stop': stop_tokens
+                'stop': '<END_EMAIL>'
             }
             
             # Only add top_p when sampling (temperature > 0)

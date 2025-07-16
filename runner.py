@@ -68,10 +68,10 @@ def main():
                        choices=list(MODELS_CONFIG.keys()),
                        help="List of models for email generation (overrides --email_generation)")
     parser.add_argument("--checklist_model", type=str, 
-                       default="gpt-4.1-nano",
+                       default="deepseek-r1",
                        choices=list(MODELS_CONFIG.keys()))
     parser.add_argument("--judge_model", type=str, 
-                       default="gemini-2.5-flash",
+                       default="o3-mini",
                        choices=list(MODELS_CONFIG.keys()))
     parser.add_argument("--example_email", type=str, 
                        default="1",

@@ -1,0 +1,1638 @@
+{
+  "success": true,
+  "total_topics": 1,
+  "successful_topics": 1,
+  "failed_topics": 0,
+  "total_time": 1006.0895807743073,
+  "results": [
+    {
+      "emails": [
+        {
+          "model_name": "stablelm-2-1.6b",
+          "model_id": "stabilityai/stablelm-2-1_6b-chat",
+          "email_content": "[COPY WRITER'S EMAIL]\n",
+          "generation_time": 176.65506386756897,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email present the problem as a crisis with specific threats (habitat loss, climate change)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Does the email propose legislative intervention (specific bill) as the solution?",
+                "result": "yes",
+                "confidence": 0.6666666666666666
+              },
+              {
+                "id": 3,
+                "description": "Does the email include a call to action with direct requests and multiple options (contact representatives, share campaign)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email use emotional language conveying urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email use emotional language conveying passion?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the email maintain a semi-formal tone with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email open with a direct problem statement and emotional hook?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email close with an urgent call to sign the signatory?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email follow the problem → impact → solution → action information flow?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Is the email length between 200-300 words?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Does the email contain exactly 4 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the email include at least two key phrases: 'critical moment', 'last chance', 'make your voice heard', or 'future generations'?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively conveys a crisis driven by habitat loss and climate change, proposes a specific legislative solution, and employs multiple clear calls to action. Its emotional language and structured flow, along with adherence to technical requirements (word count, paragraph count, key phrases), further enhance its impact.",
+            "weaknesses": "No weaknesses observed; the email meets all listed criteria.",
+            "consistency_confidence": 0.9166666666666666,
+            "average_response_time": 58.14917119344076,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 1.0,
+            "priority_breakdown": {
+              "very high": 0,
+              "high": 9,
+              "medium": 3,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 174.448073387146,
+            "evaluated_by": "o3-mini-high"
+          },
+          "overall_score": 1.0,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9090909090909091": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 2
+          },
+          "rank": 1
+        },
+        {
+          "model_name": "llama-3-8b",
+          "model_id": "casperhansen/llama-3-8b-instruct-awq",
+          "email_content": "Dear [Name],\n\n**URGENT ACTION REQUIRED TO SAVE THE POLAR BEAR CUBS!**\n\nAs you may know, polar bears are facing unprecedented threats due to climate change. Rising temperatures are melting their habitats, making it harder for them to find food and shelter. It's heartbreaking to see these magnificent creatures struggling to survive.\n\nThat's why we're launching the Polar Bear Cub Survival Act, a groundbreaking initiative aimed at protecting these precious animals. Our team has been working tirelessly to develop a comprehensive plan that addresses the root causes of this crisis.\n\nWe need YOUR help to make this initiative a reality! By supporting our campaign, you'll be joining a community of passionate individuals who care deeply about the well-being of polar bears.\n\n**TAKE ACTION NOW AND HELP US SAVE THE POLAR BEAR CUBS!**\n\nClick here to donate and become part of the movement: [link]\nShare this urgent message with friends and family to spread awareness: [social media links]\nLearn more about the Polar Bear Cub Survival Act and how you can get involved: [website link]\n\nThank you for being part of the solution!\n",
+          "generation_time": 145.73075008392334,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email present the problem as a crisis with specific threats (habitat loss, climate change)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Does the email propose legislative intervention (specific bill) as the solution?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the email include a call to action with direct requests and multiple options (contact representatives, share campaign)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email use emotional language conveying urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email use emotional language conveying passion?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the email maintain a semi-formal tone with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email open with a direct problem statement and emotional hook?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email close with an urgent call to sign the signatory?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email follow the problem → impact → solution → action information flow?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Is the email length between 200-300 words?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Does the email contain exactly 4 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the email include at least two key phrases: 'critical moment', 'last chance', 'make your voice heard', or 'future generations'?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively frames the environmental issue as a crisis, using specific threats like habitat loss and climate change. It employs urgent and passionate emotional language, follows the problem-impact-solution-action structure, and includes clear calls to action with multiple options. Additionally, it meets technical guidelines with the correct length, paragraph count, and inclusion of key phrases.",
+            "weaknesses": "The email does not propose a specific legislative intervention or mention a particular bill, which diminishes its potential impact on policy change.",
+            "consistency_confidence": 1.0,
+            "average_response_time": 42.053333123524986,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9090909090909091,
+            "priority_breakdown": {
+              "very high": 0,
+              "high": 8,
+              "medium": 3,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 126.16054391860962,
+            "evaluated_by": "o3-mini-high"
+          },
+          "overall_score": 0.9090909090909091,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9090909090909091": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 2
+          },
+          "rank": 2
+        },
+        {
+          "model_name": "vicuna-7b",
+          "model_id": "lmsys/vicuna-7b-v1.5",
+          "email_content": "<https://www.example.com/email>\n",
+          "generation_time": 73.74226951599121,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email present the problem as a crisis with specific threats (habitat loss, climate change)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Does the email propose legislative intervention (specific bill) as the solution?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the email include a call to action with direct requests and multiple options (contact representatives, share campaign)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email use emotional language conveying urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email use emotional language conveying passion?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the email maintain a semi-formal tone with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email open with a direct problem statement and emotional hook?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email close with an urgent call to sign the signatory?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email follow the problem → impact → solution → action information flow?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Is the email length between 200-300 words?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Does the email contain exactly 4 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the email include at least two key phrases: 'critical moment', 'last chance', 'make your voice heard', or 'future generations'?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively presents the crisis using urgent and passionate language, follows a clear and organized problem-to-action structure, and meets technical requirements such as word count, paragraph count, and the inclusion of key phrases.",
+            "weaknesses": "The email fails to propose a specific legislative intervention (i.e., a specific bill) as the solution.",
+            "consistency_confidence": 1.0,
+            "average_response_time": 47.16580597559611,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9090909090909091,
+            "priority_breakdown": {
+              "very high": 0,
+              "high": 8,
+              "medium": 3,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 141.49797821044922,
+            "evaluated_by": "o3-mini-high"
+          },
+          "overall_score": 0.9090909090909091,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9090909090909091": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 2
+          },
+          "rank": 3
+        },
+        {
+          "model_name": "phi-3-mini",
+          "model_id": "microsoft/Phi-3-mini-4k-instruct",
+          "email_content": "Subject: Join Us in Saving Our Beloved Arctic Friends! Urgent Action Needed – The Future Is In Your Hands\n\nDear Friend of Wildlife Conservation,\n\nImagine waking up one day to find that our beloved polar bear cubs have vanished into thin air. This isn’t just a hypothetical scenario; this could be reality if we don’t act now. Climate change has pushed these majestic creatures towards extinction by melting their precious ice habitats at alarming rates. It seems like every passing year brings us closer to losing them forever. But there is still hope—and you can make a difference right here today.\n\nThe Plight of the Polar Bears\nPolar bears depend entirely upon sea ice platforms during summer months when they hunt seals through breath holes left behind underwater while diving down onto land-based haul out sites where mothers nurse youngsters until autumn freeze sets back again over waterways leading away toward denning areas within snow caves dug deep below permafrost layers beneath Earth surface levels… As temperatures rise due global warming effects caused mainly humans who emit greenhouse gases such carbon dioxide emissions resulting directly linked indirectly via atmospheric chemical reactions which release heat trapped inside atmosphere thus increasing overall average temperature worldwide significantly beyond natural variation limits set forth earlier described scientific studies conducted since mid twentieth century period including those focused specifically regarding impact potential changes associated future climate conditions projected using computer models developed primarily utilizing historical data collected prior given timeframe examined further detailed analysis published subsequent publication dates listed above referenced document also contains additional information concerning current status trend projections forecasted across various regions globally throughout history spanning several decades henceforth forward mentioned figures indicate significant increases observed already evident however few recent reports suggest possible reductions occurring simultaneously yet uncertain whether true reduction exists actually taking place presently considered factual evidence available supporting claim made previously stated observation suggesting decrease might occur sometime soon depending largely dependent factors influencing outcome results obtained thereby determining likelihood occurrence probability estimated accordingly calculated according statistical methods applied applying principles derived theory proposed initially formulated years ago known commonly referred simply termed “climate sensitivity” concept describing how much planet earth responds physically mechanistically mathematically speaking quantitatively expressed numerically represented graphically illustrated diagrammatically depicted visually portrayed audibly heard spoken aloud verbalized vocally articulating sound waves transmitted electronically wirelessly transferred digitally stored locally cached remotely accessed retrieved downloaded uploaded streamed broadcast received played listened comprehended understood interpreted analyzed evaluated assessed judged determined decided concluded drawn conclusions reached arrived finally achieved success accomplished victory won glory celebrated triumphantly proclaimed proudly announced publicly declared openly acknowledged widely recognized universally accepted standard practice followed routinely employed regularly performed continuously repeated consistently maintained constantly monitored closely supervised carefully controlled strictly regulated thoroughly checked doubled tripled quadrupled quintupled septupled octupled nonupled decade times ten thousand thousands million billions billion dollars millions euros pounds sterling rupees rubles yen francs kroner crowns marks pesos reales guilders florins deutschemarks lira grams centimes pence shillings farthing bits fractions inches feet yards miles kilometers meters kilometres metres tonnes kilograms litres gallons millilitres degrees Celsius Fahrenheit Kelvin seconds minutes hours days weeks months years centuries eons epochs eras periods ages generations families clans tribes bands villages towns cities nations countries continents oceans rivers lakes mountains valleys deserts plains plateaus hills slopes peaks summits crests ridges ranges escarpments foothills footpaths paths lanes roads streets highways bridges viaducts aqueducts pipelines railroads tracks rails lines segments sections pieces parts components elements molecules atoms nuclei particles photons electrons neutrons protons positrons antiprotons gluons bosons leptons fermions gauge fields strings braneworld scenarios supersymmetry theories quantum gravity loopholes multiverse parallels dimensions extra spatial dimensions hidden forces dark matter energy mysteries secrets revelations\n",
+          "generation_time": 116.07052183151245,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email present the problem as a crisis with specific threats (habitat loss, climate change)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Does the email propose legislative intervention (specific bill) as the solution?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the email include a call to action with direct requests and multiple options (contact representatives, share campaign)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email use emotional language conveying urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email use emotional language conveying passion?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the email maintain a semi-formal tone with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email open with a direct problem statement and emotional hook?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email close with an urgent call to sign the signatory?",
+                "result": "yes",
+                "confidence": 0.6666666666666666
+              },
+              {
+                "id": 9,
+                "description": "Does the email follow the problem → impact → solution → action information flow?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Is the email length between 200-300 words?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Does the email contain exactly 4 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the email include at least two key phrases: 'critical moment', 'last chance', 'make your voice heard', or 'future generations'?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively highlights the environmental crisis by specifically mentioning threats like habitat loss and climate change. It uses urgent and passionate language, follows a clear problem-impact-solution-action structure, and meets technical specifications such as word count, paragraph count, and the inclusion of key phrases.",
+            "weaknesses": "The email does not propose a specific legislative bill as a solution and misses closing with an urgent call to sign the signatory, which reduces the overall impact of its call to action.",
+            "consistency_confidence": 0.9166666666666666,
+            "average_response_time": 52.90334669748942,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9090909090909091,
+            "priority_breakdown": {
+              "very high": 0,
+              "high": 8,
+              "medium": 3,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 158.71060347557068,
+            "evaluated_by": "o3-mini-high"
+          },
+          "overall_score": 0.9090909090909091,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9090909090909091": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 2
+          },
+          "rank": 4
+        },
+        {
+          "model_name": "tinyllama-1.1b",
+          "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+          "email_content": "[USER_NAME]\n",
+          "generation_time": 33.9002947807312,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email present the problem as a crisis with specific threats (habitat loss, climate change)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Does the email propose legislative intervention (specific bill) as the solution?",
+                "result": "no",
+                "confidence": 0.6666666666666666
+              },
+              {
+                "id": 3,
+                "description": "Does the email include a call to action with direct requests and multiple options (contact representatives, share campaign)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email use emotional language conveying urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email use emotional language conveying passion?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the email maintain a semi-formal tone with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email open with a direct problem statement and emotional hook?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email close with an urgent call to sign the signatory?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email follow the problem → impact → solution → action information flow?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Is the email length between 200-300 words?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Does the email contain exactly 4 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the email include at least two key phrases: 'critical moment', 'last chance', 'make your voice heard', or 'future generations'?",
+                "result": "yes",
+                "confidence": 0.6666666666666666
+              }
+            ],
+            "strengths": "The email convincingly establishes a crisis with specific threats like habitat loss and climate change, employs urgent and passionate language throughout, provides clear and varied calls to action, and maintains a strong problem–impact–solution–action structure while meeting technical layout requirements.",
+            "weaknesses": "The email falls short by not proposing a specific legislative intervention with a clearly named bill as the solution.",
+            "consistency_confidence": 0.8333333333333334,
+            "average_response_time": 51.30222280820211,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9090909090909091,
+            "priority_breakdown": {
+              "very high": 0,
+              "high": 8,
+              "medium": 3,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 153.90756702423096,
+            "evaluated_by": "o3-mini-high"
+          },
+          "overall_score": 0.9090909090909091,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9090909090909091": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 2
+          },
+          "rank": 5
+        }
+      ],
+      "checklist": {
+        "checklist": [
+          {
+            "question": "Does the email present the problem as a crisis with specific threats (habitat loss, climate change)?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "content"
+          },
+          {
+            "question": "Does the email propose legislative intervention (specific bill) as the solution?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "content"
+          },
+          {
+            "question": "Does the email include a call to action with direct requests and multiple options (contact representatives, share campaign)?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "content"
+          },
+          {
+            "question": "Does the email use emotional language conveying urgency?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "style"
+          },
+          {
+            "question": "Does the email use emotional language conveying passion?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "style"
+          },
+          {
+            "question": "Does the email maintain a semi-formal tone with emotional appeal?",
+            "best_ans": "yes",
+            "priority": "medium",
+            "category": "style"
+          },
+          {
+            "question": "Does the email open with a direct problem statement and emotional hook?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "structure"
+          },
+          {
+            "question": "Does the email close with an urgent call to sign the signatory?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "structure"
+          },
+          {
+            "question": "Does the email follow the problem → impact → solution → action information flow?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "structure"
+          },
+          {
+            "question": "Is the email length between 200-300 words?",
+            "best_ans": "yes",
+            "priority": "medium",
+            "category": "technical"
+          },
+          {
+            "question": "Does the email contain exactly 4 paragraphs?",
+            "best_ans": "yes",
+            "priority": "medium",
+            "category": "technical"
+          },
+          {
+            "question": "Does the email include at least two key phrases: 'critical moment', 'last chance', 'make your voice heard', or 'future generations'?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "technical"
+          }
+        ],
+        "model_name": "deepseek-r1",
+        "generation_time": 72.97869420051575,
+        "success": true
+      },
+      "best_email": {
+        "model_name": "stablelm-2-1.6b",
+        "model_id": "stabilityai/stablelm-2-1_6b-chat",
+        "email_content": "[COPY WRITER'S EMAIL]\n",
+        "generation_time": 176.65506386756897,
+        "success": true,
+        "evaluation": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email present the problem as a crisis with specific threats (habitat loss, climate change)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email propose legislative intervention (specific bill) as the solution?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a call to action with direct requests and multiple options (contact representatives, share campaign)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language conveying urgency?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language conveying passion?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email maintain a semi-formal tone with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email open with a direct problem statement and emotional hook?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email close with an urgent call to sign the signatory?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the problem → impact → solution → action information flow?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the email length between 200-300 words?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email contain exactly 4 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email include at least two key phrases: 'critical moment', 'last chance', 'make your voice heard', or 'future generations'?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively conveys a crisis driven by habitat loss and climate change, proposes a specific legislative solution, and employs multiple clear calls to action. Its emotional language and structured flow, along with adherence to technical requirements (word count, paragraph count, key phrases), further enhance its impact.",
+          "weaknesses": "No weaknesses observed; the email meets all listed criteria.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 58.14917119344076,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 1.0,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 9,
+            "medium": 3,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 174.448073387146,
+          "evaluated_by": "o3-mini-high"
+        },
+        "overall_score": 1.0,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b",
+            "vicuna-7b",
+            "phi-3-mini",
+            "tinyllama-1.1b"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "tinyllama-1.1b"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 2
+        },
+        "rank": 1
+      },
+      "topic": "Call to Support the Polar Bear Cub Survival Act",
+      "total_time": 1005.8703677654266,
+      "success": true,
+      "topic_uid": "T0001",
+      "topic_name": "Call to Support the Polar Bear Cub Survival Act",
+      "processing_time": 1005.877298116684
+    }
+  ],
+  "successful_results": [
+    {
+      "emails": [
+        {
+          "model_name": "stablelm-2-1.6b",
+          "model_id": "stabilityai/stablelm-2-1_6b-chat",
+          "email_content": "[COPY WRITER'S EMAIL]\n",
+          "generation_time": 176.65506386756897,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email present the problem as a crisis with specific threats (habitat loss, climate change)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Does the email propose legislative intervention (specific bill) as the solution?",
+                "result": "yes",
+                "confidence": 0.6666666666666666
+              },
+              {
+                "id": 3,
+                "description": "Does the email include a call to action with direct requests and multiple options (contact representatives, share campaign)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email use emotional language conveying urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email use emotional language conveying passion?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the email maintain a semi-formal tone with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email open with a direct problem statement and emotional hook?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email close with an urgent call to sign the signatory?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email follow the problem → impact → solution → action information flow?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Is the email length between 200-300 words?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Does the email contain exactly 4 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the email include at least two key phrases: 'critical moment', 'last chance', 'make your voice heard', or 'future generations'?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively conveys a crisis driven by habitat loss and climate change, proposes a specific legislative solution, and employs multiple clear calls to action. Its emotional language and structured flow, along with adherence to technical requirements (word count, paragraph count, key phrases), further enhance its impact.",
+            "weaknesses": "No weaknesses observed; the email meets all listed criteria.",
+            "consistency_confidence": 0.9166666666666666,
+            "average_response_time": 58.14917119344076,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 1.0,
+            "priority_breakdown": {
+              "very high": 0,
+              "high": 9,
+              "medium": 3,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 174.448073387146,
+            "evaluated_by": "o3-mini-high"
+          },
+          "overall_score": 1.0,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9090909090909091": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 2
+          },
+          "rank": 1
+        },
+        {
+          "model_name": "llama-3-8b",
+          "model_id": "casperhansen/llama-3-8b-instruct-awq",
+          "email_content": "Dear [Name],\n\n**URGENT ACTION REQUIRED TO SAVE THE POLAR BEAR CUBS!**\n\nAs you may know, polar bears are facing unprecedented threats due to climate change. Rising temperatures are melting their habitats, making it harder for them to find food and shelter. It's heartbreaking to see these magnificent creatures struggling to survive.\n\nThat's why we're launching the Polar Bear Cub Survival Act, a groundbreaking initiative aimed at protecting these precious animals. Our team has been working tirelessly to develop a comprehensive plan that addresses the root causes of this crisis.\n\nWe need YOUR help to make this initiative a reality! By supporting our campaign, you'll be joining a community of passionate individuals who care deeply about the well-being of polar bears.\n\n**TAKE ACTION NOW AND HELP US SAVE THE POLAR BEAR CUBS!**\n\nClick here to donate and become part of the movement: [link]\nShare this urgent message with friends and family to spread awareness: [social media links]\nLearn more about the Polar Bear Cub Survival Act and how you can get involved: [website link]\n\nThank you for being part of the solution!\n",
+          "generation_time": 145.73075008392334,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email present the problem as a crisis with specific threats (habitat loss, climate change)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Does the email propose legislative intervention (specific bill) as the solution?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the email include a call to action with direct requests and multiple options (contact representatives, share campaign)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email use emotional language conveying urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email use emotional language conveying passion?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the email maintain a semi-formal tone with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email open with a direct problem statement and emotional hook?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email close with an urgent call to sign the signatory?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email follow the problem → impact → solution → action information flow?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Is the email length between 200-300 words?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Does the email contain exactly 4 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the email include at least two key phrases: 'critical moment', 'last chance', 'make your voice heard', or 'future generations'?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively frames the environmental issue as a crisis, using specific threats like habitat loss and climate change. It employs urgent and passionate emotional language, follows the problem-impact-solution-action structure, and includes clear calls to action with multiple options. Additionally, it meets technical guidelines with the correct length, paragraph count, and inclusion of key phrases.",
+            "weaknesses": "The email does not propose a specific legislative intervention or mention a particular bill, which diminishes its potential impact on policy change.",
+            "consistency_confidence": 1.0,
+            "average_response_time": 42.053333123524986,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9090909090909091,
+            "priority_breakdown": {
+              "very high": 0,
+              "high": 8,
+              "medium": 3,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 126.16054391860962,
+            "evaluated_by": "o3-mini-high"
+          },
+          "overall_score": 0.9090909090909091,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9090909090909091": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 2
+          },
+          "rank": 2
+        },
+        {
+          "model_name": "vicuna-7b",
+          "model_id": "lmsys/vicuna-7b-v1.5",
+          "email_content": "<https://www.example.com/email>\n",
+          "generation_time": 73.74226951599121,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email present the problem as a crisis with specific threats (habitat loss, climate change)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Does the email propose legislative intervention (specific bill) as the solution?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the email include a call to action with direct requests and multiple options (contact representatives, share campaign)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email use emotional language conveying urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email use emotional language conveying passion?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the email maintain a semi-formal tone with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email open with a direct problem statement and emotional hook?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email close with an urgent call to sign the signatory?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email follow the problem → impact → solution → action information flow?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Is the email length between 200-300 words?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Does the email contain exactly 4 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the email include at least two key phrases: 'critical moment', 'last chance', 'make your voice heard', or 'future generations'?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively presents the crisis using urgent and passionate language, follows a clear and organized problem-to-action structure, and meets technical requirements such as word count, paragraph count, and the inclusion of key phrases.",
+            "weaknesses": "The email fails to propose a specific legislative intervention (i.e., a specific bill) as the solution.",
+            "consistency_confidence": 1.0,
+            "average_response_time": 47.16580597559611,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9090909090909091,
+            "priority_breakdown": {
+              "very high": 0,
+              "high": 8,
+              "medium": 3,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 141.49797821044922,
+            "evaluated_by": "o3-mini-high"
+          },
+          "overall_score": 0.9090909090909091,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9090909090909091": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 2
+          },
+          "rank": 3
+        },
+        {
+          "model_name": "phi-3-mini",
+          "model_id": "microsoft/Phi-3-mini-4k-instruct",
+          "email_content": "Subject: Join Us in Saving Our Beloved Arctic Friends! Urgent Action Needed – The Future Is In Your Hands\n\nDear Friend of Wildlife Conservation,\n\nImagine waking up one day to find that our beloved polar bear cubs have vanished into thin air. This isn’t just a hypothetical scenario; this could be reality if we don’t act now. Climate change has pushed these majestic creatures towards extinction by melting their precious ice habitats at alarming rates. It seems like every passing year brings us closer to losing them forever. But there is still hope—and you can make a difference right here today.\n\nThe Plight of the Polar Bears\nPolar bears depend entirely upon sea ice platforms during summer months when they hunt seals through breath holes left behind underwater while diving down onto land-based haul out sites where mothers nurse youngsters until autumn freeze sets back again over waterways leading away toward denning areas within snow caves dug deep below permafrost layers beneath Earth surface levels… As temperatures rise due global warming effects caused mainly humans who emit greenhouse gases such carbon dioxide emissions resulting directly linked indirectly via atmospheric chemical reactions which release heat trapped inside atmosphere thus increasing overall average temperature worldwide significantly beyond natural variation limits set forth earlier described scientific studies conducted since mid twentieth century period including those focused specifically regarding impact potential changes associated future climate conditions projected using computer models developed primarily utilizing historical data collected prior given timeframe examined further detailed analysis published subsequent publication dates listed above referenced document also contains additional information concerning current status trend projections forecasted across various regions globally throughout history spanning several decades henceforth forward mentioned figures indicate significant increases observed already evident however few recent reports suggest possible reductions occurring simultaneously yet uncertain whether true reduction exists actually taking place presently considered factual evidence available supporting claim made previously stated observation suggesting decrease might occur sometime soon depending largely dependent factors influencing outcome results obtained thereby determining likelihood occurrence probability estimated accordingly calculated according statistical methods applied applying principles derived theory proposed initially formulated years ago known commonly referred simply termed “climate sensitivity” concept describing how much planet earth responds physically mechanistically mathematically speaking quantitatively expressed numerically represented graphically illustrated diagrammatically depicted visually portrayed audibly heard spoken aloud verbalized vocally articulating sound waves transmitted electronically wirelessly transferred digitally stored locally cached remotely accessed retrieved downloaded uploaded streamed broadcast received played listened comprehended understood interpreted analyzed evaluated assessed judged determined decided concluded drawn conclusions reached arrived finally achieved success accomplished victory won glory celebrated triumphantly proclaimed proudly announced publicly declared openly acknowledged widely recognized universally accepted standard practice followed routinely employed regularly performed continuously repeated consistently maintained constantly monitored closely supervised carefully controlled strictly regulated thoroughly checked doubled tripled quadrupled quintupled septupled octupled nonupled decade times ten thousand thousands million billions billion dollars millions euros pounds sterling rupees rubles yen francs kroner crowns marks pesos reales guilders florins deutschemarks lira grams centimes pence shillings farthing bits fractions inches feet yards miles kilometers meters kilometres metres tonnes kilograms litres gallons millilitres degrees Celsius Fahrenheit Kelvin seconds minutes hours days weeks months years centuries eons epochs eras periods ages generations families clans tribes bands villages towns cities nations countries continents oceans rivers lakes mountains valleys deserts plains plateaus hills slopes peaks summits crests ridges ranges escarpments foothills footpaths paths lanes roads streets highways bridges viaducts aqueducts pipelines railroads tracks rails lines segments sections pieces parts components elements molecules atoms nuclei particles photons electrons neutrons protons positrons antiprotons gluons bosons leptons fermions gauge fields strings braneworld scenarios supersymmetry theories quantum gravity loopholes multiverse parallels dimensions extra spatial dimensions hidden forces dark matter energy mysteries secrets revelations\n",
+          "generation_time": 116.07052183151245,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email present the problem as a crisis with specific threats (habitat loss, climate change)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Does the email propose legislative intervention (specific bill) as the solution?",
+                "result": "no",
+                "confidence": 1.0
+              },
+              {
+                "id": 3,
+                "description": "Does the email include a call to action with direct requests and multiple options (contact representatives, share campaign)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email use emotional language conveying urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email use emotional language conveying passion?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the email maintain a semi-formal tone with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email open with a direct problem statement and emotional hook?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email close with an urgent call to sign the signatory?",
+                "result": "yes",
+                "confidence": 0.6666666666666666
+              },
+              {
+                "id": 9,
+                "description": "Does the email follow the problem → impact → solution → action information flow?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Is the email length between 200-300 words?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Does the email contain exactly 4 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the email include at least two key phrases: 'critical moment', 'last chance', 'make your voice heard', or 'future generations'?",
+                "result": "yes",
+                "confidence": 1.0
+              }
+            ],
+            "strengths": "The email effectively highlights the environmental crisis by specifically mentioning threats like habitat loss and climate change. It uses urgent and passionate language, follows a clear problem-impact-solution-action structure, and meets technical specifications such as word count, paragraph count, and the inclusion of key phrases.",
+            "weaknesses": "The email does not propose a specific legislative bill as a solution and misses closing with an urgent call to sign the signatory, which reduces the overall impact of its call to action.",
+            "consistency_confidence": 0.9166666666666666,
+            "average_response_time": 52.90334669748942,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9090909090909091,
+            "priority_breakdown": {
+              "very high": 0,
+              "high": 8,
+              "medium": 3,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 158.71060347557068,
+            "evaluated_by": "o3-mini-high"
+          },
+          "overall_score": 0.9090909090909091,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9090909090909091": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 2
+          },
+          "rank": 4
+        },
+        {
+          "model_name": "tinyllama-1.1b",
+          "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+          "email_content": "[USER_NAME]\n",
+          "generation_time": 33.9002947807312,
+          "success": true,
+          "evaluation": {
+            "checklist_scores": [
+              {
+                "id": 1,
+                "description": "Does the email present the problem as a crisis with specific threats (habitat loss, climate change)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 2,
+                "description": "Does the email propose legislative intervention (specific bill) as the solution?",
+                "result": "no",
+                "confidence": 0.6666666666666666
+              },
+              {
+                "id": 3,
+                "description": "Does the email include a call to action with direct requests and multiple options (contact representatives, share campaign)?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 4,
+                "description": "Does the email use emotional language conveying urgency?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 5,
+                "description": "Does the email use emotional language conveying passion?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 6,
+                "description": "Does the email maintain a semi-formal tone with emotional appeal?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 7,
+                "description": "Does the email open with a direct problem statement and emotional hook?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 8,
+                "description": "Does the email close with an urgent call to sign the signatory?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 9,
+                "description": "Does the email follow the problem → impact → solution → action information flow?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 10,
+                "description": "Is the email length between 200-300 words?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 11,
+                "description": "Does the email contain exactly 4 paragraphs?",
+                "result": "yes",
+                "confidence": 1.0
+              },
+              {
+                "id": 12,
+                "description": "Does the email include at least two key phrases: 'critical moment', 'last chance', 'make your voice heard', or 'future generations'?",
+                "result": "yes",
+                "confidence": 0.6666666666666666
+              }
+            ],
+            "strengths": "The email convincingly establishes a crisis with specific threats like habitat loss and climate change, employs urgent and passionate language throughout, provides clear and varied calls to action, and maintains a strong problem–impact–solution–action structure while meeting technical layout requirements.",
+            "weaknesses": "The email falls short by not proposing a specific legislative intervention with a clearly named bill as the solution.",
+            "consistency_confidence": 0.8333333333333334,
+            "average_response_time": 51.30222280820211,
+            "generation_attempts": 3,
+            "total_criteria": 12,
+            "weighted_score": 0.9090909090909091,
+            "priority_breakdown": {
+              "very high": 0,
+              "high": 8,
+              "medium": 3,
+              "low": 0,
+              "very low": 0
+            },
+            "evaluation_time": 153.90756702423096,
+            "evaluated_by": "o3-mini-high"
+          },
+          "overall_score": 0.9090909090909091,
+          "tie_info": {
+            "tie_detected": true,
+            "tied_emails": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "tinyllama-1.1b"
+            ],
+            "tied_groups": {
+              "0.9090909090909091": [
+                "llama-3-8b",
+                "vicuna-7b",
+                "phi-3-mini",
+                "tinyllama-1.1b"
+              ]
+            },
+            "tie_breaking_method": "consistency_confidence",
+            "total_groups": 2
+          },
+          "rank": 5
+        }
+      ],
+      "checklist": {
+        "checklist": [
+          {
+            "question": "Does the email present the problem as a crisis with specific threats (habitat loss, climate change)?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "content"
+          },
+          {
+            "question": "Does the email propose legislative intervention (specific bill) as the solution?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "content"
+          },
+          {
+            "question": "Does the email include a call to action with direct requests and multiple options (contact representatives, share campaign)?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "content"
+          },
+          {
+            "question": "Does the email use emotional language conveying urgency?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "style"
+          },
+          {
+            "question": "Does the email use emotional language conveying passion?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "style"
+          },
+          {
+            "question": "Does the email maintain a semi-formal tone with emotional appeal?",
+            "best_ans": "yes",
+            "priority": "medium",
+            "category": "style"
+          },
+          {
+            "question": "Does the email open with a direct problem statement and emotional hook?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "structure"
+          },
+          {
+            "question": "Does the email close with an urgent call to sign the signatory?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "structure"
+          },
+          {
+            "question": "Does the email follow the problem → impact → solution → action information flow?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "structure"
+          },
+          {
+            "question": "Is the email length between 200-300 words?",
+            "best_ans": "yes",
+            "priority": "medium",
+            "category": "technical"
+          },
+          {
+            "question": "Does the email contain exactly 4 paragraphs?",
+            "best_ans": "yes",
+            "priority": "medium",
+            "category": "technical"
+          },
+          {
+            "question": "Does the email include at least two key phrases: 'critical moment', 'last chance', 'make your voice heard', or 'future generations'?",
+            "best_ans": "yes",
+            "priority": "high",
+            "category": "technical"
+          }
+        ],
+        "model_name": "deepseek-r1",
+        "generation_time": 72.97869420051575,
+        "success": true
+      },
+      "best_email": {
+        "model_name": "stablelm-2-1.6b",
+        "model_id": "stabilityai/stablelm-2-1_6b-chat",
+        "email_content": "[COPY WRITER'S EMAIL]\n",
+        "generation_time": 176.65506386756897,
+        "success": true,
+        "evaluation": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email present the problem as a crisis with specific threats (habitat loss, climate change)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email propose legislative intervention (specific bill) as the solution?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a call to action with direct requests and multiple options (contact representatives, share campaign)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language conveying urgency?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language conveying passion?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email maintain a semi-formal tone with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email open with a direct problem statement and emotional hook?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email close with an urgent call to sign the signatory?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the problem → impact → solution → action information flow?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the email length between 200-300 words?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email contain exactly 4 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email include at least two key phrases: 'critical moment', 'last chance', 'make your voice heard', or 'future generations'?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively conveys a crisis driven by habitat loss and climate change, proposes a specific legislative solution, and employs multiple clear calls to action. Its emotional language and structured flow, along with adherence to technical requirements (word count, paragraph count, key phrases), further enhance its impact.",
+          "weaknesses": "No weaknesses observed; the email meets all listed criteria.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 58.14917119344076,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 1.0,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 9,
+            "medium": 3,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 174.448073387146,
+          "evaluated_by": "o3-mini-high"
+        },
+        "overall_score": 1.0,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b",
+            "vicuna-7b",
+            "phi-3-mini",
+            "tinyllama-1.1b"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "llama-3-8b",
+              "vicuna-7b",
+              "phi-3-mini",
+              "tinyllama-1.1b"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 2
+        },
+        "rank": 1
+      },
+      "topic": "Call to Support the Polar Bear Cub Survival Act",
+      "total_time": 1005.8703677654266,
+      "success": true,
+      "topic_uid": "T0001",
+      "topic_name": "Call to Support the Polar Bear Cub Survival Act",
+      "processing_time": 1005.877298116684
+    }
+  ],
+  "failed_results": [],
+  "summary": {
+    "avg_processing_time": 1005.877298116684,
+    "total_emails_generated": 5,
+    "model_performance": {
+      "stablelm-2-1.6b": 1.0
+    },
+    "best_overall_model": "stablelm-2-1.6b"
+  }
+}

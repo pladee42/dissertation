@@ -1,13 +1,14 @@
 #!/bin/bash
-#SBATCH --job-name=deepseek_r1_70b
-#SBATCH --time=08:00:00
+#SBATCH --job-name=multi_topic_prometheus
+#SBATCH --time=20:00:00
 #SBATCH --nodes=1
 #SBATCH --partition=gpu
 #SBATCH --qos=gpu
 #SBATCH --gres=gpu:4
 #SBATCH --gpus-per-node=4
-#SBATCH --mem=240G
-#SBATCH --output=./log/deepseek_r1_70b_%j.log
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32G
+#SBATCH --output=./log/multi_topic_%j.log
 #SBATCH --mail-user=wratthapoom1@sheffield.ac.uk
 #SBATCH --mail-type=ALL
 
@@ -24,6 +25,7 @@ export PYTHONUNBUFFERED=1
 export CUDA_DEVICE_MAX_CONNECTIONS=1  # For multi-GPU setups
 export TORCH_EXTENSIONS_DIR=$HOME/.cache/torch_extensions
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
+export LD_LIBRARY_PATH=/path/to/cuda/lib64:$LD_LIBRARY_PATH
 
 # Set model cache directories
 export HF_HOME=./downloaded_models
@@ -45,9 +47,12 @@ nvidia-smi
 
 # Run script
 echo "Running multi_topic_runner.py..."
-python -m multi_topic_runner --email_generation=medium --judge_model=gemini-2.5-flash --checklist_mode=enhanced --all_topics &> enhanced.log
-python -m multi_topic_runner --email_generation=medium --judge_model=gemini-2.5-flash --checklist_mode=extract_only --all_topics &> extract_only.log
-python -m multi_topic_runner --email_generation=medium --judge_model=gemini-2.5-flash --checklist_mode=preprocess --all_topics &> preprocess.log
+# python -m multi_topic_runner --email_generation=medium --judge_model=gemini-2.5-flash --checklist_mode=enhanced --all_topics &> enhanced.log
+# python -m multi_topic_runner --email_generation=medium --judge_model=gemini-2.5-flash --checklist_mode=extract_only --all_topics &> extract_only.log
+python -m multi_topic_runner --email_generation=medium --checklist_model=deepseek-r1 --judge_model=o3-mini --checklist_mode=preprocess --all_topics #&> preprocess.log
+
+# For debugging
+# python -m multi_topic_runner --email_models=stablelm-2-1.6b --checklist_model=gpt-4.1-nano --judge_model=o3-mini --checklist_mode=preprocess --topics=T0001
 
 # Check execution status
 if [ $? -eq 0 ]; then

@@ -69,64 +69,64 @@ MODELS = {
         'size': 'api',
         'backend_type': 'openrouter'
     },
-    'o3-mini-high': {
+    'o3-mini': {
         'uid': 'M0011',
-        'model_id': 'openai/o3-mini-high',
+        'model_id': 'openai/o3-mini',
         'recommended_for': ['judge'],
         'size': 'api',
         'backend_type': 'openrouter'
     },
     # DPO Fine-tuned Models
-    'tinyllama-1.1b-dpo': {
-        'uid': 'M0012',
-        'model_id': 'pladee42/tinyllama-1.1b-dpo',
-        'recommended_for': ['email_generation'],
-        'size': 'small',
-        'quantization': 'experts_int8',
-        'dtype': 'bfloat16',
-        'base_model': 'tinyllama-1.1b',
-        'is_dpo': True
-    },
-    'vicuna-7b-dpo': {
-        'uid': 'M0013',
-        'model_id': 'pladee42/vicuna-7b-dpo',
-        'recommended_for': ['email_generation'],
-        'size': 'medium',
-        'quantization': 'experts_int8',
-        'dtype': 'bfloat16',
-        'base_model': 'vicuna-7b',
-        'is_dpo': True
-    },
-    'phi-3-mini-dpo': {
-        'uid': 'M0014',
-        'model_id': 'pladee42/phi-3-mini-dpo',
-        'recommended_for': ['email_generation'],
-        'size': 'small',
-        'quantization': 'experts_int8',
-        'dtype': 'bfloat16',
-        'base_model': 'phi-3-mini',
-        'is_dpo': True
-    },
-    'llama-3-8b-dpo': {
-        'uid': 'M0015',
-        'model_id': 'pladee42/llama-3-8b-dpo',
-        'recommended_for': ['email_generation'],
-        'size': 'medium',
-        'quantization': 'awq',
-        'dtype': 'float16',
-        'base_model': 'llama-3-8b',
-        'is_dpo': True
-    },
-    'stablelm-2-1.6b-dpo': {
-        'uid': 'M0016',
-        'model_id': 'pladee42/stablelm-2-1.6b-dpo',
-        'recommended_for': ['email_generation'],
-        'size': 'small',
-        'quantization': 'experts_int8',
-        'dtype': 'bfloat16',
-        'base_model': 'stablelm-2-1.6b',
-        'is_dpo': True
-    }
+    # 'tinyllama-1.1b-dpo': {
+        # 'uid': 'M0012',
+        # 'model_id': 'pladee42/tinyllama-1.1b-dpo',
+        # 'recommended_for': ['email_generation'],
+        # 'size': 'small',
+        # 'quantization': 'experts_int8',
+        # 'dtype': 'bfloat16',
+        # 'base_model': 'tinyllama-1.1b',
+        # 'is_dpo': True
+    # },
+    # 'vicuna-7b-dpo': {
+        # 'uid': 'M0013',
+        # 'model_id': 'pladee42/vicuna-7b-dpo',
+        # 'recommended_for': ['email_generation'],
+        # 'size': 'medium',
+        # 'quantization': 'experts_int8',
+        # 'dtype': 'bfloat16',
+        # 'base_model': 'vicuna-7b',
+        # 'is_dpo': True
+    # },
+    # 'phi-3-mini-dpo': {
+        # 'uid': 'M0014',
+        # 'model_id': 'pladee42/phi-3-mini-dpo',
+        # 'recommended_for': ['email_generation'],
+        # 'size': 'small',
+        # 'quantization': 'experts_int8',
+        # 'dtype': 'bfloat16',
+        # 'base_model': 'phi-3-mini',
+        # 'is_dpo': True
+    # },
+    # 'llama-3-8b-dpo': {
+        # 'uid': 'M0015',
+        # 'model_id': 'pladee42/llama-3-8b-dpo',
+        # 'recommended_for': ['email_generation'],
+        # 'size': 'medium',
+        # 'quantization': 'awq',
+        # 'dtype': 'float16',
+        # 'base_model': 'llama-3-8b',
+        # 'is_dpo': True
+    # },
+    # 'stablelm-2-1.6b-dpo': {
+        # 'uid': 'M0016',
+        # 'model_id': 'pladee42/stablelm-2-1.6b-dpo',
+        # 'recommended_for': ['email_generation'],
+        # 'size': 'small',
+        # 'quantization': 'experts_int8',
+        # 'dtype': 'bfloat16',
+        # 'base_model': 'stablelm-2-1.6b',
+        # 'is_dpo': True
+    # }
 }
 
 # Checklist mode constants
@@ -146,13 +146,13 @@ SETTINGS = {
     
     # Task-specific token limits
     'checklist_max_tokens': 8192,
-    'judge_max_tokens': 6144,
-    'email_max_tokens': 900,
+    'judge_max_tokens': 8192,
+    'email_max_tokens': 6144,
     
     # Agent-specific sampling parameters
     'email_temperature': 0.5,      # Consistent but creative emails
     'checklist_temperature': 0.2,  # Structured, focused checklists  
-    'judge_temperature': 0.1,      # Deterministic evaluations
+    'judge_temperature': 0.2,      # Deterministic evaluations
     'email_top_p': 0.85,           # Focused vocabulary for emails
     'checklist_top_p': 0.7,        # Narrow for JSON structure
     'judge_top_p': 0.6,            # Very focused for scoring

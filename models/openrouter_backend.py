@@ -151,8 +151,8 @@ class OpenRouterBackend:
             'deepseek/deepseek-r1-0528': 'deepseek/deepseek-r1-0528',
             'gpt-4.1-nano': 'openai/gpt-4.1-nano-2025-04-14',
             'openai/gpt-4.1-nano-2025-04-14': 'openai/gpt-4.1-nano-2025-04-14',
-            'o3-mini-high': 'openai/o3-mini-high',
-            'openai/o3-mini-high': 'openai/o3-mini-high'
+            'o3-mini': 'openai/o3-mini',
+            'openai/o3-mini': 'openai/o3-mini'
         }
         
         return model_mapping.get(model, model)
