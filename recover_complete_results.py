@@ -10,7 +10,7 @@ import json
 import os
 import glob
 from pathlib import Path
-from datetime import datetime
+from datetime import datetime, time
 from typing import Dict, List, Any, Optional
 import argparse
 import logging
@@ -50,6 +50,93 @@ class CompleteResultsRecovery:
                     session_files.extend(mode_dir.glob(pattern))
         
         return sorted(session_files)
+    
+    def parse_time_string(self, time_str: str) -> time:
+        """Parse time string in HH:MM or HH:MM:SS format"""
+        try:
+            if len(time_str) == 5:  # HH:MM format
+                return datetime.strptime(time_str, "%H:%M").time()
+            elif len(time_str) == 8:  # HH:MM:SS format
+                return datetime.strptime(time_str, "%H:%M:%S").time()
+            else:
+                raise ValueError(f"Invalid time format: {time_str}. Use HH:MM or HH:MM:SS")
+        except ValueError as e:
+            logger.error(f"Failed to parse time string '{time_str}': {e}")
+            raise
+    
+    def filter_by_time(self, session_files: List[Path], date: str, 
+                      from_time: str = None, to_time: str = None) -> List[Path]:
+        """Filter session files by time range"""
+        if not from_time:
+            return session_files
+        
+        logger.info(f"Filtering sessions from {from_time}" + (f" to {to_time}" if to_time else " onward"))
+        
+        try:
+            # Parse target times
+            from_time_obj = self.parse_time_string(from_time)
+            to_time_obj = self.parse_time_string(to_time) if to_time else None
+            
+            # Create target datetimes
+            date_obj = datetime.strptime(date, "%Y-%m-%d").date()
+            from_datetime = datetime.combine(date_obj, from_time_obj)
+            to_datetime = datetime.combine(date_obj, to_time_obj) if to_time_obj else None
+            
+            filtered_files = []
+            for session_file in session_files:
+                # Try to get timestamp from session content first
+                session_data = self.load_session_data(session_file)
+                session_datetime = None
+                
+                if session_data and "timestamp" in session_data:
+                    try:
+                        # Parse ISO timestamp from session data
+                        timestamp_str = session_data["timestamp"]
+                        # Handle different ISO formats
+                        if timestamp_str.endswith('Z'):
+                            timestamp_str = timestamp_str[:-1] + '+00:00'
+                        session_datetime = datetime.fromisoformat(timestamp_str.replace('Z', '+00:00'))
+                        # Convert to local time (remove timezone info for comparison)
+                        session_datetime = session_datetime.replace(tzinfo=None)
+                    except Exception as e:
+                        logger.warning(f"Failed to parse timestamp from {session_file}: {e}")
+                
+                # Fallback: extract time from filename
+                if not session_datetime:
+                    try:
+                        # Extract timestamp from filename: session_20250715_033000_preprocess.json
+                        filename = session_file.name
+                        if filename.startswith("session_"):
+                            parts = filename.split("_")
+                            if len(parts) >= 3:
+                                date_part = parts[1]  # 20250715
+                                time_part = parts[2]  # 033000
+                                datetime_str = f"{date_part}_{time_part}"
+                                session_datetime = datetime.strptime(datetime_str, "%Y%m%d_%H%M%S")
+                    except Exception as e:
+                        logger.warning(f"Failed to parse timestamp from filename {session_file}: {e}")
+                        continue
+                
+                if not session_datetime:
+                    logger.warning(f"Could not determine timestamp for {session_file}, skipping")
+                    continue
+                
+                # Apply time filtering
+                if session_datetime >= from_datetime:
+                    if not to_datetime or session_datetime <= to_datetime:
+                        filtered_files.append(session_file)
+                        logger.debug(f"Including session from {session_datetime}")
+                    else:
+                        logger.debug(f"Excluding session from {session_datetime} (after end time)")
+                else:
+                    logger.debug(f"Excluding session from {session_datetime} (before start time)")
+            
+            logger.info(f"Filtered to {len(filtered_files)} sessions within time range")
+            return filtered_files
+            
+        except Exception as e:
+            logger.error(f"Error filtering by time: {e}")
+            return session_files  # Return all files if filtering fails
     
     def load_session_data(self, session_file: Path) -> Optional[Dict[str, Any]]:
         """Load and validate session data"""
@@ -211,10 +298,13 @@ class CompleteResultsRecovery:
             return {}
     
     def recover_complete_results(self, date: str, mode: str = None, 
-                               output_timestamp: str = None) -> Optional[str]:
+                               output_timestamp: str = None, from_time: str = None,
+                               to_time: str = None) -> Optional[str]:
         """Recover complete_results.json from session data"""
         
         logger.info(f"Starting recovery for date: {date}, mode: {mode}")
+        if from_time:
+            logger.info(f"Time filtering: from {from_time}" + (f" to {to_time}" if to_time else " onward"))
         
         # Find session files
         session_files = self.find_session_files(date, mode)
@@ -223,6 +313,13 @@ class CompleteResultsRecovery:
             return None
         
         logger.info(f"Found {len(session_files)} session files")
+        
+        # Apply time filtering if specified
+        if from_time:
+            session_files = self.filter_by_time(session_files, date, from_time, to_time)
+            if not session_files:
+                logger.error("No session files found within specified time range")
+                return None
         
         # Process session files
         all_results = []
@@ -324,12 +421,20 @@ def main():
                        help="Date to recover from (YYYY-MM-DD format)")
     parser.add_argument("--mode", type=str, choices=['enhanced', 'extract_only', 'preprocess'],
                        help="Specific checklist mode to recover (optional)")
+    parser.add_argument("--from_time", type=str,
+                       help="Time to start recovery from (HH:MM or HH:MM:SS format)")
+    parser.add_argument("--to_time", type=str,
+                       help="Time to end recovery at (HH:MM or HH:MM:SS format, optional)")
     parser.add_argument("--output_timestamp", type=str,
                        help="Custom timestamp for output directory (optional)")
     parser.add_argument("--base_dir", type=str, default="./output",
                        help="Base output directory")
     
     args = parser.parse_args()
+    
+    # Validate time arguments
+    if args.to_time and not args.from_time:
+        parser.error("--to_time requires --from_time to be specified")
     
     # Create recovery instance
     recovery = CompleteResultsRecovery(args.base_dir)
@@ -338,11 +443,16 @@ def main():
     result_file = recovery.recover_complete_results(
         date=args.date,
         mode=args.mode,
-        output_timestamp=args.output_timestamp
+        output_timestamp=args.output_timestamp,
+        from_time=args.from_time,
+        to_time=args.to_time
     )
     
     if result_file:
         print(f"✅ Recovery successful! File saved to: {result_file}")
+        if args.from_time:
+            print(f"📅 Recovered sessions from {args.date} {args.from_time}" + 
+                  (f" to {args.to_time}" if args.to_time else " onward"))
         return 0
     else:
         print("❌ Recovery failed!")
