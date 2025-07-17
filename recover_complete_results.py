@@ -10,7 +10,7 @@ import json
 import os
 import glob
 from pathlib import Path
-from datetime import datetime, time
+from datetime import datetime, time, timedelta
 from typing import Dict, List, Any, Optional
 import argparse
 import logging
@@ -26,12 +26,32 @@ class CompleteResultsRecovery:
         self.training_data_dir = self.base_dir / "training_data"
         self.multi_topic_dir = self.base_dir / "multi_topic_results"
         
-    def find_session_files(self, date: str, mode: str = None) -> List[Path]:
-        """Find all session files for a given date and optional mode"""
+    def find_session_files(self, start_date: str, mode: str = None, from_time: str = None) -> List[Path]:
+        """Find all session files from start_date onward, optionally filtered by mode"""
+        session_files = []
+        
+        # If from_time is specified, we need to search across multiple dates
+        if from_time:
+            # Find all available dates from start_date onward
+            max_days = getattr(self, '_max_days', 30)  # Use instance variable if set
+            available_dates = self.get_available_dates_from(start_date, max_days)
+            logger.info(f"Searching across dates: {available_dates}")
+            
+            for date_str in available_dates:
+                date_files = self.find_session_files_for_date(date_str, mode)
+                session_files.extend(date_files)
+        else:
+            # Original behavior: only search specified date
+            session_files = self.find_session_files_for_date(start_date, mode)
+        
+        return sorted(session_files)
+    
+    def find_session_files_for_date(self, date: str, mode: str = None) -> List[Path]:
+        """Find session files for a specific date"""
         date_dir = self.training_data_dir / date
         
         if not date_dir.exists():
-            logger.error(f"Date directory not found: {date_dir}")
+            logger.debug(f"Date directory not found: {date_dir}")
             return []
         
         session_files = []
@@ -49,7 +69,32 @@ class CompleteResultsRecovery:
                     pattern = f"session_*.json"
                     session_files.extend(mode_dir.glob(pattern))
         
-        return sorted(session_files)
+        return session_files
+    
+    def get_available_dates_from(self, start_date: str, max_days: int = 30) -> List[str]:
+        """Get list of available date directories from start_date onward"""
+        available_dates = []
+        start_date_obj = datetime.strptime(start_date, "%Y-%m-%d").date()
+        
+        # Search for up to max_days from start_date
+        for i in range(max_days):
+            check_date = start_date_obj + timedelta(days=i)
+            date_str = check_date.strftime("%Y-%m-%d")
+            date_dir = self.training_data_dir / date_str
+            
+            if date_dir.exists():
+                available_dates.append(date_str)
+                logger.debug(f"Found data for date: {date_str}")
+            else:
+                # If we find 3 consecutive missing dates, stop searching
+                if i > 0 and all(
+                    not (self.training_data_dir / (start_date_obj + timedelta(days=j)).strftime("%Y-%m-%d")).exists()
+                    for j in range(max(0, i-2), i+1)
+                ):
+                    logger.debug(f"Stopping search at {date_str} (consecutive missing dates)")
+                    break
+        
+        return available_dates
     
     def parse_time_string(self, time_str: str) -> time:
         """Parse time string in HH:MM or HH:MM:SS format"""
@@ -64,13 +109,13 @@ class CompleteResultsRecovery:
             logger.error(f"Failed to parse time string '{time_str}': {e}")
             raise
     
-    def filter_by_time(self, session_files: List[Path], date: str, 
+    def filter_by_time(self, session_files: List[Path], start_date: str, 
                       from_time: str = None, to_time: str = None) -> List[Path]:
-        """Filter session files by time range"""
+        """Filter session files by time range, supporting cross-date filtering"""
         if not from_time:
             return session_files
         
-        logger.info(f"Filtering sessions from {from_time}" + (f" to {to_time}" if to_time else " onward"))
+        logger.info(f"Filtering sessions from {start_date} {from_time}" + (f" to {to_time}" if to_time else " onward"))
         
         try:
             # Parse target times
@@ -78,9 +123,11 @@ class CompleteResultsRecovery:
             to_time_obj = self.parse_time_string(to_time) if to_time else None
             
             # Create target datetimes
-            date_obj = datetime.strptime(date, "%Y-%m-%d").date()
-            from_datetime = datetime.combine(date_obj, from_time_obj)
-            to_datetime = datetime.combine(date_obj, to_time_obj) if to_time_obj else None
+            start_date_obj = datetime.strptime(start_date, "%Y-%m-%d").date()
+            from_datetime = datetime.combine(start_date_obj, from_time_obj)
+            
+            # For to_time, if specified, it should be on the same start date unless we add date support
+            to_datetime = datetime.combine(start_date_obj, to_time_obj) if to_time_obj else None
             
             filtered_files = []
             for session_file in session_files:
@@ -299,15 +346,19 @@ class CompleteResultsRecovery:
     
     def recover_complete_results(self, date: str, mode: str = None, 
                                output_timestamp: str = None, from_time: str = None,
-                               to_time: str = None) -> Optional[str]:
+                               to_time: str = None, max_days: int = 30) -> Optional[str]:
         """Recover complete_results.json from session data"""
         
         logger.info(f"Starting recovery for date: {date}, mode: {mode}")
         if from_time:
             logger.info(f"Time filtering: from {from_time}" + (f" to {to_time}" if to_time else " onward"))
+            logger.info(f"Will search up to {max_days} days from {date}")
         
-        # Find session files
-        session_files = self.find_session_files(date, mode)
+        # Set max_days for use in find_session_files
+        self._max_days = max_days
+        
+        # Find session files (now supports cross-date search when from_time is specified)
+        session_files = self.find_session_files(date, mode, from_time)
         if not session_files:
             logger.error("No session files found")
             return None
@@ -422,9 +473,11 @@ def main():
     parser.add_argument("--mode", type=str, choices=['enhanced', 'extract_only', 'preprocess'],
                        help="Specific checklist mode to recover (optional)")
     parser.add_argument("--from_time", type=str,
-                       help="Time to start recovery from (HH:MM or HH:MM:SS format)")
+                       help="Time to start recovery from (HH:MM or HH:MM:SS format). When specified, searches across multiple dates from --date onward")
     parser.add_argument("--to_time", type=str,
-                       help="Time to end recovery at (HH:MM or HH:MM:SS format, optional)")
+                       help="Time to end recovery at (HH:MM or HH:MM:SS format, optional). Currently only supports same-day filtering")
+    parser.add_argument("--max_days", type=int, default=30,
+                       help="Maximum number of days to search when using --from_time (default: 30)")
     parser.add_argument("--output_timestamp", type=str,
                        help="Custom timestamp for output directory (optional)")
     parser.add_argument("--base_dir", type=str, default="./output",
@@ -445,7 +498,8 @@ def main():
         mode=args.mode,
         output_timestamp=args.output_timestamp,
         from_time=args.from_time,
-        to_time=args.to_time
+        to_time=args.to_time,
+        max_days=args.max_days
     )
     
     if result_file:
