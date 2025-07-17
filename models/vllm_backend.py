@@ -6,6 +6,7 @@ import gc
 import torch
 import warnings
 import time
+import atexit
 
 # Suppress specific warnings that might occur during model loading
 warnings.filterwarnings("ignore", message=".*do_sample.*")
@@ -15,6 +16,20 @@ warnings.filterwarnings("ignore", category=UserWarning, module="transformers.*")
 warnings.filterwarnings("ignore", category=FutureWarning, module="transformers.*")
 
 logger = logging.getLogger(__name__)
+
+# Global flag to track if distributed cleanup is registered
+_distributed_cleanup_registered = False
+
+def _cleanup_distributed_process_group():
+    """Safely cleanup distributed process group if initialized"""
+    try:
+        import torch.distributed as dist
+        if dist.is_available() and dist.is_initialized():
+            logger.info("Cleaning up distributed process group...")
+            dist.destroy_process_group()
+            logger.info("Distributed process group cleanup completed")
+    except Exception as e:
+        logger.debug(f"Distributed cleanup error (expected if not using distributed): {e}")
 
 class VLLMBackend:
     """vLLM backend for LLM inference using direct Python library"""
@@ -26,6 +41,8 @@ class VLLMBackend:
         Args:
             max_parallel: Maximum parallel requests
         """
+        global _distributed_cleanup_registered
+        
         self.max_parallel = max_parallel
         self.executor = ThreadPoolExecutor(max_workers=max_parallel)
         self.engines = {}  # Cache for loaded models
@@ -35,6 +52,12 @@ class VLLMBackend:
         os.makedirs(cache_dir, exist_ok=True)
         os.environ["HF_HOME"] = cache_dir
         os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+        
+        # Register distributed cleanup if not already done
+        if not _distributed_cleanup_registered:
+            atexit.register(_cleanup_distributed_process_group)
+            _distributed_cleanup_registered = True
+            logger.debug("Registered distributed process group cleanup")
         
         logger.info(f"vLLM backend initialized with max_parallel: {max_parallel}")
     
@@ -429,6 +452,12 @@ class VLLMBackend:
     
     def __del__(self):
         """Cleanup thread pool and engines on destruction"""
+        # Clean up distributed process group first
+        try:
+            _cleanup_distributed_process_group()
+        except:
+            pass
+        
         if hasattr(self, 'executor'):
             self.executor.shutdown(wait=True)
         
