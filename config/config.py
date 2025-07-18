@@ -179,7 +179,7 @@ SETTINGS = {
     
     # vLLM settings
     'vllm_max_parallel': 4,
-    'vllm_gpu_memory_utilization': 0.3,
+    'vllm_gpu_memory_utilization': 0.7,
     
     # Consistency sampling settings
     'consistency_samples': 3,
