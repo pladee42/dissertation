@@ -1,0 +1,124 @@
+\documentclass[11pt,oneside]{book}
+
+% Packages
+\usepackage[margin=1.2in]{geometry}
+\usepackage[toc,page]{appendix}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{lipsum}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage[english]{babel}
+\usepackage[autostyle, english = american]{csquotes}      
+\usepackage{titlesec}
+\usepackage{multirow}
+\usepackage[colorlinks=true, citecolor=blue, linkcolor=black]{hyperref}
+\usepackage{pdflscape}
+\usepackage{amsmath}
+
+% Configurations
+\titleformat{\chapter}[display]
+    {\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+
+\titlespacing*{\chapter}{0pt}{-50pt}{30pt}
+\MakeOuterQuote{"}    
+
+
+\begin{document}
+\let\cleardoublepage\clearpage
+\captionsetup[figure]{margin=1.5cm,font=small,labelfont={bf},name={Figure},labelsep=colon,textfont={it}}
+\captionsetup[table]{margin=1.5cm,font=small,labelfont={bf},name={Table},labelsep=colon,textfont={it}}
+
+\frontmatter
+
+\begin{titlepage}
+
+
+\begin{center}
+% {\LARGE University of Sheffield}\\[1.5cm]
+\includegraphics[width=7.5cm]{images/UOSLogo.png}\\[1cm]
+\linespread{1.2}\huge {\bfseries Multi-Agent Framework for Email Generation: From Pre-trained Models to DPO Fine-tuning}\\[1.5cm]
+\linespread{1}
+
+{\Large Waris Ratthapoom}\\[0.75cm]
+% {\large  Ahmad Reshad Adib\\[0.5cm]
+%  Lianghui Li\\[0.5cm]
+%  Riya Garg\\[0.5cm]
+%  Waris Ratthapoom\\[0.5cm]
+% Yuanbo Feng\\[0.5cm]}
+
+{\large \emph{Supervisor:} Dr. Cass Zhixue Zhao}\\[1cm]
+\large A report submitted in partial fulfilment of the requirements\\ for the degree of MSc Artificial Intelligence in Computer Science\\[0.3cm] 
+\textit{in the}\\[0.3cm]
+Department of Computer Science\\[2cm]
+\today
+\end{center}
+
+\end{titlepage}
+
+% -------------------------------------------------------------------
+% Declaration
+% -------------------------------------------------------------------
+
+\newpage
+\section*{\Large Declaration}
+
+All sentences or passages quoted in this document from other people's work have been specifically acknowledged by clear cross-referencing to author, work and page(s).  Any illustrations that are not the work of the author of this report have been used with the explicit permission of the originator and are specifically acknowledged.  I understand that failure to do this amounts to plagiarism and will be considered grounds for failure.\\[1cm]
+
+\noindent Name:\\[1mm]
+\rule[1em]{25em}{0.5pt}
+
+\noindent Signature:\\[1mm]
+\rule[1em]{25em}{0.5pt}
+
+\noindent Date:\\[1mm]
+\rule[1em]{25em}{0.5pt}
+
+
+% -------------------------------------------------------------------
+% Abstract
+% -------------------------------------------------------------------
+
+\input{sections/abstract.tex}
+
+% -------------------------------------------------------------------
+% Contents, list of figures, list of tables
+% -------------------------------------------------------------------
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+
+% -------------------------------------------------------------------
+% Main sections (as required)
+% -------------------------------------------------------------------
+
+\mainmatter
+
+\input{sections/introduction.tex}
+\input{sections/literature.tex}
+\input{sections/methodology}
+\input{sections/results.tex}
+\input{sections/discussion.tex}
+\input{sections/conclusion.tex}
+
+% -------------------------------------------------------------------
+% Bibliography
+% -------------------------------------------------------------------
+
+\bibliographystyle{agsm} 
+\bibliography{mybibliography} 
+
+
+% -------------------------------------------------------------------
+% Appendices
+% -------------------------------------------------------------------
+
+\begin{appendices}
+\input{sections/appendixA.tex}
+\end{appendices}
+
+\end{document}
