@@ -26,10 +26,20 @@ def _cleanup_distributed_process_group():
         import torch.distributed as dist
         if dist.is_available() and dist.is_initialized():
             logger.info("Cleaning up distributed process group...")
+            
+            # Set a timeout for cleanup to avoid hanging
+            import os
+            os.environ.setdefault("NCCL_ASYNC_ERROR_HANDLING", "1")
+            
+            # Perform the cleanup
             dist.destroy_process_group()
             logger.info("Distributed process group cleanup completed")
+        else:
+            logger.debug("No distributed process group to cleanup")
+    except ImportError:
+        logger.debug("torch.distributed not available")
     except Exception as e:
-        logger.debug(f"Distributed cleanup error (expected if not using distributed): {e}")
+        logger.debug(f"Distributed cleanup error (this is normal if not using distributed training): {e}")
 
 class VLLMBackend:
     """vLLM backend for LLM inference using direct Python library"""
@@ -52,6 +62,10 @@ class VLLMBackend:
         os.makedirs(cache_dir, exist_ok=True)
         os.environ["HF_HOME"] = cache_dir
         os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
+        
+        # Set NCCL environment variables to reduce warnings and improve cleanup
+        os.environ.setdefault("NCCL_ASYNC_ERROR_HANDLING", "1")
+        os.environ.setdefault("NCCL_TIMEOUT", "300")  # 5 minutes timeout
         
         # Register distributed cleanup if not already done
         if not _distributed_cleanup_registered:
@@ -452,22 +466,27 @@ class VLLMBackend:
     
     def __del__(self):
         """Cleanup thread pool and engines on destruction"""
-        # Clean up distributed process group first
-        try:
-            _cleanup_distributed_process_group()
-        except:
-            pass
-        
-        if hasattr(self, 'executor'):
-            self.executor.shutdown(wait=True)
-        
-        # Clean up vLLM engines
+        # Clean up vLLM engines first before distributed cleanup
         if hasattr(self, 'engines'):
             for engine in self.engines.values():
                 try:
+                    # Properly cleanup vLLM engine
+                    if hasattr(engine, 'llm_engine') and hasattr(engine.llm_engine, 'scheduler'):
+                        # Clean up vLLM's internal scheduler and resources
+                        del engine.llm_engine
                     del engine
                 except:
                     pass
         
+        # Clean up thread pool
+        if hasattr(self, 'executor'):
+            self.executor.shutdown(wait=True)
+        
         # Clean up GPU memory
         self.cleanup_memory()
+        
+        # Clean up distributed process group last
+        try:
+            _cleanup_distributed_process_group()
+        except:
+            pass
