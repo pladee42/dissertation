@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=multi_topic_prometheus
-#SBATCH --time=20:00:00
+#SBATCH --job-name=multi_topic_o3
+#SBATCH --time=27:00:00
 #SBATCH --nodes=1
 #SBATCH --partition=gpu
 #SBATCH --qos=gpu

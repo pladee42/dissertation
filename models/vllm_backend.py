@@ -195,7 +195,7 @@ class VLLMBackend:
             sampling_params_dict = {
                 'max_tokens': max_tokens,
                 'temperature': temperature,
-                'stop': '<END_EMAIL>'
+                'stop': [r'<END_EMAIL>', r'<END\_EMAIL>', r'<END_EMAIL\>', r'<\END_EMAIL>']
             }
             
             # Only add top_p when sampling (temperature > 0)
