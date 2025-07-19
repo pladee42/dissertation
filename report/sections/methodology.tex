@@ -7,9 +7,9 @@ This chapter presents the methodology employed in this research to evaluate the 
 
 This study adopts a quantitative comparative research paradigm to systematically evaluate the performance of different language models in automated email generation tasks. The research is grounded in experimental design principles with controlled variables and systematic evaluation procedures to ensure methodological rigor and reproducible results.
 
-The central research problem addresses the effectiveness of various language model architectures and sizes in generating high-quality fundraising emails within a structured evaluation framework. This investigation is motivated by the growing need for automated content generation systems that can produce contextually appropriate and persuasive communication while maintaining consistency and quality across different model implementations.
+The central research problem addresses the effectiveness of various language model architectures and sizes in generating high-quality fundraising emails within a structured evaluation framework. This investigation is motivated by the growing need for automated content generation systems that can produce contextually appropriate and persuasive communication while maintaining consistency and quality across different model implementations \cite{murakami2023nlg_advertising, zheng2023click_controllable}.
 
-The methodological approach employs a multi-agent system design as a novel contribution to the field of automated text generation evaluation. Unlike traditional single-model assessment approaches, this methodology introduces specialist agents for distinct phases of the evaluation process, enabling more comprehensive and systematic comparison of model capabilities. The multi-agent approach provides several advantages over conventional evaluation methods: enhanced objectivity through agent specialization, systematic evaluation criteria generation, and standardized assessment protocols across all tested models.
+The methodological approach employs a multi-agent system design as a novel contribution to the field of automated text generation evaluation \cite{guo2024llm_multiagent, yan2025beyond_selftalk}. Unlike traditional single-model assessment approaches, this methodology introduces specialist agents for distinct phases of the evaluation process, enabling more comprehensive and systematic comparison of model capabilities \cite{yehudai2025survey_llm_agents}. The multi-agent approach provides several advantages over conventional evaluation methods: enhanced objectivity through agent specialization, systematic evaluation criteria generation, and standardized assessment protocols across all tested models \cite{ma2024agentboard}.
 
 % TODO: Add figure placeholder for research design overview
 \begin{figure}[htbp]
@@ -28,15 +28,15 @@ The proposed system implements a three-agent architecture designed to systematic
 
 The \textbf{Email Generator Agent} serves as the primary content creation component, responsible for generating fundraising emails based on standardized prompts and topic specifications. This agent interfaces with multiple language models sequentially, ensuring consistent input conditions while capturing the unique characteristics and capabilities of each model under evaluation.
 
-The \textbf{Checklist Creator Agent} functions as the evaluation criteria development component, generating structured assessment frameworks for each generated email. This agent produces binary evaluation checklists with priority weighting, ensuring that assessment criteria are both comprehensive and relevant to the specific content and context of each generated email. The checklist generation process maintains consistency in evaluation standards while adapting to the nuanced characteristics of different email content.
+The \textbf{Checklist Creator Agent} functions as the evaluation criteria development component, generating structured assessment frameworks for each generated email. This agent utilizes DeepSeek R1, a reasoning-capable language model specifically selected for its analytical capabilities in evaluation criteria development. The agent produces binary evaluation checklists with priority weighting, ensuring that assessment criteria are both comprehensive and relevant to the specific content and context of each generated email. The checklist generation process maintains consistency in evaluation standards while adapting to the nuanced characteristics of different email content.
 
-The \textbf{Judge Agent} operates as the performance assessment and ranking component, applying the generated checklists to evaluate email quality systematically. This agent implements a probability-based scoring methodology that accounts for both binary assessment outcomes and priority weighting, providing quantitative measures for comparative analysis across different models and topics.
+The \textbf{Judge Agent} operates as the performance assessment and ranking component, applying the generated checklists to evaluate email quality systematically. This agent employs GPT O3 Mini, selected for its advanced reasoning capabilities and consistency in evaluation tasks. The agent implements a probability-based scoring methodology that accounts for both binary assessment outcomes and priority weighting, providing quantitative measures for comparative analysis across different models and topics.
 
 % TODO: Add figure placeholder for system architecture
 \begin{figure}[htbp]
     \centering
-    % \includegraphics[width=0.9\textwidth]{figures/system_architecture.pdf}
-    \caption{Three-agent system architecture showing agent interactions and data flow}
+    % \includegraphics[width=0.9\textwidth]{figures/system_architecture_updated.pdf}
+    \caption{Three-agent system architecture with reasoning-capable models showing agent interactions and data flow}
     \label{fig:system-architecture}
 \end{figure}
 
@@ -57,17 +57,28 @@ Models are categorized into three primary groups based on parameter count and in
 
 \textbf{Large Models (34B-70B parameters)} provide assessment of maximum capability within the current open-source model landscape. These models enable evaluation of whether increased parameter count translates to proportional improvements in email generation quality and consistency, while establishing upper bounds for performance expectations within the experimental framework.
 
+\textbf{Reasoning Models} represent a specialized category of language models optimized for analytical and evaluation tasks. This category includes models specifically designed for logical reasoning, consistency in evaluation, and systematic analysis capabilities. The integration of reasoning models addresses the specific requirements of evaluation agents within the multi-agent framework.
+
+The research employs a systematic Unique Identifier (UID) system for model tracking and experimental organization. Models M0001 through M0007 represent the primary email generation models categorized by size, while reasoning models (DeepSeek R1, GPT O3 Mini) serve specialized evaluation functions. Additionally, Direct Preference Optimization (DPO) variants are available for models M0001-M0005, enabling comparative analysis between baseline and preference-optimized versions of the same architectural foundations.
+
 % TODO: Add table placeholder for model specifications
 \begin{table}[htbp]
     \centering
-    \caption{Language model specifications and categorization}
+    \caption{Language model specifications and categorization with UID system}
     \label{tab:model-specifications}
-    \begin{tabular}{|l|l|l|l|}
+    \begin{tabular}{|l|l|l|l|l|l|}
     \hline
-    \textbf{Model Name} & \textbf{Parameters} & \textbf{Category} & \textbf{Architecture} \\
+    \textbf{UID} & \textbf{Model Name} & \textbf{Parameters} & \textbf{Category} & \textbf{DPO Variant} & \textbf{Primary Use} \\
     \hline
-    % Model details to be inserted
-    \multicolumn{4}{|c|}{[Model specifications table to be completed]} \\
+    M0001 & TinyLlama-1.1B & 1.1B & Small & Available & Email Generation \\
+    M0002 & Vicuna-7B & 7B & Medium & Available & Email Generation \\
+    M0003 & Phi-3-Mini & 3.8B & Small & Available & Email Generation \\
+    M0004 & Llama-3-8B & 8B & Medium & Available & Email Generation \\
+    M0005 & StableLM-2-1.6B & 1.6B & Small & Available & Email Generation \\
+    M0006 & Yi-34B & 34B & Large & N/A & Evaluation Tasks \\
+    M0007 & Llama-3-70B & 70B & Large & N/A & Evaluation Tasks \\
+    - & DeepSeek R1 & 8B & Reasoning & N/A & Checklist Generation \\
+    - & GPT O3 Mini & - & Reasoning & N/A & Evaluation/Judging \\
     \hline
     \end{tabular}
 \end{table}
@@ -78,10 +89,30 @@ The model selection process prioritizes open-source implementations to ensure re
 
 Diversity considerations encompass different transformer architectures, training methodologies, and fine-tuning approaches represented across the selected models. This diversity ensures that the evaluation captures fundamental differences in model design and training rather than minor variations within a single architectural family.
 
+\subsection{Agent Model Optimization}
+
+The selection of specific models for the Checklist Creator and Judge agents follows a systematic optimization process based on preliminary empirical testing of reasoning capabilities across different model architectures. This optimization process represents a methodological advancement that prioritizes reasoning-capable models for evaluation tasks requiring analytical depth and consistency.
+
+\subsubsection{Performance Criteria and Selection Rationale}
+
+The selection criteria for agent-specific models prioritize reasoning capabilities, evaluation consistency, and analytical depth over general text generation performance. Reasoning-capable models demonstrate superior performance in structured evaluation tasks through enhanced logical analysis capabilities, improved consistency across repeated evaluations, systematic approach to criteria development, and reduced bias in comparative assessments.
+
+The empirical evidence supporting reasoning model superiority in evaluation tasks (detailed in Section \ref{sec:agent-model-validation}) provides methodological justification for the agent-specific model selection approach. This optimization strategy ensures that each agent operates with the most appropriate model architecture for its designated function within the multi-agent evaluation framework.
+
+% Agent model comparison results moved to Results section (Table \ref{tab:agent-model-comparison})
+
+% TODO: Add figure placeholder for agent model selection comparison
+\begin{figure}[htbp]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/agent_model_selection_comparison.pdf}
+    \caption{Agent Model Selection Comparison: Reasoning vs Traditional Models}
+    \label{fig:agent-model-selection}
+\end{figure}
+
 \section{Dataset and Topic Selection}
 \label{sec:dataset-topic-selection}
 
-The selection of charity fundraising emails as the evaluation domain provides several methodological advantages: clear assessment criteria for persuasive and contextually appropriate content, well-defined audience expectations and communication goals, and sufficient complexity to differentiate between model capabilities while remaining accessible for systematic evaluation.
+The selection of charity fundraising emails as the evaluation domain provides several methodological advantages: clear assessment criteria for persuasive and contextually appropriate content, well-defined audience expectations and communication goals, and sufficient complexity to differentiate between model capabilities while remaining accessible for systematic evaluation \cite{zhang2019email_subject, pauli2024persuasive_language}.
 
 \subsection{Topic Development and Validation}
 
@@ -114,18 +145,136 @@ Ethical considerations in domain selection include ensuring respectful represent
 
 The standardized topic framework provides consistent input conditions for all models while allowing sufficient variation to assess adaptability and contextual understanding across different fundraising scenarios. This approach supports both within-model consistency analysis and cross-model comparative evaluation within a controlled experimental environment.
 
+\section{Multi-Modal Checklist Generation Framework}
+\label{sec:multi-modal-checklist}
+
+This research introduces a novel multi-modal checklist generation framework that systematically evaluates different approaches to evaluation criteria development. The framework implements three distinct operational modes, each designed to test specific aspects of checklist generation effectiveness and computational efficiency. This methodological innovation enables comprehensive analysis of the trade-offs between analytical depth, processing efficiency, and evaluation quality.
+
+\subsection{Three-Mode Experimental Design}
+
+The multi-modal framework employs three systematically designed operational modes that represent different approaches to evaluation criteria generation. Each mode implements distinct processing strategies while maintaining consistency in output format and evaluation standards.
+
+\subsubsection{Full-Prompt Mode}
+
+The Full-Prompt mode represents the comprehensive analytical approach, providing complete contextual analysis with access to the entire email content, topic specifications, and detailed prompt instructions. This mode enables the Checklist Creator Agent to perform holistic assessment of email content, considering all available contextual information for evaluation criteria development.
+
+The Full-Prompt mode serves as the methodological baseline, representing the optimal conditions for checklist generation when computational resources and processing time are not constraining factors. This mode enables assessment of maximum possible evaluation quality achievable through comprehensive contextual analysis.
+
+\subsubsection{Extract-Only Mode}
+
+The Extract-Only mode implements minimal context processing for efficiency comparison, utilizing only essential content elements and abbreviated prompt instructions. This mode tests the hypothesis that effective evaluation criteria can be generated with reduced computational overhead while maintaining acceptable evaluation quality standards.
+
+The design of Extract-Only mode prioritizes processing efficiency while preserving core evaluation functionality. This approach enables assessment of the minimum viable approach to checklist generation, providing insights into the essential components required for effective evaluation criteria development.
+
+\subsubsection{Hybrid Mode}
+
+The Hybrid mode implements a two-step systematic analysis that combines extraction and processing phases in a structured analytical framework. This mode represents an intermediate approach that balances comprehensive analysis with processing efficiency through systematic decomposition of the evaluation task.
+
+The Hybrid mode methodology involves initial content extraction followed by structured analysis of extracted elements. This approach tests whether systematic two-phase processing can achieve evaluation quality comparable to comprehensive analysis while maintaining improved processing efficiency relative to the Full-Prompt mode.
+
+\subsection{Methodological Justification and Comparative Framework}
+
+The three-mode design enables systematic evaluation of fundamental questions regarding evaluation criteria generation: the relationship between analytical depth and evaluation quality, the impact of processing efficiency constraints on assessment accuracy, and the effectiveness of structured analytical approaches in balancing quality and efficiency considerations.
+
+Each mode tests distinct hypotheses about optimal approaches to evaluation criteria development. The Full-Prompt mode tests the upper bounds of evaluation quality achievable through comprehensive analysis. The Extract-Only mode tests the minimal viable approach to criteria generation. The Hybrid mode tests whether systematic structured analysis can optimize the quality-efficiency trade-off.
+
+The comparative framework enables systematic assessment of mode performance across multiple evaluation dimensions, including criteria quality, consistency reliability, processing efficiency, and evaluation accuracy. This multi-dimensional analysis approach provides comprehensive insights into the strengths and limitations of each operational mode.
+
+% TODO: Add figure placeholder for three-mode framework
+\begin{figure}[htbp]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{figures/three_mode_checklist_framework.pdf}
+    \caption{Three-Mode Checklist Generation Framework showing workflow differences and processing approaches}
+    \label{fig:three-mode-framework}
+\end{figure}
+
+% TODO: Add table placeholder for mode-specific parameters
+\begin{table}[htbp]
+    \centering
+    \caption{Mode-Specific Parameters and Expected Outcomes}
+    \label{tab:mode-parameters}
+    \begin{tabular}{|l|l|l|l|l|}
+    \hline
+    \textbf{Mode} & \textbf{Context Level} & \textbf{Processing Steps} & \textbf{Expected Quality} & \textbf{Efficiency} \\
+    \hline
+    Full-Prompt & Complete & Single-phase & High & Low \\
+    Extract-Only & Minimal & Single-phase & Medium & High \\
+    Hybrid & Structured & Two-phase & High-Medium & Medium \\
+    \hline
+    \end{tabular}
+\end{table}
+
 \section{Experimental Design}
 \label{sec:experimental-design}
 
-The experimental design implements a multi-topic comparative framework specifically developed to assess language model performance across diverse fundraising contexts while maintaining rigorous control over experimental variables. This design enables systematic comparison of model capabilities both within individual model categories and across the full spectrum of tested architectures.
+The experimental design implements a comprehensive two-phase experimental protocol that systematically evaluates language model performance across diverse fundraising contexts while enabling direct comparison of baseline and preference-optimized model variants. This advanced design enables systematic comparison of model capabilities both within individual model categories and across the full spectrum of tested architectures, while providing quantitative assessment of Direct Preference Optimization effectiveness.
+
+\subsection{Two-Phase Experimental Protocol}
+
+The experimental methodology employs a sophisticated two-phase protocol designed to evaluate both baseline model performance and the effectiveness of preference-based optimization approaches. This protocol enables systematic assessment of model improvement through Direct Preference Optimization while maintaining rigorous experimental controls.
+
+\subsubsection{Phase 1: Baseline Evaluation with Pre-trained Models}
+
+Phase 1 establishes comprehensive baseline performance measurements using pre-trained models in their original configurations. This phase employs the complete multi-modal checklist generation framework, evaluating each model across all three operational modes (Full-Prompt, Extract-Only, and Hybrid) to establish performance baselines for subsequent comparison analysis.
+
+The baseline evaluation protocol implements systematic assessment across all model-topic-mode combinations, creating a comprehensive performance matrix that captures baseline capabilities across the full experimental space. This phase provides the foundational data required for preference pair generation and enables quantification of improvement through subsequent optimization procedures.
+
+\subsubsection{Phase 2: Comparative Evaluation with DPO-Optimized Models}
+
+Phase 2 implements systematic evaluation of DPO-optimized model variants using identical assessment protocols employed in Phase 1. This phase enables direct comparison of pre-training and post-training performance while maintaining consistent evaluation standards and experimental conditions.
+
+The comparative evaluation protocol applies the multi-modal framework to DPO-optimized models, generating performance measurements directly comparable to baseline assessments. This approach enables quantification of optimization effectiveness across different model sizes, operational modes, and topic categories.
+
+\subsubsection{Mode-Based Analysis Framework}
+
+The two-phase protocol incorporates systematic comparison across the three checklist generation modes, enabling assessment of optimization effectiveness under different operational conditions. This mode-based analysis framework tests whether DPO improvements are consistent across different analytical approaches or whether optimization benefits are mode-dependent.
+
+The framework enables evaluation of interaction effects between optimization approaches and operational modes, providing insights into the generalizability of preference-based improvements across different evaluation contexts. This analysis approach supports both aggregate performance assessment and fine-grained investigation of optimization effectiveness.
 
 \subsection{Multi-Topic Comparative Framework}
 
-The comparative framework employs a factorial design approach where each model generates content for every topic within the experimental dataset, creating a comprehensive matrix of model-topic combinations for analysis. This approach ensures that performance assessments capture both model-specific capabilities and topic-dependent variations in generation quality.
+The comparative framework employs a comprehensive factorial design approach where each model generates content for every topic within the experimental dataset across both experimental phases, creating an extensive matrix of model-topic-phase combinations for analysis. This approach ensures that performance assessments capture model-specific capabilities, topic-dependent variations, and optimization effectiveness across diverse contexts.
 
 Controlled variables within the experimental design include prompt standardization across all model-topic combinations, consistent input formatting and parameter specifications, uniform evaluation criteria application regardless of generating model, and standardized environmental conditions for model inference. These controls ensure that observed performance differences reflect genuine model capabilities rather than experimental artifacts.
 
 Randomization procedures minimize potential bias through several mechanisms: random ordering of topic presentation to each model prevents sequential effects, randomized model evaluation order eliminates potential carry-over effects, and random sampling of evaluation criteria prioritization reduces systematic bias in assessment frameworks.
+
+\subsubsection{Performance Delta Methodology}
+
+The performance delta methodology provides quantitative assessment of fine-tuning effectiveness through systematic comparison of pre-training and post-training performance measurements. This methodology enables precise quantification of improvement magnitude while accounting for baseline performance variations across different models and contexts.
+
+Performance delta calculations employ normalized improvement metrics that account for baseline performance levels, enabling fair comparison across models with different starting capabilities. The methodology incorporates statistical significance testing to distinguish genuine improvements from random variation, ensuring robust conclusions regarding optimization effectiveness.
+
+The delta analysis framework supports both aggregate improvement assessment and fine-grained analysis of improvement patterns across different experimental conditions. This approach enables identification of optimal optimization strategies and assessment of improvement consistency across diverse evaluation contexts.
+
+% TODO: Add figure placeholder for two-phase experimental design
+\begin{figure}[htbp]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{figures/two_phase_experimental_design.pdf}
+    \caption{Two-Phase Experimental Design Workflow showing baseline and DPO-optimized evaluation phases}
+    \label{fig:two-phase-design}
+\end{figure}
+
+% TODO: Add table placeholder for experimental conditions matrix
+\begin{table}[htbp]
+    \centering
+    \caption{Experimental Conditions Matrix: Phase × Mode × Model Combinations}
+    \label{tab:experimental-conditions}
+    \begin{tabular}{|l|l|l|l|l|}
+    \hline
+    \textbf{Phase} & \textbf{Mode} & \textbf{Model Category} & \textbf{Model Count} & \textbf{Total Conditions} \\
+    \hline
+    Baseline & Full-Prompt & Small/Medium/Large & 7 & 21 \\
+    Baseline & Extract-Only & Small/Medium/Large & 7 & 21 \\
+    Baseline & Hybrid & Small/Medium/Large & 7 & 21 \\
+    DPO-Optimized & Full-Prompt & Small/Medium & 5 & 15 \\
+    DPO-Optimized & Extract-Only & Small/Medium & 5 & 15 \\
+    DPO-Optimized & Hybrid & Small/Medium & 5 & 15 \\
+    \hline
+    \multicolumn{4}{|l|}{\textbf{Total Experimental Conditions}} & \textbf{108} \\
+    \hline
+    \end{tabular}
+\end{table}
 
 \subsection{Consistency Sampling Methodology}
 
@@ -136,8 +285,8 @@ The triple-generation approach serves multiple analytical purposes: quantificati
 % TODO: Add figure placeholder for experimental design flow
 \begin{figure}[htbp]
     \centering
-    % \includegraphics[width=0.85\textwidth]{figures/experimental_design_flow.pdf}
-    \caption{Experimental design workflow showing multi-topic comparative framework and consistency sampling}
+    % \includegraphics[width=0.85\textwidth]{figures/experimental_design_flow_updated.pdf}
+    \caption{Enhanced experimental design workflow showing multi-modal framework, two-phase protocol, and consistency sampling}
     \label{fig:experimental-design}
 \end{figure}
 
@@ -146,7 +295,7 @@ Cross-validation strategies enhance reliability assessment through systematic ro
 \section{Evaluation Framework}
 \label{sec:evaluation-framework}
 
-The evaluation framework implements a novel multi-stage assessment methodology designed to provide comprehensive and objective analysis of generated email quality. This framework combines automated evaluation procedures with systematic criteria development to ensure consistent and reliable performance measurement across all experimental conditions.
+The evaluation framework implements a novel multi-stage assessment methodology designed to provide comprehensive and objective analysis of generated email quality \cite{bohnet2022attributed_qa, pimentel2024beyond_metrics}. This framework combines automated evaluation procedures with systematic criteria development to ensure consistent and reliable performance measurement across all experimental conditions.
 
 \subsection{Binary Checklist Generation Methodology}
 
@@ -158,21 +307,62 @@ Priority weighting system development accounts for the varying significance of d
 
 \subsection{Judge Agent Evaluation Protocol}
 
-The Judge Agent implements a systematic evaluation protocol that applies generated checklists consistently across all email samples while accounting for priority weighting in final scoring calculations. The evaluation process follows a standardized sequence: comprehensive checklist application with binary assessment for each criterion, priority-weighted scoring aggregation to produce overall quality measures, comparative ranking generation across model outputs for identical topics, and consistency analysis across multiple generations from the same model.
+The Judge Agent implements an advanced systematic evaluation protocol that leverages GPT O3 Mini's enhanced reasoning capabilities to apply generated checklists consistently across all email samples while accounting for priority weighting in final scoring calculations \cite{marjanovic2025deepseek_thoughtology, sui2025stop_overthinking}. The evaluation process follows a standardized sequence enhanced by multi-dimensional analytical capabilities: comprehensive checklist application with binary assessment for each criterion, advanced reasoning-based consistency verification, priority-weighted scoring aggregation to produce overall quality measures, comparative ranking generation across model outputs for identical topics, and comprehensive consistency analysis across multiple generations from the same model.
 
-The probability-based scoring methodology converts binary assessments into quantitative measures suitable for statistical analysis. The scoring algorithm weights individual criteria according to established priority levels and aggregates results to produce normalized performance scores ranging from 0 to 100 for comparative analysis purposes.
+\subsubsection{Multi-Dimensional Scoring System}
+
+The multi-dimensional scoring system represents a methodological advancement that incorporates reasoning-based analysis capabilities into systematic evaluation procedures. The system employs GPT O3 Mini's advanced analytical capabilities to provide enhanced evaluation reliability through sophisticated reasoning processes, improved consistency in scoring decisions, and systematic bias reduction in comparative assessments.
+
+The scoring system implements multiple evaluation dimensions that capture different aspects of email quality: content quality assessment through factual accuracy and relevance analysis, persuasive effectiveness evaluation through rhetorical structure analysis, audience appropriateness assessment through tone and messaging alignment, and technical quality evaluation through structural and formatting analysis.
+
+The probability-based scoring methodology converts binary assessments into quantitative measures suitable for advanced statistical analysis. The enhanced scoring algorithm incorporates reasoning-based confidence measures, weights individual criteria according to established priority levels and context-specific importance, and aggregates results to produce normalized performance scores ranging from 0 to 100 for comparative analysis purposes.
+
+\subsubsection{Consistency Measurement Protocols}
+
+Advanced consistency measurement protocols enable systematic assessment of evaluation reliability across multiple dimensions and experimental conditions. These protocols implement cross-mode reliability assessment to evaluate consistency of evaluation outcomes across the three operational modes, temporal stability analysis to assess evaluation consistency across repeated applications, and inter-model reliability verification to ensure evaluation fairness across different model categories.
+
+The consistency measurement framework employs statistical reliability measures that quantify evaluation stability across different conditions while identifying potential sources of evaluation variance. This approach enables systematic improvement of evaluation procedures and validation of assessment framework reliability.
+
+\subsubsection{Statistical Significance Testing}
+
+The evaluation framework incorporates comprehensive statistical significance testing procedures specifically designed for pre-training and post-training performance comparisons. These procedures employ appropriate statistical methods for paired comparison analysis, account for multiple testing corrections in comprehensive model comparisons, and implement effect size calculations to assess practical significance beyond statistical significance.
+
+Statistical testing protocols enable robust conclusion formation regarding DPO effectiveness while accounting for baseline performance variations and experimental design complexity. The testing framework supports both aggregate performance assessment and fine-grained analysis of improvement patterns across different experimental conditions.
 
 % TODO: Add table placeholder for evaluation criteria categories
 \begin{table}[htbp]
     \centering
-    \caption{Evaluation criteria categories and priority weighting structure}
+    \caption{Enhanced evaluation criteria categories and priority weighting structure}
     \label{tab:evaluation-criteria}
     \begin{tabular}{|l|l|c|l|}
     \hline
     \textbf{Category} & \textbf{Criteria} & \textbf{Priority} & \textbf{Weight} \\
     \hline
-    % Evaluation criteria details to be inserted
-    \multicolumn{4}{|c|}{[Evaluation criteria table to be completed]} \\
+    Content Quality & Factual Accuracy & High & 0.25 \\
+    Content Quality & Relevance Analysis & High & 0.20 \\
+    Persuasive Effectiveness & Rhetorical Structure & Medium & 0.15 \\
+    Persuasive Effectiveness & Emotional Appeal & Medium & 0.15 \\
+    Audience Appropriateness & Tone Alignment & Medium & 0.10 \\
+    Technical Quality & Structure \& Format & Low & 0.15 \\
+    \hline
+    \end{tabular}
+\end{table}
+
+% TODO: Add table placeholder for evaluation metrics and statistical tests
+\begin{table}[htbp]
+    \centering
+    \caption{Evaluation Metrics and Statistical Tests by Analysis Type}
+    \label{tab:evaluation-metrics-tests}
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    \textbf{Analysis Type} & \textbf{Metrics} & \textbf{Statistical Test} & \textbf{Significance Level} \\
+    \hline
+    Mode Comparison & Quality Score, Efficiency & ANOVA + Tukey HSD & p < 0.05 \\
+    Phase Comparison & Performance Delta & Paired t-test & p < 0.01 \\
+    Model Category & Aggregate Performance & Kruskal-Wallis & p < 0.05 \\
+    Consistency Analysis & Variance, CV & F-test & p < 0.05 \\
+    DPO Effectiveness & Improvement Ratio & Wilcoxon Signed-Rank & p < 0.01 \\
+    Cross\-Mode Reliability & Cronbach's Alpha & Reliability Analysis & α \> 0.80 \\
     \hline
     \end{tabular}
 \end{table}
@@ -182,7 +372,7 @@ Inter-model comparison metrics enable systematic assessment of relative performa
 \section{Quality Assurance and Reliability}
 \label{sec:quality-assurance}
 
-Quality assurance procedures ensure the integrity and reliability of experimental results through comprehensive validation mechanisms applied throughout the data collection and analysis processes. These procedures address potential sources of error, bias, and inconsistency that could compromise the validity of research findings.
+Quality assurance procedures ensure the integrity and reliability of experimental results through comprehensive validation mechanisms applied throughout the data collection and analysis processes. These enhanced procedures address potential sources of error, bias, and inconsistency that could compromise the validity of research findings, while incorporating specialized validation protocols for multi-modal operations and DPO training effectiveness.
 
 \subsection{Consistency Measurement and Validation}
 
@@ -192,18 +382,66 @@ Output validation mechanisms verify the structural and content integrity of gene
 
 Bias identification and mitigation strategies address potential systematic influences on experimental results. Bias assessment includes analysis of model-specific performance patterns that might reflect training data characteristics, evaluation criteria bias that might favor particular model architectures or approaches, and temporal bias from sequential processing that might influence generation quality.
 
+\subsection{Mode Validation Procedures}
+
+Mode validation procedures ensure that each operational mode within the multi-modal checklist generation framework produces valid and reliable evaluation criteria while maintaining consistency with the overall evaluation objectives. These procedures implement systematic validation protocols designed to verify mode-specific functionality and ensure that each mode achieves its intended methodological purpose.
+
+\subsubsection{Full-Prompt Mode Validation}
+
+Full-Prompt mode validation verifies that comprehensive contextual analysis produces high-quality evaluation criteria that capture all relevant aspects of email effectiveness. Validation procedures include assessment of criteria comprehensiveness to ensure coverage of all evaluation dimensions, verification of contextual relevance to confirm that criteria reflect specific email content and topic characteristics, and quality threshold analysis to establish that criteria meet minimum standards for evaluation effectiveness.
+
+\subsubsection{Extract-Only Mode Validation}
+
+Extract-Only mode validation confirms that minimal context processing maintains acceptable evaluation quality while achieving the intended efficiency improvements. Validation protocols include efficiency measurement verification to confirm processing time reductions, quality threshold maintenance to ensure evaluation criteria meet minimum effectiveness standards, and comparative analysis with Full-Prompt mode to quantify the quality-efficiency trade-off.
+
+\subsubsection{Hybrid Mode Validation}
+
+Hybrid mode validation ensures that two-step systematic analysis achieves the intended balance between comprehensive evaluation and processing efficiency. Validation procedures include systematic verification of both extraction and processing phases, assessment of phase integration effectiveness to ensure coherent evaluation criteria generation, and comparative analysis with both Full-Prompt and Extract-Only modes to confirm intermediate positioning in the quality-efficiency spectrum.
+
+\subsection{Cross-Mode Consistency Verification}
+
+Cross-mode consistency verification implements systematic procedures to validate evaluation reliability and fairness across all three operational modes. These procedures ensure that mode-specific differences reflect intended methodological variations rather than systematic bias or evaluation artifacts.
+
+\subsubsection{Inter-Mode Reliability Assessment}
+
+Inter-mode reliability assessment employs statistical correlation analysis to evaluate consistency of evaluation outcomes across different operational modes. Assessment procedures include calculation of inter-mode correlation coefficients for evaluation scores, analysis of ranking consistency across modes for identical model-topic combinations, and identification of systematic bias patterns that might indicate mode-specific evaluation artifacts.
+
+\subsubsection{Cross-Mode Fairness Verification}
+
+Cross-mode fairness verification ensures that evaluation procedures maintain fairness across different models and topics regardless of operational mode. Verification procedures include assessment of mode-specific performance patterns to identify potential bias, analysis of score distribution characteristics across modes to ensure statistical comparability, and systematic evaluation of whether mode differences reflect genuine methodological variations rather than evaluation artifacts.
+
+\subsection{DPO Training Validation}
+
+DPO training validation procedures verify successful fine-tuning outcomes while ensuring that optimization improvements reflect genuine performance enhancements rather than training artifacts. These procedures implement comprehensive assessment of training effectiveness and model improvement validation.
+
+\subsubsection{Training Convergence Verification}
+
+Training convergence verification employs systematic monitoring of training metrics to ensure that DPO procedures achieve stable optimization outcomes. Verification procedures include loss function monitoring to confirm convergence achievement, gradient norm analysis to verify training stability, and validation performance tracking to ensure consistent improvement without overfitting.
+
+\subsubsection{Optimization Effectiveness Validation}
+
+Optimization effectiveness validation confirms that post-training performance improvements represent genuine enhancements in email generation quality. Validation procedures include comparative performance analysis to verify improvement magnitude, statistical significance testing to confirm that improvements exceed random variation, and systematic assessment of improvement consistency across different evaluation contexts.
+
 \subsection{Reproducibility and Documentation Standards}
 
 Reproducibility measures ensure that experimental procedures can be replicated by independent researchers with access to the same models and datasets. Documentation standards include comprehensive recording of model configurations and parameters, detailed prompt specifications and input formatting procedures, complete evaluation criteria definitions and weighting schemes, and statistical analysis procedures with software version specifications.
 
 Data integrity verification protocols monitor the experimental process to identify and correct potential data collection errors. Verification procedures include automated checking of complete data collection across all model-topic combinations, validation of evaluation scoring calculations and aggregation procedures, and cross-reference verification between generated content and corresponding evaluation results.
 
-% TODO: Add figure placeholder for quality assurance workflow
+% TODO: Add figure placeholder for quality assurance validation framework
 \begin{figure}[htbp]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figures/quality_assurance_workflow.pdf}
-    \caption{Quality assurance and reliability verification workflow}
-    \label{fig:quality-assurance}
+    % \includegraphics[width=0.9\textwidth]{figures/quality_assurance_validation_framework.pdf}
+    \caption{Quality Assurance Validation Framework including mode validation, cross-mode consistency, and DPO training verification}
+    \label{fig:quality-assurance-framework}
+\end{figure}
+
+% TODO: Add figure placeholder for mode performance comparison
+\begin{figure}[htbp]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figures/mode_performance_comparison.pdf}
+    \caption{Mode Performance Comparison Visualization showing quality-efficiency trade-offs across operational modes}
+    \label{fig:mode-performance-comparison}
 \end{figure}
 
 \section{Data Collection Procedures}
@@ -242,34 +480,76 @@ Result aggregation and storage methodology organizes experimental data for effic
 
 Statistical analysis preparation procedures ensure that collected data meets the requirements for planned analytical approaches while identifying any data quality issues that might affect subsequent analysis. Preparation includes verification of complete data collection across all experimental conditions, assessment of data distribution characteristics for appropriate statistical test selection, and identification of outliers or anomalous results requiring further investigation.
 
-\section{Direct Preference Optimization Extension}
-\label{sec:dpo-extension}
+\section{Direct Preference Optimization Implementation}
+\label{sec:dpo-implementation}
 
-The methodology includes a planned extension incorporating Direct Preference Optimization (DPO) fine-tuning to enhance model performance based on comparative evaluation results from the initial experimental phase. This extension represents a significant methodological advancement that leverages the multi-agent evaluation framework to create preference-based training data for targeted model improvement.
+The methodology incorporates a comprehensive Direct Preference Optimization (DPO) implementation that enhances model performance based on comparative evaluation results from the multi-agent evaluation framework. This implementation represents a significant methodological advancement that leverages systematic preference data generation to achieve targeted model improvement through theoretically grounded optimization procedures.
 
 \subsection{DPO Methodology Framework}
 
-Direct Preference Optimization provides a theoretically grounded approach to fine-tuning language models using preference data derived from comparative evaluations. Unlike traditional reinforcement learning from human feedback (RLHF) approaches, DPO directly optimizes the policy model using preference pairs without requiring a separate reward model, offering computational efficiency and training stability advantages.
+Direct Preference Optimization provides a theoretically grounded approach to fine-tuning language models using preference data derived from comparative evaluations \cite{rafailov2023dpo, muldrew2024active_preference}. Unlike traditional reinforcement learning from human feedback (RLHF) approaches, DPO directly optimizes the policy model using preference pairs without requiring a separate reward model, offering computational efficiency and training stability advantages \cite{wang2024asft}.
 
-The DPO methodology framework implemented in this research utilizes the comparative evaluation results generated by the Judge Agent to create structured preference pairs. Each preference pair consists of two email generations for the same topic, where one generation demonstrates superior performance according to the established evaluation criteria. This approach ensures that preference data directly reflects the quality distinctions identified through the systematic evaluation framework.
+\subsubsection{Preference Pair Generation from Judge Agent Scores}
 
-Training data preparation follows a systematic process that begins with the analysis of comparative evaluation results to identify consistent performance patterns across model-topic combinations. High-performing generations serve as preferred examples, while lower-performing generations from the same topic provide non-preferred comparisons. This methodology ensures that preference pairs capture meaningful quality differences while maintaining topic consistency.
+The DPO methodology framework implemented in this research utilizes a sophisticated preference pair generation system based on comparative evaluation results from the Judge Agent. The system employs systematic analysis of performance scores across model-topic combinations to identify optimal preference pairs that capture meaningful quality distinctions while ensuring statistical robustness.
+
+Preference pair selection follows rigorous criteria designed to maximize training effectiveness: score differential thresholds ensure substantial quality differences between preferred and non-preferred examples, topic consistency requirements maintain contextual coherence within preference pairs, and statistical significance verification confirms that observed performance differences exceed random variation. This systematic approach ensures that preference data directly reflects genuine quality distinctions identified through the multi-agent evaluation framework.
+
+The preference pair generation algorithm implements automated quality controls that include minimum performance threshold requirements for preferred examples, maximum threshold restrictions for non-preferred examples to avoid training on fundamentally flawed outputs, balanced topic distribution to prevent domain-specific bias, and cross-validation procedures to verify preference pair quality across different evaluation dimensions.
+
+\subsubsection{Training Pipeline Methodology}
+
+The training pipeline implements a systematic approach to DPO fine-tuning that ensures reproducible and effective model optimization. The pipeline incorporates automated data preprocessing procedures that convert Judge Agent evaluations into properly formatted preference datasets, systematic hyperparameter optimization based on model size and architectural characteristics, and comprehensive training monitoring to ensure convergence and prevent overfitting.
+
+Training data preparation follows a multi-stage validation process that begins with comprehensive analysis of baseline evaluation results to identify optimal preference pairs. The process includes statistical analysis of score distributions to establish appropriate threshold criteria, topic-balanced sampling to ensure representative coverage across charitable categories, and quality verification procedures to confirm preference pair validity.
+
+The systematic training methodology employs standardized procedures across all model variants to ensure fair comparison of optimization effectiveness. Training protocols include consistent batch size selection based on model capacity and computational constraints, learning rate optimization through systematic hyperparameter search, and convergence monitoring through validation loss tracking and performance plateau detection.
 
 \subsection{Fine-tuning Experimental Design}
 
-The fine-tuning experimental design implements a controlled approach that enables systematic assessment of DPO effectiveness across different model categories. The design incorporates baseline preservation through comprehensive documentation of pre-fine-tuning performance characteristics, controlled fine-tuning procedures with standardized hyperparameters and training protocols, and systematic post-fine-tuning evaluation using identical assessment frameworks applied in the initial experimental phase.
+The fine-tuning experimental design implements a comprehensive controlled approach that enables systematic assessment of DPO effectiveness across different model categories and operational modes. The design incorporates rigorous baseline preservation through comprehensive documentation of pre-fine-tuning performance characteristics, controlled fine-tuning procedures with standardized hyperparameters and training protocols, and systematic post-fine-tuning evaluation using identical assessment frameworks applied in the baseline experimental phase.
 
-Model selection for fine-tuning prioritizes medium-sized models (7B-8B parameters) that demonstrate adequate performance in initial evaluations while remaining computationally feasible for fine-tuning procedures. This approach enables meaningful assessment of fine-tuning effectiveness without excessive computational requirements while providing results applicable to practical deployment scenarios.
+\subsubsection{Pre/Post-Training Comparative Framework}
 
-Preference data curation implements quality controls to ensure that training examples reflect genuine performance improvements rather than evaluation artifacts. Curation procedures include minimum performance threshold requirements for preferred examples, verification of substantial quality differences between preferred and non-preferred pairs, and topic distribution balancing to prevent over-representation of specific charitable categories.
+The comparative framework employs a sophisticated experimental design that enables precise quantification of DPO effectiveness through systematic comparison of baseline and optimized model performance. The framework implements controlled comparison protocols that ensure fair assessment of optimization benefits while accounting for potential confounding variables.
 
-% TODO: Add figure placeholder for DPO methodology workflow
+Pre-training documentation procedures establish comprehensive baseline measurements that include detailed performance profiles across all evaluation dimensions, consistency measurements across multiple generations, computational efficiency metrics including inference time and resource utilization, and systematic documentation of generation characteristics and quality patterns.
+
+Post-training evaluation protocols employ identical assessment procedures to enable direct comparison while incorporating additional measurements specific to optimization assessment. These procedures include comparative performance analysis across identical model-topic-mode combinations, optimization effectiveness quantification through normalized improvement metrics, and systematic assessment of whether performance improvements are consistent across different operational contexts.
+
+Model selection for fine-tuning encompasses both small and medium-sized models (M0001-M0005) that demonstrate adequate baseline performance while remaining computationally feasible for fine-tuning procedures. This approach enables comprehensive assessment of fine-tuning effectiveness across different model scales without excessive computational requirements while providing results applicable to practical deployment scenarios.
+
+Preference data curation implements comprehensive quality controls to ensure that training examples reflect genuine performance improvements rather than evaluation artifacts. Curation procedures include rigorous minimum performance threshold requirements for preferred examples, systematic verification of substantial quality differences between preferred and non-preferred pairs, balanced topic distribution to prevent over-representation of specific charitable categories, and cross-validation procedures to verify preference pair consistency across different evaluation modes.
+
+% TODO: Add figure placeholder for DPO training pipeline architecture
 \begin{figure}[htbp]
     \centering
-    % \includegraphics[width=0.9\textwidth]{figures/dpo_methodology_workflow.pdf}
-    \caption{Direct Preference Optimization methodology workflow showing preference data creation and fine-tuning process}
-    \label{fig:dpo-methodology}
+    % \includegraphics[width=0.9\textwidth]{figures/dpo_training_pipeline_architecture.pdf}
+    \caption{DPO Training Pipeline Architecture showing data flow from evaluation to training and validation}
+    \label{fig:dpo-pipeline}
 \end{figure}
+
+% TODO: Add table placeholder for DPO training configuration
+\begin{table}[htbp]
+    \centering
+    \caption{DPO Training Configuration and Hyperparameters}
+    \label{tab:dpo-configuration}
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    \textbf{Parameter} & \textbf{Small Models} & \textbf{Medium Models} & \textbf{Justification} \\
+    \hline
+    Batch Size & 4 & 2 & Memory optimization \\
+    Learning Rate & 5e-6 & 3e-6 & Stability \& convergence \\
+    Training Epochs & 3 & 2 & Prevent overfitting \\
+    LoRA Rank & 16 & 32 & Parameter efficiency \\
+    LoRA Alpha & 32 & 64 & Adaptation strength \\
+    Dropout & 0.1 & 0.1 & Regularization \\
+    Beta (DPO) & 0.1 & 0.1 & Preference strength \\
+    Max Length & 1024 & 1024 & Context limitation \\
+    Warmup Steps & 100 & 150 & Learning rate scheduling \\
+    \hline
+    \end{tabular}
+\end{table}
 
 \subsection{Post-Fine-tuning Evaluation Protocol}
 
@@ -342,25 +622,6 @@ Limitation identification addresses several key areas that might affect result g
 
 Generalizability assessment examines the extent to which findings might apply to broader email generation tasks beyond the specific charitable fundraising domain. This assessment considers the transferability of evaluation methodologies to other persuasive communication contexts, the applicability of model performance patterns to different content domains, and the relevance of identified optimization strategies for broader automated content generation applications.
 
-\subsection{Research Impact and Future Directions}
-
-The methodology establishes foundations for several important research and practical contributions to the field of automated content generation. Research impact includes the development of novel multi-agent evaluation frameworks applicable to other content generation domains, validation of consistency sampling methodologies for reliable model assessment, and demonstration of DPO fine-tuning effectiveness in domain-specific content generation tasks.
-
-Future research directions emerging from this methodology include extension to other persuasive communication domains such as marketing and advocacy campaigns, investigation of cross-cultural effectiveness in fundraising email generation across different geographic and cultural contexts, and development of real-time adaptation mechanisms that adjust generation strategies based on audience response feedback.
-
-% TODO: Add table placeholder for future research directions
-\begin{table}[htbp]
-    \centering
-    \caption{Future research directions and methodological extensions}
-    \label{tab:future-research}
-    \begin{tabular}{|l|l|l|}
-    \hline
-    \textbf{Research Area} & \textbf{Proposed Extension} & \textbf{Expected Impact} \\
-    \hline
-    % Future research details to be inserted
-    \multicolumn{3}{|c|}{[Future research directions table to be completed]} \\
-    \hline
-    \end{tabular}
-\end{table}
+% Research impact and future directions moved to Discussion section (Section \ref{sec:research-impact})
 
 The comprehensive methodology presented in this chapter provides a robust framework for evaluating language model performance in automated email generation while establishing important precedents for multi-agent evaluation systems and preference-based fine-tuning approaches. The three-stage approach ensures systematic progression from foundational design through implementation to advanced analysis and enhancement, supporting both immediate research objectives and longer-term methodological contributions to the field.

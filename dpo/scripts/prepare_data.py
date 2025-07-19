@@ -96,22 +96,13 @@ def process_complete_results(results_file: str, config: Dict) -> List[Dict]:
             key=lambda x: x.get('rank', float('inf'))  # Put emails without rank at the end
         )
         
-        best_email = sorted_emails[0]  # Rank 1 (best)
-        worst_email = sorted_emails[-1]  # Highest rank (worst)
-        
+        # Find the best email (should be rank 1)
+        best_email = sorted_emails[0]
         best_rank = best_email.get('rank', 'N/A')
-        worst_rank = worst_email.get('rank', 'N/A')
         
-        print(f"  Best rank: {best_rank}, Worst rank: {worst_rank}")
+        print(f"  Best email rank: {best_rank}")
         
-        # Skip if ranks are too close (optional - can be removed if not needed)
-        if isinstance(best_rank, int) and isinstance(worst_rank, int):
-            rank_difference = worst_rank - best_rank
-            if rank_difference < config['dataset'].get('min_rank_difference', 1):
-                print(f"  Skipping: Rank difference {rank_difference} too small")
-                continue
-        
-        # Extract topic information for prompt
+        # Extract topic information for prompt (create once per topic)
         topic_info = result.get('topic', 'Unknown Topic')
         
         # topic_info is a string in this data format
@@ -127,28 +118,46 @@ def process_complete_results(results_file: str, config: Dict) -> List[Dict]:
         example_email = load_example_email(example_email_number)
         prompt = create_real_email_prompt(topic_name, example_email)
         
-        # Process email content to ensure <END_EMAIL> token if configured
-        chosen_content = best_email.get('email_content', '')
-        rejected_content = worst_email.get('email_content', '')
+        # Create DPO pairs: rank 1 (chosen) vs each higher rank (rejected)
+        topic_samples_created = 0
         
-        if config['dataset'].get('add_end_token', True):
-            chosen_content = ensure_end_token(chosen_content)
-            rejected_content = ensure_end_token(rejected_content)
-            print(f"  Added <END_EMAIL> tokens to chosen and rejected responses")
+        for rejected_email in sorted_emails[1:]:  # Skip the best email (index 0)
+            rejected_rank = rejected_email.get('rank', 'N/A')
+            
+            # Check rank difference requirement
+            if isinstance(best_rank, int) and isinstance(rejected_rank, int):
+                rank_difference = rejected_rank - best_rank
+                if rank_difference < config['dataset'].get('min_rank_difference', 1):
+                    print(f"    Skipping pair: rank {best_rank} vs {rejected_rank} (difference {rank_difference} too small)")
+                    continue
+            
+            # Process email content to ensure <END_EMAIL> token if configured
+            chosen_content = best_email.get('email_content', '')
+            rejected_content = rejected_email.get('email_content', '')
+            
+            if config['dataset'].get('add_end_token', True):
+                chosen_content = ensure_end_token(chosen_content)
+                rejected_content = ensure_end_token(rejected_content)
+            
+            dpo_sample = {
+                'prompt': prompt,
+                'chosen': chosen_content,
+                'rejected': rejected_content,
+                'chosen_rank': best_rank,
+                'rejected_rank': rejected_rank,
+                'chosen_model': best_email.get('model_name', ''),
+                'rejected_model': rejected_email.get('model_name', ''),
+                'topic_info': topic_info
+            }
+            
+            dpo_samples.append(dpo_sample)
+            topic_samples_created += 1
+            print(f"    ✅ Created DPO sample: rank {best_rank} vs {rejected_rank}")
         
-        dpo_sample = {
-            'prompt': prompt,
-            'chosen': chosen_content,
-            'rejected': rejected_content,
-            'chosen_rank': best_rank,
-            'rejected_rank': worst_rank,
-            'chosen_model': best_email.get('model_name', ''),
-            'rejected_model': worst_email.get('model_name', ''),
-            'topic_info': topic_info
-        }
-        
-        dpo_samples.append(dpo_sample)
-        print(f"  ✅ Created DPO sample: rank {best_rank} vs {worst_rank}")
+        if topic_samples_created > 0:
+            print(f"  Total samples created for this topic: {topic_samples_created}")
+        else:
+            print(f"  No valid DPO pairs created for this topic")
     
     print(f"\nTotal DPO samples created: {len(dpo_samples)}")
     return dpo_samples

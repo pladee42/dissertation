@@ -67,6 +67,9 @@ class VLLMBackend:
         os.environ.setdefault("NCCL_ASYNC_ERROR_HANDLING", "1")
         os.environ.setdefault("NCCL_TIMEOUT", "300")  # 5 minutes timeout
         
+        # Set vLLM log level to suppress worker method warnings
+        os.environ.setdefault("VLLM_LOGGING_LEVEL", "ERROR")
+        
         # Register distributed cleanup if not already done
         if not _distributed_cleanup_registered:
             atexit.register(_cleanup_distributed_process_group)

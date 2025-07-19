@@ -1,13 +1,13 @@
 # Data preparation configuration
 dataset:
   min_rank_difference: 1      # Minimum rank difference between chosen/rejected (1 = adjacent ranks)
-  max_samples_per_topic: 50   # Limit samples per topic
+  max_samples_per_topic: 1000 # Limit samples per topic (increased to allow full utilization)
   example_email_number: "1"   # Which example email to use from config/prompts/example_email/
   add_end_token: true         # Add <END_EMAIL> token to all email content for training consistency
   
 filtering:
-  min_email_length: 50        # Minimum email character length
-  max_email_length: 2000      # Maximum email character length
+  min_email_length: 1         # Minimum email character length (removed restrictive filtering)
+  max_email_length: 50000     # Maximum email character length (removed restrictive filtering)
   
 output:
   train_split: 0.8           # Training data ratio
