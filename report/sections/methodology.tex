@@ -11,13 +11,7 @@ The central research problem addresses the effectiveness of various language mod
 
 The methodological approach employs a multi-agent system design as a novel contribution to the field of automated text generation evaluation \cite{guo2024llm_multiagent, yan2025beyond_selftalk}. Unlike traditional single-model assessment approaches, this methodology introduces specialist agents for distinct phases of the evaluation process, enabling more comprehensive and systematic comparison of model capabilities \cite{yehudai2025survey_llm_agents}. The multi-agent approach provides several advantages over conventional evaluation methods: enhanced objectivity through agent specialization, systematic evaluation criteria generation, and standardized assessment protocols across all tested models \cite{ma2024agentboard}.
 
-% TODO: Add figure placeholder for research design overview
-\begin{figure}[htbp]
-    \centering
-    % \includegraphics[width=0.8\textwidth]{figures/research_design_overview.pdf}
-    \caption{Overview of the research design and multi-agent evaluation framework}
-    \label{fig:research-design}
-\end{figure}
+
 
 The research questions guiding this investigation focus on comparative performance assessment across different model categories, consistency of output quality within individual models, and the effectiveness of the proposed multi-agent evaluation framework in providing reliable and valid assessments of generated content quality.
 
@@ -64,21 +58,21 @@ The research employs a systematic Unique Identifier (UID) system for model track
 % TODO: Add table placeholder for model specifications
 \begin{table}[htbp]
     \centering
-    \caption{Language model specifications and categorization with UID system}
+    \caption{Enhanced Language Model Specifications with Dual-Method DPO Variants}
     \label{tab:model-specifications}
-    \begin{tabular}{|l|l|l|l|l|l|}
+    \begin{tabular}{|l|l|l|l|l|l|l|}
     \hline
-    \textbf{UID} & \textbf{Model Name} & \textbf{Parameters} & \textbf{Category} & \textbf{DPO Variant} & \textbf{Primary Use} \\
+    \textbf{UID} & \textbf{Model Name} & \textbf{Parameters} & \textbf{Category} & \textbf{DPO-Synthetic} & \textbf{DPO-Hybrid} & \textbf{Primary Use} \\
     \hline
-    M0001 & TinyLlama-1.1B & 1.1B & Small & Available & Email Generation \\
-    M0002 & Vicuna-7B & 7B & Medium & Available & Email Generation \\
-    M0003 & Phi-3-Mini & 3.8B & Small & Available & Email Generation \\
-    M0004 & Llama-3-8B & 8B & Medium & Available & Email Generation \\
-    M0005 & StableLM-2-1.6B & 1.6B & Small & Available & Email Generation \\
-    M0006 & Yi-34B & 34B & Large & N/A & Evaluation Tasks \\
-    M0007 & Llama-3-70B & 70B & Large & N/A & Evaluation Tasks \\
-    - & DeepSeek R1 & 8B & Reasoning & N/A & Checklist Generation \\
-    - & GPT O3 Mini & - & Reasoning & N/A & Evaluation/Judging \\
+    M0001 & TinyLlama-1.1B & 1.1B & Small & Available & Available & Email Generation \\
+    M0002 & Vicuna-7B & 7B & Medium & Available & Available & Email Generation \\
+    M0003 & Phi-3-Mini & 3.8B & Small & Available & Available & Email Generation \\
+    M0004 & Llama-3-8B & 8B & Medium & Available & Available & Email Generation \\
+    M0005 & StableLM-2-1.6B & 1.6B & Small & Available & Available & Email Generation \\
+    M0006 & Yi-34B & 34B & Large & N/A & N/A & Evaluation Tasks \\
+    M0007 & Llama-3-70B & 70B & Large & N/A & N/A & Evaluation Tasks \\
+    - & DeepSeek R1 & 8B & Reasoning & N/A & N/A & Checklist Generation \\
+    - & GPT O3 Mini & - & Reasoning & N/A & N/A & Evaluation/Judging \\
     \hline
     \end{tabular}
 \end{table}
@@ -116,7 +110,7 @@ The selection of charity fundraising emails as the evaluation domain provides se
 
 \subsection{Topic Development and Validation}
 
-The experimental dataset comprises 25 distinct fundraising topics distributed across 12 charity categories, providing comprehensive coverage of the fundraising domain while ensuring sufficient sample size for statistical analysis. Topic development follows a systematic process beginning with charity sector analysis and stakeholder consultation to identify representative fundraising scenarios.
+The experimental dataset comprises 100 distinct fundraising topics distributed across 12 charity categories, providing comprehensive coverage of the fundraising domain while ensuring sufficient sample size for statistical analysis. Topic development follows a systematic process beginning with charity sector analysis and stakeholder consultation to identify representative fundraising scenarios. The expanded dataset enables dual-method DPO experimentation through strategic integration of human-authored content with systematic synthetic data generation.
 
 The 12 charity categories include healthcare and medical research, education and youth development, environmental conservation, humanitarian aid and disaster relief, animal welfare, poverty alleviation and social services, elderly care and support, community development, disability support and accessibility, mental health awareness, refugee assistance, and emergency medical services. This categorization ensures coverage of major charitable sectors while providing sufficient topic diversity for robust model evaluation.
 
@@ -144,6 +138,47 @@ Content validation addresses both factual accuracy and representativeness of rea
 Ethical considerations in domain selection include ensuring respectful representation of charitable causes, avoiding exploitation of sensitive social issues for research purposes, and maintaining awareness of the potential impact of generated content on public perception of charitable organizations and causes.
 
 The standardized topic framework provides consistent input conditions for all models while allowing sufficient variation to assess adaptability and contextual understanding across different fundraising scenarios. This approach supports both within-model consistency analysis and cross-model comparative evaluation within a controlled experimental environment.
+
+\subsection{Human Baseline Integration}
+\label{sec:human-baseline-integration}
+
+The methodology incorporates a systematic human baseline integration approach that strategically combines authentic human-authored fundraising emails with the synthetic experimental framework. This integration serves dual purposes: establishing performance benchmarks through comparison with human-generated content and providing high-quality preference data for hybrid DPO training procedures.
+
+\subsubsection{Human Email Collection and Validation}
+
+The human baseline dataset comprises 25 high-quality fundraising emails corresponding to topics T0001-T0025, collected through systematic collaboration with fundraising professionals and charitable organizations. Email selection follows rigorous criteria designed to ensure representativeness and quality: demonstrated effectiveness in actual fundraising campaigns, adherence to professional communication standards, coverage of diverse charitable sectors within the first 25 topic categories, and compliance with ethical guidelines for research use.
+
+Human email validation employs a comprehensive multi-stage process that includes expert review by fundraising professionals to assess quality and effectiveness, content analysis to verify alignment with corresponding synthetic topic specifications, ethical review to ensure appropriate representation of charitable causes, and linguistic analysis to confirm professional communication standards. This validation process ensures that human examples represent authentic best practices in fundraising communication while maintaining compatibility with the experimental framework.
+
+\subsubsection{Strategic Topic Selection for Human Data}
+
+The selection of the first 25 topics (T0001-T0025) for human email integration follows systematic criteria designed to maximize experimental validity while maintaining practical feasibility. The selection ensures balanced representation across the 12 charity categories, sufficient diversity to assess generalization capabilities, practical feasibility for human email collection efforts, and strategic positioning to enable meaningful hybrid preference learning.
+
+This strategic approach enables the research to assess fundamental questions regarding the value of human expertise in preference learning while maintaining sufficient synthetic data coverage for comprehensive model evaluation. The 25-75 ratio of human-to-synthetic preference data provides an optimal balance between authentic human insight and scalable synthetic data generation \cite{gallego2024configurable_safety}.
+
+\subsubsection{Human-Synthetic Data Integration Methodology}
+
+The integration methodology implements systematic procedures to ensure compatibility between human-authored and synthetic preference data while preserving the distinct characteristics of each data source. Integration procedures include normalization of formatting standards to ensure consistency across human and synthetic examples, quality threshold alignment to maintain comparable standards between data sources, topic-specific calibration to verify contextual consistency within individual categories, and statistical validation to confirm that human examples represent meaningful quality improvements.
+
+The methodology addresses potential challenges in human-synthetic integration through careful attention to evaluation consistency, comparative quality assessment, and systematic documentation of integration procedures. This approach ensures that hybrid preference learning achieves optimal effectiveness while maintaining experimental validity and reproducibility standards.
+
+% TODO: Add table placeholder for human-synthetic data integration
+\begin{table}[htbp]
+    \centering
+    \caption{Human-Synthetic Data Integration Strategy for Dual-Method DPO}
+    \label{tab:human-synthetic-integration}
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    \textbf{Topic Range} & \textbf{Data Source} & \textbf{Count} & \textbf{Purpose} \\
+    \hline
+    T0001-T0025 & Human-authored & 25 & Hybrid preference learning \\
+    T0026-T0100 & Synthetic generation & 75 & Scalable preference data \\
+    All Topics & Judge Agent scores & 100 & Synthetic preference learning \\
+    \hline
+    \textbf{Total Preference Pairs} & \textbf{DPO-Synthetic: 100} & \textbf{DPO-Hybrid: 100} & \textbf{Comparison Framework} \\
+    \hline
+    \end{tabular}
+\end{table}
 
 \section{Multi-Modal Checklist Generation Framework}
 \label{sec:multi-modal-checklist}
@@ -207,11 +242,11 @@ The comparative framework enables systematic assessment of mode performance acro
 \section{Experimental Design}
 \label{sec:experimental-design}
 
-The experimental design implements a comprehensive two-phase experimental protocol that systematically evaluates language model performance across diverse fundraising contexts while enabling direct comparison of baseline and preference-optimized model variants. This advanced design enables systematic comparison of model capabilities both within individual model categories and across the full spectrum of tested architectures, while providing quantitative assessment of Direct Preference Optimization effectiveness.
+The experimental design implements a comprehensive multi-phase experimental protocol that systematically evaluates language model performance across diverse fundraising contexts while enabling direct comparison of baseline and dual-method preference-optimized model variants. This advanced design enables systematic comparison of model capabilities both within individual model categories and across the full spectrum of tested architectures, while providing quantitative assessment of dual-method Direct Preference Optimization effectiveness.
 
-\subsection{Two-Phase Experimental Protocol}
+\subsection{Multi-Phase Experimental Protocol}
 
-The experimental methodology employs a sophisticated two-phase protocol designed to evaluate both baseline model performance and the effectiveness of preference-based optimization approaches. This protocol enables systematic assessment of model improvement through Direct Preference Optimization while maintaining rigorous experimental controls.
+The experimental methodology employs a sophisticated four-phase protocol designed to evaluate baseline model performance, the effectiveness of dual preference-based optimization approaches, and comparative assessment of DPO methodologies. This protocol enables systematic assessment of model improvement through both synthetic and hybrid preference optimization while maintaining rigorous experimental controls and enabling comparative analysis between optimization strategies.
 
 \subsubsection{Phase 1: Baseline Evaluation with Pre-trained Models}
 
@@ -219,21 +254,35 @@ Phase 1 establishes comprehensive baseline performance measurements using pre-tr
 
 The baseline evaluation protocol implements systematic assessment across all model-topic-mode combinations, creating a comprehensive performance matrix that captures baseline capabilities across the full experimental space. This phase provides the foundational data required for preference pair generation and enables quantification of improvement through subsequent optimization procedures.
 
-\subsubsection{Phase 2: Comparative Evaluation with DPO-Optimized Models}
+\subsubsection{Phase 2: DPO-Synthetic Training and Evaluation}
 
-Phase 2 implements systematic evaluation of DPO-optimized model variants using identical assessment protocols employed in Phase 1. This phase enables direct comparison of pre-training and post-training performance while maintaining consistent evaluation standards and experimental conditions.
+Phase 2 implements the synthetic preference learning approach (DPO-Synthetic) through systematic training of models using preference pairs derived exclusively from Judge Agent evaluations. This phase employs rank-1 emails as preferred examples and systematically selected lower-performing outputs as rejected examples, creating comprehensive synthetic preference datasets for each model category.
 
-The comparative evaluation protocol applies the multi-modal framework to DPO-optimized models, generating performance measurements directly comparable to baseline assessments. This approach enables quantification of optimization effectiveness across different model sizes, operational modes, and topic categories.
+The DPO-Synthetic training protocol implements standardized procedures across all model variants (M0001-M0005) while maintaining consistency in hyperparameter configurations, training duration, and convergence criteria. Following training completion, models undergo comprehensive evaluation using identical assessment protocols employed in Phase 1, enabling direct comparison of pre-training and post-training performance through systematic quantification of improvement metrics.
+
+\subsubsection{Phase 3: DPO-Hybrid Training and Evaluation}
+
+Phase 3 implements the hybrid human-synthetic preference learning approach (DPO-Hybrid) through strategic integration of human-authored email examples with synthetic preference data. This phase incorporates the 25 validated human-written emails corresponding to topics T0001-T0025 as preferred examples, while maintaining synthetic data generation procedures for topics T0026-T0100.
+
+The DPO-Hybrid training protocol employs identical training procedures and hyperparameter configurations used in Phase 2, ensuring that methodological differences can be attributed to preference data composition rather than training procedure variations. Post-training evaluation follows standardized assessment protocols, generating performance measurements directly comparable to both baseline (Phase 1) and DPO-Synthetic (Phase 2) results.
+
+\subsubsection{Phase 4: Comparative Pipeline Re-deployment and Analysis}
+
+Phase 4 implements a novel comparative evaluation approach that deploys both DPO-optimized model variants back into the original three-agent pipeline for comprehensive performance assessment. This phase represents a critical methodological innovation that enables evaluation of fine-tuning effectiveness within the complete system context rather than isolated model assessment.
+
+The pipeline re-deployment protocol implements systematic evaluation procedures where both DPO-Synthetic and DPO-Hybrid optimized models generate new email content across all 25 topics using identical prompts and generation parameters employed in baseline evaluation. The Judge Agent applies consistent evaluation frameworks to assess improvement magnitude and comparative effectiveness between the two DPO approaches.
+
+This comparative deployment methodology enables direct assessment of which DPO method produces superior performance improvements within the complete multi-agent evaluation framework. The approach provides practical insights into optimization effectiveness while maintaining ecological validity through evaluation within the intended deployment context.
 
 \subsubsection{Mode-Based Analysis Framework}
 
-The two-phase protocol incorporates systematic comparison across the three checklist generation modes, enabling assessment of optimization effectiveness under different operational conditions. This mode-based analysis framework tests whether DPO improvements are consistent across different analytical approaches or whether optimization benefits are mode-dependent.
+The multi-phase protocol incorporates systematic comparison across the three checklist generation modes, enabling assessment of optimization effectiveness under different operational conditions across both DPO methods. This mode-based analysis framework tests whether DPO improvements are consistent across different analytical approaches, whether optimization benefits are mode-dependent, and how the two preference learning methods perform under varying operational constraints.
 
-The framework enables evaluation of interaction effects between optimization approaches and operational modes, providing insights into the generalizability of preference-based improvements across different evaluation contexts. This analysis approach supports both aggregate performance assessment and fine-grained investigation of optimization effectiveness.
+The framework enables evaluation of interaction effects between dual optimization approaches and operational modes, providing insights into the generalizability of preference-based improvements across different evaluation contexts. This analysis approach supports both aggregate performance assessment and fine-grained investigation of optimization effectiveness while enabling direct comparison of synthetic versus hybrid preference learning approaches across all operational modes.
 
 \subsection{Multi-Topic Comparative Framework}
 
-The comparative framework employs a comprehensive factorial design approach where each model generates content for every topic within the experimental dataset across both experimental phases, creating an extensive matrix of model-topic-phase combinations for analysis. This approach ensures that performance assessments capture model-specific capabilities, topic-dependent variations, and optimization effectiveness across diverse contexts.
+The comparative framework employs a comprehensive factorial design approach where each model generates content for every topic within the experimental dataset across all four experimental phases, creating an extensive matrix of model-topic-phase combinations for analysis. This approach ensures that performance assessments capture model-specific capabilities, topic-dependent variations, dual-method optimization effectiveness, and comparative performance assessment across diverse contexts.
 
 Controlled variables within the experimental design include prompt standardization across all model-topic combinations, consistent input formatting and parameter specifications, uniform evaluation criteria application regardless of generating model, and standardized environmental conditions for model inference. These controls ensure that observed performance differences reflect genuine model capabilities rather than experimental artifacts.
 
@@ -247,31 +296,35 @@ Performance delta calculations employ normalized improvement metrics that accoun
 
 The delta analysis framework supports both aggregate improvement assessment and fine-grained analysis of improvement patterns across different experimental conditions. This approach enables identification of optimal optimization strategies and assessment of improvement consistency across diverse evaluation contexts.
 
-% TODO: Add figure placeholder for two-phase experimental design
+% TODO: Add figure placeholder for multi-phase experimental design
 \begin{figure}[htbp]
     \centering
-    % \includegraphics[width=0.9\textwidth]{figures/two_phase_experimental_design.pdf}
-    \caption{Two-Phase Experimental Design Workflow showing baseline and DPO-optimized evaluation phases}
-    \label{fig:two-phase-design}
+    % \includegraphics[width=0.9\textwidth]{figures/multi_phase_experimental_design.pdf}
+    \caption{Multi-Phase Experimental Design Workflow showing baseline evaluation, dual-method DPO training, and comparative pipeline re-deployment phases}
+    \label{fig:multi-phase-design}
 \end{figure}
 
 % TODO: Add table placeholder for experimental conditions matrix
 \begin{table}[htbp]
     \centering
-    \caption{Experimental Conditions Matrix: Phase × Mode × Model Combinations}
+    \caption{Multi-Phase Experimental Conditions Matrix: Phase × Mode × Model Combinations}
     \label{tab:experimental-conditions}
     \begin{tabular}{|l|l|l|l|l|}
     \hline
     \textbf{Phase} & \textbf{Mode} & \textbf{Model Category} & \textbf{Model Count} & \textbf{Total Conditions} \\
     \hline
-    Baseline & Full-Prompt & Small/Medium/Large & 7 & 21 \\
-    Baseline & Extract-Only & Small/Medium/Large & 7 & 21 \\
-    Baseline & Hybrid & Small/Medium/Large & 7 & 21 \\
-    DPO-Optimized & Full-Prompt & Small/Medium & 5 & 15 \\
-    DPO-Optimized & Extract-Only & Small/Medium & 5 & 15 \\
-    DPO-Optimized & Hybrid & Small/Medium & 5 & 15 \\
+    Phase 1: Baseline & Full-Prompt & Small/Medium/Large & 7 & 21 \\
+    Phase 1: Baseline & Extract-Only & Small/Medium/Large & 7 & 21 \\
+    Phase 1: Baseline & Hybrid & Small/Medium/Large & 7 & 21 \\
+    Phase 2: DPO-Synthetic & Full-Prompt & Small/Medium & 5 & 15 \\
+    Phase 2: DPO-Synthetic & Extract-Only & Small/Medium & 5 & 15 \\
+    Phase 2: DPO-Synthetic & Hybrid & Small/Medium & 5 & 15 \\
+    Phase 3: DPO-Hybrid & Full-Prompt & Small/Medium & 5 & 15 \\
+    Phase 3: DPO-Hybrid & Extract-Only & Small/Medium & 5 & 15 \\
+    Phase 3: DPO-Hybrid & Hybrid & Small/Medium & 5 & 15 \\
+    Phase 4: Pipeline Comparison & All Modes & Small/Medium & 5 & 15 \\
     \hline
-    \multicolumn{4}{|l|}{\textbf{Total Experimental Conditions}} & \textbf{108} \\
+    \multicolumn{4}{|l|}{\textbf{Total Experimental Conditions}} & \textbf{153} \\
     \hline
     \end{tabular}
 \end{table}
@@ -328,6 +381,61 @@ The consistency measurement framework employs statistical reliability measures t
 The evaluation framework incorporates comprehensive statistical significance testing procedures specifically designed for pre-training and post-training performance comparisons. These procedures employ appropriate statistical methods for paired comparison analysis, account for multiple testing corrections in comprehensive model comparisons, and implement effect size calculations to assess practical significance beyond statistical significance.
 
 Statistical testing protocols enable robust conclusion formation regarding DPO effectiveness while accounting for baseline performance variations and experimental design complexity. The testing framework supports both aggregate performance assessment and fine-grained analysis of improvement patterns across different experimental conditions.
+
+\subsection{Multi-Stage Evaluation Protocol}
+\label{sec:multi-stage-evaluation}
+
+The multi-stage evaluation protocol represents a comprehensive methodological framework designed to assess dual-method DPO effectiveness across multiple evaluation dimensions while maintaining consistency and reliability throughout the four-phase experimental design. This protocol extends traditional evaluation approaches to accommodate the complexity of comparative preference learning assessment while ensuring robust statistical analysis across all experimental conditions \cite{chen2024meta_evaluation, xu2024consistency_survey}.
+
+\subsubsection{Training Effectiveness Assessment}
+
+Training effectiveness assessment provides systematic evaluation of DPO optimization success through comprehensive analysis of preference pair accuracy, convergence characteristics, and learning progression metrics. The assessment begins with preference pair validation accuracy measurement that quantifies how effectively each DPO method learns to distinguish between preferred and rejected examples during training procedures.
+
+The methodology implements systematic tracking of training convergence metrics including loss function progression, gradient norm stability, validation performance improvement, and convergence time analysis. These metrics enable comparative assessment of training efficiency between synthetic and hybrid preference learning approaches while identifying potential optimization challenges or advantages specific to each method.
+
+Performance delta quantification measures the magnitude of improvement achieved through each DPO method using normalized improvement metrics that account for baseline performance variations across different models and topics. The assessment employs statistical significance testing to distinguish genuine optimization improvements from random variation while providing confidence intervals for improvement magnitude estimates.
+
+Quality retention analysis ensures that DPO optimization maintains or improves evaluation consistency across multiple generations while avoiding performance degradation in non-target evaluation dimensions. This analysis addresses potential concerns regarding optimization overfitting or unintended quality reduction in specific evaluation criteria.
+
+\subsubsection{Pipeline Integration Evaluation}
+
+Pipeline integration evaluation assesses how effectively DPO-optimized models function within the complete three-agent evaluation framework while maintaining system coherence and evaluation validity. The evaluation begins with integration compatibility assessment that verifies optimized models maintain technical compatibility with existing system infrastructure including prompt formatting, generation parameters, and output specifications.
+
+System performance consistency evaluation ensures that DPO improvements translate into measurable system-level performance gains rather than merely reflecting isolated model improvements. The assessment employs end-to-end evaluation procedures that measure complete pipeline performance from prompt input through final Judge Agent scoring to capture system-level optimization effectiveness.
+
+Evaluation framework stability analysis verifies that Judge Agent assessment procedures remain consistent and reliable when evaluating DPO-optimized model outputs compared to baseline assessments. This analysis addresses potential evaluation bias that might arise from systematic differences in optimized model output characteristics while ensuring comparative assessment validity.
+
+Cross-agent interaction assessment evaluates whether DPO optimization affects the quality of Checklist Creator Agent evaluation criteria generation or Judge Agent scoring consistency, thereby ensuring that optimization benefits reflect genuine content quality improvements rather than evaluation framework artifacts.
+
+\subsubsection{Cross-Method Comparative Analysis}
+
+Cross-method comparative analysis enables systematic assessment of relative effectiveness between synthetic and hybrid preference learning approaches through rigorous statistical comparison and practical significance evaluation. The analysis implements paired comparison procedures that directly assess Method 1 versus Method 2 performance across identical evaluation conditions while controlling for baseline performance variations and topic-specific effects.
+
+The methodology employs multi-dimensional performance comparison that simultaneously assesses both methods across all evaluation criteria categories including content quality, persuasive effectiveness, audience appropriateness, and technical quality. This comprehensive approach enables identification of method-specific strengths and limitations while providing insights into optimal application contexts for each approach.
+
+Statistical robustness verification ensures that observed method differences exceed random variation through comprehensive significance testing, effect size quantification, and power analysis procedures. The analysis incorporates multiple comparison corrections to maintain statistical validity while providing practical significance thresholds for method selection decisions.
+
+Generalization assessment evaluates whether method differences remain consistent across different model categories, topic types, and operational modes, thereby informing practical deployment recommendations and identifying contexts where specific methods demonstrate superior effectiveness.
+
+\subsubsection{Cross-Validation Between Training Effectiveness and Pipeline Performance}
+
+The methodology implements comprehensive cross-validation procedures that systematically verify the relationship between DPO training effectiveness measures and subsequent pipeline performance improvements. This cross-validation approach addresses fundamental questions regarding whether training metrics accurately predict real-world system improvement while ensuring robust correlation between optimization indicators and practical deployment outcomes.
+
+Cross-validation procedures employ systematic comparison of training convergence metrics with post-deployment performance measurements to establish predictive validity of training indicators. The analysis includes correlation assessment between training loss reduction and Judge Agent score improvements, validation of preference accuracy metrics against pipeline evaluation outcomes, and systematic documentation of training-performance relationships across different model categories and DPO methods.
+
+The framework implements statistical validation of training-deployment consistency through temporal correlation analysis that examines whether models demonstrating superior training convergence characteristics consistently achieve better performance in pipeline re-deployment scenarios. This validation enables reliable prediction of deployment success based on training metrics while informing optimal training termination criteria and resource allocation decisions \cite{chen2024meta_evaluation}.
+
+Pipeline consistency verification ensures that training improvements translate reliably into system-level performance gains through comprehensive testing of model integration procedures, evaluation framework stability, and assessment consistency across multiple deployment cycles. This verification process prevents technical artifacts from confounding the relationship between training effectiveness and practical system improvement while ensuring robust translation of optimization benefits into operational contexts.
+
+\subsubsection{Meta-Evaluation Framework}
+
+The meta-evaluation framework provides systematic assessment of evaluation framework consistency and reliability across the multi-phase experimental design while identifying potential sources of evaluation bias or systematic error \cite{wang2024dynamic_evaluation}. Meta-evaluation procedures begin with Judge Agent consistency analysis that quantifies evaluation reliability across different experimental phases and optimization conditions.
+
+Cross-phase evaluation stability assessment ensures that Judge Agent scoring criteria and assessment procedures remain consistent throughout the experimental timeline while identifying any systematic drift in evaluation standards that might confound comparative analysis. The assessment employs inter-rater reliability measures adapted for automated evaluation contexts to quantify assessment consistency.
+
+Evaluation validity verification confirms that observed performance improvements reflect genuine quality enhancements rather than evaluation artifacts or systematic bias through correlation analysis with independent quality measures and expert validation procedures. This verification process strengthens confidence in experimental conclusions while identifying potential limitations in evaluation approach.
+
+The meta-evaluation framework implements systematic documentation of evaluation uncertainty and confidence measures that inform result interpretation and practical application recommendations. These measures enable transparent reporting of evaluation limitations while providing guidance for future research and practical deployment decisions.
 
 % TODO: Add table placeholder for evaluation criteria categories
 \begin{table}[htbp]
@@ -422,11 +530,52 @@ Training convergence verification employs systematic monitoring of training metr
 
 Optimization effectiveness validation confirms that post-training performance improvements represent genuine enhancements in email generation quality. Validation procedures include comparative performance analysis to verify improvement magnitude, statistical significance testing to confirm that improvements exceed random variation, and systematic assessment of improvement consistency across different evaluation contexts.
 
+\subsection{Multi-Method Validation Framework}
+\label{sec:multi-method-validation}
+
+The multi-method validation framework implements comprehensive quality assurance procedures specifically designed for dual-method DPO evaluation while ensuring methodological rigor across all experimental phases. This framework addresses the unique challenges of validating human-synthetic data integration, pipeline consistency, and evaluation reliability in the context of comparative preference learning assessment \cite{chen2024reproducibility_hci, yin2024reproducibility_ml}.
+
+\subsubsection{Human Data Quality Validation Protocols}
+
+Human data quality validation protocols ensure that human-authored email samples meet rigorous quality standards while maintaining compatibility with the synthetic evaluation framework. The validation process begins with expert review procedures involving fundraising professionals and communication specialists who assess email quality, effectiveness, and representativeness of professional fundraising communications.
+
+Content authenticity verification confirms that human examples represent genuine best practices in fundraising communication through systematic analysis of persuasive effectiveness, structural coherence, audience appropriateness, and ethical compliance. The verification process includes linguistic analysis to confirm professional communication standards, contextual relevance assessment to ensure topic alignment, and comparative quality analysis to verify that human examples represent meaningful quality improvements over synthetic alternatives.
+
+Integration compatibility assessment ensures that human-authored emails maintain technical and methodological compatibility with the synthetic evaluation framework. Assessment procedures include formatting standardization verification, evaluation criteria applicability testing, scoring methodology compatibility analysis, and statistical distribution analysis to confirm that human examples do not introduce systematic bias into the preference learning framework.
+
+\subsubsection{Synthetic-Human Data Integration Verification}
+
+Synthetic-human data integration verification implements systematic procedures to ensure seamless combination of human and synthetic preference data while preserving the distinct characteristics and advantages of each data source. The verification process employs statistical analysis to confirm balanced representation across charitable categories, quality threshold consistency between data sources, and appropriate integration ratios for optimal preference learning effectiveness.
+
+Distribution analysis procedures verify that human-synthetic integration maintains statistical validity through assessment of quality score distributions, evaluation criteria coverage, topic representation balance, and preference pair quality consistency. These analyses ensure that hybrid preference learning achieves intended benefits while avoiding systematic bias or integration artifacts that might compromise training effectiveness.
+
+Cross-validation procedures verify integration success through independent assessment of preference pair quality using alternative evaluation frameworks and expert validation protocols. This multi-perspective validation approach strengthens confidence in integration effectiveness while identifying potential limitations or improvement opportunities in the hybrid approach.
+
+\subsubsection{Pipeline Consistency Across Fine-tuned Model Deployment}
+
+Pipeline consistency verification ensures that DPO-optimized models integrate seamlessly into the three-agent evaluation framework while maintaining system coherence and assessment reliability. The verification process implements comprehensive testing of model loading procedures, inference consistency, output formatting compliance, and evaluation framework compatibility to prevent technical artifacts from affecting comparative assessment.
+
+System-level validation procedures confirm that fine-tuned models maintain compatibility with existing pipeline infrastructure through systematic testing of input/output interfaces, generation parameter consistency, prompt formatting requirements, and evaluation criteria applicability. These procedures ensure that observed performance differences reflect genuine optimization benefits rather than integration issues or technical incompatibilities.
+
+Environmental consistency monitoring maintains standardized computational conditions across all evaluation phases through systematic documentation of hardware configurations, software dependencies, inference parameters, and evaluation timing. This monitoring ensures that comparative assessments accurately reflect model improvement rather than environmental variations or technical confounds.
+
+\subsubsection{Judge Agent Reliability Assessment Across Multiple Evaluation Cycles}
+
+Judge Agent reliability assessment implements systematic procedures to monitor evaluation consistency and identify potential sources of bias or drift that might develop through repeated application across multiple experimental phases. The assessment employs statistical analysis of evaluation patterns, scoring consistency, and criteria application to ensure reliable and fair assessment throughout the experimental timeline.
+
+Temporal stability analysis evaluates whether Judge Agent assessment procedures remain consistent across the four experimental phases through correlation analysis of evaluation scores, consistency measurement of criteria application, and identification of systematic changes that might affect comparative validity. This analysis enables early detection of evaluation drift while ensuring robust comparative assessment.
+
+Inter-phase reliability verification confirms that evaluation standards remain stable throughout the experimental process through systematic comparison of evaluation outcomes across phases, assessment of scoring distribution characteristics, and identification of potential systematic bias sources. The verification process includes statistical testing of evaluation consistency and confidence interval analysis for assessment reliability.
+
+Cross-validation with alternative evaluation frameworks provides independent verification of Judge Agent assessment quality through comparison with expert evaluation protocols, alternative automated assessment approaches, and human baseline comparisons. This multi-method validation strengthens confidence in evaluation reliability while identifying potential limitations in the automated assessment framework.
+
 \subsection{Reproducibility and Documentation Standards}
 
-Reproducibility measures ensure that experimental procedures can be replicated by independent researchers with access to the same models and datasets. Documentation standards include comprehensive recording of model configurations and parameters, detailed prompt specifications and input formatting procedures, complete evaluation criteria definitions and weighting schemes, and statistical analysis procedures with software version specifications.
+Reproducibility measures ensure that experimental procedures can be replicated by independent researchers with access to the same models and datasets while meeting contemporary standards for transparent and accountable research in language model evaluation \cite{ma2024reproducibility_query}. Documentation standards include comprehensive recording of model configurations and parameters, detailed prompt specifications and input formatting procedures, complete evaluation criteria definitions and weighting schemes, and statistical analysis procedures with software version specifications.
 
-Data integrity verification protocols monitor the experimental process to identify and correct potential data collection errors. Verification procedures include automated checking of complete data collection across all model-topic combinations, validation of evaluation scoring calculations and aggregation procedures, and cross-reference verification between generated content and corresponding evaluation results.
+The methodology implements standardized documentation protocols that address the unique challenges of dual-method DPO evaluation including preference data composition documentation, human-synthetic integration procedures, pipeline deployment specifications, and comparative evaluation protocols. These protocols ensure that all aspects of the experimental approach can be independently replicated while maintaining transparency in methodological choices and analytical procedures.
+
+Data integrity verification protocols monitor the experimental process to identify and correct potential data collection errors while ensuring compliance with reproducibility standards. Verification procedures include automated checking of complete data collection across all model-topic combinations, validation of evaluation scoring calculations and aggregation procedures, cross-reference verification between generated content and corresponding evaluation results, and systematic documentation of any issues or deviations encountered during experimental execution.
 
 % TODO: Add figure placeholder for quality assurance validation framework
 \begin{figure}[htbp]
@@ -443,6 +592,85 @@ Data integrity verification protocols monitor the experimental process to identi
     \caption{Mode Performance Comparison Visualization showing quality-efficiency trade-offs across operational modes}
     \label{fig:mode-performance-comparison}
 \end{figure}
+
+\section{Iterative Evaluation Methodology}
+\label{sec:iterative-evaluation}
+
+The iterative evaluation methodology implements a systematic framework for conducting multi-phase assessment while maintaining consistency and reliability across the complete experimental timeline. This methodology addresses the unique challenges of evaluating dual-method DPO effectiveness through systematic procedures that ensure fair comparison while accounting for potential temporal effects and evaluation artifacts \cite{zhang2024improve_pipeline, xu2024consistency_survey}.
+
+\subsection{Pipeline Re-deployment Framework}
+
+The pipeline re-deployment framework provides systematic procedures for integrating fine-tuned models into the operational three-agent evaluation system while maintaining experimental validity and assessment consistency. This framework represents a critical methodological innovation that enables evaluation of optimization effectiveness within realistic deployment contexts rather than isolated model assessment.
+
+\subsubsection{Model Integration Procedures for Fine-tuned Variants}
+
+Model integration procedures implement systematic protocols for replacing baseline models with their corresponding DPO-optimized variants within the Email Generation Agent while preserving system integrity and evaluation consistency. The integration process begins with comprehensive compatibility verification that ensures fine-tuned models maintain technical compatibility with existing system infrastructure including input/output formatting, parameter specifications, and interface requirements.
+
+The methodology employs standardized substitution protocols that minimize technical artifacts while ensuring that observed performance differences reflect genuine optimization benefits rather than integration issues. Integration verification includes systematic testing of model loading procedures, prompt formatting consistency, generation parameter compatibility, and output validation to prevent technical confounds from affecting comparative assessment.
+
+Version control and documentation procedures ensure complete traceability of model variants throughout the experimental process while enabling systematic comparison of integration success across different optimization methods. The framework implements automated verification procedures that confirm successful integration while identifying any technical issues that might compromise evaluation validity.
+
+\subsubsection{Consistency Maintenance Across Evaluation Phases}
+
+Consistency maintenance procedures ensure that evaluation standards and assessment criteria remain stable throughout the multi-phase experimental timeline while preventing systematic drift in evaluation quality or criteria application. The methodology implements systematic monitoring of Judge Agent evaluation consistency through statistical analysis of scoring patterns, assessment criteria application, and evaluation reliability measures across different experimental phases.
+
+Temporal stability assessment employs longitudinal analysis of evaluation patterns to identify potential systematic changes in assessment standards that might confound comparative analysis between experimental phases. The assessment includes correlation analysis of evaluation scores across phases, consistency measurement of criteria application, and identification of potential evaluation drift that might affect result interpretation.
+
+Environmental control procedures maintain consistent computational and software environments across all evaluation phases to prevent technical variations from affecting assessment outcomes. Controls include standardized hardware configurations, consistent software dependencies, identical inference parameters, and synchronized evaluation timing to minimize external sources of variation.
+
+\subsubsection{Bias Assessment for Repeated Judge Agent Evaluation}
+
+Bias assessment procedures systematically evaluate potential sources of systematic error that might arise from repeated application of the Judge Agent evaluation framework across multiple experimental phases. The assessment addresses concerns regarding evaluation consistency, potential adaptation effects, and systematic bias that might develop through repeated exposure to similar evaluation tasks.
+
+The methodology implements statistical analysis of evaluation patterns to identify systematic bias including analysis of score distribution characteristics across phases, assessment of potential evaluation drift over time, identification of systematic preferences that might develop through repeated evaluation, and correlation analysis to detect potential bias sources. These procedures ensure that observed performance differences reflect genuine optimization effects rather than evaluation artifacts.
+
+Cross-validation procedures verify evaluation consistency through independent validation of assessment outcomes using alternative evaluation frameworks and expert assessment protocols. This validation approach strengthens confidence in evaluation reliability while identifying potential limitations in the automated assessment framework that might affect result interpretation.
+
+\subsection{Statistical Methodology for Comparing Multi-Stage Results}
+
+The statistical methodology for multi-stage comparison implements comprehensive analytical procedures designed to assess dual-method DPO effectiveness while accounting for the complexity of multi-phase experimental design and potential temporal effects. This methodology extends traditional statistical approaches to accommodate the unique challenges of comparative preference learning assessment.
+
+\subsubsection{Multi-Level Modeling for Nested Experimental Design}
+
+Multi-level modeling procedures account for the hierarchical structure of the experimental design including models nested within categories, topics nested within charitable domains, and evaluation phases nested within the overall experimental timeline. The modeling approach enables simultaneous assessment of multiple factors while preserving the statistical relationships between different levels of experimental organization.
+
+The methodology employs mixed-effects modeling procedures that account for both fixed effects (experimental conditions) and random effects (model-specific, topic-specific, and temporal variations) while providing robust estimation of treatment effects and their associated uncertainty. This approach enables valid statistical inference while accounting for the complex correlation structure inherent in the multi-phase experimental design.
+
+Effect size estimation procedures provide practical significance assessment beyond statistical significance testing through comprehensive calculation of standardized effect sizes, confidence intervals for effect magnitude, and power analysis for detecting meaningful differences between DPO methods. These procedures inform practical deployment decisions while ensuring robust statistical conclusions.
+
+\subsubsection{Longitudinal Analysis of Performance Patterns}
+
+Longitudinal analysis procedures systematically assess performance patterns across the four experimental phases while identifying systematic trends, temporal effects, and optimization trajectories for each DPO method. The analysis employs time-series analytical techniques adapted for experimental contexts to quantify performance changes and identify optimal timing for assessment procedures.
+
+Trend analysis procedures evaluate whether performance improvements represent stable optimization benefits or temporary effects that might diminish over time through systematic assessment of performance stability, evaluation of improvement persistence, and identification of potential performance degradation or enhancement over the experimental timeline.
+
+Comparative trajectory analysis enables direct assessment of optimization effectiveness between DPO methods through systematic comparison of improvement patterns, convergence characteristics, and performance stability across the complete experimental timeline. This analysis provides insights into relative optimization efficiency while informing practical deployment recommendations.
+
+% TODO: Add figure placeholder for iterative evaluation methodology
+\begin{figure}[htbp]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{figures/iterative_evaluation_methodology.pdf}
+    \caption{Iterative Evaluation Methodology Framework showing multi-phase consistency maintenance and bias assessment procedures}
+    \label{fig:iterative-evaluation}
+\end{figure}
+
+% TODO: Add table placeholder for iterative evaluation metrics
+\begin{table}[htbp]
+    \centering
+    \caption{Iterative Evaluation Metrics and Consistency Measures}
+    \label{tab:iterative-evaluation-metrics}
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    \textbf{Evaluation Aspect} & \textbf{Metric} & \textbf{Measurement} & \textbf{Threshold} \\
+    \hline
+    Temporal Consistency & Correlation across phases & Pearson r & r > 0.85 \\
+    Evaluation Stability & Score variance & Coefficient of variation & CV < 0.15 \\
+    Bias Assessment & Systematic drift & Linear trend analysis & p > 0.05 \\
+    Integration Success & Technical compatibility & Error rate & < 2\% \\
+    Phase Reliability & Inter-phase agreement & Cronbach's alpha & α > 0.80 \\
+    \hline
+    \end{tabular}
+\end{table}
 
 \section{Data Collection Procedures}
 \label{sec:data-collection}
@@ -505,6 +733,39 @@ Training data preparation follows a multi-stage validation process that begins w
 
 The systematic training methodology employs standardized procedures across all model variants to ensure fair comparison of optimization effectiveness. Training protocols include consistent batch size selection based on model capacity and computational constraints, learning rate optimization through systematic hyperparameter search, and convergence monitoring through validation loss tracking and performance plateau detection.
 
+\subsection{Dual-Method DPO Experimental Design}
+\label{sec:dual-method-dpo}
+
+This research introduces a novel dual-method approach to Direct Preference Optimization that systematically compares the effectiveness of purely synthetic preference data against hybrid human-synthetic preference learning. This methodological innovation addresses fundamental questions regarding the optimal composition of preference datasets while establishing empirical evidence for best practices in preference-based fine-tuning \cite{gallego2024configurable_safety, chen2024refined_dpo}.
+
+\subsubsection{DPO-Synthetic: Synthetic Preference Learning}
+
+DPO-Synthetic implements a fully synthetic approach to preference data generation, utilizing the highest-ranked emails from the Judge Agent evaluation framework as preferred examples in DPO training. This approach leverages the systematic evaluation capabilities of the multi-agent framework to create preference pairs based entirely on model-generated content and automated assessment procedures.
+
+The synthetic preference learning methodology follows a systematic data curation process that begins with comprehensive analysis of Judge Agent scores across all model-topic combinations. Preferred examples are selected based on rank-1 performance within each topic category, ensuring that chosen responses represent the highest quality outputs as determined by the standardized evaluation framework. Rejected examples are systematically selected from lower-performing outputs within the same topic categories, maintaining contextual consistency while ensuring substantial quality differentials.
+
+This methodology offers several theoretical advantages for preference optimization: scalability through automated data generation procedures, consistency in evaluation standards across all preference pairs, elimination of human annotation subjectivity and potential bias, and direct integration with the existing multi-agent evaluation framework. The approach enables comprehensive preference dataset generation across all 25 topics while maintaining systematic quality controls and statistical robustness \cite{liu2024rs_dpo}.
+
+Quality assurance procedures for synthetic preference data include statistical validation of score differentials between preferred and rejected examples, cross-modal consistency verification across different checklist generation modes, topic-balanced distribution to prevent domain-specific bias, and automated filtering to remove low-confidence preference pairs based on evaluation score variance.
+
+\subsubsection{DPO-Hybrid: Hybrid Human-Synthetic Learning}
+
+DPO-Hybrid implements a hybrid approach that strategically integrates human-authored email examples with synthetic preference data to assess the potential benefits of human expertise in preference learning. This methodology incorporates 25 high-quality human-written fundraising emails corresponding to topics T0001-T0025, while maintaining synthetic data generation for the remaining 75 topics in the experimental dataset.
+
+The hybrid integration methodology employs a systematic approach to combining human and synthetic preference data that ensures compatibility and maintains training effectiveness. Human-authored emails undergo comprehensive quality validation through expert review processes involving fundraising professionals and communication specialists. These emails serve as preferred examples within their respective topic categories, while rejected examples are generated through systematic selection of lower-performing model outputs for identical topics.
+
+Theoretical justification for the hybrid approach stems from recent advances in preference learning research that demonstrate enhanced training effectiveness when human expertise is strategically integrated with synthetic data generation \cite{poddar2024personalizing_rlhf}. The approach addresses potential limitations of purely synthetic preference learning by incorporating authentic human expertise while maintaining the scalability benefits of automated data generation for the majority of the training dataset.
+
+Human data integration procedures include rigorous quality validation protocols to ensure consistency with synthetic data standards, topic-specific alignment verification to maintain contextual coherence, statistical analysis to confirm that human examples represent genuine quality improvements over synthetic alternatives, and systematic documentation of human-synthetic integration ratios for subsequent analysis.
+
+\subsubsection{Comparative Theoretical Framework}
+
+The dual-method experimental design enables systematic investigation of fundamental questions in preference learning research: the relative effectiveness of purely synthetic versus human-grounded preference data, the optimal ratio of human to synthetic examples for training effectiveness, the generalizability of preference learning across different data composition strategies, and the practical implications of hybrid approaches for scalable preference optimization.
+
+Theoretical expectations for the comparative analysis include enhanced performance from hybrid human-synthetic learning due to incorporation of authentic human expertise, improved generalization capabilities through exposure to diverse preference sources, potential efficiency gains from strategic human data integration rather than comprehensive human annotation, and insights into optimal data composition strategies for practical deployment scenarios.
+
+The comparative framework implements rigorous experimental controls to ensure valid assessment of methodological differences. Both methods employ identical training procedures, hyperparameter configurations, and evaluation frameworks, with the sole variable being the composition of preference training data. This approach enables precise attribution of performance differences to preference data characteristics rather than training procedure variations.
+
 \subsection{Fine-tuning Experimental Design}
 
 The fine-tuning experimental design implements a comprehensive controlled approach that enables systematic assessment of DPO effectiveness across different model categories and operational modes. The design incorporates rigorous baseline preservation through comprehensive documentation of pre-fine-tuning performance characteristics, controlled fine-tuning procedures with standardized hyperparameters and training protocols, and systematic post-fine-tuning evaluation using identical assessment frameworks applied in the baseline experimental phase.
@@ -557,6 +818,63 @@ Post-fine-tuning evaluation employs identical assessment procedures used in the 
 
 Comparative analysis framework enables systematic assessment of fine-tuning effectiveness through multiple evaluation dimensions: absolute performance improvement measurement across all evaluation criteria, relative performance changes within specific charitable categories, consistency improvement assessment through variance analysis across multiple generations, and efficiency analysis comparing pre- and post-fine-tuning inference characteristics.
 
+\subsection{Post-Training Pipeline Evaluation}
+\label{sec:post-training-pipeline}
+
+The post-training pipeline evaluation represents a critical methodological innovation that extends beyond traditional isolated model assessment to evaluate DPO effectiveness within the complete three-agent system context. This approach addresses fundamental questions regarding the translation of training improvements into practical system performance while enabling direct comparison of dual-method DPO effectiveness \cite{chen2024meta_evaluation, wang2024dynamic_evaluation}.
+
+\subsubsection{Pipeline Re-deployment Methodology}
+
+The pipeline re-deployment methodology implements systematic procedures for integrating fine-tuned models back into the operational three-agent framework while maintaining evaluation consistency and experimental validity. The methodology begins with systematic model substitution procedures that replace baseline models with their corresponding DPO-optimized variants within the Email Generation Agent while preserving all other system components and configurations.
+
+Integration verification protocols ensure that fine-tuned models maintain compatibility with existing pipeline infrastructure through comprehensive testing of model loading procedures, prompt formatting consistency, generation parameter compatibility, and output formatting compliance. This verification process prevents technical artifacts from confounding evaluation results while ensuring that observed performance differences reflect genuine optimization benefits rather than integration issues.
+
+The re-deployment protocol maintains strict environmental controls that include identical hardware configurations across all evaluation phases, consistent software dependencies and version specifications, standardized inference parameters and generation settings, and synchronized evaluation timing to minimize external variability. These controls ensure that comparative assessments accurately reflect model improvement rather than environmental differences \cite{zhang2024improve_pipeline}.
+
+\subsubsection{Comparative DPO Method Assessment}
+
+The comparative assessment framework enables direct evaluation of which DPO method produces superior performance improvements through systematic application of both optimized model variants to identical evaluation scenarios. The assessment protocol implements parallel evaluation procedures where both DPO-Synthetic and DPO-Hybrid optimized models generate email content across the complete 25-topic evaluation dataset using identical prompts, generation parameters, and environmental conditions.
+
+Performance measurement consistency maintains evaluation validity through systematic application of the original Judge Agent evaluation framework to assess improvement magnitude and comparative effectiveness. The assessment employs identical checklist generation procedures, evaluation criteria application, and scoring methodologies used in baseline evaluation to ensure direct comparability of results across all experimental phases.
+
+The comparative framework implements statistical procedures designed to distinguish genuine method differences from random variation through rigorous significance testing, effect size quantification, and confidence interval analysis. These procedures enable robust conclusions regarding the relative effectiveness of synthetic versus hybrid preference learning approaches while accounting for baseline performance variations and evaluation uncertainty.
+
+\subsubsection{Ecological Validity Assessment}
+
+Ecological validity assessment ensures that optimization improvements translate into meaningful performance gains within realistic deployment contexts rather than merely reflecting training dataset overfitting or evaluation artifacts. The assessment employs systematic evaluation of model performance across diverse topic categories, operational modes, and generation scenarios to verify that improvements generalize beyond training conditions.
+
+The methodology implements cross-modal validation procedures that assess whether DPO improvements remain consistent across the three checklist generation modes (Full-Prompt, Extract-Only, and Hybrid), thereby testing the robustness of optimization benefits under varying operational constraints. This cross-modal assessment provides insights into the generalizability of preference learning improvements while identifying potential mode-specific optimization effects.
+
+Real-world applicability assessment evaluates whether optimized models maintain improvement consistency across the complete range of charitable categories and fundraising scenarios represented within the experimental dataset. This assessment addresses practical deployment considerations by verifying that optimization benefits extend beyond the specific topics and contexts used for preference pair generation \cite{lin2024meta_rewarding}.
+
+% TODO: Add figure placeholder for post-training pipeline evaluation
+\begin{figure}[htbp]
+    \centering
+    % \includegraphics[width=0.9\textwidth]{figures/post_training_pipeline_evaluation.pdf}
+    \caption{Post-Training Pipeline Evaluation Framework showing dual-method comparison within the complete three-agent system}
+    \label{fig:post-training-pipeline}
+\end{figure}
+
+% TODO: Add table placeholder for pipeline evaluation metrics
+\begin{table}[htbp]
+    \centering
+    \caption{Pipeline Evaluation Metrics and Comparative Assessment Framework}
+    \label{tab:pipeline-evaluation-metrics}
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    \textbf{Evaluation Dimension} & \textbf{Baseline} & \textbf{DPO-Synthetic} & \textbf{DPO-Hybrid} \\
+    \hline
+    Generation Quality & Judge Agent Score & Judge Agent Score & Judge Agent Score \\
+    Consistency Variance & Multi-generation SD & Multi-generation SD & Multi-generation SD \\
+    Cross-Modal Stability & Mode Correlation & Mode Correlation & Mode Correlation \\
+    Topic Generalization & Category Coverage & Category Coverage & Category Coverage \\
+    Ecological Validity & Real-world Alignment & Real-world Alignment & Real-world Alignment \\
+    \hline
+    \textbf{Statistical Comparison} & \textbf{Baseline vs DPO-S} & \textbf{Baseline vs DPO-H} & \textbf{DPO-S vs DPO-H} \\
+    \hline
+    \end{tabular}
+\end{table}
+
 \section{Performance Analysis Methods}
 \label{sec:performance-analysis}
 
@@ -570,17 +888,75 @@ Significance testing methodology incorporates multiple comparison corrections to
 
 Multi-dimensional performance assessment recognizes that email generation quality encompasses multiple evaluation criteria with varying importance levels. The analysis employs multivariate analysis of variance (MANOVA) procedures to assess simultaneous differences across multiple evaluation dimensions while preserving the relationships between different quality aspects.
 
+\subsubsection{Comparative Analysis Methods for DPO Evaluation}
+
+The comparative analysis methodology implements specialized statistical procedures designed to assess dual-method DPO effectiveness while accounting for the complex multi-phase experimental design and nested data structure. This methodology extends traditional statistical approaches to accommodate the unique challenges of preference learning comparison and multi-stage evaluation assessment.
+
+Multi-level modeling procedures account for the hierarchical structure of the experimental data including models nested within size categories, topics nested within charitable domains, and evaluation phases nested within the overall experimental timeline. The modeling approach employs mixed-effects procedures that simultaneously assess fixed effects (DPO methods, model categories, operational modes) and random effects (model-specific, topic-specific, and temporal variations) while providing robust estimation of treatment effects and their associated confidence intervals.
+
+Effect size calculations for DPO method comparison implement comprehensive assessment of practical significance beyond statistical significance testing. The methodology employs specialized effect size measures adapted for preference learning contexts including standardized mean differences between DPO methods, proportion of variance explained by method differences, and practical significance thresholds calibrated for email generation quality assessment. These measures enable informed decisions regarding optimal DPO approaches while providing transparent reporting of improvement magnitude.
+
+Confidence intervals for practical significance assessment provide robust uncertainty quantification for DPO method effectiveness while enabling reliable deployment decisions. The methodology implements bootstrap procedures and Bayesian estimation techniques to generate confidence intervals that account for experimental design complexity and multiple sources of variation. These intervals inform practical deployment recommendations while ensuring transparent reporting of analytical uncertainty.
+
+Power analysis for detecting meaningful differences between methods ensures that the experimental design provides adequate statistical power for reliable detection of practically significant DPO method differences. The analysis employs simulation-based procedures that account for the multi-phase design complexity while providing prospective power estimates for different effect sizes and sample configurations. This analysis validates the experimental design while informing interpretation of null results and negative findings.
+
+\subsubsection{Effect Size Predictions for Each DPO Method}
+
+The methodology incorporates systematic predictions of expected effect sizes for both DPO methods based on theoretical considerations and empirical evidence from preference learning research. These predictions establish empirically grounded expectations for optimization effectiveness while providing benchmarks for evaluating actual experimental outcomes against theoretical predictions.
+
+DPO-Synthetic effect size predictions are calibrated based on observed performance differentials in baseline evaluation data and theoretical expectations for purely automated preference optimization. Expected effect sizes for synthetic preference learning range from medium effects (Cohen's d = 0.5) for content quality improvements to large effects (Cohen's d = 0.8) for consistency measures, reflecting the systematic nature of automated preference pair generation and the direct integration with the multi-agent evaluation framework.
+
+DPO-Hybrid effect size predictions incorporate enhanced expectations based on the integration of authentic human expertise with systematic synthetic data generation. Expected effect sizes for hybrid preference learning range from large effects (Cohen's d = 0.8) for content quality and persuasive effectiveness to very large effects (Cohen's d ≥ 1.0) for audience appropriateness measures, reflecting the potential benefits of incorporating human communication expertise into the preference learning framework.
+
+Comparative effect size predictions between DPO methods anticipate medium to large effects (Cohen's d = 0.5-0.8) favoring DPO-Hybrid across most evaluation dimensions, with particularly pronounced advantages expected in persuasive effectiveness and audience appropriateness categories. These predictions are based on theoretical advantages of human expertise integration and empirical evidence from related preference learning research \cite{poddar2024personalizing_rlhf, liu2024human_ai_teaming}.
+
+\subsubsection{Practical Significance Thresholds for Method Selection}
+
+The methodology establishes systematic practical significance thresholds that inform evidence-based decisions regarding optimal DPO method selection for different deployment scenarios. These thresholds extend beyond statistical significance to address practical considerations including deployment cost, implementation complexity, and operational requirements for real-world applications.
+
+Primary practical significance thresholds are calibrated for Judge Agent score improvements, with minimum meaningful improvement defined as 5-point increases on the 100-point scale for individual model categories and 3-point aggregate improvements across all models. These thresholds reflect practical requirements for detectable quality improvements in email generation systems while accounting for measurement uncertainty and evaluation consistency considerations.
+
+Secondary practical significance thresholds address operational considerations including training resource requirements, with cost-effectiveness thresholds established at 10% improvement in quality-per-computational-hour metrics, deployment complexity thresholds requiring successful integration across all operational modes without technical complications, and scalability thresholds demanding consistent improvement across different model categories and topic types.
+
+Method selection criteria integrate practical significance assessment with statistical evidence through multi-criteria decision frameworks that systematically weight quality improvements, resource requirements, implementation complexity, and deployment reliability. These frameworks enable transparent and reproducible decisions regarding optimal DPO approaches while accounting for diverse practical constraints and deployment scenarios \cite{wang2024human_ai_collaboration}.
+
+Threshold validation procedures employ sensitivity analysis to assess the robustness of method selection decisions across different threshold specifications while ensuring that practical significance criteria remain appropriate for diverse deployment contexts. This validation approach strengthens confidence in method selection recommendations while providing transparency regarding the impact of threshold choices on final deployment decisions.
+
+\subsubsection{Reliability Measures Across Iterative Evaluations}
+
+The methodology implements comprehensive reliability measurement procedures that systematically assess evaluation consistency and dependability across the complete multi-phase experimental timeline. These reliability measures address fundamental questions regarding evaluation stability, assessment consistency, and measurement precision while ensuring robust statistical foundations for comparative analysis and practical deployment decisions.
+
+Temporal reliability assessment employs test-retest methodologies adapted for automated evaluation contexts to quantify assessment consistency across repeated applications of the Judge Agent evaluation framework. The assessment includes systematic measurement of evaluation score stability across multiple evaluation cycles, correlation analysis of assessment outcomes across different time periods, and identification of systematic drift or bias that might develop through repeated evaluation exposure.
+
+Inter-phase reliability verification implements systematic procedures to ensure evaluation consistency across the four experimental phases while accounting for potential systematic changes in evaluation patterns or criteria application. The verification process employs statistical techniques including intraclass correlation coefficients (ICC) to quantify evaluation reliability, Cronbach's alpha analysis to assess internal consistency of evaluation criteria, and systematic assessment of evaluation score distributions across phases to identify potential systematic bias sources.
+
+Cross-modal reliability analysis evaluates assessment consistency across the three operational modes (Full-Prompt, Extract-Only, and Hybrid) to ensure that evaluation reliability remains stable regardless of checklist generation approach. This analysis addresses concerns regarding mode-specific evaluation artifacts while confirming that reliability measures remain consistent across different analytical frameworks and operational constraints.
+
+Multi-model reliability assessment examines evaluation consistency across different model categories and architectural types to verify that assessment reliability does not vary systematically based on model characteristics or output patterns. The assessment employs variance component analysis to quantify the relative contributions of model-specific, evaluation-specific, and random sources of variation to overall assessment reliability while ensuring fair and consistent evaluation across diverse model architectures.
+
+Statistical reliability thresholds establish minimum acceptable levels of assessment consistency required for valid comparative analysis and deployment decisions. Primary reliability thresholds include ICC values exceeding 0.80 for inter-phase consistency, Cronbach's alpha coefficients greater than 0.85 for evaluation criteria internal consistency, and test-retest correlations above 0.90 for temporal stability across repeated evaluations. These thresholds ensure robust statistical foundations for comparative analysis while providing confidence in evaluation framework reliability.
+
+Reliability improvement procedures implement systematic approaches to enhance evaluation consistency when reliability measures fall below established thresholds. Improvement strategies include criteria refinement to address sources of evaluation inconsistency, training data enhancement to improve Judge Agent assessment quality, and systematic bias correction to address identified sources of evaluation drift or systematic error. These procedures ensure continuous improvement in evaluation reliability while maintaining experimental integrity throughout the research timeline \cite{xu2024consistency_survey, chen2024meta_evaluation}.
+
 % TODO: Add table placeholder for statistical analysis plan
 \begin{table}[htbp]
     \centering
-    \caption{Statistical analysis plan with testing procedures and significance criteria}
+    \caption{Enhanced Statistical Analysis Plan for Dual-Method DPO Evaluation}
     \label{tab:statistical-analysis-plan}
     \begin{tabular}{|l|l|l|c|}
     \hline
     \textbf{Analysis Type} & \textbf{Method} & \textbf{Purpose} & \textbf{Significance Level} \\
     \hline
-    % Statistical analysis details to be inserted
-    \multicolumn{4}{|c|}{[Statistical analysis plan table to be completed]} \\
+    Baseline Comparison & Mixed-effects ANOVA & Model category differences & p < 0.05 \\
+    DPO-Synthetic vs Baseline & Paired t-test & Synthetic preference effectiveness & p < 0.01 \\
+    DPO-Hybrid vs Baseline & Paired t-test & Hybrid preference effectiveness & p < 0.01 \\
+    DPO-Synthetic vs DPO-Hybrid & Paired t-test & Comparative DPO effectiveness & p < 0.01 \\
+    Multi-phase Analysis & Repeated measures ANOVA & Temporal stability & p < 0.05 \\
+    Cross-modal Consistency & Friedman test & Mode-dependent effects & p < 0.05 \\
+    Effect size (DPO methods) & Cohen's d & Practical significance & d > 0.3 \\
+    Pipeline Integration & MANOVA & System-level improvement & p < 0.05 \\
+    Power Analysis & Simulation-based & Design validation & Power > 0.80 \\
+    Multi-level Modeling & Mixed-effects & Nested design & AIC/BIC comparison \\
     \hline
     \end{tabular}
 \end{table}

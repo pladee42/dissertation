@@ -110,27 +110,37 @@ class ModelManager:
             
             # Download tokenizer first (smaller, quick validation)
             logger.info(f"Downloading tokenizer for {model_id}...")
-            tokenizer = AutoTokenizer.from_pretrained(
-                model_id,
-                cache_dir=self.cache_dir,
-                trust_remote_code=True
-            )
             
-            # Download model (this will cache it)
+            # Handle SentencePiece tokenizer models (like Vicuna)
+            tokenizer_kwargs = {
+                "cache_dir": self.cache_dir,
+                "trust_remote_code": True
+            }
+            
+            # Use slow tokenizer for models with SentencePiece issues
+            if 'vicuna' in model_id.lower() or 'lmsys' in model_id.lower():
+                tokenizer_kwargs["use_fast"] = False
+                logger.info(f"Using slow tokenizer for {model_id} to handle SentencePiece conversion")
+            
+            tokenizer = AutoTokenizer.from_pretrained(model_id, **tokenizer_kwargs)
+            
+            # Download model weights WITHOUT loading into memory
+            # Use snapshot_download for memory-efficient downloading
             logger.info(f"Downloading model weights for {model_id}...")
-            model = AutoModelForCausalLM.from_pretrained(
-                model_id,
+            from huggingface_hub import snapshot_download
+            
+            # Download model files to cache without instantiating
+            cache_path = snapshot_download(
+                repo_id=model_id,
                 cache_dir=self.cache_dir,
-                trust_remote_code=True,
-                torch_dtype="auto",  # Use auto dtype for downloading
-                device_map=None  # Don't load to GPU, just download
+                repo_type="model",
+                local_files_only=False
             )
             
-            # Clean up memory
-            del model
+            # Clean up tokenizer reference
             del tokenizer
             
-            logger.info(f"Successfully downloaded {model_id}")
+            logger.info(f"Successfully downloaded {model_id} to {cache_path}")
             return True
             
         except Exception as e:

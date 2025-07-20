@@ -9,6 +9,9 @@ import json
 import yaml
 import torch
 import os
+import gc
+import sys
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import Dict
@@ -53,31 +56,81 @@ def load_dpo_dataset(data_file: str, tokenizer) -> Dataset:
 def setup_model_and_tokenizer(config: Dict, cache_dir: str = "../downloaded_models"):
     """Setup model, tokenizer with quantization and LoRA"""
     
-    # Quantization config
-    if config['model']['use_quantization']:
-        bnb_config = BitsAndBytesConfig(
-            load_in_4bit=True,
-            bnb_4bit_quant_type="nf4",
-            bnb_4bit_compute_dtype=torch.bfloat16,
-            bnb_4bit_use_double_quant=True,
-        )
-    else:
+    # Aggressive memory cleanup before loading new model
+    gc.collect()
+    torch.cuda.empty_cache()
+    torch.cuda.synchronize()
+    
+    # Print memory status
+    if torch.cuda.is_available():
+        memory_allocated = torch.cuda.memory_allocated() / 1024**3
+        memory_reserved = torch.cuda.memory_reserved() / 1024**3
+        print(f"GPU Memory before loading: {memory_allocated:.2f}GB allocated, {memory_reserved:.2f}GB reserved")
+    
+    # Check if bitsandbytes is available for quantization
+    try:
+        import bitsandbytes
+        use_quantization = config['model'].get('use_quantization', True)
+        if use_quantization:
+            bnb_config = BitsAndBytesConfig(
+                load_in_4bit=True,
+                bnb_4bit_quant_type="nf4",
+                bnb_4bit_compute_dtype=torch.bfloat16,
+                bnb_4bit_use_double_quant=True,
+                llm_int8_threshold=6.0,
+                llm_int8_has_fp16_weight=False,
+            )
+            print("Using 4-bit quantization for memory efficiency")
+        else:
+            bnb_config = None
+    except ImportError:
+        print("bitsandbytes not available, skipping quantization")
         bnb_config = None
     
-    # Load model and tokenizer from cache
+    # Handle SentencePiece tokenizer models (like Vicuna)
+    tokenizer_kwargs = {
+        "trust_remote_code": True,
+        "cache_dir": cache_dir
+    }
+        
+    model_name = config['model']['base_model'].lower()
+    if "awq" in model_name:
+        device_map = {"": 0}  # Force all layers to GPU 0 for AWQ
+    elif "llama3" in model_name or "llama-3" in model_name:
+        device_map = "auto"
+    elif 'vicuna' in model_name or 'lmsys' in model_name:
+        tokenizer_kwargs["use_fast"] = False
+        device_map = "auto"  # Set device_map for Vicuna models
+        print(f"Using slow tokenizer for {model_name} to handle SentencePiece conversion")
+    else:
+        device_map = None
+    
+    # Determine dtype based on model type
+    if "awq" in config['model']['base_model'].lower():
+        torch_dtype = torch.float16  # AWQ requires float16
+    else:
+        torch_dtype = torch.bfloat16
+
+    model_kwargs = {
+        'trust_remote_code': True,
+        'torch_dtype': torch_dtype,
+        'device_map': device_map,
+        'cache_dir': cache_dir,
+        'low_cpu_mem_usage': True,  # Reduce CPU memory usage during loading
+    }
+    
+    # Add quantization config only if available
+    if bnb_config is not None:
+        model_kwargs['quantization_config'] = bnb_config
+
     model = AutoModelForCausalLM.from_pretrained(
-        config['model']['base_model'],
-        quantization_config=bnb_config,
-        trust_remote_code=True,
-        torch_dtype=torch.bfloat16,
-        device_map="auto",
-        cache_dir=cache_dir
-    )
+      config['model']['base_model'],
+      **model_kwargs
+  )
     
     tokenizer = AutoTokenizer.from_pretrained(
         config['model']['base_model'],
-        trust_remote_code=True,
-        cache_dir=cache_dir
+        **tokenizer_kwargs
     )
     
     # Add padding token if not present
@@ -152,6 +205,32 @@ def train_single_model(data_file: str, model_key: str, output_base_dir: str, res
     print(f"Training {model_info['name']} ({model_info['size']})...")
     print(f"Using config: {config_file}")
     
+    # Pre-training aggressive GPU memory cleanup BEFORE any model operations
+    print(f"🧹 Pre-training GPU memory cleanup for {model_key}")
+    if torch.cuda.is_available():
+        # Multiple cleanup passes
+        for cleanup_pass in range(5):
+            gc.collect()
+            torch.cuda.empty_cache()
+            torch.cuda.synchronize()
+            time.sleep(0.5)  # Brief wait between cleanup passes
+        
+        # Try CUDA device reset (if available)
+        try:
+            torch.cuda.reset_peak_memory_stats()
+            torch.cuda.reset_accumulated_memory_stats()
+            # Try to reset the entire CUDA context
+            if hasattr(torch.cuda, 'device_reset'):
+                torch.cuda.device_reset()
+                print("CUDA device reset successful")
+        except Exception as e:
+            print(f"CUDA reset warning: {e}")
+        
+        # Check memory status before any model operations
+        memory_allocated = torch.cuda.memory_allocated() / 1024**3
+        memory_reserved = torch.cuda.memory_reserved() / 1024**3
+        print(f"GPU Memory after cleanup: {memory_allocated:.2f}GB allocated, {memory_reserved:.2f}GB reserved")
+    
     # Initialize model manager and ensure model availability
     print("Checking model availability...")
     model_manager = ModelManager(cache_dir)
@@ -168,9 +247,14 @@ def train_single_model(data_file: str, model_key: str, output_base_dir: str, res
     # Create model-specific output directory
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     output_dir = os.path.join(output_base_dir, f"dpo_{model_key}_{timestamp}")
+    
+    print(f"Creating output directory: {output_dir}")
+    print(f"Absolute path: {os.path.abspath(output_dir)}")
+    print(f"Current working directory: {os.getcwd()}")
+    
     os.makedirs(output_dir, exist_ok=True)
     
-    print(f"Output directory: {output_dir}")
+    print(f"✅ Output directory created: {output_dir}")
     print(f"Base model: {config['model']['base_model']}")
     
     # Setup model and tokenizer
@@ -197,40 +281,88 @@ def train_single_model(data_file: str, model_key: str, output_base_dir: str, res
     print("Starting training...")
     trainer.train(resume_from_checkpoint=resume_checkpoint)
     
-    # Get the trained model and merge with base
-    print("Merging LoRA with base model...")
+    # Get the trained model and handle merging
+    print("Processing trained model...")
     from peft import PeftModel
     import torch
-    
-    # Load base model for merging
-    base_model = AutoModelForCausalLM.from_pretrained(
-        config['model']['base_model'],
-        torch_dtype=torch.bfloat16,
-        device_map="auto",
-        trust_remote_code=True,
-        cache_dir=cache_dir
-    )
     
     # Get the trained PEFT model
     trained_model = trainer.model
     
-    # Merge and unload
-    merged_model = trained_model.merge_and_unload()
+    # Check if this is an AWQ model (which has merge limitations)
+    print(f"🔍 Debug: Checking AWQ status for model")
+    model_name = config['model']['base_model'].lower()
+    print(f"🔍 Debug: base_model = '{config['model']['base_model']}'")
+    print(f"🔍 Debug: model_name (lowercase) = '{model_name}'")
+    is_awq_model = "awq" in model_name
+    print(f"🔍 Debug: AWQ detection result = {is_awq_model}")
     
-    # Save LoRA adapter (for backup)
+    if is_awq_model:
+        print("✅ AWQ model detected - saving LoRA adapter only (AWQ merge not fully supported)")
+        print("🔍 Debug: Skipping merge for AWQ model as expected")
+        # For AWQ models, just save the LoRA adapter
+        merged_model = None
+    else:
+        print(f"🔗 Non-AWQ model detected - proceeding with LoRA merge")
+        print("🔍 Debug: Attempting to merge LoRA with base model...")
+        try:
+            # Load base model for merging (non-AWQ)
+            print(f"🔍 Debug: Loading base model for merge: {config['model']['base_model']}")
+            base_model = AutoModelForCausalLM.from_pretrained(
+                config['model']['base_model'],
+                torch_dtype=torch.bfloat16,
+                device_map="auto",
+                trust_remote_code=True,
+                cache_dir=cache_dir
+            )
+            
+            # Merge and unload
+            print("🔍 Debug: Calling merge_and_unload()...")
+            merged_model = trained_model.merge_and_unload()
+            print("✅ Debug: Merge successful")
+            
+            # Clean up base model reference
+            del base_model
+            gc.collect()
+            torch.cuda.empty_cache()
+            
+        except Exception as e:
+            print(f"❌ Merge failed with error: {e}")
+            print(f"🔍 Debug: Exception type: {type(e).__name__}")
+            print(f"🔍 Debug: Exception details: {str(e)}")
+            print("⚠️ Saving LoRA adapter only...")
+            merged_model = None
+    
+    # Save LoRA adapter (always save this)
     print("Saving LoRA adapter...")
     trainer.save_model()
     
     # Save tokenizer
     tokenizer.save_pretrained(output_dir)
     
-    # Save merged model locally
-    merged_output_dir = os.path.join(output_dir, 'merged_model')
-    os.makedirs(merged_output_dir, exist_ok=True)
-    
-    print(f"Saving merged model to {merged_output_dir}...")
-    merged_model.save_pretrained(merged_output_dir)
-    tokenizer.save_pretrained(merged_output_dir)
+    # Save merged model only if merge was successful
+    if merged_model is not None:
+        # Fix generation config to avoid sampling conflicts
+        if hasattr(merged_model, 'generation_config') and merged_model.generation_config is not None:
+            gen_config = merged_model.generation_config
+            # If do_sample is False, remove sampling-only parameters
+            if hasattr(gen_config, 'do_sample') and not gen_config.do_sample:
+                if hasattr(gen_config, 'temperature'):
+                    gen_config.temperature = None
+                if hasattr(gen_config, 'top_p'):
+                    gen_config.top_p = None
+                print("Fixed generation config to remove sampling conflicts")
+        
+        # Save merged model locally
+        merged_output_dir = os.path.join(output_dir, 'merged_model')
+        os.makedirs(merged_output_dir, exist_ok=True)
+        
+        print(f"Saving merged model to {merged_output_dir}...")
+        merged_model.save_pretrained(merged_output_dir)
+        tokenizer.save_pretrained(merged_output_dir)
+    else:
+        print("Skipping merged model save (merge failed or AWQ model)")
+        merged_output_dir = None
     
     # Save training config and model info
     training_info = {
@@ -246,13 +378,31 @@ def train_single_model(data_file: str, model_key: str, output_base_dir: str, res
     with open(os.path.join(output_dir, 'training_info.yaml'), 'w') as f:
         yaml.dump(training_info, f)
     
-    # Cleanup training model from memory
-    del trained_model, base_model
+    # Aggressive cleanup of all training objects from memory
+    del trained_model
+    if 'base_model' in locals():
+        del base_model
+    if merged_model is not None:
+        del merged_model
+    del model, tokenizer  # Also delete the original references
+    gc.collect()
     torch.cuda.empty_cache()
+    torch.cuda.synchronize()
+    print("🧹 Aggressive GPU memory cleanup after training completion")
+    
+    # Final memory status
+    if torch.cuda.is_available():
+        memory_allocated = torch.cuda.memory_allocated() / 1024**3
+        memory_reserved = torch.cuda.memory_reserved() / 1024**3
+        print(f"GPU Memory after cleanup: {memory_allocated:.2f}GB allocated, {memory_reserved:.2f}GB reserved")
     
     print(f"✅ Training completed!")
     print(f"📁 LoRA adapter saved to: {output_dir}")
-    print(f"🔗 Merged model saved to: {merged_output_dir}")
+    if merged_output_dir:
+        print(f"🔗 Merged model saved to: {merged_output_dir}")
+    else:
+        print(f"⚠️ Merged model not saved (AWQ model or merge failed)")
+        print(f"💡 Use LoRA adapter with base model for inference")
     print(f"📝 Training info saved to: {os.path.join(output_dir, 'training_info.yaml')}")
     print(f"🚀 Ready for manual upload to HuggingFace!")
     
@@ -292,6 +442,25 @@ def main():
         elif args.models:
             models_to_train = [m.strip() for m in args.models.split(',')]
         
+        # If single model, train directly (cleanup now handled in train_single_model)
+        if len(models_to_train) == 1 and len(sys.argv) > 1:
+            model_key = models_to_train[0]
+            print(f"Direct single-model training mode for: {model_key}")
+            
+            try:
+                result = train_single_model(
+                    args.data_file, 
+                    model_key, 
+                    args.output_dir, 
+                    args.resume_from_checkpoint,
+                    args.cache_dir
+                )
+                print(f"✅ {model_key} training completed successfully")
+                return
+            except Exception as e:
+                print(f"❌ {model_key} training failed: {e}")
+                sys.exit(1)
+        
         print(f"Multi-model training mode: {len(models_to_train)} models")
         print(f"Models: {models_to_train}")
         
@@ -309,7 +478,10 @@ def main():
         
         trained_models = []
         for model_key in models_to_train:
+            print(f"🚀 Starting sequential training for {model_key}")
+            
             try:
+                # Train model directly in same process (cleanup handled internally)
                 result = train_single_model(
                     args.data_file, 
                     model_key, 
@@ -318,20 +490,48 @@ def main():
                     args.cache_dir
                 )
                 trained_models.append((model_key, result))
-                print(f"✅ {model_key} training completed")
+                print(f"✅ {model_key} training completed successfully")
+                
+                # Light cleanup after training
+                print(f"🧹 Post-training cleanup for {model_key}")
+                gc.collect()
+                if torch.cuda.is_available():
+                    torch.cuda.empty_cache()
+                    torch.cuda.synchronize()
+                
             except Exception as e:
                 print(f"❌ {model_key} training failed: {e}")
+                trained_models.append((model_key, f"failed: {e}"))
         
         print(f"\n🎉 Multi-model training summary:")
+        successful_models = []
+        failed_models = []
+        
         for model_key, result in trained_models:
-            print(f"  {model_key}:")
-            print(f"    Merged model: {result['merged_model_dir']}")
+            if isinstance(result, dict):  # Successful training returns dict
+                successful_models.append((model_key, result))
+            else:  # Failed training returns error string
+                failed_models.append((model_key, result))
+        
+        print(f"✅ Successfully trained models: {len(successful_models)}")
+        for model_key, result in successful_models:
+            print(f"  - {model_key}")
             print(f"    LoRA adapter: {result['lora_adapter_dir']}")
+            if result['merged_model_dir']:
+                print(f"    Merged model: {result['merged_model_dir']}")
+            else:
+                print(f"    Merged model: Not saved (AWQ model or merge failed)")
+        
+        if failed_models:
+            print(f"❌ Failed models: {len(failed_models)}")
+            for model_key, error in failed_models:
+                print(f"  - {model_key}: {error}")
         
         print(f"\n📝 Manual upload instructions:")
-        print(f"1. Navigate to each merged_model directory")
-        print(f"2. Use 'huggingface-cli upload' or web interface")
-        print(f"3. Update config with your HF model paths")
+        print(f"1. Navigate to each model directory in: {args.output_dir}")
+        print(f"2. Use LoRA adapters or merged models as appropriate")
+        print(f"3. Upload to HuggingFace using 'huggingface-cli upload' or web interface")
+        print(f"4. Update config with your HF model paths")
         
         return
     

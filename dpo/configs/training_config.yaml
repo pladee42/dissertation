@@ -9,10 +9,10 @@ training:
   num_epochs: 3
   batch_size: 4
   gradient_accumulation_steps: 4
-  warmup_steps: 100
+  warmup_steps: 30
   logging_steps: 10
-  save_steps: 500
-  eval_steps: 500
+  save_steps: 50
+  eval_steps: 50
 
 lora:
   r: 16
