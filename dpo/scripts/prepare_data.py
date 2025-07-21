@@ -197,7 +197,7 @@ def save_dpo_dataset(samples: List[Dict], output_file: str, config: Dict):
                 'warning': 'No valid samples generated',
                 'samples_with_metadata': []
             }
-            json.dump(metadata, f, indent=2)
+            json.dump(metadata, f, indent=2, ensure_ascii=False)
         return
     
     with open(output_file, 'w') as f:
@@ -208,7 +208,7 @@ def save_dpo_dataset(samples: List[Dict], output_file: str, config: Dict):
                 'chosen': sample['chosen'],
                 'rejected': sample['rejected']
             }
-            f.write(json.dumps(clean_sample) + '\n')
+            f.write(json.dumps(clean_sample, ensure_ascii=False) + '\n')
     
     # Save metadata separately
     metadata_file = output_file.replace('.jsonl', '_metadata.json')
@@ -227,7 +227,7 @@ def save_dpo_dataset(samples: List[Dict], output_file: str, config: Dict):
             'rank_differences': rank_differences,
             'samples_with_metadata': samples
         }
-        json.dump(metadata, f, indent=2)
+        json.dump(metadata, f, indent=2, ensure_ascii=False)
 
 def main():
     parser = argparse.ArgumentParser(description='Prepare DPO training data from multi_topic_results')
