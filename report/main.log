@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  21 JUL 2025 04:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  21 JUL 2025 23:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -384,8 +384,7 @@ LaTeX Info: Redefining \] on input line 2954.
 Package csquotes Info: Allocating character ".
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-
-No file main.aux.
+ (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -406,6 +405,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -482,10 +482,11 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/mathcolor.ltx))
 Package hyperref Info: Link coloring ON on input line 29.
+ (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-<images/UOSLogo.png, id=4, 1505.625pt x 456.70625pt>
+<images/UOSLogo.png, id=156, 1505.625pt x 456.70625pt>
 File: images/UOSLogo.png Graphic file (type png)
 <use images/UOSLogo.png>
 Package pdftex.def Info: images/UOSLogo.png  used on input line 41.
@@ -512,8 +513,7 @@ l.1 \chapter
 
 [2
 
-]
-No file main.toc.
+] (./main.toc)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -521,8 +521,7 @@ No file main.toc.
 
 [3
 
-]
-No file main.lof.
+] (./main.lof)
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
@@ -530,8 +529,7 @@ No file main.lof.
 
 [4
 
-]
-No file main.lot.
+] (./main.lot)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
@@ -557,452 +555,90 @@ Chapter 2.
 [3]
 Chapter 3.
 
-Package natbib Warning: Citation `murakami2023nlg_advertising' on page 4 undefined on input line 10.
-
-
-Package natbib Warning: Citation `zheng2023click_controllable' on page 4 undefined on input line 10.
-
-
-Package natbib Warning: Citation `guo2024llm_multiagent' on page 4 undefined on input line 12.
-
-
-Package natbib Warning: Citation `yan2025beyond_selftalk' on page 4 undefined on input line 12.
-
-
-Package natbib Warning: Citation `yehudai2025survey_llm_agents' on page 4 undefined on input line 12.
-
-
-Package natbib Warning: Citation `ma2024agentboard' on page 4 undefined on input line 12.
-
-
 
 [4
 
 ]
-<figures/agent-diagram.png, id=63, 1622.06pt x 1012.78375pt>
+<figures/agent-diagram.png, id=293, 1622.06pt x 1012.78375pt>
 File: figures/agent-diagram.png Graphic file (type png)
 <use figures/agent-diagram.png>
-Package pdftex.def Info: figures/agent-diagram.png  used on input line 29.
+Package pdftex.def Info: figures/agent-diagram.png  used on input line 28.
 (pdftex.def)             Requested size: 396.76001pt x 247.72466pt.
 
 
 [5 <./figures/agent-diagram.png>]
-Overfull \hbox (31.20998pt too wide) in paragraph at lines 62--77
+
+[6]
+Overfull \hbox (24.88167pt too wide) in paragraph at lines 78--90
  [][] 
  []
 
-
-
-[6]
-
-LaTeX Warning: Reference `sec:agent-model-validation' on page 7 undefined on input line 93.
-
-<figures/traditional_vs_reasoning.png, id=78, 1499.6025pt x 833.1125pt>
-File: figures/traditional_vs_reasoning.png Graphic file (type png)
-<use figures/traditional_vs_reasoning.png>
-Package pdftex.def Info: figures/traditional_vs_reasoning.png  used on input line 100.
-(pdftex.def)             Requested size: 440.84746pt x 244.91434pt.
 
 
 [7]
-
-Package natbib Warning: Citation `zhang2019email_subject' on page 8 undefined on input line 108.
-
-
-Package natbib Warning: Citation `pauli2024persuasive_language' on page 8 undefined on input line 108.
-
-
-Overfull \hbox (114.90984pt too wide) in paragraph at lines 123--143
- [][] 
- []
-
-./sections/methodology.tex:155: Missing $ inserted.
-<inserted text> 
-                $
-l.155 ...ent difficulty & Expert assessment & \geq
-                                                   4.0/5.0 rating \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./sections/methodology.tex:156: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.156     C
-           ategory Balance & Proportional distribution & Statistical analysi...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./sections/methodology.tex:156: Missing $ inserted.
-<inserted text> 
-                $
-l.156     C
-           ategory Balance & Proportional distribution & Statistical analysi...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./sections/methodology.tex:156: Missing } inserted.
-<inserted text> 
-                }
-l.156     C
-           ategory Balance & Proportional distribution & Statistical analysi...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./sections/methodology.tex:156: Missing $ inserted.
-<inserted text> 
-                $
-l.156 ...distribution & Statistical analysis & \pm
-                                                   10\% variance \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./sections/methodology.tex:157: Extra }, or forgotten $.
-<template> \unskip \hfil }
-                          \hskip \tabcolsep \hskip -.5\arrayrulewidth \vrule...
-l.157     S
-           cenario Authenticity & Realistic fundraising & Professional revie...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./sections/methodology.tex:157: Missing $ inserted.
-<inserted text> 
-                $
-l.157     S
-           cenario Authenticity & Realistic fundraising & Professional revie...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./sections/methodology.tex:157: Missing } inserted.
-<inserted text> 
-                }
-l.157     S
-           cenario Authenticity & Realistic fundraising & Professional revie...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (65.95825pt too wide) in paragraph at lines 150--162
- [][] 
+Overfull \hbox (10.62767pt too wide) in paragraph at lines 96--97
+\OT1/cmr/m/n/10.95 constrained de-ploy-ment sce-nar-ios while main-tain-ing ad-e-quate gen-er-a-tion ca-pa-bil-ity for fundrais-
  []
 
 
 
-[8 <./figures/traditional_vs_reasoning.png>]
+[8]
+<figures/traditional_vs_reasoning.png, id=314, 1499.6025pt x 833.1125pt>
+File: figures/traditional_vs_reasoning.png Graphic file (type png)
+<use figures/traditional_vs_reasoning.png>
+Package pdftex.def Info: figures/traditional_vs_reasoning.png  used on input line 112.
+(pdftex.def)             Requested size: 374.72302pt x 208.17592pt.
 
-[9]
+
+[9 <./figures/traditional_vs_reasoning.png>]
+Overfull \hbox (3.50728pt too wide) in paragraph at lines 144--145
+[]\OT1/cmr/m/n/10.95 The sec-ond phase trans-forms ex-tracted el-e-ments into struc-tured eval-u-a-tion cri-te-ria through
+ []
+
+
 
 [10]
+<figures/hybrid-checklist.png, id=324, 1033.8625pt x 913.4125pt>
+File: figures/hybrid-checklist.png Graphic file (type png)
+<use figures/hybrid-checklist.png>
+Package pdftex.def Info: figures/hybrid-checklist.png  used on input line 150.
+(pdftex.def)             Requested size: 396.76001pt x 350.52899pt.
 
-Package natbib Warning: Citation `gallego2024configurable_safety' on page 11 undefined on input line 204.
 
-
-
-[11]
-Overfull \hbox (80.63312pt too wide) in paragraph at lines 215--226
- [][] 
+[11 <./figures/hybrid-checklist.png>]
+Overfull \hbox (3.20604pt too wide) in paragraph at lines 178--179
+\OT1/cmr/m/n/10.95 The Di-rect Pref-er-ence Op-ti-miza-tion im-ple-men-ta-tion rep-re-sents the cul-mi-na-tion of the method-
  []
 
 
 
 [12]
 
-./sections/methodology.tex:245: LaTeX Error: Unicode character α (U+03B1)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.245 ... quality and reliability coefficients (α
-                                                   = 0.94).
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-./sections/methodology.tex:264: LaTeX Error: Unicode character α (U+03B1)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.264 ...Structured Extraction & High Quality & α
-                                                   = 0.94 \\
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-Overfull \hbox (25.79984pt too wide) in paragraph at lines 260--271
- [][] 
+[13]
+Overfull \hbox (4.75435pt too wide) in paragraph at lines 208--209
+[]\OT1/cmr/m/n/10.95 Human-synthetic in-te-gra-tion main-tains method-olog-i-cal con-sis-tency through iden-ti-cal train-
  []
 
 
-
-[13]
 
 [14]
-Overfull \hbox (107.59897pt too wide) in paragraph at lines 333--347
- [][] 
- []
-
-
 
 [15]
-
-Package natbib Warning: Citation `bohnet2022attributed_qa' on page 16 undefined on input line 368.
-
-
-Package natbib Warning: Citation `pimentel2024beyond_metrics' on page 16 undefined on input line 368.
-
-
-
-[16]
-
-Package natbib Warning: Citation `marjanovic2025deepseek_thoughtology' on page 17 undefined on input line 378.
+<figures/final_val.png, id=347, 904.37875pt x 1059.96pt>
+File: figures/final_val.png Graphic file (type png)
+<use figures/final_val.png>
+Package pdftex.def Info: figures/final_val.png  used on input line 268.
+(pdftex.def)             Requested size: 396.76001pt x 465.00908pt.
 
 
-Package natbib Warning: Citation `sui2025stop_overthinking' on page 17 undefined on input line 378.
-
-
-./sections/methodology.tex:390: LaTeX Error: Unicode character α (U+03B1)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.390 ...ith demonstrated superior performance (α
-                                                   = 0.94).
-You may provide a definition with
-\DeclareUnicodeCharacter 
+[16 <./figures/final_val.png>]) (./sections/results.tex
+Overfull \hbox (1.83441pt too wide) in paragraph at lines 292--1
+[]\OT1/cmr/m/n/10.95 The method-olog-i-cal in-no-va-tions in-clude the em-pir-i-cally val-i-dated Hy-brid eval-u-a-tion frame-
+ []
 
 
 
 [17]
-
-Package natbib Warning: Citation `chen2024meta_evaluation' on page 18 undefined on input line 399.
-
-
-Package natbib Warning: Citation `xu2024consistency_survey' on page 18 undefined on input line 399.
-
-
-Overfull \hbox (5.45386pt too wide) in paragraph at lines 407--408
-[]\OT1/cmr/m/n/10.95 Performance delta quan-tifi-ca-tion mea-sures the mag-ni-tude of im-prove-ment achieved through
- []
-
-
-
-[18]
-Overfull \hbox (1.95894pt too wide) in paragraph at lines 413--414
-\OT1/cmr/m/n/10.95 Pipeline in-te-gra-tion eval-u-a-tion as-sesses how ef-fec-tively DPO-optimized mod-els func-tion within
- []
-
-
-
-[19]
-
-Package natbib Warning: Citation `chen2024meta_evaluation' on page 20 undefined on input line 437.
-
-
-Overfull \hbox (9.7123pt too wide) in paragraph at lines 437--438
-[]\OT1/cmr/m/n/10.95 The frame-work im-ple-ments sta-tis-ti-cal val-i-da-tion of training-deployment con-sis-tency through
- []
-
-
-Package natbib Warning: Citation `wang2024dynamic_evaluation' on page 20 undefined on input line 443.
-
-
-
-[20]
-Overfull \hbox (49.32025pt too wide) in paragraph at lines 456--470
- [][] 
- []
-
-
-Overfull \hbox (146.06067pt too wide) in paragraph at lines 477--492
- [][] 
- []
-
-
-
-[21]
-
-./sections/methodology.tex:511: LaTeX Error: Unicode character α (U+03B1)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.511 ... quality characteristics (demonstrated α
-                                                   = 0.94 reliability coeffi...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-
-[22]
-
-Package natbib Warning: Citation `chen2024reproducibility_hci' on page 23 undefined on input line 540.
-
-
-Package natbib Warning: Citation `yin2024reproducibility_ml' on page 23 undefined on input line 540.
-
-
-
-[23]
-
-[24]
-Overfull \hbox (8.2827pt too wide) in paragraph at lines 572--573
-[]\OT1/cmr/m/n/10.95 Inter-phase re-li-a-bil-ity ver-i-fi-ca-tion con-firms that eval-u-a-tion stan-dards re-main sta-ble through-
- []
-
-
-Package natbib Warning: Citation `ma2024reproducibility_query' on page 25 undefined on input line 578.
-
-
-
-[25]
-
-Package natbib Warning: Citation `zhang2024improve_pipeline' on page 26 undefined on input line 603.
-
-
-Package natbib Warning: Citation `xu2024consistency_survey' on page 26 undefined on input line 603.
-
-
-
-[26]
-
-[27]
-
-./sections/methodology.tex:674: LaTeX Error: Unicode character α (U+03B1)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.674 ...r-phase agreement & Cronbach's alpha & α
-                                                   > 0.80 \\
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-
-[28]
-
-[29]
-
-Package natbib Warning: Citation `rafailov2023dpo' on page 30 undefined on input line 722.
-
-
-Package natbib Warning: Citation `muldrew2024active_preference' on page 30 undefined on input line 722.
-
-
-Package natbib Warning: Citation `wang2024asft' on page 30 undefined on input line 722.
-
-
-
-[30]
-
-Package natbib Warning: Citation `gallego2024configurable_safety' on page 31 undefined on input line 739.
-
-
-Package natbib Warning: Citation `chen2024refined_dpo' on page 31 undefined on input line 739.
-
-
-Package natbib Warning: Citation `liu2024rs_dpo' on page 31 undefined on input line 745.
-
-
-
-[31]
-
-Package natbib Warning: Citation `poddar2024personalizing_rlhf' on page 32 undefined on input line 753.
-
-
-
-[32]
-
-[33]
-
-Package natbib Warning: Citation `chen2024meta_evaluation' on page 34 undefined on input line 820.
-
-
-Package natbib Warning: Citation `wang2024dynamic_evaluation' on page 34 undefined on input line 820.
-
-
-
-[34]
-
-Package natbib Warning: Citation `zhang2024improve_pipeline' on page 35 undefined on input line 828.
-
-
-
-[35]
-
-Package natbib Warning: Citation `lin2024meta_rewarding' on page 36 undefined on input line 844.
-
-
-Overfull \hbox (195.00075pt too wide) in paragraph at lines 865--882
- [][] 
- []
-
-
-
-[36]
-
-[37{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-
-./sections/methodology.tex:918: LaTeX Error: Unicode character ≥ (U+2265)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.918 ...ectiveness, and very large effects (d~≥
-                                                  ~1.0) for audience appropr...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-Package natbib Warning: Citation `poddar2024personalizing_rlhf' on page 38 undefined on input line 918.
-
-
-Package natbib Warning: Citation `liu2024human_ai_teaming' on page 38 undefined on input line 918.
-
-
-Package natbib Warning: Citation `xu2024consistency_survey' on page 38 undefined on input line 928.
-
-
-Package natbib Warning: Citation `chen2024meta_evaluation' on page 38 undefined on input line 928.
-
-
-
-[38]
-Overfull \hbox (2.62802pt too wide) in paragraph at lines 955--956
-\OT1/cmr/m/n/10.95 Vari-ance com-po-nent anal-y-sis quan-ti-fies con-tri-bu-tions of model-specific, method-specific, topic-
- []
-
-
-
-[39]
-
-[40]) (./sections/results.tex
-
-[41]
 Chapter 4.
 
 Overfull \hbox (82.45087pt too wide) in paragraph at lines 14--24
@@ -1011,69 +647,56 @@ Overfull \hbox (82.45087pt too wide) in paragraph at lines 14--24
 
 )
 
-[42
+[18
 
 ] (./sections/discussion.tex
 
-[43]
+[19]
 Chapter 5.
 )
 
-[44
+[20
 
-] (./sections/conclusion.tex) (./main.bbl)
+] (./sections/conclusion.tex) (./main.bbl
 
-[45]
+[21])
 
-[46
+[22
+
+]
+
+[23
 
 
 ] (./sections/appendixA.tex
 Appendix A.
 
 
-[47
+[24
 
 ])
 
-Package natbib Warning: There were undefined citations.
-
-
-
-[48] (./main.aux)
+[25] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  9E26D4B6649C3715B8F31EF24D0E752A;13067.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 1E55D721FFEA9DEB190C388E2ADC7F86;9055.
  ) 
 Here is how much of TeX's memory you used:
- 14619 strings out of 473190
- 244301 string characters out of 5704335
- 760709 words of memory out of 5000000
- 37466 multiletter control sequences out of 15000+600000
- 566675 words of font info for 62 fonts, out of 8000000 for 9000
+ 14568 strings out of 473190
+ 243891 string characters out of 5704335
+ 758757 words of memory out of 5000000
+ 37506 multiletter control sequences out of 15000+600000
+ 566680 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,10n,93p,1072b,644s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (54 pages, 747474 bytes).
+ 79i,10n,93p,1034b,644s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (31 pages, 749940 bytes).
 PDF statistics:
- 475 PDF objects out of 1000 (max. 8388607)
- 387 compressed objects within 4 object streams
- 190 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 455 PDF objects out of 1000 (max. 8388607)
+ 390 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 330 words of extra memory for PDF output out of 10000 (max. 10000000)
 
