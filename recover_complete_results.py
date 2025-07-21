@@ -409,10 +409,13 @@ class CompleteResultsRecovery:
             'failed_topics': len(failed_results),
             'total_time': total_time,
             'results': all_results,
-            'successful_results': successful_results,
-            'failed_results': failed_results,
             'summary': self.generate_summary(successful_results)
         }
+        
+        # Only add separate arrays if there are actually failed results
+        if failed_results:
+            complete_results['successful_results'] = successful_results
+            complete_results['failed_results'] = failed_results
         
         # Save to output directory
         if not output_timestamp:
