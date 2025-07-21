@@ -103,15 +103,17 @@ def process_complete_results(results_file: str, config: Dict) -> List[Dict]:
         print(f"  Best email rank: {best_rank}")
         
         # Extract topic information for prompt (create once per topic)
-        topic_info = result.get('topic', 'Unknown Topic')
+        # Check both 'topic_name' (from recovery script) and 'topic' (legacy format)
+        topic_name = result.get('topic_name') or result.get('topic', 'Unknown Topic')
         
-        # topic_info is a string in this data format
-        if isinstance(topic_info, str):
-            topic_name = topic_info
-        elif isinstance(topic_info, dict):
-            topic_name = topic_info.get('name', 'Unknown Topic')
-        else:
+        # Handle different topic data formats
+        if isinstance(topic_name, dict):
+            topic_name = topic_name.get('name', 'Unknown Topic')
+        elif not isinstance(topic_name, str):
             topic_name = 'Unknown Topic'
+        
+        # For metadata, preserve the original topic info structure
+        topic_info = result.get('topic_name') or result.get('topic', 'Unknown Topic')
         
         # Create the real prompt used by the email agent
         example_email_number = config['dataset'].get('example_email_number', "1")
