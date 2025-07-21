@@ -96,14 +96,19 @@ def setup_model_and_tokenizer(config: Dict, cache_dir: str = "../downloaded_mode
     model_name = config['model']['base_model'].lower()
     if "awq" in model_name:
         device_map = {"": 0}  # Force all layers to GPU 0 for AWQ
-    elif "llama3" in model_name or "llama-3" in model_name:
-        device_map = "auto"
+    elif "llama" in model_name or "meta-llama" in model_name:
+        device_map = "auto"  # Llama 3.1 models
+        print(f"Using auto device mapping for Llama model: {model_name}")
+    elif "phi-3" in model_name or "microsoft/phi" in model_name:
+        device_map = "auto"  # Phi-3 models  
+        print(f"Using auto device mapping for Phi-3 model: {model_name}")
     elif 'vicuna' in model_name or 'lmsys' in model_name:
         tokenizer_kwargs["use_fast"] = False
         device_map = "auto"  # Set device_map for Vicuna models
         print(f"Using slow tokenizer for {model_name} to handle SentencePiece conversion")
     else:
-        device_map = None
+        device_map = "auto"  # Default to auto for most models
+        print(f"Using auto device mapping for model: {model_name}")
     
     # Determine dtype based on model type
     if "awq" in config['model']['base_model'].lower():
@@ -117,6 +122,7 @@ def setup_model_and_tokenizer(config: Dict, cache_dir: str = "../downloaded_mode
         'device_map': device_map,
         'cache_dir': cache_dir,
         'low_cpu_mem_usage': True,  # Reduce CPU memory usage during loading
+        'attn_implementation': "eager",  # Use eager attention to avoid flash_attn issues
     }
     
     # Add quantization config only if available
@@ -284,7 +290,6 @@ def train_single_model(data_file: str, model_key: str, output_base_dir: str, res
     # Get the trained model and handle merging
     print("Processing trained model...")
     from peft import PeftModel
-    import torch
     
     # Get the trained PEFT model
     trained_model = trainer.model

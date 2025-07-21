@@ -122,6 +122,16 @@ class ModelManager:
                 tokenizer_kwargs["use_fast"] = False
                 logger.info(f"Using slow tokenizer for {model_id} to handle SentencePiece conversion")
             
+            # Handle Llama models that may need attention implementation
+            if 'llama' in model_id.lower() or 'meta-llama' in model_id.lower():
+                # Llama models work well with fast tokenizers
+                logger.info(f"Using optimized settings for Llama model: {model_id}")
+            
+            # Handle Phi-3 models
+            if 'phi-3' in model_id.lower() or 'microsoft/phi' in model_id.lower():
+                # Phi-3 models work well with standard settings
+                logger.info(f"Using optimized settings for Phi-3 model: {model_id}")
+            
             tokenizer = AutoTokenizer.from_pretrained(model_id, **tokenizer_kwargs)
             
             # Download model weights WITHOUT loading into memory

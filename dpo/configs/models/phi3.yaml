@@ -1,6 +1,6 @@
 # Phi-3-Mini DPO training configuration
 model:
-  base_model: "microsoft/Phi-3-mini-4k-instruct"
+  base_model: "unsloth/Phi-3-mini-4k-instruct"
   use_quantization: true
   quantization_config: "4bit"
 

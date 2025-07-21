@@ -1,8 +1,8 @@
 # Llama-3-8B DPO training configuration
 model:
-  base_model: "casperhansen/llama-3-8b-instruct-awq"
+  base_model: "unsloth/Llama-3.1-8B-Instruct"
   use_quantization: true
-  quantization_config: "awq"  # Use AWQ for better performance
+  quantization_config: "4bit"
 
 training:
   learning_rate: 1e-6  # Conservative LR for large model
