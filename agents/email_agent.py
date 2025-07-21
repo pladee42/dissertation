@@ -9,7 +9,7 @@ This module provides email generation with:
 
 import logging
 import time
-from typing import Optional
+from typing import Optional, Dict, Any, Tuple
 
 from models.vllm_backend import VLLMBackend
 from models.openrouter_backend import OpenRouterBackend
@@ -52,7 +52,7 @@ class EmailAgent:
         # Retry settings
         self.max_retries = get_setting('max_retries', 3)
     
-    def generate_email(self, prompt: str, topic: str, template_id: str = "1") -> str:
+    def generate_email(self, prompt: str, topic: str, template_id: str = "1") -> Dict[str, Any]:
         """Generate email using vLLM backend and templates"""
         start_time = time.time()
         
@@ -70,19 +70,37 @@ class EmailAgent:
             full_prompt = f"{formatted_template}\n\nEmail:"
             
             # Generate with retry logic
-            email_content = self._generate_with_retry(full_prompt, topic)
+            email_content, is_fallback = self._generate_with_retry(full_prompt, topic)
             
             generation_time = time.time() - start_time
             logger.info(f"Email generated in {generation_time:.2f}s for topic: {topic}")
             
-            return email_content
+            return {
+                "content": email_content,
+                "success": not is_fallback,
+                "is_fallback": is_fallback,
+                "generation_time": generation_time
+            }
             
         except Exception as e:
             logger.error(f"Error generating email: {e}")
-            return self._generate_fallback_email(topic)
+            fallback_content = self._generate_fallback_email(topic)
+            generation_time = time.time() - start_time
+            
+            return {
+                "content": fallback_content,
+                "success": False,
+                "is_fallback": True,
+                "generation_time": generation_time,
+                "error": str(e)
+            }
     
-    def _generate_with_retry(self, prompt: str, topic: str) -> str:
-        """Generate text with simple retry logic"""
+    def _generate_with_retry(self, prompt: str, topic: str) -> Tuple[str, bool]:
+        """Generate text with simple retry logic
+        
+        Returns:
+            Tuple[str, bool]: (email_content, is_fallback)
+        """
         last_error = None
         
         for attempt in range(self.max_retries):
@@ -114,7 +132,7 @@ class EmailAgent:
                     
                     # Clean using simple end token logic
                     cleaned_result = self._clean_with_end_token(result.strip())
-                    return cleaned_result
+                    return cleaned_result, False  # Success, not fallback
                 else:
                     raise Exception("Empty response from backend")
                     
@@ -126,7 +144,8 @@ class EmailAgent:
         
         # If all retries failed, return fallback email
         logger.warning(f"Backend generation failed, using fallback for topic: {topic}")
-        return self._generate_fallback_email(topic)
+        fallback_content = self._generate_fallback_email(topic)
+        return fallback_content, True  # Fallback used
     
     def _generate_fallback_email(self, topic: str) -> str:
         """Generate fallback email when vLLM is unavailable"""

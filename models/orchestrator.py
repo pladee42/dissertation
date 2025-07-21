@@ -157,16 +157,21 @@ class ModelOrchestrator:
         
         # Extract template_id from prompt if available, default to "1"
         template_id = "1"
-        email_content = agent.generate_email(prompt, topic, template_id)
+        email_result = agent.generate_email(prompt, topic, template_id)
         
-        # Simple result dictionary
+        # Simple result dictionary using structured response from email agent
         result = {
             "model_name": model_name,
             "model_id": model_config['model_id'],
-            "email_content": email_content,
+            "email_content": email_result.get("content", ""),
             "generation_time": time.time() - start_time,
-            "success": True
+            "success": email_result.get("success", False),
+            "is_fallback": email_result.get("is_fallback", False)
         }
+        
+        # Add error information if available
+        if "error" in email_result:
+            result["error"] = email_result["error"]
         
         return result
     
