@@ -96,7 +96,7 @@ def main():
     
     # Model selection arguments
     parser.add_argument("--email_generation", type=str, 
-                       choices=['small', 'medium', 'large', 'all'],
+                       choices=['small', 'medium', 'large', 'all', 'dpo-syn', 'dpo-hyb'],
                        help="Size category for email models")
     parser.add_argument("--email_models", nargs='+', 
                        default=["tinyllama-1.1b", "phi-3-mini"],
@@ -135,6 +135,10 @@ def main():
             args.email_models = get_models_by_size(['small', 'medium'])
         elif args.email_generation == 'large':
             args.email_models = get_models_by_size('large')
+        elif args.email_generation == 'dpo-syn':
+            args.email_models = get_models_by_size('dpo-syn')
+        elif args.email_generation == 'dpo-hyb':
+            args.email_models = get_models_by_size('dpo-hyb')
         elif args.email_generation == 'all':
             args.email_models = get_models_by_size(['small', 'medium', 'large'])
         

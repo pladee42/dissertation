@@ -76,57 +76,108 @@ MODELS = {
         'size': 'api',
         'backend_type': 'openrouter'
     },
-    # DPO Fine-tuned Models
-    # 'tinyllama-1.1b-dpo': {
-        # 'uid': 'M0012',
-        # 'model_id': 'pladee42/tinyllama-1.1b-dpo',
-        # 'recommended_for': ['email_generation'],
-        # 'size': 'small',
-        # 'quantization': 'experts_int8',
-        # 'dtype': 'bfloat16',
-        # 'base_model': 'tinyllama-1.1b',
-        # 'is_dpo': True
-    # },
-    # 'vicuna-7b-dpo': {
-        # 'uid': 'M0013',
-        # 'model_id': 'pladee42/vicuna-7b-dpo',
-        # 'recommended_for': ['email_generation'],
-        # 'size': 'medium',
-        # 'quantization': 'experts_int8',
-        # 'dtype': 'bfloat16',
-        # 'base_model': 'vicuna-7b',
-        # 'is_dpo': True
-    # },
-    # 'phi-3-mini-dpo': {
-        # 'uid': 'M0014',
-        # 'model_id': 'pladee42/phi-3-mini-dpo',
-        # 'recommended_for': ['email_generation'],
-        # 'size': 'small',
-        # 'quantization': 'experts_int8',
-        # 'dtype': 'bfloat16',
-        # 'base_model': 'phi-3-mini',
-        # 'is_dpo': True
-    # },
-    # 'llama-3-8b-dpo': {
-        # 'uid': 'M0015',
-        # 'model_id': 'pladee42/llama-3-8b-dpo',
-        # 'recommended_for': ['email_generation'],
-        # 'size': 'medium',
-        # 'quantization': 'awq',
-        # 'dtype': 'float16',
-        # 'base_model': 'llama-3-8b',
-        # 'is_dpo': True
-    # },
-    # 'stablelm-2-1.6b-dpo': {
-        # 'uid': 'M0016',
-        # 'model_id': 'pladee42/stablelm-2-1.6b-dpo',
-        # 'recommended_for': ['email_generation'],
-        # 'size': 'small',
-        # 'quantization': 'experts_int8',
-        # 'dtype': 'bfloat16',
-        # 'base_model': 'stablelm-2-1.6b',
-        # 'is_dpo': True
-    # }
+    # DPO Fine-tuned Models (Synthetic)
+    'tinyllama-1.1b-dpo-syn': {
+        'uid': 'M0012',
+        'model_id': 'pladee42/TinyLlama-1.1B-Email-DPO-Synthetic',
+        'recommended_for': ['email_generation'],
+        'size': 'dpo-syn',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16',
+        'base_model': 'tinyllama-1.1b',
+        'is_dpo': True
+    },
+    'vicuna-7b-dpo-syn': {
+        'uid': 'M0013',
+        'model_id': 'pladee42/Vicuna-7B-Email-DPO-Synthetic',
+        'recommended_for': ['email_generation'],
+        'size': 'dpo-syn',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16',
+        'base_model': 'vicuna-7b',
+        'is_dpo': True
+    },
+    'phi-3-mini-dpo-syn': {
+        'uid': 'M0014',
+        'model_id': 'pladee42/Phi3-Mini-Email-DPO-Synthetic',
+        'recommended_for': ['email_generation'],
+        'size': 'dpo-syn',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16',
+        'base_model': 'phi-3-mini',
+        'is_dpo': True
+    },
+    'llama-3-8b-dpo-syn': {
+        'uid': 'M0015',
+        'model_id': 'pladee42/Llama3-8B-Email-DPO-Synthetic',
+        'recommended_for': ['email_generation'],
+        'size': 'dpo-syn',
+        'quantization': 'none',
+        'dtype': 'float16',
+        'base_model': 'llama-3-8b',
+        'is_dpo': True
+    },
+    'stablelm-2-1.6b-dpo-syn': {
+        'uid': 'M0016',
+        'model_id': 'pladee42/StableLM2-1.6B-Email-DPO-Synthetic',
+        'recommended_for': ['email_generation'],
+        'size': 'dpo-syn',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16',
+        'base_model': 'stablelm-2-1.6b',
+        'is_dpo': True
+    },
+    # DPO Fine-tuned Models (Hybrid)
+    'tinyllama-1.1b-dpo-hyb': {
+        'uid': 'M0017',
+        'model_id': 'pladee42/TinyLlama-1.1B-Email-DPO-Hybrid',
+        'recommended_for': ['email_generation'],
+        'size': 'dpo-hyb',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16',
+        'base_model': 'tinyllama-1.1b',
+        'is_dpo': True
+    },
+    'vicuna-7b-dpo-hyb': {
+        'uid': 'M0018',
+        'model_id': 'pladee42/Vicuna-7B-Email-DPO-Hybrid',
+        'recommended_for': ['email_generation'],
+        'size': 'dpo-hyb',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16',
+        'base_model': 'vicuna-7b',
+        'is_dpo': True
+    },
+    'phi-3-mini-dpo-hyb': {
+        'uid': 'M0019',
+        'model_id': 'pladee42/Phi3-Mini-Email-DPO-Hybrid',
+        'recommended_for': ['email_generation'],
+        'size': 'dpo-hyb',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16',
+        'base_model': 'phi-3-mini',
+        'is_dpo': True
+    },
+    'llama-3-8b-dpo-hyb': {
+        'uid': 'M0020',
+        'model_id': 'pladee42/Llama3-8B-Email-DPO-Hybrid',
+        'recommended_for': ['email_generation'],
+        'size': 'dpo-hyb',
+        'quantization': 'none',
+        'dtype': 'float16',
+        'base_model': 'llama-3-8b',
+        'is_dpo': True
+    },
+    'stablelm-2-1.6b-dpo-hyb': {
+        'uid': 'M0021',
+        'model_id': 'pladee42/StableLM2-1.6B-Email-DPO-Hybrid',
+        'recommended_for': ['email_generation'],
+        'size': 'dpo-hyb',
+        'quantization': 'experts_int8',
+        'dtype': 'bfloat16',
+        'base_model': 'stablelm-2-1.6b',
+        'is_dpo': True
+    }
 }
 
 # Checklist mode constants
@@ -244,11 +295,11 @@ def list_models_by_size(size: str, include_dpo: bool = True) -> list:
 def list_models_by_size_group(size_group: str) -> list:
     """Get models by size group with DPO support"""
     if size_group == 'small':
-        return list_models_by_size('small', include_dpo=True)
+        return list_models_by_size('small', include_dpo=False)
     elif size_group == 'medium':
-        return list_models_by_size('medium', include_dpo=True)
+        return list_models_by_size('medium', include_dpo=False)
     elif size_group == 'large':
-        return list_models_by_size('large', include_dpo=True)
+        return list_models_by_size('large', include_dpo=False)
     elif size_group == 'small-dpo':
         return [m for m in list_models_by_size('small') if is_dpo_model(m)]
     elif size_group == 'medium-dpo':
