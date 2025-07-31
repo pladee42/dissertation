@@ -1,0 +1,1318 @@
+{
+  "session_id": "fe4f0ee3-e117-4b08-b2f4-744339161e13",
+  "timestamp": "2025-07-22T22:25:25.855337",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0112",
+    "name": "Invitation to Our Annual National Equality Gala"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Invitation to Our Annual National Equality Gala"
+  },
+  "models_used": {
+    "email_models": [
+      "vicuna-7b-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Join us at our annual National Equality Gala!\n\nDear [Name],\n\nWe hope this message finds you well. We are excited to invite you to our annual National Equality Gala, where we celebrate diversity and inclusion while raising funds for our mission. This year, we have an amazing line-up of speakers, performers, and guests that will surely make it an unforgettable night.\n\nOur gala will be held on [DATE] at [LOCATION]. The theme of this year's event is [THEME], which promises to be a night filled with inspiration, entertainment, and unity. You can expect a red carpet reception, delicious food, and plenty of opportunities to network with like-minded individuals.\n\nAs one of our most valued supporters, we would love for you to join us in person or virtually. Your presence would mean the world to us and would help us continue our work towards creating a more equitable society.\n\nTo secure your spot, please RSVP by [RSVP\\_DEADLINE] using the link below. If you have any questions or need assistance with registration, please do not hesitate to reach out.\n\n[EVENT\\_LINK]\n\nThank you for your continued support, and we look forward to seeing you at the gala!\n\nBest regards,\n\n[SENDER\\_NAME]\n",
+        "generation_time": 45.423893213272095,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Subject: Join us at our Annual National Equality Gala\n\nDear [Name],\n\nWe're thrilled to invite you to join us at our annual National Equality Gala, celebrating the triumphs and progress made in promoting equality across America!\n\nThis year's gala will be held on Saturday, March 19th, at the iconic Los Angeles Convention Center. We've curated an unforgettable evening featuring inspiring speeches by renowned activists, captivating performances by talented artists, and exceptional networking opportunities with like-minded individuals.\n\nOur keynote speaker, the courageous and visionary leader, Rachel Maddow, will share her insights on the current state of equality in America and inspire us to continue pushing forward towards a brighter future. You won't want to miss this opportunity to hear her speak and be part of a movement that's changing lives!\n\nJoin us as we honor outstanding individuals who have made significant contributions to promoting equality and social justice. Enjoy a night of entertainment, education, and connection with fellow advocates who share your passion for creating a more just society.\n\nSecure your spot today and be part of this extraordinary celebration! Tickets are limited, so don't wait \u2013 get yours now!\n\n**Get Your Tickets Now: [Ticket Link]**\n",
+        "generation_time": 113.03029274940491,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[YOUR_EXAMPLE_EMAIL]\n\nDear [Recipient],\n\nWe are excited to invite you to our annual National Equality Gala! This year's gala will honor trailblazers in the LGBTQ+ community who have made significant strides towards equality, acceptance, and love.\n\nAs we celebrate this important occasion, we want to acknowledge the hard work and dedication that has led us to where we are today. We believe that by coming together as a community, we can make even greater progress toward creating a world where everyone is treated equally and fairly.\n\nThe National Equality Gala is not just about honoring those who have achieved so much; it's also an opportunity for us all to come together, share stories, and celebrate what makes us unique.\n\nJoin us at the [LOCATION] on [DATE] to be part of history and witness firsthand how far we've come and how much further we need to go. The evening will feature keynote speeches, live music, and performances by some of the most talented artists in the industry.\n\nYour presence means everything to us. By attending the National Equality Gala, you'll be joining a community of changemakers committed to making the world a better place for everyone, regardless of gender identity, sexual orientation, race, religion, age, or any other characteristic.\n\nTo secure your spot at the National Equality Gala, please RSVP by [RSVP_DATE]. You may purchase tickets online at [TICKET_LINK].\n\nThank you for being a valued member of our community. Together, let's make history!\n\nSincerely,\n\n[SENDING_ORGANIZATION]\n\n### Token:\n",
+        "generation_time": 130.45101809501648,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join Us in Celebrating Diversity at our Grand National Equality Gala!\n\nDear [Recipient Name],\n\nWe hope this message finds you well and thriving amidst all that life has thrown your way. It\u2019s time we gather again under one roof \u2013 The annual celebration where diversity isn\u2019t just recognized but celebrated wholeheartedly; welcome back to our grand National Equality Gala!\n\nOur gala marks another year filled with unforgettable moments shared by individuals who believe passionately about equality across race, gender, religion, sexual orientation, age, disability status, socio-economic background, education level, ethnic origin, nationality, political beliefs, veteran status, language spoken, religious affiliation, marital/family status, parental status, immigration status, citizenship, military service history, geographic location, income bracket, health condition, physical appearance, genetic information, educational attainment, professional experience, social media presence, hobbies & interests, personal values, cultural heritage, artistic expression, intellectual pursuits, spiritual practices, lifestyle choices, fashion sense, body type, height, weight, hair color, eye color, skin complexion, facial features, tattoos, piercings, scars, birthmarks, accents, dialects, idiolects, slang terms, jargon vocabulary, regional colloquialisms, local expressions, foreign phrases, sign languages used within communities, unique identifiers like nicknames, pseudonyms, aliases, stage names, screen names, usernames, handles, monikers, epithets, sobriquets, titles, honorifics, postnominals, academic degrees earned, certifications obtained, diplomas awarded, licenses granted, patents filed, trademarks registered, awards won, honors bestowed upon oneself or others received during their lifetime, achievements made possible through hard work, dedication, perseverance, resilience, courage, determination, ingenuity, creativity, innovation, entrepreneurship, leadership skills developed over years of practice, mentorships sought out throughout career paths taken up until now today \u2014 everything which makes each individual uniquely special deserves recognition here tonight alongside fellow advocates working towards creating inclusive spaces worldwide!\n\nThe theme chosen for this evening shall be \u2018United We Stand.\u2019 As such, please come dressed according to how comfortable feels most authentic while also reflecting respectfully onto those around them whom they may encounter along journey toward greater acceptance amongst peers both old friends familiar faces known since childhood days gone past yet still holding memories dear despite passing seasons changing lives ever evolving circumstances shifting perspectives altering views forever transformative experiences leaving indelible imprints etched deeply into hearts never forgotten always cherished treasures held close tightly embraced lovingly remembered fondly recalled often times revisited whenever thoughts arise reminding self why strive harder achieve goals set forth initially setting sights higher reaching beyond limits previously thought impossible breaking barriers once deemed insurmountable conquering challenges faced headfirst fearlessly tackling adversities encountered every step forward making progress incrementally building momentum gaining strength increasing resolve steadfastness fortitude tenacity endurance patience understanding compassion empathy kindness generosity humility gratitude appreciation acknowledging differences recognizing similarities finding common ground bridging divides healing wounds mending broken bonds restoring faith trust renewing hopes dreams fulfilling aspirations realizing potential achieving success accomplishments rewarding efforts invested labor dedicated commitment nurturing growth fostering development encouraging learning inspiring change promoting positive transformation empowering people uplifting spirits lifting morale boosting confidence instilling pride enhancing happiness spreading joy radiating love filling souls warming hearts lightening burdens easing pain relieving suffering alleviating anxiety reducing stress diminishing worry lessening concerns eliminating doubts dispelling myths eradicating misconceptions clarifying misunderstandings resolving conflicts reconciling disputes mediating disagreements negotiating compromises facilitating cooperation collaborating constructively coordinating effectively managing resources efficiently optimizing productivity maximizing output minimizing waste conserving energy saving costs lowering expenses streamlining operations simplifying procedures automating tasks delegating responsibilities assigning duties prioritizing objectives scheduling activities planning events organizing functions orchestrating performances executing strategies implementing tactics developing solutions solving problems addressing issues confronting challenges surmounting hurdles navigating pathways charting courses plotting trajectories steering vessels sailing ships voyaging journeys exploring territories discovering lands venturing abroad traveling globally connecting continents linking nations uniting cultures harmonizing melodies blending colors mixing flavors combining essences merging fragrances fusing perfumes synthesizing compositions integrating elements assimilating substances amalgamating materials alloying alloys bonding atoms coupling molecules entwining electrons intertwining photons twisting strings vibrating particles oscillating waves resonating frequencies modulating amplitudes tuning pitches adjusting timbres calibrating spectra filtering spectrums refracting rays diffracting prismatically dispersing chromatographically separating mixtures fractionating components isolating constituents purifying extracting distillations concentrating solvents precipitating crystallizations solidifying liquids liquefying gasification condensing evaporating sublimation freezing cooling chilling frigidating deep frozen preserving sterilized sanitizing cleansing scrubbing abrading polishing buffing rubbing smoothing sanding planing sawing drilling milling grinding cutting carving sculpting modeling casting forming extruding rolling pressing stamping printing laser engraving electroforming plasma spraying electropolishing chemical processing thermal treatment heat sealing cold press joining adhesion fusion gluing cementing mortaring laying brickwork stacking blocks assembling construction erecting buildings fabricating machining turning spinning drawing sketching designing engineering drafting blueprinting architectural rendering computer programming coding software testing debugging troubleshooting repairing maintenance servicing operation maintaining sustaining supporting assisting helping supplying providing delivering distributing offering granting contributing donating funding sponsoring backing championing leading guiding instructing training educating informing advising counseling consulting recommending proposing suggesting volunteering serving benefiting advancing further improving betterment elevating enhancement augmenting amplifying intensifying escalating magnifying expanding growing multiplying scaling accelerating speeding quickening hastening propelling pushing driving forceful motivating energizing activating igniting sparking triggering firing initiating launching commencing starting beginning inaugurating introducing establishing founding installing equipping furnishing arming provisioning stockpiling accumulating aggregating consolidating compiling collecting congregating convening collating cataloging classifying codifying decoding encrypting encoding transliterating transcribing converting interpreting explaining elucidating demonstrating delineating distinguishing discriminating differentiating detailing defining describing enumerating explicating exemplifying illustrating itemizing listing mapping memorizing naming narrating numbering orienting ordering ordinalizing pronouncing recounting recalling remembering retrospective reviewing rereading repeating reading\n",
+        "generation_time": 80.97238302230835,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[YOUR_NAME]\n\nDear [RECEIVER_NAME],\n\nWe hope this email finds you well. We wanted to reach out to you today to invite you to our annual National Equality Gala, which will be held on [DATE]. This year\u2019s gala theme is \u201cUnity in Diversity\u201d and we believe that this message aligns perfectly with our mission to promote equality and justice for all.\n\nAs a leading nonprofit organization working towards achieving equal rights for all people, we are thrilled to invite you to join us at this special event. The gala will feature a variety of entertainment, including live performances by talented artists, and a keynote speech by a renowned advocate for social justice.\n\nThis year\u2019s gala will also provide opportunities for networking and learning about the latest developments in the fight for equality. We encourage you to bring a friend who shares your passion for social justice and to come dressed in your best attire.\n\nIn addition to the gala, we have several other exciting events lined up for the weekend. Please see below for details:\n\n- [EVENT_1]: A workshop on how to build a successful nonprofit fundraising campaign\n- [EVENT_2]: A panel discussion on the future of work and the role of the arts in society\n- [EVENT_3]: A silent auction featuring exclusive artwork and experiences\n\nPlease let us know if you can make it to any of these events. We would love to have you join us for a night of celebration and inspiration.\n\nTo RSVP, please visit our website at [WEBSITE] and click on the link for the National Equality Gala. You can also contact us directly at [CONTACT_INFO] with any questions or concerns.\n\nThank you for considering joining us at our gala. We look forward to seeing you there!\n\nSincerely,\n\n[YOUR NAME]\n\n[YOUR SENDING ORGANIZATION NAME]\n",
+        "generation_time": 17.210150957107544,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email cover the key themes of 'celebrating achievements', 'advancing equality', and 'community impact'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email present the problem through opportunity framing?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email propose collective action through participation as the solution approach?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email include a prominently placed call-to-action with dual actions (RSVP and donation)?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language that is celebratory, appreciative, and inspiring?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style warm and persuasive?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the formality level formal yet approachable?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include specific phrases such as 'honor your support', 'transformative evening', or 'join us in celebration'?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email open with a personalized greeting that mentions the event's significance?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email close with an appreciation statement followed by a clear call-to-action?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email follow the information flow: event significance \u2192 event details \u2192 impact \u2192 call-to-action?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "structure"
+        },
+        {
+          "question": "Is the email within the word count range of 250-350 words?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email include key phrases such as 'annual tradition', 'exclusive evening', 'special guest appearances', or 'your commitment'?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use a balanced mix of medium-length descriptive sentences and impactful short phrases?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 291.247554063797,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.5952380952380952,
+        "ranking_score": 0.5952380952380952,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email cover the key themes of 'celebrating achievements', 'advancing equality', and 'community impact'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem through opportunity framing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose collective action through participation as the solution approach?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email include a prominently placed call-to-action with dual actions (RSVP and donation)?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language that is celebratory, appreciative, and inspiring?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style warm and persuasive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level formal yet approachable?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include specific phrases such as 'honor your support', 'transformative evening', or 'join us in celebration'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a personalized greeting that mentions the event's significance?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Does the email close with an appreciation statement followed by a clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email follow the information flow: event significance \u2192 event details \u2192 impact \u2192 call-to-action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email within the word count range of 250-350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email include key phrases such as 'annual tradition', 'exclusive evening', 'special guest appearances', or 'your commitment'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 14,
+            "description": "Does the email use a balanced mix of medium-length descriptive sentences and impactful short phrases?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 6,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 14,
+        "strengths": "The email effectively covers key themes, proposes collective action, uses emotional language and maintains a warm, persuasive, and formal yet approachable tone. It follows good information flow and a balanced sentence structure.",
+        "weaknesses": "The email lacks opportunity framing for the problem, does not include a dual call-to-action with donation, misses specific required phrases, has an incomplete closing with no appreciation statement, fails to meet the specified word count, and does not incorporate several key phrases.",
+        "consistency_confidence": 0.9285714285714286,
+        "average_response_time": 32.46874022483826,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.47619047619047616": [
+              "llama-3-8b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email cover the key themes of 'celebrating achievements', 'advancing equality', and 'community impact'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem through opportunity framing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose collective action through participation as the solution approach?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email include a prominently placed call-to-action with dual actions (RSVP and donation)?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language that is celebratory, appreciative, and inspiring?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style warm and persuasive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level formal yet approachable?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include specific phrases such as 'honor your support', 'transformative evening', or 'join us in celebration'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a personalized greeting that mentions the event's significance?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Does the email close with an appreciation statement followed by a clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email follow the information flow: event significance \u2192 event details \u2192 impact \u2192 call-to-action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email within the word count range of 250-350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email include key phrases such as 'annual tradition', 'exclusive evening', 'special guest appearances', or 'your commitment'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 14,
+              "description": "Does the email use a balanced mix of medium-length descriptive sentences and impactful short phrases?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively covers key themes, proposes collective action, uses emotional language and maintains a warm, persuasive, and formal yet approachable tone. It follows good information flow and a balanced sentence structure.",
+          "weaknesses": "The email lacks opportunity framing for the problem, does not include a dual call-to-action with donation, misses specific required phrases, has an incomplete closing with no appreciation statement, fails to meet the specified word count, and does not incorporate several key phrases.",
+          "consistency_confidence": 0.9285714285714286,
+          "average_response_time": 32.46874022483826,
+          "generation_attempts": 3,
+          "total_criteria": 14,
+          "weighted_score": 0.5952380952380952,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 6,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 97.4066207408905,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.47619047619047616,
+        "ranking_score": 0.47619047619047616,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email cover the key themes of 'celebrating achievements', 'advancing equality', and 'community impact'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem through opportunity framing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose collective action through participation as the solution approach?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email include a prominently placed call-to-action with dual actions (RSVP and donation)?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language that is celebratory, appreciative, and inspiring?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style warm and persuasive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level formal yet approachable?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include specific phrases such as 'honor your support', 'transformative evening', or 'join us in celebration'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a personalized greeting that mentions the event's significance?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Does the email close with an appreciation statement followed by a clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email follow the information flow: event significance \u2192 event details \u2192 impact \u2192 call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email within the word count range of 250-350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email include key phrases such as 'annual tradition', 'exclusive evening', 'special guest appearances', or 'your commitment'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 14,
+            "description": "Does the email use a balanced mix of medium-length descriptive sentences and impactful short phrases?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 6,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 14,
+        "strengths": "The email effectively celebrates achievements and advances equality themes with warm, persuasive, and emotionally engaging language. It exhibits a formal yet approachable tone and successfully invites participation as a form of collective action. It also displays a balanced mix of sentence structures.",
+        "weaknesses": "The email lacks explicit opportunity framing for a problem, a dual call-to-action (RSVP and donation), and specific key phrases as required. It also does not fully personalize the greeting with event significance, lacks a proper closing with an appreciation statement and clear call-to-action, does not follow the prescribed information flow, falls short of the required word count, and misses several specific phrase requirements.",
+        "consistency_confidence": 0.9285714285714286,
+        "average_response_time": 29.79906113942464,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.47619047619047616": [
+              "llama-3-8b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email cover the key themes of 'celebrating achievements', 'advancing equality', and 'community impact'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem through opportunity framing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose collective action through participation as the solution approach?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email include a prominently placed call-to-action with dual actions (RSVP and donation)?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language that is celebratory, appreciative, and inspiring?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style warm and persuasive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level formal yet approachable?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include specific phrases such as 'honor your support', 'transformative evening', or 'join us in celebration'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a personalized greeting that mentions the event's significance?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Does the email close with an appreciation statement followed by a clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email follow the information flow: event significance \u2192 event details \u2192 impact \u2192 call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email within the word count range of 250-350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email include key phrases such as 'annual tradition', 'exclusive evening', 'special guest appearances', or 'your commitment'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 14,
+              "description": "Does the email use a balanced mix of medium-length descriptive sentences and impactful short phrases?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively celebrates achievements and advances equality themes with warm, persuasive, and emotionally engaging language. It exhibits a formal yet approachable tone and successfully invites participation as a form of collective action. It also displays a balanced mix of sentence structures.",
+          "weaknesses": "The email lacks explicit opportunity framing for a problem, a dual call-to-action (RSVP and donation), and specific key phrases as required. It also does not fully personalize the greeting with event significance, lacks a proper closing with an appreciation statement and clear call-to-action, does not follow the prescribed information flow, falls short of the required word count, and misses several specific phrase requirements.",
+          "consistency_confidence": 0.9285714285714286,
+          "average_response_time": 29.79906113942464,
+          "generation_attempts": 3,
+          "total_criteria": 14,
+          "weighted_score": 0.47619047619047616,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 6,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 89.39758396148682,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.47619047619047616,
+        "ranking_score": 0.47619047619047616,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email cover the key themes of 'celebrating achievements', 'advancing equality', and 'community impact'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem through opportunity framing?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose collective action through participation as the solution approach?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email include a prominently placed call-to-action with dual actions (RSVP and donation)?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language that is celebratory, appreciative, and inspiring?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style warm and persuasive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level formal yet approachable?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include specific phrases such as 'honor your support', 'transformative evening', or 'join us in celebration'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a personalized greeting that mentions the event's significance?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email close with an appreciation statement followed by a clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email follow the information flow: event significance \u2192 event details \u2192 impact \u2192 call-to-action?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Is the email within the word count range of 250-350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email include key phrases such as 'annual tradition', 'exclusive evening', 'special guest appearances', or 'your commitment'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 14,
+            "description": "Does the email use a balanced mix of medium-length descriptive sentences and impactful short phrases?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 6,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 14,
+        "strengths": "The email effectively emphasizes the celebration of achievements, advancing equality, and growing community impact, using warm, persuasive, and emotionally inspiring language. The overall tone is formal yet approachable, and the sentence structure shows a balanced mix of descriptive and concise language.",
+        "weaknesses": "The email lacks a prominently placed dual call-to-action that includes both RSVP and donation, does not incorporate the specific required phrases, fails to personalize the greeting by highlighting the event's significance, and closes abruptly without an appreciation statement or clear final call-to-action. Additionally, the email does not fully follow the prescribed information flow and falls short of the required word count, missing key phrases as specified.",
+        "consistency_confidence": 0.8571428571428571,
+        "average_response_time": 53.3847066561381,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.47619047619047616": [
+              "llama-3-8b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email cover the key themes of 'celebrating achievements', 'advancing equality', and 'community impact'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem through opportunity framing?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose collective action through participation as the solution approach?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email include a prominently placed call-to-action with dual actions (RSVP and donation)?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language that is celebratory, appreciative, and inspiring?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style warm and persuasive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level formal yet approachable?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include specific phrases such as 'honor your support', 'transformative evening', or 'join us in celebration'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a personalized greeting that mentions the event's significance?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email close with an appreciation statement followed by a clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email follow the information flow: event significance \u2192 event details \u2192 impact \u2192 call-to-action?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Is the email within the word count range of 250-350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email include key phrases such as 'annual tradition', 'exclusive evening', 'special guest appearances', or 'your commitment'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 14,
+              "description": "Does the email use a balanced mix of medium-length descriptive sentences and impactful short phrases?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively emphasizes the celebration of achievements, advancing equality, and growing community impact, using warm, persuasive, and emotionally inspiring language. The overall tone is formal yet approachable, and the sentence structure shows a balanced mix of descriptive and concise language.",
+          "weaknesses": "The email lacks a prominently placed dual call-to-action that includes both RSVP and donation, does not incorporate the specific required phrases, fails to personalize the greeting by highlighting the event's significance, and closes abruptly without an appreciation statement or clear final call-to-action. Additionally, the email does not fully follow the prescribed information flow and falls short of the required word count, missing key phrases as specified.",
+          "consistency_confidence": 0.8571428571428571,
+          "average_response_time": 53.3847066561381,
+          "generation_attempts": 3,
+          "total_criteria": 14,
+          "weighted_score": 0.47619047619047616,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 6,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 160.15451049804688,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.35714285714285715,
+        "ranking_score": 0.35714285714285715,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email cover the key themes of 'celebrating achievements', 'advancing equality', and 'community impact'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem through opportunity framing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose collective action through participation as the solution approach?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email include a prominently placed call-to-action with dual actions (RSVP and donation)?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language that is celebratory, appreciative, and inspiring?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style warm and persuasive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level formal yet approachable?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include specific phrases such as 'honor your support', 'transformative evening', or 'join us in celebration'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a personalized greeting that mentions the event's significance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email close with an appreciation statement followed by a clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email follow the information flow: event significance \u2192 event details \u2192 impact \u2192 call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email within the word count range of 250-350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email include key phrases such as 'annual tradition', 'exclusive evening', 'special guest appearances', or 'your commitment'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 14,
+            "description": "Does the email use a balanced mix of medium-length descriptive sentences and impactful short phrases?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 14,
+        "strengths": "The email demonstrates a warm, persuasive, and formal yet approachable tone. It uses emotional language that is celebratory and inspiring, and it opens with a personalized greeting referencing the event's significance. The invitation aspect promotes a sense of collective participation.",
+        "weaknesses": "The email falls short in several key criteria: it does not explicitly cover celebrating achievements or community impact, lacks opportunity framing of problems, omits a dual call-to-action (RSVP and donation), does not include specified key phrases, fails to present a complete informational flow especially in closing, and is truncated, not meeting the required word count range.",
+        "consistency_confidence": 0.8571428571428571,
+        "average_response_time": 27.008710781733196,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.47619047619047616": [
+              "llama-3-8b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email cover the key themes of 'celebrating achievements', 'advancing equality', and 'community impact'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem through opportunity framing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose collective action through participation as the solution approach?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email include a prominently placed call-to-action with dual actions (RSVP and donation)?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language that is celebratory, appreciative, and inspiring?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style warm and persuasive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level formal yet approachable?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include specific phrases such as 'honor your support', 'transformative evening', or 'join us in celebration'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a personalized greeting that mentions the event's significance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email close with an appreciation statement followed by a clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email follow the information flow: event significance \u2192 event details \u2192 impact \u2192 call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email within the word count range of 250-350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email include key phrases such as 'annual tradition', 'exclusive evening', 'special guest appearances', or 'your commitment'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 14,
+              "description": "Does the email use a balanced mix of medium-length descriptive sentences and impactful short phrases?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email demonstrates a warm, persuasive, and formal yet approachable tone. It uses emotional language that is celebratory and inspiring, and it opens with a personalized greeting referencing the event's significance. The invitation aspect promotes a sense of collective participation.",
+          "weaknesses": "The email falls short in several key criteria: it does not explicitly cover celebrating achievements or community impact, lacks opportunity framing of problems, omits a dual call-to-action (RSVP and donation), does not include specified key phrases, fails to present a complete informational flow especially in closing, and is truncated, not meeting the required word count range.",
+          "consistency_confidence": 0.8571428571428571,
+          "average_response_time": 27.008710781733196,
+          "generation_attempts": 3,
+          "total_criteria": 14,
+          "weighted_score": 0.35714285714285715,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 81.02652788162231,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.3333333333333333,
+        "ranking_score": 0.3333333333333333,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email cover the key themes of 'celebrating achievements', 'advancing equality', and 'community impact'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem through opportunity framing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose collective action through participation as the solution approach?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email include a prominently placed call-to-action with dual actions (RSVP and donation)?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language that is celebratory, appreciative, and inspiring?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style warm and persuasive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level formal yet approachable?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include specific phrases such as 'honor your support', 'transformative evening', or 'join us in celebration'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a personalized greeting that mentions the event's significance?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email close with an appreciation statement followed by a clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email follow the information flow: event significance \u2192 event details \u2192 impact \u2192 call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email within the word count range of 250-350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email include key phrases such as 'annual tradition', 'exclusive evening', 'special guest appearances', or 'your commitment'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 14,
+            "description": "Does the email use a balanced mix of medium-length descriptive sentences and impactful short phrases?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 14,
+        "strengths": "The email demonstrates a warm, persuasive, and approachable style, using emotional language to inspire collective action and engagement.",
+        "weaknesses": "It lacks explicit coverage of key themes like celebrating achievements and community impact, does not employ opportunity framing or dual call-to-action (RSVP and donation), omits specific required phrases, does not feature a personalized greeting highlighting event significance or a proper closing, and is incomplete with insufficient word count.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 31.77541454633077,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.47619047619047616": [
+              "llama-3-8b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email cover the key themes of 'celebrating achievements', 'advancing equality', and 'community impact'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem through opportunity framing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose collective action through participation as the solution approach?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email include a prominently placed call-to-action with dual actions (RSVP and donation)?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language that is celebratory, appreciative, and inspiring?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style warm and persuasive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level formal yet approachable?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include specific phrases such as 'honor your support', 'transformative evening', or 'join us in celebration'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a personalized greeting that mentions the event's significance?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email close with an appreciation statement followed by a clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email follow the information flow: event significance \u2192 event details \u2192 impact \u2192 call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email within the word count range of 250-350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email include key phrases such as 'annual tradition', 'exclusive evening', 'special guest appearances', or 'your commitment'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 14,
+              "description": "Does the email use a balanced mix of medium-length descriptive sentences and impactful short phrases?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email demonstrates a warm, persuasive, and approachable style, using emotional language to inspire collective action and engagement.",
+          "weaknesses": "It lacks explicit coverage of key themes like celebrating achievements and community impact, does not employ opportunity framing or dual call-to-action (RSVP and donation), omits specific required phrases, does not feature a personalized greeting highlighting event significance or a proper closing, and is incomplete with insufficient word count.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 31.77541454633077,
+          "generation_attempts": 3,
+          "total_criteria": 14,
+          "weighted_score": 0.3333333333333333,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 95.34948325157166,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 1,
+      "score": 0.5952380952380952
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 2,
+      "score": 0.47619047619047616
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 3,
+      "score": 0.47619047619047616
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 4,
+      "score": 0.35714285714285715
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 5,
+      "score": 0.3333333333333333
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 946.4588289260864,
+    "success": true,
+    "errors": []
+  }
+}

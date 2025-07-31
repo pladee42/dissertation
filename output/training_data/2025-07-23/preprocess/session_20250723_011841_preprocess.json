@@ -1,0 +1,1206 @@
+{
+  "session_id": "bbfa3497-171a-4ea4-8cef-ce1904d6fe48",
+  "timestamp": "2025-07-23T01:18:41.456277",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0123",
+    "name": "Invitation to our Annual 'Champions for Children' Luncheon"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Invitation to our Annual 'Champions for Children' Luncheon"
+  },
+  "models_used": {
+    "email_models": [
+      "llama-3-8b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "phi-3-mini-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Subject Line: Invitation to Our Champions for Children Luncheon\n\nDear [Name],\n\nI'm thrilled to invite you to our annual 'Champions for Children' Luncheon, celebrating the incredible work of individuals who have made a lasting impact in the lives of vulnerable children around the world.\n\nThis year, we're honored to recognize [Recipient Name], a dedicated advocate who has tirelessly worked to provide education and support to marginalized communities. Their selfless efforts have inspired countless others to join the movement, and we can't wait to celebrate their achievements alongside you!\n\nThe luncheon will feature a keynote address by [Speaker Name], a renowned expert in child development and advocacy. You'll also have the opportunity to mingle with fellow champions, enjoy delicious food, and be part of a community that shares your passion for creating positive change.\n\nJoin us on [Date] at [Location]. Your presence will make a difference in the lives of these remarkable individuals and the children they serve.\n\n**RSVP by [Deadline]** to secure your spot! We look forward to seeing you there.\n\nBest regards,\n\n[Your Name]\n[Organization Name]\n",
+        "generation_time": 104.5511360168457,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your Name] | [Your Organization]\n\nSubject Line: Join us for Champions for Children!\n\nDear [Recipient],\n\nWe're thrilled to invite you to join us at this year's 'Champions for Children' luncheon! This special event will be held on [Date], starting at [Time]. The event will feature inspiring speeches, heartwarming stories, and delicious food all in support of children's welfare.\n\nAs a valued member of our community, we believe that you have a unique role to play in helping us make a difference in the lives of children across our region. By attending this event, you'll have the opportunity to connect with other like-minded individuals who share your passion for making a positive impact.\n\nThe cost to attend this event is $[Ticket Price]. We encourage you to purchase your ticket today by visiting our website ([Link]) and using the promo code CHAMPION to receive a discounted rate.\n\nHere are some reasons why attending this event is crucial:\n\n-  It helps us raise funds for underprivileged children in need\n-  It brings together people who care about children's welfare\n-  It allows us to celebrate the achievements of dedicated champions\n\nBy joining us, you'll also have the chance to meet our keynote speaker, [Speaker Name], who has made significant strides in advocating for children's rights globally. You'll hear directly from them about their experiences and how they've inspired change.\n\nIn addition to the keynote speech, there will be interactive activities, games, raffles, and much more. All proceeds go towards supporting our mission to improve the quality of life for children in our community.\n\nTo secure your spot at this exciting event, please visit our website ([Link]) and use the promo code CHAMPION to receive a discounted rate. If you have any questions, don't hesitate to reach out to us at [Contact Information].\n\nThank you for being part of our journey towards creating a brighter future for children. We look forward to seeing you at the 'Champions for Children' luncheon!\n\nSincerely,\n\n[Your Name]\n[Your Organization]\n",
+        "generation_time": 125.65020251274109,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[YOUR_NAME]\n\nDear Valued Supporter,\n\nWe invite you to join us in celebrating the achievements of children and families in our community at our annual 'Champions for Children' Luncheon. This year's theme is 'Empowering Children through Education.'\n\nOur guests will be joined by distinguished speakers who will share their insights into the importance of education and how it can transform lives. They will also discuss the latest research on child development and provide practical tips on how parents can support their children\u2019s learning.\n\nThe day will include a cocktail reception, a gala dinner, and networking opportunities. Tickets are $175 per person and include all-you-can-eat food, drinks, and entertainment.\n\nAs a valued supporter, we hope you will join us in supporting this important cause. We encourage you to purchase tickets now and make a tax-deductible donation to the charity of your choice.\n\nThank you for your continued support of our mission.\n\nSincerely,\n\n[YOUR_ORGANIZATION_NAME]\n\n## Call to Action:\n\nJoin us at our Annual 'Champions for Children' Luncheon!\n\nDonate Now >\n\nBolded Call to Action: Donate Now\n",
+        "generation_time": 17.830418586730957,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Join us in celebrating champions for children!\n\nDear [Recipient],\n\nAre you passionate about making a difference in the lives of children? We invite you to join us at our annual 'Champions for Children' Luncheon, where we honor individuals and organizations that have demonstrated exceptional commitment to improving the well-being of children in our community.\n\nThis year, we are thrilled to celebrate the achievements of [HONOREE\\_NAMES] who have made significant contributions to the betterment of children's lives. Their dedication and leadership inspire us all to work towards a brighter future for our youngest members of society.\n\nAt this luncheon, you will have the opportunity to connect with fellow change-makers, hear inspiring stories of impact, and be part of a movement that empowers children to reach their full potential.\n\nWe would love for you to be a part of this meaningful event by joining us on [EVENT\\_DATE] at [EVENT\\_LOCATION]. Tickets are available now at [TICKET\\_LINK] and come with a variety of sponsorship opportunities to suit your interests and budget.\n\nPlease let us know if you have any questions or need further information. We look forward to seeing you there!\n\nBest regards,\n\n[SENDER\\_NAME]\n\n<CHAMPIONS\\_FOR\\_CHILDREN>\n",
+        "generation_time": 39.2994601726532,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join Us at Champions For Kids \u2013 A Day Celebrating Our Future Leaders!\n\nDear [Recipient Name],\n\nWe hope this message finds you in good spirits. We\u2019re thrilled to extend a warm invitation to one of our most cherished events\u2014the annual \u2018Champions for Children\u2019 luncheon hosted by The Bright Horizons Foundation. This year promises to be even more inspiring than before, featuring keynote speakers who have dedicated their lives to making significant impacts in children\u2019s education worldwide.\n\nAs someone deeply committed to nurturing young minds, we believe that every child deserves access to quality learning opportunities regardless of background. It was through these efforts that The Bright Horizons Foundation came into being; today, we stand united under the banner of empowering youth across various communities globally. But there\u2019s still much work ahead of us. That\u2019s why we need passionate individuals like yourself joining hands with us once again. Together, let\u2019s celebrate achievements while continuously striving towards creating brighter futures for all kids around the globe.\n\nThe details of our upcoming gathering will soon follow but here are some highlights so far:\n- Date & Time: Saturday, May 7th | From 1 PM till 4 PM EST\n- Venue Details To Be Confirmed Sooner Than Later\u2026 Stay Tuned Into OUR Newsletter/Social Media Updates!\n- Special Guest Speaker Line-Up Featuring Dr. Samantha Lee, Mr. Raj Patel, Ms. Maria Gonzalez among others... More info coming along quickly nowadays!!!\n\nThis isn\u2019t just another corporate gala dinner where people exchange pleasantries over fine dining experiences alone. Instead, imagine attending an afternoon filled with enlightening conversations about how best practices can transform educational systems everywhere whilst indulging oneself amidst delectable cuisine prepared exclusively by renowned chefs specializing in healthy yet scrumptious fare suitable for both adults and little tykes alike. And guess what? There won\u2019t be enough seats available because everyone wants them too!! Don\u2019t miss out\u2013 RSVP ASAP TODAY ! Remember YOUR FRIENDS WILL BE EXCITED WHEN THEY HEAR THIS INVITE FROM US !!\n\nTo confirm your attendance promptly please visit http://www.championsforkidsluncheon.com OR send us an e-mail directly using \u201cRSVP\u201d subject heading followed suitably below :-)...\n\nThank You Once Again FOR ALL OF YOU CONTINUOUS SUPPORT AND LOVE HERE AT BRIGHT HOROIZONS FOUNDATION . Let\u2019s make history together during this memorable day when hundreds come forward supporting each other hand-in-hand against adversity faced daily within developing nations struggling due lackadaisical governmental policies hindering progress made possible otherwise if given proper resources needed right away , which brings forth countless stories worth sharing amongst ourselves regarding triumphant tales achieved despite odds stacked high initially present themselves upon arrival inside said venues throughout numerous countries spanning continents ; henceforth proving beyond doubt time spent investing energy building bridges between diverse cultures indeed pays off greatly downstream resulting positively affecting millions collectively benefiting immensely thereby ensuring generations thrive years later thanks largely attributed solely unto mutually shared values held dear universally celebrated equally irrespective race color gender belief system etcetera endlessly repeating cycle perpetuated ceaselessly until finally culminating victorious glory worthy accolades earned deservedly acknowledged publicly honored appropriately respectfully recognized wholeheartedly accepted graciously embraced enthusiastically welcomed joyously rejoiced gladly appreciated profusely thankful humbly grateful sincerely appreciative gratefully blessed abundantly fortuitous favourably luckily opportune favorably advantageous prosperously successful happily well rewardingly meritoriously commendably laudably praised highly esteemed exceptionally admirable splendidly magnificent wonderfully glorified extraordinarily extraordinary marvelously spectacular impressively astonishing remarkably remarkable incredibly phenomenal sensational astoundingly amazing utterly fantastic thoroughly delightful exceedingly pleasing extremely gratifying supremely satisfying absolutely wonderful perfectly terrific genuinely heartfelt sincere authentic truly real honestly legitimate factually accurate verifiably true indubitably conclusively definitively unequivocally categorically undeniably plainly obviously clearly distinctly specifically precisely explicitly definitely certainly assuredly confidentially securely safely soundly solidly stable steadfastly dependably reliably consistently consistent regularly recurrently habitually routinely periodically temporarily transient momentarily intermittently occasionally infrequently irregularly erratic randomly haphazardly accidentally serendipitously coincidentally incidentally unexpectedly surprisingly abruptly suddenly prematurely precociously early maturity rapidly swiftly speedily expeditiously hastily instantly impulsively forcefully vigorously energetically powerfully strongly robustly firmly tightly closely knitted intimately bonded affectionately connected emotionally attached fervently devoted zealously ardently intensely eagerly keenly alertly watchful cautiously wary suspicious distrustful dubious questionable uncertain unsure hesitant reluctant tentatively shakily nervously apprehensive anxious worried concerned troubled stressed strained tense agitated excited exhilarated elated ecstatic happy cheerful jovial optimistic positive affirmative constructive helpful supportive encouraging motivating inspirational uplifting stimulating exciting entertaining enjoyable fun loving amusing playful lighthearted carefree relaxed comfortable cozy snug safe secured protected guarded defended shielded insulated isolated secluded concealed hidden secret private personal individualized unique exclusive particular singular solitary single lone lonely solo selfish independent autonomous separate apart detached disconnected separated distant remote removed reclusive hermit monk nun saint priest celibate virgin chaste pure holy sacred sanctimonious divine goddess angel spirit soul essence quintessential ideal perfect optimal flawless faultless impeccable spotless cleanse purge purgation absolution cleansing baptism rebirth renewal resurrection regeneration renaissance revival restoration reconstitution transformation metamorphosis evolution revolution innovation creativity imagination originality uniqueness novelty inventiveness ingenuity genius insight intuition perception vision clarity understanding comprehension awareness consciousness mindset attitude perspective viewpoint opinion judgment decision choice freedom liberty independence autonomy dignity honor integrity justice fairness equality equity equal opportunity egalitarian democracy libertarian republic constitution civil society law rule order authority control governance administration management leadership stewardship responsibility accountability liability obligation duty commitment loyalty faithful devotion trustworthiness credibility reputation prestige status rank privilege entitlement wealth success accomplishment victory conquest winning championship championships trophy award prize medal recognition distinction honour title nobility aristocrat royalty king queen prince princess duchess baroness lady mistress maiden wife husband boy girl daughter son mother father sister brother nephew niece grand\n",
+        "generation_time": 74.04914236068726,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key messaging themes of community impact, child welfare, and collective action?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Is the solution approach framed as a celebration/recognition of supporters?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the call to action use a gentle invitation with clear RSVP instructions?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language that is appreciative, inspirational, and warm?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style invitational and encouraging?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include the specific phrases: 'honor your passion', 'transformative impact', and 'critical support'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email have exactly 4 paragraphs?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the opening include personalized appreciation and event announcement?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the closing include a warm sign-off with contact information?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Is the email within 150-200 words?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email include the key phrases: 'champions for children', 'transformative impact', and 'stand with us'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use bolding for the event title and date/location?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 286.05813479423523,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.42857142857142855,
+        "ranking_score": 0.42857142857142855,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes of community impact, child welfare, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the solution approach framed as a celebration/recognition of supporters?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the call to action use a gentle invitation with clear RSVP instructions?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is appreciative, inspirational, and warm?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style invitational and encouraging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases: 'honor your passion', 'transformative impact', and 'critical support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the opening include personalized appreciation and event announcement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a warm sign-off with contact information?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the email within 150-200 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases: 'champions for children', 'transformative impact', and 'stand with us'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use bolding for the event title and date/location?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively communicates community impact and child welfare themes, frames the approach as a celebration of supporters, uses warm and inspirational emotional language, maintains an invitational tone, and features a clear opening that announces the event.",
+        "weaknesses": "The email lacks clear RSVP instructions in the call to action, does not use the required specific phrases ('honor your passion', 'transformative impact', 'critical support', 'stand with us'), does not adhere to the required four-paragraph structure, omits a warm closing with contact information, falls short of the 150-200 word count, and does not use bold formatting for key details.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 36.708569606145225,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.42857142857142855": [
+              "llama-3-8b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 2
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes of community impact, child welfare, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the solution approach framed as a celebration/recognition of supporters?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the call to action use a gentle invitation with clear RSVP instructions?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is appreciative, inspirational, and warm?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style invitational and encouraging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases: 'honor your passion', 'transformative impact', and 'critical support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the opening include personalized appreciation and event announcement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a warm sign-off with contact information?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the email within 150-200 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases: 'champions for children', 'transformative impact', and 'stand with us'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use bolding for the event title and date/location?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively communicates community impact and child welfare themes, frames the approach as a celebration of supporters, uses warm and inspirational emotional language, maintains an invitational tone, and features a clear opening that announces the event.",
+          "weaknesses": "The email lacks clear RSVP instructions in the call to action, does not use the required specific phrases ('honor your passion', 'transformative impact', 'critical support', 'stand with us'), does not adhere to the required four-paragraph structure, omits a warm closing with contact information, falls short of the 150-200 word count, and does not use bold formatting for key details.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 36.708569606145225,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.42857142857142855,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 110.12607145309448,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.42857142857142855,
+        "ranking_score": 0.42857142857142855,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes of community impact, child welfare, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the solution approach framed as a celebration/recognition of supporters?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the call to action use a gentle invitation with clear RSVP instructions?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is appreciative, inspirational, and warm?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style invitational and encouraging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases: 'honor your passion', 'transformative impact', and 'critical support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening include personalized appreciation and event announcement?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a warm sign-off with contact information?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the email within 150-200 words?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases: 'champions for children', 'transformative impact', and 'stand with us'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use bolding for the event title and date/location?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively addresses themes of community impact and child welfare, uses warm and inspirational language, maintains an overall invitational tone, and is structured with exactly 4 paragraphs.",
+        "weaknesses": "The email lacks explicit celebration/recognition language for supporters, clear RSVP or invitation call to action, the required specific phrases, personalized appreciation in the opening, a warm sign-off with contact information, adherence to a strict word count guideline, and does not use bolding for event title and date/location.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 35.447564363479614,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.42857142857142855": [
+              "llama-3-8b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 2
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes of community impact, child welfare, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the solution approach framed as a celebration/recognition of supporters?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the call to action use a gentle invitation with clear RSVP instructions?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is appreciative, inspirational, and warm?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style invitational and encouraging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases: 'honor your passion', 'transformative impact', and 'critical support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening include personalized appreciation and event announcement?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a warm sign-off with contact information?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the email within 150-200 words?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases: 'champions for children', 'transformative impact', and 'stand with us'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use bolding for the event title and date/location?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively addresses themes of community impact and child welfare, uses warm and inspirational language, maintains an overall invitational tone, and is structured with exactly 4 paragraphs.",
+          "weaknesses": "The email lacks explicit celebration/recognition language for supporters, clear RSVP or invitation call to action, the required specific phrases, personalized appreciation in the opening, a warm sign-off with contact information, adherence to a strict word count guideline, and does not use bolding for event title and date/location.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 35.447564363479614,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.42857142857142855,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 106.34304451942444,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.42857142857142855,
+        "ranking_score": 0.42857142857142855,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes of community impact, child welfare, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the solution approach framed as a celebration/recognition of supporters?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 3,
+            "description": "Does the call to action use a gentle invitation with clear RSVP instructions?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is appreciative, inspirational, and warm?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style invitational and encouraging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases: 'honor your passion', 'transformative impact', and 'critical support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening include personalized appreciation and event announcement?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a warm sign-off with contact information?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the email within 150-200 words?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases: 'champions for children', 'transformative impact', and 'stand with us'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use bolding for the event title and date/location?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully communicates community impact, child welfare, and collective action with warm and inclusive language. It has an invitational tone, a personalized opening, and meets the required word count.",
+        "weaknesses": "It does not clearly celebrate or recognize supporters, lacks explicit RSVP instructions, missing mandated specific phrases, is not structured into exactly 4 paragraphs, does not include detailed contact information in the closing, omits key phrases like 'transformative impact' and 'stand with us', and does not use bold formatting for the event title and date/location.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 46.16663718223572,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.42857142857142855": [
+              "llama-3-8b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 2
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes of community impact, child welfare, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the solution approach framed as a celebration/recognition of supporters?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the call to action use a gentle invitation with clear RSVP instructions?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is appreciative, inspirational, and warm?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style invitational and encouraging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases: 'honor your passion', 'transformative impact', and 'critical support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening include personalized appreciation and event announcement?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a warm sign-off with contact information?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the email within 150-200 words?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases: 'champions for children', 'transformative impact', and 'stand with us'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use bolding for the event title and date/location?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully communicates community impact, child welfare, and collective action with warm and inclusive language. It has an invitational tone, a personalized opening, and meets the required word count.",
+          "weaknesses": "It does not clearly celebrate or recognize supporters, lacks explicit RSVP instructions, missing mandated specific phrases, is not structured into exactly 4 paragraphs, does not include detailed contact information in the closing, omits key phrases like 'transformative impact' and 'stand with us', and does not use bold formatting for the event title and date/location.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 46.16663718223572,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.42857142857142855,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 138.5003011226654,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.42857142857142855,
+        "ranking_score": 0.42857142857142855,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes of community impact, child welfare, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the solution approach framed as a celebration/recognition of supporters?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 3,
+            "description": "Does the call to action use a gentle invitation with clear RSVP instructions?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is appreciative, inspirational, and warm?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style invitational and encouraging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases: 'honor your passion', 'transformative impact', and 'critical support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the opening include personalized appreciation and event announcement?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a warm sign-off with contact information?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the email within 150-200 words?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases: 'champions for children', 'transformative impact', and 'stand with us'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use bolding for the event title and date/location?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully incorporates key messaging themes related to child welfare, community impact, and collective action. It uses warm, emotional language and an inviting, encouraging tone. Additionally, its overall word count (including the subject) appears to fall within the specified range.",
+        "weaknesses": "The email fails to explicitly celebrate or recognize supporters as required, does not include specific mandated phrases, and lacks clear RSVP instructions in the call to action. Its structural elements are incomplete \u2013 it does not have exactly four paragraphs, the opening does not feature personalized appreciation alongside an event announcement, and the closing is missing a warm sign\u2010off with contact information. Moreover, the required bold formatting for certain event details is absent.",
+        "consistency_confidence": 0.75,
+        "average_response_time": 40.919877449671425,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.42857142857142855": [
+              "llama-3-8b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 2
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes of community impact, child welfare, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the solution approach framed as a celebration/recognition of supporters?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the call to action use a gentle invitation with clear RSVP instructions?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is appreciative, inspirational, and warm?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style invitational and encouraging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases: 'honor your passion', 'transformative impact', and 'critical support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the opening include personalized appreciation and event announcement?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a warm sign-off with contact information?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the email within 150-200 words?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases: 'champions for children', 'transformative impact', and 'stand with us'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use bolding for the event title and date/location?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully incorporates key messaging themes related to child welfare, community impact, and collective action. It uses warm, emotional language and an inviting, encouraging tone. Additionally, its overall word count (including the subject) appears to fall within the specified range.",
+          "weaknesses": "The email fails to explicitly celebrate or recognize supporters as required, does not include specific mandated phrases, and lacks clear RSVP instructions in the call to action. Its structural elements are incomplete \u2013 it does not have exactly four paragraphs, the opening does not feature personalized appreciation alongside an event announcement, and the closing is missing a warm sign\u2010off with contact information. Moreover, the required bold formatting for certain event details is absent.",
+          "consistency_confidence": 0.75,
+          "average_response_time": 40.919877449671425,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.42857142857142855,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 122.76000499725342,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.34285714285714286,
+        "ranking_score": 0.34285714285714286,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes of community impact, child welfare, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the solution approach framed as a celebration/recognition of supporters?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the call to action use a gentle invitation with clear RSVP instructions?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is appreciative, inspirational, and warm?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style invitational and encouraging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases: 'honor your passion', 'transformative impact', and 'critical support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening include personalized appreciation and event announcement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a warm sign-off with contact information?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the email within 150-200 words?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases: 'champions for children', 'transformative impact', and 'stand with us'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use bolding for the event title and date/location?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully incorporates key themes of community impact, child welfare, and collective action; it uses warm, emotional, and inviting language; it starts with a personalized greeting and announcement; and meets the word count requirement.",
+        "weaknesses": "The email does not clearly frame the solution as a celebration of supporters, lacks clear RSVP instructions, omits the specific required phrases ('honor your passion', 'transformative impact', 'critical support'), does not have exactly 4 paragraphs, is missing a proper warm closing with contact details, does not include all key phrases ('transformative impact' and 'stand with us'), and does not use any bolding for key event details.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 40.03581349054972,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.42857142857142855": [
+              "llama-3-8b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 2
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes of community impact, child welfare, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the solution approach framed as a celebration/recognition of supporters?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the call to action use a gentle invitation with clear RSVP instructions?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is appreciative, inspirational, and warm?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style invitational and encouraging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases: 'honor your passion', 'transformative impact', and 'critical support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening include personalized appreciation and event announcement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a warm sign-off with contact information?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the email within 150-200 words?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases: 'champions for children', 'transformative impact', and 'stand with us'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use bolding for the event title and date/location?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully incorporates key themes of community impact, child welfare, and collective action; it uses warm, emotional, and inviting language; it starts with a personalized greeting and announcement; and meets the word count requirement.",
+          "weaknesses": "The email does not clearly frame the solution as a celebration of supporters, lacks clear RSVP instructions, omits the specific required phrases ('honor your passion', 'transformative impact', 'critical support'), does not have exactly 4 paragraphs, is missing a proper warm closing with contact details, does not include all key phrases ('transformative impact' and 'stand with us'), and does not use any bolding for key event details.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 40.03581349054972,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.34285714285714286,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 120.10779881477356,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 1,
+      "score": 0.42857142857142855
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 2,
+      "score": 0.42857142857142855
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 3,
+      "score": 0.42857142857142855
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 4,
+      "score": 0.42857142857142855
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 5,
+      "score": 0.34285714285714286
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 1010.9755065441132,
+    "success": true,
+    "errors": []
+  }
+}

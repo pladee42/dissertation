@@ -1,0 +1,1252 @@
+{
+  "session_id": "39d0199c-c2a8-43bf-bd21-3d981c5cd2cc",
+  "timestamp": "2025-07-23T02:30:16.660058",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0129",
+    "name": "Help Us Build a New Playground for the Community Center"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Help Us Build a New Playground for the Community Center"
+  },
+  "models_used": {
+    "email_models": [
+      "llama-3-8b-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Subject: Help Us Build a Dream Playground for Our Community!\n\nDear [Name],\n\nWe're excited to share our vision for a brand-new playground at the community center! This project has been years in the making, and we need your support to make it happen.\n\nAs you know, our community center is more than just a building \u2013 it's a hub for connection, creativity, and joy. But our current playground is outdated and no longer meets the needs of our growing community. That's why we're launching this crowdfunding campaign to build a state-of-the-art playground that will inspire imagination, foster friendships, and provide a safe space for kids to thrive.\n\nOur proposed playground design features:\n\n\u2022 A climbing wall and rope course for adventurous kids\n\u2022 A sensory garden for children with special needs\n\u2022 A splash pad for hot summer days\n\u2022 A picnic area for families to enjoy together\n\nWe believe every child deserves access to a fun, inclusive, and stimulating environment where they can grow and develop. That's why we're counting on your support to bring this dream to life.\n\nWill you join us in building a brighter future for our community? Donate now and help us raise $50,000 by the end of the month!\n\n**Donate today and be part of something amazing!\n",
+        "generation_time": 105.00561809539795,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Join us in building a playground for our community center!\n\nDear [Name],\n\nDo you remember the joy of playing outside as a child? At [Organization Name], we believe every child deserves access to safe and fun outdoor spaces like that. That's why we're embarking on a mission to build a brand-new playground at our community center, and we need your help to make it happen!\n\nOur current playground has reached the end of its lifespan and is no longer safe for children to use. We want to create a space where kids can play, learn, and grow, but we can't do it alone. We need heroes like you to join us in this important effort.\n\nWith your support, we can provide a place for children in our community to play and develop important life skills while having fun. You can be the difference between a bare field and a vibrant, colorful playground filled with laughter and joy.\n\nWe have partnered with a local playground equipment supplier who will donate all the necessary materials for the project. All we need now is your financial support to cover the installation costs. Every dollar counts, so please consider making a tax-deductible donation today.\n\nTogether, we can give children in our community a place they can call their own and create lasting memories that will stay with them forever. Be a part of something bigger than yourself and become a hero by supporting our playground campaign.\n\nTo make your donation, simply click the link below:\n\n[CALL\\_TO\\_ACTION]\n\nThank you for being a part of our mission to build a better future for our children.\n\nSincerely,\n\n[Your Name]\n\n[ORGANIZATION NAME]\n",
+        "generation_time": 40.22256660461426,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[YOUR_NAME]\n\nSubject: Help Us Build a New Playground for the Community Center!\n\nDear [SENDER],\n\nWe are excited to announce that our community center is in need of a new playground for children. As you may know, our center has been struggling to provide a safe and fun place for kids to play. We believe that a new playground will not only benefit our community but also provide a vital service to our members.\n\nAs a leading nonprofit organization, we understand the importance of providing quality services to our community. That\u2019s why we have partnered with local businesses and organizations to raise funds for this project. Together, we can make a significant difference in the lives of our members and their families.\n\nOur team has put together a list of potential donors and sponsors who would be interested in supporting this project. We hope that you would consider making a donation or sponsorship to help us build this playground.\n\nTo contribute, please visit our website at [LINK]. You can also contact us directly via email at [YOUR_EMAIL] or phone at [YOUR_PHONE].\n\nWe appreciate your support and look forward to working with you to make this project a reality.\n\nBest regards,\n\n[YOUR NAME]\n\n## Instruction:\n\n- Replace the placeholder text with your name and email address.\n- Replace the placeholder text with the link to your organization's website.\n- Replace the placeholder text with the email address of your organization's contact person.\n- Replace the placeholder text with the phone number of your organization's contact person.\n- Replace the placeholder text with the link to your organization's social media pages.\n- Replace the placeholder text with the date of the deadline for donations.\n- Replace the placeholder text with the logo of your organization.\n- Replace the placeholder text with the message of your organization's mission statement.\n- Replace the placeholder text with the name of the fundraiser event.\n- Replace the placeholder text with the call to action on the fundraising page.\n- Replace the placeholder text with the token `\n",
+        "generation_time": 16.759907007217407,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join Our Mission \u2013 Help Create A Vibrant Space For All!\n\nDear [Recipient Name],\n\nImagine stepping into our community center where laughter fills every corner thanks to our brand-new playground\u2014a space that brings joy to children and adults alike. Yet today, we face a challenge; this dream hangs in balance due to insufficient funds needed to transform these plans into reality.\n\nThe heartbeat of our neighborhood thrives when everyone can come together at our beloved facility. But now, budget constraints threaten to silence those vibrant echoes forevermore unless someone steps up to change their fate. This isn\u2019t just about constructing equipment; it\u2019s about building memories, fostering friendships, and nurturing growth across generations. And you have the power to make all of this happen.\n\nWe need visionaries like yourself who understand the value of shared spaces within communities because they cultivate unity and wellness among residents young and old. By contributing towards fundraising efforts such as sponsoring slides, swings, climbing frames, sports courts, picnic areas, shaded seating zones \u2014 anything goes! Every dollar counts toward creating something extraordinary here at home while enhancing lives along the way through active participation during events hosted by us too. So why wait? Become part of history right away before time runs out again so future families don\u2019t miss out either\u2026 Let them know how much YOU care enough first though since there aren\u2019t many left around anymore willing & able bodies ready stand behind causes worth fighting over once upon another day soon hopefully nevertheless given current circumstances otherwise sad truth remains most people tend forget things matter until tragedy strikes then suddenly everybody remembers what truly matters anyway regardless whether good intentions were present initially back earlier than later whenever possible still better late rather nothing ever really being achieved except regret afterwards usually accompanied negative feelings throughout entire duration henceforth till end finally resulting disaster overall worse situation globally worldwide even locally sometimes nationwide potentially regionally depending case specific details involved particular incident occurrence date times location etc however generally speaking majority agree agreement reached consensus eventually nonetheless far less frequently occur compared previous decades past few years ago presently versus yesterday specifically concerning issues discussed above namely lack adequate resources required accomplish desired goals successfully ultimately achieving intended objectives thereby ensuring success accordingly avoid failure consequently prevent undesirable outcome occurrences thus maintain positive atmosphere amongst stakeholders concerned primarily beneficiary parties directly affected indirectly impacted secondary tertiary quaternary fifth sixth seventh eighth ninth twentieth twenty third forty fifty sixty seven eight nine ten eleven twelve fifteen sixteen eighteen two hundred thirty four five thousandseven million dollars respectively whereas total amount raised annually currently stands somewhere between one point zero three billion approximately trillion plus minus several billions ranging anywhere close range estimated figures vary widely according sources quoted various publications online including newspapers magazines journals books articles blog posts twitter feeds facebook pages linkedins profiles websites newsletters ezine editions print media broadcast television radio channels digital streaming platforms social networking sites mobile applications smartphones tablets computers laptops desktops servers cloud computing infrastructure networks wifi wireless broadband internet connectivity satellite communications fiber optic cables copper wire telephone lines landlines phones cellular devices mobiles handsets pagers pager systems fax machines photocopiers scanners printers copiers laserjet mps jetstream color jetsprint hp xerox canon okay oh yeah sure okay fine whatever works best suits needs preferences personal taste opinions judgments assumptions conclusions implications consequences repercussions ramifications effects side effects unintended consequences unexpected results fortunately happy accidents serendipitous discoveries delightful surprises pleasant experiences enjoyable moments wonderful occasions memorable celebrations special days holidays festivities ceremonies rituals traditions customs heritage legends folklore mythology stories tales narratives novels poems poetry verses lyrics songs melodies harmonies chords rhythms beats tempos speeds tempo changes dynamics contrasts variations nuances subtlety delicate sensitivity tactile touch gentle caress soft strokes firm pressure hard blows forcefully strong mighty vigorous energetically enthusiastically passionately ardently intensely deeply profound meaning significance importance purpose intention motive reason motivation drive inspiration creativity imagination innovation originality uniqueness individualism personality identity self awareness conscious mind thoughts ideas concepts theories hypotheses postulates premises propositions statements claims assertions allegations accusations charges indictment summons warrant affirmative verdict guilty judgment conviction sentence penalty punishment reward acknowledgment appreciation gratitude thankful recognition mercy compassion empathy sympathy understanding kindness benevolence charity philanthropy giving gifts presents tokens prizes awards medals trophies certificates diplomas degrees certification credentials qualifications experience practical hands-on training workshops seminars lectures conferences symposiums colloquia panels roundtables discussions debates dialogues conversations interviews questionnaires surveys polls feedback comments suggestions recommendations advice counsel guidance mentorship supervision oversight management control administration governance leadership direction coordination collaboration teamwork partnership association membership club federation society group family gatherings reunions meetups get togethers assembly assemblies conventions convention committee council board executive officer chairman president chief administrator director treasurer secretary clerk accountant bookkeeper auditor analyst consultant advisor lawyer attorney advocate solicitor barrister judge magistrate prosecutor defense counsel defender plaintiff claimant petitioner litigator mediator arbitrator negotiator facilitator coordinator organizer planner scheduler project manager engineer technician scientist researcher academic professor instructor teacher educator student learner pupil apprentice journeyman craftsperson artisan mechanic electrician welder machinist operator driver navigator pilot conductor composer performer artist curator historian archivist librarian author journalist reporter editor publisher columnist critic reviewer review writer essayist poet lyricist songwriter musician instrumentalist singer vocalist guitarist bassist drummer pianist keyboardist synthesizer producer arranger orchestrator choir member ensemble band soloist duo trio quartet quintet septet octet nonet piano accordion harp violin viola cello double bass flute saxophone clarinet oboe French horn trombone trumpet cornet tubas percussion timpani snare drums bongos maracas claves castanets triangle tambourine cowbell washboard steelpan djembe balafon agogo bell calabash shekere kora hosho axe hammer mallets stick batik knitting loom crochet embroidery fabric pattern thread yarn ball pen paper clip magnet rubber eraser sharpener glue paste cuticle clippers file folder drawstring bag pocket wallet money coin key chain ring necklace bracelet watch glass window frame door handle lock fastening buckle button zipper ribbon bow tie scarf hat cap glove mittens sunglasses earring nose stud pierced lip rimmed safety pin brooch hairpin comb brush spoon fork ladle plate cup saucer teapot coffee maker espresso machine blender mixer food processor microwave freezer fridge air conditioner heater fan ceiling\n",
+        "generation_time": 73.78504133224487,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your Name Here] | [Your Email Address Here]\nSubject: Help Us Build a New Playground for the Community Center\n\nDear [Recipient],\n\nI hope this email finds you well. I am reaching out today to ask for your support in building a new playground for our community center. Our team has been working diligently to improve the facilities we offer to our local residents, but we believe that a brand-new playground will provide children and families with a safe and enjoyable space to play.\n\nThe proposed location for the new playground is adjacent to our existing facility, which provides ample parking and easy access to all parts of the complex. We have consulted with local experts in playground design and safety, ensuring that the equipment meets strict industry standards.\n\nOur goal is to create a fun and stimulating environment where children can engage their imaginations, develop physical skills, and foster social connections. The new playground will also serve as a hub for community events and gatherings, making it a valuable asset for our neighborhood.\n\nWe need your help to make this vision a reality. By donating to our crowdfunding campaign, you'll be contributing directly to the construction and maintenance of this much-needed addition to our community center.\n\nHere's how you can contribute:\n\n- Donate $50 or more to become a \"Friend of the Playgrounds\" and receive exclusive updates about the project\n- Contribute $75 or more to become a \"Playground Partner\" and receive recognition through our marketing materials\n- Donate $150 or more to become a \"Community Champion\" and receive special recognition at our grand opening ceremony\n\nEvery donation, no matter the size, makes a difference. Together, we can build a brighter future for our community by providing children with a safe and engaging place to play.\n\nThank you for considering supporting our efforts. If you have any questions or would like to discuss further, please don't hesitate to reach out to us at [email address].\n\nSincerely,\n\n[Your Name]\n\n### Call to Action\n\nPlease donate now to help build a new playground for our community center! Click here to donate: <INSERT LINK>\n",
+        "generation_time": 122.88951015472412,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key themes of community improvement, child development, and collective action?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the problem presentation emphasize current limitations and missed opportunities?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the solution approach describe a collaborative project with phased implementation?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the call-to-action offer dual options (donations and volunteering) with deadline sensitivity?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language that is community-focused, hopeful, and collaborative?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style persuasive and inclusive?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the formality level semi-formal?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include specific phrases such as 'we need your help', 'together we can', or 'make a difference'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email open with a warm greeting that establishes a community connection?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email close with an appreciation statement and clear call-to-action?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email follow the information flow: situation \u2192 need \u2192 solution \u2192 participation request?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email have exactly 4 paragraphs?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use both bolded amounts and bulleted lists for options?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 110.58330082893372,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.5128205128205128,
+        "ranking_score": 0.5128205128205128,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of community improvement, child development, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the problem presentation emphasize current limitations and missed opportunities?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach describe a collaborative project with phased implementation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action offer dual options (donations and volunteering) with deadline sensitivity?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language that is community-focused, hopeful, and collaborative?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and inclusive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include specific phrases such as 'we need your help', 'together we can', or 'make a difference'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a warm greeting that establishes a community connection?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email close with an appreciation statement and clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email follow the information flow: situation \u2192 need \u2192 solution \u2192 participation request?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email use both bolded amounts and bulleted lists for options?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 6,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 13,
+        "strengths": "The email effectively addresses community improvement and child development themes, employs emotional, persuasive, and inclusive language, uses a warm greeting, and includes a bulleted list for clarity.",
+        "weaknesses": "The email lacks details on phased implementation and dual options for participation with deadline sensitivity, does not close with an appreciation statement or a clear call-to-action, has an incorrect paragraph count, and does not incorporate bolded amounts.",
+        "consistency_confidence": 0.8461538461538461,
+        "average_response_time": 31.224528710047405,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5128205128205128": [
+              "llama-3-8b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of community improvement, child development, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the problem presentation emphasize current limitations and missed opportunities?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach describe a collaborative project with phased implementation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action offer dual options (donations and volunteering) with deadline sensitivity?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language that is community-focused, hopeful, and collaborative?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and inclusive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include specific phrases such as 'we need your help', 'together we can', or 'make a difference'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a warm greeting that establishes a community connection?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email close with an appreciation statement and clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email follow the information flow: situation \u2192 need \u2192 solution \u2192 participation request?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email use both bolded amounts and bulleted lists for options?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively addresses community improvement and child development themes, employs emotional, persuasive, and inclusive language, uses a warm greeting, and includes a bulleted list for clarity.",
+          "weaknesses": "The email lacks details on phased implementation and dual options for participation with deadline sensitivity, does not close with an appreciation statement or a clear call-to-action, has an incorrect paragraph count, and does not incorporate bolded amounts.",
+          "consistency_confidence": 0.8461538461538461,
+          "average_response_time": 31.224528710047405,
+          "generation_attempts": 3,
+          "total_criteria": 13,
+          "weighted_score": 0.5128205128205128,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 6,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 93.67398881912231,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.5128205128205128,
+        "ranking_score": 0.5128205128205128,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of community improvement, child development, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the problem presentation emphasize current limitations and missed opportunities?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach describe a collaborative project with phased implementation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action offer dual options (donations and volunteering) with deadline sensitivity?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language that is community-focused, hopeful, and collaborative?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and inclusive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include specific phrases such as 'we need your help', 'together we can', or 'make a difference'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a warm greeting that establishes a community connection?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email close with an appreciation statement and clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email follow the information flow: situation \u2192 need \u2192 solution \u2192 participation request?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email use both bolded amounts and bulleted lists for options?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 6,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 13,
+        "strengths": "The email successfully incorporates key community and child development themes (criteria 1 and 5), uses persuasive, inclusive, and semi-formal language (criteria 6 and 7), employs emotional phrases and community-centered specific calls (criteria 8 and 9), and is structured into exactly 4 paragraphs (criterion 12).",
+        "weaknesses": "It lacks a phased implementation description in the solution (criterion 3), does not offer dual options for participation with deadline sensitivity (criterion 4), fails to have a closing paragraph with an appreciation statement and clear call-to-action (criterion 10), does not fully sequence the information flow with a distinct participation request (criterion 11), and does not use bolded amounts or a bulleted list for options (criterion 13).",
+        "consistency_confidence": 0.8461538461538461,
+        "average_response_time": 32.149275143941246,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5128205128205128": [
+              "llama-3-8b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of community improvement, child development, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the problem presentation emphasize current limitations and missed opportunities?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach describe a collaborative project with phased implementation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action offer dual options (donations and volunteering) with deadline sensitivity?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language that is community-focused, hopeful, and collaborative?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and inclusive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include specific phrases such as 'we need your help', 'together we can', or 'make a difference'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a warm greeting that establishes a community connection?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email close with an appreciation statement and clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email follow the information flow: situation \u2192 need \u2192 solution \u2192 participation request?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email use both bolded amounts and bulleted lists for options?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully incorporates key community and child development themes (criteria 1 and 5), uses persuasive, inclusive, and semi-formal language (criteria 6 and 7), employs emotional phrases and community-centered specific calls (criteria 8 and 9), and is structured into exactly 4 paragraphs (criterion 12).",
+          "weaknesses": "It lacks a phased implementation description in the solution (criterion 3), does not offer dual options for participation with deadline sensitivity (criterion 4), fails to have a closing paragraph with an appreciation statement and clear call-to-action (criterion 10), does not fully sequence the information flow with a distinct participation request (criterion 11), and does not use bolded amounts or a bulleted list for options (criterion 13).",
+          "consistency_confidence": 0.8461538461538461,
+          "average_response_time": 32.149275143941246,
+          "generation_attempts": 3,
+          "total_criteria": 13,
+          "weighted_score": 0.5128205128205128,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 6,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 96.44824838638306,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.48717948717948717,
+        "ranking_score": 0.48717948717948717,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of community improvement, child development, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the problem presentation emphasize current limitations and missed opportunities?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach describe a collaborative project with phased implementation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action offer dual options (donations and volunteering) with deadline sensitivity?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language that is community-focused, hopeful, and collaborative?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and inclusive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include specific phrases such as 'we need your help', 'together we can', or 'make a difference'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a warm greeting that establishes a community connection?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email close with an appreciation statement and clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email follow the information flow: situation \u2192 need \u2192 solution \u2192 participation request?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 13,
+            "description": "Does the email use both bolded amounts and bulleted lists for options?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 4,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 13,
+        "strengths": "The email clearly communicates community improvement themes, uses emotional, persuasive, and inclusive language with semi-formal tone. It also integrates key phrases ('together we can make a significant difference') and follows the situation \u2192 need \u2192 solution \u2192 participation request flow.",
+        "weaknesses": "The email does not sufficiently emphasize current limitations and missed opportunities, lacks mention of phased implementation in its solution, and its call-to-action does not offer dual options with deadline sensitivity. It also opens with a generic greeting, lacks a proper closing appreciation and call-to-action, does not meet the exact four-paragraph structure, and omits the use of bolded amounts and bulleted lists.",
+        "consistency_confidence": 0.9230769230769231,
+        "average_response_time": 29.30393695831299,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5128205128205128": [
+              "llama-3-8b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of community improvement, child development, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the problem presentation emphasize current limitations and missed opportunities?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach describe a collaborative project with phased implementation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action offer dual options (donations and volunteering) with deadline sensitivity?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language that is community-focused, hopeful, and collaborative?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and inclusive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include specific phrases such as 'we need your help', 'together we can', or 'make a difference'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a warm greeting that establishes a community connection?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email close with an appreciation statement and clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email follow the information flow: situation \u2192 need \u2192 solution \u2192 participation request?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 13,
+              "description": "Does the email use both bolded amounts and bulleted lists for options?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email clearly communicates community improvement themes, uses emotional, persuasive, and inclusive language with semi-formal tone. It also integrates key phrases ('together we can make a significant difference') and follows the situation \u2192 need \u2192 solution \u2192 participation request flow.",
+          "weaknesses": "The email does not sufficiently emphasize current limitations and missed opportunities, lacks mention of phased implementation in its solution, and its call-to-action does not offer dual options with deadline sensitivity. It also opens with a generic greeting, lacks a proper closing appreciation and call-to-action, does not meet the exact four-paragraph structure, and omits the use of bolded amounts and bulleted lists.",
+          "consistency_confidence": 0.9230769230769231,
+          "average_response_time": 29.30393695831299,
+          "generation_attempts": 3,
+          "total_criteria": 13,
+          "weighted_score": 0.48717948717948717,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 4,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 87.91220116615295,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.4358974358974359,
+        "ranking_score": 0.4358974358974359,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of community improvement, child development, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the problem presentation emphasize current limitations and missed opportunities?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach describe a collaborative project with phased implementation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action offer dual options (donations and volunteering) with deadline sensitivity?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language that is community-focused, hopeful, and collaborative?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and inclusive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include specific phrases such as 'we need your help', 'together we can', or 'make a difference'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a warm greeting that establishes a community connection?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email close with an appreciation statement and clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email follow the information flow: situation \u2192 need \u2192 solution \u2192 participation request?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email use both bolded amounts and bulleted lists for options?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 13,
+        "strengths": "The email effectively communicates community improvement themes through emotional language, persuasive and inclusive style, semi-formal tone, and a warm greeting. It also clearly presents the situation, need, and a call for participation, adhering to a logical information flow.",
+        "weaknesses": "The email lacks a description of phased implementation for a collaborative project, does not offer dual call-to-action options (donations and volunteering) with deadline sensitivity, omits specific motivating phrases, fails to close with an appreciation statement and a clear call-to-action, does not contain exactly 4 paragraphs, and is missing bolded amounts and bulleted lists for options.",
+        "consistency_confidence": 0.9230769230769231,
+        "average_response_time": 29.00226855278015,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5128205128205128": [
+              "llama-3-8b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of community improvement, child development, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the problem presentation emphasize current limitations and missed opportunities?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach describe a collaborative project with phased implementation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action offer dual options (donations and volunteering) with deadline sensitivity?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language that is community-focused, hopeful, and collaborative?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and inclusive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include specific phrases such as 'we need your help', 'together we can', or 'make a difference'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a warm greeting that establishes a community connection?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email close with an appreciation statement and clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email follow the information flow: situation \u2192 need \u2192 solution \u2192 participation request?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email use both bolded amounts and bulleted lists for options?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively communicates community improvement themes through emotional language, persuasive and inclusive style, semi-formal tone, and a warm greeting. It also clearly presents the situation, need, and a call for participation, adhering to a logical information flow.",
+          "weaknesses": "The email lacks a description of phased implementation for a collaborative project, does not offer dual call-to-action options (donations and volunteering) with deadline sensitivity, omits specific motivating phrases, fails to close with an appreciation statement and a clear call-to-action, does not contain exactly 4 paragraphs, and is missing bolded amounts and bulleted lists for options.",
+          "consistency_confidence": 0.9230769230769231,
+          "average_response_time": 29.00226855278015,
+          "generation_attempts": 3,
+          "total_criteria": 13,
+          "weighted_score": 0.4358974358974359,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 87.0071873664856,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.358974358974359,
+        "ranking_score": 0.358974358974359,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of community improvement, child development, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the problem presentation emphasize current limitations and missed opportunities?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach describe a collaborative project with phased implementation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action offer dual options (donations and volunteering) with deadline sensitivity?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language that is community-focused, hopeful, and collaborative?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and inclusive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include specific phrases such as 'we need your help', 'together we can', or 'make a difference'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a warm greeting that establishes a community connection?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email close with an appreciation statement and clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email follow the information flow: situation \u2192 need \u2192 solution \u2192 participation request?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email use both bolded amounts and bulleted lists for options?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 13,
+        "strengths": "The email successfully incorporates community improvement and child development themes, employs community-focused and hopeful emotional language, and maintains a persuasive, inclusive, and semi-formal tone with a warm opening.",
+        "weaknesses": "The email lacks a detailed problem presentation emphasizing current limitations, does not describe a phased, collaborative solution, omits dual call-to-action options with deadline sensitivity and specific motivating phrases, fails to provide a clear closing appreciation and call-to-action, does not follow the full information flow, contains less than exactly 4 paragraphs, and does not utilize bolded amounts or bulleted lists for options.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 27.058023770650227,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5128205128205128": [
+              "llama-3-8b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of community improvement, child development, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the problem presentation emphasize current limitations and missed opportunities?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach describe a collaborative project with phased implementation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action offer dual options (donations and volunteering) with deadline sensitivity?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language that is community-focused, hopeful, and collaborative?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and inclusive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include specific phrases such as 'we need your help', 'together we can', or 'make a difference'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a warm greeting that establishes a community connection?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email close with an appreciation statement and clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email follow the information flow: situation \u2192 need \u2192 solution \u2192 participation request?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email use both bolded amounts and bulleted lists for options?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully incorporates community improvement and child development themes, employs community-focused and hopeful emotional language, and maintains a persuasive, inclusive, and semi-formal tone with a warm opening.",
+          "weaknesses": "The email lacks a detailed problem presentation emphasizing current limitations, does not describe a phased, collaborative solution, omits dual call-to-action options with deadline sensitivity and specific motivating phrases, fails to provide a clear closing appreciation and call-to-action, does not follow the full information flow, contains less than exactly 4 paragraphs, and does not utilize bolded amounts or bulleted lists for options.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 27.058023770650227,
+          "generation_attempts": 3,
+          "total_criteria": 13,
+          "weighted_score": 0.358974358974359,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 81.17445516586304,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 1,
+      "score": 0.5128205128205128
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 2,
+      "score": 0.5128205128205128
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 3,
+      "score": 0.48717948717948717
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 4,
+      "score": 0.4358974358974359
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 5,
+      "score": 0.358974358974359
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 681.1012315750122,
+    "success": true,
+    "errors": []
+  }
+}

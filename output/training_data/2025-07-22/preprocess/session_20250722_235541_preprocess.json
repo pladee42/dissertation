@@ -1,0 +1,1186 @@
+{
+  "session_id": "90a7bfa3-dfa2-4d4d-a994-ae962d0adc7e",
+  "timestamp": "2025-07-22T23:55:41.996068",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0118",
+    "name": "Celebrating the Anniversary of Marriage Equality"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Celebrating the Anniversary of Marriage Equality"
+  },
+  "models_used": {
+    "email_models": [
+      "llama-3-8b-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Celebrating the Anniversary of Marriage Equality\n\nSubject: Let's Keep Love Equal!\n\nDear friend,\n\nToday marks one year since marriage equality was recognized in our country! It's hard to believe how far we've come, but there's still so much work to be done to achieve true equality for all LGBTQ+ individuals.\n\nMarriage equality may have been achieved, but many people in our community still face discrimination and marginalization every day. They're denied housing, employment, and healthcare simply because of who they love.\n\nThat's why we need your support now more than ever. Our organization has been working tirelessly to provide resources, advocacy, and support to those affected by these injustices. We've helped countless individuals find safe housing, access quality healthcare, and live their lives authentically.\n\nBut we can't do it alone. We need your help to keep pushing forward. Will you join us in celebrating this milestone and continuing the fight for equality? Donate today and help us make a difference in the lives of those who need it most.\n\n**Donate Now and Help Us Keep Love Equal!**\n",
+        "generation_time": 113.99398183822632,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Celebrating Love: Join Us for Our 5th Anniversary Gala!\n\nDear [Recipient],\n\nHappy anniversary to one of the most significant milestones in our nation's history: the legalization of marriage equality. Five years ago, we took a giant leap forward in the pursuit of love and equality for all. As we celebrate this momentous occasion, we invite you to join us for an unforgettable evening at our 5th Anniversary Gala.\n\nOn [Date], we will come together to honor the courageous individuals and organizations that made this achievement possible. You'll hear inspiring stories, enjoy delicious food, and dance the night away with live music and fabulous entertainment.\n\nThis is not just a party; it's an opportunity to renew our commitment to fighting for a world where love conquers all. Together, we can keep the momentum going and ensure that every person has the right to marry the one they love.\n\nDon your finest attire and join us for a night that celebrates love, diversity, and progress. Purchase your tickets now by visiting [Ticket Link]. Spread the word and bring a friend\u2014the more, the merrier!\n\nWe look forward to seeing you there and continuing our journey towards a more inclusive and loving society.\n\nLove always wins.\n\nBest regards,\n\n[Your Name]\n[Organization Name]\n",
+        "generation_time": 47.81617331504822,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[YOUR_EXAMPLE_EMAIL]\n\nDear [Recipient],\n\nAs we celebrate the anniversary of marriage equality today, I wanted to reach out to you and express my heartfelt gratitude for being part of this historic moment in our country's history.\n\nOn June 16th, 2015, the U.S. Supreme Court ruled that same-sex couples have the right to marry just like anyone else. This monumental decision marked a turning point in our nation's progress towards greater acceptance and understanding.\n\nSince then, countless couples across the United States have been able to marry their partners, share their love, and start families together. The impact of these marriages has been far-reaching, including increased stability, security, and financial benefits for both partners.\n\nBut there's still so much work to be done. Despite significant strides made by society, many same-sex couples still face discrimination and legal barriers when trying to build lasting relationships.\n\nThat's why I'm reaching out to you today. As a member of this community, you play a crucial role in advocating for equal rights and protections for all couples, regardless of their sexual orientation.\n\nPlease consider joining us in fighting for marriage equality. Whether it's sharing information about local ballot initiatives or attending rallies and events, every little bit counts. Together, we can make a difference and create a future where all couples are treated equally under the law.\n\nThank you for your continued support and advocacy.\n\nSincerely,\n\n[Your Name]\n\nEND_EMAIL\n",
+        "generation_time": 130.53057718276978,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Celebrating Love & Legacy \u2013 A Toast To The First Gay Couple Who Won Their Right!\nDear Friends,\n\nWe\u2019re thrilled to share some heartwarming news that marks another milestone in our journey towards equality\u2014the upcoming anniversary celebration honoring Edith Windsor and Thea Spyer who won their right to marry over two decades ago at City Hall! This historic moment was pivotal in setting legal precedents worldwide against discrimination faced by LGBTQ+ couples seeking recognition under marriage laws.\n\nEdith and Thea were pioneers when they challenged existing norms through civil disobedience; fighting tirelessly until society began acknowledging same-sex unions as valid partnerships deserving equal treatment both legally and societally. It took years before this courageous act bore fruit but look how far we have come since then \u2014 thanks largely due to these brave individuals standing tall amidst adversity while inspiring others around them toward acceptance rather than division among diverse communities living together harmoniously today because love knows no boundaries regardless if gender identity aligns perfectly between lovers involved within such relationships . They remind us all why progress matters so much\u2013it starts small yet has ripple effects across generations transforming lives forevermore positively impacting everyone affected directly indirectly too often times forgotten behind statistics alone instead recognizing personal stories matter just like yours do every single day despite differences making each person unique special treasure worth cherishing deeply valued beyond measure truly priceless gift given freely shared openheartedly wholeheartedly embraced universally celebrated globally recognized internationally respected indeed admirable achievement worthy commemorated annually year round continually remembered always kept alive never fading away everlastingly preserved eternally immortalized beautiful memories made lasting impressions left indelible footprints along life paths traveled creating pathways leading forward into brighter tomorrow filled hope optimism faith trust joy happiness peace understanding compassion empathy kindness tolerance inclusivity diversity unity solidarity community togetherness cooperation collaboration sharing resources supporting one another lifting spirits elevating hearts healing wounds mending broken bonds rebuilding bridges connecting people fostering friendships building alliances strengthening families nurturing children raising future leaders shaping minds influencing attitudes changing perceptions altering perspectives broadening horizons expanding opportunities enhancing experiences improving quality education empowerment economic growth promoting innovation advancing technology revolutionizing industries driving development sustainable solutions protecting environment preserving natural habitats conserving ecosystems restoring balance maintaining equilibrium ensuring survival guaranteeing prosperity securing stability safeguarding democracy defending freedom upholding justice advocating fairness championing equity demanding accountability enforcing transparency holding governments responsible delivering results achieving successes realizing dreams fulfilling aspirations accomplishing goals reaching targets meeting objectives winning battles conquering mountains climbing peaks crossing finish lines breaking records smashing expectations exceeding limitations surpassing barriers overcoming hurdles navigating challenges solving problems tackling issues addressing concerns resolving conflicts mediating disputes negotiating agreements establishing treaties forming coalitions joining forces uniting efforts collaborating working hand in glove teamwork synergy productivity efficiency effectiveness performance output yield outcome result consequence implication significance importance relevance applicability utility practical use value benefit advantage gain profit reward merit credit praise acclaim glory honor distinction award prize trophy medal certificate plaque ribbon citation letter thank you note appreciation expression gratitude gesture gifting present offering donation contribution support assistance aid relief charity foundation program service volunteer opportunity employment job offer career guidance counseling mentorship training workshop seminar conference symposium lecture series panel discussion forum debate club student union youth group sports league recreational activity hobby interest pursuit passion project initiative entrepreneurial venture business plan proposal pitch presentation sales strategy marketing campaign advertising promotion public relations media coverage press release interview journalist article feature story profile biography obituary notice death announcement funeral ceremony memorial gathering vigil candlelight prayer bench cross walk bridge archway gate entrance exit door window frame pillar column statue monument landmark structure skyscraper tower dome cupola spire minaret turret steeple bell chime carillon organ pipe harp guitar violin flute saxophone trumpet trombone clarinet bassoon recorder accordion piano keyboard synthesizer drum set tambourine maracas triangle conga drums bongo drums clapping applause cheering yelling screaming laughter crying tearing laughing happy sad angry frustrated confused surprised delightful wonderful amazing fantastic incredible astonishing extraordinary spectacular magnificent splendid glorious grandiose majestic regal royal noble aristocratic high class elite superior premium best choice top pick favorite selection preferred recommendation endorsement approval consent agreement contract terms conditions warranty liability limitation dispute resolution arbitration mediation negotiation settlement compromise reconciliation forgiveness apology condolence sympathy consolation comfort solace sustenance nutrition food drink water hydration oxygen air breathing atmosphere pressure altitude temperature heat cold freezing ice snow rain thunder lightning storm cloud sky sun moon earth planet galaxy universe cosmos space time dimension dimensions geometry shapes figures patterns designs motifs ornaments decorations artistry creativity imagination ideas concepts theories hypotheses principles postulates axioms conjectures proofs demonstrations experiments observations data measurements calculations equations formulas functions graphs charts diagrams maps schematics blueprints drawings illustrations pictures photos images slideshow video clip movie documentaries films animation cartoons comics books magazines newspapers periodicals journals essays articles reports studies research papers surveys polls questionnaires interviews conversations dialogues discussions debates arguments counterarguments oppositions refutations denials disagreements dissensions contradictions inconsistencies incongruences anomalies aberrations abnormalities irregularities deviations divergences disparities variations oscillations alternations contrasts comparisons competitions contests confrontations collisions clashes combustions conflagrations confluences confusions confusion complexities convolutions controversies criticisms condemnations curses damages destructions devastations desecrations defeats failures flops faults frailties fragilities flaws weaknesses whimpers woes worries wrongdoings misdeeds mistakes blunders errors errands omissions absences departures disappearances losses malfunctions misspeakings misunderstandings neglects noncompliance offenses oppressions opprobriums punishments reprimands reproaches retaliations revenge resentments spite sins sinister sorrows sorrow stabs strikes slaughters strangulations tortures torments twists upsets withdrawals wars wobbles wrangles xenophobia racism sexism homophobia bigotry prejudice intolerance hatred violence aggression animosity hostility antagonism conflict feud rivalry competition contest battle duel challenge trial test trials exam tests quizzes exams questions answers truth lies deception falsehood fibs fabrications inventions discoveries revelations insights realizations awarenesses understandings comprehension knowledge wisdom intelligence insight intuition vision sight seeing hearing listening speaking talking conversation\n",
+        "generation_time": 80.38397455215454,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[YOUR_NAME]\n\nSubject: Celebrating the Anniversary of Marriage Equality!\n\nDear valued supporter,\n\nWe hope this email finds you well. As we celebrate the anniversary of marriage equality in our country, we wanted to take a moment to thank you for being a part of our community.\n\nFor over two decades, we have been fighting for the right to marry and protect our families, friends, and communities. Today, we celebrate the milestone achievement that has made this dream a reality for millions of couples across the country.\n\nAs a leading advocacy organization working towards marriage equality, we want to recognize the tireless efforts of all those who have fought for our freedom. We honor the countless individuals and organizations who have worked tirelessly to achieve this victory, including the thousands of LGBTQ+ activists who have marched, rallied, and protested for years.\n\nOur work wouldn\u2019t be possible without the support of our donors, volunteers, and partners like you. Thank you for being a part of our movement and helping us achieve our mission.\n\nIn addition to our work to secure marriage equality, we also work to ensure that LGBTQ+ people can live their lives freely and safely. This includes advocating for policies that protect LGBTQ+ youth, supporting safe spaces for LGBTQ+ students, and providing resources and services to help LGBTQ+ seniors thrive.\n\nWe are proud to share that our organization has helped thousands of LGBTQ+ individuals find love and companionship through our partner program. Our partnerships with local businesses, service providers, and community organizations have helped us create meaningful connections between LGBTQ+ individuals and allies.\n\nAs we look forward to the future, we know that there is still much work to be done. We will continue to push for progress, defend against attacks on our rights, and work to build a more inclusive and equitable society.\n\nThank you again for your continued support. We could not do what we do without you.\n\nSincerely,\n\n[Your Name]\n\n[Your Title]\n\n[Your Organization]\n\n[Your Address]\n\n[City, State ZIP Code]\n\n[Your Email]\n\n[Your Phone Number]\n\n[End Email]\n",
+        "generation_time": 25.650667190551758,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key themes of progress, equality, community resilience, and continued advocacy?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email present the problem through historical context of inequality using implied contrast?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "content"
+        },
+        {
+          "question": "Does the email propose collective action and sustained commitment as the solution approach?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Is the call-to-action invitational, community-focused, and positioned before the closing?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use celebratory, grateful, and hopeful emotional language?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style inspirational and reflective?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the formality level semi-formal with personal warmth?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the opening include a warm greeting with immediate acknowledgment of the milestone?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the closing include a forward-looking call-to-action with an inclusive sign-off?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the information flow follow chronological reflection \u2192 current significance \u2192 future vision \u2192 action step?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email include key phrases like 'milestone anniversary', 'hard-won victory', 'journey toward equality', and 'stand with us'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Is the word count approximately 250-400 words?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 110.7406075000763,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.7575757575757576,
+        "ranking_score": 0.7575757575757576,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of progress, equality, community resilience, and continued advocacy?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem through historical context of inequality using implied contrast?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose collective action and sustained commitment as the solution approach?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action invitational, community-focused, and positioned before the closing?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use celebratory, grateful, and hopeful emotional language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style inspirational and reflective?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal with personal warmth?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening include a warm greeting with immediate acknowledgment of the milestone?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a forward-looking call-to-action with an inclusive sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the information flow follow chronological reflection \u2192 current significance \u2192 future vision \u2192 action step?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases like 'milestone anniversary', 'hard-won victory', 'journey toward equality', and 'stand with us'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the word count approximately 250-400 words?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 7,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively emphasizes progress, equality, community involvement, and continued advocacy using inspirational and hopeful language. It is semi-formal and includes a warm greeting along with a strong invitational call-to-action placed before the closing.",
+        "weaknesses": "The email lacks a clear, inclusive closing with a forward-looking call-to-action and sign-off. It does not incorporate the specific key phrases required, and it falls short of the target word count.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 39.96898237864176,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.48484848484848486": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of progress, equality, community resilience, and continued advocacy?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem through historical context of inequality using implied contrast?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose collective action and sustained commitment as the solution approach?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action invitational, community-focused, and positioned before the closing?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use celebratory, grateful, and hopeful emotional language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style inspirational and reflective?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal with personal warmth?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening include a warm greeting with immediate acknowledgment of the milestone?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a forward-looking call-to-action with an inclusive sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the information flow follow chronological reflection \u2192 current significance \u2192 future vision \u2192 action step?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases like 'milestone anniversary', 'hard-won victory', 'journey toward equality', and 'stand with us'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the word count approximately 250-400 words?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively emphasizes progress, equality, community involvement, and continued advocacy using inspirational and hopeful language. It is semi-formal and includes a warm greeting along with a strong invitational call-to-action placed before the closing.",
+          "weaknesses": "The email lacks a clear, inclusive closing with a forward-looking call-to-action and sign-off. It does not incorporate the specific key phrases required, and it falls short of the target word count.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 39.96898237864176,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.7575757575757576,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 7,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 119.907310962677,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.696969696969697,
+        "ranking_score": 0.696969696969697,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of progress, equality, community resilience, and continued advocacy?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem through historical context of inequality using implied contrast?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose collective action and sustained commitment as the solution approach?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action invitational, community-focused, and positioned before the closing?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use celebratory, grateful, and hopeful emotional language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style inspirational and reflective?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal with personal warmth?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening include a warm greeting with immediate acknowledgment of the milestone?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a forward-looking call-to-action with an inclusive sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the information flow follow chronological reflection \u2192 current significance \u2192 future vision \u2192 action step?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases like 'milestone anniversary', 'hard-won victory', 'journey toward equality', and 'stand with us'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the word count approximately 250-400 words?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 7,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully incorporates themes of progress, equality, and collective commitment using celebratory and reflective language with a warm opening and coherent chronological flow. It is invitational with a clear call-to-action in the body.",
+        "weaknesses": "The email lacks a clear presentation of historical inequality through contrast, does not include a proper closing with an inclusive sign-off, omits several key phrases required, and falls short of the desired word count.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 49.211081663767494,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.48484848484848486": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of progress, equality, community resilience, and continued advocacy?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem through historical context of inequality using implied contrast?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose collective action and sustained commitment as the solution approach?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action invitational, community-focused, and positioned before the closing?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use celebratory, grateful, and hopeful emotional language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style inspirational and reflective?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal with personal warmth?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening include a warm greeting with immediate acknowledgment of the milestone?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a forward-looking call-to-action with an inclusive sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the information flow follow chronological reflection \u2192 current significance \u2192 future vision \u2192 action step?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases like 'milestone anniversary', 'hard-won victory', 'journey toward equality', and 'stand with us'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the word count approximately 250-400 words?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully incorporates themes of progress, equality, and collective commitment using celebratory and reflective language with a warm opening and coherent chronological flow. It is invitational with a clear call-to-action in the body.",
+          "weaknesses": "The email lacks a clear presentation of historical inequality through contrast, does not include a proper closing with an inclusive sign-off, omits several key phrases required, and falls short of the desired word count.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 49.211081663767494,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.696969696969697,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 7,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 147.633620262146,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.48484848484848486,
+        "ranking_score": 0.48484848484848486,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of progress, equality, community resilience, and continued advocacy?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem through historical context of inequality using implied contrast?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose collective action and sustained commitment as the solution approach?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action invitational, community-focused, and positioned before the closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use celebratory, grateful, and hopeful emotional language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style inspirational and reflective?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal with personal warmth?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening include a warm greeting with immediate acknowledgment of the milestone?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a forward-looking call-to-action with an inclusive sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the information flow follow chronological reflection \u2192 current significance \u2192 future vision \u2192 action step?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases like 'milestone anniversary', 'hard-won victory', 'journey toward equality', and 'stand with us'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the word count approximately 250-400 words?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email includes historical context and emotional language that is celebratory, grateful, and hopeful. It also maintains an inspirational tone with a warm introductory greeting, and uses a semi-formal style with personal warmth.",
+        "weaknesses": "The email is truncated and does not fully develop a collective action proposal or a complete call-to-action with a proper closing. The information flow is incomplete, missing the future vision and clear action steps, and it lacks the specific key phrases while falling short of the required word count.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 35.498903115590416,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.48484848484848486": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of progress, equality, community resilience, and continued advocacy?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem through historical context of inequality using implied contrast?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose collective action and sustained commitment as the solution approach?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action invitational, community-focused, and positioned before the closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use celebratory, grateful, and hopeful emotional language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style inspirational and reflective?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal with personal warmth?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening include a warm greeting with immediate acknowledgment of the milestone?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a forward-looking call-to-action with an inclusive sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the information flow follow chronological reflection \u2192 current significance \u2192 future vision \u2192 action step?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases like 'milestone anniversary', 'hard-won victory', 'journey toward equality', and 'stand with us'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the word count approximately 250-400 words?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email includes historical context and emotional language that is celebratory, grateful, and hopeful. It also maintains an inspirational tone with a warm introductory greeting, and uses a semi-formal style with personal warmth.",
+          "weaknesses": "The email is truncated and does not fully develop a collective action proposal or a complete call-to-action with a proper closing. The information flow is incomplete, missing the future vision and clear action steps, and it lacks the specific key phrases while falling short of the required word count.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 35.498903115590416,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.48484848484848486,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 106.49707436561584,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.48484848484848486,
+        "ranking_score": 0.48484848484848486,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of progress, equality, community resilience, and continued advocacy?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem through historical context of inequality using implied contrast?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose collective action and sustained commitment as the solution approach?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action invitational, community-focused, and positioned before the closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use celebratory, grateful, and hopeful emotional language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style inspirational and reflective?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal with personal warmth?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening include a warm greeting with immediate acknowledgment of the milestone?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a forward-looking call-to-action with an inclusive sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the information flow follow chronological reflection \u2192 current significance \u2192 future vision \u2192 action step?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases like 'milestone anniversary', 'hard-won victory', 'journey toward equality', and 'stand with us'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the word count approximately 250-400 words?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively incorporates key themes such as progress, equality, and historical reflection while employing celebratory, hopeful, and inspirational language with a warm, semi-formal tone and a friendly opening.",
+        "weaknesses": "It lacks explicit proposals for collective action, a clear call-to-action before closing, a fully structured information flow, inclusion of specific key phrases, and does not meet the required word count.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 46.09233379364014,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.48484848484848486": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of progress, equality, community resilience, and continued advocacy?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem through historical context of inequality using implied contrast?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose collective action and sustained commitment as the solution approach?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action invitational, community-focused, and positioned before the closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use celebratory, grateful, and hopeful emotional language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style inspirational and reflective?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal with personal warmth?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening include a warm greeting with immediate acknowledgment of the milestone?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a forward-looking call-to-action with an inclusive sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the information flow follow chronological reflection \u2192 current significance \u2192 future vision \u2192 action step?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases like 'milestone anniversary', 'hard-won victory', 'journey toward equality', and 'stand with us'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the word count approximately 250-400 words?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively incorporates key themes such as progress, equality, and historical reflection while employing celebratory, hopeful, and inspirational language with a warm, semi-formal tone and a friendly opening.",
+          "weaknesses": "It lacks explicit proposals for collective action, a clear call-to-action before closing, a fully structured information flow, inclusion of specific key phrases, and does not meet the required word count.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 46.09233379364014,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.48484848484848486,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 138.27737665176392,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.42424242424242425,
+        "ranking_score": 0.42424242424242425,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of progress, equality, community resilience, and continued advocacy?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem through historical context of inequality using implied contrast?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose collective action and sustained commitment as the solution approach?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action invitational, community-focused, and positioned before the closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use celebratory, grateful, and hopeful emotional language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style inspirational and reflective?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal with personal warmth?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening include a warm greeting with immediate acknowledgment of the milestone?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a forward-looking call-to-action with an inclusive sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the information flow follow chronological reflection \u2192 current significance \u2192 future vision \u2192 action step?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases like 'milestone anniversary', 'hard-won victory', 'journey toward equality', and 'stand with us'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the word count approximately 250-400 words?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully uses celebratory, grateful, and hopeful language (criteria 5), maintains an inspirational and reflective communication style (criteria 6), and exhibits semi-formal personal warmth (criteria 7). It also opens warmly with a greeting and an acknowledgment of the milestone (criteria 8) and includes key themes of progress, equality, and community resilience (criteria 1).",
+        "weaknesses": "The email does not sufficiently present the problem using historical context and implied contrast (criteria 2), lacks a proposal for collective action and sustained commitment (criteria 3), and does not provide a clear, invitational call-to-action before the closing (criteria 4). Additionally, the closing is incomplete (criteria 9), the information flow does not cover the full sequence of reflection to action (criteria 10), it omits several key phrases (criteria 11), and it falls short of the required word count (criteria 12).",
+        "consistency_confidence": 1.0,
+        "average_response_time": 40.06995209058126,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.48484848484848486": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of progress, equality, community resilience, and continued advocacy?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem through historical context of inequality using implied contrast?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose collective action and sustained commitment as the solution approach?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action invitational, community-focused, and positioned before the closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use celebratory, grateful, and hopeful emotional language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style inspirational and reflective?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal with personal warmth?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening include a warm greeting with immediate acknowledgment of the milestone?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a forward-looking call-to-action with an inclusive sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the information flow follow chronological reflection \u2192 current significance \u2192 future vision \u2192 action step?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases like 'milestone anniversary', 'hard-won victory', 'journey toward equality', and 'stand with us'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the word count approximately 250-400 words?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully uses celebratory, grateful, and hopeful language (criteria 5), maintains an inspirational and reflective communication style (criteria 6), and exhibits semi-formal personal warmth (criteria 7). It also opens warmly with a greeting and an acknowledgment of the milestone (criteria 8) and includes key themes of progress, equality, and community resilience (criteria 1).",
+          "weaknesses": "The email does not sufficiently present the problem using historical context and implied contrast (criteria 2), lacks a proposal for collective action and sustained commitment (criteria 3), and does not provide a clear, invitational call-to-action before the closing (criteria 4). Additionally, the closing is incomplete (criteria 9), the information flow does not cover the full sequence of reflection to action (criteria 10), it omits several key phrases (criteria 11), and it falls short of the required word count (criteria 12).",
+          "consistency_confidence": 1.0,
+          "average_response_time": 40.06995209058126,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.42424242424242425,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 120.21023344993591,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 1,
+      "score": 0.7575757575757576
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 2,
+      "score": 0.696969696969697
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 3,
+      "score": 0.48484848484848486
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 4,
+      "score": 0.48484848484848486
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 5,
+      "score": 0.42424242424242425
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 875.212694644928,
+    "success": true,
+    "errors": []
+  }
+}

@@ -1,0 +1,1146 @@
+{
+  "session_id": "f2618aee-e674-4a71-be1d-b05898bf2b94",
+  "timestamp": "2025-07-23T02:18:55.378329",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0128",
+    "name": "Workshop for Parents on Recognizing Signs of Cyberbullying"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Workshop for Parents on Recognizing Signs of Cyberbullying"
+  },
+  "models_used": {
+    "email_models": [
+      "vicuna-7b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "llama-3-8b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "[YOUR\\_EMAIL@example.com](mailto:YOUR_EMAIL@example.com)\nSubject: Become a Superhero Against Cyberbullying!\n\nDear [PARENTS],\n\nDo you want to be a superhero in your child's life? Are you ready to protect them from cyberbullying? We have the perfect workshop for you! Join us on [DATE] at [TIME] for our Workshop for Parents on Recognizing Signs of Cyberbullying.\n\nCyberbullying is a growing concern that affects millions of children worldwide. It can lead to severe mental health issues, social isolation, and even suicide. As parents, it's crucial to understand the signs of cyberbullying and how to prevent it. Our workshop will equip you with the knowledge and tools necessary to recognize and address this critical issue.\n\nAt the workshop, we'll cover:\n\n* The different types of cyberbullying and their consequences\n* How to monitor your child's online activity\n* Strategies for talking to your child about cyberbullying\n* Steps to take if you suspect your child is being bullied\n\nDon't miss this opportunity to become a hero against cyberbullying. Space is limited, so register now by clicking [REGISTER BUTTON].\n\nWe look forward to seeing you there!\n\nBest regards,\n\n[SENDER NAME]\n",
+        "generation_time": 43.383644342422485,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join Our Workshop \u2013 Empowering Families Against Cyberbullying!\n\nDear [Parent Name],\n\nAs parents in today\u2019s digital age, we face unique challenges that can affect our children deeply\u2014one such challenge being cyberbullying. It has become increasingly crucial to recognize signs early and equip ourselves with strategies to protect young minds online. That\u2019s why I am thrilled to invite you to join us at \u201cEmpowering Families,\u201d a workshop designed specifically for concerned parents like yourself who wish to understand how they can make a difference.\n\nCyberbullying remains one of society\u2019s most pressing issues; statistics reveal alarming trends among youth experiencing harassment through social media platforms, chat rooms, and other virtual spaces. The impact extends beyond hurt feelings, potentially leading to severe psychological distress and even tragic outcomes if left unaddressed. This makes proactive education indispensable.\n\nThe nonprofit organization \u2018Safe Kids Online,\u2019 dedicated to creating safer internet environments for all ages, proudly presents this vital educational opportunity. We believe every parent deserves access to knowledge about preventing harm while fostering positive communication between home and school communities regarding technology use by their kids. Through interactive sessions led by experts in child development and mental health professionals specialized in adolescent behavior, participants will gain practical tools tailored towards recognizing warning signals indicative of bullying behaviors both offline and online settings alike. You won\u2019t just hear theories but also receive hands-on guidance applicable directly into daily life scenarios involving tech devices ranging from smartphones upwards including tablets & laptops used regularly within households across demographics worldwide.\n\nWe encourage active participation during Q&A segments where real stories shared provide insights alongside professional advice given throughout each segment addressing various aspects related safety protocol measures available currently implemented globally aimed reducing risks associated exposure negative influences via peer networks especially amongst younger generations navigating complexities surrounding identity formation amid societal pressures often magnified due rapid technological advancements occurring around them constantly shaping cultural norms dictating acceptable conduct standards expected upheld universally regardless geographical boundaries crossing international borders seamlessly connecting individuals irrespective physical distances separating diverse populations sharing common experiences despite differences inherent natural variations existing personality traits individual preferences interests hobbies career aspirations goals values belief systems etc.. Furthermore attending enables networking opportunities facilitating connections building support groups empowering families confront similar struggles thereby strengthening collective resilience against adversity faced individually yet together facing modern day dilemmas posed emerging threats encountered growing pains accompany transitions experienced transition phases undergoing personal growth journeys pursuing self actualization achievement fulfillment happiness wellbeing success prosperity peace joy love hope dreams reality potential limitless possibilities await those willing embrace change adapt evolve overcome fear conquer uncertainty discover truth liberation freedom expression creativity innovation inspiration motivation courage determination perseverance tenacity resolve dedication passion commitment loyalty trust integrity honesty authenticity sincerity respect dignity equality justice fairness compassion kindness understanding tolerance acceptance diversity inclusion multiculturalism inclusivity unity solidarity cooperation collaboration teamwork partnership friendship family bonds community spirit communal responsibility mutual aid assistance helping hand healing reconciliation forgiveness mercy grace charity benevolence philanthropy volunteerism service learning civic engagement activism advocacy awareness consciousness mindfulness meditation spirituality religion faith tradition custom practices rituals celebrations festivities holidays observances ceremonies memorial services commemorations anniversaries remembrances tributes homage honor reverence veneration worship devotion prayer blessings thanks giving gratitude appreciation acknowledgment recognition accolades awards certificates plaques trophies ribbons badges medals citations diplomas degrees certifications licenses permits credentials qualifications training programs courses curriculum syllabus lectures seminars conferences symposiums panels discussions debates roundtables dialogues conversations exchanges interviews questionnaires surveys polls feedback forms evaluations assessments tests examinations quizzes games competitions contests championships victories triumphs accomplishments milestones progress updates reports summaries findings conclusions recommendations proposals suggestions ideas concepts thoughts opinions viewpoints perspectives standpoint stance perspective point of view opinion judgment decision making criteria evaluation measurement standard benchmark baseline comparison contrast analysis methodology approach technique procedure steps procedures methods materials resources equipment facilities infrastructure capital investment fundraising budget allocation expenditure cost saving efficiency productivity output production yield profit margin return on investment ROI breakthrough inventions discovery scientific research experiment results data collection information gathering evidence proof verification validation testing quality control assurance reliability consistency accuracy precision speed velocity acceleration deceleration frequency rate percentage ratio proportion fraction whole number integer decimal digit numeral quantity amount volume size dimension length width height depth distance time interval duration period epoch cycle phase stage step sequence order series pattern regular rhythm beat tempo pace cadence timing synchronization coordination alignment calibration adjustment fine tuning balance scale weight measure mass gravity force pressure energy power voltage current electric charge electrical resistance resistivity impedance inductance capacitance magnetic field magnetometers flux density intensity amplitude modulation carrier wave signal transmission reception sensitivity responsiveness acoustic sound auditory hearing decibel loudness quietude silence noise pollution cleanliness sanitation sterilization disinfection germ elimination microorganisms pathogens disease vectors parasites viruses fungi mites insects spiders worms lice bed bugs fleas mosquitoes flies beetles roaches termites rodents birds snakes reptiles mammals primates apes monkeys chimpanzees gorillas bonobos humans civilizations cultures traditions heritage history archaeology anthropology ethnography linguistics literature philosophy science mathematics physics chemistry biology zoology botany ecology environmental studies climate change global warming sustainability renewable energy conservation recycling waste reduction green living organic farming agriculture food security nutrition dietary habits exercise fitness sports athletics competition tournament championship victory loss defeat failure success outcome result consequence effect influence causation correlation association relationship connection network interaction interface integration system software application programming language code binary digits bit byte character string variable assignment operator arithmetic algebra geometry trigonometry calculus differential equations integral functions probability statistics random sampling distribution sample mean variance standard deviation normal curve bell curve Gaussian function central limit theorem statistical significance hypothesis testing inferential reasoning logical deduction critical thinking analytical skills quantitative techniques mathematical models computational algorithms algorithm complexity class big O notation space occupation memory usage resource consumption processing overhead execution performance optimization scalability extensibility maintainability readability clarity expressiveness simplicity elegance beauty design minimalist architecture streamlined functionality efficient operation high level abstraction low level implementation detail granularity cohesion coupling loose coupling encapsulation abstraction polymorphism inheritance composition aggregation dependency injection constructor factory builder builder chain BuilderBuilder Pattern Strategy Design Pattern Factory Method Creator Abstract Class Interface Interfaces Inheritance Polymorphism Abstraction Encapsulation Dependency Injection Liskov substitution principle Single Responsibility Principle Open/Closed Principle Extract Method Refactoring SOLID principles Separation Of Concerns Law Of Demeter Command Query Responsibility Segreg\n",
+        "generation_time": 78.00032544136047,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[YOUR_NAME]\n\nSubject: Workshop for Parents on Recognizing Signs of Cyberbullying\n\nDear [Sending Organization],\n\nWe hope this email finds you well. We wanted to reach out to let you know about our upcoming workshop for parents on recognizing signs of cyberbullying. The workshop will be held at [Time, Date, Location] and will run for [Duration]. Our experienced facilitators will provide valuable insights and tips on how to protect your children from online threats.\n\nThe workshop is open to all parents who want to learn more about identifying and addressing cyberbullying in their children\u2019s lives. We believe that parents play a critical role in safeguarding their children's digital safety and well-being.\n\nOur workshop will cover the following topics:\n\n1. Understanding cyberbullying\n2. Common signs of cyberbullying\n3. How to recognize and respond to cyberbullying\n4. Safety measures to take before and after social media use\n5. Online privacy and security measures\n6. Legal implications of cyberbullying\n7. Parenting strategies for dealing with cyberbullying\n8. Breakout sessions for parents to discuss specific scenarios\n9. Q&A session with our facilitators\n\nThis workshop is designed for parents who have children between the ages of 12-18 years old. We understand that parenting can be challenging, but we believe that this workshop will equip you with the knowledge and skills needed to support your child's online safety and well-being.\n\nWe invite you to join us for this informative and interactive workshop. Please find attached the brochure with more details about the workshop and the registration process.\n\nThank you for your consideration. If you have any questions, please do not hesitate to contact us at [Your Contact Information].\n\nBest regards,\n\n[Your Name]\n\n[Your Title]\n\n[Your Sending Organization]\n",
+        "generation_time": 19.45627188682556,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your_Email_Address]\nSubject: Join Our Workshop for Parents on Recognizing Signs of Cyberbullying\n\nDear [Recipient],\n\nWe're excited to announce our upcoming workshop for parents focused on recognizing signs of cyberbullying. This workshop will provide you with valuable insights into how to protect your children from online harm and empower them to stand up against cyberbullying.\n\nAs a valued member of our community, we believe that you deserve the best possible resources to support your family in this ever-evolving digital landscape. That's why we've carefully curated a team of experts who have years of experience working with families dealing with similar challenges.\n\nIn this workshop, you'll gain knowledge about common cyberbullying tactics, understand how to recognize warning signs, and learn practical strategies to intervene when necessary. You'll also get the chance to connect with other parents facing similar issues, share experiences, and build a supportive network.\n\nHere's what you can expect from the workshop:\n\n- A detailed overview of the most prevalent types of cyberbullying\n- Techniques for identifying warning signs of cyberbullying in your child\n- Strategies for intervening effectively and safely\n- Opportunities to ask questions and engage with other attendees\n\nThe workshop will be held virtually on [Date] at [Time]. Registration is now open, so please click the link below to sign up today.\n\n[Registration_Link]\n\nDon't miss out on this opportunity to improve your understanding of cyberbullying prevention and strengthen your family's resilience against online threats. By attending this workshop, you'll be taking a significant step towards protecting your child from harm.\n\nThank you for being part of our community. We look forward to seeing you there!\n\nBest regards,\n\n[Your_Name]\n[Your_Organization]\n\nEND_EMAIL\n",
+        "generation_time": 133.65406680107117,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Save Our Wildlife\n\nSubject: The Last Chance to Save the Elephant\n\nDear Fellow Animal Lover,\n\nImagine walking through the savannah and hearing the haunting sounds of an elephant's cry for help. Unfortunately, this isn't just a fictional scenario; it's a harsh reality that elephants face every day due to poaching and habitat loss.\n\nThe main culprit behind these devastating crimes is the demand for ivory, which drives poachers to slaughter innocent elephants. But there's hope! Our team at World Wildlife Fund has been working tirelessly to protect these magnificent creatures and their habitats.\n\nAs a concerned citizen, you have the power to make a difference. By supporting our efforts, you'll be joining a community of like-minded individuals who share your passion for saving wildlife. Together, we can create a safer world for elephants and other endangered species.\n\nWill you join us in this fight? Donate now and help us continue our vital work in protecting elephants and their habitats.\n\n**Donate today and help save the elephant**\n",
+        "generation_time": 115.68335390090942,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key messaging themes 'parental vigilance', 'digital safety education', and 'early intervention'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email present cyberbullying as having a hidden nature?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "content"
+        },
+        {
+          "question": "Does the email propose workshop-based education with practical tools as the solution?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use a low-pressure invitation with clear registration steps for the call-to-action?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language markers like 'concerned', 'supportive', and 'urgent'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style informative yet empathetic?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include specific phrases such as 'protect your child', 'recognize the signs', and 'support your child'?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email open with a friendly greeting and immediate topic relevance?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email close with an encouraging call-to-action and resource offer?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email follow the 'problem \u2192 impact \u2192 solution \u2192 benefits \u2192 action' information flow?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email use formatting elements like bulleted lists, bolded key terms, and clear section headers?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email avoid technical jargon and use relatable parenting terminology?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 96.81311631202698,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.6285714285714286,
+        "ranking_score": 0.6285714285714286,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes 'parental vigilance', 'digital safety education', and 'early intervention'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present cyberbullying as having a hidden nature?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose workshop-based education with practical tools as the solution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use a low-pressure invitation with clear registration steps for the call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'concerned', 'supportive', and 'urgent'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style informative yet empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email include specific phrases such as 'protect your child', 'recognize the signs', and 'support your child'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with a friendly greeting and immediate topic relevance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close with an encouraging call-to-action and resource offer?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the 'problem \u2192 impact \u2192 solution \u2192 benefits \u2192 action' information flow?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use formatting elements like bulleted lists, bolded key terms, and clear section headers?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email avoid technical jargon and use relatable parenting terminology?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 6,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully integrates key messaging themes (parental vigilance, digital safety education, early intervention), offers a clear workshop-based solution with practical topics, maintains an informative and empathetic tone, begins with a friendly greeting and clear topic relevance, follows a logical information flow, and uses a bulleted list along with simple, relatable language.",
+        "weaknesses": "The email does not explicitly present cyberbullying as having a hidden nature, lacks a low-pressure invitation with clear registration steps, fails to use specific emotional language markers, omits specific required phrases such as 'support your child', and does not provide a complete closing call-to-action or resource offer.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 27.7958246866862,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes 'parental vigilance', 'digital safety education', and 'early intervention'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present cyberbullying as having a hidden nature?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose workshop-based education with practical tools as the solution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use a low-pressure invitation with clear registration steps for the call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'concerned', 'supportive', and 'urgent'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style informative yet empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include specific phrases such as 'protect your child', 'recognize the signs', and 'support your child'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with a friendly greeting and immediate topic relevance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close with an encouraging call-to-action and resource offer?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the 'problem \u2192 impact \u2192 solution \u2192 benefits \u2192 action' information flow?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use formatting elements like bulleted lists, bolded key terms, and clear section headers?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email avoid technical jargon and use relatable parenting terminology?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully integrates key messaging themes (parental vigilance, digital safety education, early intervention), offers a clear workshop-based solution with practical topics, maintains an informative and empathetic tone, begins with a friendly greeting and clear topic relevance, follows a logical information flow, and uses a bulleted list along with simple, relatable language.",
+          "weaknesses": "The email does not explicitly present cyberbullying as having a hidden nature, lacks a low-pressure invitation with clear registration steps, fails to use specific emotional language markers, omits specific required phrases such as 'support your child', and does not provide a complete closing call-to-action or resource offer.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 27.7958246866862,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6285714285714286,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 6,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 83.38785791397095,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.4857142857142857,
+        "ranking_score": 0.4857142857142857,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes 'parental vigilance', 'digital safety education', and 'early intervention'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 2,
+            "description": "Does the email present cyberbullying as having a hidden nature?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose workshop-based education with practical tools as the solution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use a low-pressure invitation with clear registration steps for the call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'concerned', 'supportive', and 'urgent'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style informative yet empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email include specific phrases such as 'protect your child', 'recognize the signs', and 'support your child'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with a friendly greeting and immediate topic relevance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close with an encouraging call-to-action and resource offer?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the 'problem \u2192 impact \u2192 solution \u2192 benefits \u2192 action' information flow?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use formatting elements like bulleted lists, bolded key terms, and clear section headers?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email avoid technical jargon and use relatable parenting terminology?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully introduces the topic with a friendly greeting and relevant content, proposes a workshop-based solution, maintains an informative and empathetic tone, uses emotional markers, follows a logical information flow, and employs relatable language.",
+        "weaknesses": "The email does not explicitly present cyberbullying as a hidden threat, lacks clear registration steps and a complete call-to-action at the close, does not use specific required phrases verbatim, and omits enhanced formatting elements like bullet points or bolded text.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 24.8428529103597,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes 'parental vigilance', 'digital safety education', and 'early intervention'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 2,
+              "description": "Does the email present cyberbullying as having a hidden nature?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose workshop-based education with practical tools as the solution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use a low-pressure invitation with clear registration steps for the call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'concerned', 'supportive', and 'urgent'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style informative yet empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include specific phrases such as 'protect your child', 'recognize the signs', and 'support your child'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with a friendly greeting and immediate topic relevance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close with an encouraging call-to-action and resource offer?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the 'problem \u2192 impact \u2192 solution \u2192 benefits \u2192 action' information flow?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use formatting elements like bulleted lists, bolded key terms, and clear section headers?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email avoid technical jargon and use relatable parenting terminology?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully introduces the topic with a friendly greeting and relevant content, proposes a workshop-based solution, maintains an informative and empathetic tone, uses emotional markers, follows a logical information flow, and employs relatable language.",
+          "weaknesses": "The email does not explicitly present cyberbullying as a hidden threat, lacks clear registration steps and a complete call-to-action at the close, does not use specific required phrases verbatim, and omits enhanced formatting elements like bullet points or bolded text.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 24.8428529103597,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.4857142857142857,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 74.5289511680603,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.37142857142857144,
+        "ranking_score": 0.37142857142857144,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes 'parental vigilance', 'digital safety education', and 'early intervention'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 2,
+            "description": "Does the email present cyberbullying as having a hidden nature?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose workshop-based education with practical tools as the solution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use a low-pressure invitation with clear registration steps for the call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'concerned', 'supportive', and 'urgent'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style informative yet empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email include specific phrases such as 'protect your child', 'recognize the signs', and 'support your child'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with a friendly greeting and immediate topic relevance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close with an encouraging call-to-action and resource offer?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the 'problem \u2192 impact \u2192 solution \u2192 benefits \u2192 action' information flow?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use formatting elements like bulleted lists, bolded key terms, and clear section headers?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email avoid technical jargon and use relatable parenting terminology?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 3,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively proposes a workshop with practical tools (criterion 3), employs an informative and empathetic tone (criterion 6), includes key supportive phrases such as 'protect your children' and 'recognizing signs' (criterion 7), starts with a friendly greeting (criterion 8), uses a bulleted list for clarity (criterion 11), and avoids technical jargon (criterion 12).",
+        "weaknesses": "The email does not clearly incorporate the key messaging themes of parental vigilance, digital safety education, and early intervention (criterion 1); it does not portray cyberbullying as a hidden threat (criterion 2); lacks a low-pressure invitation with clear registration steps (criterion 4); fails to use distinct emotional language markers such as 'concerned', 'supportive', and 'urgent' (criterion 5); does not end with an encouraging call-to-action and resource offer (criterion 9); and does not follow the complete structured flow from problem to action (criterion 10).",
+        "consistency_confidence": 0.75,
+        "average_response_time": 25.748615026474,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes 'parental vigilance', 'digital safety education', and 'early intervention'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 2,
+              "description": "Does the email present cyberbullying as having a hidden nature?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose workshop-based education with practical tools as the solution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use a low-pressure invitation with clear registration steps for the call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'concerned', 'supportive', and 'urgent'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style informative yet empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include specific phrases such as 'protect your child', 'recognize the signs', and 'support your child'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with a friendly greeting and immediate topic relevance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close with an encouraging call-to-action and resource offer?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the 'problem \u2192 impact \u2192 solution \u2192 benefits \u2192 action' information flow?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use formatting elements like bulleted lists, bolded key terms, and clear section headers?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email avoid technical jargon and use relatable parenting terminology?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively proposes a workshop with practical tools (criterion 3), employs an informative and empathetic tone (criterion 6), includes key supportive phrases such as 'protect your children' and 'recognizing signs' (criterion 7), starts with a friendly greeting (criterion 8), uses a bulleted list for clarity (criterion 11), and avoids technical jargon (criterion 12).",
+          "weaknesses": "The email does not clearly incorporate the key messaging themes of parental vigilance, digital safety education, and early intervention (criterion 1); it does not portray cyberbullying as a hidden threat (criterion 2); lacks a low-pressure invitation with clear registration steps (criterion 4); fails to use distinct emotional language markers such as 'concerned', 'supportive', and 'urgent' (criterion 5); does not end with an encouraging call-to-action and resource offer (criterion 9); and does not follow the complete structured flow from problem to action (criterion 10).",
+          "consistency_confidence": 0.75,
+          "average_response_time": 25.748615026474,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.37142857142857144,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 3,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 77.24623084068298,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.3142857142857143,
+        "ranking_score": 0.3142857142857143,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes 'parental vigilance', 'digital safety education', and 'early intervention'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present cyberbullying as having a hidden nature?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose workshop-based education with practical tools as the solution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use a low-pressure invitation with clear registration steps for the call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'concerned', 'supportive', and 'urgent'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style informative yet empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email include specific phrases such as 'protect your child', 'recognize the signs', and 'support your child'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with a friendly greeting and immediate topic relevance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close with an encouraging call-to-action and resource offer?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the 'problem \u2192 impact \u2192 solution \u2192 benefits \u2192 action' information flow?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use formatting elements like bulleted lists, bolded key terms, and clear section headers?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email avoid technical jargon and use relatable parenting terminology?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 3,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively promotes a workshop-based solution using practical strategies, maintains an informative and empathetic tone, avoids technical jargon, and opens with a friendly greeting and clear subject relevance.",
+        "weaknesses": "It does not explicitly include the key messaging themes, fails to depict cyberbullying as hidden, lacks a low-pressure invitation with clear registration steps, omits certain emotional language markers and specific supportive phrases, and is missing a clear closing call-to-action as well as enhanced formatting elements and a fully structured flow.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 30.21901273727417,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes 'parental vigilance', 'digital safety education', and 'early intervention'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present cyberbullying as having a hidden nature?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose workshop-based education with practical tools as the solution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use a low-pressure invitation with clear registration steps for the call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'concerned', 'supportive', and 'urgent'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style informative yet empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include specific phrases such as 'protect your child', 'recognize the signs', and 'support your child'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with a friendly greeting and immediate topic relevance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close with an encouraging call-to-action and resource offer?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the 'problem \u2192 impact \u2192 solution \u2192 benefits \u2192 action' information flow?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use formatting elements like bulleted lists, bolded key terms, and clear section headers?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email avoid technical jargon and use relatable parenting terminology?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively promotes a workshop-based solution using practical strategies, maintains an informative and empathetic tone, avoids technical jargon, and opens with a friendly greeting and clear subject relevance.",
+          "weaknesses": "It does not explicitly include the key messaging themes, fails to depict cyberbullying as hidden, lacks a low-pressure invitation with clear registration steps, omits certain emotional language markers and specific supportive phrases, and is missing a clear closing call-to-action as well as enhanced formatting elements and a fully structured flow.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 30.21901273727417,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.3142857142857143,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 3,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 90.65741276741028,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.22857142857142856,
+        "ranking_score": 0.22857142857142856,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes 'parental vigilance', 'digital safety education', and 'early intervention'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present cyberbullying as having a hidden nature?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose workshop-based education with practical tools as the solution?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use a low-pressure invitation with clear registration steps for the call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'concerned', 'supportive', and 'urgent'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style informative yet empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email include specific phrases such as 'protect your child', 'recognize the signs', and 'support your child'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with a friendly greeting and immediate topic relevance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close with an encouraging call-to-action and resource offer?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the 'problem \u2192 impact \u2192 solution \u2192 benefits \u2192 action' information flow?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use formatting elements like bulleted lists, bolded key terms, and clear section headers?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email avoid technical jargon and use relatable parenting terminology?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 2,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email demonstrates an empathetic and informative communication style, opens with a friendly greeting and relevant subject, and follows a coherent problem-to-action flow.",
+        "weaknesses": "The email does not include the required parental vigilance, digital safety education, or early intervention themes, nor does it address cyberbullying, propose workshop-based education, or incorporate parenting-specific phrases and formatting elements.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 29.83288900057475,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes 'parental vigilance', 'digital safety education', and 'early intervention'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present cyberbullying as having a hidden nature?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose workshop-based education with practical tools as the solution?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use a low-pressure invitation with clear registration steps for the call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'concerned', 'supportive', and 'urgent'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style informative yet empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include specific phrases such as 'protect your child', 'recognize the signs', and 'support your child'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with a friendly greeting and immediate topic relevance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close with an encouraging call-to-action and resource offer?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the 'problem \u2192 impact \u2192 solution \u2192 benefits \u2192 action' information flow?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use formatting elements like bulleted lists, bolded key terms, and clear section headers?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email avoid technical jargon and use relatable parenting terminology?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email demonstrates an empathetic and informative communication style, opens with a friendly greeting and relevant subject, and follows a coherent problem-to-action flow.",
+          "weaknesses": "The email does not include the required parental vigilance, digital safety education, or early intervention themes, nor does it address cyberbullying, propose workshop-based education, or incorporate parenting-specific phrases and formatting elements.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 29.83288900057475,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.22857142857142856,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 2,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 89.49904012680054,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 1,
+      "score": 0.6285714285714286
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 2,
+      "score": 0.4857142857142857
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 3,
+      "score": 0.37142857142857144
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 4,
+      "score": 0.3142857142857143
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 5,
+      "score": 0.22857142857142856
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 647.2087295055389,
+    "success": true,
+    "errors": []
+  }
+}

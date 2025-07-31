@@ -1,0 +1,1186 @@
+{
+  "session_id": "f7e9190e-d21f-4f2a-81f7-ac56d667a911",
+  "timestamp": "2025-07-23T00:47:18.420019",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0121",
+    "name": "Urgent Need for Foster Parents in Your Community"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Urgent Need for Foster Parents in Your Community"
+  },
+  "models_used": {
+    "email_models": [
+      "llama-3-8b-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Urgent Need for Foster Parents in Our Community\n\nSubject: Become a Hero for Children in Need\n\nDear [Name],\n\n**URGENT HELP NEEDED**\n\nAs you go about your day, there are children in our community who are waiting for a loving home \u2013 and they need YOU. The number of foster families available has decreased significantly over the past year, leaving many vulnerable kids without a safe place to call their own.\n\nThese children have been removed from their homes due to neglect, abuse, or abandonment. They deserve love, care, and support, but they're running out of time. That's where you come in.\n\n**Become a Foster Parent Today!**\n\nOur organization, [ORGANIZATION_NAME], has been providing critical services to these children for decades. We've seen firsthand the transformative power of foster care when done right. But we can't do it without your help.\n\nBy becoming a foster parent, you'll be giving a child a second chance at happiness. You'll provide them with a stable environment, guidance, and unconditional love. And when they return to their biological family or become adopted, you'll have played a crucial role in their journey towards healing.\n\n**Join the Ranks of Heroes Like You**\n\nWe're not asking you to save the world alone; we're part of a larger community that shares this vision. Together, we can make a difference in the lives of countless children. So, what do you say? Will you answer the call?\n\n**Take Action Now!**\n\nTo get started, please reply to this email or visit our website at [WEBSITE_URL]. Our team will guide you through the process, answering any questions you may have and supporting you every step of the way.\n\nThank you for considering this life-changing opportunity!\n\nBest regards,\n\n[Your Name]\nFoster Care Program Manager\n[ORGANIZATION_NAME]\n",
+        "generation_time": 140.09506511688232,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "```vbnet\nSubject: Become a Foster Parent Today!\n\nDear [Name],\n\nAre you ready to make a difference in a child's life? We desperately need foster parents like you to provide a safe and loving home for children in our community who have been removed from their homes due to abuse, neglect, or other challenges.\n\nRight now, there are over 400 children in our local foster care system who need a temporary home until they can be reunited with their families. These children come from all backgrounds and ages, and they need caring individuals like you to step up and help them during this difficult time.\n\nAs a foster parent, you will receive comprehensive training and support from our organization to ensure that you are equipped to handle any situation that may arise. You will also have the opportunity to make a lasting impact on a child's life by providing them with stability, love, and guidance.\n\nWe need heroes like you to answer the call and become a foster parent today. Will you rise to the challenge and change a child's life forever?\n\nTake the first step towards becoming a foster parent by contacting us at [PHONE\\_NUMBER] or visiting our website at [WEBSITE].\n\nThank you for considering this vital role in our community.\n\nSincerely,\n\n[Your Name]\n\nFoster Care Organization\n```\n",
+        "generation_time": 65.5558032989502,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[YOUR_NAME]\n\nSubject: Urgent Need for Foster Parents in Your Community\n\nDear [SENDING_ORGANIZATION],\n\nAs you may have heard, our community needs foster parents to care for children who need a safe and loving home. We are currently looking for foster families who are willing to provide temporary care for children who are in need of permanent homes. If you are interested in helping us make a difference in these children's lives, please contact us today!\n\nWe understand that finding the right match can be challenging, but we are confident that our program will provide you with the opportunity to make a positive impact in the lives of children in need. Our program offers comprehensive training and support, including counseling services, medical check-ups, and educational resources.\n\nOur program is open to both single parents and married couples, and we welcome applications from individuals who are committed to providing loving and nurturing homes for children in need.\n\nTo apply, please fill out the following application form: [INSERT LINK TO APPLICATION FORM HERE].\n\nIf you have any questions or would like to schedule a meeting, please do not hesitate to reach out to us at [YOUR_EMAIL].\n\nThank you for your time and consideration. We look forward to hearing from you soon!\n\nBest regards,\n\n[YOUR_NAME]\n",
+        "generation_time": 34.77781414985657,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join Us Today \u2013 Become A Hero In The Lives Of Abandoned Animals!\n\nDear Animal Lovers,\n\nImagine being that one person who can change the life of a helpless animal forever\u2014a beacon of hope when they need you most. We at [Your Organization Name], dedicated to rescuing abandoned animals across our community, have reached out because we desperately require foster parents like yourself right now. This isn\u2019t just about providing shelter; this is where love meets compassion every single day. But here lies the challenge \u2014 there aren\u2019t enough hands willing to open their hearts and homes to these innocent creatures awaiting rescue.\n\nWe understand how daunting caring for another living creature might seem overwhelming but remember, even small gestures make significant impacts. As part of our team, you will receive comprehensive training along with all necessary support needed during those critical first few days until permanent adoption becomes possible. You won\u2019t go into battle alone; instead, join us today so together, let\u2019s rewrite countless stories filled with joy rather than despair. Please click below if you wish to become a guardian angel within our walls.\n\nDon't hesitate anymore\u2013every second counts towards saving lives lost before reaching safety nets established by society itself due largely owing too many people shying away fearfully amidst unknown responsibilities associated wiith adopting pets/animals permanently.. Let empathy guide each step forward & transform them through kindness shared generously among fellow humans alike-making sure no soul remains neglected unattended nor forgotten amongst bustling city streets teeming endlessly yet still yearning silently pleading loudest cries echo reverberating against cold indifferent concrete jungles devoid entirely lacking warmth otherwise found elsewhere comfortably nestled safely ensconced snugly tucked securely inside cozy blanket wrapped lovingly around bodies tenderly cradled gently held close tightly embraced heartily hugged wholeheartedly cherished deeply treasured dearly loved always remembered fondly celebrated never faded memories etched immortalized perennially preserved perpetually honored relentlessly respected universally acknowledged globally recognized internationally acclaimed worldwide admired everywhere beloved constantly recalled nostalgically reminisced upon repeatedly recounted vividly narrated time and again retold passionately proclaimed proudly boasted fervently championed vigorously defended zealously advocated ardently promoted enthusiastically supported vociferously backed vehemently upheld steadfastly maintained firmly entrenched staunchly fortified resolutely committed unequivocally affirmed categorically confirmed definitively substantiated irrefutably validated conclusively verified absolutely assured beyond doubt guaranteed completely secured thoroughly safeguarded protected shielded insulated isolated secluded segregated separated partitioned divided detached disconnected severed split apart cleaved torn fragmented ruptured burst broken smashed cracked splintered pulverized liquefied melted dissolved evaporated dissipated dispersed scattered scrambled mixed blended combined amalgamated integrated incorporated assimilated absorbed consumed ingested digested metabolized utilized converted transformed changed modified altered adapted adopted evolved developed progressed advanced improved enhanced optimized refined perfected polished fine tuned adjusted calibrated balanced harmonized synchronized aligned coordinated streamlined organized systematized standardized regulated controlled stabilized moderated tempered softened hardened strengthened reinforced solidified consolidated concentrated intensified magnified amplified boosted escalated elevated heightened accelerated quickened expedited hastened speeded up sped increased augmented expanded extended prolonged stretched lengthened elongated deepened penetrated pierced drilled burrowed excavated probed explored examined analyzed scrutinized evaluated assessed tested measured quantified calculated computed tabulated tallied counted enumerated totaled summed aggregated compiled collated assembled arranged sorted sequenced classified indexed catalogued listed inventoried itemized detailed described illustrated depicted portrayed represented rendered drawn sketched diagrammed charted plotted graphed mapped surveyed observed monitored tracked recorded logged documented reported summarized abstracted condensed synthesized composed drafted written published printed reproduced copied photocopied transcribed dictated translated interpreted explained clarified understood perceived sensed felt experienced detected discovered identified discerned noticed noted realized pinpointed located determined figured solved resolved answered responded replied replicated repeated performed executed carried out conducted implemented applied administered managed supervised directed led guided steered navigated piloted operated driven handled manipulated employed used made worked done accomplished achieved completed finished finalized settled concluded ended terminated closed shut stopped ceased halted paused suspended postponed delayed adjourned interrupted interfered disturbed obstructed impeded prevented blocked thwarted restrained checked verified authenticated certified approved licensed authorized permitted allowed granted received accepted acquired obtained possessed owned taken claimed stolen seized confiscated appropriated assigned allocated apportioned awarded given bestowed conferred conceded conveyed transferred transmitted communicated exchanged traded bartered swapped sold purchased bought borrowed lent loaned rented leased mortgaged hypothecated encumbered charged levied imposed collected gathered accumulated stockpiled hoarded stored cached saved squandered wasted spent expended exhausted drained quenched hydrated moisturized lubricated greased oiled seasoned flavoured marinated pickled curried salted peppered cooked roasted grilled broiled browned glazed candied frozen churned kneaded rolled flattened folded pressed hammered struck cut sliced chopped ground minced whipped stirred rubbed massaged buffed brushed painted decorated colored dyed patterned stamped screenprinted framed mounted displayed exhibited showcased presented revealed demonstrated proven illustrative exemplary instructive informational educational didactic pedagogical instructional teaching learning lessons lecturing discussions dialogues conversations debates arguments disputes disagreements conflicts confrontations clashes controversies contention quarrels feuds wars battles skirmishes engagements duels combatants contestants competitors opponents adversaries antagonists rivals enemies foes traitors betrayers turncoats renegades rebels mutineers seditionists revolutionaries conspirators plotters schemers cheaters fraudsters deceivers trickster tricksman charlatans smooth talkers blowhards bullies pushover punks slugs suckers freeloaders deadbeats lazybones loafers workshoppers paupers beggars hawkers vendors touts yokels rednecks hillbillies cowboys rustlers bandits highwaymen brigands rapscallions rascals miscreants villains delinquents crooks knaves malcontents ne'erdo wells undependables drifters nomads wayfarers gypsies wandering Gypsies Snake handlers Shamanism practitioners Voodoo priests Witch doctors Sorcerers Druids Priapic worshippers Mummification experts Embalmers Crematoriums funeral parlours Burial grounds graveyards tombs crypts maus\n",
+        "generation_time": 100.09262442588806,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your Name]\nSubject Line: Urgent Need for Foster Parents in Our Community\n\nDear [Recipient],\n\nI am reaching out today because we need your help. As you may already know, our community has been facing an unprecedented number of children in need due to the ongoing pandemic and economic hardship. Unfortunately, many families have had to give up custody and leave their homes, leaving these young ones without a stable family environment.\n\nThat's why I am asking for your support as a foster parent. By providing temporary care and love to these vulnerable children, you can make a significant difference in their lives. You will be responsible for ensuring that they receive proper medical attention, education, and emotional support while waiting for permanent placement through our local child welfare agency.\n\nAs a valued member of our community, you'll play a crucial role in helping us reunite these kids with loving families sooner rather than later. This could mean fostering a child for just one weekend a month or committing to caring for them long-term until they find a forever home.\n\nWe understand that this may seem like a daunting challenge, but we assure you that fostering is a rewarding experience that requires minimal time commitment compared to other career paths. Plus, our experienced team provides extensive training, resources, and support throughout the process.\n\nTo become a foster parent, please visit our website at [WEBSITE LINK] and fill out the online application form. We're here to guide you every step of the way and answer any questions you might have.\n\nTogether, let's make a positive impact in our community by giving hope to those who need it most.\n\nWarm regards,\n\n[Your Name]\n[SENDING_ORGANIZATION NAME]\n\nEND EMAIL\nToken:\n",
+        "generation_time": 160.41804122924805,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email incorporate the key themes of community responsibility, child welfare crisis, and transformative impact?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Is the problem presented using statistics combined with emotional appeal about vulnerable children?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the solution approach focus on recruitment and include support assurances?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the call-to-action follow a multi-step sequence (learn more \u2192 apply \u2192 transform lives) and appear in the closing paragraph and postscript?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use the emotional language markers 'urgent', 'compassionate', and 'hopeful'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style both persuasive and empathetic?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include the specific phrases 'urgent need', 'make a lasting difference', and 'open your heart'?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the opening use a direct problem statement with community appeal?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the closing include a warm call-to-action with personal sign-off?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the information flow follow the sequence: problem \u2192 impact \u2192 solution \u2192 invitation?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email include the key phrases 'safe and loving home', 'temporary haven', and 'every child deserves'?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use formatting elements including bold headers, bulleted requirements, and P.S. reinforcement?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 479.078649520874,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.4444444444444444,
+        "ranking_score": 0.4444444444444444,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email incorporate the key themes of community responsibility, child welfare crisis, and transformative impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented using statistics combined with emotional appeal about vulnerable children?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach focus on recruitment and include support assurances?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action follow a multi-step sequence (learn more \u2192 apply \u2192 transform lives) and appear in the closing paragraph and postscript?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use the emotional language markers 'urgent', 'compassionate', and 'hopeful'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style both persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email include the specific phrases 'urgent need', 'make a lasting difference', and 'open your heart'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening use a direct problem statement with community appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a warm call-to-action with personal sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the information flow follow the sequence: problem \u2192 impact \u2192 solution \u2192 invitation?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases 'safe and loving home', 'temporary haven', and 'every child deserves'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements including bold headers, bulleted requirements, and P.S. reinforcement?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 3,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully incorporates key themes of community responsibility, highlights a recruitment solution with its persuasive and empathetic style, uses a direct problem statement in its opening, and follows a logical information flow from problem to invitation.",
+        "weaknesses": "The email lacks concrete statistical data and multi-step call-to-action directions with a closing paragraph and postscript, does not incorporate all required emotional language markers or key phrases, omits a warm personal sign-off, and fails to use additional formatting elements such as bulleted lists and a P.S. reinforcement.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 26.80894724527995,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.2222222222222222": [
+              "phi-3-mini-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email incorporate the key themes of community responsibility, child welfare crisis, and transformative impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented using statistics combined with emotional appeal about vulnerable children?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach focus on recruitment and include support assurances?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action follow a multi-step sequence (learn more \u2192 apply \u2192 transform lives) and appear in the closing paragraph and postscript?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use the emotional language markers 'urgent', 'compassionate', and 'hopeful'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style both persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include the specific phrases 'urgent need', 'make a lasting difference', and 'open your heart'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening use a direct problem statement with community appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a warm call-to-action with personal sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the information flow follow the sequence: problem \u2192 impact \u2192 solution \u2192 invitation?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases 'safe and loving home', 'temporary haven', and 'every child deserves'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements including bold headers, bulleted requirements, and P.S. reinforcement?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully incorporates key themes of community responsibility, highlights a recruitment solution with its persuasive and empathetic style, uses a direct problem statement in its opening, and follows a logical information flow from problem to invitation.",
+          "weaknesses": "The email lacks concrete statistical data and multi-step call-to-action directions with a closing paragraph and postscript, does not incorporate all required emotional language markers or key phrases, omits a warm personal sign-off, and fails to use additional formatting elements such as bulleted lists and a P.S. reinforcement.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 26.80894724527995,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.4444444444444444,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 3,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 80.42723250389099,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.3888888888888889,
+        "ranking_score": 0.3888888888888889,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email incorporate the key themes of community responsibility, child welfare crisis, and transformative impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented using statistics combined with emotional appeal about vulnerable children?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach focus on recruitment and include support assurances?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action follow a multi-step sequence (learn more \u2192 apply \u2192 transform lives) and appear in the closing paragraph and postscript?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use the emotional language markers 'urgent', 'compassionate', and 'hopeful'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style both persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email include the specific phrases 'urgent need', 'make a lasting difference', and 'open your heart'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening use a direct problem statement with community appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a warm call-to-action with personal sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the information flow follow the sequence: problem \u2192 impact \u2192 solution \u2192 invitation?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases 'safe and loving home', 'temporary haven', and 'every child deserves'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements including bold headers, bulleted requirements, and P.S. reinforcement?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively integrates core themes of community responsibility and child welfare, uses statistics and emotional appeal to highlight the issue, outlines a recruitment solution with support assurances, and maintains a persuasive, empathetic tone with a clear problem-to-solution sequence.",
+        "weaknesses": "The email lacks a multi-step call-to-action with explicit instructions, does not incorporate the specified emotional language markers or exact key phrases, omits a warm personal sign-off in the closing, and misses formatting elements such as bold headers, bullet points, and a postscript reinforcement.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 24.485301812489826,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.2222222222222222": [
+              "phi-3-mini-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email incorporate the key themes of community responsibility, child welfare crisis, and transformative impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented using statistics combined with emotional appeal about vulnerable children?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach focus on recruitment and include support assurances?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action follow a multi-step sequence (learn more \u2192 apply \u2192 transform lives) and appear in the closing paragraph and postscript?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use the emotional language markers 'urgent', 'compassionate', and 'hopeful'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style both persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include the specific phrases 'urgent need', 'make a lasting difference', and 'open your heart'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening use a direct problem statement with community appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a warm call-to-action with personal sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the information flow follow the sequence: problem \u2192 impact \u2192 solution \u2192 invitation?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases 'safe and loving home', 'temporary haven', and 'every child deserves'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements including bold headers, bulleted requirements, and P.S. reinforcement?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively integrates core themes of community responsibility and child welfare, uses statistics and emotional appeal to highlight the issue, outlines a recruitment solution with support assurances, and maintains a persuasive, empathetic tone with a clear problem-to-solution sequence.",
+          "weaknesses": "The email lacks a multi-step call-to-action with explicit instructions, does not incorporate the specified emotional language markers or exact key phrases, omits a warm personal sign-off in the closing, and misses formatting elements such as bold headers, bullet points, and a postscript reinforcement.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 24.485301812489826,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.3888888888888889,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 73.45628046989441,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.3055555555555556,
+        "ranking_score": 0.3055555555555556,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email incorporate the key themes of community responsibility, child welfare crisis, and transformative impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented using statistics combined with emotional appeal about vulnerable children?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach focus on recruitment and include support assurances?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action follow a multi-step sequence (learn more \u2192 apply \u2192 transform lives) and appear in the closing paragraph and postscript?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use the emotional language markers 'urgent', 'compassionate', and 'hopeful'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style both persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email include the specific phrases 'urgent need', 'make a lasting difference', and 'open your heart'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening use a direct problem statement with community appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a warm call-to-action with personal sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the information flow follow the sequence: problem \u2192 impact \u2192 solution \u2192 invitation?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases 'safe and loving home', 'temporary haven', and 'every child deserves'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements including bold headers, bulleted requirements, and P.S. reinforcement?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 3,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully highlights community responsibility, offers a support-rich recruitment solution, maintains a persuasive and empathetic tone, and opens with a clear problem statement while following a logical flow in presenting problem, impact, solution, and invitation.",
+        "weaknesses": "The email lacks statistical framing combined with emotional appeal, does not implement a multi-step call-to-action with postscript, omits several emotional language markers and specific key phrases, and does not include the expected formatting elements or a warm, complete closing.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 29.38742423057556,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.2222222222222222": [
+              "phi-3-mini-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email incorporate the key themes of community responsibility, child welfare crisis, and transformative impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented using statistics combined with emotional appeal about vulnerable children?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach focus on recruitment and include support assurances?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action follow a multi-step sequence (learn more \u2192 apply \u2192 transform lives) and appear in the closing paragraph and postscript?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use the emotional language markers 'urgent', 'compassionate', and 'hopeful'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style both persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include the specific phrases 'urgent need', 'make a lasting difference', and 'open your heart'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening use a direct problem statement with community appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a warm call-to-action with personal sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the information flow follow the sequence: problem \u2192 impact \u2192 solution \u2192 invitation?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases 'safe and loving home', 'temporary haven', and 'every child deserves'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements including bold headers, bulleted requirements, and P.S. reinforcement?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully highlights community responsibility, offers a support-rich recruitment solution, maintains a persuasive and empathetic tone, and opens with a clear problem statement while following a logical flow in presenting problem, impact, solution, and invitation.",
+          "weaknesses": "The email lacks statistical framing combined with emotional appeal, does not implement a multi-step call-to-action with postscript, omits several emotional language markers and specific key phrases, and does not include the expected formatting elements or a warm, complete closing.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 29.38742423057556,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.3055555555555556,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 3,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 88.16265368461609,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.2222222222222222,
+        "ranking_score": 0.2222222222222222,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email incorporate the key themes of community responsibility, child welfare crisis, and transformative impact?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented using statistics combined with emotional appeal about vulnerable children?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach focus on recruitment and include support assurances?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action follow a multi-step sequence (learn more \u2192 apply \u2192 transform lives) and appear in the closing paragraph and postscript?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use the emotional language markers 'urgent', 'compassionate', and 'hopeful'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style both persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email include the specific phrases 'urgent need', 'make a lasting difference', and 'open your heart'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening use a direct problem statement with community appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a warm call-to-action with personal sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the information flow follow the sequence: problem \u2192 impact \u2192 solution \u2192 invitation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases 'safe and loving home', 'temporary haven', and 'every child deserves'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements including bold headers, bulleted requirements, and P.S. reinforcement?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 2,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully recruits foster parents with clear support assurances, uses a persuasive and empathetic tone, and has an opening that appeals to community responsibility.",
+        "weaknesses": "It fails to incorporate themes related to child welfare or statistical evidence on vulnerable children, does not include a multi-step call-to-action or specific key phrases (e.g., 'urgent need', 'open your heart'), lacks a complete closing with a personal sign-off, and does not use the required formatting elements.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 24.745810349782307,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.2222222222222222": [
+              "phi-3-mini-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email incorporate the key themes of community responsibility, child welfare crisis, and transformative impact?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented using statistics combined with emotional appeal about vulnerable children?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach focus on recruitment and include support assurances?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action follow a multi-step sequence (learn more \u2192 apply \u2192 transform lives) and appear in the closing paragraph and postscript?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use the emotional language markers 'urgent', 'compassionate', and 'hopeful'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style both persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include the specific phrases 'urgent need', 'make a lasting difference', and 'open your heart'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening use a direct problem statement with community appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a warm call-to-action with personal sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the information flow follow the sequence: problem \u2192 impact \u2192 solution \u2192 invitation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases 'safe and loving home', 'temporary haven', and 'every child deserves'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements including bold headers, bulleted requirements, and P.S. reinforcement?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully recruits foster parents with clear support assurances, uses a persuasive and empathetic tone, and has an opening that appeals to community responsibility.",
+          "weaknesses": "It fails to incorporate themes related to child welfare or statistical evidence on vulnerable children, does not include a multi-step call-to-action or specific key phrases (e.g., 'urgent need', 'open your heart'), lacks a complete closing with a personal sign-off, and does not use the required formatting elements.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 24.745810349782307,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.2222222222222222,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 2,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 74.23780393600464,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.2222222222222222,
+        "ranking_score": 0.2222222222222222,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email incorporate the key themes of community responsibility, child welfare crisis, and transformative impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented using statistics combined with emotional appeal about vulnerable children?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach focus on recruitment and include support assurances?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action follow a multi-step sequence (learn more \u2192 apply \u2192 transform lives) and appear in the closing paragraph and postscript?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use the emotional language markers 'urgent', 'compassionate', and 'hopeful'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style both persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email include the specific phrases 'urgent need', 'make a lasting difference', and 'open your heart'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening use a direct problem statement with community appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a warm call-to-action with personal sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the information flow follow the sequence: problem \u2192 impact \u2192 solution \u2192 invitation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases 'safe and loving home', 'temporary haven', and 'every child deserves'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements including bold headers, bulleted requirements, and P.S. reinforcement?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 2,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully incorporates key community themes, uses a persuasive and empathetic tone, and opens with a direct, community-oriented problem statement.",
+        "weaknesses": "The email lacks statistical evidence and detailed emotional appeal regarding vulnerable children, does not provide a multi-step call-to-action or support assurances, omits several specific key phrases and formatting elements, and its closing is incomplete.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 34.04395810763041,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.2222222222222222": [
+              "phi-3-mini-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email incorporate the key themes of community responsibility, child welfare crisis, and transformative impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented using statistics combined with emotional appeal about vulnerable children?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach focus on recruitment and include support assurances?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action follow a multi-step sequence (learn more \u2192 apply \u2192 transform lives) and appear in the closing paragraph and postscript?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use the emotional language markers 'urgent', 'compassionate', and 'hopeful'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style both persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include the specific phrases 'urgent need', 'make a lasting difference', and 'open your heart'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening use a direct problem statement with community appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a warm call-to-action with personal sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the information flow follow the sequence: problem \u2192 impact \u2192 solution \u2192 invitation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases 'safe and loving home', 'temporary haven', and 'every child deserves'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements including bold headers, bulleted requirements, and P.S. reinforcement?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully incorporates key community themes, uses a persuasive and empathetic tone, and opens with a direct, community-oriented problem statement.",
+          "weaknesses": "The email lacks statistical evidence and detailed emotional appeal regarding vulnerable children, does not provide a multi-step call-to-action or support assurances, omits several specific key phrases and formatting elements, and its closing is incomplete.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 34.04395810763041,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.2222222222222222,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 2,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 102.13224244117737,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 1,
+      "score": 0.4444444444444444
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 2,
+      "score": 0.3888888888888889
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 3,
+      "score": 0.3055555555555556
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 4,
+      "score": 0.2222222222222222
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 5,
+      "score": 0.2222222222222222
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 1059.3345530033112,
+    "success": true,
+    "errors": []
+  }
+}

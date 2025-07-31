@@ -1,0 +1,1186 @@
+{
+  "session_id": "fdf6d860-9206-41fe-81ef-a9ec9394b8df",
+  "timestamp": "2025-07-23T02:00:04.731272",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0126",
+    "name": "Success Story: How Your Donations Helped a Family in Crisis"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Success Story: How Your Donations Helped a Family in Crisis"
+  },
+  "models_used": {
+    "email_models": [
+      "llama-3-8b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Subject Line: Success Story: How Your Donations Helped a Family in Crisis\n\nDear [Name],\n\nWe wanted to share with you a heartwarming success story that highlights the impact of your generosity. Meet Maria, a single mother who was struggling to make ends meet due to her husband's sudden loss of employment. Thanks to your support, we were able to provide her family with food, clothing, and household essentials during their time of need.\n\nMaria's story is just one example of how your donations have made a tangible difference in the lives of those affected by poverty. With your continued support, we can continue to empower families like Maria's to break the cycle of poverty and build a brighter future.\n\nHere's what Maria had to say about our program:\n\n\"I was at my wit's end when I received the care package from [Organization]. It wasn't just the food and clothes that meant so much to us; it was the kindness and compassion behind every item. My children were overjoyed, and I felt seen and heard for the first time in months.\"\n\nWe're proud to be a part of Maria's journey towards stability and self-sufficiency. But we can't do it without your ongoing support. Will you consider making a donation today to help families like Maria's?\n\n**Donate Now and Help Families Thrive**\n",
+        "generation_time": 115.86218333244324,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[Your Name]\n\nSubject: [Subject Line]\n\nDear [Recipient\u2019s Name],\n\nWe hope this email finds you well. We wanted to reach out to let you know about our recent success story that we believe will inspire you to support us.\n\nOur nonprofit organization has been working tirelessly to provide assistance to families in crisis. Last year, we were able to help a family in need who was facing financial difficulties due to unexpected medical bills. This situation was unbearable for them, and they were struggling to make ends meet. However, through your generous donation, we were able to provide them with much-needed financial assistance.\n\nTheir life was transformed, and they were able to focus on their health and wellbeing once again. They were grateful for the support and felt relieved to have found a way to overcome this difficult situation.\n\nThis success story highlights the power of your donations to help those in need. It also serves as a reminder of the importance of giving back to the community and supporting organizations like ours that work tirelessly to make a positive difference in people's lives.\n\nAs a result of this experience, we would like to invite you to consider making a donation to our organization. Your contribution can go a long way towards helping us continue providing assistance to families in need.\n\nThank you for considering supporting our mission. If you have any questions or concerns, please do not hesitate to contact us.\n\nBest regards,\n\n[Your Nonprofit Organization]\n\n## Call to Action:\n\n[CALL TO ACTION TEXT]\n\n## End of Email:\n\n[END_EMAIL]\n",
+        "generation_time": 19.35984468460083,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: A Life-Changing Impact: See How You Made a Difference!\n\nDear [Name],\n\nAs you may recall, we recently shared the story of the [Family Name] family, who were facing financial hardship and struggled to provide basic necessities for their children. Thanks to the generosity of donors like you, we were able to provide them with emergency assistance and support that helped turn their lives around.\n\nToday, we want to share an inspiring update on how your donation made a real difference in their lives. The family was able to secure stable housing, access vital healthcare services, and even enroll their children in quality education programs. Their resilience and determination have been truly remarkable, and they are now well on their way to rebuilding their future.\n\nYour contribution played a crucial role in this transformation. As a hero who cares about making a positive impact in the world, you understand the importance of standing together during times of crisis. By supporting our mission, you empowered us to be there for families when they need it most.\n\nNow, we invite you to join us in celebrating this life-changing success story. Visit our website to read the full account of how your donation made all the difference. Share this inspiring tale with your friends and family, and let's continue spreading hope and support to those who need it most.\n\nThank you again for being a part of our community of compassionate individuals. Together, we can create a better world for all.\n\nTo read the full story and see the incredible impact you made, visit our website at: [WEBSITE\\_LINK]\n\n<|endoftext|>\n",
+        "generation_time": 49.15550494194031,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: A Heartfelt Thank You \u2013 Together We Saved Lives!\n\nDear [Recipient Name],\n\nWe hope this message finds you well amidst life\u2019s bustling pace. Today we come bearing news that will warm even the coldest heart\u2014a story where compassion triumphed over adversity thanks to people like you who believe in making a difference.\n\nIn late March last year, our team at Global Relief was alerted about a family stranded by unexpected calamity; their home had been swept away during heavy rains leaving them homeless and vulnerable. The situation looked dire until generous donors stepped up when they needed us most. It wasn't just money but also time-sensitive aid packages filled with essentials such as food, clothing, blankets, and hygiene products which arrived within hours due to swift coordination efforts led by organizations dedicated to disaster relief including yours. This immediate response helped secure safe shelter while long term recovery plans were put into place ensuring families could rebuild lives post tragedy unscathed physically yet emotionally scarred forever if left alone dealing wth loss independently instead being supported collectively through community outreach programs facilitated directly via partnerships between nonprofits working together globally alongside local volunteers committed wholeheartedly towards restoring dignity back onto those affected communities worldwide across continents spanning oceans vast distances beyond imagination otherwise impossible reach unless driven forward relentlessly despite seemingly insurmountable odds faced daily every single day wherever possible whenever required regardless how challenging circumstances may become along journey toward achieving common goals shared universally among all humankind everywhere around earth irrespective geographical boundaries existing dividing lines separating nations states countries regions districts towns villages hamlets neighborhood blocks city quarters suburbia downtown uptown midtown innercity outerborough central borough periphery etc.. however none should ever feel isolated nor forgotten simply because physical proximity cannot guarantee equal access opportunities available equally fairly distributed equitably throughout society inclusive societies embracing diversity promoting tolerance respect understanding acceptance love kindness peace harmony unity solidarity cooperation collaboration sharing knowledge skills training resources technology innovation entrepreneurship empowerment inspiration motivation creativity courage bravery determination resilience perseverance optimism patience endurance fortitude strength tenacity resolve dedication commitment passion enthusiasm zeal energy vitality spirit faith belief trust confidence assurance certainty security safety health mental wellbeing spiritual growth personal development professional advancement career progression educational attainment lifelong learning continuous improvement self actualization individual fulfillment happiness joy satisfaction pleasure enjoyment fun entertainment relaxation recreation leisure activities socializing relationships friendships networking connections building bridges breaking barriers creating pathways connecting hearts minds bodies souls spirits energies forces fields vibrational frequencies resonances electromagnetic waves light photons particles atoms molecules elements chemical substances biological organisms living beings conscious entities sentience awareness enlightenment illumination insight intuition wisdom experience lesson teachability teaching instruction guidance mentorship tutelage supervision direction leadership stewardship governance management administration control regulation discipline order law enforcement authority power jurisdiction judiciary justice fair trial impartial hearing court proceedings legal system procedure legislative process statutes codes acts ordinances resolution dispute settlement mediation arbitration negotiation reconciliation compromise agreement consensus decision conflict prevention intervention assistance counseling therapy support services care giving comfort solace companionship friendship fellowship camaraderie fraternity brotherhood sisterhood kinship blood ties familial relations ancestry heritage history genealogical research archival records documentation preservation conservation legacy tradition custom culture values ethics morality principles virtues character integrity honesty transparency accountability responsibility reliability dependability consistency accuracy precision thoroughness meticulous attention detail diligence hard work effort persistence grit stamina determination focus concentration clarity mindfulness calm composure serenity tranquility stillness quietude silence contemplation reflection introspection deep thought analysis critical thinking reasoning logic logical deduction inference inductive reasoning abduction induction analogy comparison contrast evaluation assessment judgment criteria standards benchmark performance metrics quality control procedures testing validation verification certification accreditation licensing registration authorization approval consent permission grant issuance award recognition honor distinction merit achievement excellence exceptional accomplishment extraordinary feat remarkable success marvel impressiveness astonishment wonder admiration esteem appreciation gratitude thankful acknowledgment regard consideration courtesy politeness civility decorum etiquette manners behavior conduct demeanor attitude disposition mood temperament affect expression feeling sentiment sensitivity empathy sympathy pity concern affection tenderness caring gentleness tender lovingkindness benevolence charity philanthropy altruism goodwill kindly helpful beneficial advantage profit gain reward compensation remuneration payment dividend income earnings capital asset wealth property fortune prosperity riches affluence abundance plenty plentiful copious ample overflowing surplus sufficiency adequacy enough sufficient amount quantity volume size magnitude dimension extent breadth width depth length height elevation altitude high degree intensity level severity harshness sternness firmness rigidity stiffness brittleness fragility weakness frailty delicateness softness gentle easiness sweetness pleasant taste flavor savor yummy scrumptious mouthwatering appetizing satisfying hunger satiated satisfied satiety delight edibility palatable nibble nosh grub snack treat tidbit hors d'oeuvre fingerfood bitesize chow chew crunch crackle zest zip zap fizz pop shimmy jitterbug buzz zoom whirr click clack rattle rap roar boom crash smash slam bash belch burp giggle guffaw laughter titter twitter tweet chat banter prattle gabble blabber whisper murmur rustle flutter swoosh swish hiss growl woof moo neigh croak squawk peep bleat trill sing kazoo chant lullaby ballad sonnet song lyric verse poetry epic poem narrative tale legend mythology folklore fiction fantasy sci fi space opera mystery thriller horror suspense crime drama romance comedy farce musical play show spectacle pageant parade march sports competition game tournament match contest challenge duel battle warfare skirmish encounter confront face off bout go head-to-head run race meet concur agree accord align converge merge combine join connect link associate bond attach fasten tie knot bind glue stick tack seal lock padlock keyhole deadbolt door handle doorknob window frame glass panes windscreen sunroof roof top lid cover cap helmet hat mitten glove sock boot footwear sandals slippers shoes heels loafers espadrilles ballet flats dance tap dancing jazz rockabilly country western swing hip hop R&B soul disco techno house electronic ambient synthpop electro industrial metal punk alternative indie folk acoustic guitar bass drum electric keyboard piano string instruments woodwind brass orchestration composition melody rhythm beat tempo speed measure timing duration timbre pitch frequency sound wave amplitude loudness dynamics levels dynamic range tonality color spectrum visual art painting drawing sketch portrait figure silhouette shadow outline shape form geometry structure architecture construction engineering design blueprint plan layout floorplan schematic diagram circuit board microprocessor chip processor core\n",
+        "generation_time": 81.72514176368713,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your Name], Copywriter\n\nSubject Line: Join Us in Saving a Family in Need\n\nDear [Recipient],\n\nI hope this email finds you well. I'm reaching out because we're currently working on a heartwarming success story that highlights how your donations have helped a family in crisis. Our team has been tirelessly working towards providing them with the support they need during these difficult times.\n\nThe situation is truly heartbreaking. A single mother and her two young children were living in extreme poverty when our team intervened. They had no access to clean water, food, or healthcare. We stepped in by providing them with the essentials they desperately needed.\n\nOur team believes that every child deserves a chance at a better life, especially those who are most vulnerable. By donating today, you can make a significant difference in their lives.\n\nHere's what you can do to join us in saving these families:\n\n-\tDonate $5 per month\n-\tSponsor one child for $75 per year\n-\tMake a one-time donation of any amount\n\nYour contribution will go directly towards providing them with the resources they require to thrive. Every little bit counts!\n\nTogether, we can create a brighter future for these families. By supporting us, you'll be making a real impact in someone's life.\n\nTo make a donation, please visit our website ([WEBSITE LINK]).\n\nThank you for considering joining us in this mission. Together, let's make a positive change in the world.\n\nSincerely,\n\n[Your Name]\nCopywriter\n",
+        "generation_time": 132.9201979637146,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email visualize donor impact through human-centered transformation?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email depict the family's crisis with specific hardships using empathetic language?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email break down tangible aid by specifying resources/services provided?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Is the call to action a soft invitation for continued support (implied rather than direct)?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language markers like 'grateful', 'hopeful', or 'compassionate'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style primarily storytelling and appreciative?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the email written in a semi-formal tone with personal warmth?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email open with direct gratitude and introduce the beneficiary family?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email close by reinforcing impact and expressing donor appreciation?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email follow the narrative arc: crisis \u2192 intervention \u2192 transformation \u2192 gratitude?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "structure"
+        },
+        {
+          "question": "Is the email length within 200-350 words?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email include at least one key phrase: 'thanks to you', 'because of your generosity', or 'made a difference'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 207.89865827560425,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.8571428571428571,
+        "ranking_score": 0.8571428571428571,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email visualize donor impact through human-centered transformation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email depict the family's crisis with specific hardships using empathetic language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email break down tangible aid by specifying resources/services provided?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call to action a soft invitation for continued support (implied rather than direct)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'grateful', 'hopeful', or 'compassionate'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style primarily storytelling and appreciative?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email written in a semi-formal tone with personal warmth?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with direct gratitude and introduce the beneficiary family?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close by reinforcing impact and expressing donor appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the narrative arc: crisis \u2192 intervention \u2192 transformation \u2192 gratitude?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Is the email length within 200-350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email include at least one key phrase: 'thanks to you', 'because of your generosity', or 'made a difference'?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 7,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively visualizes donor impact, details specific hardships and tangible aid provided, employs storytelling with emotional language, maintains a semi-formal tone, and introduces the beneficiary early while including key phrases that affirm the donors' contributions.",
+        "weaknesses": "The email lacks a proper closing that reinforces donor appreciation, does not fully complete the intended narrative arc (missing final transformation/gratitude segment), and its overall word count is below the specified 200-350 words.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 44.39092421531677,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6857142857142857": [
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email visualize donor impact through human-centered transformation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email depict the family's crisis with specific hardships using empathetic language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email break down tangible aid by specifying resources/services provided?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call to action a soft invitation for continued support (implied rather than direct)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'grateful', 'hopeful', or 'compassionate'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style primarily storytelling and appreciative?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email written in a semi-formal tone with personal warmth?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with direct gratitude and introduce the beneficiary family?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close by reinforcing impact and expressing donor appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the narrative arc: crisis \u2192 intervention \u2192 transformation \u2192 gratitude?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Is the email length within 200-350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email include at least one key phrase: 'thanks to you', 'because of your generosity', or 'made a difference'?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively visualizes donor impact, details specific hardships and tangible aid provided, employs storytelling with emotional language, maintains a semi-formal tone, and introduces the beneficiary early while including key phrases that affirm the donors' contributions.",
+          "weaknesses": "The email lacks a proper closing that reinforces donor appreciation, does not fully complete the intended narrative arc (missing final transformation/gratitude segment), and its overall word count is below the specified 200-350 words.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 44.39092421531677,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.8571428571428571,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 7,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 133.1798779964447,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.6857142857142857,
+        "ranking_score": 0.6857142857142857,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email visualize donor impact through human-centered transformation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email depict the family's crisis with specific hardships using empathetic language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email break down tangible aid by specifying resources/services provided?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Is the call to action a soft invitation for continued support (implied rather than direct)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'grateful', 'hopeful', or 'compassionate'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style primarily storytelling and appreciative?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email written in a semi-formal tone with personal warmth?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with direct gratitude and introduce the beneficiary family?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close by reinforcing impact and expressing donor appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the narrative arc: crisis \u2192 intervention \u2192 transformation \u2192 gratitude?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the email length within 200-350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email include at least one key phrase: 'thanks to you', 'because of your generosity', or 'made a difference'?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 5,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively visualizes a donor-impact story through the transformation of a beneficiary family, uses empathetic and emotional language, follows a storytelling style with appropriate tone, and outlines a narrative arc from crisis to transformation.",
+        "weaknesses": "The email lacks an opening that directly expresses gratitude and clearly introduces the beneficiary, does not close with reinforcing impact or direct donor appreciation, falls short of the required word count, and does not include any of the specified key phrases.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 34.27597403526306,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6857142857142857": [
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email visualize donor impact through human-centered transformation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email depict the family's crisis with specific hardships using empathetic language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email break down tangible aid by specifying resources/services provided?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Is the call to action a soft invitation for continued support (implied rather than direct)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'grateful', 'hopeful', or 'compassionate'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style primarily storytelling and appreciative?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email written in a semi-formal tone with personal warmth?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with direct gratitude and introduce the beneficiary family?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close by reinforcing impact and expressing donor appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the narrative arc: crisis \u2192 intervention \u2192 transformation \u2192 gratitude?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the email length within 200-350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email include at least one key phrase: 'thanks to you', 'because of your generosity', or 'made a difference'?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively visualizes a donor-impact story through the transformation of a beneficiary family, uses empathetic and emotional language, follows a storytelling style with appropriate tone, and outlines a narrative arc from crisis to transformation.",
+          "weaknesses": "The email lacks an opening that directly expresses gratitude and clearly introduces the beneficiary, does not close with reinforcing impact or direct donor appreciation, falls short of the required word count, and does not include any of the specified key phrases.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 34.27597403526306,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6857142857142857,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 5,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 102.82829809188843,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.6857142857142857,
+        "ranking_score": 0.6857142857142857,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email visualize donor impact through human-centered transformation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email depict the family's crisis with specific hardships using empathetic language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email break down tangible aid by specifying resources/services provided?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call to action a soft invitation for continued support (implied rather than direct)?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'grateful', 'hopeful', or 'compassionate'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style primarily storytelling and appreciative?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email written in a semi-formal tone with personal warmth?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with direct gratitude and introduce the beneficiary family?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the email close by reinforcing impact and expressing donor appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the narrative arc: crisis \u2192 intervention \u2192 transformation \u2192 gratitude?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Is the email length within 200-350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email include at least one key phrase: 'thanks to you', 'because of your generosity', or 'made a difference'?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 5,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively visualizes donor impact through a compelling transformation story, specifies tangible resources provided, maintains a storytelling, semi-formal, and appreciative tone, introduces the beneficiary family early on, follows the narrative arc, and includes a key phrase ('made a difference').",
+        "weaknesses": "The email lacks explicit emotional language markers such as 'grateful', 'hopeful', or 'compassionate', does not offer a complete closing that reinforces donor appreciation, and the overall length is below the desired 200-350 words.",
+        "consistency_confidence": 0.75,
+        "average_response_time": 38.58734027544657,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6857142857142857": [
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email visualize donor impact through human-centered transformation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email depict the family's crisis with specific hardships using empathetic language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email break down tangible aid by specifying resources/services provided?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call to action a soft invitation for continued support (implied rather than direct)?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'grateful', 'hopeful', or 'compassionate'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style primarily storytelling and appreciative?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email written in a semi-formal tone with personal warmth?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with direct gratitude and introduce the beneficiary family?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the email close by reinforcing impact and expressing donor appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the narrative arc: crisis \u2192 intervention \u2192 transformation \u2192 gratitude?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Is the email length within 200-350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email include at least one key phrase: 'thanks to you', 'because of your generosity', or 'made a difference'?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively visualizes donor impact through a compelling transformation story, specifies tangible resources provided, maintains a storytelling, semi-formal, and appreciative tone, introduces the beneficiary family early on, follows the narrative arc, and includes a key phrase ('made a difference').",
+          "weaknesses": "The email lacks explicit emotional language markers such as 'grateful', 'hopeful', or 'compassionate', does not offer a complete closing that reinforces donor appreciation, and the overall length is below the desired 200-350 words.",
+          "consistency_confidence": 0.75,
+          "average_response_time": 38.58734027544657,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6857142857142857,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 5,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 115.76240181922913,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.5714285714285714,
+        "ranking_score": 0.5714285714285714,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email visualize donor impact through human-centered transformation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email depict the family's crisis with specific hardships using empathetic language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email break down tangible aid by specifying resources/services provided?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call to action a soft invitation for continued support (implied rather than direct)?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'grateful', 'hopeful', or 'compassionate'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style primarily storytelling and appreciative?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email written in a semi-formal tone with personal warmth?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with direct gratitude and introduce the beneficiary family?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close by reinforcing impact and expressing donor appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the narrative arc: crisis \u2192 intervention \u2192 transformation \u2192 gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the email length within 200-350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email include at least one key phrase: 'thanks to you', 'because of your generosity', or 'made a difference'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 6,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email excels in visualizing donor impact, employing empathetic language, detailing tangible aid with specific resources, using emotional language and storytelling, and maintaining a semi-formal tone with personal warmth. It opens with a direct expression of gratitude and introduces the beneficiary family clearly.",
+        "weaknesses": "The email lacks a soft call to action for continued support, does not sufficiently close by reinforcing impact and appreciation, falls short of fully following the intended narrative arc, is shorter than the required length, and does not include one of the specified key phrases.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 32.95863580703735,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6857142857142857": [
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email visualize donor impact through human-centered transformation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email depict the family's crisis with specific hardships using empathetic language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email break down tangible aid by specifying resources/services provided?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call to action a soft invitation for continued support (implied rather than direct)?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'grateful', 'hopeful', or 'compassionate'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style primarily storytelling and appreciative?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email written in a semi-formal tone with personal warmth?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with direct gratitude and introduce the beneficiary family?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close by reinforcing impact and expressing donor appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the narrative arc: crisis \u2192 intervention \u2192 transformation \u2192 gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the email length within 200-350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email include at least one key phrase: 'thanks to you', 'because of your generosity', or 'made a difference'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            }
+          ],
+          "strengths": "The email excels in visualizing donor impact, employing empathetic language, detailing tangible aid with specific resources, using emotional language and storytelling, and maintaining a semi-formal tone with personal warmth. It opens with a direct expression of gratitude and introduces the beneficiary family clearly.",
+          "weaknesses": "The email lacks a soft call to action for continued support, does not sufficiently close by reinforcing impact and appreciation, falls short of fully following the intended narrative arc, is shorter than the required length, and does not include one of the specified key phrases.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 32.95863580703735,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5714285714285714,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 6,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 98.87629437446594,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.4,
+        "ranking_score": 0.4,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email visualize donor impact through human-centered transformation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email depict the family's crisis with specific hardships using empathetic language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email break down tangible aid by specifying resources/services provided?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Is the call to action a soft invitation for continued support (implied rather than direct)?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'grateful', 'hopeful', or 'compassionate'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style primarily storytelling and appreciative?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email written in a semi-formal tone with personal warmth?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with direct gratitude and introduce the beneficiary family?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close by reinforcing impact and expressing donor appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the narrative arc: crisis \u2192 intervention \u2192 transformation \u2192 gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the email length within 200-350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email include at least one key phrase: 'thanks to you', 'because of your generosity', or 'made a difference'?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively visualizes donor impact, details the family's crisis with specific hardships, breaks down tangible aid, employs storytelling, and maintains a semi-formal tone with personal warmth.",
+        "weaknesses": "The call to action is too direct rather than a soft invitation, it lacks specific emotional markers like 'grateful', 'hopeful', or 'compassionate', does not open with direct gratitude, fails to close with reinforced impact and donor appreciation, does not fully follow the desired narrative arc, is shorter than the required 200-350 words, and omits the specified key phrases.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 41.814993699391685,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6857142857142857": [
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email visualize donor impact through human-centered transformation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email depict the family's crisis with specific hardships using empathetic language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email break down tangible aid by specifying resources/services provided?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Is the call to action a soft invitation for continued support (implied rather than direct)?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'grateful', 'hopeful', or 'compassionate'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style primarily storytelling and appreciative?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email written in a semi-formal tone with personal warmth?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with direct gratitude and introduce the beneficiary family?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close by reinforcing impact and expressing donor appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the narrative arc: crisis \u2192 intervention \u2192 transformation \u2192 gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the email length within 200-350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email include at least one key phrase: 'thanks to you', 'because of your generosity', or 'made a difference'?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively visualizes donor impact, details the family's crisis with specific hardships, breaks down tangible aid, employs storytelling, and maintains a semi-formal tone with personal warmth.",
+          "weaknesses": "The call to action is too direct rather than a soft invitation, it lacks specific emotional markers like 'grateful', 'hopeful', or 'compassionate', does not open with direct gratitude, fails to close with reinforced impact and donor appreciation, does not fully follow the desired narrative arc, is shorter than the required 200-350 words, and omits the specified key phrases.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 41.814993699391685,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.4,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 125.44722557067871,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 1,
+      "score": 0.8571428571428571
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 2,
+      "score": 0.6857142857142857
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 3,
+      "score": 0.6857142857142857
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 4,
+      "score": 0.5714285714285714
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 5,
+      "score": 0.4
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 918.3594057559967,
+    "success": true,
+    "errors": []
+  }
+}

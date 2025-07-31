@@ -1,0 +1,1186 @@
+{
+  "session_id": "d8ed1254-e5a5-4aa5-9f26-3419dc1a9684",
+  "timestamp": "2025-07-23T00:11:54.913695",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0119",
+    "name": "Call for Participants in a Study on LGBTQ+ Senior Healthcare"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Call for Participants in a Study on LGBTQ+ Senior Healthcare"
+  },
+  "models_used": {
+    "email_models": [
+      "tinyllama-1.1b-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[USER_NAME]\nSubject: Join Our Study on LGBTQ+ Senior Healthcare!\n\nDear [Recipient],\n\nWe hope this email finds you well. We wanted to reach out to you about our upcoming study on LGBTQ+ senior healthcare. As you may know, we have been conducting research on this topic for several years now and have gathered a lot of valuable data. We are now looking for participants who can share their experiences, perspectives, and insights related to this issue.\n\nThe study will be conducted online and will involve a mix of quantitative and qualitative methods. The information gathered will be used to inform policy-makers, healthcare providers, and other stakeholders regarding the needs and challenges faced by LGBTQ+ seniors in terms of healthcare.\n\nTo participate, please visit our website at [LINK] and follow the instructions. You will be asked to complete a short survey, which should take no longer than 10 minutes to complete. If you have any questions or concerns, please don't hesitate to contact us.\n\nThank you for considering this opportunity to contribute to important research. If you have any questions or would like more information, please do not hesitate to get in touch.\n\nBest regards,\n\n[Your Name]\n\n[Sending Organization Name]\n",
+        "generation_time": 18.35108494758606,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Be part of a groundbreaking study on LGBTQ+ senior healthcare!\n\nDear [Recipient],\n\nAs an advocate for LGBTQ+ rights and healthcare equity, I believe you'll be interested in this opportunity to make a difference. We're conducting a study on the unique healthcare needs of LGBTQ+ seniors, and we need participants like you to share your experiences.\n\nBy taking part in this study, you can help shape the future of LGBTQ+ senior healthcare and ensure that all members of our community receive the care they deserve. Our team at [Sending Organization] has been working tirelessly to advance LGBTQ+ rights and improve healthcare access, and we're excited to collaborate with you on this important project.\n\nThe study consists of a series of virtual interviews where you'll have the chance to share your thoughts and experiences related to LGBTQ+ senior healthcare. Your insights will be kept confidential and will contribute to a better understanding of the challenges faced by our community.\n\nTo participate, simply click [LINK] and follow the instructions to schedule your interview. Each interview takes approximately 60 minutes, and you'll receive a $50 gift card as a token of our appreciation for your time and input.\n\nWe hope you'll join us in this effort to create a more inclusive and equitable healthcare system for all LGBTQ+ seniors. Together, we can make a real difference.\n\nThank you for considering this invitation, and we look forward to hearing from you soon.\n\nBest regards,\n\n[Your Name]\n\n[Sending Organization]\n",
+        "generation_time": 44.68141531944275,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "[Subject Line] Call for Participants in Groundbreaking Study on LGBTQ+ Senior Healthcare\n\nDear \\[Name],\n\nAs we age, our healthcare needs change, but one thing remains constant \u2013 the importance of receiving compassionate care that respects who we are. Unfortunately, many LGBTQ+ seniors face significant barriers when seeking quality healthcare, often due to lack of understanding, inadequate training, or outright discrimination.\n\nThis is where you come in. Our research team at The Center for Inclusive Health is launching a groundbreaking study aimed at addressing these disparities and improving the lives of LGBTQ+ seniors nationwide. We're calling on individuals aged 60+ who identify as LGBTQ+ to share their experiences and insights with us.\n\nBy participating in this study, you'll be contributing to a critical body of research that will inform policy changes, educational programs, and healthcare initiatives tailored to meet the unique needs of our community. Your voice matters, and together, we can create a brighter future for all LGBTQ+ seniors.\n\nTo participate, please reply to this email or visit our website at [website URL]. You'll be asked to complete a brief survey and schedule a phone or video interview at your convenience. All participants will receive a $25 gift card as a token of appreciation for their time.\n\nWe're grateful for your consideration and look forward to hearing your story.\n\nSincerely,\n\n\\[Your Name]\nThe Center for Inclusive Health\n\\[Contact Information]\n\n\\*\\*[Join the Study Today](mailto:\\[email address])\\*\\*\n",
+        "generation_time": 112.07557415962219,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Dear Valued Community Member,\n\nWe hope this message finds you well! We\u2019re reaching out today because we believe that every individual deserves respectful and inclusive healthcare\u2014regardless of age or identity. Our nonprofit [NonProfitName], dedicated to advancing equitable care practices across all demographics, has identified a critical gap concerning our elder members within the LGBTQ+ community who often face unique challenges when accessing quality medical services.\n\nRecent studies have highlighted significant disparities faced by older adults identifying as part of the LGBTQ+ spectrum compared to their heterosexual counterparts. These include higher rates of mental health issues due to societal stigma, lesser accessibility to culturally competent providers, and increased instances of discrimination during clinical encounters which can lead to avoidance of necessary healthcare altogether. This situation calls for immediate attention and collective effort towards crafting solutions tailored specifically to these needs.\n\nThis brings us to why YOU matter so much \u2013 You hold immense power through participation; whether sharing personal experiences about navigating senior-level healthcare systems while being openly gay/lesbian/bisexual/transgender etc.; providing insights into how best service delivery models could be improved upon taking account cultural sensitivities at play here; advocating passionately against biases prevalent among some practitioners & policy makers alike ensuring voices like yours aren\u2019t silenced anymore but heard loud enough where change becomes possible over time . That said ,we invite ALL interested parties including research institutions academicians professionals policymakers activists families friends relatives colleagues neighbors even strangers willingness contributing whatever way feasible will greatly assist pave pathways toward better understanding specific requirements leading ultimately enhancing overall experience surrounding aging process amongst lgbtq seniors population worldwide.. The study requires volunteers aged between 60 years old upwards keen interest working closely alongside experts spanning diverse fields such psychology gerontology social work nursing medicine public health law education technology administration finance economics marketing communications design arts media entertainment culture tourism sports recreation leisure travel retail fashion cosmetic beauty hair salon barbershop gym fitness club restaurant cafe pub brewery wine cellar bookstore music concert theatre opera ballet dance drama film photography videogame video game console computer software application mobile app smartphone tablet laptop desktop pc server cloud computing big data analytics artificial intelligence machine learning robotics automation blockchain cryptocurrency internet web hosting domain name registration website development ecommerce online shopping digital payment methods cyber security information privacy intellectual property patents trademarks brand management advertising promotion product placement sponsorship licensing franchising mergers acquisitions joint ventures partnerships contracts agreements arbitration mediation litigation dispute resolution alternative dispute mechanisms international trade sanctions embargo export import customs duties tariffs quotas regulations laws ordinances bylaws codes standards procedures protocols guidelines manuals handbooks brochures pamphlets flyers postcards stickers business cards letterhead stationery forms templates checklists spreadsheets databases applications programs code libraries frameworks algorithms modules components subsystems hardware interfaces peripherals devices equipment instruments tools apparatus machinery materials substances chemical compounds elements atoms particles waves frequencies wavelengths colors hues shades tints chromatic spectra spectral bands light rays radiant energy luminosity brightness darkness gloom obscurity shadow umbra penumbra twilight dusk dawn sunrise sunset moonlight lunar phases celestial bodies stars constellations galaxies nebulae supernovae black holes singularities dark matter antimatter quantum entanglement string theory general relativity special relativity electromagnetism magnetism electric charge currents voltages amperage ohms resistance capacitors inductors transformers motors generators engines turbines propellers wings airfoils fuselages control surfaces rudders elevators flaps slats spoilers trim tabs landing gears brakes wheels axles suspension steering linkages drivetrains transmissions differentials clutches torque converters automatic transaxles semi truck rigging cranes hoisting winches derricks drills milling machines lathe turning centers grinding boring borings heads presses stamping dies casting molds extrusion roll forming rolling stands jigs fixtures toolrooms shop floor fabrication assembly lines production scheduling inventories stockpiles logistics distribution supply chains procurement purchasing sourcing raw materials processing manufacturing operations maintenance repair parts replacement spare parts repairs servicing calibration testing measurements accuracy precision tolerances limits deviations errors uncertainties variance standard deviation statistics probability distributions random variables events occurrences frequency rate density ratios proportions percentages fractions decimals exponents powers roots square root cube root factorization prime numbers composite integers whole number rational irrational algebraic equations linear quadratic exponential hyperbolic trigonometric functions circular geometry spherical solid cuboid rectangular pyramid cone cylinder sphere ellipsoid paraboloid hyperboloid conic section Pythagorean theorem Euclidean space Cartesian coordinate plane polar coordinates vector spaces Hilbert space topology metric measure Lebesgue integration Riemann integral Cauchy sequence convergence uniform continuity differentiability integrable function smooth curve arc length area volume surface integrals Stoke\u2019s Theorem Green\u2019s Theorem Gauss divergence theorem Gradient Vector Field Laplace Operator Poisson Equation Heat equation Wave equation Schrodinger equation Maxwell\u2019s equations Faraday\u2019s Law Ampere\u2019s Circuit Rule Ohm\u2019s Law Kirchhoff Voltage Current Loop Kirchoff Junction KVLKCL Norton Contrary Mesh Analysis Method Superposition Principle Linear Algebra Matrix Multiplication Determinant Inverse Adjugate Formula Gaussian Elimination Back Substitution Rank Nullity Dimensional Reduction Homogeneous Systems Nonhomogeneous Systems Diophantine Equations Factorization Prime Number Theory Modular Arithmetic RSA Algorithm Elliptic Curve Digital Signature Public Key Encryption Private Key Asymmetric Ciphertext Message Symmetric Cipher Block Chaining XOR One Time Pad Vernam Correlation Attack Frequency Hopper Stream Cipher Synchronize Sequence Codebook Book Cipher Playfair Square Vigen\u00e8re Tableau Transposition Cipher Rail Fence Decrypt Caesar Shift Polyalphabetic Polygraph Encipher Decipher Hash Function Collision Resistance Preimage Resistance Second Preimage Resistance Salt Randomized IV MAC Authentication Challenge Response Protocol Kerberos Ticket Granting Server Security Tokens Biometrics Two-Factor Authentication Multi-Factor Authentication Single Sign On Password Policy Strong Passwords Complex Characters Case Insensitive Expiration Date Lockout Threshold Captcha ReCAPTCHA Secure Socket Layer Transport Layer Security Internet Protocol Port Scanning Packet Sniffing Denial Of Service Brute Force Cracking Buffer Overflow SQL Injection Cross Site Scripting Man-In-The-Middle Session Hijacking Clickjacking Phishing Spear Phishing Whaling Watering Hole Attack Social Engineering URL Shortening Services Malware Spyware Virus Trojan Botnet Rootkit Drive By Download Tor Browser Bundle Steganography Anonymizing Network Bitcoin Mobile Payments Contactless Credit Card EMV Magnetic Stripe Hardware Token Software Keystroke Logger\n",
+        "generation_time": 79.80631685256958,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your Name], [Your Company Name]\nSubject: Invitation to Join Our Exclusive LGBTQ+ Senior Healthcare Study\n\nDear [Recipient's Name],\n\nI hope this email finds you well. As a valued member of our community, we wanted to reach out to you about an exciting opportunity that could make a significant impact on the lives of many LGBTQ+ seniors.\n\nWe are currently conducting a study on the healthcare needs of LGBTQ+ seniors, which aims to understand their unique challenges and provide tailored solutions to improve their overall wellbeing. The findings will be used to develop evidence-based policies and programs aimed at addressing these disparities.\n\nAs part of this study, we are seeking participants aged 60 years and above who identify as LGBTQ+. If you meet this criteria, please click on the link below to sign up for our brief online survey. Your participation would mean a lot to us and could potentially change the course of history for LGBTQ+ seniors' access to quality healthcare.\n\nLink: https://surveylink.com/s/8ZzTcKj\n\nThank you for considering joining us in this important endeavor. We appreciate your time and look forward to hearing back from you soon.\n\nBest regards,\n\n[Your Name]\n[Your Company Name]\n",
+        "generation_time": 131.9820430278778,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key themes: healthcare accessibility, lived experiences, and community impact?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email present the problem as an implied knowledge gap regarding underserved community needs?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email propose research through confidential interviews as the solution approach?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email contain a low-pressure call-to-action with practical instructions in the final paragraph?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use inviting, respectful, and appreciative emotional language?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email employ an informational communication style with gentle persuasion?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email maintain a professional yet approachable formality level?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include the phrases: 'We invite you to participate', 'Your experiences matter', and 'Deeply appreciate your time'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email consist of exactly 4 paragraphs?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email follow the information flow: study purpose \u2192 participant criteria \u2192 participation details \u2192 call-to-action?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Is the email approximately 150-200 words in length?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use inclusive language such as 'LGBTQ+ seniors', 'diverse backgrounds', and 'all identities'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 264.791597366333,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.5454545454545454,
+        "ranking_score": 0.5454545454545454,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes: healthcare accessibility, lived experiences, and community impact?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem as an implied knowledge gap regarding underserved community needs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose research through confidential interviews as the solution approach?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email contain a low-pressure call-to-action with practical instructions in the final paragraph?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use inviting, respectful, and appreciative emotional language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email employ an informational communication style with gentle persuasion?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email maintain a professional yet approachable formality level?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include the phrases: 'We invite you to participate', 'Your experiences matter', and 'Deeply appreciate your time'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email consist of exactly 4 paragraphs?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the information flow: study purpose \u2192 participant criteria \u2192 participation details \u2192 call-to-action?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Is the email approximately 150-200 words in length?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use inclusive language such as 'LGBTQ+ seniors', 'diverse backgrounds', and 'all identities'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 3,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email offers a clear call-to-action with practical instructions, maintains a respectful, friendly, and professional tone, employs an informational style with gentle persuasion, follows a structured information flow with four paragraphs, and meets the word count requirement.",
+        "weaknesses": "The email does not fully incorporate all key themes (missing explicit mention of healthcare accessibility and community impact), fails to present the problem as an implied knowledge gap and to propose confidential interviews as a research approach, omits the required specific phrases, and does not use all the specified inclusive language.",
+        "consistency_confidence": 0.6666666666666666,
+        "average_response_time": 35.68999322255453,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.3939393939393939": [
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes: healthcare accessibility, lived experiences, and community impact?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem as an implied knowledge gap regarding underserved community needs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose research through confidential interviews as the solution approach?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email contain a low-pressure call-to-action with practical instructions in the final paragraph?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use inviting, respectful, and appreciative emotional language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email employ an informational communication style with gentle persuasion?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email maintain a professional yet approachable formality level?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include the phrases: 'We invite you to participate', 'Your experiences matter', and 'Deeply appreciate your time'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email consist of exactly 4 paragraphs?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the information flow: study purpose \u2192 participant criteria \u2192 participation details \u2192 call-to-action?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Is the email approximately 150-200 words in length?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use inclusive language such as 'LGBTQ+ seniors', 'diverse backgrounds', and 'all identities'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            }
+          ],
+          "strengths": "The email offers a clear call-to-action with practical instructions, maintains a respectful, friendly, and professional tone, employs an informational style with gentle persuasion, follows a structured information flow with four paragraphs, and meets the word count requirement.",
+          "weaknesses": "The email does not fully incorporate all key themes (missing explicit mention of healthcare accessibility and community impact), fails to present the problem as an implied knowledge gap and to propose confidential interviews as a research approach, omits the required specific phrases, and does not use all the specified inclusive language.",
+          "consistency_confidence": 0.6666666666666666,
+          "average_response_time": 35.68999322255453,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5454545454545454,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 3,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 107.07035255432129,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.48484848484848486,
+        "ranking_score": 0.48484848484848486,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes: healthcare accessibility, lived experiences, and community impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem as an implied knowledge gap regarding underserved community needs?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose research through confidential interviews as the solution approach?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email contain a low-pressure call-to-action with practical instructions in the final paragraph?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use inviting, respectful, and appreciative emotional language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email employ an informational communication style with gentle persuasion?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email maintain a professional yet approachable formality level?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include the phrases: 'We invite you to participate', 'Your experiences matter', and 'Deeply appreciate your time'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email consist of exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the information flow: study purpose \u2192 participant criteria \u2192 participation details \u2192 call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the email approximately 150-200 words in length?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use inclusive language such as 'LGBTQ+ seniors', 'diverse backgrounds', and 'all identities'?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email clearly addresses key themes (healthcare accessibility, lived experiences, community impact), proposes confidential interviews for research, and uses an inviting, respectful, and professional tone with a gentle persuasive style. It is also structured into exactly 4 paragraphs.",
+        "weaknesses": "The email does not explicitly present the problem as a knowledge gap regarding underserved community needs, lacks a detailed, low-pressure call-to-action with practical instructions, omits the specified inviting phrases, does not fully follow the required information flow (missing distinct participant criteria), falls short of the required word count, and does not employ all of the specified inclusive language.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 41.95029218991598,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.3939393939393939": [
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes: healthcare accessibility, lived experiences, and community impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem as an implied knowledge gap regarding underserved community needs?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose research through confidential interviews as the solution approach?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email contain a low-pressure call-to-action with practical instructions in the final paragraph?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use inviting, respectful, and appreciative emotional language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email employ an informational communication style with gentle persuasion?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email maintain a professional yet approachable formality level?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include the phrases: 'We invite you to participate', 'Your experiences matter', and 'Deeply appreciate your time'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email consist of exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the information flow: study purpose \u2192 participant criteria \u2192 participation details \u2192 call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the email approximately 150-200 words in length?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use inclusive language such as 'LGBTQ+ seniors', 'diverse backgrounds', and 'all identities'?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email clearly addresses key themes (healthcare accessibility, lived experiences, community impact), proposes confidential interviews for research, and uses an inviting, respectful, and professional tone with a gentle persuasive style. It is also structured into exactly 4 paragraphs.",
+          "weaknesses": "The email does not explicitly present the problem as a knowledge gap regarding underserved community needs, lacks a detailed, low-pressure call-to-action with practical instructions, omits the specified inviting phrases, does not fully follow the required information flow (missing distinct participant criteria), falls short of the required word count, and does not employ all of the specified inclusive language.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 41.95029218991598,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.48484848484848486,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 125.85696768760681,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.3939393939393939,
+        "ranking_score": 0.3939393939393939,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes: healthcare accessibility, lived experiences, and community impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem as an implied knowledge gap regarding underserved community needs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose research through confidential interviews as the solution approach?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email contain a low-pressure call-to-action with practical instructions in the final paragraph?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use inviting, respectful, and appreciative emotional language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email employ an informational communication style with gentle persuasion?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email maintain a professional yet approachable formality level?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include the phrases: 'We invite you to participate', 'Your experiences matter', and 'Deeply appreciate your time'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email consist of exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the information flow: study purpose \u2192 participant criteria \u2192 participation details \u2192 call-to-action?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Is the email approximately 150-200 words in length?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use inclusive language such as 'LGBTQ+ seniors', 'diverse backgrounds', and 'all identities'?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 3,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email clearly addresses key themes of healthcare accessibility and lived experiences, presents the underserved community's challenges effectively, employs a respectful, informational and professional tone, and generally follows the intended information flow.",
+        "weaknesses": "It does not propose confidential interviews as the research method, lacks a clear low-pressure call-to-action with practical instructions, omits the required invitation phrases, does not consist of exactly 4 paragraphs, falls short of the target word count, and does not fully use the detailed inclusive language as specified.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 38.47236657142639,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.3939393939393939": [
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes: healthcare accessibility, lived experiences, and community impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem as an implied knowledge gap regarding underserved community needs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose research through confidential interviews as the solution approach?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email contain a low-pressure call-to-action with practical instructions in the final paragraph?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use inviting, respectful, and appreciative emotional language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email employ an informational communication style with gentle persuasion?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email maintain a professional yet approachable formality level?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include the phrases: 'We invite you to participate', 'Your experiences matter', and 'Deeply appreciate your time'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email consist of exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the information flow: study purpose \u2192 participant criteria \u2192 participation details \u2192 call-to-action?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Is the email approximately 150-200 words in length?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use inclusive language such as 'LGBTQ+ seniors', 'diverse backgrounds', and 'all identities'?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email clearly addresses key themes of healthcare accessibility and lived experiences, presents the underserved community's challenges effectively, employs a respectful, informational and professional tone, and generally follows the intended information flow.",
+          "weaknesses": "It does not propose confidential interviews as the research method, lacks a clear low-pressure call-to-action with practical instructions, omits the required invitation phrases, does not consist of exactly 4 paragraphs, falls short of the target word count, and does not fully use the detailed inclusive language as specified.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 38.47236657142639,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.3939393939393939,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 3,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 115.41748833656311,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.3939393939393939,
+        "ranking_score": 0.3939393939393939,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes: healthcare accessibility, lived experiences, and community impact?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem as an implied knowledge gap regarding underserved community needs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose research through confidential interviews as the solution approach?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email contain a low-pressure call-to-action with practical instructions in the final paragraph?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use inviting, respectful, and appreciative emotional language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email employ an informational communication style with gentle persuasion?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email maintain a professional yet approachable formality level?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include the phrases: 'We invite you to participate', 'Your experiences matter', and 'Deeply appreciate your time'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email consist of exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the information flow: study purpose \u2192 participant criteria \u2192 participation details \u2192 call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the email approximately 150-200 words in length?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email use inclusive language such as 'LGBTQ+ seniors', 'diverse backgrounds', and 'all identities'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 3,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully incorporates key themes of healthcare accessibility and inclusion, employs a respectful and professional tone, uses gentle persuasion, and meets the required word count. It also utilizes inclusive language when addressing community members.",
+        "weaknesses": "The email does not propose research through confidential interviews, lacks a low-pressure call-to-action with practical instructions, omits the specified phrases, does not adhere to the structural requirement of exactly four paragraphs, and fails to follow the prescribed information flow.",
+        "consistency_confidence": 0.75,
+        "average_response_time": 30.50205159187317,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.3939393939393939": [
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes: healthcare accessibility, lived experiences, and community impact?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem as an implied knowledge gap regarding underserved community needs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose research through confidential interviews as the solution approach?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email contain a low-pressure call-to-action with practical instructions in the final paragraph?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use inviting, respectful, and appreciative emotional language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email employ an informational communication style with gentle persuasion?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email maintain a professional yet approachable formality level?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include the phrases: 'We invite you to participate', 'Your experiences matter', and 'Deeply appreciate your time'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email consist of exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the information flow: study purpose \u2192 participant criteria \u2192 participation details \u2192 call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the email approximately 150-200 words in length?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email use inclusive language such as 'LGBTQ+ seniors', 'diverse backgrounds', and 'all identities'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            }
+          ],
+          "strengths": "The email successfully incorporates key themes of healthcare accessibility and inclusion, employs a respectful and professional tone, uses gentle persuasion, and meets the required word count. It also utilizes inclusive language when addressing community members.",
+          "weaknesses": "The email does not propose research through confidential interviews, lacks a low-pressure call-to-action with practical instructions, omits the specified phrases, does not adhere to the structural requirement of exactly four paragraphs, and fails to follow the prescribed information flow.",
+          "consistency_confidence": 0.75,
+          "average_response_time": 30.50205159187317,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.3939393939393939,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 3,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 91.50885081291199,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.36363636363636365,
+        "ranking_score": 0.36363636363636365,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes: healthcare accessibility, lived experiences, and community impact?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem as an implied knowledge gap regarding underserved community needs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose research through confidential interviews as the solution approach?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email contain a low-pressure call-to-action with practical instructions in the final paragraph?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use inviting, respectful, and appreciative emotional language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email employ an informational communication style with gentle persuasion?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email maintain a professional yet approachable formality level?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include the phrases: 'We invite you to participate', 'Your experiences matter', and 'Deeply appreciate your time'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email consist of exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the information flow: study purpose \u2192 participant criteria \u2192 participation details \u2192 call-to-action?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Is the email approximately 150-200 words in length?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email use inclusive language such as 'LGBTQ+ seniors', 'diverse backgrounds', and 'all identities'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 2,
+          "medium": 3,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email appropriately implies a knowledge gap (Criterion 2), provides a low-pressure call-to-action with clear instructions (Criterion 4), uses inviting and respectful language (Criteria 5, 6, 7), is around the expected word count (Criterion 11), and employs inclusive language by specifically referring to LGBTQ+ seniors (Criterion 12).",
+        "weaknesses": "It does not explicitly include all key themes such as 'lived experiences' along with healthcare accessibility and community impact (Criterion 1), does not propose research via confidential interviews (Criterion 3), omits the specific required phrases (Criterion 8), fails to have exactly 4 paragraphs (Criterion 9), and does not strictly follow the detailed information flow (Criterion 10).",
+        "consistency_confidence": 0.5833333333333334,
+        "average_response_time": 44.871824423472084,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.3939393939393939": [
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes: healthcare accessibility, lived experiences, and community impact?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem as an implied knowledge gap regarding underserved community needs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose research through confidential interviews as the solution approach?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email contain a low-pressure call-to-action with practical instructions in the final paragraph?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use inviting, respectful, and appreciative emotional language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email employ an informational communication style with gentle persuasion?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email maintain a professional yet approachable formality level?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include the phrases: 'We invite you to participate', 'Your experiences matter', and 'Deeply appreciate your time'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email consist of exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the information flow: study purpose \u2192 participant criteria \u2192 participation details \u2192 call-to-action?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Is the email approximately 150-200 words in length?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email use inclusive language such as 'LGBTQ+ seniors', 'diverse backgrounds', and 'all identities'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            }
+          ],
+          "strengths": "The email appropriately implies a knowledge gap (Criterion 2), provides a low-pressure call-to-action with clear instructions (Criterion 4), uses inviting and respectful language (Criteria 5, 6, 7), is around the expected word count (Criterion 11), and employs inclusive language by specifically referring to LGBTQ+ seniors (Criterion 12).",
+          "weaknesses": "It does not explicitly include all key themes such as 'lived experiences' along with healthcare accessibility and community impact (Criterion 1), does not propose research via confidential interviews (Criterion 3), omits the specific required phrases (Criterion 8), fails to have exactly 4 paragraphs (Criterion 9), and does not strictly follow the detailed information flow (Criterion 10).",
+          "consistency_confidence": 0.5833333333333334,
+          "average_response_time": 44.871824423472084,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.36363636363636365,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 2,
+            "medium": 3,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 134.6158549785614,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 1,
+      "score": 0.5454545454545454
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 2,
+      "score": 0.48484848484848486
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 3,
+      "score": 0.3939393939393939
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 4,
+      "score": 0.3939393939393939
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 5,
+      "score": 0.36363636363636365
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 972.6714942455292,
+    "success": true,
+    "errors": []
+  }
+}

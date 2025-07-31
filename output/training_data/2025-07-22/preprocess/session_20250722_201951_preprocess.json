@@ -1,0 +1,1196 @@
+{
+  "session_id": "dd1ba1fa-afb2-4648-8fa4-0f971cb9e039",
+  "timestamp": "2025-07-22T20:19:51.632214",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0103",
+    "name": "World Oceans Day: A Call to Reduce Your Plastic Footprint"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about World Oceans Day: A Call to Reduce Your Plastic Footprint"
+  },
+  "models_used": {
+    "email_models": [
+      "tinyllama-1.1b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "vicuna-7b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[Your Name]\nSubject: World Oceans Day: A Call to Reduce Your Plastic Footprint\n\nDear [Recipient],\n\nAs we celebrate World Oceans Day on June 8th, I wanted to share some important information about plastic pollution in our oceans. According to the United Nations Environment Programme (UNEP), there are now over 8 million tons of plastic waste in our oceans every year, with plastic bags, straws, and other single-use items being the most common culprits. This is a serious issue that requires immediate attention.\n\nIn response, I would like to encourage you to make a small but meaningful change in your daily life. Here are some ways you can reduce your plastic footprint:\n\n1. Bring reusable bags instead of using disposable ones.\n2. Choose products made from recycled materials or biodegradable plastics.\n3. Turn off lights and unplug electronics when not in use.\n4. Avoid buying products packaged in plastic.\n5. Support organizations that work towards reducing plastic waste.\n\nThe impact of these small changes can be significant. For instance, a study by the Ellen MacArthur Foundation found that if all plastic packaging were replaced with reusable alternatives, it could prevent up to 70% of ocean plastic from entering our oceans.\n\nTo make this effort even easier, I am offering a special discount code for my readers. Simply use the code \"WOODY\" at checkout to receive 10% off your purchase until June 9th.\n\nThank you for taking the time to read this email. Please let me know if you have any questions or need further information.\n\nBest regards,\n\n[Your Name]\n",
+        "generation_time": 17.09441900253296,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join Us in Protecting Our Blue Planet This World Oceans Day!\n\nDear Ocean Advocates,\n\nAs we approach this year\u2019s World Oceans Day\u2014a time when our planet showcases its vast blue beauty\u2014we at [Ocean Conservation Alliance], feel compelled to remind you that beneath these waves lies a silent struggle against pollution. The oceans face unprecedented threats due to plastic waste choking marine life and disrupting ecosystems worldwide. But there is hope; every individual can make a difference by reducing their reliance on single-use plastics.\n\nThe alarming rate at which oceanic creatures ingest microplastics has led us down a dangerous path where even remote islands like Midway Atoll bear witness to devastating consequences. These tiny particles accumulate within fish tissues, eventually reaching humans through seafood consumption \u2013 posing significant health risks over time. Moreover, larger debris fragments become hazardous navigational obstructions threatening both aquatic species and maritime safety alike.\n\nIt falls upon each one of us today \u2014and beyond\u2013to act decisively towards safeguarding Earth\u2019s precious waterscapes before irreversible damage takes hold permanently. By choosing reusable alternatives such as bamboo straws instead of disposable ones made from non-biodegradable materials , opting out of excess packaged goods whenever possible, recycling diligently...these simple yet impactful actions collectively contribute toward preserving vital habitats teeming with diverse forms of life found nowhere else but underwater realms across continents . Let us pledge ourselves once again around World Oceans Day celebrations into becoming conscientious stewards who prioritize sustainability above convenience while raising awareness amongst friends family colleagues acquaintances about how small changes matter immensely given current environmental challenges facing global communities together..\n\nTogether let's turn backtime trends & create ripples effect leading upstream till they reach shores far away affecting millions living near coastlines everywhere ensuring future generations inherit clean seas abundant richness rather than empty void filled solely by memories captured photographically documentary style long gone forever lost amidst rising temperatures acidifying coral bleaching events increasing frequency intensity magnitude severity levels never seen previously observed ever since industrial revolution began altering climate patterns irrevocably changing landscapes natural resources availability food security livelihood options economic opportunities cultural identities entire societies interconnected globally sharing common destiny bound tight knit fabric woven intricate complex web spanning all corners earth regardless geographical boundaries national borders political ideologies religious beliefs ethnic groups social classes demographics age genders sex orientations abilities differences background experiences perspectives viewpoints opinions values principles morals virtues character traits qualifications skills competencies knowledge understanding insights wisdom experience intuition instinct intelligence empathy sympathy kindness charity love forgiveness mercy grace humility gratitude thankfulness appreciation respect dignity honor integrity honesty sincerity authenticity transparency accountability responsibility ownership commitment dedication passion enthusiasm motivation inspiration courage bravery resilience perseverance determination resolve tenacity strength willpower endurance stamina energy vigor spirit soul essence heartbeat rhythm pulse flow circulation movement motion dynamics velocity acceleration speed momentum kinetic potential thermal conduction convection radiation absorption reflection refraction diffraction scattering dispersion diffusion osmosis filtration sedimentation precipitation condensation evaporation sublimation crystallization melting freezing fusion fission decay radioactivity nuclear reaction chemical bond ion exchange molecular structure atomic nucleus electron orbital hybridization quantum mechanics thermodynamics entropy enthalpy Gibbs free energy Helmholtz free energy heat capacity specific heat latent heat sensible heat phase transition boiling point critical temperature superheated vapor pressure saturation curve Clapeyron equation Antoine equation Van der Waals equation ideal gas law Dalton\u2019s Law Boyle\u2019s Law Charles\u2019 Law Gay-Lussac\u2019s Law Avogadro\u2019s Law Henry\u2019s Law Raoult\u2019s Law Le Chatelier\u2019s Principle equilibrium constant stoichiometry limiting reactant theoretical yield percent yield empirical formula molar mass balanced equations systematic nomenclature IUPAC naming conventions organic chemistry functional group classification hydrocarbons aliphatic unsaturated cyclic heterocycles halogen derivatives nitriles amines thiols sulfides phosphorus oxide silicon fluorine boron carbon monoxide carboxyl hydrazones aziridines ketene epoxides triazenes diazoalkanes dihydropyridines imines pyrylium salts benzenoids phenol esters acids lactams diketones furan rings naphtalenes anthracenes indoles quinoxalines chromophores auxochromes aryl radical cations electrophiles alkyl ligands metalloproteins enzymes catalyst poisons substrates products side effects interactions metabolism bioavailability biotransformation excretion elimination half-life clearance volume distribution concentration dosage formulation administration route delivery mechanism site target affinity efficacy potency synergistic antagonistic adverse drug interaction contraindication allergy hypersensitivity intolerance tolerance cross sensitivity idiosyncratic response cumulative dose interval duration treatment regimen prophylaxis maintenance therapy adjunct support care palliative management alternative complementary integrative medicine conventional Western medical model evidence based practice clinical trial research methodology data analysis statistical inference hypothesis testing correlation causation confounding bias randomized controlled double blind placebo nocebo lead indicator outcome measure dependent variable independent variable control variables covariates mediator moderator extraneous variable artifact selection sampling frame power sample size margin of error confidence level significance threshold alpha beta eta omega zeta xi ypsilon lambda mu nu pi iota delta epsilon chi square F statistic Pearson coefficient Spearman rank order Correlation Coefficient Kendall Tau Bivariate Analysis Multivariate Regression Model Linear regression logistic regression Cox proportional hazards survival analysis Kaplan Meier estimator Proportional odds ordinal logistic regression Ordinary least squares ordinary quantile generalized linear models robust standard errors clustered sandwich variance adjustments fixed effects panel data longitudinal study cohort sequential design prospective retrospective case series observational analytic descriptive exploratory explanatory inferential inductive deductive correlational experimental quasi experiment mixed methods grounded theory phenomenological hermeneutic interpretivist constructivist postmodern feminist standpoint epistemology paradigm ontology axiology metaethics normativity value neutral objectivity subjectivity relativism absolutism moral philosophy applied ethics virtue ethics utilitarian consequentialism Kantian deontology justice fairness equality equity autonomy consent informed decision making patient centered person centred holistic integrated comprehensive collaborative teamwork multidisciplinary multi professional shared governance self directed learning reflective practicum experiential education continuous quality improvement lifelong learning assessment evaluation feedback reporting documentation record keeping audit trail accreditation certification credentialing licensure registration renewal continuing education training workshop seminar\n",
+        "generation_time": 77.07010197639465,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "World Oceans Day: A Call to Reduce Your Plastic Footprint\n\nSubject: Join the Movement to Save Our Oceans\n\nDear [Name],\n\nToday marks World Oceans Day, a day when we come together to celebrate the beauty and importance of our oceans. But behind this celebration lies a harsh reality: our oceans are facing unprecedented threats, including plastic pollution.\n\nEvery year, millions of tons of plastic waste enter our oceans, harming marine life and contaminating the food chain. The consequences are devastating: sea turtles mistake plastic bags for jellyfish, fish ingest microplastics that can harm humans who eat them, and coral reefs suffocate under a blanket of plastic debris.\n\nBut there is hope! As a valued member of the Ocean Conservancy community, you have the power to make a difference. By reducing your plastic footprint, you can help protect our oceans and the incredible creatures that call them home.\n\nHere are some simple ways to get started:\n\n\u2022 Refuse single-use plastics like straws, bags, and water bottles\n\u2022 Choose products with minimal packaging or those that use biodegradable materials\n\u2022 Support companies that prioritize sustainability and ocean conservation\n\nThe good news is that many organizations, governments, and individuals are already working towards a plastic-free future. But we need your help to amplify these efforts!\n\nWill you join us in making a commitment to reduce your plastic footprint? Together, we can create a wave of change that will inspire others to follow suit.\n\n**Take the first step today by signing our pledge to reduce plastic waste. <https://www.oceanconservancy.org/plastic-pollution-pledge/>**\n",
+        "generation_time": 127.54538464546204,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[YOUR_EMAIL_HERE]\nSubject Line: Celebrate World Oceans Day by Reducing Your Plastic Footprint\n\nDear [Recipient],\n\nToday marks World Oceans Day, an opportunity to reflect on the vastness and beauty of our planet's oceans while also taking action towards preserving them for future generations. As one of Earth's seven continents, the ocean plays a crucial role in sustaining life on our planet, providing habitats for countless marine species and supporting millions of livelihoods around the world.\n\nUnfortunately, plastic pollution continues to threaten our oceans' health and viability. Each year, over 8 million tons of plastic waste enter our oceans, suffocating marine animals and damaging ecosystems. This alarming trend can be significantly reduced if we all take responsibility and commit to reducing our plastic footprint.\n\nAs a part of this global effort, I am calling on you to join us in making a difference. Here are some simple steps you can take today to reduce your plastic consumption:\n\n- Bring reusable bags when shopping\n- Avoid single-use plastics like straws, utensils, and water bottles\n- Choose products made from sustainable materials instead of disposable ones\n- Recycle properly and educate others about proper recycling practices\n- Support companies that prioritize sustainability and environmental stewardship\n\nBy working together, we can make a significant impact on protecting our oceans and preserving their natural beauty. So let's celebrate World Oceans Day by committing to reducing our plastic footprint and doing our part to preserve these magnificent creatures and their habitat.\n\nThank you for being a part of this important movement.\n\nSincerely,\n\n[Your Name]\n\n[SENDING_ORGANIZATION]\n",
+        "generation_time": 165.6131157875061,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "<studio\n",
+        "generation_time": 35.80803084373474,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key themes of ocean conservation, plastic pollution, and individual responsibility?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Is the problem presented with evidence-based tangible examples?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the solution approach focus on actionable individual steps?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the call-to-action offer clear, multi-option actions at the conclusion?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'concerned'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style persuasive and motivational?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "style"
+        },
+        {
+          "question": "Is the formality level semi-formal with emotional appeal?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email have exactly 4 paragraphs?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "structure"
+        },
+        {
+          "question": "Does the opening acknowledge an event and use shared-value framing?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the closing include an empowering call-to-action with organizational sign-off?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email include at least one key phrase: 'plastic footprint', 'marine life', 'make a difference', or 'simple changes'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Is the email within the 200-300 word count range?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 237.1115448474884,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.7948717948717948,
+        "ranking_score": 0.7948717948717948,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of ocean conservation, plastic pollution, and individual responsibility?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented with evidence-based tangible examples?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach focus on actionable individual steps?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action offer clear, multi-option actions at the conclusion?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'concerned'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and motivational?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal with emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the opening acknowledge an event and use shared-value framing?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the closing include an empowering call-to-action with organizational sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include at least one key phrase: 'plastic footprint', 'marine life', 'make a difference', or 'simple changes'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email within the 200-300 word count range?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 3,
+          "high": 4,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email incorporates the essential themes of ocean conservation and plastic pollution, provides evidence-based examples, actionable individual steps, and persuasive, motivational language in a semi-formal style. It also uses shared-value framing with an event-focused opening and includes key phrases as required.",
+        "weaknesses": "The closing is incomplete; it lacks a fully empowering call-to-action with an organizational sign-off, and the overall email does not meet the specified 200-300 word count requirement.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 68.17792797088623,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6153846153846154": [
+              "phi-3-mini-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of ocean conservation, plastic pollution, and individual responsibility?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented with evidence-based tangible examples?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach focus on actionable individual steps?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action offer clear, multi-option actions at the conclusion?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'concerned'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and motivational?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the opening acknowledge an event and use shared-value framing?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the closing include an empowering call-to-action with organizational sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include at least one key phrase: 'plastic footprint', 'marine life', 'make a difference', or 'simple changes'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email within the 200-300 word count range?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email incorporates the essential themes of ocean conservation and plastic pollution, provides evidence-based examples, actionable individual steps, and persuasive, motivational language in a semi-formal style. It also uses shared-value framing with an event-focused opening and includes key phrases as required.",
+          "weaknesses": "The closing is incomplete; it lacks a fully empowering call-to-action with an organizational sign-off, and the overall email does not meet the specified 200-300 word count requirement.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 68.17792797088623,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.7948717948717948,
+          "priority_breakdown": {
+            "very high": 3,
+            "high": 4,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 204.53445887565613,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.6153846153846154,
+        "ranking_score": 0.6153846153846154,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of ocean conservation, plastic pollution, and individual responsibility?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented with evidence-based tangible examples?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach focus on actionable individual steps?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action offer clear, multi-option actions at the conclusion?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'concerned'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and motivational?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal with emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening acknowledge an event and use shared-value framing?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the closing include an empowering call-to-action with organizational sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include at least one key phrase: 'plastic footprint', 'marine life', 'make a difference', or 'simple changes'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email within the 200-300 word count range?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 4,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively incorporates core conservation themes, provides evidence-based examples, suggests actionable individual steps, adopts a persuasive and semi-formal tone with shared-value framing in the opening, and includes a key phrase ('make a difference').",
+        "weaknesses": "The email is truncated and lacks a clear, multi-option call-to-action with proper organizational sign-off, does not use specific emotional language markers, fails to meet the structural requirement of having exactly 4 paragraphs, and falls short of the required word count.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 71.26718628406525,
+        "generation_attempts": 2,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6153846153846154": [
+              "phi-3-mini-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of ocean conservation, plastic pollution, and individual responsibility?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented with evidence-based tangible examples?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach focus on actionable individual steps?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action offer clear, multi-option actions at the conclusion?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'concerned'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and motivational?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening acknowledge an event and use shared-value framing?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the closing include an empowering call-to-action with organizational sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include at least one key phrase: 'plastic footprint', 'marine life', 'make a difference', or 'simple changes'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email within the 200-300 word count range?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively incorporates core conservation themes, provides evidence-based examples, suggests actionable individual steps, adopts a persuasive and semi-formal tone with shared-value framing in the opening, and includes a key phrase ('make a difference').",
+          "weaknesses": "The email is truncated and lacks a clear, multi-option call-to-action with proper organizational sign-off, does not use specific emotional language markers, fails to meet the structural requirement of having exactly 4 paragraphs, and falls short of the required word count.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 71.26718628406525,
+          "generation_attempts": 2,
+          "total_criteria": 12,
+          "weighted_score": 0.6153846153846154,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 4,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 327.8156409263611,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.6153846153846154,
+        "ranking_score": 0.6153846153846154,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of ocean conservation, plastic pollution, and individual responsibility?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented with evidence-based tangible examples?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach focus on actionable individual steps?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action offer clear, multi-option actions at the conclusion?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'concerned'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and motivational?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal with emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening acknowledge an event and use shared-value framing?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the closing include an empowering call-to-action with organizational sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include at least one key phrase: 'plastic footprint', 'marine life', 'make a difference', or 'simple changes'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email within the 200-300 word count range?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 4,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively covers ocean conservation themes with tangible examples, offers actionable individual steps, uses a persuasive and motivational tone with a semi-formal style, and incorporates key phrases like 'plastic footprint'. The opening successfully acknowledges World Oceans Day using shared-value framing.",
+        "weaknesses": "The call-to-action is not clearly multi-option and the email lacks explicit emotional language markers. Its structure does not form exactly four paragraphs, the closing is missing an empowering call-to-action with proper organizational sign-off, and the overall word count falls short of the 200-300 range.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 396.35241055488586,
+        "generation_attempts": 2,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6153846153846154": [
+              "phi-3-mini-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of ocean conservation, plastic pollution, and individual responsibility?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented with evidence-based tangible examples?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach focus on actionable individual steps?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action offer clear, multi-option actions at the conclusion?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'concerned'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and motivational?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening acknowledge an event and use shared-value framing?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the closing include an empowering call-to-action with organizational sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include at least one key phrase: 'plastic footprint', 'marine life', 'make a difference', or 'simple changes'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email within the 200-300 word count range?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively covers ocean conservation themes with tangible examples, offers actionable individual steps, uses a persuasive and motivational tone with a semi-formal style, and incorporates key phrases like 'plastic footprint'. The opening successfully acknowledges World Oceans Day using shared-value framing.",
+          "weaknesses": "The call-to-action is not clearly multi-option and the email lacks explicit emotional language markers. Its structure does not form exactly four paragraphs, the closing is missing an empowering call-to-action with proper organizational sign-off, and the overall word count falls short of the 200-300 range.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 396.35241055488586,
+          "generation_attempts": 2,
+          "total_criteria": 12,
+          "weighted_score": 0.6153846153846154,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 4,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 820.3247888088226,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.6153846153846154,
+        "ranking_score": 0.6153846153846154,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of ocean conservation, plastic pollution, and individual responsibility?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented with evidence-based tangible examples?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach focus on actionable individual steps?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action offer clear, multi-option actions at the conclusion?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'concerned'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and motivational?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal with emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the opening acknowledge an event and use shared-value framing?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the closing include an empowering call-to-action with organizational sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include at least one key phrase: 'plastic footprint', 'marine life', 'make a difference', or 'simple changes'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email within the 200-300 word count range?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 4,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully addresses key themes of ocean conservation, plastic pollution, and individual responsibility (Criterion 1). It provides an evidence-based example with the statistic on plastic waste (Criterion 2) and hints at actionable individual steps (Criterion 3). The persuasive and semi-formal tone, along with shared-value framing in the opening (Criteria 6, 7, 9) and inclusion of key phrases (Criterion 11), further strengthen the message.",
+        "weaknesses": "The call-to-action does not offer clear, multi-option actions and ends abruptly (Criterion 4). The email lacks explicit emotional markers like 'urgent', 'passionate', or 'concerned' (Criterion 5) and does not include a formal organizational sign-off in the closing (Criterion 10). Lastly, the email is significantly shorter than the target word count of 200-300 words (Criterion 12).",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 48.08424552281698,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6153846153846154": [
+              "phi-3-mini-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of ocean conservation, plastic pollution, and individual responsibility?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented with evidence-based tangible examples?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach focus on actionable individual steps?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action offer clear, multi-option actions at the conclusion?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'concerned'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and motivational?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the opening acknowledge an event and use shared-value framing?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the closing include an empowering call-to-action with organizational sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include at least one key phrase: 'plastic footprint', 'marine life', 'make a difference', or 'simple changes'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email within the 200-300 word count range?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully addresses key themes of ocean conservation, plastic pollution, and individual responsibility (Criterion 1). It provides an evidence-based example with the statistic on plastic waste (Criterion 2) and hints at actionable individual steps (Criterion 3). The persuasive and semi-formal tone, along with shared-value framing in the opening (Criteria 6, 7, 9) and inclusion of key phrases (Criterion 11), further strengthen the message.",
+          "weaknesses": "The call-to-action does not offer clear, multi-option actions and ends abruptly (Criterion 4). The email lacks explicit emotional markers like 'urgent', 'passionate', or 'concerned' (Criterion 5) and does not include a formal organizational sign-off in the closing (Criterion 10). Lastly, the email is significantly shorter than the target word count of 200-300 words (Criterion 12).",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 48.08424552281698,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6153846153846154,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 4,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 144.25311136245728,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.0,
+        "ranking_score": 0.0,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of ocean conservation, plastic pollution, and individual responsibility?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented with evidence-based tangible examples?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach focus on actionable individual steps?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action offer clear, multi-option actions at the conclusion?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'concerned'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and motivational?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal with emotional appeal?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening acknowledge an event and use shared-value framing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the closing include an empowering call-to-action with organizational sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include at least one key phrase: 'plastic footprint', 'marine life', 'make a difference', or 'simple changes'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email within the 200-300 word count range?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "None of the positive criteria were met, as the output, '<studio', does not include any of the required content, style or structure elements.",
+        "weaknesses": "The generated email is extremely brief and lacks all the required elements such as key themes, evidence-based examples, actionable solutions, clear call-to-action, persuasive emotional language, required paragraph structure, proper opening and closing, and the appropriate word count.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 35.49585111935934,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6153846153846154": [
+              "phi-3-mini-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of ocean conservation, plastic pollution, and individual responsibility?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented with evidence-based tangible examples?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach focus on actionable individual steps?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action offer clear, multi-option actions at the conclusion?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'concerned'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and motivational?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal with emotional appeal?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening acknowledge an event and use shared-value framing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the closing include an empowering call-to-action with organizational sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include at least one key phrase: 'plastic footprint', 'marine life', 'make a difference', or 'simple changes'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email within the 200-300 word count range?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "None of the positive criteria were met, as the output, '<studio', does not include any of the required content, style or structure elements.",
+          "weaknesses": "The generated email is extremely brief and lacks all the required elements such as key themes, evidence-based examples, actionable solutions, clear call-to-action, persuasive emotional language, required paragraph structure, proper opening and closing, and the appropriate word count.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 35.49585111935934,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.0,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 0,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 106.48793172836304,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 1,
+      "score": 0.7948717948717948
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 2,
+      "score": 0.6153846153846154
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 3,
+      "score": 0.6153846153846154
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 4,
+      "score": 0.6153846153846154
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 5,
+      "score": 0.0
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 2007.6241014003754,
+    "success": true,
+    "errors": []
+  }
+}

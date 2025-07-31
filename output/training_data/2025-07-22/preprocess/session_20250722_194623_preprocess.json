@@ -1,0 +1,1186 @@
+{
+  "session_id": "03a8dd7e-25f7-48bd-89c9-14fe89427447",
+  "timestamp": "2025-07-22T19:46:23.818744",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0102",
+    "name": "Join the Fight to Save the Vaquita Porpoise from Extinction"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Join the Fight to Save the Vaquita Porpoise from Extinction"
+  },
+  "models_used": {
+    "email_models": [
+      "vicuna-7b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Urgent Action Needed: Help Save the Last of Mexico's Vaquitas!\n\nDear [Recipient],\n\nAs you may know, the vaquita porpoise is one of the most endangered species in the world. With less than 20 remaining, their numbers have been rapidly declining due to illegal fishing practices that trap them in gill nets. We can no longer stand by and watch this beautiful creature disappear forever.\n\nThat's why we at [Organization Name] are calling on all animal lovers to join us in taking action to save the vaquita. By supporting our efforts, you will be directly contributing to the protection and recovery of these amazing animals.\n\nWe need your help now more than ever. The vaquita is on the brink of extinction, and time is running out. If we don't act quickly, it will be too late to save them.\n\nPlease consider making a donation today to support our work and help us reach our goal of saving the last of Mexico's vaquitas. Together, we can make a difference and ensure the survival of this incredible species.\n\nThank you for your support.\n\nSincerely,\n\n[Your Name]\n[Organization Name]\n",
+        "generation_time": 66.86081910133362,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[YOUR_EMAIL]\n\n---\n\nDear Valued Reader,\n\nWe are reaching out to you today because we believe that our planet cannot afford to lose one of its most iconic marine mammals. The Vaquita porpoise, native to the Gulf of California, is facing its extinction due to overfishing by the Mexican government. This alarming situation demands immediate attention and action from all of us.\n\nAs a responsible member of this community, we urge you to join us in fighting against this heart-wrenching tragedy. By signing the petition below, you will be taking a crucial step towards preserving the future of our oceans' inhabitants.\n\n[LINK TO PETITION]\n\nYour support can make a significant difference in raising awareness about the plight of the Vaquita and pushing for stricter measures to protect these animals. Every voice counts, so please do not hesitate to share this message with others who may also want to contribute.\n\nTogether, let's save the Vaquita and secure the health and well-being of our planet's marine life.\n\nBest regards,\n[SENDING ORGANIZATION NAME]\n",
+        "generation_time": 154.63647603988647,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join Us in Saving Our Last Chance at Rescuing the Vaquita!\n\nDear [Recipient Name],\n\nImagine waking up one day to find that our world has lost yet another species \u2013 this time, none other than the vaquita porpoise, teetering perilously close to extinction due to illegal fishing practices. This isn\u2019t just about saving animals; it\u2019s about preserving biodiversity which sustains life itself. We need you now more than ever because we can no longer face these challenges alone. The International Marine Conservation Society stands ready to lead us into victory against such threats by uniting voices like yours across borders.\n\nThe plight facing the vaquita\u2014the smallest cetacean known today\u2014is dire indeed. With fewer than ten individuals left according to recent estimates, their survival hangs precariously over every single moment spent beneath those waves where they once thrived abundantly before being ensnared unintentionally through gillnetting operations targeting another endangered marine creature: the totoaba fish prized highly within illicit trade circles globally. While efforts have been made towards protecting both creatures simultaneously under international law frameworks aimed specifically toward curbing unsustainable exploitation activities harmful environment-wise but often neglected when enforcing conservation measures locally given limited resources allocated accordingly alongside insufficient penalties imposed upon offenders caught violating said regulations leading many turning away instead choosing profit margins despite knowing potential consequences await them should authorities catch wind thereof eventually rendering entire populations vulnerable thus pushing already dwindling numbers further downwards threateningly nearer disappearances altogether leaving behind nothingness except memories fading fast becoming mere echoes reminding ourselves how quickly things change unless proactive steps taken sooner rather later prevent irreversible losses occurring henceforth forevermore never forgetting lessons learned along journey striving always forward seeking better tomorrows ahead regardless circumstances encountered during course traversal lest history repeats itself repeatedly perpetuated cycles continuing ad infinitum until finally breaking free completely thereby allowing everyone involved benefit greatly subsequently enjoying peace restored mutual respect gained trust built solid foundations laid groundwork established firm principles upheld throughout generations passing knowledge onto younger ones inspiring future leaders who will carry torch ignited flame burning bright light guiding pathways paved straightway clear way showing direction homeward back again hometown welcomed warm embrace family reunions celebrations shared joyous occasions laughter filled moments cherished treasures gathered wisdom accumulated experiences valuable learning opportunities discovered hidden secrets revealed truths understood meanings interpreted significance drawn conclusions reached decisions implemented actions executed results achieved outcomes accomplished success attained goals met objectives fulfilled promises kept commitments honored responsibilities assumed duties performed tasks completed projects finished products delivered services rendered quality assured standards maintained excellence expected realized reality lived enjoyed experienced personally felt deeply appreciated thankfully acknowledged wholeheartedly sincerely truly genuinely grateful profoundly humbled beyond measure immensely indebted uttermost gratitude expressed heartfelt appreciation received graciously bestowed blessings granted freely offered kindness shown mercy extended compassion displayed love embraced forgiveness accepted understanding sought clarity desired answers obtained solutions applied practiced skills improved performance enhanced productivity increased efficiency optimized effectiveness maximized output elevated achievement heightened accomplishment celebrated victorious triumphant glory won honor earned praise deserved reward well-deserved compensation rightfully claimed entitled owed awarded justice served vindicated redeemed repaired healed mended reconnected bond strengthened relationship deepened friendship cultivated affection developed intimacy fostered connection nurtured growth encouraged progress promoted development facilitated advancement supported innovation inspired imagination fueled passion driven ambition motivated purpose directed focus concentrated effort invested energy dedicated attention committed participation engaged collaboration cooperative teamwork collaborative partnership alliance unity coalition consensus agreement accord compromise negotiation settlement dispute resolution conflict mediation arbitration adjudication judgment verdict decision ruling award prize recognition accolade commendation complimentary congratulation thanksgiving ceremony dedication tribute homage observance anniversary memorial service funeral vigil farewell sendoff goodbye departure parting wish saying hope expression belief faith conviction certainty assurance security confidence reliability dependability steadfast loyalty faithfulness integrity honesty transparency openness accountability responsibility ownership stewardship guardianship custodianship care ethics morality virtue principle duty obligation charge liability claim legal standing authority jurisdiction competence capability capacity ability power influence force impact consequence outcome result yield harvest fruit bearing crop production agriculture farming husbandry animal husbandry livestock ranching pastoralism herding domestication breeding selective propagation artificial selection natural selection evolution adaptation genetic variation phenotype morphology physiological structure function form appearance color pattern behavior instinct drive motive desire aspiration dream vision sight hearing sense smell taste touch feel texture surface topography landscape geography earth soil composition mineral matter element chemical substance molecule atom nucleus particle quantum physics wave theory relativity space dimensional geometry topology algebra equation calculus differentiation integration integral series sequence permutation combination probability statistics distribution histogram bar chart pie graph scatter plot trendline regression curve correlation coefficient standard deviation variance normalization scaling transformation matrix linear system differential equations ordinary least squares method maximum likelihood estimation Bayesian inference hypothesis testing statistical model parameter fitting calibration measurement instrument accuracy precision error margin uncertainty risk assessment hazard identification safety protocol emergency preparedness contingency plan mitigation strategy response mechanism recovery procedure restoration process reconstruction infrastructure repair maintenance routine operation schedule timeline deadline milestone objective benchmark criterion evaluation metric indicator variable dependent independent control group experimental design random sampling representative sample population survey questionnaire interview feedback loop iterative improvement continuous optimization agile software development lean manufacturing kaizen waste reduction six sigma total quality management cost savings increase ROI return on investment financial analysis capital budgeting payback period net present value internal rate of return discounted cash flow break even point sensitivity analysis scenario planning stress test simulation Monte Carlo experiment bootstrap resampling cross validation leave one out technique jackknife pseudoreplication confounding bias causation association correlational study quantitative research qualitative inquiry mixed methods approach triangulation validity generalizability external validity construct validity concurrent validity predictive validity convergent validity divergent validity factor loading eigenvalue communality specificity uniqueness multivariate data machine learning algorithm neural network support vector machine ensemble classifier boosting gradient descent regularization dropout early stopping pruning weight decay momentum batch size mini-batch training epochs shuffling loss minimizing optimizer AdamRMSprop Adagrad AdaDelta RAdamAdaMax Nadam NesterovSGD MomentumFtrl FTRLProximal LARS LASSO ElasticNet ENSEMBLE AVERAGE BATCH GRADIENT DESCENT EPOCH LEARNING CURVE LOSS PLOT VALIDATION SET TEST DATASET TRAINING DATA HYPERPARAMETER SEARCH PREDICTION MODEL SELECTION INTEGRATED APPROACH REGULARIZATION COVARIANCE ANALYSIS STATISTICAL SAMPLING VECTOR SPACE ALGORITHM OPERATORS CONVOLUTION NEURON WEIGHT\n",
+        "generation_time": 99.7502760887146,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Help Us Protect the Last Vaquitas\n\nSubject: The World Needs You Now!\n\nDear Fellow Animal Lover,\n\nThe vaquita porpoise, the smallest porpoise in the world, is facing extinction due to entanglement in fishing nets. This critically endangered species needs our immediate attention and support.\n\nEvery day, the vaquita population dwindles, and we risk losing this incredible creature forever. We cannot let that happen! Our team at Ocean Conservation Society has been working tirelessly to protect these magnificent animals, but we need your help.\n\nAs a valued member of our community, you have the power to make a difference. By joining us in this fight, you'll be part of a global movement to save the vaquita. Together, we can:\n\n\u2022 Support conservation efforts by donating to our cause\n\u2022 Raise awareness about the importance of protecting marine life\n\u2022 Advocate for policy changes that benefit the vaquita and its habitat\n\nYour contribution will directly impact the lives of these incredible creatures. Every dollar counts, and every voice matters.\n\nWill you join us in this critical mission? Donate now and become a guardian of the vaquita.\n\n**Donate $25, $50, or any amount today and help us protect the last vaquitas!\n",
+        "generation_time": 133.7007701396942,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[YOUR_NAME]\nSubject: Join the Fight to Save the Vaquita Porpoise from Extinction!\n\nDear Valued Supporter,\n\nWe hope you're enjoying our latest podcast episode! Today, we'd like to share some exciting news about the Vaquita Porpoise, a critically endangered species that is currently facing extinction due to poaching and habitat loss.\n\nAs you may know, the Vaquita is one of the smallest porpoises in the world and is known for its distinctive black and white coat pattern. However, its plight is far from over, and we need your help to save this amazing creature.\n\nThat's why we've launched a new campaign to raise awareness and funds to support conservation efforts. We're asking for your support to protect this rare species and prevent further declines in their numbers.\n\nHere's how you can join the fight:\n\n- Sign up for our newsletter and stay updated on our campaigns and events.\n- Share our campaign on social media and encourage your friends and family to do the same.\n- Donate to our cause and make a tax-deductible donation today.\n\nTogether, we can make a difference and preserve this beautiful creature for generations to come.\n\nThank you for your continued support,\n\nThe Vaquita Conservancy Team\n\n## Call to Action:\n\n[BOLDED CALL TO ACTION]\n\nJoin us in the fight to save the Vaquita Porpoise from extinction by donating now. Your contribution will go towards funding conservation efforts, supporting research, and providing education to raise awareness about this important species.\n\nFor every dollar donated, we can save one Vaquita Porpoise. Help us make a real difference and be part of the solution.\n\n[END_EMAIL]\n",
+        "generation_time": 44.59773898124695,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key messaging themes: 'imminent extinction', 'human-caused threats', and 'collective responsibility'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Is the problem presented in a crisis-focused manner with specific threats (gillnets, illegal fishing)?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the solution approach emphasize donation-driven conservation with clear fund allocation?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the call-to-action use direct action verbs (e.g., Donate, Join) in a dedicated paragraph?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'alarmed'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style persuasive and emotionally charged?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include at least one specific phrase: 'on the brink of extinction', 'disappear forever', or 'desperate fight for survival'?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email follow the information flow pattern: crisis \u2192 causes \u2192 solutions \u2192 immediate action request?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the opening start with an immediate problem statement and emotional hook?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the closing include an urgent call-to-action followed by organizational credibility?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Is the email within the word count range of 200-300 words?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use at least two key phrases: 'fewer than 10 individuals', 'brink of extinction', 'critical moment', or 'every dollar counts'?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 207.23772978782654,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.696969696969697,
+        "ranking_score": 0.696969696969697,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes: 'imminent extinction', 'human-caused threats', and 'collective responsibility'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented in a crisis-focused manner with specific threats (gillnets, illegal fishing)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach emphasize donation-driven conservation with clear fund allocation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action use direct action verbs (e.g., Donate, Join) in a dedicated paragraph?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'alarmed'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and emotionally charged?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email include at least one specific phrase: 'on the brink of extinction', 'disappear forever', or 'desperate fight for survival'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email follow the information flow pattern: crisis \u2192 causes \u2192 solutions \u2192 immediate action request?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening start with an immediate problem statement and emotional hook?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the closing include an urgent call-to-action followed by organizational credibility?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Is the email within the word count range of 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use at least two key phrases: 'fewer than 10 individuals', 'brink of extinction', 'critical moment', or 'every dollar counts'?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 7,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively captures key messaging themes of imminent extinction, human-caused threats, and collective responsibility. It presents the crisis with details on illegal fishing and gillnets, uses persuasive and emotionally charged language, includes direct call-to-actions, follows a logical crisis-to-action flow, and incorporates specific phrases like 'on the brink of extinction' and 'disappear forever'.",
+        "weaknesses": "The solution approach lacks clarity on fund allocation details. The closing does not provide sufficient organizational credibility details. The overall email falls short of the required 200-300 word count and does not incorporate at least two of the designated key phrases, with only 'on the brink of extinction' present.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 80.82185220718384,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "llama-3-8b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.45454545454545453": [
+              "phi-3-mini-dpo-hyb",
+              "llama-3-8b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes: 'imminent extinction', 'human-caused threats', and 'collective responsibility'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented in a crisis-focused manner with specific threats (gillnets, illegal fishing)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach emphasize donation-driven conservation with clear fund allocation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action use direct action verbs (e.g., Donate, Join) in a dedicated paragraph?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'alarmed'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and emotionally charged?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include at least one specific phrase: 'on the brink of extinction', 'disappear forever', or 'desperate fight for survival'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email follow the information flow pattern: crisis \u2192 causes \u2192 solutions \u2192 immediate action request?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening start with an immediate problem statement and emotional hook?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the closing include an urgent call-to-action followed by organizational credibility?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Is the email within the word count range of 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use at least two key phrases: 'fewer than 10 individuals', 'brink of extinction', 'critical moment', or 'every dollar counts'?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively captures key messaging themes of imminent extinction, human-caused threats, and collective responsibility. It presents the crisis with details on illegal fishing and gillnets, uses persuasive and emotionally charged language, includes direct call-to-actions, follows a logical crisis-to-action flow, and incorporates specific phrases like 'on the brink of extinction' and 'disappear forever'.",
+          "weaknesses": "The solution approach lacks clarity on fund allocation details. The closing does not provide sufficient organizational credibility details. The overall email falls short of the required 200-300 word count and does not incorporate at least two of the designated key phrases, with only 'on the brink of extinction' present.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 80.82185220718384,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.696969696969697,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 7,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 242.4659538269043,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.5454545454545454,
+        "ranking_score": 0.5454545454545454,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes: 'imminent extinction', 'human-caused threats', and 'collective responsibility'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented in a crisis-focused manner with specific threats (gillnets, illegal fishing)?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach emphasize donation-driven conservation with clear fund allocation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action use direct action verbs (e.g., Donate, Join) in a dedicated paragraph?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'alarmed'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and emotionally charged?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email include at least one specific phrase: 'on the brink of extinction', 'disappear forever', or 'desperate fight for survival'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email follow the information flow pattern: crisis \u2192 causes \u2192 solutions \u2192 immediate action request?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening start with an immediate problem statement and emotional hook?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the closing include an urgent call-to-action followed by organizational credibility?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the email within the word count range of 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use at least two key phrases: 'fewer than 10 individuals', 'brink of extinction', 'critical moment', or 'every dollar counts'?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 6,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully incorporates key messaging themes, persuasive and emotionally charged language, a clear call-to-action with direct verbs, and follows a logical crisis-to-action flow with an engaging opening.",
+        "weaknesses": "It does not mention specific crisis details like gillnets or illegal fishing, lacks a donation-driven conservation approach with fund allocation details, omits required specific trigger phrases, does not provide organizational credibility in the closing, falls short of the 200-300 word count, and misses using at least two designated key phrases.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 80.98310565948486,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "llama-3-8b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.45454545454545453": [
+              "phi-3-mini-dpo-hyb",
+              "llama-3-8b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes: 'imminent extinction', 'human-caused threats', and 'collective responsibility'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented in a crisis-focused manner with specific threats (gillnets, illegal fishing)?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach emphasize donation-driven conservation with clear fund allocation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action use direct action verbs (e.g., Donate, Join) in a dedicated paragraph?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'alarmed'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and emotionally charged?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include at least one specific phrase: 'on the brink of extinction', 'disappear forever', or 'desperate fight for survival'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email follow the information flow pattern: crisis \u2192 causes \u2192 solutions \u2192 immediate action request?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening start with an immediate problem statement and emotional hook?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the closing include an urgent call-to-action followed by organizational credibility?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the email within the word count range of 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use at least two key phrases: 'fewer than 10 individuals', 'brink of extinction', 'critical moment', or 'every dollar counts'?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully incorporates key messaging themes, persuasive and emotionally charged language, a clear call-to-action with direct verbs, and follows a logical crisis-to-action flow with an engaging opening.",
+          "weaknesses": "It does not mention specific crisis details like gillnets or illegal fishing, lacks a donation-driven conservation approach with fund allocation details, omits required specific trigger phrases, does not provide organizational credibility in the closing, falls short of the 200-300 word count, and misses using at least two designated key phrases.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 80.98310565948486,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5454545454545454,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 6,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 242.94971346855164,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.45454545454545453,
+        "ranking_score": 0.45454545454545453,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes: 'imminent extinction', 'human-caused threats', and 'collective responsibility'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented in a crisis-focused manner with specific threats (gillnets, illegal fishing)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach emphasize donation-driven conservation with clear fund allocation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action use direct action verbs (e.g., Donate, Join) in a dedicated paragraph?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'alarmed'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and emotionally charged?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email include at least one specific phrase: 'on the brink of extinction', 'disappear forever', or 'desperate fight for survival'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email follow the information flow pattern: crisis \u2192 causes \u2192 solutions \u2192 immediate action request?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening start with an immediate problem statement and emotional hook?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the closing include an urgent call-to-action followed by organizational credibility?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the email within the word count range of 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use at least two key phrases: 'fewer than 10 individuals', 'brink of extinction', 'critical moment', or 'every dollar counts'?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively highlights a crisis by emphasizing imminent extinction and human-caused threats, employs persuasive and emotionally charged language, and follows a logical information flow that includes crisis identification, causes, and a call for collective action.",
+        "weaknesses": "The email does not clearly emphasize donation-driven conservation or provide explicit fund allocation details, lacks a dedicated paragraph with direct call-to-action verbs, omits specific emotional markers like 'urgent', 'passionate', or 'alarmed', does not include any of the exact required key phrases, its closing does not feature an urgent call-to-action with organizational credibility, and it appears to be shorter than the required 200-300 word count while not using at least two of the specified key phrases.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 82.27178351084392,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "llama-3-8b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.45454545454545453": [
+              "phi-3-mini-dpo-hyb",
+              "llama-3-8b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes: 'imminent extinction', 'human-caused threats', and 'collective responsibility'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented in a crisis-focused manner with specific threats (gillnets, illegal fishing)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach emphasize donation-driven conservation with clear fund allocation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action use direct action verbs (e.g., Donate, Join) in a dedicated paragraph?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'alarmed'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and emotionally charged?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include at least one specific phrase: 'on the brink of extinction', 'disappear forever', or 'desperate fight for survival'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email follow the information flow pattern: crisis \u2192 causes \u2192 solutions \u2192 immediate action request?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening start with an immediate problem statement and emotional hook?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the closing include an urgent call-to-action followed by organizational credibility?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the email within the word count range of 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use at least two key phrases: 'fewer than 10 individuals', 'brink of extinction', 'critical moment', or 'every dollar counts'?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively highlights a crisis by emphasizing imminent extinction and human-caused threats, employs persuasive and emotionally charged language, and follows a logical information flow that includes crisis identification, causes, and a call for collective action.",
+          "weaknesses": "The email does not clearly emphasize donation-driven conservation or provide explicit fund allocation details, lacks a dedicated paragraph with direct call-to-action verbs, omits specific emotional markers like 'urgent', 'passionate', or 'alarmed', does not include any of the exact required key phrases, its closing does not feature an urgent call-to-action with organizational credibility, and it appears to be shorter than the required 200-300 word count while not using at least two of the specified key phrases.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 82.27178351084392,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.45454545454545453,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 246.81575417518616,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.45454545454545453,
+        "ranking_score": 0.45454545454545453,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes: 'imminent extinction', 'human-caused threats', and 'collective responsibility'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented in a crisis-focused manner with specific threats (gillnets, illegal fishing)?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach emphasize donation-driven conservation with clear fund allocation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action use direct action verbs (e.g., Donate, Join) in a dedicated paragraph?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'alarmed'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and emotionally charged?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email include at least one specific phrase: 'on the brink of extinction', 'disappear forever', or 'desperate fight for survival'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email follow the information flow pattern: crisis \u2192 causes \u2192 solutions \u2192 immediate action request?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening start with an immediate problem statement and emotional hook?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the closing include an urgent call-to-action followed by organizational credibility?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the email within the word count range of 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use at least two key phrases: 'fewer than 10 individuals', 'brink of extinction', 'critical moment', or 'every dollar counts'?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully highlights the crisis by emphasizing an endangered species, presents human-caused threats, utilizes persuasive language with direct calls-to-action, and follows a logical structure that guides readers from problem to solution.",
+        "weaknesses": "The email does not specify the details of the threats (e.g., gillnets, illegal fishing), lacks clear fund allocation details with donation-driven conservation, misses explicit emotional markers and mandated key phrases, the closing does not combine an urgent call-to-action with organizational credibility, and the overall word count is below the required range.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 86.06450390815735,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "llama-3-8b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.45454545454545453": [
+              "phi-3-mini-dpo-hyb",
+              "llama-3-8b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes: 'imminent extinction', 'human-caused threats', and 'collective responsibility'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented in a crisis-focused manner with specific threats (gillnets, illegal fishing)?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach emphasize donation-driven conservation with clear fund allocation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action use direct action verbs (e.g., Donate, Join) in a dedicated paragraph?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'alarmed'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and emotionally charged?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email include at least one specific phrase: 'on the brink of extinction', 'disappear forever', or 'desperate fight for survival'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email follow the information flow pattern: crisis \u2192 causes \u2192 solutions \u2192 immediate action request?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening start with an immediate problem statement and emotional hook?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the closing include an urgent call-to-action followed by organizational credibility?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the email within the word count range of 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use at least two key phrases: 'fewer than 10 individuals', 'brink of extinction', 'critical moment', or 'every dollar counts'?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully highlights the crisis by emphasizing an endangered species, presents human-caused threats, utilizes persuasive language with direct calls-to-action, and follows a logical structure that guides readers from problem to solution.",
+          "weaknesses": "The email does not specify the details of the threats (e.g., gillnets, illegal fishing), lacks clear fund allocation details with donation-driven conservation, misses explicit emotional markers and mandated key phrases, the closing does not combine an urgent call-to-action with organizational credibility, and the overall word count is below the required range.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 86.06450390815735,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.45454545454545453,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 258.1939113140106,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.2727272727272727,
+        "ranking_score": 0.2727272727272727,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes: 'imminent extinction', 'human-caused threats', and 'collective responsibility'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented in a crisis-focused manner with specific threats (gillnets, illegal fishing)?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach emphasize donation-driven conservation with clear fund allocation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the call-to-action use direct action verbs (e.g., Donate, Join) in a dedicated paragraph?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'alarmed'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and emotionally charged?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 7,
+            "description": "Does the email include at least one specific phrase: 'on the brink of extinction', 'disappear forever', or 'desperate fight for survival'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email follow the information flow pattern: crisis \u2192 causes \u2192 solutions \u2192 immediate action request?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening start with an immediate problem statement and emotional hook?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Does the closing include an urgent call-to-action followed by organizational credibility?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the email within the word count range of 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use at least two key phrases: 'fewer than 10 individuals', 'brink of extinction', 'critical moment', or 'every dollar counts'?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 3,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email features a clear call-to-action section with direct action verbs and follows a partial information flow pattern by mentioning the problem, suggesting solutions, and inviting immediate action.",
+        "weaknesses": "The email does not include all required key messaging themes, lacks mention of specific crisis details (e.g., gillnets, illegal fishing), fails to provide clear fund allocation details, is missing strong emotional language markers and specified key phrases, does not begin with an immediate crisis hook or conclude with organizational credibility, and is below the required word count.",
+        "consistency_confidence": 0.75,
+        "average_response_time": 92.95091724395752,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "llama-3-8b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.45454545454545453": [
+              "phi-3-mini-dpo-hyb",
+              "llama-3-8b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes: 'imminent extinction', 'human-caused threats', and 'collective responsibility'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented in a crisis-focused manner with specific threats (gillnets, illegal fishing)?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach emphasize donation-driven conservation with clear fund allocation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the call-to-action use direct action verbs (e.g., Donate, Join) in a dedicated paragraph?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'alarmed'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and emotionally charged?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 7,
+              "description": "Does the email include at least one specific phrase: 'on the brink of extinction', 'disappear forever', or 'desperate fight for survival'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email follow the information flow pattern: crisis \u2192 causes \u2192 solutions \u2192 immediate action request?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening start with an immediate problem statement and emotional hook?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Does the closing include an urgent call-to-action followed by organizational credibility?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the email within the word count range of 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use at least two key phrases: 'fewer than 10 individuals', 'brink of extinction', 'critical moment', or 'every dollar counts'?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email features a clear call-to-action section with direct action verbs and follows a partial information flow pattern by mentioning the problem, suggesting solutions, and inviting immediate action.",
+          "weaknesses": "The email does not include all required key messaging themes, lacks mention of specific crisis details (e.g., gillnets, illegal fishing), fails to provide clear fund allocation details, is missing strong emotional language markers and specified key phrases, does not begin with an immediate crisis hook or conclude with organizational credibility, and is below the required word count.",
+          "consistency_confidence": 0.75,
+          "average_response_time": 92.95091724395752,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.2727272727272727,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 3,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 278.85315918922424,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 1,
+      "score": 0.696969696969697
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 2,
+      "score": 0.5454545454545454
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 3,
+      "score": 0.45454545454545453
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 4,
+      "score": 0.45454545454545453
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 5,
+      "score": 0.2727272727272727
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 1632.7276277542114,
+    "success": true,
+    "errors": []
+  }
+}

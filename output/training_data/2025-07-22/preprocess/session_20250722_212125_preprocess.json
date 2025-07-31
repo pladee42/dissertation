@@ -1,0 +1,1196 @@
+{
+  "session_id": "19364ca9-a71f-4ab8-90b3-f2237af69815",
+  "timestamp": "2025-07-22T21:21:25.998862",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0107",
+    "name": "Volunteer for our Annual River Cleanup Day"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Volunteer for our Annual River Cleanup Day"
+  },
+  "models_used": {
+    "email_models": [
+      "phi-3-mini-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "vicuna-7b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join Us in Making Our Rivers Sparkle Again!\n\nDear Friend,\n\nImagine waking up one day to find that rivers once teeming with life now bear nothing but litter and pollution \u2013 this could be tomorrow if we don\u2019t act today. The annual river cleanup has become increasingly vital due to rising environmental concerns; however, many people remain unaware of how their actions contribute to waterway degradation. This year, [Your Organization Name], dedicated to preserving natural beauty and fostering community spirit, invites you to play a pivotal role by volunteering at our much-anticipated Annual River Cleanup Day. Together, let us restore the splendor of nature while strengthening bonds within our neighborhood. Mark your calendar for Saturday, April 22nd\u2014the perfect opportunity to make waves through positive change. Sign up here <Sign Up Link> before March 31st, because every moment counts when protecting what sustains us all. Let\u2019s unite for cleaner waters and brighter futures!\n\nWarm regards,\n\nThe Team at [Your Organization Name]\n",
+        "generation_time": 98.80704379081726,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[YOUR_NAME]\nSubject: Volunteer for our Annual River Cleanup Day!\n\nDear [SENDING_ORGANIZATION],\n\nWe hope this email finds you well. We wanted to reach out to you about an important volunteering opportunity we have coming up. As an organization that cares deeply about protecting our environment, we would be thrilled if you could join us in our annual river cleanup day.\n\nThe date for this year's event is [DATE]. It will take place at [LOCATION], and we need your help to make it a success. Our team will provide all necessary equipment and training, but we would appreciate your presence to help with various tasks such as picking up litter, removing invasive plants, and monitoring water quality.\n\nHere are some details about what to expect:\n\n- [DETAILS_OF_EVENT]\n- [TIME_AND_PLACE_OF_EVENT]\n- [REQUIRED_EQUIPMENT]\n\nThis event is an excellent way to get involved in environmental conservation efforts while also having fun and making a difference in your community. We believe that together we can make a positive impact and create a healthier future for ourselves and our planet.\n\nTo sign up, please reply to this email with your name and contact information. If you have any questions or concerns, feel free to contact us at [CONTACT_INFO].\n\nThank you for considering joining us in this important effort. We look forward to hearing from you soon.\n\nBest regards,\n\n[YOUR NAME]\n",
+        "generation_time": 40.3959698677063,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your Name Here] | [Your Organization Here]\n\nSubject: Join Us in Our Annual River Cleanup Day\n\nDear [Recipient's Name],\n\nI hope this email finds you well. I am reaching out to you today because we need your help! We're excited to announce that we'll be holding our annual river cleanup day next month, and we could use your support.\n\nAs you may already know, rivers are vital ecosystems that provide us with clean water, oxygen, and food sources. Unfortunately, they also face numerous threats such as pollution, littering, and overfishing. That's why we've decided to organize a community-wide effort to clean up our local river and restore its beauty and health.\n\nWe're looking for volunteers like yourself who want to make a difference in their community and contribute to preserving natural resources. The cleanup will take place on [date], starting at [time]. It's a great opportunity to spend time outdoors while making a positive impact on our environment.\n\nTo join us, simply sign up below by filling out the form with your name, email address, and contact information. You can also RSVP on our Facebook page or let us know if you have any questions.\n\nTogether, we can create a cleaner, healthier, and safer world for generations to come. By volunteering for our annual river cleanup day, you'll not only be helping us achieve our goals but also contributing to a better future for all.\n\nThank you for considering joining us. Together, we can make a real difference!\n\nSincerely,\n\n[Your Name]\n[Your Organization]\n\n[end_email]\n",
+        "generation_time": 167.05499935150146,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Subject: Join us for the Annual River Cleanup Day!\n\nDear fellow community member,\n\nI'm writing to you today because I know that together, we can make a real difference in keeping our beloved river clean and thriving. As you may know, our river has been facing increasing pollution issues, affecting not just the local wildlife but also our own health and well-being.\n\nThe main culprit behind this problem is litter and waste, which often end up in our waterways due to careless disposal practices. It's heartbreaking to see our beautiful river choked with plastic bags, bottles, and other non-biodegradable materials.\n\nBut here's the good news: there's hope! Our organization, [RiverKeepers], has been working tirelessly to protect and preserve our river ecosystem. We're committed to creating a cleaner, healthier environment for future generations.\n\nThat's where you come in! We need dedicated volunteers like you to join us for our Annual River Cleanup Day. On [Date], we'll be organizing a massive cleanup effort along the riverbanks, and we invite you to be part of it.\n\nAs a volunteer, you'll not only be contributing to a great cause but also getting some exercise, meeting like-minded people, and enjoying the scenic views of our river. Plus, you'll receive a free t-shirt and snacks to keep you energized throughout the day!\n\nSo, will you join us in making a difference? Here's how you can get involved:\n\n*   Register online by [Registration Deadline] to secure your spot\n*   Meet us at [Location] on [Date] at [Time]\n*   Bring comfortable shoes, gloves, and a willingness to get hands-on\n\nLet's work together to keep our river clean and beautiful!\n\n**Sign up now and be part of something amazing!\n",
+        "generation_time": 140.07184433937073,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "[volunteer@rivercleanup.org](mailto:volunteer@rivercleanup.org)\nSubject: Join us for a day that makes a difference!\n\nDear [Recipient],\n\nDo you want to make a positive impact in your community? Are you looking for an opportunity to connect with like-minded individuals while having fun? Look no further than our Annual River Cleanup Day!\n\nOn [date], we will be organizing a massive cleanup effort along the banks of the river. Our mission is to remove trash and debris that has accumulated over time, making the river cleaner and safer for everyone who uses it.\n\nBy volunteering just a few hours of your time, you can contribute to this important cause and create lasting change in your local environment. Plus, you'll get to meet new people and form friendships while doing something meaningful.\n\nTo join us, simply reply to this email or visit our website at [www.rivercleanup.org](http://www.rivercleanup.org). There, you can sign up, choose your preferred location and time slot, and receive all the necessary details.\n\nWe can't wait to see you there!\n\nBest regards,\nThe River Cleanup Team\n",
+        "generation_time": 75.56045937538147,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key themes of environmental stewardship, community impact, and collective action?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email present environmental concerns through positive action framing rather than explicit problem statements?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "content"
+        },
+        {
+          "question": "Does the call-to-action include explicit sign-up instructions with deadline emphasis?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language that is community-focused, encouraging, and positive?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style invitational and appreciative throughout the email?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Is the formality level semi-formal with friendly warmth?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email follow the information flow sequence: event details \u2192 impact explanation \u2192 participation instructions \u2192 appreciation?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email open with a friendly greeting and event announcement?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email close with an appreciation note and clear sign-off?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email contain the key phrases: 'make a difference', 'join us', 'community effort', and 'protect our river'?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use concise sentences with action verbs?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email include bold event dates and bullet-pointed logistics?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 319.9334762096405,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.7096774193548387,
+        "ranking_score": 0.7096774193548387,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of environmental stewardship, community impact, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present environmental concerns through positive action framing rather than explicit problem statements?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the call-to-action include explicit sign-up instructions with deadline emphasis?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is community-focused, encouraging, and positive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style invitational and appreciative throughout the email?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level semi-formal with friendly warmth?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the information flow sequence: event details \u2192 impact explanation \u2192 participation instructions \u2192 appreciation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with a friendly greeting and event announcement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close with an appreciation note and clear sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email contain the key phrases: 'make a difference', 'join us', 'community effort', and 'protect our river'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use concise sentences with action verbs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email include bold event dates and bullet-pointed logistics?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 3,
+          "medium": 4,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively emphasizes environmental stewardship, community spirit, clear call-to-action with deadline, friendly tone, and action-driven language. It follows a fairly logical information flow and opens with a friendly greeting.",
+        "weaknesses": "The email employs an explicit problem statement rather than solely positive framing, lacks a robust closing appreciation note and sign-off, does not incorporate all specified key phrases, and omits bold event dates and bullet-pointed logistics.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 34.029903729756676,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.45161290322580644": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of environmental stewardship, community impact, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present environmental concerns through positive action framing rather than explicit problem statements?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the call-to-action include explicit sign-up instructions with deadline emphasis?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is community-focused, encouraging, and positive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style invitational and appreciative throughout the email?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level semi-formal with friendly warmth?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the information flow sequence: event details \u2192 impact explanation \u2192 participation instructions \u2192 appreciation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with a friendly greeting and event announcement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close with an appreciation note and clear sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email contain the key phrases: 'make a difference', 'join us', 'community effort', and 'protect our river'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use concise sentences with action verbs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email include bold event dates and bullet-pointed logistics?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively emphasizes environmental stewardship, community spirit, clear call-to-action with deadline, friendly tone, and action-driven language. It follows a fairly logical information flow and opens with a friendly greeting.",
+          "weaknesses": "The email employs an explicit problem statement rather than solely positive framing, lacks a robust closing appreciation note and sign-off, does not incorporate all specified key phrases, and omits bold event dates and bullet-pointed logistics.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 34.029903729756676,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.7096774193548387,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 3,
+            "medium": 4,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 102.10768914222717,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.5161290322580645,
+        "ranking_score": 0.5161290322580645,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of environmental stewardship, community impact, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present environmental concerns through positive action framing rather than explicit problem statements?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the call-to-action include explicit sign-up instructions with deadline emphasis?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is community-focused, encouraging, and positive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style invitational and appreciative throughout the email?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level semi-formal with friendly warmth?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the information flow sequence: event details \u2192 impact explanation \u2192 participation instructions \u2192 appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with a friendly greeting and event announcement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close with an appreciation note and clear sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email contain the key phrases: 'make a difference', 'join us', 'community effort', and 'protect our river'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use concise sentences with action verbs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email include bold event dates and bullet-pointed logistics?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 2,
+          "medium": 5,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively incorporates environmental stewardship, community impact, and collective action through positive messaging. It uses friendly, community-focused, and emotional language with a semi-formal tone, includes a clear opening greeting and bullet-pointed logistics, and features concise sentences with action verbs.",
+        "weaknesses": "The email lacks explicit sign-up instructions with deadline emphasis, does not strictly follow the desired information flow (missing clear participation instructions and a proper closing appreciation note), omits required key phrases such as 'community effort' and 'protect our river', and fails to format event dates in bold.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 27.06054989496867,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.45161290322580644": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of environmental stewardship, community impact, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present environmental concerns through positive action framing rather than explicit problem statements?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the call-to-action include explicit sign-up instructions with deadline emphasis?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is community-focused, encouraging, and positive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style invitational and appreciative throughout the email?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level semi-formal with friendly warmth?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the information flow sequence: event details \u2192 impact explanation \u2192 participation instructions \u2192 appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with a friendly greeting and event announcement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close with an appreciation note and clear sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email contain the key phrases: 'make a difference', 'join us', 'community effort', and 'protect our river'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use concise sentences with action verbs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email include bold event dates and bullet-pointed logistics?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively incorporates environmental stewardship, community impact, and collective action through positive messaging. It uses friendly, community-focused, and emotional language with a semi-formal tone, includes a clear opening greeting and bullet-pointed logistics, and features concise sentences with action verbs.",
+          "weaknesses": "The email lacks explicit sign-up instructions with deadline emphasis, does not strictly follow the desired information flow (missing clear participation instructions and a proper closing appreciation note), omits required key phrases such as 'community effort' and 'protect our river', and fails to format event dates in bold.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 27.06054989496867,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5161290322580645,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 2,
+            "medium": 5,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 81.20695900917053,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.45161290322580644,
+        "ranking_score": 0.45161290322580644,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of environmental stewardship, community impact, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present environmental concerns through positive action framing rather than explicit problem statements?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the call-to-action include explicit sign-up instructions with deadline emphasis?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is community-focused, encouraging, and positive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style invitational and appreciative throughout the email?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level semi-formal with friendly warmth?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the information flow sequence: event details \u2192 impact explanation \u2192 participation instructions \u2192 appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with a friendly greeting and event announcement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close with an appreciation note and clear sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email contain the key phrases: 'make a difference', 'join us', 'community effort', and 'protect our river'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use concise sentences with action verbs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email include bold event dates and bullet-pointed logistics?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 2,
+          "medium": 4,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively communicates environmental stewardship, community impact, and collective action using emotional, inviting, and semi-formal language. It opens with a friendly greeting and maintains concise, action-oriented sentences.",
+        "weaknesses": "The email includes explicit problem statements rather than solely positive framing, lacks explicit deadline emphasis in its call-to-action, does not fully follow the prescribed information flow (missing an appreciation closure), omits a clear sign-off and certain key phrases, and does not use bold dates or bullet points for logistics.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 25.171897331873577,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.45161290322580644": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of environmental stewardship, community impact, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present environmental concerns through positive action framing rather than explicit problem statements?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the call-to-action include explicit sign-up instructions with deadline emphasis?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is community-focused, encouraging, and positive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style invitational and appreciative throughout the email?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level semi-formal with friendly warmth?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the information flow sequence: event details \u2192 impact explanation \u2192 participation instructions \u2192 appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with a friendly greeting and event announcement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close with an appreciation note and clear sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email contain the key phrases: 'make a difference', 'join us', 'community effort', and 'protect our river'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use concise sentences with action verbs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email include bold event dates and bullet-pointed logistics?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively communicates environmental stewardship, community impact, and collective action using emotional, inviting, and semi-formal language. It opens with a friendly greeting and maintains concise, action-oriented sentences.",
+          "weaknesses": "The email includes explicit problem statements rather than solely positive framing, lacks explicit deadline emphasis in its call-to-action, does not fully follow the prescribed information flow (missing an appreciation closure), omits a clear sign-off and certain key phrases, and does not use bold dates or bullet points for logistics.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 25.171897331873577,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.45161290322580644,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 2,
+            "medium": 4,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 75.51605987548828,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.45161290322580644,
+        "ranking_score": 0.45161290322580644,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of environmental stewardship, community impact, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present environmental concerns through positive action framing rather than explicit problem statements?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the call-to-action include explicit sign-up instructions with deadline emphasis?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is community-focused, encouraging, and positive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style invitational and appreciative throughout the email?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level semi-formal with friendly warmth?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the information flow sequence: event details \u2192 impact explanation \u2192 participation instructions \u2192 appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with a friendly greeting and event announcement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close with an appreciation note and clear sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email contain the key phrases: 'make a difference', 'join us', 'community effort', and 'protect our river'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Does the email use concise sentences with action verbs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email include bold event dates and bullet-pointed logistics?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 2,
+          "medium": 4,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively covers key themes and uses emotional, community-focused language. It maintains a semi-formal tone with friendly warmth, includes a clear greeting and event announcement, and uses action verbs to encourage participation.",
+        "weaknesses": "The email includes explicit problem statements rather than solely positive framing, lacks explicit sign-up instructions with deadline emphasis, does not fully follow the recommended information flow (missing an appreciation note and sign-off), omits the key phrase 'community effort', and does not use bold formatting for event dates or bullet-pointed logistics.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 24.496629238128662,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.45161290322580644": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of environmental stewardship, community impact, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present environmental concerns through positive action framing rather than explicit problem statements?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the call-to-action include explicit sign-up instructions with deadline emphasis?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is community-focused, encouraging, and positive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style invitational and appreciative throughout the email?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level semi-formal with friendly warmth?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the information flow sequence: event details \u2192 impact explanation \u2192 participation instructions \u2192 appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with a friendly greeting and event announcement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close with an appreciation note and clear sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email contain the key phrases: 'make a difference', 'join us', 'community effort', and 'protect our river'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Does the email use concise sentences with action verbs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email include bold event dates and bullet-pointed logistics?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively covers key themes and uses emotional, community-focused language. It maintains a semi-formal tone with friendly warmth, includes a clear greeting and event announcement, and uses action verbs to encourage participation.",
+          "weaknesses": "The email includes explicit problem statements rather than solely positive framing, lacks explicit sign-up instructions with deadline emphasis, does not fully follow the recommended information flow (missing an appreciation note and sign-off), omits the key phrase 'community effort', and does not use bold formatting for event dates or bullet-pointed logistics.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 24.496629238128662,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.45161290322580644,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 2,
+            "medium": 4,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 73.49031329154968,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.45161290322580644,
+        "ranking_score": 0.45161290322580644,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of environmental stewardship, community impact, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present environmental concerns through positive action framing rather than explicit problem statements?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the call-to-action include explicit sign-up instructions with deadline emphasis?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is community-focused, encouraging, and positive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style invitational and appreciative throughout the email?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level semi-formal with friendly warmth?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the information flow sequence: event details \u2192 impact explanation \u2192 participation instructions \u2192 appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with a friendly greeting and event announcement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close with an appreciation note and clear sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email contain the key phrases: 'make a difference', 'join us', 'community effort', and 'protect our river'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use concise sentences with action verbs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email include bold event dates and bullet-pointed logistics?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 2,
+          "medium": 4,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively incorporates key environmental themes, uses positive action framing, employs emotional and concise language, maintains a friendly semi-formal tone, and opens with a clear greeting and event announcement.",
+        "weaknesses": "The email lacks explicit deadline emphasis in its call-to-action, omits an appreciative closing and clear sign-off, does not follow the full prescribed information flow (missing an appreciation note), fails to include all key phrases, and does not highlight event dates or use bullet-point formatting for logistics.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 32.22768894831339,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.45161290322580644": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of environmental stewardship, community impact, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present environmental concerns through positive action framing rather than explicit problem statements?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the call-to-action include explicit sign-up instructions with deadline emphasis?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is community-focused, encouraging, and positive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style invitational and appreciative throughout the email?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level semi-formal with friendly warmth?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the information flow sequence: event details \u2192 impact explanation \u2192 participation instructions \u2192 appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with a friendly greeting and event announcement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close with an appreciation note and clear sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email contain the key phrases: 'make a difference', 'join us', 'community effort', and 'protect our river'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use concise sentences with action verbs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email include bold event dates and bullet-pointed logistics?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively incorporates key environmental themes, uses positive action framing, employs emotional and concise language, maintains a friendly semi-formal tone, and opens with a clear greeting and event announcement.",
+          "weaknesses": "The email lacks explicit deadline emphasis in its call-to-action, omits an appreciative closing and clear sign-off, does not follow the full prescribed information flow (missing an appreciation note), fails to include all key phrases, and does not highlight event dates or use bullet-point formatting for logistics.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 32.22768894831339,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.45161290322580644,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 2,
+            "medium": 4,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 96.6834602355957,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 1,
+      "score": 0.7096774193548387
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 2,
+      "score": 0.5161290322580645
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 3,
+      "score": 0.45161290322580644
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 4,
+      "score": 0.45161290322580644
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 5,
+      "score": 0.45161290322580644
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 917.9985735416412,
+    "success": true,
+    "errors": []
+  }
+}

@@ -1,0 +1,924 @@
+{
+  "session_id": "cbd2b981-653f-4104-92be-464f7b154c49",
+  "timestamp": "2025-07-22T22:09:39.190865",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0111",
+    "name": "Urgent: Tell Your Senator to Support the Safe Schools Improvement Act"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Urgent: Tell Your Senator to Support the Safe Schools Improvement Act"
+  },
+  "models_used": {
+    "email_models": [
+      "stablelm-2-1.6b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "vicuna-7b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your Name], [Your Title],\n\nSubject: Urgent Call to Action: Support the Safe Schools Improvement Act\n\nDear [Recipient's Name],\n\nAs a concerned citizen and advocate for education equity, I am reaching out to you today to urgently ask for your support in advocating for the Safe Schools Improvement Act. This critical legislation aims to strengthen protections for students and educators across the country by addressing key gaps and challenges faced by schools during these unprecedented times.\n\nThe Safe Schools Improvement Act has been introduced in both the House and Senate, but we need your help to ensure that this vital legislation becomes law. By signing the petition at [PETITION LINK], you can make your voice heard and show your support for safe and equitable schools for all students.\n\nThis issue affects millions of students across the United States who face ongoing trauma, isolation, and uncertainty due to the COVID-19 pandemic. The Safe Schools Improvement Act would provide much-needed resources and protections for educators, staff, and students to address these challenges and ensure they receive the support and care they deserve.\n\nI urge you to join us in supporting this important legislation by taking just a few minutes to sign the petition now. Together, we can create a safer and more inclusive educational environment for every student, regardless of their background or circumstances.\n\nThank you for your time and consideration. Please feel free to reach out to me if you have any questions or concerns about this issue.\n\nWarm regards,\n\n[Your Name]\n[Your Title]\n",
+        "generation_time": 122.19918489456177,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[YOUR_NAME]\n\nSubject: Urgent: Tell Your Senator to Support the Safe Schools Improvement Act!\n\nDear [SENATOR NAME],\n\nAs a concerned citizen, I am writing to urge you to support the Safe Schools Improvement Act, which would provide critical funding and resources to schools across America to improve safety and security. The bill has already passed the House of Representatives, but now it\u2019s up to our senators to act.\n\nThe Safe Schools Improvement Act would invest in school safety by increasing funding for school resource officers, mental health services, and other critical programs that protect students and educators alike. This legislation is vital for keeping our children safe and ensuring their education continues uninterrupted.\n\nHowever, the Senate has yet to take action on this important bill. That\u2019s why I urge you to support the Safe Schools Improvement Act and join us in demanding safer schools for all.\n\nPlease consider supporting this crucial legislation today. You can find more information about the bill here: https://www.congress.gov/bill/116th-congress/senate-bill/2879.\n\nThank you for your time and consideration. Please let me know if you have any questions or concerns.\n\nBest regards,\n\n[YOUR_NAME]\n",
+        "generation_time": 15.800661087036133,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Urgent: Tell Your Senator to Support the Safe Schools Improvement Act\n\nSubject: Protect Our Kids: Demand Action Now!\n\nDear [Name],\n\n**URGENT ACTION REQUIRED**\n\nToday, millions of students across America face bullying, harassment, and violence in their schools every day. The Safe Schools Improvement Act is a crucial step towards creating safe and inclusive learning environments for all. But we need your help to make it happen!\n\nThe Safe Schools Improvement Act would require schools to develop policies and procedures to prevent bullying and harassment, provide support for victims, and hold perpetrators accountable. It's a common-sense solution that has already shown success in states like California and New York.\n\nBut despite overwhelming public support, some politicians are trying to block this bill. That's why we're counting on you to speak out and demand action from your senator! Every single one of us deserves to feel safe and supported at school.\n\nWill you join us in calling on your senator to support the Safe Schools Improvement Act? Here's how:\n\n1.  Click this link to find your senator's contact information: [link]\n2.  Call or email them today and tell them you want them to support the Safe Schools Improvement Act\n3.  Share this email with friends and family who care about our kids' safety\n\nTogether, we can create a safer, more supportive environment for every student. Don't let politicians silence your voice \u2013 use it to demand change!\n\n**TAKE ACTION NOW AND DEMAND SAFER SCHOOLS FOR ALL!**\n",
+        "generation_time": 105.30793046951294,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Urgent Action Needed \u2013 Protect Our Children in Schools!\n\nDear [Senator\u2019s Name],\n\nImagine walking into school every day knowing that you could be at risk due to unaddressed safety concerns. This worrying reality affects countless students across our nation who deserve nothing less than safe learning environments where they can thrive academically and personally. The time has come for us to stand up together against this pressing issue by supporting legislation like the Safe Schools Improvement Act (SSIA). As constituents deeply concerned about student well-being, we implore you to advocate fervently for SSIA within Congress.\n\nThe current state of affairs leaves too many children vulnerable; bullying incidents have escalated while resources allocated towards prevention remain woefully insufficient. With schools becoming targets for violence, comprehensive policies must evolve swiftly if we aim to safeguard young lives effectively. It falls upon lawmakers such as yourself \u2014 entrusted guardians representing their communities \u2014to spearhead these crucial reforms through supportive measures including but not limited to enhanced training programs for educators handling disciplinary actions responsibly yet compassionately.\n\nWe understand there may exist hesitations regarding policy implementation costs associated with bolstering security protocols alongside counselor availability enhancements required under proposed amendments found herein.[LINK TO PROPOSED AMENDMENTS]. However, let us consider how much greater would financial investment truly cost when juxtaposed against potential losses stemming directly out of negligence toward proactive solutions? Every dollar spent today serves both immediate protection needs whilst also fostering long term resilience amongst youth populations facing adversity daily\u2013an expense far surpassing mere monetary value given contextual implications surrounding educational continuance amidst turbulent times ahead\u2026and beyond them still await challenges unknown until addressed appropriately nowadays beforehand rather late later down road paths otherwise left open wide opportunities missed chances taken carelessly never mind consequences borne responsibility held accountably accordingly henceforth forward moving ever closer realizing dream goals achievable collectively uniting efforts shared purpose common ground reaching consensus mutually beneficial agreement reached harmoniously agreed terms settled satisfactorily resolved disputes peaceful resolution sought earnestly pursued tirelessly fought valiantly defended vigilantly protected zealously championed wholeheartedly supported ardently believed passionately endorsed enthusiastically backed firmly stood resolutely committed steadfast allied solidified partnered joined forces collaboratively worked hand-in-hand cooperating closely coordinated teamwork synergized effort combined endeavored jointly strived equally hard achieved success celebrated triumphant victory won glory earned honor bestowed accolade received reward conferred prize awarded medal presented trophy honored plaque acknowledged certificate granted title deemed worthy deserving entitled merited praised commended recognized appreciated thanked gratefulness expressed gratitude conveyed appreciation shown warm welcome extended heartfelt greeting offered cordial salutations rendered courteous gesture performed polite manner conducted decorum maintained professionalism exhibited competency demonstrated skill set applied knowledge employed experience utilized wisdom acquired insight gained understanding developed perspective broadened horizons expanded viewpoints considered carefully evaluated judiciously assessed critically analyzed thoroughly examined meticulously scrutinized diligently reviewed repeatedly checked verified authenticated certified confirmed accurate reliable trustworthy dependable credible believable genuine sincere honest true fact proven verifiable substantiated corroborated validated affirmed upheld ratified adopted sanctioned implemented executed carried out realized actualization materialized fruition attained fulfillment accomplished accomplishment secured obtained possession claimed rightfully owned legally entitlement established legal standing asserted ownership exercised jurisdiction enforced regulated controlled managed directed guided steered led navigated charted course plotted mapped followed route traveled journey undertaken embarked ventured explored discovered encountered confronted faced tackled engaged handled coped adjusted adapted modified conformed accommodated assimilated integrated incorporated merged blended synthesized composed constructed built erected assembled arranged organized systematized structured standardized normalized regularized streamlined optimized improved refined perfected fine tuned calibrated balanced rectified corrected remediated repaired restored mended fixed solved answered questioned clarified explained justified argued debated discussed deliberated negotiated bargained haggled bartered traded exchanged swapped replaced patched sealed signed approved authorized legitimized licensed issued warrantied guaranteed promised assured ensured secure locked shut closed fastened tightened strapped bound bonded latched anchored moored docked tied knotted linked connected interconnected networked communicated transmitted broadcasted disseminated circulated distributed propagated spread widely publicized announced revealed exposed divulged declared admitted conceded confessed accepted understood perceived sensed detected identified noticed observed spotted pinpointed located traced tracked monitored watched screened scanned surveyed measured quantified estimated calculated computed deduced inferred extrapolated interpolated modeled simulated forecasted projected anticipated predicted hypothesized conjectured speculated postulated presumed assumed suppos... Continue reading \u201cTell Your Senators To Vote For A Bill That Will Save Kids In School\u201d \u2192\n\n# Response Email Draft Based On Provided Information And Constraints #\n\nSubject: URGENT: Take Swift Action Now & Advocate Safety Measures Through Senate Representative James Smith!\n\nDear Mr. Smith,\n\nEvery morning should begin brightly lit by hope instead of fear\u2014hope for safer hallways, classrooms brimming with laughter overshadowed no longer by whispers of concern. Yet, despite progress made, millions of American students face threats each year because vital protective laws haven't been passed. We need decisive leadership from someone willing to act quickly and courageously, which brings us straight to you, my esteemed representative, and why I believe you hold the key to change. By backing critical initiatives like the Safe Schools Improvement Act (SSIA), you possess the power to create lasting impact, transforming perilous conditions into bastions of education excellence. Let's rally behind one another so all children feel empowered to focus solely on growing intellectually, socially, emotionally, and physically free from anxiety caused by unsafe surroundings. Please make sure to express strong support for robust anti-violence strategies during Congressional discussions concerning childhood development priorities. Together, we will pave pathways leading away from hazards threatening academic growth and overall life quality among America's future leaders. Join hands with fellow citizens eagerly waiting around corners ready to cheer loudest once adequate precautions become mandatory standards throughout districts everywhere. May tomorrow dawn even stronger thanks largely owing itself greatly indeed most profoundly indebted entirely absolutely certainty completely positively undoubting surely confident certainly unequivocal definitely yes definitively decided ultimately conclusively irrevocably finally forevermore invariably perpetually consistently persistently continually constantly ceaselessly relentlessly eternally permanently immutable inflexibly indisputably imperishably impenetrable invincible unswayable absolute total entire wh\n",
+        "generation_time": 73.83704209327698,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Urgent: Protect Our Students Today!\n\nDear [Recipient],\n\nAs a parent, educator, or concerned citizen, you know that our children's safety should always come first. But right now, there's a critical issue threatening the well-being of students across America: the lack of clear guidelines for addressing gun violence in schools. That's why I'm reaching out to you today.\n\nThe Safe Schools Improvement Act (SSIA) is a bipartisan bill that would provide much-needed resources to improve school safety and prevent gun violence. It requires schools to develop comprehensive emergency response plans, receive regular mental health services, and establish anonymous reporting systems for threats of violence. This legislation is crucial to ensuring our kids feel safe at school and giving educators the tools they need to protect them.\n\nUnfortunately, SSIA has been stalled in Congress since its introduction in 2019. We cannot afford to wait any longer for this vital legislation to pass. Our children's lives depend on it.\n\nThat's why I am calling on you, as my representative, to support the Safe Schools Improvement Act and do everything in your power to see it through. As a member of Congress, you have the unique opportunity to make a difference in the lives of millions of American students. Be their champion and stand up for what's right.\n\nPlease, take a moment to contact your senator today and ask them to co-sponsor the Safe Schools Improvement Act. You can reach them by phone ([PHONE\\_NUMBER]) or by filling out the form on their website ([WEBSITE\\_LINK]). Let them know that you expect them to prioritize the safety of our children and vote in favor of the Safe Schools Improvement Act.\n\nTogether, we can create a safer environment for our kids to learn and grow. Don't let them down. Stand with us and be a hero for our students.\n\nSincerely,\n\n[YOUR NAME]\n",
+        "generation_time": 40.2564914226532,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email have a clear and relevant subject line?",
+          "best_ans": "yes",
+          "priority": "very high"
+        },
+        {
+          "question": "Is the content directly relevant to the topic?",
+          "best_ans": "yes",
+          "priority": "very high"
+        },
+        {
+          "question": "Does the email include a clear call-to-action?",
+          "best_ans": "yes",
+          "priority": "high"
+        },
+        {
+          "question": "Is the tone appropriate for the intended audience?",
+          "best_ans": "yes",
+          "priority": "high"
+        },
+        {
+          "question": "Does the email have a proper greeting?",
+          "best_ans": "yes",
+          "priority": "medium"
+        },
+        {
+          "question": "Does the email have a professional closing?",
+          "best_ans": "yes",
+          "priority": "medium"
+        },
+        {
+          "question": "Is the email length appropriate for the content?",
+          "best_ans": "yes",
+          "priority": "low"
+        },
+        {
+          "question": "Does the email avoid spelling and grammar errors?",
+          "best_ans": "yes",
+          "priority": "low"
+        }
+      ],
+      "generation_time": 44.367162227630615,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.9090909090909091,
+        "ranking_score": 0.9090909090909091,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email have a clear and relevant subject line?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the content directly relevant to the topic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a clear call-to-action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the tone appropriate for the intended audience?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email have a proper greeting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email have a professional closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email length appropriate for the content?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email avoid spelling and grammar errors?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 2,
+          "medium": 1,
+          "low": 2,
+          "very low": 0
+        },
+        "total_criteria": 8,
+        "strengths": "The email features a clear and relevant subject line, directly addresses the legislative topic with appropriate tone and content, includes a direct call-to-action, and contains a proper greeting. It is concise with no spelling or grammar errors.",
+        "weaknesses": "The email lacks a professional closing and sign-off, which detracts from overall professionalism.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 20.608267068862915,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "llama-3-8b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb",
+              "llama-3-8b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email have a clear and relevant subject line?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the content directly relevant to the topic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a clear call-to-action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the tone appropriate for the intended audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email have a proper greeting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email have a professional closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email length appropriate for the content?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email avoid spelling and grammar errors?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email features a clear and relevant subject line, directly addresses the legislative topic with appropriate tone and content, includes a direct call-to-action, and contains a proper greeting. It is concise with no spelling or grammar errors.",
+          "weaknesses": "The email lacks a professional closing and sign-off, which detracts from overall professionalism.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 20.608267068862915,
+          "generation_attempts": 3,
+          "total_criteria": 8,
+          "weighted_score": 0.9090909090909091,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 2,
+            "medium": 1,
+            "low": 2,
+            "very low": 0
+          },
+          "evaluation_time": 61.82510757446289,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.9090909090909091,
+        "ranking_score": 0.9090909090909091,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email have a clear and relevant subject line?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the content directly relevant to the topic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a clear call-to-action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the tone appropriate for the intended audience?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email have a proper greeting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email have a professional closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email length appropriate for the content?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email avoid spelling and grammar errors?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 2,
+          "medium": 1,
+          "low": 2,
+          "very low": 0
+        },
+        "total_criteria": 8,
+        "strengths": "The email features a clear subject line, relevant content, strong call-to-action, appropriate tone, proper greeting, suitable length, and minimal spelling or grammar errors.",
+        "weaknesses": "The email lacks a professional closing, which affects the formal structure of the letter.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 20.996098200480144,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "llama-3-8b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb",
+              "llama-3-8b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email have a clear and relevant subject line?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the content directly relevant to the topic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a clear call-to-action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the tone appropriate for the intended audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email have a proper greeting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email have a professional closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email length appropriate for the content?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email avoid spelling and grammar errors?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email features a clear subject line, relevant content, strong call-to-action, appropriate tone, proper greeting, suitable length, and minimal spelling or grammar errors.",
+          "weaknesses": "The email lacks a professional closing, which affects the formal structure of the letter.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 20.996098200480144,
+          "generation_attempts": 3,
+          "total_criteria": 8,
+          "weighted_score": 0.9090909090909091,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 2,
+            "medium": 1,
+            "low": 2,
+            "very low": 0
+          },
+          "evaluation_time": 62.98861241340637,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.9090909090909091,
+        "ranking_score": 0.9090909090909091,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email have a clear and relevant subject line?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the content directly relevant to the topic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a clear call-to-action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the tone appropriate for the intended audience?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email have a proper greeting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email have a professional closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email length appropriate for the content?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email avoid spelling and grammar errors?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 2,
+          "medium": 1,
+          "low": 2,
+          "very low": 0
+        },
+        "total_criteria": 8,
+        "strengths": "The email features a clear subject line, relevant content, and a strong call-to-action. It also includes a proper greeting, maintains an urgent yet appropriate tone, and is free from spelling and grammar errors.",
+        "weaknesses": "The email lacks a professional closing, and the ending appears truncated, which affects the overall closure of the message.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 31.110759655634563,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "llama-3-8b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb",
+              "llama-3-8b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email have a clear and relevant subject line?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the content directly relevant to the topic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a clear call-to-action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the tone appropriate for the intended audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email have a proper greeting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email have a professional closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email length appropriate for the content?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email avoid spelling and grammar errors?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email features a clear subject line, relevant content, and a strong call-to-action. It also includes a proper greeting, maintains an urgent yet appropriate tone, and is free from spelling and grammar errors.",
+          "weaknesses": "The email lacks a professional closing, and the ending appears truncated, which affects the overall closure of the message.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 31.110759655634563,
+          "generation_attempts": 3,
+          "total_criteria": 8,
+          "weighted_score": 0.9090909090909091,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 2,
+            "medium": 1,
+            "low": 2,
+            "very low": 0
+          },
+          "evaluation_time": 93.33257985115051,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.8636363636363636,
+        "ranking_score": 0.8636363636363636,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email have a clear and relevant subject line?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the content directly relevant to the topic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a clear call-to-action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the tone appropriate for the intended audience?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email have a proper greeting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email have a professional closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email length appropriate for the content?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email avoid spelling and grammar errors?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 2,
+          "medium": 1,
+          "low": 1,
+          "very low": 0
+        },
+        "total_criteria": 8,
+        "strengths": "The email has a clear and relevant subject line, is directly relevant to the topic, includes a strong call-to-action, maintains an appropriate tone for the intended audience, starts with a proper greeting, and has an overall appropriate length.",
+        "weaknesses": "The email lacks a professional closing and contains a truncation/spelling error toward the end.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 22.484722932179768,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "llama-3-8b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb",
+              "llama-3-8b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email have a clear and relevant subject line?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the content directly relevant to the topic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a clear call-to-action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the tone appropriate for the intended audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email have a proper greeting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email have a professional closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email length appropriate for the content?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email avoid spelling and grammar errors?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email has a clear and relevant subject line, is directly relevant to the topic, includes a strong call-to-action, maintains an appropriate tone for the intended audience, starts with a proper greeting, and has an overall appropriate length.",
+          "weaknesses": "The email lacks a professional closing and contains a truncation/spelling error toward the end.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 22.484722932179768,
+          "generation_attempts": 3,
+          "total_criteria": 8,
+          "weighted_score": 0.8636363636363636,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 2,
+            "medium": 1,
+            "low": 1,
+            "very low": 0
+          },
+          "evaluation_time": 67.45446825027466,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.7727272727272727,
+        "ranking_score": 0.7727272727272727,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email have a clear and relevant subject line?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the content directly relevant to the topic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the tone appropriate for the intended audience?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email have a proper greeting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email have a professional closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email length appropriate for the content?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email avoid spelling and grammar errors?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 1,
+          "medium": 1,
+          "low": 2,
+          "very low": 0
+        },
+        "total_criteria": 8,
+        "strengths": "The email features a clear subject line, relevant content, an appropriate tone, proper greeting, appropriate length, and no spelling or grammar errors.",
+        "weaknesses": "The email lacks a clear call-to-action and a professional closing, leaving it incomplete and missing explicit directives for the recipient.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 35.17728018760681,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "llama-3-8b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb",
+              "llama-3-8b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email have a clear and relevant subject line?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the content directly relevant to the topic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the tone appropriate for the intended audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email have a proper greeting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email have a professional closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email length appropriate for the content?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email avoid spelling and grammar errors?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email features a clear subject line, relevant content, an appropriate tone, proper greeting, appropriate length, and no spelling or grammar errors.",
+          "weaknesses": "The email lacks a clear call-to-action and a professional closing, leaving it incomplete and missing explicit directives for the recipient.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 35.17728018760681,
+          "generation_attempts": 3,
+          "total_criteria": 8,
+          "weighted_score": 0.7727272727272727,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 1,
+            "medium": 1,
+            "low": 2,
+            "very low": 0
+          },
+          "evaluation_time": 105.5321352481842,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 1,
+      "score": 0.9090909090909091
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 2,
+      "score": 0.9090909090909091
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 3,
+      "score": 0.9090909090909091
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 4,
+      "score": 0.8636363636363636
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 5,
+      "score": 0.7727272727272727
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 559.1139290332794,
+    "success": true,
+    "errors": []
+  }
+}

@@ -1,0 +1,1064 @@
+{
+  "session_id": "98e96ca1-a05e-4ca1-b8bf-9e4e9bbef7c8",
+  "timestamp": "2025-07-22T23:41:06.367038",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0117",
+    "name": "Join Our Letter-Writing Campaign Against Discriminatory Bills"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Join Our Letter-Writing Campaign Against Discriminatory Bills"
+  },
+  "models_used": {
+    "email_models": [
+      "vicuna-7b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "phi-3-mini-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "---\n\nSubject: [Urgent]: Join our letter-writing campaign against discriminatory bills\n\nDear [Recipient],\n\nDo you believe in equality for all? Are you ready to make a difference in the lives of marginalized communities? If so, we need your help now!\n\nWe have recently learned about two discriminatory bills that threaten to roll back progress made towards equal rights for all citizens. These bills would harm people of color, LGBTQ+ individuals, and other marginalized groups, and we cannot let them pass.\n\nThat's why we are launching a letter-writing campaign to oppose these bills. By joining us, you can become a hero in the fight for justice and equality. Together, we can make our voices heard and protect the rights of those who need it most.\n\nHere's how you can help:\n\n1. Sign up for our campaign by clicking [LINK].\n2. Write a personalized letter to your elected officials opposing these discriminatory bills. We provide sample letters and tips to make it easy for you.\n3. Send your letter to your representatives using our provided templates and instructions.\n\nYour support will be crucial in stopping these harmful bills from becoming law. Don't wait \u2013 join our letter-writing campaign today and be a part of the change we need.\n\n[BOLD CALL TO ACTION]\n",
+        "generation_time": 55.99676322937012,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[YOUR_EMAIL]\n\n---\n\nSubject Line: Join our letter-writing campaign against discriminatory bills\n\nDear [SENDING_ORG],\n\nI am reaching out today because I strongly believe in fighting for human rights and equality. That's why I'm joining your letter-writing campaign against discriminatory bills.\n\nDiscriminatory bills like these can have devastating consequences on marginalized communities, and we need all hands on deck to fight back. By signing this petition, you'll be contributing to creating a world where everyone has equal opportunities and protections under the law.\n\nAs someone who cares deeply about social justice issues, I know that every single person can make a difference. Even if you don't feel comfortable writing a letter yourself, please share this message with others in your network who might be interested in getting involved.\n\nTogether, we can create real change and stand up for what's right.\n\nThank you for being at the forefront of this important movement.\n\nSincerely,\n\n[Your Name]\n",
+        "generation_time": 141.04939317703247,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[YOUR_NAME]\nSubject: Join Our Letter-Writing Campaign Against Discriminatory Bills!\n\nDear [SENDER],\n\nWe hope you're doing well! We wanted to let you know about our upcoming letter-writing campaign against discriminatory bills in your state. These bills are designed to target marginalized communities and limit their access to basic services like healthcare, education, and housing.\n\nOur mission is to raise awareness and mobilize our community to stand up against these attacks. We believe that everyone deserves equal protection under the law, regardless of race, religion, gender, or sexual orientation.\n\nTo get started, we need your help. Can you spare a few minutes to sign our petition and share it with your friends and family? It only takes a few seconds, but every signature counts.\n\nHere's how you can sign:\n\n[LINK TO PETITION]\n\nSignatures gathered will be submitted to your elected officials, who will then have the opportunity to vote on the bills. This is just one way we can make a difference, but there are many other ways you can support us.\n\nWe encourage you to join us in this important effort. Together, we can create a better future for all.\n\nThank you for your time and consideration.\n\nBest regards,\n\n[YOUR NAME]\n\n## Instruction:\n\nReplace the placeholder text with your actual message, including the link to the petition and the closing token `\n",
+        "generation_time": 28.8532817363739,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Subject: Stand Up Against Hate\n\nDear [Name],\n\nWe can't believe what we're seeing in our state capitol right now. A wave of discriminatory bills aimed at marginalized communities is sweeping through our government, threatening the very fabric of our society.\n\nThese bills target the most vulnerable among us \u2013 people of color, women, LGBTQ+ individuals, and immigrants. They seek to erase their identities, restrict their freedoms, and silence their voices.\n\nBut we won't let that happen. We've been fighting against hate for years, and we're not about to back down now. That's why we're launching a letter-writing campaign to demand our lawmakers reject these discriminatory bills once and for all.\n\nAs a member of our community, you have the power to make a difference. Your voice matters, and your actions can inspire others to join the fight. By signing our petition and writing letters to your representatives, you'll be joining thousands of others who refuse to stand idly by while hate spreads.\n\nDon't let fear and intolerance win. Stand up for justice, equality, and compassion. Take action today!\n\n**Sign our petition and start writing letters now: <https://bit.ly/stand-up-against-hate>**\n",
+        "generation_time": 125.33338618278503,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Take Action Now! Help Us Stop Harmful Legislation in Its Tracks\n\nDear [Recipient Name],\n\nWe hope this message finds you well amid these challenging times. As members of our community who value justice and equality above all else, we have witnessed something deeply troubling unfold before us\u2014a series of discriminatory bills that threaten the very fabric of our society. These proposed laws aim to undermine civil liberties and promote inequality at their core; they represent a stark regression rather than progress. It\u2019s time for us to stand up against such regressions together.\n\nThe most recent bill under consideration seeks to limit access to healthcare services based on income levels, disproportionately affecting those already struggling financially. This isn\u2019t just about policy changes; it\u2019s about people \u2013 families like yours and mine \u2014 facing unjust barriers every day because someone decided money should dictate one\u2019s right to basic care. The consequences could be devastating if left unchecked. We cannot let fear and prejudice guide legislative decisions when compassion and fairness must lead them instead.\n\nThat\u2019s why I am reaching out today through my role as President of EqualityNow Advocacy Group. Together, we can make waves by taking collective action now so future generations inherit nothing but equity and respect. By joining forces with organizations fighting similar battles across states nationwide, including ACLU Foundation & NAACP Legal Defense Fund Inc., Lambda Legal Education & Defense Fund, National Women\u2019s Law Center, UnidosUS Latino Leadership Institute, Human Rights Watch USA Program On Violence Against Women And Girls Project, Transgender Law Center Policy Initiatives Office Of Civil Liberties Under Secretary For Oversight Department Of Justice U.S. Citizenship And Immigration Services Division Chief Public Affairs Officer Bureau Of Consular Affairs United States Agency For International Development Foreign Operations Administration Acting Deputy Assistant Administrator Africa Regional Director World Bank Country Manager Nigeria Mr. John Smith Cc: Members@EqualityNowAdvocacyGroup @HumanRightsWatch US Government Officials Addresses To Signature List Attachments/Documents Required Email Template Version History Editors Notes About Me Contact Form Privacy Statement Terms Conditions Disclosure Advertising Feedback How Can You Help? Write letters expressing opposition to harmful policies directly to lawmakers responsible for introducing these bills. Share personal stories highlighting how such measures would impact individuals within our communities adversely affected by systemic biases. Encourage others around you\u2013friends family colleagues neighbors even strangers online social media platforms\u2013to join efforts ensuring everyone has equal opportunities regardless where life takes them geographically economically socially culturally etc.. Support local initiatives working towards promoting inclusivity diversity tolerance understanding empathy solidarity unity peace coherence collaboration cooperation mutual aid assistance advocacy activism volunteering fundraising donations sponsorships campaigns events rallies marches protests petitions signatures letter collection drives public speaking engagements educational seminars workshops training sessions conferences symposiums panels roundtables discussions debates dialogues deliberations consultations assessments evaluations analyses investigations research studies reports findings conclusions recommendations proposals drafts documents files archives records databases catalogs indexes bibliographies citations references sources materials evidence proof arguments counterarguments objections refutations responses retorts rejoinders replies answers questions queries clarifications explanations elucidations descriptions illustrations examples scenarios situations incidents occurrences occasions happenings episodes experiences encounters meetings gatherings assemblies convocations conventions summits colloquium lectures talks conversations chats chatty exchanges banter parlays parleys gabfests gabbling jabberwockies yakking blathering prattle palaver waffling mumblings murmurs whispers sussurrations susurrations hushhush confabs conspiracy theories speculations conjectures hypotheses postulates axioms tenets dogmas doctrines principles maxims presuppositions suppositions surmisings assumptions premises prognostications forecasts prophecies auguries divination visions omens portents signs harbingers heralds auspices omeness predictions fortunes tellings fortune telling clairvoyances precognition prophetic revelations insights intuitions enlightenment epiphanies awakenings inspirations illuminations moments flashbulbs burstins bulbous bright ideas sparklers lightning bolts strokes genius creativity innovation inventiveness originality novelty fresh perspectives viewpoints vantage points angles perceptions insight sight vision acuity clear seeing eyes open wide lookouts watchdogs sentries guardians protectors defenders custodians keepers stewards shepherds guides mentors teachers tutors instructors educators scholars students pupils apprentices journeymen craftspeople tradespeople laborers workers employees staff professionals experts specialists authorities officials leaders administrators commandants chief officers headmasters principals superintendents deans professors advisors counselors therapists psychologists psychoanalysts neurologists neuroscientists physicians medics healers curers remedy providers curettectors antibiotics medicaments pharmaceutical drugs therapeutics treatment regimens protocols procedures techniques methods strategies plans programs designs layouts blueprints diagrams charts maps graphs figures numbers digits numerals symbols characters alphabets sequences patterns rhythms melodies tunes songs lyrics poetry verses ballads sonnets haikus odes epics narratives tales legends mythologies folklore fables fantasy fiction novels books chapters volumes tomes scrolls manuscripts codices papyrus leaves paper sheets cardboard cards index entries list items bullet lists checklists agenda calendars timetable schedules clock timing hours minutes seconds milliseconds nanoseconds microseconds picoseconds femtoseconds attomicrosecondsexatto secondsto minutesto hoursto daysesto weeksesto monthsesto yearsasto centuriesato millionasto billionasto quadrillionasto quintillionasto sextillionasto septillionasto octillionasto nonillionasto googolso googolplexgoogolduplexgoogoltrillion duotrigintillion triquadrillion quadridigitillion pentadigitillion hexacounton centilliondecillion thousandmillion hundredthousand thousands hundreds dozendozenscentennialcenturydecadeyearmonthdayweekhourminutesecondnanosecondpicosecondmilisecondmicrosecondnanoquantumsiliconatomeangstrombohrelectronvoltjouncekilogrammetrekelvincelsiusnewtonforcejoulewattfaradampereohmmeterteslamagneticfieldweberpermeabilityresistancemhoconductivityohmicimpedancecapacitorinductorfrequencyphaseanglepowerfactorloadreactanceimpedancecircuitequationformulagraphtheorytheoremprinciplelawphenomenonexperimentobservationdataanalysisresultstatisticvariablestochasticprocessrandomvariableprobabilisticdistributioneventoutcomepredictionforecastmodelsim\n",
+        "generation_time": 91.7906186580658,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email present the problem as legislative discrimination requiring immediate opposition?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email propose a collective letter-writing campaign as the solution?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use a direct participation appeal (e.g., 'Join Our') in the call to action?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'oppositional'?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style direct and persuasive?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the formality level moderate (balancing professional and activist tones)?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email open with an action-oriented headline?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email include the key phrases 'Join Our', 'Letter-Writing Campaign', and 'Against Discriminatory Bills'?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use imperative verb constructions in sentences?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use clear non-technical language?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 91.24318599700928,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 1.0,
+        "ranking_score": 1.0,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email present the problem as legislative discrimination requiring immediate opposition?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email propose a collective letter-writing campaign as the solution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email use a direct participation appeal (e.g., 'Join Our') in the call to action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'oppositional'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style direct and persuasive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level moderate (balancing professional and activist tones)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email open with an action-oriented headline?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include the key phrases 'Join Our', 'Letter-Writing Campaign', and 'Against Discriminatory Bills'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email use imperative verb constructions in sentences?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email use clear non-technical language?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 6,
+          "high": 2,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 10,
+        "strengths": "The email clearly identifies legislative discrimination and urgently calls for opposition through a collective letter-writing campaign. It uses emotional language, direct participation appeals, imperative verbs, and a balanced tone, while including all key phrases.",
+        "weaknesses": "None detected; all evaluated criteria are satisfactorily met.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 28.91334335009257,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "1.0": [
+              "vicuna-7b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email present the problem as legislative discrimination requiring immediate opposition?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email propose a collective letter-writing campaign as the solution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email use a direct participation appeal (e.g., 'Join Our') in the call to action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'oppositional'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style direct and persuasive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level moderate (balancing professional and activist tones)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email open with an action-oriented headline?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include the key phrases 'Join Our', 'Letter-Writing Campaign', and 'Against Discriminatory Bills'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email use imperative verb constructions in sentences?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email use clear non-technical language?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email clearly identifies legislative discrimination and urgently calls for opposition through a collective letter-writing campaign. It uses emotional language, direct participation appeals, imperative verbs, and a balanced tone, while including all key phrases.",
+          "weaknesses": "None detected; all evaluated criteria are satisfactorily met.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 28.91334335009257,
+          "generation_attempts": 3,
+          "total_criteria": 10,
+          "weighted_score": 1.0,
+          "priority_breakdown": {
+            "very high": 6,
+            "high": 2,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 86.74035811424255,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 1.0,
+        "ranking_score": 1.0,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email present the problem as legislative discrimination requiring immediate opposition?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email propose a collective letter-writing campaign as the solution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email use a direct participation appeal (e.g., 'Join Our') in the call to action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'oppositional'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style direct and persuasive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level moderate (balancing professional and activist tones)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email open with an action-oriented headline?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include the key phrases 'Join Our', 'Letter-Writing Campaign', and 'Against Discriminatory Bills'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email use imperative verb constructions in sentences?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email use clear non-technical language?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 6,
+          "high": 2,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 10,
+        "strengths": "The email clearly identifies discriminatory legislation as a problem, offers a collective letter-writing campaign, and employs a direct, persuasive, moderately formal style with clear and accessible language. It also includes a strong, action-oriented subject line with imperative language and all required key phrases.",
+        "weaknesses": "No significant weaknesses were identified based on the checklist criteria.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 35.573415676752724,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "1.0": [
+              "vicuna-7b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email present the problem as legislative discrimination requiring immediate opposition?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email propose a collective letter-writing campaign as the solution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email use a direct participation appeal (e.g., 'Join Our') in the call to action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'oppositional'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style direct and persuasive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level moderate (balancing professional and activist tones)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email open with an action-oriented headline?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include the key phrases 'Join Our', 'Letter-Writing Campaign', and 'Against Discriminatory Bills'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email use imperative verb constructions in sentences?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email use clear non-technical language?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email clearly identifies discriminatory legislation as a problem, offers a collective letter-writing campaign, and employs a direct, persuasive, moderately formal style with clear and accessible language. It also includes a strong, action-oriented subject line with imperative language and all required key phrases.",
+          "weaknesses": "No significant weaknesses were identified based on the checklist criteria.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 35.573415676752724,
+          "generation_attempts": 3,
+          "total_criteria": 10,
+          "weighted_score": 1.0,
+          "priority_breakdown": {
+            "very high": 6,
+            "high": 2,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 106.72057867050171,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 1.0,
+        "ranking_score": 1.0,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email present the problem as legislative discrimination requiring immediate opposition?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email propose a collective letter-writing campaign as the solution?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 3,
+            "description": "Does the email use a direct participation appeal (e.g., 'Join Our') in the call to action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'oppositional'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style direct and persuasive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level moderate (balancing professional and activist tones)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email open with an action-oriented headline?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include the key phrases 'Join Our', 'Letter-Writing Campaign', and 'Against Discriminatory Bills'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email use imperative verb constructions in sentences?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email use clear non-technical language?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 6,
+          "high": 2,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 10,
+        "strengths": "The email effectively presents legislative discrimination, employs clear and direct calls-to-action with key activist phrases, and balances professional and activist tones with emotional, persuasive language.",
+        "weaknesses": "No significant weaknesses observed.",
+        "consistency_confidence": 0.8,
+        "average_response_time": 34.51913626988729,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "1.0": [
+              "vicuna-7b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email present the problem as legislative discrimination requiring immediate opposition?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email propose a collective letter-writing campaign as the solution?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the email use a direct participation appeal (e.g., 'Join Our') in the call to action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'oppositional'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style direct and persuasive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level moderate (balancing professional and activist tones)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email open with an action-oriented headline?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include the key phrases 'Join Our', 'Letter-Writing Campaign', and 'Against Discriminatory Bills'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email use imperative verb constructions in sentences?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email use clear non-technical language?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively presents legislative discrimination, employs clear and direct calls-to-action with key activist phrases, and balances professional and activist tones with emotional, persuasive language.",
+          "weaknesses": "No significant weaknesses observed.",
+          "consistency_confidence": 0.8,
+          "average_response_time": 34.51913626988729,
+          "generation_attempts": 3,
+          "total_criteria": 10,
+          "weighted_score": 1.0,
+          "priority_breakdown": {
+            "very high": 6,
+            "high": 2,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 103.55774545669556,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.675,
+        "ranking_score": 0.675,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email present the problem as legislative discrimination requiring immediate opposition?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email propose a collective letter-writing campaign as the solution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email use a direct participation appeal (e.g., 'Join Our') in the call to action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'oppositional'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style direct and persuasive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level moderate (balancing professional and activist tones)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email open with an action-oriented headline?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include the key phrases 'Join Our', 'Letter-Writing Campaign', and 'Against Discriminatory Bills'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email use imperative verb constructions in sentences?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Does the email use clear non-technical language?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 4,
+          "high": 1,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 10,
+        "strengths": "The email clearly identifies legislative discrimination, employs strong oppositional and emotional language, uses a direct and persuasive tone along with imperative constructions, and maintains a moderate level of formality with clear non-technical language. The action-oriented headline effectively draws attention.",
+        "weaknesses": "The email falls short on including the specific direct participation phrase 'Join Our' in its call to action, and it does not incorporate all the required key phrases ('Join Our' and 'Against Discriminatory Bills').",
+        "consistency_confidence": 0.9,
+        "average_response_time": 29.42500877380371,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "1.0": [
+              "vicuna-7b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email present the problem as legislative discrimination requiring immediate opposition?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email propose a collective letter-writing campaign as the solution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email use a direct participation appeal (e.g., 'Join Our') in the call to action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'oppositional'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style direct and persuasive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level moderate (balancing professional and activist tones)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email open with an action-oriented headline?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include the key phrases 'Join Our', 'Letter-Writing Campaign', and 'Against Discriminatory Bills'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email use imperative verb constructions in sentences?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Does the email use clear non-technical language?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email clearly identifies legislative discrimination, employs strong oppositional and emotional language, uses a direct and persuasive tone along with imperative constructions, and maintains a moderate level of formality with clear non-technical language. The action-oriented headline effectively draws attention.",
+          "weaknesses": "The email falls short on including the specific direct participation phrase 'Join Our' in its call to action, and it does not incorporate all the required key phrases ('Join Our' and 'Against Discriminatory Bills').",
+          "consistency_confidence": 0.9,
+          "average_response_time": 29.42500877380371,
+          "generation_attempts": 3,
+          "total_criteria": 10,
+          "weighted_score": 0.675,
+          "priority_breakdown": {
+            "very high": 4,
+            "high": 1,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 88.27536273002625,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.625,
+        "ranking_score": 0.625,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email present the problem as legislative discrimination requiring immediate opposition?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email propose a collective letter-writing campaign as the solution?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email use a direct participation appeal (e.g., 'Join Our') in the call to action?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'oppositional'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style direct and persuasive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level moderate (balancing professional and activist tones)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email open with an action-oriented headline?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include the key phrases 'Join Our', 'Letter-Writing Campaign', and 'Against Discriminatory Bills'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email use imperative verb constructions in sentences?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email use clear non-technical language?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 3,
+          "high": 2,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 10,
+        "strengths": "The email clearly frames the legislative problem as discriminatory and uses emotional, direct and persuasive language with an action-oriented headline. It also employs imperative constructions and non-technical language, maintaining a moderate formality.",
+        "weaknesses": "The email does not propose a collective letter-writing campaign, lacks a direct participation appeal using specific phrases like 'Join Our', and does not include the key phrases 'Join Our', 'Letter-Writing Campaign', and 'Against Discriminatory Bills'.",
+        "consistency_confidence": 0.9,
+        "average_response_time": 27.029710213343304,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "1.0": [
+              "vicuna-7b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email present the problem as legislative discrimination requiring immediate opposition?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email propose a collective letter-writing campaign as the solution?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email use a direct participation appeal (e.g., 'Join Our') in the call to action?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'urgent', 'passionate', or 'oppositional'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style direct and persuasive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level moderate (balancing professional and activist tones)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email open with an action-oriented headline?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include the key phrases 'Join Our', 'Letter-Writing Campaign', and 'Against Discriminatory Bills'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email use imperative verb constructions in sentences?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email use clear non-technical language?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email clearly frames the legislative problem as discriminatory and uses emotional, direct and persuasive language with an action-oriented headline. It also employs imperative constructions and non-technical language, maintaining a moderate formality.",
+          "weaknesses": "The email does not propose a collective letter-writing campaign, lacks a direct participation appeal using specific phrases like 'Join Our', and does not include the key phrases 'Join Our', 'Letter-Writing Campaign', and 'Against Discriminatory Bills'.",
+          "consistency_confidence": 0.9,
+          "average_response_time": 27.029710213343304,
+          "generation_attempts": 3,
+          "total_criteria": 10,
+          "weighted_score": 0.625,
+          "priority_breakdown": {
+            "very high": 3,
+            "high": 2,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 81.08948612213135,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 1,
+      "score": 1.0
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 2,
+      "score": 1.0
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 3,
+      "score": 1.0
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 4,
+      "score": 0.675
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 5,
+      "score": 0.625
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 700.1017339229584,
+    "success": true,
+    "errors": []
+  }
+}

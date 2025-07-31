@@ -1,0 +1,914 @@
+{
+  "session_id": "4e602a83-19e2-4973-9187-6aa1622995c7",
+  "timestamp": "2025-07-23T02:08:07.881272",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0127",
+    "name": "Appeal for Gently Used Musical Instruments for our Arts Program"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Appeal for Gently Used Musical Instruments for our Arts Program"
+  },
+  "models_used": {
+    "email_models": [
+      "vicuna-7b-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Join us in making music accessible to all!\n\nDear [Name],\n\nAre you a music lover looking to make a difference? We have an exciting opportunity for you! Our nonprofit arts program is in need of gently used musical instruments to provide access to music education for children and adults from underprivileged backgrounds. By donating your old instruments, you can help create a community where everyone can experience the joy of making music.\n\nOur program has already impacted countless lives through music, but we cannot do it alone. With your support, we can continue to provide free lessons, workshops, and performances to those who would otherwise be unable to afford them.\n\nYour contribution will not only help us achieve our mission but also bring people together through the universal language of music. As a valued member of our community, we invite you to join us in this important cause.\n\nTo donate your gently used instruments, please contact us at [CONTACT\\_INFO]. Together, we can make a lasting impact on the lives of many.\n\nThank you for considering this request.\n\nSincerely,\n\n[SENDER\\_NAME]\n",
+        "generation_time": 58.29030728340149,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "From: [artsprogram@example.com](mailto:artsprogram@example.com)\nSubject: Help Us Bring Music to Our Community\n\nDear Friends,\n\nI'm reaching out today because I want to share something that's very close to my heart \u2013 music! As you know, our arts program has been working tirelessly to bring art, music, and creativity to underprivileged kids in our community. But we can't do it alone!\n\nWe're facing a challenge right now. Many of the instruments we've received so far are either broken or outdated, making it difficult for our students to practice and perform. That's why we need YOUR help!\n\nWe're calling on YOU to donate gently used musical instruments to our program. Whether it's a guitar, violin, drum set, or even a piano, every instrument counts! Not only will you be helping us provide better resources for our students, but you'll also be supporting their passion for music and the arts.\n\nYour donation will directly impact the lives of these young artists, giving them the tools they need to succeed and pursue their dreams. Plus, you'll get to see firsthand how your generosity makes a difference in our community!\n\nSo what can you do?\n\nDonate your gently used musical instruments to our program by replying to this email or visiting our website at [www.artsprogram.org](http://www.artsprogram.org).\n\nHelp us bring music to our community and change the lives of these talented young artists!\n\n**Donate Today!**\n",
+        "generation_time": 124.42056632041931,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[SENDER_NAME]\n\nSubject: Appeal for Gently Used Musical Instruments for our Arts Program\n\nDear [RECEIVING_ADDRESS],\n\nWe are excited to share this opportunity with you! Our arts program needs gently used musical instruments to enhance the learning experience for our students. We have several instruments that we need to replace, but unfortunately, we cannot afford to purchase new ones. Therefore, we are reaching out to you for assistance in donating a few of these instruments.\n\nOur arts program provides students with opportunities to explore their creativity through music, dance, and theatre. These instruments are crucial in enhancing their learning experience and providing them with the tools they need to succeed.\n\nHere are some examples of the instruments we require:\n\n- Guitar\n- Drums\n- Saxophone\n- Piano\n- Trumpet\n- Violin\n- Clarinet\n\nThese instruments are in good condition, but we need to replace them before the end of the school year. We would greatly appreciate your support in helping us fulfill our mission by donating these instruments.\n\nPlease let us know if you can help in any way. If you have any questions about our program or how we use the instruments, please do not hesitate to contact us.\n\nThank you so much for considering this request. We look forward to hearing from you soon.\n\nBest regards,\n\n[SENDING_ORGANIZATION]\n",
+        "generation_time": 31.70627450942993,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join Us in Harmonizing Lives Through Music!\n\nDear [Recipient Name],\n\nImagine a world where every child has access to music education \u2013 that\u2019s what we aim to create at Melody Makers Charity. We believe deeply in nurturing young talents through arts programs but face challenges due to limited resources. This brings us to you today.\n\nOur community center currently lacks quality musical instruments which hinders children from experiencing the joy and benefits of learning music firsthand. It's crucial they have tools like guitars, keyboards, drums, and violins because these aren't just objects; they represent dreams coming true, self-expression, and cultural heritage being passed down generations. But here lies our challenge\u2014funding isn't always sufficient to cover all needs. That's why gently used instruments donated by caring individuals can make such a difference.\n\nMelody Makers Charity offers several ways families benefit when involved directly within their local schools via hands-on workshops led by professional musicians who volunteer time outreach services designed specifically around student interests while encouraging teamwork & collaboration among peers during interactive sessions using various types/styles instrumentation techniques taught throughout curriculum development stages over course duration periods across diverse age ranges tailored towards individualized educational goals achieved per unique learner profiles adopted into specialised teaching methodologies applied consistently resulting positive long term impact upon personal growth potential maximization opportunities created lifelong skills acquired enhancing overall wellbeing significantly improving life chances prospectively increasing future employability rates positively influencing socio-economic status upward mobility trends observed nationwide correlating strongly linked closely related factors contributing majorly shaping society dynamics fundamentally altering societal norms creating lasting change transformative effects felt globally revolutionary movements initiated sparking innovation inspiring creativity driving progress forward propelling civilizations advancing collective consciousness elevating global awareness fostering unity promoting peaceful coexistence harmony bringing people together celebrating diversity embracing inclusivity building bridges connecting hearts breaking barriers demolishing walls uniting voices amplifying messages spreading hope igniting passion fueling motivation empowering spirits uplifting souls changing lives saving futures healing wounds mending broken bonds restoring faith rekindling love reigniting flames burning bright illuminating paths leading toward brighter tomorrows lighting way ahead paving roadways stepping stones crossing rivers flowing streams journey continuing unstoppable march moving steadily forward never giving up pushing boundaries expanding horizons reaching beyond limits transcending limitations surpassing expectations achieving greatness realizing possibilities becoming reality manifesting destinies fulfilling purpose finding meaning making sense understanding significance taking part playing role performing duty serving others helping fellow beings sharing compassion showing empathy offering support lending aid extending hand providing assistance standing shoulder to shoulder side by side facing adversity bravely battling fearlessly fighting courageously conquering hardships triumphantly succeeding against odds proving doubters wrong silencing critics quashing skeptics disproving myths debunking misconceptions dispelling ignorance eradicating prejudice eliminating discrimination abolishing racism combating inequality confronting oppression resisting tyranny opposing dictatorship defying totalitarian rule rejecting authoritarian regimes denouncing fascist ideology condemning communism criticising capitalism advocating democracy supporting freedom championing liberty striving tirelessly working diligently laboring strenuously exerting effort expending energy investing sweat pouring blood shedding tears crying laughter singing praises humming melodies dancing rhythmically swaying bodies swinging arms clapping feet stamping ground jumping high leaping far flying fast running swift swimming deep diving plunging underwater breathing air filling lungs inflating balloons bursting pops popping sounds cracking echoes reverberating vibrations resonating frequencies oscillating waves rippling water splashing droplets spraying mist sprinkling rain showering blessing raining gracefully falling softly whispering secrets murmuring tales narrating stories recounting memories reminding past honoring history cherishing tradition preserving legacy keeping promise protecting sacred trust safeguarding treasure guarding wealth securing fortune ensuring prosperity guaranteeing success assuring victory attaining achievement accomplishment earning reward receiving prize winning glory gaining honor acclaim acknowledging merits recognizing contributions appreciating efforts expressing gratitude thanking kindness favoring benevolence bestowing graces granting favors awarding medals presenting trophies conferring certificates issuing diplomas conferred degrees awarded scholarships given grants received funds allocated budgets approved budget reports prepared financial statements audited accounts examined tax returns filed income tax paid property deeds registered titles issued patents granted licenses renewed permits extended contracts signed agreements executed transactions processed payroll managed inventory controlled supplies ordered materials purchased equipment installed machinery repaired damaged restored fixed maintained serviced performed duties completed tasks accomplished objectives reached targets met quotas exceeded benchmarks set records broke milestones established standards followed rules obeyed laws abided ethical principles adhered moral codes lived virtues practiced good habits developed character built integrity earned respect gained credibility proven reliability demonstrated competency shown skill exhibited talent displayed artistry expressed beauty revealed truth discovered knowledge learned wisdom understood insight perceived vision experienced intuition sensed feeling touched heartfelt connection made friendship formed relationship cultivated bond strengthened tie reinforced alliance solidified partnership committed promised kept loyalty faithful allegiance dedicated service rendered devoted care offered sympathy shared concern cared about supported loved helped comforted cheered inspired believed stood firm held strong endured survived thrived succeeded overcome conquered won celebrated enjoyed delighted relished savored feasted dined indulged eaten satisfied filled grateful appreciated valued worthwhile endeavor pursued venture taken risks invested hoping praying wishing wished luck sought destiny found calling answered opportunity seized chance grasped hold tight clutched fisted raised lifted pulled drew pushed back shook nodded agreed disagreed argued convinced believer confirmed affirmed asserted declared stated claimed demanded asked questioned wondered puzzled thought wondering imagined fantasied daydreamed hoped aspired desired wanted needed deserved entitled owed rightful claim seeking justice demanding fair treatment equal opportunity afforded compensated recognized deserving warranting entitlement inherent privilege enjoying privileges having fun doing things pleasures happiness satisfaction pleasure enjoyment entertainment relaxation stress relief recreation playtime gameplay sportsmanship competition contention rivalry contest winner victorious tournament championship titleholder champions league champs champ finalists semifinalist runnerups losers thirdplace fourthplace fifthplace sixthplace seventh place eightthplace ninthplace topseven eleventhplace twelfthplace thirteenthplace fourteenthplace fifteenthplace sixteenthplace eighteenthplace nineteenthplace twentyfirstplacer gold medal silver medal bronze medal awards ceremony presentation certificate diploma degree certification letter confirmation notice declaration proclamation decree edict ordinance mandate resolution order statute bill act law judicial verdict judgment sentence penalty fine punishment discipline reprimand reprove correct correction rectify amend adjust modify reform improve\n",
+        "generation_time": 90.83413624763489,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[YOUR_FULL_EMAIL_HERE]\n\nDear Valued Donor,\n\nWe are reaching out to you today because we believe in your heart that music has the power to transform lives. As part of our ongoing commitment to providing arts education opportunities to underserved communities, we are seeking gently used musical instruments to support our growing arts program.\n\nOur mission is to empower young musicians through education and mentorship. By donating these valuable resources, we can provide students with access to quality instruments that they might not otherwise be able to afford. We know firsthand how transformative music can be, especially when given early exposure and nurturing.\n\nUnfortunately, many families cannot afford to purchase new instruments due to financial constraints. This is why we rely heavily on donations like yours to make this dream a reality for so many talented kids who deserve nothing but the best.\n\nAs a valued supporter of our community, we would greatly appreciate your consideration in helping us provide music education to those who need it most. Any contribution, no matter how small, will go a long way towards making a difference in the lives of our students.\n\nPlease visit our website at [WEBSITE_URL] to learn more about our programs and how you can get involved.\n\nThank you for being a part of our journey to create a brighter future for all children through music.\n\nSincerely,\n[SENDING_ORGANIZATION_NAME]\n[POSITION]\n",
+        "generation_time": 145.35860514640808,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email have a clear and relevant subject line?",
+          "best_ans": "yes",
+          "priority": "very high"
+        },
+        {
+          "question": "Is the content directly relevant to the topic?",
+          "best_ans": "yes",
+          "priority": "very high"
+        },
+        {
+          "question": "Does the email include a clear call-to-action?",
+          "best_ans": "yes",
+          "priority": "high"
+        },
+        {
+          "question": "Is the tone appropriate for the intended audience?",
+          "best_ans": "yes",
+          "priority": "high"
+        },
+        {
+          "question": "Does the email have a proper greeting?",
+          "best_ans": "yes",
+          "priority": "medium"
+        },
+        {
+          "question": "Does the email have a professional closing?",
+          "best_ans": "yes",
+          "priority": "medium"
+        },
+        {
+          "question": "Is the email length appropriate for the content?",
+          "best_ans": "yes",
+          "priority": "low"
+        },
+        {
+          "question": "Does the email avoid spelling and grammar errors?",
+          "best_ans": "yes",
+          "priority": "low"
+        }
+      ],
+      "generation_time": 62.29426956176758,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.9090909090909091,
+        "ranking_score": 0.9090909090909091,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email have a clear and relevant subject line?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the content directly relevant to the topic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a clear call-to-action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the tone appropriate for the intended audience?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email have a proper greeting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email have a professional closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email length appropriate for the content?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email avoid spelling and grammar errors?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 2,
+          "medium": 1,
+          "low": 2,
+          "very low": 0
+        },
+        "total_criteria": 8,
+        "strengths": "The email has a clear subject line, relevant content, a clear call-to-action, an appropriate tone, a proper greeting, is of appropriate length, and avoids spelling and grammar errors.",
+        "weaknesses": "The email lacks a professional closing.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 12.828452269236246,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "llama-3-8b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "vicuna-7b-dpo-hyb",
+              "llama-3-8b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email have a clear and relevant subject line?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the content directly relevant to the topic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a clear call-to-action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the tone appropriate for the intended audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email have a proper greeting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email have a professional closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email length appropriate for the content?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email avoid spelling and grammar errors?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email has a clear subject line, relevant content, a clear call-to-action, an appropriate tone, a proper greeting, is of appropriate length, and avoids spelling and grammar errors.",
+          "weaknesses": "The email lacks a professional closing.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 12.828452269236246,
+          "generation_attempts": 3,
+          "total_criteria": 8,
+          "weighted_score": 0.9090909090909091,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 2,
+            "medium": 1,
+            "low": 2,
+            "very low": 0
+          },
+          "evaluation_time": 38.48565411567688,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.9090909090909091,
+        "ranking_score": 0.9090909090909091,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email have a clear and relevant subject line?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the content directly relevant to the topic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a clear call-to-action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the tone appropriate for the intended audience?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email have a proper greeting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email have a professional closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email length appropriate for the content?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email avoid spelling and grammar errors?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 2,
+          "medium": 1,
+          "low": 2,
+          "very low": 0
+        },
+        "total_criteria": 8,
+        "strengths": "The email features a clear subject line, directly relevant content, a strong call-to-action, an appropriate tone, a proper greeting, appropriate length, and no notable spelling or grammar errors.",
+        "weaknesses": "The email lacks a professional closing.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 13.621445496877035,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "llama-3-8b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "vicuna-7b-dpo-hyb",
+              "llama-3-8b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email have a clear and relevant subject line?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the content directly relevant to the topic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a clear call-to-action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the tone appropriate for the intended audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email have a proper greeting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email have a professional closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email length appropriate for the content?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email avoid spelling and grammar errors?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email features a clear subject line, directly relevant content, a strong call-to-action, an appropriate tone, a proper greeting, appropriate length, and no notable spelling or grammar errors.",
+          "weaknesses": "The email lacks a professional closing.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 13.621445496877035,
+          "generation_attempts": 3,
+          "total_criteria": 8,
+          "weighted_score": 0.9090909090909091,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 2,
+            "medium": 1,
+            "low": 2,
+            "very low": 0
+          },
+          "evaluation_time": 40.86463665962219,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.8636363636363636,
+        "ranking_score": 0.8636363636363636,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email have a clear and relevant subject line?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the content directly relevant to the topic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a clear call-to-action?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Is the tone appropriate for the intended audience?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email have a proper greeting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email have a professional closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email length appropriate for the content?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email avoid spelling and grammar errors?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 2,
+          "medium": 1,
+          "low": 1,
+          "very low": 0
+        },
+        "total_criteria": 8,
+        "strengths": "The email has a clear subject, relevant content, explicit call-to-action, appropriate tone, proper greeting, and overall proper length.",
+        "weaknesses": "The email lacks a professional closing and contains errors/truncation in spelling and grammar particularly at the end.",
+        "consistency_confidence": 0.875,
+        "average_response_time": 18.329016129175823,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "llama-3-8b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "vicuna-7b-dpo-hyb",
+              "llama-3-8b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email have a clear and relevant subject line?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the content directly relevant to the topic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a clear call-to-action?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Is the tone appropriate for the intended audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email have a proper greeting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email have a professional closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email length appropriate for the content?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email avoid spelling and grammar errors?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email has a clear subject, relevant content, explicit call-to-action, appropriate tone, proper greeting, and overall proper length.",
+          "weaknesses": "The email lacks a professional closing and contains errors/truncation in spelling and grammar particularly at the end.",
+          "consistency_confidence": 0.875,
+          "average_response_time": 18.329016129175823,
+          "generation_attempts": 3,
+          "total_criteria": 8,
+          "weighted_score": 0.8636363636363636,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 2,
+            "medium": 1,
+            "low": 1,
+            "very low": 0
+          },
+          "evaluation_time": 54.98735165596008,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.7272727272727273,
+        "ranking_score": 0.7272727272727273,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email have a clear and relevant subject line?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the content directly relevant to the topic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the tone appropriate for the intended audience?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email have a proper greeting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email have a professional closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email length appropriate for the content?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the email avoid spelling and grammar errors?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 1,
+          "medium": 1,
+          "low": 1,
+          "very low": 0
+        },
+        "total_criteria": 8,
+        "strengths": "The email has a clear and engaging subject line, displays content that is directly relevant to its mission, maintains an appropriate and warm tone, includes a proper greeting, and is free of noticeable spelling and grammar errors.",
+        "weaknesses": "The email lacks a clear call-to-action, does not include a professional closing, and appears truncated, leading to an incomplete message with an inappropriate length.",
+        "consistency_confidence": 0.875,
+        "average_response_time": 27.1514314810435,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "llama-3-8b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "vicuna-7b-dpo-hyb",
+              "llama-3-8b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email have a clear and relevant subject line?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the content directly relevant to the topic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the tone appropriate for the intended audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email have a proper greeting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email have a professional closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email length appropriate for the content?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the email avoid spelling and grammar errors?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email has a clear and engaging subject line, displays content that is directly relevant to its mission, maintains an appropriate and warm tone, includes a proper greeting, and is free of noticeable spelling and grammar errors.",
+          "weaknesses": "The email lacks a clear call-to-action, does not include a professional closing, and appears truncated, leading to an incomplete message with an inappropriate length.",
+          "consistency_confidence": 0.875,
+          "average_response_time": 27.1514314810435,
+          "generation_attempts": 3,
+          "total_criteria": 8,
+          "weighted_score": 0.7272727272727273,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 1,
+            "medium": 1,
+            "low": 1,
+            "very low": 0
+          },
+          "evaluation_time": 81.4546160697937,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.5454545454545454,
+        "ranking_score": 0.5454545454545454,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email have a clear and relevant subject line?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the content directly relevant to the topic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the tone appropriate for the intended audience?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email have a proper greeting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email have a professional closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email length appropriate for the content?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email avoid spelling and grammar errors?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 1,
+          "medium": 1,
+          "low": 2,
+          "very low": 0
+        },
+        "total_criteria": 8,
+        "strengths": "The email is relevant to the donation topic, maintains an appropriate tone, includes a proper greeting, is of an appropriate length, and is free of spelling and grammar errors.",
+        "weaknesses": "The email lacks a clear and relevant subject line, does not include a clear call-to-action, and is missing a professional closing.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 19.137823979059856,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "llama-3-8b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "vicuna-7b-dpo-hyb",
+              "llama-3-8b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email have a clear and relevant subject line?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the content directly relevant to the topic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the tone appropriate for the intended audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email have a proper greeting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email have a professional closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email length appropriate for the content?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email avoid spelling and grammar errors?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email is relevant to the donation topic, maintains an appropriate tone, includes a proper greeting, is of an appropriate length, and is free of spelling and grammar errors.",
+          "weaknesses": "The email lacks a clear and relevant subject line, does not include a clear call-to-action, and is missing a professional closing.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 19.137823979059856,
+          "generation_attempts": 3,
+          "total_criteria": 8,
+          "weighted_score": 0.5454545454545454,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 1,
+            "medium": 1,
+            "low": 2,
+            "very low": 0
+          },
+          "evaluation_time": 57.413777112960815,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 1,
+      "score": 0.9090909090909091
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 2,
+      "score": 0.9090909090909091
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 3,
+      "score": 0.8636363636363636
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 4,
+      "score": 0.7272727272727273
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 5,
+      "score": 0.5454545454545454
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 482.286021232605,
+    "success": true,
+    "errors": []
+  }
+}

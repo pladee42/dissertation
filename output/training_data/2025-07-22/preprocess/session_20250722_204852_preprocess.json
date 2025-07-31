@@ -1,0 +1,1196 @@
+{
+  "session_id": "41d0b170-1296-4dea-b7dd-4edc8e9262d9",
+  "timestamp": "2025-07-22T20:48:52.957387",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0105",
+    "name": "Webinar: The Link Between Climate Change and Extreme Weather"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Webinar: The Link Between Climate Change and Extreme Weather"
+  },
+  "models_used": {
+    "email_models": [
+      "stablelm-2-1.6b-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "phi-3-mini-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[YOUR_EXAMPLE_EMAIL]\n\nSubject Line: Join us in understanding the link between climate change and extreme weather\n\nDear Valued Reader,\n\nAs we face one of the most significant challenges of our time, I am reaching out to you today to invite you to join us at our upcoming webinar titled 'The Link Between Climate Change and Extreme Weather'. This webinar will provide valuable insights into how climate change affects our daily lives, especially during times of extreme weather events such as hurricanes, droughts, heatwaves, floods, etc.\n\nOur guest speakers, leading experts in this field, will share their knowledge and experience to offer practical solutions that can make a difference in protecting ourselves and our planet. You'll also have the opportunity to ask questions directly to the speakers and engage with other attendees who share similar interests.\n\nDon't miss out on this chance to learn about the critical issue facing our world today! Register now by clicking the button below.\n\n[WEBSITE_LINK]\n\nBy signing up, you'll receive a confirmation email containing all the details about the webinar, including the date, time, and location. We promise to keep you updated throughout the process and send reminders before the event.\n\nWe believe that together, we can create a positive impact and contribute to mitigating the effects of climate change. So, let's come together and discuss ways to protect ourselves, our loved ones, and future generations.\n\nThank you for taking the time to read this message. We look forward to seeing you at the webinar!\n\nKind regards,\n\n[Your Name]\n[Your Organization]\n",
+        "generation_time": 144.87555813789368,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Join our Webinar: The Link Between Climate Change and Extreme Weather\n\nDear [Recipient],\n\nAre you concerned about climate change and its impact on extreme weather events? If so, we have an exciting opportunity for you!\n\nJoin us for a special webinar where we will explore the latest research on this critical issue. Our expert panelists will discuss how climate change is exacerbating extreme weather conditions like hurricanes, droughts, and heatwaves. They will also share insights into what we can do to mitigate these effects and build a more resilient future.\n\nWhen: Wednesday, March 8th, at 2 PM EST\nWhere: Zoom\nWho: You and other climate change advocates\n\nTo register, simply click the link below:\n\n[REGISTER NOW]\n\nDon't miss out on this important conversation! Together, we can make a difference in the fight against climate change.\n\nBest regards,\n[SENDER NAME]\n",
+        "generation_time": 52.57413697242737,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[YOUR_NAME]\nSubject: Join Us for a Webinar on the Link Between Climate Change and Extreme Weather\n\nDear [RECIPIENT],\n\nWe hope you are well and that you have been enjoying our recent webinars. Today we would like to invite you to join us for a special webinar focused on the link between climate change and extreme weather events.\n\nAs we all know, climate change is one of the most pressing issues facing our planet today. It is affecting everything from natural disasters to food security and water scarcity. But what does this mean for us? How can we prepare ourselves and our communities for these unpredictable and often catastrophic events?\n\nJoin us on Wednesday, [WEEKDAY_DATE] at [TIME] for a live webinar featuring [RECORDING_LINK]. Our expert speakers will provide in-depth insights into how climate change is impacting our environment and how we can adapt and mitigate its effects. You won\u2019t want to miss this opportunity to learn from some of the leading experts in the field.\n\nTo register, simply click the link below:\n\n[WEBINAR_LINK]\n\nIn addition to learning about the latest developments in the field, you will also receive valuable resources and tools to help you navigate the challenges ahead. As a thank you for joining us, we will be giving away a free copy of our eBook on the topic.\n\nThank you for your continued support of our mission to protect our planet. We look forward to seeing you there!\n\nBest regards,\n\n[YOUR_NAME]\n",
+        "generation_time": 16.513052701950073,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Subject: Join Our Webinar: Unraveling the Connection Between Climate Change & Extreme Weather\n\nDear [Name],\n\nI'm writing to invite you to our upcoming webinar, where we'll delve into the intricate relationship between climate change and extreme weather events. As someone who cares about staying informed and making a positive impact, I think this will be particularly relevant to you.\n\nClimate change has become one of the most pressing issues of our time, with far-reaching consequences that affect us all. Rising temperatures, melting ice caps, and shifting weather patterns have led to devastating natural disasters, displacement of communities, and loss of biodiversity.\n\nOur webinar aims to shed light on these complex connections by exploring the science behind climate-driven extreme weather events. We'll examine case studies from around the world, highlighting the impacts on ecosystems, economies, and human societies.\n\nJoin us as we discuss innovative solutions and strategies for mitigating the effects of climate change. You'll hear from leading experts in the field, including Dr. Maria Rodriguez, renowned climatologist and author of several influential papers on the subject.\n\nBy attending this webinar, you'll gain a deeper understanding of the link between climate change and extreme weather, empowering you to make more informed decisions and contribute to a more sustainable future.\n\n**Register now for our free webinar on March 15th at 2 PM EST.**\n",
+        "generation_time": 116.51559543609619,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join Our Webinar \u2013 Unveiling the Connection between Climate Change & Extreme Weather Events! [TEXT]\nDear Earth Advocates,\n\nImagine waking up every day in a world where extreme weather events have become our unwelcome norm\u2014a reality that many communities across the globe face today due to climate change. As members of Global Green Initiative, we understand how deeply this issue affects each one of us personally and collectively. That\u2019s why we invite you to join our exclusive webinar titled \u201cThe Link Between Climate Change and Extreme Weather,\u201d scheduled for April 22nd at 7 PM EST. This session will unravel the complex relationship between these phenomena and what they mean for our future.\n\nOur planet has been warming rapidly over recent decades, leading scientists to predict increasing occurrences of hurricanes, droughts, floods, heatwaves, and other severe conditions. These aren\u2019t just abstract concepts; they represent real threats impacting lives, livelihoods, and ecosystems around the world. Through compelling data visualization and insightful discussions led by renowned experts Dr. Jane Goodall and Prof. James Hansen, participants can gain clarity about the science behind these changes and discover practical ways individuals like yourself contribute towards mitigating their effects.\n\nAs advocates committed to preserving Mother Nature\u2019s beauty while safeguarding her health, understanding such critical issues helps inform better decision-making both individually and within organizations globally. By attending this enlightening conversation together online via Zoom platform under moderation by esteemed environmentalist Bill McKibben Jr., let\u2019s equip ourselves with knowledge necessary for fostering sustainable living practices now and into tomorrow.\n\nDon\u2019t miss out on being part of vital dialogue addressing pressing global challenges directly linked back home here too\u2013we all share responsibility when dealing with matters concerning shared resources available locally yet interconnected universally through intricate systems governing life itself.-This isn\u2019t merely another lecture series but rather interactive learning opportunity designed specifically tailored according to audience feedback received during previous sessions held last year which saw record attendance numbers among young adult demographics particularly interested in pursuing careers related closely toward environment conservation efforts going forward.. It also provides networking opportunities allowing potential collaborations amongst peers passionately working alongside various NGOs striving relentlessly tirelessly combatting adverse climatic alterations threatening existence earthwide right away before irreversible damage occurs beyond repair altogether forevermore henceforth making sure everyone involved stays informed updated aware well equipped prepared ready willing able tackle problems headon proactively prevent disaster scenarios arising sooner later ultimately ensuring safer brighter hope filled prosperous future generations ahead waiting eagerly anxiously anticipating positive developments soon enough whenever possible . So please RSVP promptly using link below so no seats left empty awaiting enthusiastic participation : https://www.globalgreeninitiativeevents/climatechangeextremewebinar Please note registration closes two days prior start date therefore early confirmation highly recommended avoid disappointment regret missed chance otherwise\u2026 Remember , Every Action Counts When Tackling Major Environmental Issues Today !!! #ClimateChangeAwareness #GlobalGreenInitiativeEvents #[End Email Content].<|end_of_email|>\n",
+        "generation_time": 81.31080532073975,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key themes 'climate science', 'weather patterns', and 'actionable knowledge'?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Is the problem presented using evidence-based real-world examples?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the solution approach describe an educational webinar with expert insights?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Is the call-to-action (CTA) placed in both the mid-email and closing paragraph?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language markers (urgent, concerned, motivational)?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include at least one of the specific phrases: 'critical insights', 'unprecedented events', or 'join us to understand'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style informative yet persuasive?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the opening paragraph set context with current relevance?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the closing include a double call-to-action with appreciation?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email follow the information flow: problem \u2192 evidence \u2192 solution \u2192 action?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email include key phrases like 'extreme weather events', 'scientific evidence', or 'exclusive access'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use formatting elements (bolded headings, bullet points, highlighted CTA button)?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 125.97558212280273,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.6578947368421053,
+        "ranking_score": 0.6578947368421053,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'climate science', 'weather patterns', and 'actionable knowledge'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented using evidence-based real-world examples?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach describe an educational webinar with expert insights?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action (CTA) placed in both the mid-email and closing paragraph?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers (urgent, concerned, motivational)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include at least one of the specific phrases: 'critical insights', 'unprecedented events', or 'join us to understand'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style informative yet persuasive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening paragraph set context with current relevance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a double call-to-action with appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the information flow: problem \u2192 evidence \u2192 solution \u2192 action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases like 'extreme weather events', 'scientific evidence', or 'exclusive access'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements (bolded headings, bullet points, highlighted CTA button)?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 6,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively presents real-world examples of extreme weather, outlines a clear webinar solution with expert insights, uses persuasive and emotionally engaging language, maintains an overall informative flow, and includes key phrases such as 'extreme weather events'.",
+        "weaknesses": "The email omits specific key themes like 'climate science', 'weather patterns', and 'actionable knowledge'; lacks a mid-email CTA and a closing double CTA with appreciation; and does not utilize enhanced formatting elements.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 30.095304250717163,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5": [
+              "tinyllama-1.1b-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'climate science', 'weather patterns', and 'actionable knowledge'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented using evidence-based real-world examples?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach describe an educational webinar with expert insights?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action (CTA) placed in both the mid-email and closing paragraph?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers (urgent, concerned, motivational)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include at least one of the specific phrases: 'critical insights', 'unprecedented events', or 'join us to understand'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style informative yet persuasive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening paragraph set context with current relevance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a double call-to-action with appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the information flow: problem \u2192 evidence \u2192 solution \u2192 action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases like 'extreme weather events', 'scientific evidence', or 'exclusive access'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements (bolded headings, bullet points, highlighted CTA button)?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively presents real-world examples of extreme weather, outlines a clear webinar solution with expert insights, uses persuasive and emotionally engaging language, maintains an overall informative flow, and includes key phrases such as 'extreme weather events'.",
+          "weaknesses": "The email omits specific key themes like 'climate science', 'weather patterns', and 'actionable knowledge'; lacks a mid-email CTA and a closing double CTA with appreciation; and does not utilize enhanced formatting elements.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 30.095304250717163,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6578947368421053,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 6,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 90.28629493713379,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.5789473684210527,
+        "ranking_score": 0.5789473684210527,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'climate science', 'weather patterns', and 'actionable knowledge'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented using evidence-based real-world examples?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach describe an educational webinar with expert insights?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action (CTA) placed in both the mid-email and closing paragraph?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers (urgent, concerned, motivational)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include at least one of the specific phrases: 'critical insights', 'unprecedented events', or 'join us to understand'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style informative yet persuasive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening paragraph set context with current relevance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a double call-to-action with appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the information flow: problem \u2192 evidence \u2192 solution \u2192 action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases like 'extreme weather events', 'scientific evidence', or 'exclusive access'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements (bolded headings, bullet points, highlighted CTA button)?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 5,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email clearly presents an educational webinar (criteria 3) and follows an appropriate information flow (criteria 10). It uses emotional language (criteria 5), includes relevant real-world examples (criteria 2) along with a persuasive and informative style (criteria 7) and sets context with current relevance (criteria 8), also mentioning key phrases such as 'extreme weather events' (criteria 11).",
+        "weaknesses": "The email misses explicit inclusion of the specified key themes (criteria 1), does not place a clear double CTA (criteria 4 and 9), lacks the required specific phrases (criteria 6), and fails to use formatting elements like bold headers or bullet points (criteria 12).",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 42.35264547665914,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5": [
+              "tinyllama-1.1b-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'climate science', 'weather patterns', and 'actionable knowledge'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented using evidence-based real-world examples?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach describe an educational webinar with expert insights?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action (CTA) placed in both the mid-email and closing paragraph?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers (urgent, concerned, motivational)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include at least one of the specific phrases: 'critical insights', 'unprecedented events', or 'join us to understand'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style informative yet persuasive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening paragraph set context with current relevance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a double call-to-action with appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the information flow: problem \u2192 evidence \u2192 solution \u2192 action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases like 'extreme weather events', 'scientific evidence', or 'exclusive access'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements (bolded headings, bullet points, highlighted CTA button)?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email clearly presents an educational webinar (criteria 3) and follows an appropriate information flow (criteria 10). It uses emotional language (criteria 5), includes relevant real-world examples (criteria 2) along with a persuasive and informative style (criteria 7) and sets context with current relevance (criteria 8), also mentioning key phrases such as 'extreme weather events' (criteria 11).",
+          "weaknesses": "The email misses explicit inclusion of the specified key themes (criteria 1), does not place a clear double CTA (criteria 4 and 9), lacks the required specific phrases (criteria 6), and fails to use formatting elements like bold headers or bullet points (criteria 12).",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 42.35264547665914,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5789473684210527,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 5,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 127.05833625793457,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.5,
+        "ranking_score": 0.5,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'climate science', 'weather patterns', and 'actionable knowledge'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented using evidence-based real-world examples?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach describe an educational webinar with expert insights?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action (CTA) placed in both the mid-email and closing paragraph?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers (urgent, concerned, motivational)?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 6,
+            "description": "Does the email include at least one of the specific phrases: 'critical insights', 'unprecedented events', or 'join us to understand'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style informative yet persuasive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening paragraph set context with current relevance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a double call-to-action with appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the information flow: problem \u2192 evidence \u2192 solution \u2192 action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases like 'extreme weather events', 'scientific evidence', or 'exclusive access'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements (bolded headings, bullet points, highlighted CTA button)?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 4,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully promotes an educational webinar with expert insights, employs some emotional language and informative, persuasive communication, follows a logical structure, and includes keywords like 'extreme weather events'.",
+        "weaknesses": "It lacks specific key themes such as 'climate science', 'weather patterns', and 'actionable knowledge', does not use evidence-based examples, misses a dual CTA and appreciation in the closing, omits required specific phrases, and does not employ any formatting elements.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 37.61876058578491,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5": [
+              "tinyllama-1.1b-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'climate science', 'weather patterns', and 'actionable knowledge'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented using evidence-based real-world examples?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach describe an educational webinar with expert insights?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action (CTA) placed in both the mid-email and closing paragraph?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers (urgent, concerned, motivational)?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 6,
+              "description": "Does the email include at least one of the specific phrases: 'critical insights', 'unprecedented events', or 'join us to understand'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style informative yet persuasive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening paragraph set context with current relevance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a double call-to-action with appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the information flow: problem \u2192 evidence \u2192 solution \u2192 action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases like 'extreme weather events', 'scientific evidence', or 'exclusive access'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements (bolded headings, bullet points, highlighted CTA button)?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully promotes an educational webinar with expert insights, employs some emotional language and informative, persuasive communication, follows a logical structure, and includes keywords like 'extreme weather events'.",
+          "weaknesses": "It lacks specific key themes such as 'climate science', 'weather patterns', and 'actionable knowledge', does not use evidence-based examples, misses a dual CTA and appreciation in the closing, omits required specific phrases, and does not employ any formatting elements.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 37.61876058578491,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 4,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 112.85669469833374,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.5,
+        "ranking_score": 0.5,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'climate science', 'weather patterns', and 'actionable knowledge'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented using evidence-based real-world examples?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach describe an educational webinar with expert insights?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action (CTA) placed in both the mid-email and closing paragraph?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers (urgent, concerned, motivational)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include at least one of the specific phrases: 'critical insights', 'unprecedented events', or 'join us to understand'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style informative yet persuasive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening paragraph set context with current relevance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a double call-to-action with appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the information flow: problem \u2192 evidence \u2192 solution \u2192 action?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases like 'extreme weather events', 'scientific evidence', or 'exclusive access'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements (bolded headings, bullet points, highlighted CTA button)?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 4,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email provides evidence-based examples, uses emotional language effectively, maintains an informative and persuasive tone, sets current context, follows a logical information flow, and includes key technical phrases.",
+        "weaknesses": "It misses explicit mentions of 'climate science', 'weather patterns', and 'actionable knowledge'; lacks explicit expert insights; does not offer dual CTAs in the mid-email and closing paragraph; omits the required specific phrases; and fails to use any formatting elements.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 38.261059522628784,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5": [
+              "tinyllama-1.1b-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'climate science', 'weather patterns', and 'actionable knowledge'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented using evidence-based real-world examples?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach describe an educational webinar with expert insights?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action (CTA) placed in both the mid-email and closing paragraph?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers (urgent, concerned, motivational)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include at least one of the specific phrases: 'critical insights', 'unprecedented events', or 'join us to understand'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style informative yet persuasive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening paragraph set context with current relevance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a double call-to-action with appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the information flow: problem \u2192 evidence \u2192 solution \u2192 action?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases like 'extreme weather events', 'scientific evidence', or 'exclusive access'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements (bolded headings, bullet points, highlighted CTA button)?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email provides evidence-based examples, uses emotional language effectively, maintains an informative and persuasive tone, sets current context, follows a logical information flow, and includes key technical phrases.",
+          "weaknesses": "It misses explicit mentions of 'climate science', 'weather patterns', and 'actionable knowledge'; lacks explicit expert insights; does not offer dual CTAs in the mid-email and closing paragraph; omits the required specific phrases; and fails to use any formatting elements.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 38.261059522628784,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 4,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 114.78356575965881,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.5,
+        "ranking_score": 0.5,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'climate science', 'weather patterns', and 'actionable knowledge'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented using evidence-based real-world examples?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach describe an educational webinar with expert insights?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action (CTA) placed in both the mid-email and closing paragraph?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers (urgent, concerned, motivational)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include at least one of the specific phrases: 'critical insights', 'unprecedented events', or 'join us to understand'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style informative yet persuasive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening paragraph set context with current relevance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a double call-to-action with appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the information flow: problem \u2192 evidence \u2192 solution \u2192 action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases like 'extreme weather events', 'scientific evidence', or 'exclusive access'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements (bolded headings, bullet points, highlighted CTA button)?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 4,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively presents a problem with evidence, clearly outlines a webinar solution, employs an informative and persuasive tone with emotional language, follows a logical information flow, and includes key phrases such as 'extreme weather events'.",
+        "weaknesses": "The email misses explicit inclusion of all required key themes ('climate science', 'weather patterns', 'actionable knowledge'), lacks a dual CTA in both mid and closing sections, does not include any of the specified phrases like 'critical insights', and omits enhanced formatting elements such as bolded headings or bullet points.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 27.034982840220135,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5": [
+              "tinyllama-1.1b-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'climate science', 'weather patterns', and 'actionable knowledge'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented using evidence-based real-world examples?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach describe an educational webinar with expert insights?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action (CTA) placed in both the mid-email and closing paragraph?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers (urgent, concerned, motivational)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include at least one of the specific phrases: 'critical insights', 'unprecedented events', or 'join us to understand'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style informative yet persuasive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening paragraph set context with current relevance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a double call-to-action with appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the information flow: problem \u2192 evidence \u2192 solution \u2192 action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases like 'extreme weather events', 'scientific evidence', or 'exclusive access'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements (bolded headings, bullet points, highlighted CTA button)?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively presents a problem with evidence, clearly outlines a webinar solution, employs an informative and persuasive tone with emotional language, follows a logical information flow, and includes key phrases such as 'extreme weather events'.",
+          "weaknesses": "The email misses explicit inclusion of all required key themes ('climate science', 'weather patterns', 'actionable knowledge'), lacks a dual CTA in both mid and closing sections, does not include any of the specified phrases like 'critical insights', and omits enhanced formatting elements such as bolded headings or bullet points.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 27.034982840220135,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 4,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 81.10533547401428,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 1,
+      "score": 0.6578947368421053
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 2,
+      "score": 0.5789473684210527
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 3,
+      "score": 0.5
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 4,
+      "score": 0.5
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 5,
+      "score": 0.5
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 798.7662234306335,
+    "success": true,
+    "errors": []
+  }
+}

@@ -1,0 +1,1318 @@
+{
+  "session_id": "7b0d25b5-5ef7-4bda-a03e-4b39b5c278a4",
+  "timestamp": "2025-07-22T21:06:06.895658",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0106",
+    "name": "Petition to Establish a New Marine Protected Area"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Petition to Establish a New Marine Protected Area"
+  },
+  "models_used": {
+    "email_models": [
+      "llama-3-8b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "<EMAIL>\n\nSubject: Help Protect Our Ocean Home\n\nDear [Name],\n\nThe ocean is facing unprecedented threats. Rising sea temperatures, pollution, and overfishing have pushed many marine species to the brink of extinction. The consequences will be catastrophic if we don't act now.\n\nOur oceans provide us with oxygen, food, and livelihoods. Yet, they're being ravaged by human activities. We need to protect our ocean home before it's too late.\n\nThat's why I'm reaching out to you today as a representative of the Ocean Conservation Society. For decades, we've been working tirelessly to safeguard marine ecosystems and promote sustainable fishing practices.\n\nBut we can't do this alone. We need your support to create a new marine protected area that will serve as a safe haven for endangered species and a model for responsible ocean management.\n\nBy signing our petition, you'll join a community of passionate individuals who care about the future of our planet. Together, we can make a difference and ensure that our children inherit a healthy, thriving ocean.\n\nWill you sign our petition today?\n\n**Sign Now and Help Protect Our Ocean Home**\n\n<https://oceanconservationsociety.org/petition>\n\nBest regards,\n\nMaria Rodriguez\nOcean Conservation Society\n\nP.S. Every signature counts, so please share this email with friends and family who care about the ocean.\n\n[END_EMAIL]\n\nHere is the full email:\n\nDear [Name],\n\nThe ocean is facing unprecedented threats. Rising sea temperatures, pollution, and overfishing have pushed many marine species to the brink of extinction. The consequences will be catastrophic if we don't act now.\n\nOur oceans provide us with oxygen, food, and livelihoods. Yet, they're being ravaged by human activities. We need to protect our ocean home before it's too late.\n\nThat's why I'm reaching out to you today as a representative of the Ocean Conservation Society. For decades, we've been working tirelessly to safeguard marine ecosystems and promote sustainable fishing practices.\n\nBut we can't do this alone. We need your support to create a new marine protected area that will serve as a safe haven for endangered species and a model for responsible ocean management.\n\nBy joining forces with us, you'll become part of a movement that's dedicated to preserving the beauty and diversity of our oceans. You'll also be contributing to a better future for generations to come.\n\nWill you join us in this critical mission?\n\n**Join Us Today and Help Create a Safe Haven for Our Oceans**\n\n<https://oceanconservationsociety.org/marineprotectedarea>\n\nBest regards,\n\nMaria Rodriguez\nOcean Conservation Society\n\nP.S. Every voice matters, so please share this email with friends and family who care about the ocean.\n",
+        "generation_time": 107.43705892562866,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your Name Here]\nSubject Line: Help Save Our Ocean Home\n\nDear [Recipient],\n\nI am reaching out to you today because I believe we need to act now to protect our oceans and marine life. The ocean covers approximately 71% of Earth's surface and provides us with oxygen, food, and livelihoods. Unfortunately, over the past few decades, human activities have led to significant degradation of our ocean ecosystems.\n\nAs a concerned citizen and member of this community, I urge you to join me in creating a new marine protected area that will safeguard some of the most pristine areas where our fish populations thrive. These areas provide critical habitat for many species at risk, including sharks, sea turtles, and dolphins.\n\nThe proposed location for this protected area includes [insert specific details], which has been identified by conservationists as a vital ecosystem for maintaining healthy fish stocks and supporting local economies.\n\nBy joining this campaign, you can make a difference in protecting these areas and ensuring their long-term survival. You'll be contributing to efforts to conserve marine life and support sustainable fishing practices.\n\nHere are three easy ways to get involved:\n\n1. Sign the petition: Visit <https://www.savetheocean.org/sign> to sign the petition and show your support for this cause.\n\n2. Share this message with friends and family: Help spread awareness about the importance of preserving our oceans by sharing this email with others who might be interested in taking action.\n\n3. Volunteer your time: If you're passionate about conservation, consider volunteering with organizations working towards similar goals.\n\nTogether, we can create a brighter future for our planet and all the living beings that inhabit it.\n\nThank you for your consideration.\n\nSincerely,\n\n[Your Name]\n\nEND_EMAIL\n",
+        "generation_time": 126.797443151474,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Help Us Save Our Oceans!\n\nDear [Recipient],\n\nDo you love the ocean? I know I do! But unfortunately, our oceans are facing a crisis. Plastic pollution, overfishing, and climate change are threatening marine life and the health of our planet. That's why we need your help now more than ever.\n\nWe have an opportunity to make a real difference by establishing a new Marine Protected Area off the coast of [Location]. This area would be completely off-limits to fishing and other activities that harm marine life, creating a safe haven for sea creatures to thrive.\n\nBut we can't do it alone. We need your support to show the government that this is something we care about and want them to act on. Will you join us in signing this petition today? Together, we can protect our oceans and the animals that call them home.\n\n[Call to Action: Sign the Petition Now]\n\nThank you for your support!\n\nBest regards,\n\n[Your Name]\n",
+        "generation_time": 47.85377335548401,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join Our Mission \u2013 Save The Ocean\u2019s Future!\n\nDear Friend,\n\nImagine waking up one day where you can no longer see dolphins leaping through clear blue waters; instead, they swim in murky depths choked by plastic waste. This could be our reality if we don\u2019t act now. We at [OceanGuardians], dedicated marine conservationists, have launched a petition calling for the establishment of a new protected area that will safeguard these majestic creatures and their habitat. However, this vital initiative faces significant challenges due to industrial fishing pressures threatening biodiversity hotspots. As someone who cherishes life beneath the waves, I invite you to become part of something extraordinary\u2014a movement determined to preserve oceanic sanctuaries before it\u2019s too late. By signing our petition today, you join forces with fellow advocates worldwide committed to reversing the tide against environmental degradation. Together, let us turn back time and restore balance underwater so future generations may witness nature\u2019s untouched beauty firsthand. Please visit www.[oceanguardiansepetition].com/sign-now right away because every signature counts towards making history. Don\u2019t delay another moment \u2014 click here <|end_of_email|> to sign your name alongside thousands already standing together for change. Let\u2019s make ripples into tidal waves of progress toward saving what remains of Earth\u2019s most precious ecosystems. Thank you for being a champion for our oceans. With hopeful anticipation, [Your Name] | OceanGuardians Team\n",
+        "generation_time": 69.01060271263123,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[Your Name]\n\nSubject: Petition to Establish a New Marine Protected Area\n\nDear [Recipient],\n\nWe are writing to you today to ask for your support in establishing a new marine protected area. As an avid ocean lover, I am deeply concerned about the damage being done to our planet\u2019s oceans. We need to do everything we can to protect these vital ecosystems and ensure their sustainability for future generations.\n\nOur petition seeks to create a new marine protected area that will safeguard the health of our oceans by preserving critical habitats and species. This initiative would be a significant step towards ensuring the survival of our marine life and promoting environmental conservation.\n\nWe believe that this proposed area should be established in the waters surrounding the island nation of [INSERT ISLAND NAME]. The island is home to some of the most diverse marine ecosystems in the world, including coral reefs, seagrass beds, and mangrove forests. These habitats provide a crucial habitat for many marine species, including sea turtles, sharks, and dolphins.\n\nThe proposed area would also benefit from increased protection measures such as prohibiting fishing activities within the designated zone, enforcing strict laws against plastic pollution, and implementing conservation programs to promote sustainable tourism practices.\n\nAs you know, there are already several existing marine protected areas in the region, but they are not adequately funded and staffed to manage them effectively. Our proposed area would require additional resources and personnel to ensure its effective management and protection.\n\nWe are asking you to join us in supporting this initiative and to take action to ensure the establishment of this new marine protected area. We believe that this will be a significant step towards preserving our oceans for future generations.\n\nThank you for your time and consideration. If you have any questions or concerns, please do not hesitate to contact me.\n\nSincerely,\n\n[YOUR NAME]\n",
+        "generation_time": 23.955122232437134,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include key themes of biodiversity loss and ocean conservation?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Is the problem presented in a crisis-focused manner with specific threats like overfishing and pollution?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the solution approach propose establishing legally protected marine zones?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Is the call-to-action placed in the final paragraph before sign-off?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language markers like 'urgent', 'passionate', or 'concerned'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style persuasive and motivational?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the formality level semi-formal?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include phrases like 'critical moment', 'irreplaceable treasure', or 'act now'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email have approximately 250-400 words?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email contain exactly 4 paragraphs?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the information flow follow problem \u2192 consequences \u2192 solution \u2192 action sequence?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email use key phrases like 'marine ecosystem collapse' or 'permanent protection'?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use varied sentence structures (short impactful statements + detailed sentences)?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Are technical terms like 'MPA' explained contextually?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 223.95235347747803,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.7837837837837838,
+        "ranking_score": 0.7837837837837838,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include key themes of biodiversity loss and ocean conservation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented in a crisis-focused manner with specific threats like overfishing and pollution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach propose establishing legally protected marine zones?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action placed in the final paragraph before sign-off?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'urgent', 'passionate', or 'concerned'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and motivational?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include phrases like 'critical moment', 'irreplaceable treasure', or 'act now'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email have approximately 250-400 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email contain exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Does the information flow follow problem \u2192 consequences \u2192 solution \u2192 action sequence?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use key phrases like 'marine ecosystem collapse' or 'permanent protection'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email use varied sentence structures (short impactful statements + detailed sentences)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 14,
+            "description": "Are technical terms like 'MPA' explained contextually?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 7,
+          "medium": 4,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 14,
+        "strengths": "The email effectively presents the crisis with specific threats and includes key themes, offers a clear solution by proposing a marine protected area, and uses persuasive, motivational, and semi-formal language with emotional markers and varied sentence structures. Technical terms are implicitly explained through context.",
+        "weaknesses": "The email falls short in structure by not meeting the 250-400 word count and does not contain exactly 4 paragraphs. It also does not include specific key phrases like 'marine ecosystem collapse' or 'permanent protection' as stipulated.",
+        "consistency_confidence": 0.8571428571428571,
+        "average_response_time": 50.01245745023092,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6486486486486487": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include key themes of biodiversity loss and ocean conservation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented in a crisis-focused manner with specific threats like overfishing and pollution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach propose establishing legally protected marine zones?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action placed in the final paragraph before sign-off?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'urgent', 'passionate', or 'concerned'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and motivational?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include phrases like 'critical moment', 'irreplaceable treasure', or 'act now'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email have approximately 250-400 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email contain exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Does the information flow follow problem \u2192 consequences \u2192 solution \u2192 action sequence?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use key phrases like 'marine ecosystem collapse' or 'permanent protection'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email use varied sentence structures (short impactful statements + detailed sentences)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 14,
+              "description": "Are technical terms like 'MPA' explained contextually?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            }
+          ],
+          "strengths": "The email effectively presents the crisis with specific threats and includes key themes, offers a clear solution by proposing a marine protected area, and uses persuasive, motivational, and semi-formal language with emotional markers and varied sentence structures. Technical terms are implicitly explained through context.",
+          "weaknesses": "The email falls short in structure by not meeting the 250-400 word count and does not contain exactly 4 paragraphs. It also does not include specific key phrases like 'marine ecosystem collapse' or 'permanent protection' as stipulated.",
+          "consistency_confidence": 0.8571428571428571,
+          "average_response_time": 50.01245745023092,
+          "generation_attempts": 3,
+          "total_criteria": 14,
+          "weighted_score": 0.7837837837837838,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 7,
+            "medium": 4,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 150.0377585887909,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.6486486486486487,
+        "ranking_score": 0.6486486486486487,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include key themes of biodiversity loss and ocean conservation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented in a crisis-focused manner with specific threats like overfishing and pollution?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach propose establishing legally protected marine zones?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action placed in the final paragraph before sign-off?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'urgent', 'passionate', or 'concerned'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and motivational?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include phrases like 'critical moment', 'irreplaceable treasure', or 'act now'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email have approximately 250-400 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email contain exactly 4 paragraphs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the information flow follow problem \u2192 consequences \u2192 solution \u2192 action sequence?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email use key phrases like 'marine ecosystem collapse' or 'permanent protection'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email use varied sentence structures (short impactful statements + detailed sentences)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 14,
+            "description": "Are technical terms like 'MPA' explained contextually?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 6,
+          "medium": 3,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 14,
+        "strengths": "The email effectively emphasizes ocean conservation themes, proposes the creation of a marine protected area, uses persuasive and semi-formal language, includes emotional markers such as 'concerned' and 'act now', contains a clear call-to-action in its final paragraph, and maintains an organized structure with exactly 4 paragraphs and varied sentence structures.",
+        "weaknesses": "The email does not mention specific threats like overfishing or pollution, falls short of the recommended word count, does not clearly articulate a full problem \u2192 consequences \u2192 solution \u2192 action flow, omits key phrases such as 'marine ecosystem collapse' or 'permanent protection', and does not include or explain technical terms like 'MPA'.",
+        "consistency_confidence": 0.9285714285714286,
+        "average_response_time": 47.93622501691183,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6486486486486487": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include key themes of biodiversity loss and ocean conservation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented in a crisis-focused manner with specific threats like overfishing and pollution?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach propose establishing legally protected marine zones?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action placed in the final paragraph before sign-off?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'urgent', 'passionate', or 'concerned'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and motivational?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include phrases like 'critical moment', 'irreplaceable treasure', or 'act now'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email have approximately 250-400 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email contain exactly 4 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the information flow follow problem \u2192 consequences \u2192 solution \u2192 action sequence?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email use key phrases like 'marine ecosystem collapse' or 'permanent protection'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email use varied sentence structures (short impactful statements + detailed sentences)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 14,
+              "description": "Are technical terms like 'MPA' explained contextually?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively emphasizes ocean conservation themes, proposes the creation of a marine protected area, uses persuasive and semi-formal language, includes emotional markers such as 'concerned' and 'act now', contains a clear call-to-action in its final paragraph, and maintains an organized structure with exactly 4 paragraphs and varied sentence structures.",
+          "weaknesses": "The email does not mention specific threats like overfishing or pollution, falls short of the recommended word count, does not clearly articulate a full problem \u2192 consequences \u2192 solution \u2192 action flow, omits key phrases such as 'marine ecosystem collapse' or 'permanent protection', and does not include or explain technical terms like 'MPA'.",
+          "consistency_confidence": 0.9285714285714286,
+          "average_response_time": 47.93622501691183,
+          "generation_attempts": 3,
+          "total_criteria": 14,
+          "weighted_score": 0.6486486486486487,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 6,
+            "medium": 3,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 143.8090853691101,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.6486486486486487,
+        "ranking_score": 0.6486486486486487,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include key themes of biodiversity loss and ocean conservation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented in a crisis-focused manner with specific threats like overfishing and pollution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach propose establishing legally protected marine zones?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action placed in the final paragraph before sign-off?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'urgent', 'passionate', or 'concerned'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and motivational?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include phrases like 'critical moment', 'irreplaceable treasure', or 'act now'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the email have approximately 250-400 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email contain exactly 4 paragraphs?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Does the information flow follow problem \u2192 consequences \u2192 solution \u2192 action sequence?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email use key phrases like 'marine ecosystem collapse' or 'permanent protection'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email use varied sentence structures (short impactful statements + detailed sentences)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 14,
+            "description": "Are technical terms like 'MPA' explained contextually?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 6,
+          "medium": 3,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 14,
+        "strengths": "The email effectively addresses ocean conservation with clear crisis context, a well-defined solution (Marine Protected Area), a structured call-to-action in the final paragraph, persuasive and semi-formal style, correct paragraph structure, and a logical flow from problem to action. It also demonstrates varied sentence structures and explains technical terms adequately.",
+        "weaknesses": "The email lacks specific emotional language markers such as 'urgent', 'passionate', or 'concerned', does not incorporate key phrases like 'critical moment' or 'act now', is somewhat short of the 250-400 word target, and misses out on key phrases like 'marine ecosystem collapse' or 'permanent protection'.",
+        "consistency_confidence": 0.6428571428571429,
+        "average_response_time": 46.041720946629844,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6486486486486487": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include key themes of biodiversity loss and ocean conservation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented in a crisis-focused manner with specific threats like overfishing and pollution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach propose establishing legally protected marine zones?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action placed in the final paragraph before sign-off?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'urgent', 'passionate', or 'concerned'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and motivational?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include phrases like 'critical moment', 'irreplaceable treasure', or 'act now'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the email have approximately 250-400 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email contain exactly 4 paragraphs?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Does the information flow follow problem \u2192 consequences \u2192 solution \u2192 action sequence?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email use key phrases like 'marine ecosystem collapse' or 'permanent protection'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email use varied sentence structures (short impactful statements + detailed sentences)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 14,
+              "description": "Are technical terms like 'MPA' explained contextually?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively addresses ocean conservation with clear crisis context, a well-defined solution (Marine Protected Area), a structured call-to-action in the final paragraph, persuasive and semi-formal style, correct paragraph structure, and a logical flow from problem to action. It also demonstrates varied sentence structures and explains technical terms adequately.",
+          "weaknesses": "The email lacks specific emotional language markers such as 'urgent', 'passionate', or 'concerned', does not incorporate key phrases like 'critical moment' or 'act now', is somewhat short of the 250-400 word target, and misses out on key phrases like 'marine ecosystem collapse' or 'permanent protection'.",
+          "consistency_confidence": 0.6428571428571429,
+          "average_response_time": 46.041720946629844,
+          "generation_attempts": 3,
+          "total_criteria": 14,
+          "weighted_score": 0.6486486486486487,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 6,
+            "medium": 3,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 138.12557411193848,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.5945945945945946,
+        "ranking_score": 0.5945945945945946,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include key themes of biodiversity loss and ocean conservation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented in a crisis-focused manner with specific threats like overfishing and pollution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach propose establishing legally protected marine zones?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action placed in the final paragraph before sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'urgent', 'passionate', or 'concerned'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and motivational?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include phrases like 'critical moment', 'irreplaceable treasure', or 'act now'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email have approximately 250-400 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email contain exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the information flow follow problem \u2192 consequences \u2192 solution \u2192 action sequence?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use key phrases like 'marine ecosystem collapse' or 'permanent protection'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email use varied sentence structures (short impactful statements + detailed sentences)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 14,
+            "description": "Are technical terms like 'MPA' explained contextually?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 6,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 14,
+        "strengths": "The email effectively covers key themes such as biodiversity loss and ocean conservation, presents a clear crisis with specific threats, offers a solution in the form of establishing a legally protected marine zone, and maintains a persuasive, semi-formal tone with varied sentence structures and a flowing problem-to-action sequence.",
+        "weaknesses": "The email falls short in meeting structural guidelines by not having the required 250-400 word count and exactly 4 paragraphs, the call-to-action is not clearly isolated in the final paragraph, it lacks the explicit use of expected emotional markers, omits key technical phrases, and does not include technical terms like 'MPA' with contextual explanation.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 47.41411725680033,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6486486486486487": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include key themes of biodiversity loss and ocean conservation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented in a crisis-focused manner with specific threats like overfishing and pollution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach propose establishing legally protected marine zones?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action placed in the final paragraph before sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'urgent', 'passionate', or 'concerned'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and motivational?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include phrases like 'critical moment', 'irreplaceable treasure', or 'act now'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email have approximately 250-400 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email contain exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the information flow follow problem \u2192 consequences \u2192 solution \u2192 action sequence?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use key phrases like 'marine ecosystem collapse' or 'permanent protection'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email use varied sentence structures (short impactful statements + detailed sentences)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 14,
+              "description": "Are technical terms like 'MPA' explained contextually?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively covers key themes such as biodiversity loss and ocean conservation, presents a clear crisis with specific threats, offers a solution in the form of establishing a legally protected marine zone, and maintains a persuasive, semi-formal tone with varied sentence structures and a flowing problem-to-action sequence.",
+          "weaknesses": "The email falls short in meeting structural guidelines by not having the required 250-400 word count and exactly 4 paragraphs, the call-to-action is not clearly isolated in the final paragraph, it lacks the explicit use of expected emotional markers, omits key technical phrases, and does not include technical terms like 'MPA' with contextual explanation.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 47.41411725680033,
+          "generation_attempts": 3,
+          "total_criteria": 14,
+          "weighted_score": 0.5945945945945946,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 6,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 142.2554211616516,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.43243243243243246,
+        "ranking_score": 0.43243243243243246,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include key themes of biodiversity loss and ocean conservation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented in a crisis-focused manner with specific threats like overfishing and pollution?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach propose establishing legally protected marine zones?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action placed in the final paragraph before sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'urgent', 'passionate', or 'concerned'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and motivational?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level semi-formal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include phrases like 'critical moment', 'irreplaceable treasure', or 'act now'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email have approximately 250-400 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email contain exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the information flow follow problem \u2192 consequences \u2192 solution \u2192 action sequence?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use key phrases like 'marine ecosystem collapse' or 'permanent protection'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email use varied sentence structures (short impactful statements + detailed sentences)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 14,
+            "description": "Are technical terms like 'MPA' explained contextually?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 14,
+        "strengths": "The email effectively emphasizes ocean conservation, proposes a marine protected area as a solution, employs emotional language (e.g., 'concerned'), maintains a persuasive and semi-formal tone, and shows some variation in sentence structure.",
+        "weaknesses": "It lacks specific crisis details such as explicit mentions of overfishing and pollution, does not include a clear call-to-action in the final paragraph, falls short of the required word count and paragraph count, does not follow the ideal problem \u2192 consequences \u2192 solution \u2192 action flow, omits key phrases, and does not provide contextual explanations for technical terms.",
+        "consistency_confidence": 0.9285714285714286,
+        "average_response_time": 35.76664026578268,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6486486486486487": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include key themes of biodiversity loss and ocean conservation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented in a crisis-focused manner with specific threats like overfishing and pollution?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach propose establishing legally protected marine zones?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action placed in the final paragraph before sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'urgent', 'passionate', or 'concerned'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and motivational?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level semi-formal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include phrases like 'critical moment', 'irreplaceable treasure', or 'act now'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email have approximately 250-400 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email contain exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the information flow follow problem \u2192 consequences \u2192 solution \u2192 action sequence?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use key phrases like 'marine ecosystem collapse' or 'permanent protection'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email use varied sentence structures (short impactful statements + detailed sentences)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 14,
+              "description": "Are technical terms like 'MPA' explained contextually?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            }
+          ],
+          "strengths": "The email effectively emphasizes ocean conservation, proposes a marine protected area as a solution, employs emotional language (e.g., 'concerned'), maintains a persuasive and semi-formal tone, and shows some variation in sentence structure.",
+          "weaknesses": "It lacks specific crisis details such as explicit mentions of overfishing and pollution, does not include a clear call-to-action in the final paragraph, falls short of the required word count and paragraph count, does not follow the ideal problem \u2192 consequences \u2192 solution \u2192 action flow, omits key phrases, and does not provide contextual explanations for technical terms.",
+          "consistency_confidence": 0.9285714285714286,
+          "average_response_time": 35.76664026578268,
+          "generation_attempts": 3,
+          "total_criteria": 14,
+          "weighted_score": 0.43243243243243246,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 107.30035901069641,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 1,
+      "score": 0.7837837837837838
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 2,
+      "score": 0.6486486486486487
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 3,
+      "score": 0.6486486486486487
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 4,
+      "score": 0.5945945945945946
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 5,
+      "score": 0.43243243243243246
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 1033.7582244873047,
+    "success": true,
+    "errors": []
+  }
+}

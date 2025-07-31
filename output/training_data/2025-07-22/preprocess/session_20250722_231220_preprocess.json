@@ -1,0 +1,1146 @@
+{
+  "session_id": "5505fd6f-8f51-4306-8152-8bdf16d0a732",
+  "timestamp": "2025-07-22T23:12:20.454329",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0115",
+    "name": "Fundraiser for our Crisis Hotline for LGBTQ+ Youth"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Fundraiser for our Crisis Hotline for LGBTQ+ Youth"
+  },
+  "models_used": {
+    "email_models": [
+      "stablelm-2-1.6b-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "phi-3-mini-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[YOUR_EMAIL]\n\n---\n\nSubject Line: Help Save Lives: Support Our Crisis Hotline for LGBTQ+ Youth\n\nDear [Recipient],\n\nAs we navigate through these unprecedented times, I'm reaching out to you today because we need your support more than ever before. Our Crisis Hotline for LGBTQ+ Youth has been providing much-needed assistance to young people who are struggling with mental health challenges due to their identity.\n\nUnfortunately, funding for this service has come under immense pressure in recent months. We've seen a significant decrease in donations, which puts our ability to serve at risk. That's why we're asking for your help in making a difference in the lives of those who need us most.\n\nYour donation will go directly towards providing crucial resources and support for queer youth experiencing distress. By donating now, you'll be contributing to a community that needs your compassion and understanding.\n\nHere's what your contribution can do:\n\n- [ ] $5 provides a week's worth of meals for one youth in crisis\n- [ ] $10 helps provide access to therapy sessions for two youth in need\n- [ ] $25 enables us to offer emergency financial aid to one youth facing homelessness\n\nWe cannot do this work alone. Every little bit counts, and together, we can make a meaningful impact in the lives of queer youth seeking support.\n\nPlease consider making a donation today by visiting our website ([WEBSITE LINK]) and clicking on the 'Donate' button. If you prefer to mail a check, please send it to our mailing address listed on our website.\n\nTogether, let's stand united against hate and create a brighter future for all.\n\nThank you for your time and consideration.\n\nSincerely,\n\n[SENDING ORGANIZATION NAME]\n",
+        "generation_time": 149.45128989219666,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "[example_email@example.com](mailto:example_email@example.com)\nPhone: 555-123-4567\nWebsite: [www.examplewebsite.org](http://www.examplewebsite.org)\n\nSubject: Help Us Save Lives: Fund Our Crisis Hotline\n\nDear friend,\n\nEvery day, LGBTQ+ youth face rejection, harassment, and violence at home, in school, and online. They often feel isolated, scared, and unsure where to turn for support. That's why we're counting on you to help us fund our Crisis Hotline \u2013 a lifeline for these young people in desperate need.\n\nOur hotline has been operating since 2018, providing 24/7 support to over 10,000 callers. But with increasing demand and rising costs, we're facing a critical funding gap. If we don't meet our fundraising target, we risk losing this vital service.\n\nThat's where you come in! By donating just $25 today, you'll be helping us answer another call, provide guidance, and offer hope to a young person struggling to cope. Every dollar counts, and every donation brings us closer to ensuring that no one faces their struggles alone.\n\nWill you join us in saving lives? Donate now and become a hero to these vulnerable young people.\n\n**Donate $25 Today**\n",
+        "generation_time": 113.97254061698914,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[YOUR_NAME]\n\nSubject: Help us save lives! Fund our Crisis Hotline for LGBTQ+ Youth\n\nDear Valued Donor,\n\nWe are thrilled to share that we have secured a generous donation from [SUPPORTER_NAME], allowing us to fund our Crisis Hotline for LGBTQ+ youth. This donation will enable us to provide critical support to young people who are struggling with homelessness, abuse, and other forms of trauma.\n\nOur hotline provides confidential counseling, emergency shelter, and other vital resources to young people in need. We rely solely on donations to keep our services running, and every dollar counts.\n\nIn this time of crisis, we need your help more than ever. Your contribution will go directly towards supporting our lifesaving work.\n\nTo make a donation, please click here: [LINK TO DONATE PAGE].\n\nThank you for your continued support of our mission.\n\nBest regards,\n\n[Your Name]\n\nExecutive Director\n\n[Your Organization]\n\n[Date]\n",
+        "generation_time": 19.162220001220703,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Become a Hero for LGBTQ+ Youth in Crisis!\n\nDear [Recipient],\n\nDo you remember what it felt like when you needed someone to turn to during a difficult time? Now imagine being a young person navigating the challenges of growing up LGBTQ+ in today's world, without anywhere to turn for support.\n\nThat's where we come in. Our organization has been providing a crisis hotline for LGBTQ+ youth in need, but we need your help to keep it running. With your support, we can be there for young people who need us most, providing them with the care and compassion they deserve.\n\nAs a hero for LGBTQ+ youth, you can make a difference by donating to our crisis hotline fundraiser. Every dollar counts, and every contribution brings us closer to ensuring that no young person has to face their struggles alone.\n\nYour generosity will provide a lifeline for those in crisis, giving them hope and the strength to keep going. Together, we can create a world where all young people, regardless of their sexual orientation or gender identity, have access to the support they need to thrive.\n\nPlease consider making a donation today to become a hero for LGBTQ+ youth in crisis. Your gift will change lives and make a lasting impact on our community.\n\n<https://www.lgbtqcrisishotline.org/donate>\n\nThank you for standing with us in solidarity and for helping to create a brighter future for LGBTQ+ youth.\n\nSincerely,\n\n[Your Name]\n\n[Organization]\n",
+        "generation_time": 49.529396533966064,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject Line Here\nFrom: [SENDER_ORGANIZATION] Team Member Name <team@example.com>\nDate: Tuesday, April 9th at 8 AM PDT\nTo: Recipient Address\nCc: Organization Members; Volunteers & Donors\nBcc: Funding Partners/Sponsors\nSubject: Urgent Support Needed \u2013 Save Our Voices Program!\n\nDear Supporter,\n\nImagine being in turmoil\u2014feeling isolated, misunderstood, and desperate for guidance when you need it most. This isn\u2019t just a hypothetical scenario but a harsh reality faced by countless young people within the LGBTQ+ community every day. They grapple silently with challenges that can lead them down perilous paths if left unaddressed. At Rainbow Refuge, we believe everyone deserves support during their darkest hours, especially those who might feel even less seen due to societal prejudice against non-heteronormative identities. That\u2019s why I am reaching out today because there has never been a greater time than now to stand up for these vulnerable youths through funding our \u2018Save Our Voices\u2019 program.\n\nOur hotline provides immediate assistance to distressed individuals seeking counsel about issues like self-acceptance, coming out, discrimination, bullying, relationship problems, mental health struggles, etc.\u2014all tailored specifically towards helping members of the queer spectrum navigate life safely while maintaining authenticity. Unfortunately, many organizations offering similar services face budget cutbacks which threaten this vital lifeline they provide daily. Without adequate financial backing such programs risk shutting down altogether leaving thousands voiceless once again amidst adversity. As someone deeply committed to equality across all walks of society regardless race color gender orientation religion creed national origin disability status age marital status veteran status military service sexual preference citizenship immigration status employment history educational background family structure household income level home state zip code political affiliation religious belief system personal interests hobbies favorite movies music bands books authors TV shows websites social media accounts online activities gaming habits fashion preferences hairstyles clothing styles accessories jewelry shoes sneakers boots sandals dress pants skirts shorts jeans sweaters jackets coats umbrellas raincoats snowboards ski equipment bikes helmets gloves mittens scarves tights socks slippers flip flops high heels flats athletic wear sports attire casual chic formal business professional workwear uniform office clothes suits blazers shirts blouses trousers overalls coveralls aprons chef whites scrubs nursing caps lab coat safety glasses prescription eyeglasses reading specs computer monitor display laptop tablet smartphone camera phone case cellular device mobile communication radio transmitter receiver walkie talkie megaphone public address speaker loudspeaker microphone headphones earbuds speakers amplifier guitar bass drum cymbals drums tambourine xylophone piano accordion harmonica violin saxophone clarinet oboe organ synthesizer electronic keyboard electric keytar autoharp hammer dulcimer ukulele banjo mandolin lute zither kazoo melodica panpipes recorder tin whistle mouth harp lyre mandook carillon tubular bell temple bell church clock tower windmill waterwheel millstone grinding stone mortar and pestle pottery wheel loom spinning wheel hand spindle drop spindle foot power loom cotton gin fly shuttle pick axenya reaping scythe sickle flail mattock hoe digging stick plough ard iron rake soil cultivator seed drill thresher hay baler combine tractor horse cart wagon carriage buggy sedan automobile motorcycle airplane train bus aircraft ship submarine cruiseferry yacht boat sail vessel fishing rod hunting rifle shotgun bow crossbow arrow spear lance mace sword broadsword greatsword halberd glaive polearm pike poleax staff battleaxe warhammer naginata longsword rapier sabre parang machete falchion foil katana tanto kunai saw chainmail armor breastplate shield buckler gauntlets gaudiha leatherwork smithery blacksmith metalworking metallurgy mining quarries ore processing coal mines gold silver mercury platinum rhodium iridium osmiridium ruthenium palladium titanium tantalum coltan wolfram boron aluminum magnesium sodium calcium carbon dioxide hydrogen nitrogen sulfur phosphorus oxygen argon neon fluorine radon uranium thorium plutonium polonium francium actinoids promethium samarium europium gadolinium terbium holmium erbium thulium lutetium lawrencium dubnium seaborgium bohrium hassium meitnerium darmstadtium roentgenium copernicium ununquadium oganesson element symbols elements periodic table atomic number mass density electron configuration oxides acids bases salts electrochemistry chemistry chemical reaction equilibrium thermochemistry enthalpy entropy heat capacity calorimetry specific heat capacities thermal conductivity convection conduction radiation insulation materials engineering construction building design architecture architectural structures buildings bridges roads transport infrastructure traffic flow highway systems urban planning city development municipal government federal agencies international relations foreign policy diplomacy global governance world economy economic growth trade agreements investments capitalism market economics free enterprise laissez faire monopoly competition antitrust legislation deregulation privatization corporations entrepreneurship innovation technology advancements scientific research methodology experimental procedure data analysis statistics hypothesis testing significance levels confidence intervals standard deviation mean median mode range percentages fractions decimals numbers place value numeral digits digit grouping rounding arithmetic operations addition multiplication division exponentiation logarithms trigonometry geometry plane figures shapes angles degrees arc length area volume surface area circumference diameter radius sphere cylinder cone pyramid prisms triangles rectangles pentagons hexagons octagons squares circles ellipses hyperbola straight lines parallel intersecting tangents secant curves exponential decay linear regression quadratic equations polynomials cubic functions quadratics absolute values rational expressions radical simplification factorial permutations combinations binomial theorem probability distributions normal distribution chi square test correlation coefficient statistical inference sampling methods random variables discrete continuous variable qualitative quantitative measurement instruments instrument calibration accuracy precision resolution sensitivity detection limit dynamic range signal strength noise floor bandwidth frequency domain spectrometry chromatography electrophoresis nuclear magnetic resonance imaging infrared spectroscopy ultraviolet light absorption emission scattering diffraction interference reflection refraction polarization phase modulation amplitude intensity waveform oscilloscope voltage current resistance ohmmeter voltmeter ampere galvanometer meter kilogram gram liter decaliter gallon quart pint fluid dynamics aerodynamics hydrodynamics magnetostatics dielectric permittivity piezoelectric effect ferroelectric properties superconductivity quantum mechanics relativistic physics astrophysics cosmology particle accelerators synchrotron cyclotron betatron storage ring collider proton beam linac tandem\n",
+        "generation_time": 82.12418222427368,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include all key themes: crisis intervention, LGBTQ+ youth vulnerability, and community support?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email present the problem using specific statistics on youth mental health crises?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email feature a prominent donation request with clear instructions?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use urgent, compassionate, and supportive emotional language?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style consistently persuasive and empathetic?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email incorporate the phrases 'critical support', 'vulnerable youth', and 'life-saving service'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the opening paragraph start with an immediate problem statement using emotional appeal?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the closing paragraph contain a direct call-to-action followed by gratitude?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email follow the sequence: problem \u2192 impact \u2192 solution \u2192 action?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Is the word count between 200-300 words?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email contain exactly 4 paragraphs?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use bolded statistics and emphasized call-to-action formatting?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 87.65717720985413,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.5714285714285714,
+        "ranking_score": 0.5714285714285714,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include all key themes: crisis intervention, LGBTQ+ youth vulnerability, and community support?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem using specific statistics on youth mental health crises?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email feature a prominent donation request with clear instructions?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use urgent, compassionate, and supportive emotional language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style consistently persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email incorporate the phrases 'critical support', 'vulnerable youth', and 'life-saving service'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the opening paragraph start with an immediate problem statement using emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the closing paragraph contain a direct call-to-action followed by gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email follow the sequence: problem \u2192 impact \u2192 solution \u2192 action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the word count between 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email contain exactly 4 paragraphs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use bolded statistics and emphasized call-to-action formatting?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 3,
+          "medium": 3,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively addresses crisis intervention, support for LGBTQ+ youth, persuasive donation requests, and overall empathetic and structured language. It follows the problem \u2192 impact \u2192 solution \u2192 action structure and starts with an emotionally engaging opening.",
+        "weaknesses": "It lacks specific statistics on youth mental health crises, does not include the required phrases ('critical support', 'vulnerable youth', 'life-saving service'), misses a closing paragraph with a distinct call-to-action and gratitude, falls short of the required word count, and does not utilize bolded statistics or emphasized call-to-action formatting.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 48.04746437072754,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include all key themes: crisis intervention, LGBTQ+ youth vulnerability, and community support?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem using specific statistics on youth mental health crises?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email feature a prominent donation request with clear instructions?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use urgent, compassionate, and supportive emotional language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style consistently persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email incorporate the phrases 'critical support', 'vulnerable youth', and 'life-saving service'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the opening paragraph start with an immediate problem statement using emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the closing paragraph contain a direct call-to-action followed by gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the sequence: problem \u2192 impact \u2192 solution \u2192 action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the word count between 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email contain exactly 4 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use bolded statistics and emphasized call-to-action formatting?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively addresses crisis intervention, support for LGBTQ+ youth, persuasive donation requests, and overall empathetic and structured language. It follows the problem \u2192 impact \u2192 solution \u2192 action structure and starts with an emotionally engaging opening.",
+          "weaknesses": "It lacks specific statistics on youth mental health crises, does not include the required phrases ('critical support', 'vulnerable youth', 'life-saving service'), misses a closing paragraph with a distinct call-to-action and gratitude, falls short of the required word count, and does not utilize bolded statistics or emphasized call-to-action formatting.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 48.04746437072754,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5714285714285714,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 3,
+            "medium": 3,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 144.1427710056305,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.5142857142857142,
+        "ranking_score": 0.5142857142857142,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include all key themes: crisis intervention, LGBTQ+ youth vulnerability, and community support?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem using specific statistics on youth mental health crises?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email feature a prominent donation request with clear instructions?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use urgent, compassionate, and supportive emotional language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style consistently persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email incorporate the phrases 'critical support', 'vulnerable youth', and 'life-saving service'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the opening paragraph start with an immediate problem statement using emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the closing paragraph contain a direct call-to-action followed by gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email follow the sequence: problem \u2192 impact \u2192 solution \u2192 action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the word count between 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email contain exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use bolded statistics and emphasized call-to-action formatting?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 3,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively covers key themes, employs urgent and compassionate language, includes a clear donation request, and adheres to a persuasive structure with an immediate problem statement and defined problem-impact-solution-action flow.",
+        "weaknesses": "The email lacks specific statistics on youth mental health crises, does not incorporate the required phrases, misses a closing call-to-action with gratitude, falls short in word count and paragraph count requirements, and does not use bolded or emphasized formatting for statistics and call-to-action.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 42.75620381037394,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include all key themes: crisis intervention, LGBTQ+ youth vulnerability, and community support?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem using specific statistics on youth mental health crises?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email feature a prominent donation request with clear instructions?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use urgent, compassionate, and supportive emotional language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style consistently persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email incorporate the phrases 'critical support', 'vulnerable youth', and 'life-saving service'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the opening paragraph start with an immediate problem statement using emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the closing paragraph contain a direct call-to-action followed by gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the sequence: problem \u2192 impact \u2192 solution \u2192 action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the word count between 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email contain exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use bolded statistics and emphasized call-to-action formatting?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively covers key themes, employs urgent and compassionate language, includes a clear donation request, and adheres to a persuasive structure with an immediate problem statement and defined problem-impact-solution-action flow.",
+          "weaknesses": "The email lacks specific statistics on youth mental health crises, does not incorporate the required phrases, misses a closing call-to-action with gratitude, falls short in word count and paragraph count requirements, and does not use bolded or emphasized formatting for statistics and call-to-action.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 42.75620381037394,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5142857142857142,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 3,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 128.2689871788025,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.4857142857142857,
+        "ranking_score": 0.4857142857142857,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include all key themes: crisis intervention, LGBTQ+ youth vulnerability, and community support?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem using specific statistics on youth mental health crises?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email feature a prominent donation request with clear instructions?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use urgent, compassionate, and supportive emotional language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style consistently persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email incorporate the phrases 'critical support', 'vulnerable youth', and 'life-saving service'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the opening paragraph start with an immediate problem statement using emotional appeal?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the closing paragraph contain a direct call-to-action followed by gratitude?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email follow the sequence: problem \u2192 impact \u2192 solution \u2192 action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the word count between 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email contain exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use bolded statistics and emphasized call-to-action formatting?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 1,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively incorporates key themes around crisis intervention for LGBTQ+ youth, employs urgent and compassionate language, presents a clear donation request with straightforward instructions, and provides a closing call-to-action combined with a note of gratitude.",
+        "weaknesses": "The email lacks specific statistics on youth mental health crises, does not include the exact required phrases ('vulnerable youth' and 'life-saving service'), the opening paragraph fails to present an immediate problem statement, the overall sequence (problem \u2192 impact \u2192 solution \u2192 action) is not clearly followed, the word count and paragraph count do not meet the specified requirements, and it does not use bolded statistics or emphasized call-to-action formatting.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 44.82686956723531,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include all key themes: crisis intervention, LGBTQ+ youth vulnerability, and community support?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem using specific statistics on youth mental health crises?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email feature a prominent donation request with clear instructions?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use urgent, compassionate, and supportive emotional language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style consistently persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email incorporate the phrases 'critical support', 'vulnerable youth', and 'life-saving service'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the opening paragraph start with an immediate problem statement using emotional appeal?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the closing paragraph contain a direct call-to-action followed by gratitude?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the sequence: problem \u2192 impact \u2192 solution \u2192 action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the word count between 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email contain exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use bolded statistics and emphasized call-to-action formatting?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively incorporates key themes around crisis intervention for LGBTQ+ youth, employs urgent and compassionate language, presents a clear donation request with straightforward instructions, and provides a closing call-to-action combined with a note of gratitude.",
+          "weaknesses": "The email lacks specific statistics on youth mental health crises, does not include the exact required phrases ('vulnerable youth' and 'life-saving service'), the opening paragraph fails to present an immediate problem statement, the overall sequence (problem \u2192 impact \u2192 solution \u2192 action) is not clearly followed, the word count and paragraph count do not meet the specified requirements, and it does not use bolded statistics or emphasized call-to-action formatting.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 44.82686956723531,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.4857142857142857,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 1,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 134.4809889793396,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.42857142857142855,
+        "ranking_score": 0.42857142857142855,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include all key themes: crisis intervention, LGBTQ+ youth vulnerability, and community support?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem using specific statistics on youth mental health crises?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email feature a prominent donation request with clear instructions?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Does the email use urgent, compassionate, and supportive emotional language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style consistently persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email incorporate the phrases 'critical support', 'vulnerable youth', and 'life-saving service'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the opening paragraph start with an immediate problem statement using emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the closing paragraph contain a direct call-to-action followed by gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email follow the sequence: problem \u2192 impact \u2192 solution \u2192 action?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Is the word count between 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email contain exactly 4 paragraphs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use bolded statistics and emphasized call-to-action formatting?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 3,
+          "medium": 3,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively addresses key themes like crisis intervention and LGBTQ+ youth vulnerability, uses urgent, compassionate language, maintains a persuasive and empathetic tone, and starts with an emotionally engaging opening while containing the required number of paragraphs.",
+        "weaknesses": "It lacks specific statistics on youth mental health, does not provide clear donation instructions, omits required phrases ('critical support', 'vulnerable youth', 'life-saving service'), the closing call-to-action with gratitude is missing, the sequence of problem \u2192 impact \u2192 solution \u2192 action is not clearly followed, the overall word count is below the target range, and it does not use any bold formatting or emphasized call-to-action.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 37.83276470502218,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include all key themes: crisis intervention, LGBTQ+ youth vulnerability, and community support?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem using specific statistics on youth mental health crises?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email feature a prominent donation request with clear instructions?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Does the email use urgent, compassionate, and supportive emotional language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style consistently persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email incorporate the phrases 'critical support', 'vulnerable youth', and 'life-saving service'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the opening paragraph start with an immediate problem statement using emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the closing paragraph contain a direct call-to-action followed by gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the sequence: problem \u2192 impact \u2192 solution \u2192 action?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Is the word count between 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email contain exactly 4 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use bolded statistics and emphasized call-to-action formatting?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively addresses key themes like crisis intervention and LGBTQ+ youth vulnerability, uses urgent, compassionate language, maintains a persuasive and empathetic tone, and starts with an emotionally engaging opening while containing the required number of paragraphs.",
+          "weaknesses": "It lacks specific statistics on youth mental health, does not provide clear donation instructions, omits required phrases ('critical support', 'vulnerable youth', 'life-saving service'), the closing call-to-action with gratitude is missing, the sequence of problem \u2192 impact \u2192 solution \u2192 action is not clearly followed, the overall word count is below the target range, and it does not use any bold formatting or emphasized call-to-action.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 37.83276470502218,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.42857142857142855,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 3,
+            "medium": 3,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 113.49868392944336,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.2857142857142857,
+        "ranking_score": 0.2857142857142857,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include all key themes: crisis intervention, LGBTQ+ youth vulnerability, and community support?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem using specific statistics on youth mental health crises?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email feature a prominent donation request with clear instructions?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use urgent, compassionate, and supportive emotional language?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style consistently persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email incorporate the phrases 'critical support', 'vulnerable youth', and 'life-saving service'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the opening paragraph start with an immediate problem statement using emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the closing paragraph contain a direct call-to-action followed by gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email follow the sequence: problem \u2192 impact \u2192 solution \u2192 action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the word count between 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email contain exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use bolded statistics and emphasized call-to-action formatting?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 2,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively addresses crisis intervention and LGBTQ+ youth vulnerability using urgent and compassionate language, with a persuasive and empathetic tone, starting with an impactful problem statement.",
+        "weaknesses": "The email lacks specific statistics on youth mental health, clear donation instructions and prominent CTA in the closing, does not incorporate all required phrases, fails to follow the full sequence and structure (including having exactly 4 paragraphs and 200-300 words), and omits the required bolding and formatting for statistics and the call-to-action.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 26.32036892573039,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include all key themes: crisis intervention, LGBTQ+ youth vulnerability, and community support?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem using specific statistics on youth mental health crises?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email feature a prominent donation request with clear instructions?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use urgent, compassionate, and supportive emotional language?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style consistently persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email incorporate the phrases 'critical support', 'vulnerable youth', and 'life-saving service'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the opening paragraph start with an immediate problem statement using emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the closing paragraph contain a direct call-to-action followed by gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the sequence: problem \u2192 impact \u2192 solution \u2192 action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the word count between 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email contain exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use bolded statistics and emphasized call-to-action formatting?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively addresses crisis intervention and LGBTQ+ youth vulnerability using urgent and compassionate language, with a persuasive and empathetic tone, starting with an impactful problem statement.",
+          "weaknesses": "The email lacks specific statistics on youth mental health, clear donation instructions and prominent CTA in the closing, does not incorporate all required phrases, fails to follow the full sequence and structure (including having exactly 4 paragraphs and 200-300 words), and omits the required bolding and formatting for statistics and the call-to-action.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 26.32036892573039,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.2857142857142857,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 2,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 78.96147894859314,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 1,
+      "score": 0.5714285714285714
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 2,
+      "score": 0.5142857142857142
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 3,
+      "score": 0.4857142857142857
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 4,
+      "score": 0.42857142857142855
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 5,
+      "score": 0.2857142857142857
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 837.8849461078644,
+    "success": true,
+    "errors": []
+  }
+}

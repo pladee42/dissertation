@@ -1,0 +1,1212 @@
+{
+  "session_id": "2c9ed3d8-d838-4cde-9369-96cb6229bf4f",
+  "timestamp": "2025-07-22T21:37:12.107864",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0108",
+    "name": "Ad-hoc donation for rescued Orangutans from forest fire"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Ad-hoc donation for rescued Orangutans from forest fire"
+  },
+  "models_used": {
+    "email_models": [
+      "vicuna-7b-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "phi-3-mini-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Urgent: Help Save Orangutans Devastated by Forest Fires!\n\nDear [Reader],\n\nAs you may have seen in the news, devastating forest fires have ravaged the homes of countless orangutans, leaving them without food, shelter, and safety. These intelligent and beloved creatures are facing a critical moment in their survival.\n\nThe [Sending Organization] has been working tirelessly to rescue and provide care for these displaced orangutans. We have already saved many lives, but we need your help to keep going.\n\nYour ad-hoc donation today will make a significant difference in our ability to provide lifesaving support to these precious animals. With your generosity, we can build new habitats, supply vital food and medical care, and work towards rehabilitating these orangutans so they can one day return to their natural habitat.\n\nYou are part of a global community that cares deeply about wildlife conservation and preserving biodiversity. By standing with us, you become a hero in the fight to protect these amazing creatures.\n\nPlease donate now and double your impact through our matching gift challenge. Every dollar counts, and together, we can make a difference that lasts a lifetime.\n\n[Call to Action]\n",
+        "generation_time": 54.3061957359314,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Subject: Urgent: Rescue Our Orangutan Friends from Devastating Forest Fires\n\nDear [Name],\n\nWe're reaching out in desperation. The Indonesian rainforest has been ravaged by devastating wildfires that have left countless orangutans stranded and fighting for their lives. Our team at Orangutan Rescue Organization has been working tirelessly to rescue these magnificent creatures, but we need your help NOW.\n\nThe fires have destroyed entire habitats, leaving our beloved orangutans without food, shelter, or safety. We've received reports of orphaned infants, injured adults, and even families torn apart by the flames. It's a catastrophe of unimaginable proportions.\n\nThat's why we're counting on you to join us in this emergency response effort. As a valued supporter, your contribution will directly fund our rescue operations, providing vital resources like food, medical care, and temporary housing for the orangutans.\n\nEvery dollar counts, and every minute matters. Please donate what you can today to help us save these incredible animals from extinction. Your generosity will bring hope to those who thought all was lost.\n\nDonate now and be part of the solution: [link]\n\nThank you for being an advocate for our planet's precious wildlife. Together, we can make a difference!\n\nSincerely,\n\nThe Orangutan Rescue Organization Team\n",
+        "generation_time": 117.81889510154724,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[USER_NAME]\nSubject: Donate Now to Rescue Orangutans from Forest Fire!\n\nDear [SENDING_ORGANIZATION],\n\nWe are writing to you today to ask for your help in saving the lives of our beloved Orangutans. The recent forest fire in Sumatra has destroyed over 60% of their habitat, leaving them severely endangered. We need your support to rescue these amazing creatures and provide them with a safe place to live.\n\nYour donations will go directly towards funding the rescue efforts, feeding and caring for the orphaned babies, and providing medical care for the injured animals. Every penny counts, and every donation helps save these precious creatures from extinction.\n\nWe understand that this is a difficult time for many, but we hope that you can find a way to support us. Please consider making a one-time donation or joining our monthly donor program. Your contribution will make a significant difference in the lives of these beautiful creatures.\n\nThank you so much for your generosity and support. We appreciate your commitment to preserving the environment and protecting our planet.\n\nBest regards,\n\n[YOUR_NAME]\n\n### Instructions:\n\n1. Replace \"[USER_NAME]\" with your name.\n2. Replace \"[SENDING_ORGANIZATION]\" with the name of your nonprofit organization.\n3. Replace \"[EXAMPLE_EMAIL]\" with the full email you generated earlier.\n4. Save the file and send it to your colleagues who might be interested in supporting your organization.\n",
+        "generation_time": 32.373692750930786,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your Name] | [Your Organization]\nSubject: Help Save Orangutan Lives Amid Forest Fire\n\nDear Valued Donor,\n\nI am writing to you today to express our deepest gratitude for your continued support in helping us save endangered species like the orangutans caught in the devastating forest fires that have ravaged their habitat. We applaud your commitment to preserving nature and protecting our planet.\n\nWe are reaching out urgently to ask for your ad-hoc donation to aid these innocent creatures who are suffering greatly due to this catastrophe. The orangutans' survival depends on immediate assistance; otherwise, they will face extinction within months.\n\nThe current situation has left many animals stranded and homeless, including the orangutans, who are now at risk of losing everything they hold dear. Their homes, food sources, and even their physical health are all under threat by the relentless flames.\n\nOur team is working tirelessly around the clock to provide them with the necessary resources to survive through this difficult time. However, we need your immediate financial support to cover the costs incurred during this crisis.\n\nPlease consider making a generous donation to our cause today. Every dollar counts, and every contribution helps us reach out to more orangutans in need.\n\nTogether, we can make a difference and give hope back to these magnificent creatures. Your donation will go directly towards providing food, shelter, and medical care to those affected by this disaster.\n\nThank you for taking the time to read this message. Together, let's come together and show our love for nature and protect the future generations.\n\nSincerely,\n\n[Your Name]\n\n[Your Organization]\n",
+        "generation_time": 136.2974956035614,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Urgent Help Needed \u2013 Save Our Rescued Orangutans!\n\nDear Friend,\n\nImagine waking up in darkness; you\u2019re surrounded by flames that threaten everything dear to you\u2014your home, family, life itself. This harrowing scenario isn't just fiction but reality for our precious primates who have been victims of devastating fires tearing through their homes in Borneo and Sumatra. As part of Wild Hope Sanctuary, we witness every day how these magnificent creatures suffer due to deforestation and climate change. Today, they face another deadly enemy \u2014the recent catastrophic forest fires which destroyed large areas where many were living peacefully before being displaced. Now, amidst this chaos, thousands find themselves vulnerable, injured, scared, needing immediate care & rehabilitation back into safe habitats once again. We cannot stand idle while innocent lives hang precariously at stake like fragile threads waiting for rescue against all odds... But there lies hope within each one among us ready enough willing hands eager hearts prepared minds\u2026 If given chance right now could make difference turn tide swing outcome save future generations yet unborn protect legacy earth gift them second chances let come together lend helping hand extend compassion empathy solidarity support raise funds aid provide shelter food water medicine healing comfort love kindness understanding respect dignity justice equality freedom liberty empowerment sustainability conservation preservation restoration recovery rebirth renewal regeneration revival transformation triumph victory success story inspiration motivation courage bravery determination perseverance strength tenacity resolve dedication passion commitment altruism benevolence charity philanthropy volunteer service community involvement social responsibility corporate citizenship ethical behavior environmental stewardship green initiatives eco-friendly practices organic farming solar energy wind power hydroelectric turbines geothermal resources biomass fuels biofuels recycled materials waste reduction pollution control air quality clean transport electric vehicles hybrid cars public transit bicycles walking carpool sharing ride hailing apps smart grids microgrids distributed generation rooftop photovoltaics residential PV systems commercial utility scale projects grid storage batteries flywheels compressed air pumped hydropower combined cycle gas turbine cogeneration steam cycles coal ash disposal landfill mining tailings impoundments leachate collection dredging sediment removal remediation techniques natural resource management watershed protection erosion control flood mitigation drought relief storm surge barriers sea level rise adaptation strategies disaster response planning emergency preparedness communication coordination collaboration partnerships networking communities building bridges gaps connections linking people places ideas solutions innovative technologies breakthrough discoveries research development education training workshops seminars conferences symposiums roundtable discussions think tank meetings policy briefings reports studies case law precedents judicial opinions statutes legislation ordinances bylaws codes rules guidelines manuals procedures protocols standards specifications criteria benchmarks performance metrics indicators evaluations audits reviews feedback surveys assessments analyses examinations investigations inspections testing trials experiments simulations modeling forecasts projections scenarios hypotheses theories principles concepts laws doctrine norms customs traditions heritage culture values beliefs faith religion spirituality morality ethics virtue integrity honesty truth sincerity authenticity genuineness originality uniqueness individuality personhood identity character traits characteristics features attributes properties qualities merits worth value importance significance relevancy applicability practicality feasibility effectiveness efficiency productivity profitability scalability growth potential expansion capability capacity ability aptitude skill set competency knowledge wisdom experience learning insight discovery revelation enlightenment illumination clarification elucidation comprehension appreciation gratitude thanks acknowledgment recognition praise commendation compliment admiration esteem honor respectful deference courtesy civility politeness decorum etiquette manners graces blessings grace favors favor benefits advantages opportunities prospects possibilities futures hopes dreams aspirations ambition goals objectives targets achievements accomplishments outcomes results consequences impact effects influence changes transformations evolution progress advancements developments improvements enhancement refinement fine tuning adjustment calibration alignment synchronization harmony cooperation teamwork unity fellowship brotherhood sisterhood friendship camaraderie companionship kinship relations affiliation association connection linkage bond binding attachment attraction affinity attractiveness charm magic spell incantation chant prayer supplication invocation benediction blessing blessed holy sacred divine spirit angel archangel cherubim seraphim prophet messiah savior teacher mentor guide light beacon star constellation galaxy universe cosmos creation actus factus actualized entity real thing substance material body flesh blood mind soul heart intelligence intuition conscious awareness sentience sensual feeling touch sense tactile texture surface layer depth dimension space time continuum linear sequence chronological order temporal succession historical narrative account record document evidence proof verification validation authentication credential certification license permit authorization consent agreement contract terms conditions warrant guarantee assurance promise security safety measures defense offense retaliation counterattack reprisal vengeance revenge penalty punishment sanction sentence judgment ruling decision award prize reward compensation payment settlement reconciliation compromise negotiation discussion dialogue conversation exchange interaction intercourse sexual relationship intimate contact affection endeavor effort exertion labor activity employment occupation vocation profession career calling duty obligation responsibility liability debt owed claim ownership possession entitlement title legal status civil standing citizenry nationality country state nationwide jurisdiction authority enforcement policeman officer sheriff deputy marshal patrolman trooper highway cop traffic police motor vehicle department automobile agency government administration institution company business enterprise firm establishment concern matter issue subject theme focus point emphasis highlight feature characteristic property attribute trait element component ingredient constituent factor variable condition circumstance situation context setting environment surroundings atmosphere mood disposition attitude sentiment affect impression imprint memory trace recall echo reflection mirror image shadow silhouette outline contour shape form figure geometry layout pattern design blueprint schematic diagram sketch drawing artistic expression painting canvas composition color scheme palettes brush strokes technique style medium methodology process procedure steps actions movement motion velocity acceleration speed pace tempo rhythm beat timing interval duration length measure distance measurement unit quantitative data numerical figures number quantity magnitude size proportion ratio percentage rate fraction whole integer decimal place coordinate location coordinates axis abscissa ordinate cartesian plane graph chart plot trajectory path course route journey voyage trip excursion expedition adventure exploration travel tour visit sightseeing holiday vacation getaway pleasure enjoyment fun entertainment amusement park recreation playground game sport competition match contest tournament championship series final showdown finale conclusion end result consequence yield output production manufacturing assembly fabrication construction erection installation fitting repair maintenance servicing operation function purpose objective aim target destination origin source beginning initial start stop commence begin proceed halt cease conclude finish terminate close shut open entrance exit departure arrival entry access area room hallway corridor passage way door window glass frame wall panel partition board beam rafter stud joist girder truss column strut tieback anchorage anchor bolted joint fastened secured locked chain linked keyhole lock combination code pin pad swipe card magnetic stripe chip RFID tag fingerprint signature thumb print palm vein scan iris scan facial recognition technology photo identification picture photograph camera video footage recording clip film roll digital media streaming download upload file transfer\n",
+        "generation_time": 86.97914743423462,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key themes 'wildfire emergency', 'animal rescue', and 'urgent funding needs'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email present the problem through a visceral description of immediate danger?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email propose direct donations for specific rescue operations as the solution?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Is the call-to-action prominently placed with urgency indicators?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language markers (urgent, compassionate, hopeful)?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style persuasive and empathetic?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Is the formality level moderately formal with emotional appeal?",
+          "best_ans": "yes",
+          "priority": "low",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include specific phrases like 'desperate situation', 'critical support', or 'life-saving care'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email open with an immediate crisis statement using vivid imagery?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email close with a direct call-to-action followed by gratitude?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the information flow follow the sequence: crisis \u2192 impact \u2192 solution \u2192 appeal?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "structure"
+        },
+        {
+          "question": "Is the email within 200-300 words?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use a mix of short impactful statements and detailed crisis descriptions?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 210.95991039276123,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.875,
+        "ranking_score": 0.875,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'wildfire emergency', 'animal rescue', and 'urgent funding needs'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem through a visceral description of immediate danger?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose direct donations for specific rescue operations as the solution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action prominently placed with urgency indicators?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers (urgent, compassionate, hopeful)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level moderately formal with emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include specific phrases like 'desperate situation', 'critical support', or 'life-saving care'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with an immediate crisis statement using vivid imagery?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email close with a direct call-to-action followed by gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the information flow follow the sequence: crisis \u2192 impact \u2192 solution \u2192 appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email within 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email use a mix of short impactful statements and detailed crisis descriptions?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 3,
+          "high": 5,
+          "medium": 2,
+          "low": 1,
+          "very low": 0
+        },
+        "total_criteria": 13,
+        "strengths": "The email successfully establishes an urgent crisis with vivid imagery and uses passionate, empathetic language. It presents the animal rescue theme clearly, calls for donations with clear urgency, and incorporates specific phrases such as 'lifesaving support'. Overall, the structure follows the recommended crisis-impact-solution-appeal flow.",
+        "weaknesses": "The email fails to include a proper closing that blends a direct call-to-action with a note of gratitude, and it falls short of the 200-300 word count requirement.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 45.50155154863993,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'wildfire emergency', 'animal rescue', and 'urgent funding needs'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem through a visceral description of immediate danger?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose direct donations for specific rescue operations as the solution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action prominently placed with urgency indicators?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers (urgent, compassionate, hopeful)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level moderately formal with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include specific phrases like 'desperate situation', 'critical support', or 'life-saving care'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with an immediate crisis statement using vivid imagery?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email close with a direct call-to-action followed by gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the information flow follow the sequence: crisis \u2192 impact \u2192 solution \u2192 appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email within 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email use a mix of short impactful statements and detailed crisis descriptions?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully establishes an urgent crisis with vivid imagery and uses passionate, empathetic language. It presents the animal rescue theme clearly, calls for donations with clear urgency, and incorporates specific phrases such as 'lifesaving support'. Overall, the structure follows the recommended crisis-impact-solution-appeal flow.",
+          "weaknesses": "The email fails to include a proper closing that blends a direct call-to-action with a note of gratitude, and it falls short of the 200-300 word count requirement.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 45.50155154863993,
+          "generation_attempts": 3,
+          "total_criteria": 13,
+          "weighted_score": 0.875,
+          "priority_breakdown": {
+            "very high": 3,
+            "high": 5,
+            "medium": 2,
+            "low": 1,
+            "very low": 0
+          },
+          "evaluation_time": 136.50502920150757,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.8,
+        "ranking_score": 0.8,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'wildfire emergency', 'animal rescue', and 'urgent funding needs'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem through a visceral description of immediate danger?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose direct donations for specific rescue operations as the solution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action prominently placed with urgency indicators?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers (urgent, compassionate, hopeful)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level moderately formal with emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include specific phrases like 'desperate situation', 'critical support', or 'life-saving care'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with an immediate crisis statement using vivid imagery?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email close with a direct call-to-action followed by gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the information flow follow the sequence: crisis \u2192 impact \u2192 solution \u2192 appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email within 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email use a mix of short impactful statements and detailed crisis descriptions?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 3,
+          "high": 4,
+          "medium": 2,
+          "low": 1,
+          "very low": 0
+        },
+        "total_criteria": 13,
+        "strengths": "The email effectively communicates the wildfire emergency and animal rescue theme with vivid, persuasive, and empathetic language. It presents an immediate crisis with a clear call-to-action and maintains a logical information flow (crisis, impact, solution, appeal).",
+        "weaknesses": "The email does not include the specific phrases ('desperate situation', 'critical support', or 'life-saving care'), lacks a closing that includes gratitude, and falls short of the required 200-300 word count.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 36.65432866414388,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'wildfire emergency', 'animal rescue', and 'urgent funding needs'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem through a visceral description of immediate danger?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose direct donations for specific rescue operations as the solution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action prominently placed with urgency indicators?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers (urgent, compassionate, hopeful)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level moderately formal with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include specific phrases like 'desperate situation', 'critical support', or 'life-saving care'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with an immediate crisis statement using vivid imagery?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email close with a direct call-to-action followed by gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the information flow follow the sequence: crisis \u2192 impact \u2192 solution \u2192 appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email within 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email use a mix of short impactful statements and detailed crisis descriptions?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively communicates the wildfire emergency and animal rescue theme with vivid, persuasive, and empathetic language. It presents an immediate crisis with a clear call-to-action and maintains a logical information flow (crisis, impact, solution, appeal).",
+          "weaknesses": "The email does not include the specific phrases ('desperate situation', 'critical support', or 'life-saving care'), lacks a closing that includes gratitude, and falls short of the required 200-300 word count.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 36.65432866414388,
+          "generation_attempts": 3,
+          "total_criteria": 13,
+          "weighted_score": 0.8,
+          "priority_breakdown": {
+            "very high": 3,
+            "high": 4,
+            "medium": 2,
+            "low": 1,
+            "very low": 0
+          },
+          "evaluation_time": 109.96337342262268,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.675,
+        "ranking_score": 0.675,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'wildfire emergency', 'animal rescue', and 'urgent funding needs'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem through a visceral description of immediate danger?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose direct donations for specific rescue operations as the solution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action prominently placed with urgency indicators?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers (urgent, compassionate, hopeful)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level moderately formal with emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include specific phrases like 'desperate situation', 'critical support', or 'life-saving care'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with an immediate crisis statement using vivid imagery?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email close with a direct call-to-action followed by gratitude?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the information flow follow the sequence: crisis \u2192 impact \u2192 solution \u2192 appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email within 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email use a mix of short impactful statements and detailed crisis descriptions?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 4,
+          "medium": 2,
+          "low": 1,
+          "very low": 0
+        },
+        "total_criteria": 13,
+        "strengths": "The email effectively incorporates key themes, presents a clear donation solution, employs persuasive and empathetic language, maintains a moderately formal tone, follows a logical crisis-impact-solution-appeal flow, and balances impactful statements with supporting details.",
+        "weaknesses": "The email lacks a visceral and vivid description of immediate danger, does not include specific urgent phrases like 'desperate situation' or 'life-saving care', does not open with an arresting crisis statement using imagery, and its overall word count falls short of the 200-300 word target.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 37.74381240208944,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'wildfire emergency', 'animal rescue', and 'urgent funding needs'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem through a visceral description of immediate danger?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose direct donations for specific rescue operations as the solution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action prominently placed with urgency indicators?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers (urgent, compassionate, hopeful)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level moderately formal with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include specific phrases like 'desperate situation', 'critical support', or 'life-saving care'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with an immediate crisis statement using vivid imagery?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email close with a direct call-to-action followed by gratitude?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the information flow follow the sequence: crisis \u2192 impact \u2192 solution \u2192 appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email within 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email use a mix of short impactful statements and detailed crisis descriptions?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively incorporates key themes, presents a clear donation solution, employs persuasive and empathetic language, maintains a moderately formal tone, follows a logical crisis-impact-solution-appeal flow, and balances impactful statements with supporting details.",
+          "weaknesses": "The email lacks a visceral and vivid description of immediate danger, does not include specific urgent phrases like 'desperate situation' or 'life-saving care', does not open with an arresting crisis statement using imagery, and its overall word count falls short of the 200-300 word target.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 37.74381240208944,
+          "generation_attempts": 3,
+          "total_criteria": 13,
+          "weighted_score": 0.675,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 4,
+            "medium": 2,
+            "low": 1,
+            "very low": 0
+          },
+          "evaluation_time": 113.23182106018066,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.6,
+        "ranking_score": 0.6,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'wildfire emergency', 'animal rescue', and 'urgent funding needs'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem through a visceral description of immediate danger?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose direct donations for specific rescue operations as the solution?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action prominently placed with urgency indicators?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers (urgent, compassionate, hopeful)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level moderately formal with emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include specific phrases like 'desperate situation', 'critical support', or 'life-saving care'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with an immediate crisis statement using vivid imagery?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email close with a direct call-to-action followed by gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the information flow follow the sequence: crisis \u2192 impact \u2192 solution \u2192 appeal?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email within 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email use a mix of short impactful statements and detailed crisis descriptions?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 3,
+          "medium": 2,
+          "low": 1,
+          "very low": 0
+        },
+        "total_criteria": 13,
+        "strengths": "The email clearly addresses key themes, uses emotional and persuasive language with urgency and a moderately formal tone, and contains a mix of short impactful elements (such as in the subject) with detailed crisis descriptions.",
+        "weaknesses": "The email lacks specific trigger phrases ('desperate situation', 'critical support', 'life-saving care'), does not open immediately with a vivid crisis statement, does not close with a clear, gratitude-followed call-to-action, its overall flow does not strictly follow the recommended crisis \u2192 impact \u2192 solution \u2192 appeal sequence, and it is shorter than the desired 200-300 word range.",
+        "consistency_confidence": 0.9230769230769231,
+        "average_response_time": 36.74711227416992,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'wildfire emergency', 'animal rescue', and 'urgent funding needs'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem through a visceral description of immediate danger?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose direct donations for specific rescue operations as the solution?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action prominently placed with urgency indicators?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers (urgent, compassionate, hopeful)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level moderately formal with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include specific phrases like 'desperate situation', 'critical support', or 'life-saving care'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with an immediate crisis statement using vivid imagery?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email close with a direct call-to-action followed by gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the information flow follow the sequence: crisis \u2192 impact \u2192 solution \u2192 appeal?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email within 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email use a mix of short impactful statements and detailed crisis descriptions?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email clearly addresses key themes, uses emotional and persuasive language with urgency and a moderately formal tone, and contains a mix of short impactful elements (such as in the subject) with detailed crisis descriptions.",
+          "weaknesses": "The email lacks specific trigger phrases ('desperate situation', 'critical support', 'life-saving care'), does not open immediately with a vivid crisis statement, does not close with a clear, gratitude-followed call-to-action, its overall flow does not strictly follow the recommended crisis \u2192 impact \u2192 solution \u2192 appeal sequence, and it is shorter than the desired 200-300 word range.",
+          "consistency_confidence": 0.9230769230769231,
+          "average_response_time": 36.74711227416992,
+          "generation_attempts": 3,
+          "total_criteria": 13,
+          "weighted_score": 0.6,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 3,
+            "medium": 2,
+            "low": 1,
+            "very low": 0
+          },
+          "evaluation_time": 110.24171614646912,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.4,
+        "ranking_score": 0.4,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'wildfire emergency', 'animal rescue', and 'urgent funding needs'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem through a visceral description of immediate danger?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose direct donations for specific rescue operations as the solution?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the call-to-action prominently placed with urgency indicators?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers (urgent, compassionate, hopeful)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the formality level moderately formal with emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email include specific phrases like 'desperate situation', 'critical support', or 'life-saving care'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with an immediate crisis statement using vivid imagery?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email close with a direct call-to-action followed by gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the information flow follow the sequence: crisis \u2192 impact \u2192 solution \u2192 appeal?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email within 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email use a mix of short impactful statements and detailed crisis descriptions?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 2,
+          "medium": 2,
+          "low": 1,
+          "very low": 0
+        },
+        "total_criteria": 13,
+        "strengths": "The email uses vivid imagery and emotional language that powerfully conveys a sense of urgency and danger. Its persuasive, empathetic, and moderately formal tone is a strength, and it effectively opens with a crisis statement while mixing detailed descriptions with impactful statements.",
+        "weaknesses": "The email does not explicitly incorporate all key themes (e.g., urgent funding needs), lacks a direct donation request and a clearly prominent call-to-action with gratitude, does not include specific phrases like 'desperate situation' or 'life-saving care', and fails to clearly follow the structured crisis \u2192 impact \u2192 solution \u2192 appeal flow. Additionally, the email is under the desired 200-300 word range.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 42.032574574152626,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'wildfire emergency', 'animal rescue', and 'urgent funding needs'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem through a visceral description of immediate danger?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose direct donations for specific rescue operations as the solution?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the call-to-action prominently placed with urgency indicators?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers (urgent, compassionate, hopeful)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the formality level moderately formal with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email include specific phrases like 'desperate situation', 'critical support', or 'life-saving care'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with an immediate crisis statement using vivid imagery?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email close with a direct call-to-action followed by gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the information flow follow the sequence: crisis \u2192 impact \u2192 solution \u2192 appeal?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email within 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email use a mix of short impactful statements and detailed crisis descriptions?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email uses vivid imagery and emotional language that powerfully conveys a sense of urgency and danger. Its persuasive, empathetic, and moderately formal tone is a strength, and it effectively opens with a crisis statement while mixing detailed descriptions with impactful statements.",
+          "weaknesses": "The email does not explicitly incorporate all key themes (e.g., urgent funding needs), lacks a direct donation request and a clearly prominent call-to-action with gratitude, does not include specific phrases like 'desperate situation' or 'life-saving care', and fails to clearly follow the structured crisis \u2192 impact \u2192 solution \u2192 appeal flow. Additionally, the email is under the desired 200-300 word range.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 42.032574574152626,
+          "generation_attempts": 3,
+          "total_criteria": 13,
+          "weighted_score": 0.4,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 2,
+            "medium": 2,
+            "low": 1,
+            "very low": 0
+          },
+          "evaluation_time": 126.09812355041504,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 1,
+      "score": 0.875
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 2,
+      "score": 0.8
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 3,
+      "score": 0.675
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 4,
+      "score": 0.6
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 5,
+      "score": 0.4
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 945.4096508026123,
+    "success": true,
+    "errors": []
+  }
+}

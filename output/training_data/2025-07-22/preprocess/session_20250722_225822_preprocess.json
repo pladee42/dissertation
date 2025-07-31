@@ -1,0 +1,1146 @@
+{
+  "session_id": "b136b5ad-fb3b-4991-ae5c-d5420c29b8d9",
+  "timestamp": "2025-07-22T22:58:22.394252",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0114",
+    "name": "Volunteer to Canvass for Pro-Equality Candidates in Your Area"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Volunteer to Canvass for Pro-Equality Candidates in Your Area"
+  },
+  "models_used": {
+    "email_models": [
+      "vicuna-7b-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "phi-3-mini-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "[volunteer@equalityforall.org](mailto:volunteer@equalityforall.org)\nSubject: Join us in fighting for equality!\n\nDear [Name],\n\nDo you believe that everyone should have equal rights? Are you tired of seeing discrimination and inequality in our society? If so, we need your help!\n\nWe at Equality For All are working tirelessly to elect pro-equality candidates across the country, and we need volunteers like you to help spread our message. Will you join us in this critical mission?\n\nOur canvassing efforts involve talking to voters in your community about the importance of electing candidates who support LGBTQ+ rights, reproductive freedom, and racial justice. It's easy, rewarding, and crucial work that will make a real difference in people's lives.\n\nTo get started, please sign up here: [SIGNUP\\_LINK]\n\nThank you for considering this opportunity to make a difference. Together, we can create a more just and equitable world for all.\n\nSincerely,\n\n[Your Name]\nEquality For All\n",
+        "generation_time": 35.37965178489685,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Subject: Join Our Movement for Equality\n\nDear [Name],\n\nWe're reaching out because we believe you share our passion for creating a fairer world where everyone has equal opportunities. We've been working tirelessly to amplify marginalized voices and support pro-equality candidates who will champion justice and equality in their communities.\n\nUnfortunately, many of these candidates face significant obstacles in getting their message heard. That's why we need your help! By volunteering to canvass for these incredible individuals, you'll be directly contributing to the creation of a more just society.\n\nOur team is dedicated to empowering underrepresented groups through grassroots activism and education. With your support, we can make a real difference in the lives of those who need it most.\n\nWill you join us in this critical effort? Every hour spent canvassing makes a tangible impact on the outcome of local elections. Together, we can create lasting change that benefits all members of our community.\n\n**Sign up now to become a canvasser today! <https://equalityforall.org/canvass>**\n\nBest regards,\nThe Equality For All Team\n",
+        "generation_time": 101.2715528011322,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your Name], [Your Organization] | [Your Email Address]\nPhone Number: [Your Phone Number]\nWebsite: [Your Website URL]\n\nDear [Recipient],\n\nAs a dedicated advocate for equality and justice, I am reaching out to you today because I believe that we can make a difference by supporting pro-equality candidates during this crucial election cycle.\n\nThe upcoming elections offer us the opportunity to shape our future and create lasting change. However, many of these candidates lack the resources and support necessary to win. That's where we come in \u2013 volunteers like yourself can make a significant impact by canvassing door-to-door for these candidates.\n\nBy volunteering for [Candidate Name], we can help them build momentum and secure their victory. As a member of our team, you'll be working closely with the campaign staff to engage voters, share key messages, and gather valuable feedback.\n\nHere's what you need to know to get started:\n\n[Insert details about the volunteer role, such as location, time commitment, training, etc.]\n\nWe're looking for passionate individuals who want to join us in making a positive impact in their community. If you're interested in lending your time and energy to this important cause, please let us know by replying to this email.\n\nTogether, we can create a world where everyone has equal opportunities and deserves the same respect and dignity.\n\nThank you for considering this request. We truly appreciate your dedication to social justice and look forward to hearing back from you soon.\n\nBest regards,\n\n[Your Name]\n\n###\n",
+        "generation_time": 118.51437997817993,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[YOUR_NAME]\n\nSubject: Volunteer to Canvass for Pro-Equality Candidates in Your Area\n\nDear [Recipient],\n\nWe hope this email finds you well. We\u2019re excited to share some exciting news with you! As you may have heard, there are several pro-equality candidates running for office in your area. These candidates are fighting for fairness, equality, and justice for all people.\n\nAs a volunteer, you can make a significant difference in their campaigns. We need your help to spread the word about these candidates and encourage others to get involved. You can do this by canvassing door-to-door, reaching out to community leaders, and attending events.\n\nTo sign up for our campaign, please fill out this form: [INSERT LINK TO FORM HERE]. If you have any questions, please don't hesitate to reach out to us at [INSERT EMAIL ADDRESS HERE].\n\nThank you so much for your support! We look forward to hearing from you soon.\n\nBest regards,\n\n[Your Name]\n\n[Your Email Address]\n\n[Your Title]\n\n[Your Organization]\n",
+        "generation_time": 14.516772747039795,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join Us Today! Help Shape Our Future by Volunteering for Equal Rights Campaign <|end_of_one_example|>\n\nDear [Recipient Name],\n\nImagine living in a community where everyone has equal opportunities regardless of their gender identity, race, religion, sexual orientation, age, disability status, veteran standing, national origin, marital/partnership status, genetic information, military service record, political beliefs, education level, immigration history, citizenship status, family responsibilities, pregnancy, parenting experience, income source, economic background, housing situation, health condition, weight, height, physical appearance, hairstyle, clothing style, personal interests, hobbies, preferences, accent, mannerisms, body language, social media activity, online behavior, digital footprint, search engine queries, browsing habits, purchase decisions, consumer choices, spending patterns, financial transactions, investment activities, savings accounts, debt levels, credit scores, bankruptcy filings, employment records, job applications, resumes, cover letters, interviews, performance evaluations, promotions, demotions, terminations, disciplinary actions, grievances, complaints, lawsuits, legal disputes, arbitration proceedings, mediation sessions, settlement agreements, court judgments, appeals, injunctions, restraining orders, protective orders, custody battles, divorce cases, child support arrangements, visitation schedules, alimony payments, property division issues, inheritance claims, probate matters, estate planning documents, trust administration, guardianship appointments, conservatorship designations, power of attorney authorizations, advance medical directives, do-not-resuscitate orders, organ donor registrations, funeral arrangements, memorial services, obituaries, eulogies, condolence messages, sympathy cards, flowers, food deliveries, gift baskets, charitable contributions, fundraisers, auctions, raffles, silent auctions, live performances, concerts, exhibitions, art shows, book signings, poetry readings, lectures, workshops, seminars, conferences, symposiums, panels, roundtables, discussion groups, brainstorming sessions, ideation exercises, creative thinking techniques, innovation strategies, business model canvassing, market research surveys, focus group discussions, customer feedback analysis, product testing procedures, quality control measures, supply chain management systems, inventory tracking methods, cost accounting practices, budget forecasting models, cash flow projections, balance sheet analyses, profit & loss statements, return on investment calculations, break-even points, sales targets, revenue growth rates, gross margins, net profits, operating expenses, overhead costs, capital expenditures, depreciation schedules, amortization periods, interest charges, loan repayment terms, principal reductions, equity financing options, venture capital rounds, angel investors, crowdfunding campaigns, private placements, public offerings, IPOs, secondary listings, delistings, mergers and acquisitions, divestitures, spin-offs, joint ventures, partnerships, franchises, licensing deals, intellectual property transfers, trademark registrations, patents filed, pending applications, granted certificates, international treaties signed, trade agreements negotiated, export controls lifted, import restrictions removed, tariff exemptions obtained, customs clearance facilitated, duty waivers secured, free trade zones established, special economic areas created, foreign exchange regulations relaxed, currency swap lines activated, bilateral monetary cooperation initiatives launched, regional development banks set up, multilateral lenders engaged, global funds accessed, emergency assistance programs implemented, relief packages distributed, recovery plans formulated, reconstruction efforts coordinated, peacekeeping missions deployed, conflict resolution mechanisms employed, diplomatic envoys dispatched, sanction lists compiled, embargoes enforced, asset seizures executed, war crimes investigations conducted, criminal tribunals convened, trials held, verdicts delivered, sentences imposed, pardons issued, clemencies granted, commutations ordered, parole hearings scheduled, release dates announced, post-release supervision mandated, monitoring devices installed, electronic tagging enabled, GPS trackers attached, home confinement conditions applied, house arrest protocols followed, curfew hours observed, travel restrictions placed, no fly zones declared, border closures effectuated, quarantine facilities built, isolation wards constructed, treatment centers opened, vaccination drives organized, mass immunization campaigns rolled out, contact tracing teams assembled, epidemiological studies commissioned, data collection operations carried out, statistical analyses performed, risk assessments undertaken, prevention guidelines developed, mitigation strategies crafted, response frameworks designed, contingency plans prepared, incident command structures formed, logistics chains mapped, resource allocations optimized, personnel deployments planned, communication networks established, coordination meetings held, stakeholder consultations conducted, policy briefings presented, advocacy materials produced, awareness raising events hosted, educational resources shared, training modules offered, capacity building workshops attended, best practice exchanges promoted, knowledge transfer processes supported, learning communities nurtured, mentoring relationships fostered, collaboration platforms utilized, networking opportunities seized, professional associations joined, industry bodies participated, sector coalitions mobilized, civil society organizations involved, grassroots movements empowered, youth clubs active, student unions engaged, academic institutions collaborating, think tanks contributing, advisory committees forming, oversight boards functioning, regulatory agencies reviewing, compliance audits underway, inspection visits arranged, corrective action requests made, remedial steps taken, improvement plans drafted, progress reports submitted, evaluation findings analyzed, lessons learned documented, recommendations generated, implementation roadmaps charted, milestone achievements celebrated, success stories highlighted, challenges addressed, barriers overcome, gaps identified, needs assessed, priorities determined, goals defined, objectives specified, indicators selected, benchmarks set, baselines measured, impact evaluated, results monitored, outputs reported, inputs managed, risks anticipated, vulnerabilities recognized, threats neutralized, safeguards put in place, countermeasures adopted, coping strategies explored, adaptation tactics tested, survival skills honed, rescue scenarios practiced, escape routes plotted, safe houses located, evacuation routes marked, first aid kits stocked, defibrillators charged, fire extinguishers checked, smoke detectors replaced, security cameras mounted, alarm systems upgraded, locks reinforced, fences erected, gates locked, perimeter patrols increased, access controls tightened, visitor screenings intensified, identification checks strengthened, bag searches expanded, metal detector usage escalated, X-ray scans routinely performed, sniffer dogs trained, chemical sensors calibrated, biometric authentication systems integrated, encryption technologies deployed, firewall configurations updated, intrusion detection software installed, antivirus solutions patched, mal\n",
+        "generation_time": 70.89629936218262,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key themes of civic engagement, local impact, and collective action?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Is the problem presented as a pivotal moment requiring grassroots mobilization?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the solution approach focus on direct voter outreach through canvassing?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email include a prominent linked button with secondary text option placed in a dedicated paragraph following impact explanation?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language markers such as urgent, passionate, and community-focused?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include specific phrases like 'critical moment', 'make a real difference', and 'your voice matters'?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style persuasive and motivational?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email follow the Problem \u2192 Solution \u2192 Impact \u2192 Action information flow?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the opening include a personalized greeting with immediate value proposition?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the closing reinforce the call-to-action with appreciation?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Is the email length within the range of 150-200 words?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Is the email written in plain language with minimal political jargon?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 345.85600233078003,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.7631578947368421,
+        "ranking_score": 0.7631578947368421,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of civic engagement, local impact, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented as a pivotal moment requiring grassroots mobilization?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach focus on direct voter outreach through canvassing?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email include a prominent linked button with secondary text option placed in a dedicated paragraph following impact explanation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers such as urgent, passionate, and community-focused?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include specific phrases like 'critical moment', 'make a real difference', and 'your voice matters'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style persuasive and motivational?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email follow the Problem \u2192 Solution \u2192 Impact \u2192 Action information flow?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening include a personalized greeting with immediate value proposition?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the closing reinforce the call-to-action with appreciation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the email length within the range of 150-200 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email written in plain language with minimal political jargon?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 8,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively covers themes of civic engagement and collective action, uses persuasive, motivational and plain language, follows a clear Problem \u2192 Solution \u2192 Impact \u2192 Action flow, includes direct canvassing details, and features a personalized greeting and appreciative closing.",
+        "weaknesses": "The email does not include a prominent linked button with secondary text in its own paragraph, misses some specific required phrases, and its word count falls short of the 150-200 word range.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 50.6038343111674,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of civic engagement, local impact, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented as a pivotal moment requiring grassroots mobilization?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach focus on direct voter outreach through canvassing?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email include a prominent linked button with secondary text option placed in a dedicated paragraph following impact explanation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers such as urgent, passionate, and community-focused?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include specific phrases like 'critical moment', 'make a real difference', and 'your voice matters'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style persuasive and motivational?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email follow the Problem \u2192 Solution \u2192 Impact \u2192 Action information flow?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening include a personalized greeting with immediate value proposition?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the closing reinforce the call-to-action with appreciation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the email length within the range of 150-200 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email written in plain language with minimal political jargon?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively covers themes of civic engagement and collective action, uses persuasive, motivational and plain language, follows a clear Problem \u2192 Solution \u2192 Impact \u2192 Action flow, includes direct canvassing details, and features a personalized greeting and appreciative closing.",
+          "weaknesses": "The email does not include a prominent linked button with secondary text in its own paragraph, misses some specific required phrases, and its word count falls short of the 150-200 word range.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 50.6038343111674,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.7631578947368421,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 8,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 151.81188821792603,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.6842105263157895,
+        "ranking_score": 0.6842105263157895,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of civic engagement, local impact, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented as a pivotal moment requiring grassroots mobilization?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach focus on direct voter outreach through canvassing?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email include a prominent linked button with secondary text option placed in a dedicated paragraph following impact explanation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers such as urgent, passionate, and community-focused?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include specific phrases like 'critical moment', 'make a real difference', and 'your voice matters'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style persuasive and motivational?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email follow the Problem \u2192 Solution \u2192 Impact \u2192 Action information flow?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening include a personalized greeting with immediate value proposition?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Does the closing reinforce the call-to-action with appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the email length within the range of 150-200 words?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Is the email written in plain language with minimal political jargon?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 7,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively incorporates key civic engagement themes, emphasizes canvassing as its main outreach strategy, employs emotional language, maintains a persuasive and structured flow (Problem \u2192 Solution \u2192 Impact \u2192 Action), includes a personalized greeting, and uses plain language to communicate its message.",
+        "weaknesses": "The email does not clearly frame the issue as a pivotal moment, lacks a prominent linked button with secondary text in a dedicated paragraph, does not include all specific phrases as required, fails to provide a closing that reinforces the call-to-action with appreciation, and appears slightly shorter than the 150-200 word target.",
+        "consistency_confidence": 0.75,
+        "average_response_time": 53.04332987467448,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of civic engagement, local impact, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented as a pivotal moment requiring grassroots mobilization?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach focus on direct voter outreach through canvassing?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email include a prominent linked button with secondary text option placed in a dedicated paragraph following impact explanation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers such as urgent, passionate, and community-focused?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include specific phrases like 'critical moment', 'make a real difference', and 'your voice matters'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style persuasive and motivational?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email follow the Problem \u2192 Solution \u2192 Impact \u2192 Action information flow?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening include a personalized greeting with immediate value proposition?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Does the closing reinforce the call-to-action with appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the email length within the range of 150-200 words?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Is the email written in plain language with minimal political jargon?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively incorporates key civic engagement themes, emphasizes canvassing as its main outreach strategy, employs emotional language, maintains a persuasive and structured flow (Problem \u2192 Solution \u2192 Impact \u2192 Action), includes a personalized greeting, and uses plain language to communicate its message.",
+          "weaknesses": "The email does not clearly frame the issue as a pivotal moment, lacks a prominent linked button with secondary text in a dedicated paragraph, does not include all specific phrases as required, fails to provide a closing that reinforces the call-to-action with appreciation, and appears slightly shorter than the 150-200 word target.",
+          "consistency_confidence": 0.75,
+          "average_response_time": 53.04332987467448,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6842105263157895,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 7,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 159.13036131858826,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.6052631578947368,
+        "ranking_score": 0.6052631578947368,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of civic engagement, local impact, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented as a pivotal moment requiring grassroots mobilization?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach focus on direct voter outreach through canvassing?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email include a prominent linked button with secondary text option placed in a dedicated paragraph following impact explanation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers such as urgent, passionate, and community-focused?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include specific phrases like 'critical moment', 'make a real difference', and 'your voice matters'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style persuasive and motivational?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email follow the Problem \u2192 Solution \u2192 Impact \u2192 Action information flow?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening include a personalized greeting with immediate value proposition?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Does the closing reinforce the call-to-action with appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the email length within the range of 150-200 words?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Is the email written in plain language with minimal political jargon?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 6,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully incorporates key themes such as civic engagement, grassroots mobilization, and canvassing as a solution. It uses a persuasive, motivational tone, maintains a clear Problem \u2192 Solution \u2192 Impact \u2192 Action flow, opens with a personalized greeting, and is written in plain language.",
+        "weaknesses": "The email does not include the required prominent linked button with secondary text in a dedicated paragraph, lacks specific emotional markers and required phrases, does not have a closing that reinforces the call-to-action with appreciation, and falls short of the 150-200 word length requirement.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 59.22508263587952,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of civic engagement, local impact, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented as a pivotal moment requiring grassroots mobilization?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach focus on direct voter outreach through canvassing?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email include a prominent linked button with secondary text option placed in a dedicated paragraph following impact explanation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers such as urgent, passionate, and community-focused?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include specific phrases like 'critical moment', 'make a real difference', and 'your voice matters'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style persuasive and motivational?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email follow the Problem \u2192 Solution \u2192 Impact \u2192 Action information flow?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening include a personalized greeting with immediate value proposition?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Does the closing reinforce the call-to-action with appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the email length within the range of 150-200 words?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Is the email written in plain language with minimal political jargon?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully incorporates key themes such as civic engagement, grassroots mobilization, and canvassing as a solution. It uses a persuasive, motivational tone, maintains a clear Problem \u2192 Solution \u2192 Impact \u2192 Action flow, opens with a personalized greeting, and is written in plain language.",
+          "weaknesses": "The email does not include the required prominent linked button with secondary text in a dedicated paragraph, lacks specific emotional markers and required phrases, does not have a closing that reinforces the call-to-action with appreciation, and falls short of the 150-200 word length requirement.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 59.22508263587952,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6052631578947368,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 6,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 177.67562532424927,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.4473684210526316,
+        "ranking_score": 0.4473684210526316,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of civic engagement, local impact, and collective action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented as a pivotal moment requiring grassroots mobilization?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach focus on direct voter outreach through canvassing?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email include a prominent linked button with secondary text option placed in a dedicated paragraph following impact explanation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers such as urgent, passionate, and community-focused?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include specific phrases like 'critical moment', 'make a real difference', and 'your voice matters'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style persuasive and motivational?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email follow the Problem \u2192 Solution \u2192 Impact \u2192 Action information flow?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening include a personalized greeting with immediate value proposition?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the closing reinforce the call-to-action with appreciation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the email length within the range of 150-200 words?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Is the email written in plain language with minimal political jargon?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively highlights canvassing as a direct voter outreach method, employs persuasive and motivational language, and concludes with an appreciative call-to-action. Additionally, it maintains appropriate length and clear language, successfully addressing key themes of local impact and community engagement.",
+        "weaknesses": "The email fails to present the problem as a pivotal moment and does not include a clearly structured linked button with secondary text. It lacks emotional markers like 'urgent' or 'passionate', omits specific phrases such as 'critical moment' or 'your voice matters', does not follow the Problem \u2192 Solution \u2192 Impact \u2192 Action flow, and the opening does not immediately offer a personalized value proposition.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 29.388702551523846,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of civic engagement, local impact, and collective action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented as a pivotal moment requiring grassroots mobilization?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach focus on direct voter outreach through canvassing?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email include a prominent linked button with secondary text option placed in a dedicated paragraph following impact explanation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers such as urgent, passionate, and community-focused?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include specific phrases like 'critical moment', 'make a real difference', and 'your voice matters'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style persuasive and motivational?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email follow the Problem \u2192 Solution \u2192 Impact \u2192 Action information flow?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening include a personalized greeting with immediate value proposition?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the closing reinforce the call-to-action with appreciation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the email length within the range of 150-200 words?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Is the email written in plain language with minimal political jargon?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively highlights canvassing as a direct voter outreach method, employs persuasive and motivational language, and concludes with an appreciative call-to-action. Additionally, it maintains appropriate length and clear language, successfully addressing key themes of local impact and community engagement.",
+          "weaknesses": "The email fails to present the problem as a pivotal moment and does not include a clearly structured linked button with secondary text. It lacks emotional markers like 'urgent' or 'passionate', omits specific phrases such as 'critical moment' or 'your voice matters', does not follow the Problem \u2192 Solution \u2192 Impact \u2192 Action flow, and the opening does not immediately offer a personalized value proposition.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 29.388702551523846,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.4473684210526316,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 88.16649794578552,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.23684210526315788,
+        "ranking_score": 0.23684210526315788,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of civic engagement, local impact, and collective action?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented as a pivotal moment requiring grassroots mobilization?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach focus on direct voter outreach through canvassing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email include a prominent linked button with secondary text option placed in a dedicated paragraph following impact explanation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers such as urgent, passionate, and community-focused?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include specific phrases like 'critical moment', 'make a real difference', and 'your voice matters'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style persuasive and motivational?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email follow the Problem \u2192 Solution \u2192 Impact \u2192 Action information flow?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening include a personalized greeting with immediate value proposition?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the closing reinforce the call-to-action with appreciation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the email length within the range of 150-200 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the email written in plain language with minimal political jargon?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 3,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully touches on themes of civic engagement and equality (Q1), uses a persuasive and motivational tone (Q7), and is written in plain, accessible language (Q12).",
+        "weaknesses": "The email fails to present a clearly pivotal problem necessitating grassroots mobilization (Q2), lacks specific mention of direct voter outreach through canvassing (Q3), does not include a prominent linked button with secondary text (Q4), omits key emotional language markers and specific phrases (Q5 and Q6), does not follow the structured Problem \u2192 Solution \u2192 Impact \u2192 Action flow (Q8), and is missing a personalized value proposition in the opening, a reinforcing closing, and proper length (Q9, Q10, Q11).",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 38.365702867507935,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of civic engagement, local impact, and collective action?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented as a pivotal moment requiring grassroots mobilization?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach focus on direct voter outreach through canvassing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email include a prominent linked button with secondary text option placed in a dedicated paragraph following impact explanation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers such as urgent, passionate, and community-focused?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include specific phrases like 'critical moment', 'make a real difference', and 'your voice matters'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style persuasive and motivational?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email follow the Problem \u2192 Solution \u2192 Impact \u2192 Action information flow?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening include a personalized greeting with immediate value proposition?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the closing reinforce the call-to-action with appreciation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the email length within the range of 150-200 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the email written in plain language with minimal political jargon?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully touches on themes of civic engagement and equality (Q1), uses a persuasive and motivational tone (Q7), and is written in plain, accessible language (Q12).",
+          "weaknesses": "The email fails to present a clearly pivotal problem necessitating grassroots mobilization (Q2), lacks specific mention of direct voter outreach through canvassing (Q3), does not include a prominent linked button with secondary text (Q4), omits key emotional language markers and specific phrases (Q5 and Q6), does not follow the structured Problem \u2192 Solution \u2192 Impact \u2192 Action flow (Q8), and is missing a personalized value proposition in the opening, a reinforcing closing, and proper length (Q9, Q10, Q11).",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 38.365702867507935,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.23684210526315788,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 3,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 115.09748077392578,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 1,
+      "score": 0.7631578947368421
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 2,
+      "score": 0.6842105263157895
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 3,
+      "score": 0.6052631578947368
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 4,
+      "score": 0.4473684210526316
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 5,
+      "score": 0.23684210526315788
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 1158.0322337150574,
+    "success": true,
+    "errors": []
+  }
+}

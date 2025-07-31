@@ -1,0 +1,1226 @@
+{
+  "session_id": "a0bb54ce-c71f-47ad-90a4-93b95b3fcae1",
+  "timestamp": "2025-07-22T22:39:04.186884",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0113",
+    "name": "Report Launch: The State of LGBTQ+ Rights in the Workplace"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Report Launch: The State of LGBTQ+ Rights in the Workplace"
+  },
+  "models_used": {
+    "email_models": [
+      "llama-3-8b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Report Launch: The State of LGBTQ+ Rights in the Workplace\n\nSubject: The State of LGBTQ+ Rights in the Workplace: A New Report Reveals the Shocking Truth\n\nDear \\[Recipient\\],\n\nThe workplace should be a safe haven for everyone, regardless of their sexual orientation or gender identity. But the reality is far from it. Discrimination, harassment, and marginalization of LGBTQ+ individuals persist, affecting not just their well-being but also the bottom line of businesses.\n\nOur latest report, \"The State of LGBTQ+ Rights in the Workplace,\" sheds light on this critical issue. Based on extensive research and interviews with experts and advocates, we expose the alarming statistics and heartbreaking stories that highlight the need for change.\n\nKey findings include:\n\n*   64% of LGBTQ+ employees have experienced some form of workplace discrimination\n*   Only 21% of companies have implemented comprehensive non-discrimination policies\n*   75% of LGBTQ+ employees feel uncomfortable being themselves at work\n\nWe believe that every individual deserves respect, dignity, and equal opportunities. That's why we're calling on you to join us in demanding better. By supporting our efforts, you'll be part of a movement that's pushing for a more inclusive and equitable workplace.\n\nTake the first step today by downloading our report and sharing it with your network. Together, we can create a world where everyone feels welcome and valued.\n\n\\[Download Button\\]\n\n**Join the conversation and download our report now!\n",
+        "generation_time": 112.11070919036865,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject Line: Join Us in Championing Inclusivity at [Your Organization Name]: A Call to Action!\n\nDear [Recipient\u2019s First Name],\n\nWe hope this message finds you well. At [Organization/Company Name], we believe that diversity drives innovation \u2013 but true progress requires active participation from everyone involved. That\u2019s why today marks a significant moment for us all; our latest report titled \u201cThe State of LGBTQ+ Rights in the Workplace\u201d has been released. We invite you to join us in championing inclusivity within corporate environments across America by taking part in this crucial conversation. Our findings reveal both inspiring advancements and concerning challenges faced by LGBTQ+ individuals seeking equality in their professional spaces. It underscores how much work remains ahead if we aim to create truly welcoming workplaces where every employee can thrive regardless of gender identity or sexual orientation. As advocates committed towards fostering change through education & awareness initiatives like these ones led by organizations such as yours \u2014 let\u2019s come together now more than ever before so no one feels excluded due simply because they happen to be different\u2026 Read More \u00bb <|end_of_email|>\n",
+        "generation_time": 74.77761101722717,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Join us in advancing LGBTQ+ workplace equality!\n\nDear [Recipient],\n\nAs we celebrate Pride Month, let's remember that our fight for LGBTQ+ rights isn't over yet. Despite progress, many members of our community still face discrimination and exclusion in the workplace. That's why we're proud to release our latest report, \"The State of LGBTQ+ Rights in the Workplace.\"\n\nIn this comprehensive report, we expose the challenges faced by LGBTQ+ employees and provide solutions for creating a more inclusive work environment. Our research highlights the importance of diversity training, support networks, and equal policies to foster a culture of acceptance.\n\nWe invite you to join us in advancing LGBTQ+ workplace equality. By sharing this report with your network, you can raise awareness about the issues facing our community and inspire change within your organization. Together, we can create a world where every employee feels valued and respected, regardless of their sexual orientation or gender identity.\n\nTake action today by sharing this report with your colleagues and following our social media channels for updates on our advocacy efforts. Let's make Pride Month a catalyst for lasting change!\n\n<https://www.lgbtqrights.org/report>\n\n---\n\n[CALL\\_TO\\_ACTION]\n\nEnd of Email.\n",
+        "generation_time": 51.604082345962524,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[YOUR_NAME]\n\nSubject: Report Launch: The State of LGBTQ+ Rights in the Workplace\n\nDear [RECIPIENT],\n\nWe are thrilled to share our latest report on the state of LGBTQ+ rights in the workplace! This important research provides valuable insights into the challenges faced by LGBTQ+ employees and highlights the progress that has been made over the past year.\n\nThe data we collected shows that LGBTQ+ employees are still experiencing significant barriers to employment and advancement. However, there have been some positive developments in recent months. For instance, many companies have implemented policies to protect LGBTQ+ workers from discrimination and harassment. We also found that the number of LGBTQ+ employees who feel comfortable coming out to their colleagues has increased significantly over the past year.\n\nIn addition, we discovered that the majority of LGBTQ+ employees believe that their employer takes their sexual orientation and gender identity seriously. This is a significant step forward, given that many companies still do not offer adequate protections for LGBTQ+ employees.\n\nHowever, we know that these gains are fragile and must be protected. That\u2019s why we\u2019ve included a section in this report that discusses the potential impact of upcoming legislation on LGBTQ+ rights in the workplace.\n\nTo make sure you don\u2019t miss this important information, we\u2019re offering a special preview of our report at [INSERT PRICE OR LIMITED TIME OFFER]. This preview includes exclusive access to the report\u2019s findings and analysis, as well as the opportunity to ask questions and provide feedback.\n\nThank you for your continued support of our work. We look forward to sharing this important report with you.\n\nBest regards,\n\n[YOUR NAME]\n\n### Instruction:\n\n- Analyze the user's request and create a clear and concise summary of the report launch.\n- Include a clear and compelling headline that grabs attention and emphasizes the importance of the report.\n- Write a warm and welcoming introduction that sets the tone for the rest of the email.\n- Provide a clear and detailed description of the report's key findings and insights.\n- Include a brief explanation of the benefits of the report, such as the potential impact on LGBTQ+ rights in the workplace.\n- Ensure that the email is concise and finishes with a strong call to action.\n- Use a professional tone throughout the email, avoiding jargon and using simple language where possible.\n- Ensure that the email is formatted correctly and follows best practices for email design.\n",
+        "generation_time": 27.442434549331665,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your Name], [Your Company]\nSubject: Save the Workplace Equality!\n\nDear [Recipient],\n\nAs we approach the launch of our report, \"The State of LGBTQ+ Rights in the Workplace,\" I wanted to personally reach out to you and share this important issue with you directly.\n\nOur report highlights the critical need for workplaces to prioritize equal treatment and protection for all employees regardless of their gender identity, sexual orientation, or other protected characteristics. Recent studies show that approximately 76% of LGBTQ+ individuals have experienced discrimination at work, which can lead to anxiety, depression, and even physical health issues.\n\nWe believe that by addressing these disparities, we can create a more inclusive and equitable workplace environment, ultimately benefiting everyone involved.\n\nTo make this happen, we're asking for your support in sharing our report with colleagues, friends, and family who might be interested in learning more about this crucial issue. By spreading awareness and advocating for change, we can make a significant impact together.\n\nPlease visit our website ([WEBSITE LINK]) to download the report and read more about our findings. If you'd like to contribute financially to our cause, please consider making a donation through our secure online platform ([CONTRIBUION LINK]).\n\nTogether, let us build a future where every employee feels valued, respected, and supported in their daily lives and work.\n\nThank you for taking the time to read this message. We truly appreciate your continued commitment to creating a better world for all.\n\nSincerely,\n\n[Your Name]\n\n---\n\n[END_EMAIL]\n",
+        "generation_time": 128.87582969665527,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key messaging themes of workplace equality, LGBTQ+ rights, and data-driven insights?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email present problems by highlighting challenges through research findings?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email provide solutions through data-backed recommendations?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use an informative, professional, and inclusive tone?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style formal yet engaging?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include the specific phrases 'important report', 'critical insights', and 'valuable resource'?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email consist of exactly 4 paragraphs?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email open with a direct announcement of the report launch?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email close with an appreciation statement and clear call-to-action?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email include key phrases like 'launching our report', 'critical insights', 'valuable resource', and 'download the full report'?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use inclusive language such as 'LGBTQ+', 'diverse workplaces', and 'inclusive policies'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email balance professional terminology with plain language explanations?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 193.8123016357422,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.5,
+        "ranking_score": 0.5,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes of workplace equality, LGBTQ+ rights, and data-driven insights?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present problems by highlighting challenges through research findings?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email provide solutions through data-backed recommendations?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use an informative, professional, and inclusive tone?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style formal yet engaging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'important report', 'critical insights', and 'valuable resource'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email consist of exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with a direct announcement of the report launch?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close with an appreciation statement and clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases like 'launching our report', 'critical insights', 'valuable resource', and 'download the full report'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use inclusive language such as 'LGBTQ+', 'diverse workplaces', and 'inclusive policies'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email balance professional terminology with plain language explanations?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively addresses key messaging themes, uses research findings to highlight challenges, maintains an informative, professional, and inclusive tone, exhibits formal yet engaging communication, and uses inclusive language alongside a balanced mix of professional and plain language.",
+        "weaknesses": "The email fails to provide data-backed solutions, omits the specific required phrases ('important report', 'critical insights', 'valuable resource', 'launching our report', and 'download the full report'), does not adhere to the four-paragraph structure, and lacks a closing appreciation statement and clear call-to-action.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 28.91376829147339,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb",
+            "vicuna-7b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5": [
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ],
+            "0.42105263157894735": [
+              "tinyllama-1.1b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 2
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes of workplace equality, LGBTQ+ rights, and data-driven insights?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present problems by highlighting challenges through research findings?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email provide solutions through data-backed recommendations?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use an informative, professional, and inclusive tone?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style formal yet engaging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'important report', 'critical insights', and 'valuable resource'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email consist of exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with a direct announcement of the report launch?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close with an appreciation statement and clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases like 'launching our report', 'critical insights', 'valuable resource', and 'download the full report'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use inclusive language such as 'LGBTQ+', 'diverse workplaces', and 'inclusive policies'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email balance professional terminology with plain language explanations?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively addresses key messaging themes, uses research findings to highlight challenges, maintains an informative, professional, and inclusive tone, exhibits formal yet engaging communication, and uses inclusive language alongside a balanced mix of professional and plain language.",
+          "weaknesses": "The email fails to provide data-backed solutions, omits the specific required phrases ('important report', 'critical insights', 'valuable resource', 'launching our report', and 'download the full report'), does not adhere to the four-paragraph structure, and lacks a closing appreciation statement and clear call-to-action.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 28.91376829147339,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 86.74166226387024,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.5,
+        "ranking_score": 0.5,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes of workplace equality, LGBTQ+ rights, and data-driven insights?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present problems by highlighting challenges through research findings?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email provide solutions through data-backed recommendations?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use an informative, professional, and inclusive tone?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style formal yet engaging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'important report', 'critical insights', and 'valuable resource'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email consist of exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with a direct announcement of the report launch?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the email close with an appreciation statement and clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases like 'launching our report', 'critical insights', 'valuable resource', and 'download the full report'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use inclusive language such as 'LGBTQ+', 'diverse workplaces', and 'inclusive policies'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email balance professional terminology with plain language explanations?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively incorporates key themes such as workplace equality, LGBTQ+ rights, and an inclusive, professional tone. It highlights challenges via research findings and balances professional language with clarity, also utilizing inclusive language.",
+        "weaknesses": "The email lacks data-backed recommendations for solutions, does not include the specific mandatory phrases required, does not adhere to the 4-paragraph structure, fails to open with a direct report announcement, does not close with an appreciation statement and call-to-action, and omits several key phrases expected in the technical criteria.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 32.101227601369224,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb",
+            "vicuna-7b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5": [
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ],
+            "0.42105263157894735": [
+              "tinyllama-1.1b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 2
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes of workplace equality, LGBTQ+ rights, and data-driven insights?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present problems by highlighting challenges through research findings?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email provide solutions through data-backed recommendations?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use an informative, professional, and inclusive tone?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style formal yet engaging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'important report', 'critical insights', and 'valuable resource'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email consist of exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with a direct announcement of the report launch?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the email close with an appreciation statement and clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases like 'launching our report', 'critical insights', 'valuable resource', and 'download the full report'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use inclusive language such as 'LGBTQ+', 'diverse workplaces', and 'inclusive policies'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email balance professional terminology with plain language explanations?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively incorporates key themes such as workplace equality, LGBTQ+ rights, and an inclusive, professional tone. It highlights challenges via research findings and balances professional language with clarity, also utilizing inclusive language.",
+          "weaknesses": "The email lacks data-backed recommendations for solutions, does not include the specific mandatory phrases required, does not adhere to the 4-paragraph structure, fails to open with a direct report announcement, does not close with an appreciation statement and call-to-action, and omits several key phrases expected in the technical criteria.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 32.101227601369224,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 96.30404758453369,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.5,
+        "ranking_score": 0.5,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes of workplace equality, LGBTQ+ rights, and data-driven insights?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present problems by highlighting challenges through research findings?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email provide solutions through data-backed recommendations?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use an informative, professional, and inclusive tone?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style formal yet engaging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'important report', 'critical insights', and 'valuable resource'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email consist of exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with a direct announcement of the report launch?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the email close with an appreciation statement and clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases like 'launching our report', 'critical insights', 'valuable resource', and 'download the full report'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use inclusive language such as 'LGBTQ+', 'diverse workplaces', and 'inclusive policies'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email balance professional terminology with plain language explanations?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively communicates key themes of workplace equality, LGBTQ+ rights, and research-backed challenges and solutions. Its tone is informative, professional, and inclusive, and it balances formal terminology with plain language.",
+        "weaknesses": "The email lacks several specific mandated phrases ('important report', 'critical insights', 'valuable resource', etc.), does not adhere to the required four-paragraph structure, and it fails to close with an appreciation statement and clear call-to-action as specified.",
+        "consistency_confidence": 0.75,
+        "average_response_time": 38.49335257212321,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb",
+            "vicuna-7b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5": [
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ],
+            "0.42105263157894735": [
+              "tinyllama-1.1b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 2
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes of workplace equality, LGBTQ+ rights, and data-driven insights?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present problems by highlighting challenges through research findings?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email provide solutions through data-backed recommendations?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use an informative, professional, and inclusive tone?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style formal yet engaging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'important report', 'critical insights', and 'valuable resource'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email consist of exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with a direct announcement of the report launch?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the email close with an appreciation statement and clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases like 'launching our report', 'critical insights', 'valuable resource', and 'download the full report'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use inclusive language such as 'LGBTQ+', 'diverse workplaces', and 'inclusive policies'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email balance professional terminology with plain language explanations?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively communicates key themes of workplace equality, LGBTQ+ rights, and research-backed challenges and solutions. Its tone is informative, professional, and inclusive, and it balances formal terminology with plain language.",
+          "weaknesses": "The email lacks several specific mandated phrases ('important report', 'critical insights', 'valuable resource', etc.), does not adhere to the required four-paragraph structure, and it fails to close with an appreciation statement and clear call-to-action as specified.",
+          "consistency_confidence": 0.75,
+          "average_response_time": 38.49335257212321,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 115.48042058944702,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.42105263157894735,
+        "ranking_score": 0.42105263157894735,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes of workplace equality, LGBTQ+ rights, and data-driven insights?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present problems by highlighting challenges through research findings?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email provide solutions through data-backed recommendations?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use an informative, professional, and inclusive tone?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style formal yet engaging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'important report', 'critical insights', and 'valuable resource'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email consist of exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with a direct announcement of the report launch?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email close with an appreciation statement and clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases like 'launching our report', 'critical insights', 'valuable resource', and 'download the full report'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use inclusive language such as 'LGBTQ+', 'diverse workplaces', and 'inclusive policies'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email balance professional terminology with plain language explanations?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully covers key themes on workplace equality and LGBTQ+ rights (criteria 1) and highlights challenges with research findings (criteria 2). Its tone is informative, professional, engaging, and clear in its language (criteria 4, 5, 8, 12).",
+        "weaknesses": "The email lacks data-backed solutions (criterion 3), does not include all the required specific phrases and key phrases (criteria 6 and 10), does not meet the requested structure of exactly 4 paragraphs (criterion 7), and fails to close with an appreciation and a clear call-to-action, as well as missing some inclusive language elements (criteria 9 and 11).",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 31.04507652918498,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb",
+            "vicuna-7b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5": [
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ],
+            "0.42105263157894735": [
+              "tinyllama-1.1b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 2
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes of workplace equality, LGBTQ+ rights, and data-driven insights?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present problems by highlighting challenges through research findings?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email provide solutions through data-backed recommendations?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use an informative, professional, and inclusive tone?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style formal yet engaging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'important report', 'critical insights', and 'valuable resource'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email consist of exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with a direct announcement of the report launch?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email close with an appreciation statement and clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases like 'launching our report', 'critical insights', 'valuable resource', and 'download the full report'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use inclusive language such as 'LGBTQ+', 'diverse workplaces', and 'inclusive policies'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email balance professional terminology with plain language explanations?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully covers key themes on workplace equality and LGBTQ+ rights (criteria 1) and highlights challenges with research findings (criteria 2). Its tone is informative, professional, engaging, and clear in its language (criteria 4, 5, 8, 12).",
+          "weaknesses": "The email lacks data-backed solutions (criterion 3), does not include all the required specific phrases and key phrases (criteria 6 and 10), does not meet the requested structure of exactly 4 paragraphs (criterion 7), and fails to close with an appreciation and a clear call-to-action, as well as missing some inclusive language elements (criteria 9 and 11).",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 31.04507652918498,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.42105263157894735,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 93.13559865951538,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.42105263157894735,
+        "ranking_score": 0.42105263157894735,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes of workplace equality, LGBTQ+ rights, and data-driven insights?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present problems by highlighting challenges through research findings?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email provide solutions through data-backed recommendations?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use an informative, professional, and inclusive tone?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style formal yet engaging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'important report', 'critical insights', and 'valuable resource'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email consist of exactly 4 paragraphs?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the email open with a direct announcement of the report launch?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the email close with an appreciation statement and clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases like 'launching our report', 'critical insights', 'valuable resource', and 'download the full report'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use inclusive language such as 'LGBTQ+', 'diverse workplaces', and 'inclusive policies'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email balance professional terminology with plain language explanations?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively addresses key themes including workplace equality, LGBTQ+ rights, and incorporates data-driven insights with the use of a research statistic. It maintains a professional, informative, and engaging tone, is structured into four paragraphs, and opens with a mention of the report launch while balancing terminology with straightforward language.",
+        "weaknesses": "The email fails to offer explicit data-backed solutions or recommendations. It does not contain the specific required phrases ('important report', 'critical insights', 'valuable resource', 'launching our report', 'download the full report') and lacks an adequate closing that includes an appreciation statement and a clear call-to-action. Also, while inclusive language is present, it does not fully incorporate elements like 'diverse workplaces' and 'inclusive policies'.",
+        "consistency_confidence": 0.75,
+        "average_response_time": 33.96097866694132,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb",
+            "vicuna-7b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5": [
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ],
+            "0.42105263157894735": [
+              "tinyllama-1.1b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 2
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes of workplace equality, LGBTQ+ rights, and data-driven insights?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present problems by highlighting challenges through research findings?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email provide solutions through data-backed recommendations?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use an informative, professional, and inclusive tone?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style formal yet engaging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'important report', 'critical insights', and 'valuable resource'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email consist of exactly 4 paragraphs?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the email open with a direct announcement of the report launch?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the email close with an appreciation statement and clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases like 'launching our report', 'critical insights', 'valuable resource', and 'download the full report'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use inclusive language such as 'LGBTQ+', 'diverse workplaces', and 'inclusive policies'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email balance professional terminology with plain language explanations?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively addresses key themes including workplace equality, LGBTQ+ rights, and incorporates data-driven insights with the use of a research statistic. It maintains a professional, informative, and engaging tone, is structured into four paragraphs, and opens with a mention of the report launch while balancing terminology with straightforward language.",
+          "weaknesses": "The email fails to offer explicit data-backed solutions or recommendations. It does not contain the specific required phrases ('important report', 'critical insights', 'valuable resource', 'launching our report', 'download the full report') and lacks an adequate closing that includes an appreciation statement and a clear call-to-action. Also, while inclusive language is present, it does not fully incorporate elements like 'diverse workplaces' and 'inclusive policies'.",
+          "consistency_confidence": 0.75,
+          "average_response_time": 33.96097866694132,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.42105263157894735,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 101.88330483436584,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 1,
+      "score": 0.5
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 2,
+      "score": 0.5
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 3,
+      "score": 0.5
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 4,
+      "score": 0.42105263157894735
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 5,
+      "score": 0.42105263157894735
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 817.6485369205475,
+    "success": true,
+    "errors": []
+  }
+}

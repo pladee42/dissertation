@@ -1,0 +1,1186 @@
+{
+  "session_id": "96d9480a-8a45-4de9-9d73-5987857aec46",
+  "timestamp": "2025-07-22T21:49:13.846492",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0109",
+    "name": "Newsletter: Success Stories from our Anti-Poaching Units"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive \u2013 reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals \u2013 about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Newsletter: Success Stories from our Anti-Poaching Units"
+  },
+  "models_used": {
+    "email_models": [
+      "phi-3-mini-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject Line Here\nFrom: [Sender Name], Conservation Heroes Team <sender@conservationheroes.org>\nTo: Reader\u2019s Email Address\nDate: Current Date\nSubject: Join Our Celebration \u2013 A Toast To The Brave Ones Protecting Wildlife!\n\nDear Friend in Nature,\n\nImagine waking up every day knowing that you have made a difference\u2014that through your actions, countless lives hang by a thread but remain intact thanks to brave souls like yourself who stand guard over nature's treasures. This isn't just wishful thinking; this reality exists because individuals such as those within our anti-poaching units work tirelessly against all odds to protect endangered species across Africa. Today we celebrate their victories, which inspire us daily. Let's dive into some heartwarming success stories together.\n\nIn Tanzania's Serengeti National Park, where poachers once roamed free due to limited patrol resources, there now stands hope... Continue reading \u201cSuccess Stories From Our Anti-Poaching Units\u201d \u2192\n\nYour support fuels these courageous efforts. Every donation brings light to darkened paths walked by rangers facing threats both natural and manmade. It enables them to stay one step ahead of danger while safeguarding biodiversity hotspots crucial for ecological balance. We invite you to join hands with conservationists around the globe \u2014 be part of something bigger than ourselves\u2026 Read More \u00bb\n\nJoin Us For An Evening Of Appreciation And Support At \u2018The Green Canopy Gala,\u2019 Where You Will Meet These Unsung Warriors In Person & Help Fund Their Mission\n\nWe cordially invite you to 'The Green Canopy Gala,' set amidst the lush greenery of Kigali Rwandan Botanic Gardens at 7 PM local time next Saturday evening. Come experience firsthand how each individual contributes significantly towards preserving Earth's precious life forms under threat from illegal hunting activities.. Click here to reserve your seat today and make sure they know someone cares deeply about saving animals everywhere! Donations will directly benefit field operations including tracking devices installation/maintenance along borders crossing points between protected areas versus open landscapes using innovative technology solutions developed specifically designed keeping vulnerable fauna safe during migration periods throughout year round seasons.... Be Part Of Something Bigger Than Ourself By Attending Tonight!!!!!\n",
+        "generation_time": 78.22748017311096,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "[example_email@example.com](mailto:example_email@example.com)\nPhone: +1234567890\nWebsite: [www.example_website.com](http://www.example_website.com)\n\nSubject: Wildlife Warriors in Action: Success Stories from Our Frontlines\n\nDear fellow wildlife lover,\n\nImagine walking into a forest, surrounded by towering trees and the sounds of nature, only to stumble upon a poacher's trap, ready to snare its next victim. This is a reality faced by countless animals every day. But what if I told you there's hope?\n\nOur anti-poaching units have been working tirelessly to protect these incredible creatures and their habitats. And we're proud to share some remarkable success stories with you!\n\nIn just one year, our teams have:\n\n*   Removed over 100 poachers' traps from the wild\n*   Rescued 50 endangered animals, giving them a second chance at life\n*   Collaborated with local communities to establish safe corridors for wildlife migration\n\nBut here's the thing: we can't do this alone. We need your support to keep pushing forward. That's why we're counting on you to join us in this mission.\n\nWill you consider making a donation today? Every dollar counts, and your contribution will directly fund our anti-poaching efforts.\n\n**Donate now and become a Wildlife Warrior!**\n",
+        "generation_time": 109.18759846687317,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Behind the Scenes: Our Heroic Rangers Protecting Wildlife\n\nDear [Recipient],\n\nAs you read this, our brave anti-poaching units are risking their lives to protect endangered species like rhinos, elephants, and pangolins. These rangers work tirelessly to safeguard these animals, often facing dangerous situations that put them in harm's way.\n\nOur organization has been at the forefront of this battle, providing training, equipment, and support to these dedicated individuals who are fighting to preserve the natural world. We have seen incredible successes in recent months, and we want to share some of these inspiring stories with you.\n\nMeet John, one of our top rangers, who has helped us apprehend over 20 poachers since joining our team. He is a true hero, putting his life on the line every day to make a difference.\n\n[Include additional success stories here]\n\nWe believe that by sharing these stories, we can inspire others to join the fight against poaching and help us create a better future for both humans and animals.\n\nWill you stand with us in this mission? You can make a difference by [call to action]. Together, we can create a world where wildlife thrives and future generations can experience the wonder of these amazing creatures.\n\nThank you for considering this request.\n\nSincerely,\n[Your Name]\n",
+        "generation_time": 56.705421924591064,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[YOUR_EMAIL_ADDRESS]\nSubject Line: [SUBJECT_LINE] - Join us in saving endangered species!\n\nDear [SENDING_ORGANIZATION],\n\nWe hope this message finds you well. We're excited to share some incredible success stories from our anti-poaching units! As one of the leading conservation organizations dedicated to protecting endangered species worldwide, we couldn't be prouder of what our teams have accomplished over the years.\n\nOver the past few months, our team members have worked tirelessly to prevent poaching incidents in several protected areas across Africa. Thanks to their tireless efforts, we've been able to save countless animals from becoming victims of the illicit trade.\n\nHere are just a few examples of how our work has made a difference:\n\n- In Zimbabwe, where elephants were at risk due to habitat loss and poaching, our team successfully relocated nearly 70 elephants back into safe havens thanks to their tireless work.\n\n- In South Sudan, where lions were under threat due to conflict and habitat loss, we managed to protect over 60 lions and their habitats through our collaborative efforts with local communities.\n\nBut these successes wouldn't have been possible without the support of our generous donors and partners like you. That's why we'd love to invite you to join us in continuing our mission by making a donation today.\n\nYour contribution will go directly towards supporting our anti-poaching units and ensuring that endangered species can thrive for generations to come.\n\nTo make a secure online donation, simply click the button below and follow the prompts.\n\n[INSERT DONATION BUTTON HERE]\n\nThank you again for your ongoing support, and please don't hesitate to reach out if you have any questions about our work.\n\nBest regards,\n\n[YOUR_NAME]\n[YOUR_TITLE]\n[EMAIL_ADDRESS]\n[PHONE_NUMBER]\n",
+        "generation_time": 128.5987513065338,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[YOUR_NAME]\nSubject: Success Stories from our Anti-Poaching Units:\n\nDear [RECIPIENT],\n\nWe hope this email finds you well. We wanted to share some exciting news with you about the work we do at [SENDING ORGANIZATION NAME]. Our anti-poaching units have been making significant progress in protecting endangered species and their habitats.\n\nIn the past year, we have successfully apprehended poachers, rescued injured animals, and protected critical conservation areas. Here are just a few examples:\n\n- In [COUNTRIES], we captured a group of poachers who were planning to smuggle elephant tusks out of the country. The team worked tirelessly for days, tracking them down and apprehending them before they could carry out their plan.\n- In [LOCATION], we rescued a group of lions that had been trapped and separated from their pride. The team worked around the clock to free them and reunite them with their family.\n- In [LOCATION], we protected a vital corridor for wildlife migration, which was threatened by poachers. With your support, we were able to secure funding and build a fence to keep poachers out.\n\nThese successes wouldn't be possible without the hard work and dedication of our dedicated teams. We couldn't do it without your support, so thank you for being a part of this important work.\n\nTo learn more about our efforts, please visit our website at [LINK TO WEBSITE].\n\nWe are proud to partner with organizations like yours, and we look forward to continuing to work together towards a brighter future for wildlife and their habitats.\n\nBest regards,\n\n[SENDING ORGANIZATION NAME]\n",
+        "generation_time": 31.67237877845764,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include key themes of conservation success, field operations, and measurable impact?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the solution approach showcase real-world achievements and outcomes?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Is the call to action (CTA) engagement-focused (e.g., prompting to read full stories) and placed in the final paragraph?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language that is positive, hopeful, and celebratory?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style informative and uplifting?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include tone markers like 'success stories', 'making a difference', and 'impactful results'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email follow the paragraph structure: intro \u2192 story highlights \u2192 impact statement \u2192 CTA?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the information flow follow problem context \u2192 solution results \u2192 broader implications?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email open with a direct subject reference and close with appreciation + actionable next step?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email include key phrases like 'anti-poaching units', 'success stories', and 'making a difference'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use formatting elements such as title case subject and bullet points/story highlights?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use persuasive techniques of social proof through tangible results?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 80.87690615653992,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.868421052631579,
+        "ranking_score": 0.868421052631579,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include key themes of conservation success, field operations, and measurable impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the solution approach showcase real-world achievements and outcomes?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Is the call to action (CTA) engagement-focused (e.g., prompting to read full stories) and placed in the final paragraph?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is positive, hopeful, and celebratory?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style informative and uplifting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include tone markers like 'success stories', 'making a difference', and 'impactful results'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the paragraph structure: intro \u2192 story highlights \u2192 impact statement \u2192 CTA?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the information flow follow problem context \u2192 solution results \u2192 broader implications?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a direct subject reference and close with appreciation + actionable next step?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases like 'anti-poaching units', 'success stories', and 'making a difference'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use formatting elements such as title case subject and bullet points/story highlights?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use persuasive techniques of social proof through tangible results?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 7,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively incorporates conservation themes, real-world success stories, an engaging and emotionally uplifting tone, and clear inclusion of key phrases and social proof. Its CTA is engagement-focused and is clearly presented, and the overall information flow is logical and inspiring.",
+        "weaknesses": "The email lacks a clear closing that combines appreciation with an actionable next step, and it does not utilize additional formatting elements such as bullet points or distinct story highlights that could further emphasize the content structure.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 42.01835242907206,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6842105263157895": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include key themes of conservation success, field operations, and measurable impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the solution approach showcase real-world achievements and outcomes?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Is the call to action (CTA) engagement-focused (e.g., prompting to read full stories) and placed in the final paragraph?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is positive, hopeful, and celebratory?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style informative and uplifting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include tone markers like 'success stories', 'making a difference', and 'impactful results'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the paragraph structure: intro \u2192 story highlights \u2192 impact statement \u2192 CTA?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the information flow follow problem context \u2192 solution results \u2192 broader implications?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a direct subject reference and close with appreciation + actionable next step?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases like 'anti-poaching units', 'success stories', and 'making a difference'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use formatting elements such as title case subject and bullet points/story highlights?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use persuasive techniques of social proof through tangible results?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively incorporates conservation themes, real-world success stories, an engaging and emotionally uplifting tone, and clear inclusion of key phrases and social proof. Its CTA is engagement-focused and is clearly presented, and the overall information flow is logical and inspiring.",
+          "weaknesses": "The email lacks a clear closing that combines appreciation with an actionable next step, and it does not utilize additional formatting elements such as bullet points or distinct story highlights that could further emphasize the content structure.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 42.01835242907206,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.868421052631579,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 7,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 126.0554404258728,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.8421052631578947,
+        "ranking_score": 0.8421052631578947,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include key themes of conservation success, field operations, and measurable impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the solution approach showcase real-world achievements and outcomes?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Is the call to action (CTA) engagement-focused (e.g., prompting to read full stories) and placed in the final paragraph?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is positive, hopeful, and celebratory?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style informative and uplifting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include tone markers like 'success stories', 'making a difference', and 'impactful results'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the paragraph structure: intro \u2192 story highlights \u2192 impact statement \u2192 CTA?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the information flow follow problem context \u2192 solution results \u2192 broader implications?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a direct subject reference and close with appreciation + actionable next step?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases like 'anti-poaching units', 'success stories', and 'making a difference'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use formatting elements such as title case subject and bullet points/story highlights?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use persuasive techniques of social proof through tangible results?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 6,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively highlights conservation success with quantifiable achievements, employs emotional and uplifting language, uses bullet points and a title case subject line, and presents tangible results that serve as social proof.",
+        "weaknesses": "The call to action is incomplete and not fully engagement-focused or clearly positioned in a closing paragraph with appreciation and a clear actionable next step.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 34.37720982233683,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6842105263157895": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include key themes of conservation success, field operations, and measurable impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the solution approach showcase real-world achievements and outcomes?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Is the call to action (CTA) engagement-focused (e.g., prompting to read full stories) and placed in the final paragraph?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is positive, hopeful, and celebratory?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style informative and uplifting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include tone markers like 'success stories', 'making a difference', and 'impactful results'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the paragraph structure: intro \u2192 story highlights \u2192 impact statement \u2192 CTA?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the information flow follow problem context \u2192 solution results \u2192 broader implications?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a direct subject reference and close with appreciation + actionable next step?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases like 'anti-poaching units', 'success stories', and 'making a difference'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use formatting elements such as title case subject and bullet points/story highlights?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use persuasive techniques of social proof through tangible results?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively highlights conservation success with quantifiable achievements, employs emotional and uplifting language, uses bullet points and a title case subject line, and presents tangible results that serve as social proof.",
+          "weaknesses": "The call to action is incomplete and not fully engagement-focused or clearly positioned in a closing paragraph with appreciation and a clear actionable next step.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 34.37720982233683,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.8421052631578947,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 6,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 103.13201022148132,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.7105263157894737,
+        "ranking_score": 0.7105263157894737,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include key themes of conservation success, field operations, and measurable impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the solution approach showcase real-world achievements and outcomes?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Is the call to action (CTA) engagement-focused (e.g., prompting to read full stories) and placed in the final paragraph?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is positive, hopeful, and celebratory?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style informative and uplifting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include tone markers like 'success stories', 'making a difference', and 'impactful results'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the paragraph structure: intro \u2192 story highlights \u2192 impact statement \u2192 CTA?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the information flow follow problem context \u2192 solution results \u2192 broader implications?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a direct subject reference and close with appreciation + actionable next step?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases like 'anti-poaching units', 'success stories', and 'making a difference'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use formatting elements such as title case subject and bullet points/story highlights?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use persuasive techniques of social proof through tangible results?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 5,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively communicates key conservation themes, includes real-world achievements with measurable impact, and utilizes positive emotional language along with tone markers and persuasive social proof.",
+        "weaknesses": "The email lacks a clear, engagement-focused call to action in the final paragraph, does not fully adhere to the prescribed paragraph structure with a clear ending showing appreciation and actionable next steps, and omits formatting elements like bullet points for story highlights.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 42.17645112673441,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6842105263157895": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include key themes of conservation success, field operations, and measurable impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the solution approach showcase real-world achievements and outcomes?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Is the call to action (CTA) engagement-focused (e.g., prompting to read full stories) and placed in the final paragraph?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is positive, hopeful, and celebratory?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style informative and uplifting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include tone markers like 'success stories', 'making a difference', and 'impactful results'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the paragraph structure: intro \u2192 story highlights \u2192 impact statement \u2192 CTA?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the information flow follow problem context \u2192 solution results \u2192 broader implications?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a direct subject reference and close with appreciation + actionable next step?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases like 'anti-poaching units', 'success stories', and 'making a difference'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use formatting elements such as title case subject and bullet points/story highlights?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use persuasive techniques of social proof through tangible results?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively communicates key conservation themes, includes real-world achievements with measurable impact, and utilizes positive emotional language along with tone markers and persuasive social proof.",
+          "weaknesses": "The email lacks a clear, engagement-focused call to action in the final paragraph, does not fully adhere to the prescribed paragraph structure with a clear ending showing appreciation and actionable next steps, and omits formatting elements like bullet points for story highlights.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 42.17645112673441,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.7105263157894737,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 5,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 126.52972650527954,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.6842105263157895,
+        "ranking_score": 0.6842105263157895,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include key themes of conservation success, field operations, and measurable impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the solution approach showcase real-world achievements and outcomes?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Is the call to action (CTA) engagement-focused (e.g., prompting to read full stories) and placed in the final paragraph?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is positive, hopeful, and celebratory?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style informative and uplifting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include tone markers like 'success stories', 'making a difference', and 'impactful results'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the paragraph structure: intro \u2192 story highlights \u2192 impact statement \u2192 CTA?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the information flow follow problem context \u2192 solution results \u2192 broader implications?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a direct subject reference and close with appreciation + actionable next step?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases like 'anti-poaching units', 'success stories', and 'making a difference'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use formatting elements such as title case subject and bullet points/story highlights?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use persuasive techniques of social proof through tangible results?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 4,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively highlights conservation successes, uses emotional and positive language, and presents tangible real-world achievements through bullet-pointed story examples. It includes key phrases and persuasive social proof that bolster its message.",
+        "weaknesses": "The email is missing a clear, engagement-focused call to action in the final paragraph and does not conclude with a closing that includes appreciation and a direct next step. The overall paragraph structure lacks a dedicated impact/CTA section.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 25.641673644383747,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6842105263157895": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include key themes of conservation success, field operations, and measurable impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the solution approach showcase real-world achievements and outcomes?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Is the call to action (CTA) engagement-focused (e.g., prompting to read full stories) and placed in the final paragraph?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is positive, hopeful, and celebratory?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style informative and uplifting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include tone markers like 'success stories', 'making a difference', and 'impactful results'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the paragraph structure: intro \u2192 story highlights \u2192 impact statement \u2192 CTA?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the information flow follow problem context \u2192 solution results \u2192 broader implications?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a direct subject reference and close with appreciation + actionable next step?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases like 'anti-poaching units', 'success stories', and 'making a difference'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use formatting elements such as title case subject and bullet points/story highlights?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use persuasive techniques of social proof through tangible results?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively highlights conservation successes, uses emotional and positive language, and presents tangible real-world achievements through bullet-pointed story examples. It includes key phrases and persuasive social proof that bolster its message.",
+          "weaknesses": "The email is missing a clear, engagement-focused call to action in the final paragraph and does not conclude with a closing that includes appreciation and a direct next step. The overall paragraph structure lacks a dedicated impact/CTA section.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 25.641673644383747,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6842105263157895,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 4,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 76.92539596557617,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.6842105263157895,
+        "ranking_score": 0.6842105263157895,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include key themes of conservation success, field operations, and measurable impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the solution approach showcase real-world achievements and outcomes?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Is the call to action (CTA) engagement-focused (e.g., prompting to read full stories) and placed in the final paragraph?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is positive, hopeful, and celebratory?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style informative and uplifting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include tone markers like 'success stories', 'making a difference', and 'impactful results'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the paragraph structure: intro \u2192 story highlights \u2192 impact statement \u2192 CTA?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the information flow follow problem context \u2192 solution results \u2192 broader implications?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a direct subject reference and close with appreciation + actionable next step?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases like 'anti-poaching units', 'success stories', and 'making a difference'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Does the email use formatting elements such as title case subject and bullet points/story highlights?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use persuasive techniques of social proof through tangible results?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 4,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively communicates conservation success and real-world achievements using positive, hopeful language and persuasive bullet points. It also includes key phrases and proper formatting that underscore the message.",
+        "weaknesses": "The email lacks a clear, engagement-focused call to action and does not conclude with appreciation or an actionable next step. Additionally, the overall structure and narrative flow are incomplete, with the final paragraph abruptly cut off.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 25.919528325398762,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "stablelm-2-1.6b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.6842105263157895": [
+              "stablelm-2-1.6b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include key themes of conservation success, field operations, and measurable impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the solution approach showcase real-world achievements and outcomes?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Is the call to action (CTA) engagement-focused (e.g., prompting to read full stories) and placed in the final paragraph?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is positive, hopeful, and celebratory?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style informative and uplifting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include tone markers like 'success stories', 'making a difference', and 'impactful results'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the paragraph structure: intro \u2192 story highlights \u2192 impact statement \u2192 CTA?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the information flow follow problem context \u2192 solution results \u2192 broader implications?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a direct subject reference and close with appreciation + actionable next step?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases like 'anti-poaching units', 'success stories', and 'making a difference'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Does the email use formatting elements such as title case subject and bullet points/story highlights?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use persuasive techniques of social proof through tangible results?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively communicates conservation success and real-world achievements using positive, hopeful language and persuasive bullet points. It also includes key phrases and proper formatting that underscore the message.",
+          "weaknesses": "The email lacks a clear, engagement-focused call to action and does not conclude with appreciation or an actionable next step. Additionally, the overall structure and narrative flow are incomplete, with the final paragraph abruptly cut off.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 25.919528325398762,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6842105263157895,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 4,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 77.75897097587585,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 1,
+      "score": 0.868421052631579
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 2,
+      "score": 0.8421052631578947
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 3,
+      "score": 0.7105263157894737
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 4,
+      "score": 0.6842105263157895
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 5,
+      "score": 0.6842105263157895
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 721.2846667766571,
+    "success": true,
+    "errors": []
+  }
+}
