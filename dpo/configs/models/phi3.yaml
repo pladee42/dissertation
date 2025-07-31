@@ -7,7 +7,7 @@ model:
 training:
   learning_rate: 5e-6  # Moderate LR for Phi-3
   num_epochs: 3
-  batch_size: 4
+  batch_size: 2
   gradient_accumulation_steps: 4
   warmup_steps: 75
   logging_steps: 10

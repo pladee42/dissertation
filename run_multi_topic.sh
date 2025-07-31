@@ -1,13 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=multi_topic_o3
-#SBATCH --time=27:00:00
+#SBATCH --job-name=multi_topic
+#SBATCH --time=16:00:00
 #SBATCH --nodes=1
 #SBATCH --partition=gpu
 #SBATCH --qos=gpu
-#SBATCH --gres=gpu:4
-#SBATCH --gpus-per-node=4
-#SBATCH --cpus-per-task=4
-#SBATCH --mem=32G
+#SBATCH --gres=gpu:1
+#SBATCH --gpus-per-node=1
+#SBATCH --mem=64G
 #SBATCH --output=./log/multi_topic_%j.log
 #SBATCH --mail-user=wratthapoom1@sheffield.ac.uk
 #SBATCH --mail-type=ALL
@@ -49,9 +48,13 @@ nvidia-smi
 echo "Running multi_topic_runner.py..."
 # python -m multi_topic_runner --email_generation=medium --judge_model=gemini-2.5-flash --checklist_mode=enhanced --all_topics &> enhanced.log
 # python -m multi_topic_runner --email_generation=medium --judge_model=gemini-2.5-flash --checklist_mode=extract_only --all_topics &> extract_only.log
-python -m multi_topic_runner --email_generation=medium --checklist_model=deepseek-r1 --judge_model=o3-mini --checklist_mode=preprocess --all_topics #&> preprocess.log
+python -m multi_topic_runner --email_generation=medium --checklist_model=deepseek-r1 --judge_model=o3-mini --checklist_mode=preprocess --all_topics
 
-# For debugging
+# For DPO
+# python -m multi_topic_runner --email_generation=dpo-hyb --checklist_model=deepseek-r1 --judge_model=o3-mini --checklist_mode=preprocess --all_topics
+# python -m multi_topic_runner --email_generation=dpo-syn --checklist_model=deepseek-r1 --judge_model=o3-mini --checklist_mode=preprocess --all_topics
+
+# For debugging & Testing
 # python -m multi_topic_runner --email_models=stablelm-2-1.6b --checklist_model=gpt-4.1-nano --judge_model=o3-mini --checklist_mode=preprocess --topics=T0001
 
 # Check execution status
