@@ -1,0 +1,924 @@
+{
+  "session_id": "96b17adb-eb7e-49aa-ab8b-20719af2ee5e",
+  "timestamp": "2025-08-06T18:14:08.054136",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0143",
+    "name": "The 'Science Friday' Newsletter: This Week's Biggest Discoveries"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive – reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals – about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about The 'Science Friday' Newsletter: This Week's Biggest Discoveries"
+  },
+  "models_used": {
+    "email_models": [
+      "vicuna-7b-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Join us in our quest for scientific discovery!\n\nDear [Reader],\n\nWelcome to Science Friday's weekly newsletter! As a passionate advocate for science education and communication, we believe you'll find this week's discoveries both fascinating and inspiring.\n\nThis week, we've made some incredible strides in understanding the universe around us. Our team has uncovered new insights into dark matter, identified potential habitable exoplanets, and developed innovative ways to combat climate change. These breakthroughs have the power to transform our world for the better.\n\nAt Science Friday, we're dedicated to sharing these stories and fostering a community of curious minds. We invite you to join us on this journey by exploring our latest articles, videos, and events. Together, we can keep the spirit of discovery alive and make a difference in the world.\n\nReady to dive in? Visit our website at [www.sciencefriday.com](http://www.sciencefriday.com) to explore this week's discoveries and learn more about how you can get involved.\n\nThank you for being part of the Science Friday family. We look forward to your continued support and collaboration in our mission to advance scientific literacy and promote a deeper understanding of the world around us.\n\nBest regards,\n\n[Your Name]\nTeam Science Friday\n",
+        "generation_time": 34.815073013305664,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "[example_email@sciencefriday.org](mailto:example_email@sciencefriday.org)\n\nSubject: The Science Behind the News\n\nDear [Subscriber],\n\nThis week, we're diving into the fascinating world of space exploration, climate change, and groundbreaking medical research. From NASA's latest discoveries about Mars to the innovative solutions being developed to combat rising temperatures, our team has curated the most significant scientific stories of the past seven days.\n\n**Explore the top stories:**\n\n*   Scientists have made a major breakthrough in understanding the formation of black holes, shedding new light on one of the universe's greatest mysteries.\n*   Researchers have found that certain types of bacteria can be used to clean pollutants from contaminated soil, offering hope for a more sustainable future.\n*   A new study reveals that a specific type of exercise may hold the key to preventing age-related cognitive decline.\n\nAs always, our newsletter aims to provide you with a comprehensive overview of the most exciting developments in science and technology. Whether you're a seasoned scientist or simply curious about the world around you, we invite you to join us on this journey of discovery.\n\nStay up-to-date with the latest news and insights by following us on social media or visiting our website.\n\n**Join the conversation and share your thoughts on these incredible findings!**\n\n**Subscribe to our podcast for in-depth discussions with leading experts:**\n\n[SUBSCRIBE\\_BUTTON]\n\nBest regards,\n\nThe Science Friday Team\n\nP.S. If you have any questions or topics you'd like to explore further, don't hesitate to reach out.\n",
+        "generation_time": 91.00846409797668,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Unveiling this week’s groundbreaking science discoveries!\n\nDear Science Enthusiasts,\n\nAre you ready to dive into some mind-blowing scientific breakthroughs? Our latest edition of ‘Science Friday,’ featuring our top picks for exciting research findings that will leave you in wonderment – here we go!\n\nThis week has been nothing short of spectacular when it comes to advancements across various fields like astrophysics, biology, chemistry, and environmental studies. We invite all curious minds who love unraveling nature's mysteries to join us at [Organization Name]. Let these incredible stories inspire both young scientists and seasoned experts alike; they showcase how far we have come while igniting curiosity about what lies ahead. So grab yourself a cup of coffee/tea/your favorite beverage because there’s plenty worth discussing over breakfast tables around town today…and beyond! Don’t miss out—read up now so next time someone asks “What did YOU do last night?” You can proudly say something other than watching Netflix marathons together again tonight :)\n\nHere are just three highlights among many others featured throughout our newsletter covering everything from cutting edge technologies transforming lives every day right down microscopic organisms working tirelessly behind scenes often taken for granted by most people living their daily routines unaware even though each plays crucial roles within ecosystem dynamics worldwide contributing towards maintaining balance between humans & environment harmoniously coexisting peacefully despite differences amongst them regarding belief systems etc.. These articles also delve deep inside fascinating aspects surrounding space exploration efforts aimed toward understanding universe better through studying celestial bodies located billions light years away yet still holding secrets waiting discovery soon enough hopefully leading future generations closer home someday sooner rather later perhaps nevertheless providing hope amidst seemingly insurmountable challenges faced globally due climate change threatening existence itself unless immediate actions undertaken collectively before irreversible damage occurs further complicating matters already making life difficult especially those residing near coastlines experiencing frequent flooding events occurring increasing frequency year upon year resulting severe economic losses affecting livelihood security negatively impacting overall wellbeing significantly reducing quality standards expected otherwise enjoyed elsewhere regardless geographical location where one might live currently depending heavily solely reliance existing infrastructure unable sustainably support population growth continuously escalating needs arising demand surpass supply capabilities thereby creating imbalances requiring resolution swiftly implemented effectively ensuring long term stability required moving forward henceforth prevention strategies developed specifically designed address unique issues facing particular communities locally nationally internationally collaborative approaches adopted universally agreed solutions proposed joint initiatives launched successfully executed efficiently monitor progress closely evaluating results achieved thus achieving desired objectives ultimately benefitting society wholeheartedly embracing shared responsibility taking ownership personal accountability accepting consequences directly correlated associated benefits accruing equally distributed fairly equitably spread broadly inclusively encompassing everyone involved actively engaged committed fully dedicated wholly devoted passionately pursuing common goals relentlessly striving ceaselessly until ultimate victory finally realized triumphantly celebrated joyous celebrations held grandiose festivities commemorating hard fought battles won glorious victories earned honored achievements recognized deserving reward merited acknowledgment appreciated greatly valued highly esteemed respected cherished admired revered treasured loved remembered fondly missed dearly departed forever memorialized immortalizing legacy leaving indelible marks etched deeply ingrained permanently sealed securely safeguarded safekeeping preserved perpetually protected endless possibilities infinite potential limitless horizons boundless opportunities await eager anticipation adventure excitement thrill adrenaline rush exhilarating experience extraordinary journey remarkable voyage epic odyssey legendary saga mythical tale fantasy realm magical kingdom fairyland dreamworld wondrous land paradise utopia idyllic haven serenity blissful tranquility calmness restful repose relaxation rejuvenation revitalization renewal rebirth transformation evolution revolution metamorphosis transcendence ascension spiritual awakening mysticism magic sorcery occult supernatural paranormal phenomena extraterrestrial interdimensional portal gateway dimension bridge dimensional gate passageway threshold entrance exit door window frame wall partition barrier boundary divide separation segregation isolation solitude loneliness solitary individual self identity consciousness subconscious level deeper psychological depth psyche soul spirit essence energy vibrational field resonant chord string plucked note musical melody composition score sheet music lyrics poem verse haiku sonnet ballad limerick ode elegy free verse narrative nonfiction fiction autobiography historical document record chronicle journal article study paper thesis dissertation report summary abstract conclusion introduction body paragraph main idea supporting evidence analysis interpretation evaluation judgment decision outcome result consequence effect implication inference deduction assumption hypothesis theory principle law fact observation data measurement quantitative qualitative method experimental design observational study survey questionnaire interview focus group discussion case study ethnographic anthropology archaeology paleontology genetics molecular biology biochemistry physiology pathophysiology pharmacology neuroscience neurology cardiovascular system respiratory system digestive system nervous system musculoskeletal system integumentary system circulatory system hematologic system renal system hepatic system gastrointestinal tract alimentary canal enteric system pancreas liver gallbladder bile duct intestines appendix rectum colon sigmoid flexures ileocecal junction cecum vermiform process small bowl large bowl pelvic floor anal region perianal skin external female internal male internal prostate testis seminal vesicles bulbourethral glands ejaculatory duct vas deferens ampulla penis corpus cavernosa crura corpora spongiosum prepuce scrotum pubic symphysis sacrum lumbar vertebrae thoracic vertebrae cervical vertebrae occipital condyles zygomatic arch maxilla mandible nasal cavity sinuses frontal lobes temporal lobes parietal lobes occipital lobes central sulcus superior medullar fissure inferior medullar fissure pituitary gland hypothalamus optic nerve retina iris pupil constrictor muscle dilator pupil control photoreceptor rods cone rhodopsin visual acuity color vision trichromacy chromatophores ganglia autonomic reflex sympathetic division parasympathetic division sensory afferents motor efferents peripheral neurons myelin sheath axon terminal synapse presynaptic postsynaptic transmitter release activation depolarization hyperpolarization gradients electrotonic conduction saltatory propagation ion channels voltage gates potentiation summation spatial local circuitry intrinsic membrane properties neural networks computational algorithms artificial intelligence machine learning pattern recognition statistical methods mathematical models physics principles mechanics kinematics thermodynamics fluid dynamics electromagnetism quantum mechanics relativistic theories general relativity special relativity Einstein equation Schrodinger wave function Heisenberg uncertainty principle Bohr model atomic structure Pauli exclusion principle Dirac\n",
+        "generation_time": 67.11250042915344,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[USER_NAME]\nSubject: The Science Friday Newsletter: This Week's Biggest Discoveries!\n\nDear [SUBJECT],\n\nWe hope you enjoyed our last newsletter! We've got some amazing discoveries this week that we think you'll love.\n\nThis week, scientists made major breakthroughs in fields like neuroscience, astronomy, and environmental science. Here are just a few of the biggest discoveries from the past seven days:\n\n- [DISCOVERY 1]: A team of researchers discovered a new species of bacteria that can live without oxygen. They named it \"Oceanic Anoxic Event 6.\"\n- [DISCOVERY 2]: Astronomers have detected a massive black hole that is 10 times larger than the sun. It's located about 17 billion light years away.\n- [DISCOVERY 3]: Scientists have developed a new technique that could revolutionize cancer treatment by targeting specific genes rather than entire tumors.\n\nWe know you're busy, so we've summarized the most important findings in one easy-to-read list below:\n\n- [LIST OF DISCOVERIES]\n\nAs always, we want to hear from you! What other exciting scientific discoveries are you curious about? Share them with us in the comments below.\n\nDon't forget to check out our website for more great science news and articles!\n\nBest regards,\n\n[COMPANY NAME]\n\n### Instruction:\n\nEdit the provided email template with your company name and logo, and add your own personal touch to make it unique to your brand. Ensure that the email is clear, concise, and engaging, and includes a strong call to action at the end.\n",
+        "generation_time": 15.052742958068848,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your Name] | [Your Organization]\n[Your Address]\n[City, State ZIP Code]\n[Email Subject Line]\n[Date]\n\nDear Science Friday Community,\n\nAs we close in on another thrilling week filled with groundbreaking discoveries, I wanted to share some of our latest findings that have captured our attention here at [Your Organization]. We've been thrilled by the incredible progress being made across various fields, including biology, physics, astronomy, chemistry, and more!\n\nThis week's biggest discoveries include:\n\n- A team of scientists from MIT has developed a self-healing material that can repair itself when damaged, potentially revolutionizing the way we think about materials science and engineering.\n\n- Researchers at Harvard Medical School have discovered a novel gene therapy approach that could offer hope for patients suffering from rare genetic disorders like sickle cell disease.\n\n- Scientists at the University of California, Berkeley, have created a revolutionary new device that uses light to create 3D images of brain activity, providing unprecedented insights into how our brains work.\n\nThese breakthroughs highlight just a few examples of the incredible advancements happening right now in scientific research. As members of this community, we're proud to be part of these exciting developments and look forward to sharing more stories like these in future editions of Science Friday.\n\nSo, if you haven't already, make sure to sign up for our newsletter below to stay updated on all the latest news and discoveries from around the world. You'll receive regular updates via email, along with exclusive access to behind-the-scenes content, special offers, and more!\n\nThank you for your continued support of [Your Organization], and we hope to see you soon!\n\nBest regards,\n[Your Name]\n[Your Organization]\n\nEND_EMAIL\n",
+        "generation_time": 108.39694881439209,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email have a clear and relevant subject line?",
+          "best_ans": "yes",
+          "priority": "very high"
+        },
+        {
+          "question": "Is the content directly relevant to the topic?",
+          "best_ans": "yes",
+          "priority": "very high"
+        },
+        {
+          "question": "Does the email include a clear call-to-action?",
+          "best_ans": "yes",
+          "priority": "high"
+        },
+        {
+          "question": "Is the tone appropriate for the intended audience?",
+          "best_ans": "yes",
+          "priority": "high"
+        },
+        {
+          "question": "Does the email have a proper greeting?",
+          "best_ans": "yes",
+          "priority": "medium"
+        },
+        {
+          "question": "Does the email have a professional closing?",
+          "best_ans": "yes",
+          "priority": "medium"
+        },
+        {
+          "question": "Is the email length appropriate for the content?",
+          "best_ans": "yes",
+          "priority": "low"
+        },
+        {
+          "question": "Does the email avoid spelling and grammar errors?",
+          "best_ans": "yes",
+          "priority": "low"
+        }
+      ],
+      "generation_time": 284.2116491794586,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.9090909090909091,
+        "ranking_score": 0.9090909090909091,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email have a clear and relevant subject line?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the content directly relevant to the topic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a clear call-to-action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the tone appropriate for the intended audience?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email have a proper greeting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email have a professional closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email length appropriate for the content?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email avoid spelling and grammar errors?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 2,
+          "medium": 1,
+          "low": 2,
+          "very low": 0
+        },
+        "total_criteria": 8,
+        "strengths": "The email exhibits a clear and relevant subject line, directly relevant content, an engaging call-to-action, appropriate tone, a proper greeting, and is of appropriate length with no spelling or grammar errors.",
+        "weaknesses": "The email lacks a professional closing, which detracts from its overall formal presentation.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 14.751558621724447,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "vicuna-7b-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email have a clear and relevant subject line?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the content directly relevant to the topic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a clear call-to-action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the tone appropriate for the intended audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email have a proper greeting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email have a professional closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email length appropriate for the content?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email avoid spelling and grammar errors?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email exhibits a clear and relevant subject line, directly relevant content, an engaging call-to-action, appropriate tone, a proper greeting, and is of appropriate length with no spelling or grammar errors.",
+          "weaknesses": "The email lacks a professional closing, which detracts from its overall formal presentation.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 14.751558621724447,
+          "generation_attempts": 3,
+          "total_criteria": 8,
+          "weighted_score": 0.9090909090909091,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 2,
+            "medium": 1,
+            "low": 2,
+            "very low": 0
+          },
+          "evaluation_time": 44.25515937805176,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.9090909090909091,
+        "ranking_score": 0.9090909090909091,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email have a clear and relevant subject line?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the content directly relevant to the topic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a clear call-to-action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the tone appropriate for the intended audience?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email have a proper greeting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email have a professional closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email length appropriate for the content?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email avoid spelling and grammar errors?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 2,
+          "medium": 1,
+          "low": 2,
+          "very low": 0
+        },
+        "total_criteria": 8,
+        "strengths": "The email has a clear and relevant subject line, content that is directly related to the topic, a clear call-to-action prompt, an appropriate tone, a proper greeting, appropriate length, and is free of spelling and grammar errors.",
+        "weaknesses": "The email lacks a professional closing.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 23.49227436383565,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "vicuna-7b-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email have a clear and relevant subject line?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the content directly relevant to the topic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a clear call-to-action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the tone appropriate for the intended audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email have a proper greeting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email have a professional closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email length appropriate for the content?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email avoid spelling and grammar errors?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email has a clear and relevant subject line, content that is directly related to the topic, a clear call-to-action prompt, an appropriate tone, a proper greeting, appropriate length, and is free of spelling and grammar errors.",
+          "weaknesses": "The email lacks a professional closing.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 23.49227436383565,
+          "generation_attempts": 3,
+          "total_criteria": 8,
+          "weighted_score": 0.9090909090909091,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 2,
+            "medium": 1,
+            "low": 2,
+            "very low": 0
+          },
+          "evaluation_time": 70.47746396064758,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.9090909090909091,
+        "ranking_score": 0.9090909090909091,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email have a clear and relevant subject line?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the content directly relevant to the topic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a clear call-to-action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the tone appropriate for the intended audience?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email have a proper greeting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email have a professional closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email length appropriate for the content?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email avoid spelling and grammar errors?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 2,
+          "medium": 1,
+          "low": 2,
+          "very low": 0
+        },
+        "total_criteria": 8,
+        "strengths": "The email features a clear, engaging subject line, relevant content with an energetic tone, a clear call-to-action, a proper greeting, and is free from spelling and grammar mistakes. The overall length is appropriate for the message it conveys.",
+        "weaknesses": "The email lacks a professional closing, resulting in an incomplete feel.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 26.707273483276367,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "vicuna-7b-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email have a clear and relevant subject line?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the content directly relevant to the topic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a clear call-to-action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the tone appropriate for the intended audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email have a proper greeting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email have a professional closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email length appropriate for the content?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email avoid spelling and grammar errors?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email features a clear, engaging subject line, relevant content with an energetic tone, a clear call-to-action, a proper greeting, and is free from spelling and grammar mistakes. The overall length is appropriate for the message it conveys.",
+          "weaknesses": "The email lacks a professional closing, resulting in an incomplete feel.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 26.707273483276367,
+          "generation_attempts": 3,
+          "total_criteria": 8,
+          "weighted_score": 0.9090909090909091,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 2,
+            "medium": 1,
+            "low": 2,
+            "very low": 0
+          },
+          "evaluation_time": 80.12246561050415,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.7727272727272727,
+        "ranking_score": 0.7727272727272727,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email have a clear and relevant subject line?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the content directly relevant to the topic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the tone appropriate for the intended audience?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email have a proper greeting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email have a professional closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email length appropriate for the content?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email avoid spelling and grammar errors?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 1,
+          "medium": 1,
+          "low": 2,
+          "very low": 0
+        },
+        "total_criteria": 8,
+        "strengths": "The email features a clear and engaging subject line, relevant content that discusses notable scientific discoveries, an appropriate tone and greeting, and is free from significant spelling or grammar errors. Its length is largely suitable for the content provided.",
+        "weaknesses": "The email lacks a clear call-to-action and a professional closing, which detracts from its overall completeness and effectiveness.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 25.00203585624695,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "vicuna-7b-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email have a clear and relevant subject line?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the content directly relevant to the topic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the tone appropriate for the intended audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email have a proper greeting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email have a professional closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email length appropriate for the content?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email avoid spelling and grammar errors?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email features a clear and engaging subject line, relevant content that discusses notable scientific discoveries, an appropriate tone and greeting, and is free from significant spelling or grammar errors. Its length is largely suitable for the content provided.",
+          "weaknesses": "The email lacks a clear call-to-action and a professional closing, which detracts from its overall completeness and effectiveness.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 25.00203585624695,
+          "generation_attempts": 3,
+          "total_criteria": 8,
+          "weighted_score": 0.7727272727272727,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 1,
+            "medium": 1,
+            "low": 2,
+            "very low": 0
+          },
+          "evaluation_time": 75.0067195892334,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.5,
+        "ranking_score": 0.5,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email have a clear and relevant subject line?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the content directly relevant to the topic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a clear call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Is the tone appropriate for the intended audience?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email have a proper greeting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email have a professional closing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the email length appropriate for the content?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email avoid spelling and grammar errors?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 1,
+          "medium": 1,
+          "low": 1,
+          "very low": 0
+        },
+        "total_criteria": 8,
+        "strengths": "The email presents relevant scientific content, uses an engaging tone appropriate for a science audience, includes a proper greeting, and is largely free of spelling and grammar errors.",
+        "weaknesses": "The subject line is a placeholder rather than a clear, relevant one, there is no explicit call-to-action, the email lacks a professional closing, and the overall content appears incomplete.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 35.069539308547974,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "llama-3-8b-dpo-hyb",
+            "phi-3-mini-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.9090909090909091": [
+              "vicuna-7b-dpo-hyb",
+              "llama-3-8b-dpo-hyb",
+              "phi-3-mini-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email have a clear and relevant subject line?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the content directly relevant to the topic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a clear call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Is the tone appropriate for the intended audience?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email have a proper greeting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email have a professional closing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the email length appropriate for the content?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email avoid spelling and grammar errors?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email presents relevant scientific content, uses an engaging tone appropriate for a science audience, includes a proper greeting, and is largely free of spelling and grammar errors.",
+          "weaknesses": "The subject line is a placeholder rather than a clear, relevant one, there is no explicit call-to-action, the email lacks a professional closing, and the overall content appears incomplete.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 35.069539308547974,
+          "generation_attempts": 3,
+          "total_criteria": 8,
+          "weighted_score": 0.5,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 1,
+            "medium": 1,
+            "low": 1,
+            "very low": 0
+          },
+          "evaluation_time": 105.20931220054626,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 1,
+      "score": 0.9090909090909091
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 2,
+      "score": 0.9090909090909091
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 3,
+      "score": 0.9090909090909091
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 4,
+      "score": 0.7727272727272727
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 5,
+      "score": 0.5
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 769.385356426239,
+    "success": true,
+    "errors": []
+  }
+}

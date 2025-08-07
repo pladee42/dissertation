@@ -1,0 +1,1186 @@
+{
+  "session_id": "371c4dc7-4aa0-48df-94b2-cd640bec645d",
+  "timestamp": "2025-08-06T19:56:06.594924",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0150",
+    "name": "Thank You for Being a Loyal Listener and Supporter"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive – reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals – about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Thank You for Being a Loyal Listener and Supporter"
+  },
+  "models_used": {
+    "email_models": [
+      "llama-3-8b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Subject: A Heartfelt Thank You\n\nDear [Name],\n\nWe wanted to take a moment to express our heartfelt gratitude for being a loyal listener and supporter of our show. It means the world to us that you've chosen to spend your time listening to our conversations and sharing them with others.\n\nAs we reflect on the past year, we're reminded of the incredible impact our community has had on the lives of those who need it most. From the inspiring stories we've shared to the meaningful connections we've helped facilitate, every episode has been made possible by listeners like you.\n\nYour support isn't just about tuning in each week; it's about being part of a movement that's dedicated to spreading kindness, empathy, and understanding. We're honored to have you as a part of this journey and look forward to continuing to share stories that inspire and uplift.\n\nTo show our appreciation, we'd like to offer you an exclusive opportunity to be one of the first to access our upcoming live event. This special evening will feature some of our favorite guests from the past year, and we can't wait to share it with you.\n\n**Join us LIVE on March 15th at 7 PM EST!**\n\nClick here to reserve your spot: \\[link\\]\n\nThank you again for being an integral part of our community. We're grateful for your loyalty and enthusiasm, and we can't wait to celebrate with you soon!\n\nWarm regards,\n\n\\[Your Name]\n\nP.S. Don't forget to follow us on social media for the latest updates and behind-the-scenes peeks into our production process!\n\n\\[social media links\\]\n\n\\[organization logo\\]\n\n\\[END_EMAIL]\n",
+        "generation_time": 99.28509855270386,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: A Heartfelt Thank You From [Organization Name]! <|end_of_email|>\n\nDear Valued Member,\n\nWe hope this message finds you well and thriving in all aspects of life. At [Organization Name], we want to express our deepest gratitude for being such dedicated supporters during these challenging times. It’s listeners like you who make us feel that every effort counts towards creating positive change within communities worldwide.\n\nYour unwavering commitment has allowed us to reach millions through various platforms – sharing stories of resilience, inspiration, and unity. We believe strongly in fostering connections among people while promoting social causes close to their hearts. And thanks to individuals just like yourself, those goals have become possible realities day by day.\n\nAs part of our appreciation program called 'The Circle of Support,' each year since launching back in 2017, loyal members receive exclusive benefits tailored specifically toward enhancing community impact further than ever before. This includes access to special events hosted annually at local venues across different regions where guests can connect directly with changemakers leading transformative projects around them. These gatherings provide unique opportunities for personal growth alongside meaningful networking experiences designed solely for empowering others beyond conventional boundaries set forth elsewhere online/offline settings alike.\n\nBut what truly sets The Circle apart isn't merely about attending meetups; rather, it revolves entirely around actively contributing one's time volunteering locally whenever feasible–whether mentoring young minds eager-to-learn skills vital today versus tomorrow society needs most profoundly nowadays considering how rapidly everything evolves globally due technological advancements alone...and so much more besides therein lies countless possibilities awaiting discovery once someone steps outside comfort zones regularly enough consistently over long periods continually throughout lifetime journey thus far embarked upon collectively together wholeheartedly committed passionately devoted enthusiastically ready willing open arms always welcomed warm hearty smiles shared laughter joyous celebrations endlessly celebrated friendships built lastingly cherished memories created forevermore treasured moments captured immortalized eternally preserved never forgotten deeply valued irreplaceably loved appreciated sincerely thanked humbly acknowledged graciously received kindly accepted gratefully given gladly enjoyed fully relished thoroughly savoured completely absorbed utterly consumed wholly experienced intimately felt personally known universally understood emotionally connected spiritually touched heavenward ascended transcendent elevated inspired motivated encouraged supported strengthened fortified rejuvenated renewed revitalized invigorated energized charged excited animated engaged captivating enthralling mesmerizing spellbinding magical extraordinary spectacular magnificent marvelous wondrous astounding amazing fantastic fabulous supernatural divine miraculous phenomenon occurring daily recurring weekly monthly quarterly biannual biennial triennial decadal centennial millennial century decade era epoch periodicity regularity frequency continuance persistence constancy permanency stability steadfastness durability longevity lifespan duration lengthtime temporality temporal interval interim pause momentary instantaneous occurrence happening actual fact existing reality objectivity subjectivity perception sensibility awareness consciousness cognition comprehension understanding insight interpretation clarification elucidation explication exposition explanation rational reasoning logical deduction inference conclusion validity veracity authenticity genuineness integrity honesty trustworthiness reliability dependability accountability responsibility stewardship governance administration oversight management control regulation compliance conformity adherence obedience observance discipline punctuality timeliness promptness speed efficiency productivity effectiveness performance output results outcome consequence consequences implications ramifications outcomes effects yield benefit advantages advantage profit gain financial return investment capital income earnings wealth prosperity affluence abundance riches fortune luck chance opportunity destiny fate predestination preordained providence divinity grace mercy benevolence charity kindness generosity magnanimity munificence largesse liberality philanthropy beneficence goodwill gentleness tenderness affection love care friendship companionship camaraderie solidarity fraternity brotherhood sisterhood kinship family household clan tribe nation state country global international universal entirety totality sum total aggregate quantity magnitude volume weight mass density pressure tension stress strain force energy power potential capacity capability ability skill competence talent knowledge wisdom experience learning education training development progress improvement innovation creativity imagination concept idea ideology philosophy theory principle rule law statute constitution ordinance edict declaration proclamation statement assertion assurance guarantee promise pledge allegiance fidelity faithfulness honor dignity respect esteem value worth ethics morals principles virtues character traits attribute feature quality standard benchmark criteria guideline protocol procedure method technique operation function activity process cycle sequence series repetition iteration variation diversity variety selection choice decision judgment evaluation assessment appraisal rating score grade percentage proportion fraction ratio rate percent likelihood probability possibility certainty sure sureness confidence conviction belief faith religion spiritualism mysticism occult magic sorcery necromancy black magic white magic dark arts evil demon possession demons spirits ghosts angels celestial beings gods goddesses satan devils devil archangels seraphims choirs hallelujah psalm praise worship song anthem chorus harmony melody rhythm beat tempo pace acceleration velocity momentum accelerator brake friction resistance drag propulsion thrust lift buoyant air current wind flow stream river water lake ocean sea bay harbor port dock pier quay jetty jettison slipway gangplank ferryboat cruiser ship tanker vessel freighter carrier cargo container truck lorry van automobile motorcycle bike scooter skateboard rollerblade inline skates snowboard board ski helmet ice hockey puck ball bowling pin golf club racket tennis racquet badminton shuttlecock volleyball net basketball hoop ring baseball bat softball glove football field court stadium arena amphitheater theatre stage auditorium hall concert hall opera house symphony orchestra chamber music ensemble musical group band jazz fusion funk rock metal punk hardcore alternative indie pop hip hop rap R&B soul blues folk traditional classical contemporary electronic synthpop techno disco dance hiphop breakbeats drum machine sequencer sampler keyboard MIDI software sound editing audio mixing recording production postproduction mastering remix mixdown live show gig tourist circuit perform circus streetcar fairground sideshow tent marquee booth concession stand refreshments food drink snack candy treat souvenir gift shop memorabilia artwork poster sticker trading card comic book graphic novel magazine newspaper journal paperback fiction nonfiction autobiography diary letter correspondence epistolary essay short story novella chapter section paragraph sentence clause phrase fragment word morpheme lexicon vocabulary idiom expression metaphor simile hyperbole personification euphemism litotes understatement oxymoron paradox antithesis juxtaposition contrast opposition contradiction dialect dichotomy duality polarity binary code algorithm logic formula equation theorem proof corollary axiom hypothesis conjecture proposition argument premise assumption derivation induction abduction analogy comparison analysis critique criticism review feedback comment opinion advice suggestion recommendation proposal plan strategy scheme policy agenda objective purpose aim target destination final result achievement success failure loss defeat disaster catast\n",
+        "generation_time": 68.9187879562378,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[USER_NAME]\nSubject: [SUBJECT_LINE]\n\nDear [SENDER_NAME],\n\nWe wanted to take a moment to thank you for being such an amazing listener and supporter of our podcast! We appreciate everything you do to support us and keep us going.\n\nAs we approach our upcoming [EVENT_TITLE], we couldn't be more excited about what we have in store for you. Our team has been hard at work preparing some incredible episodes that we know will leave you feeling inspired and motivated.\n\nBut don't just take our word for it - here's what our listeners had to say about our previous episodes:\n\n- \"This episode was so inspiring! I felt like I could really relate to the struggles that [LISTENER_NAME] faced.\"\n- \"The conversation with [LISTENER_NAME] was truly insightful and empowering. Thank you for sharing their story!\"\n\nWe hope that you'll join us on this journey by subscribing to our podcast and attending our upcoming event.\n\nHere's where you can find more information:\n\n- [LINK TO EVENT PAGE]\n- [LINK TO PODCAST PAGE]\n\nPlease let us know if there's anything else we can do to make this event even better for you.\n\nWith warmest regards,\n\n[SENDING ORGANIZATION NAME]\n\n## Instruction:\n\nReplace the placeholder text with your own branding, including your logo, website, and social media handles.\n",
+        "generation_time": 19.749128818511963,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Thank you for being a loyal listener and supporter!\n\nDear [Name],\n\nWe hope this email finds you well. We wanted to take a moment to thank you for your continued support of our mission to promote environmental conservation and sustainability. As a valued member of our community, we appreciate your commitment to our cause.\n\nOver the years, we have worked together to make a positive impact on the environment and raise awareness about the importance of protecting our planet. Your dedication to our efforts has been invaluable, and we couldn't have done it without you.\n\nAs a special thank\n",
+        "generation_time": 36.954705476760864,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your_Email]\n",
+        "generation_time": 113.74907970428467,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key themes of appreciation, community impact, and sustained engagement?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the solution approach emphasize highlighting listener impact?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Is the call to action a soft invitation (non-urgent and optional participation)?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language markers like 'grateful', 'appreciative', and 'warm'?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style appreciative and relationship-focused?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include specific phrases like 'deeply grateful', 'truly appreciate', or 'cherish your support'?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email have exactly 4 paragraphs?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the opening use a personalized greeting with immediate gratitude?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the closing reiterate thanks with a warm sign-off?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email include key phrases like 'loyal listener', 'make this possible', and 'passion for music'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use medium-length sentences with emotional modifiers?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Is the language conversational with elevated vocabulary (e.g., 'cherish', 'vital', 'passion')?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 61.969667196273804,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.7027027027027027,
+        "ranking_score": 0.7027027027027027,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of appreciation, community impact, and sustained engagement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the solution approach emphasize highlighting listener impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Is the call to action a soft invitation (non-urgent and optional participation)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers like 'grateful', 'appreciative', and 'warm'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style appreciative and relationship-focused?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include specific phrases like 'deeply grateful', 'truly appreciate', or 'cherish your support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening use a personalized greeting with immediate gratitude?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing reiterate thanks with a warm sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases like 'loyal listener', 'make this possible', and 'passion for music'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use medium-length sentences with emotional modifiers?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the language conversational with elevated vocabulary (e.g., 'cherish', 'vital', 'passion')?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 5,
+          "medium": 3,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully communicates heartfelt appreciation and community impact, uses a personalized greeting with immediate gratitude, maintains a soft call to action, leverages emotional language and a conversational yet elevated tone, and is structured into the expected number of paragraphs.",
+        "weaknesses": "The email does not include the specific phrases ('deeply grateful', 'truly appreciate', or 'cherish your support') requested, lacks a clear closing that reiterates thanks with a warm sign-off, and misses mentioning 'passion for music' among the key phrases.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 35.63792657852173,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.43243243243243246": [
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of appreciation, community impact, and sustained engagement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the solution approach emphasize highlighting listener impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Is the call to action a soft invitation (non-urgent and optional participation)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers like 'grateful', 'appreciative', and 'warm'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style appreciative and relationship-focused?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include specific phrases like 'deeply grateful', 'truly appreciate', or 'cherish your support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening use a personalized greeting with immediate gratitude?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing reiterate thanks with a warm sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases like 'loyal listener', 'make this possible', and 'passion for music'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use medium-length sentences with emotional modifiers?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the language conversational with elevated vocabulary (e.g., 'cherish', 'vital', 'passion')?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully communicates heartfelt appreciation and community impact, uses a personalized greeting with immediate gratitude, maintains a soft call to action, leverages emotional language and a conversational yet elevated tone, and is structured into the expected number of paragraphs.",
+          "weaknesses": "The email does not include the specific phrases ('deeply grateful', 'truly appreciate', or 'cherish your support') requested, lacks a clear closing that reiterates thanks with a warm sign-off, and misses mentioning 'passion for music' among the key phrases.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 35.63792657852173,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.7027027027027027,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 5,
+            "medium": 3,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 106.9144275188446,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.6216216216216216,
+        "ranking_score": 0.6216216216216216,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of appreciation, community impact, and sustained engagement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the solution approach emphasize highlighting listener impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Is the call to action a soft invitation (non-urgent and optional participation)?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers like 'grateful', 'appreciative', and 'warm'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style appreciative and relationship-focused?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include specific phrases like 'deeply grateful', 'truly appreciate', or 'cherish your support'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening use a personalized greeting with immediate gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing reiterate thanks with a warm sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases like 'loyal listener', 'make this possible', and 'passion for music'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use medium-length sentences with emotional modifiers?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the language conversational with elevated vocabulary (e.g., 'cherish', 'vital', 'passion')?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 3,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively conveys appreciation and community impact using warm and emotional language. It emphasizes listener impact and maintains an appreciative, relationship-focused tone while using medium-length sentences and elevated vocabulary.",
+        "weaknesses": "The email lacks a clear soft call to action, does not have exactly four paragraphs, uses a generic greeting instead of a personalized one with immediate gratitude, is missing a proper closing sign-off, and does not include the specific key phrases outlined in the checklist.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 38.70846565564474,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.43243243243243246": [
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of appreciation, community impact, and sustained engagement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the solution approach emphasize highlighting listener impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Is the call to action a soft invitation (non-urgent and optional participation)?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers like 'grateful', 'appreciative', and 'warm'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style appreciative and relationship-focused?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include specific phrases like 'deeply grateful', 'truly appreciate', or 'cherish your support'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening use a personalized greeting with immediate gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing reiterate thanks with a warm sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases like 'loyal listener', 'make this possible', and 'passion for music'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use medium-length sentences with emotional modifiers?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the language conversational with elevated vocabulary (e.g., 'cherish', 'vital', 'passion')?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively conveys appreciation and community impact using warm and emotional language. It emphasizes listener impact and maintains an appreciative, relationship-focused tone while using medium-length sentences and elevated vocabulary.",
+          "weaknesses": "The email lacks a clear soft call to action, does not have exactly four paragraphs, uses a generic greeting instead of a personalized one with immediate gratitude, is missing a proper closing sign-off, and does not include the specific key phrases outlined in the checklist.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 38.70846565564474,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6216216216216216,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 3,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 116.12609839439392,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.43243243243243246,
+        "ranking_score": 0.43243243243243246,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of appreciation, community impact, and sustained engagement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the solution approach emphasize highlighting listener impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Is the call to action a soft invitation (non-urgent and optional participation)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers like 'grateful', 'appreciative', and 'warm'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style appreciative and relationship-focused?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include specific phrases like 'deeply grateful', 'truly appreciate', or 'cherish your support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the opening use a personalized greeting with immediate gratitude?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing reiterate thanks with a warm sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases like 'loyal listener', 'make this possible', and 'passion for music'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use medium-length sentences with emotional modifiers?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the language conversational with elevated vocabulary (e.g., 'cherish', 'vital', 'passion')?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively communicates appreciation and enthusiasm with a relationship-focused tone, includes testimonials to highlight listener impact, offers a soft invitation, and employs a personalized greeting as well as medium-length sentences.",
+        "weaknesses": "It lacks explicit emotional markers (such as 'grateful', 'warm'), specific appreciative phrases ('deeply grateful', 'cherish your support'), does not maintain exactly 4 paragraphs, misses a warm closing sign-off, omits key phrases like 'loyal listener' and 'passion for music', and does not use elevated vocabulary as suggested.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 47.908024628957115,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.43243243243243246": [
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of appreciation, community impact, and sustained engagement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the solution approach emphasize highlighting listener impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Is the call to action a soft invitation (non-urgent and optional participation)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers like 'grateful', 'appreciative', and 'warm'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style appreciative and relationship-focused?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include specific phrases like 'deeply grateful', 'truly appreciate', or 'cherish your support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the opening use a personalized greeting with immediate gratitude?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing reiterate thanks with a warm sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases like 'loyal listener', 'make this possible', and 'passion for music'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use medium-length sentences with emotional modifiers?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the language conversational with elevated vocabulary (e.g., 'cherish', 'vital', 'passion')?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively communicates appreciation and enthusiasm with a relationship-focused tone, includes testimonials to highlight listener impact, offers a soft invitation, and employs a personalized greeting as well as medium-length sentences.",
+          "weaknesses": "It lacks explicit emotional markers (such as 'grateful', 'warm'), specific appreciative phrases ('deeply grateful', 'cherish your support'), does not maintain exactly 4 paragraphs, misses a warm closing sign-off, omits key phrases like 'loyal listener' and 'passion for music', and does not use elevated vocabulary as suggested.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 47.908024628957115,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.43243243243243246,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 143.7248990535736,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.43243243243243246,
+        "ranking_score": 0.43243243243243246,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of appreciation, community impact, and sustained engagement?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the solution approach emphasize highlighting listener impact?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Is the call to action a soft invitation (non-urgent and optional participation)?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers like 'grateful', 'appreciative', and 'warm'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style appreciative and relationship-focused?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include specific phrases like 'deeply grateful', 'truly appreciate', or 'cherish your support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the opening use a personalized greeting with immediate gratitude?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing reiterate thanks with a warm sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases like 'loyal listener', 'make this possible', and 'passion for music'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use medium-length sentences with emotional modifiers?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the language conversational with elevated vocabulary (e.g., 'cherish', 'vital', 'passion')?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 3,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively conveys appreciation and community impact with emotional language and an appreciative, relationship-focused style. It opens with a personalized greeting and uses medium-length sentences with appropriate emotional modifiers.",
+        "weaknesses": "The email lacks emphasis on specifically highlighting listener impact, does not include a clear soft call to action, misses targeted phrases like 'deeply grateful' or 'cherish your support', does not adhere to the 4-paragraph structure, has an incomplete closing with no warm sign-off, omits key thematic phrases such as 'make this possible' and 'passion for music', and falls short on elevated vocabulary.",
+        "consistency_confidence": 0.75,
+        "average_response_time": 40.93887368837992,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.43243243243243246": [
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of appreciation, community impact, and sustained engagement?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the solution approach emphasize highlighting listener impact?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Is the call to action a soft invitation (non-urgent and optional participation)?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers like 'grateful', 'appreciative', and 'warm'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style appreciative and relationship-focused?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include specific phrases like 'deeply grateful', 'truly appreciate', or 'cherish your support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the opening use a personalized greeting with immediate gratitude?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing reiterate thanks with a warm sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases like 'loyal listener', 'make this possible', and 'passion for music'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use medium-length sentences with emotional modifiers?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the language conversational with elevated vocabulary (e.g., 'cherish', 'vital', 'passion')?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            }
+          ],
+          "strengths": "The email effectively conveys appreciation and community impact with emotional language and an appreciative, relationship-focused style. It opens with a personalized greeting and uses medium-length sentences with appropriate emotional modifiers.",
+          "weaknesses": "The email lacks emphasis on specifically highlighting listener impact, does not include a clear soft call to action, misses targeted phrases like 'deeply grateful' or 'cherish your support', does not adhere to the 4-paragraph structure, has an incomplete closing with no warm sign-off, omits key thematic phrases such as 'make this possible' and 'passion for music', and falls short on elevated vocabulary.",
+          "consistency_confidence": 0.75,
+          "average_response_time": 40.93887368837992,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.43243243243243246,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 3,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 122.81718373298645,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.0,
+        "ranking_score": 0.0,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes of appreciation, community impact, and sustained engagement?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the solution approach emphasize highlighting listener impact?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Is the call to action a soft invitation (non-urgent and optional participation)?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers like 'grateful', 'appreciative', and 'warm'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style appreciative and relationship-focused?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include specific phrases like 'deeply grateful', 'truly appreciate', or 'cherish your support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening use a personalized greeting with immediate gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing reiterate thanks with a warm sign-off?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases like 'loyal listener', 'make this possible', and 'passion for music'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email use medium-length sentences with emotional modifiers?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the language conversational with elevated vocabulary (e.g., 'cherish', 'vital', 'passion')?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "None of the targeted emotional, stylistic, or structural elements were present. The email does not contain any of the requested positive elements.",
+        "weaknesses": "The generated email is only a placeholder ('[Your_Email]') and does not include any content, themes, or structural elements required by the checklist criteria.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 16.909988403320312,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.43243243243243246": [
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes of appreciation, community impact, and sustained engagement?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the solution approach emphasize highlighting listener impact?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Is the call to action a soft invitation (non-urgent and optional participation)?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers like 'grateful', 'appreciative', and 'warm'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style appreciative and relationship-focused?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include specific phrases like 'deeply grateful', 'truly appreciate', or 'cherish your support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening use a personalized greeting with immediate gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing reiterate thanks with a warm sign-off?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases like 'loyal listener', 'make this possible', and 'passion for music'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email use medium-length sentences with emotional modifiers?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the language conversational with elevated vocabulary (e.g., 'cherish', 'vital', 'passion')?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "None of the targeted emotional, stylistic, or structural elements were present. The email does not contain any of the requested positive elements.",
+          "weaknesses": "The generated email is only a placeholder ('[Your_Email]') and does not include any content, themes, or structural elements required by the checklist criteria.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 16.909988403320312,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.0,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 0,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 50.730703353881836,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 1,
+      "score": 0.7027027027027027
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 2,
+      "score": 0.6216216216216216
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 3,
+      "score": 0.43243243243243246
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 4,
+      "score": 0.43243243243243246
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 5,
+      "score": 0.0
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 717.5923843383789,
+    "success": true,
+    "errors": []
+  }
+}

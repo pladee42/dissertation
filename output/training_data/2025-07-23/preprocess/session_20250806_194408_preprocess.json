@@ -1,0 +1,1146 @@
+{
+  "session_id": "2910c56c-c1d7-4b87-98a0-148a3c3d3ab4",
+  "timestamp": "2025-08-06T19:44:08.753310",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0149",
+    "name": "Special Coverage: Live Election Night Analysis and Results"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive – reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals – about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Special Coverage: Live Election Night Analysis and Results"
+  },
+  "models_used": {
+    "email_models": [
+      "vicuna-7b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Join us for live election night analysis and results!\n\nDear [Recipient],\n\nAs we approach one of the most critical moments in our nation's history, we want you to be informed and engaged. That's why we're excited to invite you to join us for special coverage of the upcoming election night. Our team of experts will provide live analysis and updates throughout the evening, ensuring that you stay informed every step of the way.\n\nOur coverage will begin at [start time] and run until [end time]. You can tune in via [platform], where you'll find all the information you need to follow along. We encourage you to share this event with friends and family who may also be interested in staying informed.\n\nWe believe that knowledge is power, and we're committed to providing you with the information you need to make informed decisions. Thank you for being a part of our community, and we hope to see you during our special coverage of the election night.\n\nBest regards,\n[Sending Organization]\n",
+        "generation_time": 39.48582363128662,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your Name]\nSubject: Save Our Democracy: Join Us for Live Election Night Analysis & Results\n\nDear [Recipient],\n\nAs we head into the most important election in our nation's history, we need your support now more than ever. We're thrilled to announce that we'll be providing LIVE analysis and results coverage throughout the night on November 3rd.\n\nOur team has been working tirelessly to bring you the latest updates, trends, and insights from every corner of the country. Whether you're at home, work, or out and about, we've got you covered.\n\nJoin us for this historic event by tuning in to our live stream starting at 7 pm Eastern Standard Time tonight. You can watch here: [Insert link]. Don't miss out on the chance to be part of something truly special.\n\nIn addition to staying up-to-date, there are several ways you can get involved:\n\n- Follow us on social media for real-time updates and behind-the-scenes looks\n- Share our posts with friends and family who might also want to tune in\n- Participate in our moderated Twitter chat during the livestream using #SaveOurDemocracy\n\nTogether, we can make sure our voices are heard loud and clear in these crucial times. Every vote counts, and we're proud to offer this service free of charge to all Americans.\n\nThank you for being a valued member of our community. Together, let's make democracy thrive!\n\nWarm regards,\n\n[Your Name]\n\nEND_EMAIL\n",
+        "generation_time": 128.90816831588745,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Subject: Get Ready for Our Special Election Night Coverage!\n\nDear fellow citizen,\n\nTonight, we gather at the crossroads of history. The fate of our nation hangs in the balance, and every vote matters. As the clock strikes midnight, millions will anxiously await the outcome of this pivotal election.\n\nBut you don't have to wait until then to get the inside scoop. Our team of seasoned experts has been working tirelessly to bring you unparalleled analysis and insights. From the moment polls close, we'll be live-streaming our coverage, breaking down the results, and providing context that will leave you feeling informed and empowered.\n\nOur special election night broadcast is not just about numbers; it's about understanding the heartbeat of America. We'll delve into the stories behind the votes, exploring the issues that matter most to you and your community.\n\nJoin us tonight at [insert time] as we navigate this historic moment together. Don't miss out on the opportunity to stay ahead of the curve and make sense of it all.\n\n**Tune in LIVE tonight at [insert time] and experience the ultimate election night coverage!**\n",
+        "generation_time": 108.10364055633545,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Don’t Miss Out – Our Exclusive LIVE Event!\n\nDear [Recipient Name],\n\nAre you ready for one electrifying night? We at NewsChannel X bring you our special coverage—Live Election Night Analysis & Results! Witness history in real-time right here where we break down every twist and turn live alongside renowned political analyst Dr. Jane Smith. This isn't just news; this is immersive journalism that brings clarity amidst chaos.\n\nAs votes pour in across states like California, Texas, Florida, New York, Ohio, Pennsylvania, Michigan, Wisconsin, Arizona, North Carolina, Georgia, Virginia, Nevada, Colorado, Iowa, Maine, Utah, South Dakota, Indiana, Kentucky, Tennessee, Missouri, Mississippi, Alabama, Louisiana, Oklahoma, Arkansas, West Virginia, Montana, Idaho, Wyoming, Alaska, Hawaii, Washington DC, Maryland, Delaware, Connecticut, Rhode Island, Vermont, Massachusetts, New Hampshire, Oregon, Kansas, Nebraska, Minnesota, Illinois, New Jersey, Puerto Rico, Guam, Virgin Islands, American Samoa, Northern Mariana Islands —we promise no stone will be left unturned. Join us tonight starting at 8 PM EDT/PDT when everything unfolds before your eyes. It promises to be nothing short of riveting!\n\nBe part of something bigger than yourself by tuning into #NewsChannelXLivEvent now! Together let's navigate through these historic moments together while understanding their implications beyond mere numbers. Let democracy ring loudest during election season but remember even if results don't favor what many hoped would happen, they still matter because each vote counts towards shaping tomorrow. So come along friends, stay informed about how America chooses her leaders under pressure unlike ever seen before using reliable information backed up scientific analysis rather than hearsay rumors floating around social media platforms today which often distort facts leading people astray instead making them wiser citizens capable enough deciding who deserves power over others responsibly ensuring peace reigns supreme post elections regardless whether party A wins majority seats versus Party B losing out significantly lesser compared winning margin wise yet equally valid considering context matters too besides personal biases cloud judgement sometimes unnecessarily creating unnecessary tensions among communities divided further apart due lack thereof mutual respect amongst diverse groups despite shared commonalities binding everyone closer uniting hearts achieving harmony lastingly benefiting all parties involved including those previously silent voices finally being heard echoing louder resonating throughout society giving rise hope renewing faith inspiring change bringing forth unity fostering solidarity bridging gaps narrowing rifts mending broken bonds restoring trust rebuilding relationships paving way forward progressively moving ahead collectively working hand in glove striving hard day long round clock ceaseless efforts never backing away until victory achieved ultimately leaving behind legacy worthy celebration commemorated forever cherished memories treasured experiences valued friendships made lifelong connections formed bond built stronger resilient spirit ignited passion fueled determination driving force propelling nation toward brighter future promising prosperous days brightening horizons illuminating pathways guiding steps taking strides marching proudly head held high carrying torch lighting fire burning fiercely blazing trail setting precedent followed closely emulating success stories replicating achievements honoring traditions preserving culture protecting values upholding principles defending freedoms safeguarding liberties fighting battles courageously standing tall against adversaries challenges confrontations conflicts clashes struggles wars warfare skirmishes encounters incidents occurrences events happening constantly unfolding continuously evolving perpetually transforming dynamically changing rapidly adapting swiftly responding effectively efficiently accurately precisely correctly thoroughly completely comprehensively fully holistically wholly entirely absolutely definitely positively undeniably indisputably irrefutably unequivocally certainly assured sure guaranteed secure safe sound protected secured locked shut tight sealed closed fastened firm fixed anchored bolted nailed screwed strapped tied knotted bound chained chain linked connected joined attached coupled combined merged fused integrated synthesized blended amalgamated conjoined allied affiliated partnered cooperative collaborative coordinated joint venture teamwork effort collaboration partnership synergistic ensemble group gatherings meetups get togethers hangouts reunions picnics barbecues potlucks cookouts feasts fiestas banquets dinners suppers luncheons breakfasts teas coffees sodas juices smoothies milkshakes slushies popsicles ice creams gelatos sorbets frozen yogurts fruit drinks water soda mineral waters sparkling lemonades softdrinks energy boosters caffeinated espresso coffee tea latte mocha frappuccino macchiato americano brewed hot black cold filtered bottled canned powder concentrates instant mix packets syrups sweeteners condiments spices ingredients utensils appliances equipment tools accessories supplies materials resources inventory stockpile surplus excess abundance overflow copious plentiful plenty wealthy rich affluent opulent luxury extravagant lavish sumptuous indulgence pleasure enjoyment happiness joy delight satisfaction fulfillment gratification appreciation thankful acknowledgment recognition praise compliment admiration esteem honor dignity reverence worship devotion service assistance aid support relief comfort solace consolation encouragement motivation drive ambition aspiration dream vision fantasy imagination reality truth fact certainty assurance security confidence reliability dependability accountability responsibility integrity principle justice fairness equity equality opportunity chance prospect potential possibility likelihood probability outcome consequence result effect impact influence significance importance value worth benefit advantage profit gain reward prize award bonus gift present surprise treat occasion birthday anniversary graduation promotion career advancement job offer raise salary increase paycheck checkbook cheque bank deposit withdrawal ATM machine pin number PIN password code key combination passcode authentication identity verification confirmation approval consent agreement contract document letter signature receipt notice bulletin message communication feedback response reply answer question query inquiry investigation report study research paper thesis dissertation essay exam test quiz survey poll opinion polls public hearing testimony deposition declaration statement claim assertion allegation accusation charge complaint grievance lawsuit case trial courtroom proceedings session meeting assembly conference seminar workshop lecture course class subject area discipline field department office building location place time date year month week period duration length distance measure quantity amount money price cost fee expense income tax rate percentage interest yield return capital asset liability debt obligation duty burden load weight mass volume density speed acceleration velocity momentum frequency pitch angle elevation altitude height depth level surface temperature heat degree Celsius Fahrenheit Kelvin absolute zero freeze boil evaporate liquid vapour gas molecules atom electron neutron proton nucleus particle subatomic elementary composite complex system structure mechanism function operation process flow circulation cycle reaction interaction dynamics stability equilibrium balance equation formula theorem proof corollary lemma axiom definition concept theory hypothesis proposition conclusion inference deduction logic reasoning argument rationale explanation purpose objective aim intention motive desire wish want need requirement demand necessity condition causality correlation relationship connection association link attachment dependency dependence independence autonomy self awareness consciousness mind brain intelligence cognitive thinking thought reflection introspection meditation contemplation philosophy metaphysics epistemology ontology ethics morals virtue character behavior conduct manners etiquette politeness\n",
+        "generation_time": 80.68221235275269,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[USER_NAME]\nSubject: Special Coverage: Live Election Night Analysis and Results!\n\nDear [RECEIVER_NAME],\n\nWe are thrilled to share with you our special coverage of the live election night analysis and results! Our team has been hard at work overnight, analyzing the latest polls, data, and news to bring you the most accurate and insightful analysis.\n\nAs the votes are being counted, we are closely monitoring the race between President Trump and Democratic nominee Joe Biden. We will be providing you with real-time updates, analysis, and predictions throughout the night.\n\nIn addition to our live coverage, we have also compiled a comprehensive analysis of the key issues that will shape the outcome of this election. From healthcare to climate change, education to immigration, we have covered every angle to provide you with a well-rounded perspective.\n\nTo make sure you stay informed, we will be sharing exclusive interviews with leading experts, policy makers, and voters in the coming days.\n\nBut enough about us, let's talk about you!\n\nOur team has identified some of the top donors who have contributed the most to both candidates. We have also tracked the impact of these contributions on the campaign trail and the final vote count.\n\nAs you can see, our coverage is not just limited to the headlines. We have taken the time to dig deep into the issues and provide you with a detailed analysis of how they may affect the outcome of the election.\n\nDon't miss out on this incredible opportunity to stay informed and stay engaged!\n\nJoin us for a special live coverage of the election night analysis and results.\n\nBest regards,\n\n[Your Name]\n\n[Your Title]\n\n[Your Organization]\n",
+        "generation_time": 20.626178979873657,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key themes 'real-time analysis', 'expert commentary', and 'comprehensive coverage'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email present the problem as an implied complexity of election results needing expert interpretation?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "content"
+        },
+        {
+          "question": "Does the email propose 'live expert analysis and interactive tools' as the solution approach?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email include a time-sensitive CTA with multiple engagement options (watch/participate/share) in the closing paragraph?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language markers like 'urgent', 'excited', or 'anticipatory'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include specific phrases such as 'Don't miss', 'critical insights', or 'historic night'?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style consistently persuasive and engaging?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the formality level maintained as semi-formal throughout the email?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email open with a direct headline emphasizing the event's significance?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email follow the information flow: context → value proposition → logistical details → urgency-driven CTA?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "structure"
+        },
+        {
+          "question": "Is the word count approximately between 150-250 words?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email include formatting elements like bold headers, bullet points, and hyperlinked CTAs?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 150.00042176246643,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.7222222222222222,
+        "ranking_score": 0.7222222222222222,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'real-time analysis', 'expert commentary', and 'comprehensive coverage'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem as an implied complexity of election results needing expert interpretation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose 'live expert analysis and interactive tools' as the solution approach?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email include a time-sensitive CTA with multiple engagement options (watch/participate/share) in the closing paragraph?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'urgent', 'excited', or 'anticipatory'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include specific phrases such as 'Don't miss', 'critical insights', or 'historic night'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style consistently persuasive and engaging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Is the formality level maintained as semi-formal throughout the email?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a direct headline emphasizing the event's significance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the information flow: context → value proposition → logistical details → urgency-driven CTA?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Is the word count approximately between 150-250 words?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email include formatting elements like bold headers, bullet points, and hyperlinked CTAs?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 4,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively presents live analysis with an expert team and a persuasive, semi-formal tone. It offers clear logistical details, a direct headline, a time-sensitive call-to-action with options to watch and share, and meets the target word count.",
+        "weaknesses": "The email does not clearly outline the complexity of election results, lacks a mention of interactive tools as part of the solution, does not include specified phrases like 'Don't miss' or 'historic night', and misses formatting enhancements such as bold headers or bullet points.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 33.873279333114624,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'real-time analysis', 'expert commentary', and 'comprehensive coverage'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem as an implied complexity of election results needing expert interpretation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose 'live expert analysis and interactive tools' as the solution approach?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email include a time-sensitive CTA with multiple engagement options (watch/participate/share) in the closing paragraph?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'urgent', 'excited', or 'anticipatory'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include specific phrases such as 'Don't miss', 'critical insights', or 'historic night'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style consistently persuasive and engaging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Is the formality level maintained as semi-formal throughout the email?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a direct headline emphasizing the event's significance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the information flow: context → value proposition → logistical details → urgency-driven CTA?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Is the word count approximately between 150-250 words?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email include formatting elements like bold headers, bullet points, and hyperlinked CTAs?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively presents live analysis with an expert team and a persuasive, semi-formal tone. It offers clear logistical details, a direct headline, a time-sensitive call-to-action with options to watch and share, and meets the target word count.",
+          "weaknesses": "The email does not clearly outline the complexity of election results, lacks a mention of interactive tools as part of the solution, does not include specified phrases like 'Don't miss' or 'historic night', and misses formatting enhancements such as bold headers or bullet points.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 33.873279333114624,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.7222222222222222,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 4,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 101.62070655822754,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.6388888888888888,
+        "ranking_score": 0.6388888888888888,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'real-time analysis', 'expert commentary', and 'comprehensive coverage'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem as an implied complexity of election results needing expert interpretation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose 'live expert analysis and interactive tools' as the solution approach?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email include a time-sensitive CTA with multiple engagement options (watch/participate/share) in the closing paragraph?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'urgent', 'excited', or 'anticipatory'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include specific phrases such as 'Don't miss', 'critical insights', or 'historic night'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style consistently persuasive and engaging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Is the formality level maintained as semi-formal throughout the email?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a direct headline emphasizing the event's significance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the information flow: context → value proposition → logistical details → urgency-driven CTA?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the word count approximately between 150-250 words?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email include formatting elements like bold headers, bullet points, and hyperlinked CTAs?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 2,
+          "high": 3,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email demonstrates persuasive, engaging, and semi-formal language (criteria 5, 6, 7, 8) and includes a direct headline and a logical information flow (criteria 9 and 10).",
+        "weaknesses": "It omits several key content and technical elements such as explicit mention of 'expert commentary', interactive tools, complete multiple engagement CTAs, proper word count, and comprehensive formatting elements including bold headers (criteria 1, 2, 3, 4, 11, 12).",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 44.43366662661234,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'real-time analysis', 'expert commentary', and 'comprehensive coverage'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem as an implied complexity of election results needing expert interpretation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose 'live expert analysis and interactive tools' as the solution approach?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email include a time-sensitive CTA with multiple engagement options (watch/participate/share) in the closing paragraph?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'urgent', 'excited', or 'anticipatory'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include specific phrases such as 'Don't miss', 'critical insights', or 'historic night'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style consistently persuasive and engaging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Is the formality level maintained as semi-formal throughout the email?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a direct headline emphasizing the event's significance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the information flow: context → value proposition → logistical details → urgency-driven CTA?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the word count approximately between 150-250 words?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email include formatting elements like bold headers, bullet points, and hyperlinked CTAs?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email demonstrates persuasive, engaging, and semi-formal language (criteria 5, 6, 7, 8) and includes a direct headline and a logical information flow (criteria 9 and 10).",
+          "weaknesses": "It omits several key content and technical elements such as explicit mention of 'expert commentary', interactive tools, complete multiple engagement CTAs, proper word count, and comprehensive formatting elements including bold headers (criteria 1, 2, 3, 4, 11, 12).",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 44.43366662661234,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6388888888888888,
+          "priority_breakdown": {
+            "very high": 2,
+            "high": 3,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 133.3018720149994,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.6111111111111112,
+        "ranking_score": 0.6111111111111112,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'real-time analysis', 'expert commentary', and 'comprehensive coverage'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem as an implied complexity of election results needing expert interpretation?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose 'live expert analysis and interactive tools' as the solution approach?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email include a time-sensitive CTA with multiple engagement options (watch/participate/share) in the closing paragraph?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'urgent', 'excited', or 'anticipatory'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include specific phrases such as 'Don't miss', 'critical insights', or 'historic night'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style consistently persuasive and engaging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Is the formality level maintained as semi-formal throughout the email?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a direct headline emphasizing the event's significance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the information flow: context → value proposition → logistical details → urgency-driven CTA?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the word count approximately between 150-250 words?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email include formatting elements like bold headers, bullet points, and hyperlinked CTAs?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 3,
+          "medium": 4,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively uses persuasive and engaging language, maintains a semi-formal tone, follows a clear flow from context to CTA, and includes emotional markers along with specific call-to-action phrases.",
+        "weaknesses": "It does not explicitly mention all key themes (real-time analysis, expert commentary, comprehensive coverage), lacks the inclusion of interactive tools in its solution approach, offers only a single CTA option without alternatives, and is missing enhanced formatting elements.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 48.26808706919352,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'real-time analysis', 'expert commentary', and 'comprehensive coverage'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem as an implied complexity of election results needing expert interpretation?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose 'live expert analysis and interactive tools' as the solution approach?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email include a time-sensitive CTA with multiple engagement options (watch/participate/share) in the closing paragraph?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'urgent', 'excited', or 'anticipatory'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include specific phrases such as 'Don't miss', 'critical insights', or 'historic night'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style consistently persuasive and engaging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Is the formality level maintained as semi-formal throughout the email?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a direct headline emphasizing the event's significance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the information flow: context → value proposition → logistical details → urgency-driven CTA?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the word count approximately between 150-250 words?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email include formatting elements like bold headers, bullet points, and hyperlinked CTAs?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively uses persuasive and engaging language, maintains a semi-formal tone, follows a clear flow from context to CTA, and includes emotional markers along with specific call-to-action phrases.",
+          "weaknesses": "It does not explicitly mention all key themes (real-time analysis, expert commentary, comprehensive coverage), lacks the inclusion of interactive tools in its solution approach, offers only a single CTA option without alternatives, and is missing enhanced formatting elements.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 48.26808706919352,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6111111111111112,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 3,
+            "medium": 4,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 144.80501580238342,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.4444444444444444,
+        "ranking_score": 0.4444444444444444,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'real-time analysis', 'expert commentary', and 'comprehensive coverage'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem as an implied complexity of election results needing expert interpretation?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose 'live expert analysis and interactive tools' as the solution approach?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email include a time-sensitive CTA with multiple engagement options (watch/participate/share) in the closing paragraph?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'urgent', 'excited', or 'anticipatory'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include specific phrases such as 'Don't miss', 'critical insights', or 'historic night'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style consistently persuasive and engaging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Is the formality level maintained as semi-formal throughout the email?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a direct headline emphasizing the event's significance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the information flow: context → value proposition → logistical details → urgency-driven CTA?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the word count approximately between 150-250 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email include formatting elements like bold headers, bullet points, and hyperlinked CTAs?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully incorporates key themes with real-time elements, expert commentary, and persuasive language; it maintains a semi-formal tone, utilizes emotional cues and specific phrases, and begins with an impactful headline.",
+        "weaknesses": "The email lacks mention of interactive tools, does not include a time-sensitive CTA with multiple engagement options, fails to strictly follow the detailed information flow, is shorter than the desired word count, and omits advanced formatting elements.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 40.833227475484215,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'real-time analysis', 'expert commentary', and 'comprehensive coverage'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem as an implied complexity of election results needing expert interpretation?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose 'live expert analysis and interactive tools' as the solution approach?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email include a time-sensitive CTA with multiple engagement options (watch/participate/share) in the closing paragraph?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'urgent', 'excited', or 'anticipatory'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include specific phrases such as 'Don't miss', 'critical insights', or 'historic night'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style consistently persuasive and engaging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Is the formality level maintained as semi-formal throughout the email?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a direct headline emphasizing the event's significance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the information flow: context → value proposition → logistical details → urgency-driven CTA?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the word count approximately between 150-250 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email include formatting elements like bold headers, bullet points, and hyperlinked CTAs?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully incorporates key themes with real-time elements, expert commentary, and persuasive language; it maintains a semi-formal tone, utilizes emotional cues and specific phrases, and begins with an impactful headline.",
+          "weaknesses": "The email lacks mention of interactive tools, does not include a time-sensitive CTA with multiple engagement options, fails to strictly follow the detailed information flow, is shorter than the desired word count, and omits advanced formatting elements.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 40.833227475484215,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.4444444444444444,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 122.50029754638672,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.3888888888888889,
+        "ranking_score": 0.3888888888888889,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'real-time analysis', 'expert commentary', and 'comprehensive coverage'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem as an implied complexity of election results needing expert interpretation?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 3,
+            "description": "Does the email propose 'live expert analysis and interactive tools' as the solution approach?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email include a time-sensitive CTA with multiple engagement options (watch/participate/share) in the closing paragraph?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language markers like 'urgent', 'excited', or 'anticipatory'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include specific phrases such as 'Don't miss', 'critical insights', or 'historic night'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style consistently persuasive and engaging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Is the formality level maintained as semi-formal throughout the email?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email open with a direct headline emphasizing the event's significance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email follow the information flow: context → value proposition → logistical details → urgency-driven CTA?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Is the word count approximately between 150-250 words?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email include formatting elements like bold headers, bullet points, and hyperlinked CTAs?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully incorporates key themes such as real-time analysis, comprehensive coverage, and uses emotional language (thrilled) to engage the reader. It displays a persuasive and semi-formal tone, opens with a direct headline, and meets the approximate word count requirement.",
+        "weaknesses": "The email does not clearly present the problem of election complexity needing expert interpretation, lacks a mention of interactive tools, and fails to include a time-sensitive CTA with diverse engagement options. Additionally, it does not use specific urgency phrases (like 'Don't miss', 'critical insights', or 'historic night') and omits formatting elements such as bold headers, bullet points, and hyperlinked CTAs. It also does not fully follow the complete information flow, particularly with an urgency-driven closing CTA.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 38.56468407313029,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'real-time analysis', 'expert commentary', and 'comprehensive coverage'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem as an implied complexity of election results needing expert interpretation?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 3,
+              "description": "Does the email propose 'live expert analysis and interactive tools' as the solution approach?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email include a time-sensitive CTA with multiple engagement options (watch/participate/share) in the closing paragraph?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language markers like 'urgent', 'excited', or 'anticipatory'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include specific phrases such as 'Don't miss', 'critical insights', or 'historic night'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style consistently persuasive and engaging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Is the formality level maintained as semi-formal throughout the email?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email open with a direct headline emphasizing the event's significance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email follow the information flow: context → value proposition → logistical details → urgency-driven CTA?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Is the word count approximately between 150-250 words?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email include formatting elements like bold headers, bullet points, and hyperlinked CTAs?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully incorporates key themes such as real-time analysis, comprehensive coverage, and uses emotional language (thrilled) to engage the reader. It displays a persuasive and semi-formal tone, opens with a direct headline, and meets the approximate word count requirement.",
+          "weaknesses": "The email does not clearly present the problem of election complexity needing expert interpretation, lacks a mention of interactive tools, and fails to include a time-sensitive CTA with diverse engagement options. Additionally, it does not use specific urgency phrases (like 'Don't miss', 'critical insights', or 'historic night') and omits formatting elements such as bold headers, bullet points, and hyperlinked CTAs. It also does not fully follow the complete information flow, particularly with an urgency-driven closing CTA.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 38.56468407313029,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.3888888888888889,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 115.69493389129639,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 1,
+      "score": 0.7222222222222222
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 2,
+      "score": 0.6388888888888888
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 3,
+      "score": 0.6111111111111112
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 4,
+      "score": 0.4444444444444444
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 5,
+      "score": 0.3888888888888889
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 898.5052714347839,
+    "success": true,
+    "errors": []
+  }
+}

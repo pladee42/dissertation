@@ -1,0 +1,1186 @@
+{
+  "session_id": "dfcf5427-007b-4a5f-907f-5c16653495e3",
+  "timestamp": "2025-08-06T19:29:10.000172",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0148",
+    "name": "How Public Media is Combating Misinformation in Your Community"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive – reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals – about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about How Public Media is Combating Misinformation in Your Community"
+  },
+  "models_used": {
+    "email_models": [
+      "llama-3-8b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "vicuna-7b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "[Your Email]\nSubject: How Public Media is Combating Misinformation in Your Community\n\nDear \\[Name],\n\nMisinformation can spread quickly, especially when it comes to local news. But what happens when false information affects your community?\n\nAt KQED, we're dedicated to providing accurate and trustworthy reporting that keeps you informed about the issues that matter most. Our team of experienced journalists works tirelessly to fact-check and verify every story before sharing it with our audience.\n\nBut misinformation isn't just a problem for us – it's a challenge for communities everywhere. That's why we're committed to fighting back against misinformation and promoting media literacy in our region.\n\nBy supporting public media like KQED, you're helping us provide the critical information people need to make informed decisions about their lives and their communities.\n\nSo how can you join the fight? Here are three ways to get involved:\n\n1\\. Stay up-to-date on the latest news and information by following us on social media.\n\n2\\. Share credible sources with friends and family who may be spreading misinformation.\n\n3\\. Consider making a donation to support our work in combating misinformation.\n\nTogether, we can create a more informed and engaged community.\n\n**Support public media today!**\n\n\\[Donation link]\\[Social media links]\n\nBest,\nThe KQED Team\n",
+        "generation_time": 87.63370633125305,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your_Email_Address]\nSubject Line: How Public Media is Combating Misinformation in Your Community\n\nDear [Recipient],\n\nAs a trusted source of news and information, we at Public Media strive to provide our audience with accurate and reliable coverage that informs, educates, and entertains. Unfortunately, misinformation has become all too common these days, especially during times of crisis such as the ongoing pandemic.\n\nThat's why we're excited to announce that Public Media is taking concrete steps to combat misinformation in your community by providing fact-checking services, producing investigative journalism, and amplifying voices of truth.\n\nHere are just a few examples of how we're working to make sure that what you hear and read is trustworthy:\n\n- Our team of journalists and researchers have been rigorously trained to spot false claims and errors in reporting. They've developed specialized tools to quickly debunk rumors and clarify misinformation.\n- We've partnered with local organizations to create a network of fact-checkers who can verify the accuracy of stories before they go live.\n- Our flagship program, FactCheck.org, provides comprehensive fact-checking services across a range of topics, including politics, social media, and health.\n\nWe believe that every individual deserves access to accurate and trustworthy information, regardless of where they live or their political beliefs. That's why we're committed to doing everything we can to combat misinformation and promote factual discourse.\n\nSo if you want to stay informed about how Public Media is combating misinformation in your community, please visit our website ([WEBSITE_URL]) to learn more about our programs and initiatives.\n\nThank you for being part of this important conversation.\n\nSincerely,\n\n[Your_Name]\nPublic Media\n",
+        "generation_time": 104.61008667945862,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join Us Against Fake News – Become Our Champion!\n\nDear [Recipient Name],\n\nImagine waking up every day unsure if what you read online was true—this scenario isn’t just hypothetical; misinformation has become our community’s silent adversary. At Public Media Initiative, we recognize that trustworthy information forms the bedrock of informed citizenship. But when falsehoods spread like wildfire across social media platforms, they erode this foundation faster than ever before.\n\nThe challenge lies within complex algorithms designed by tech giants which prioritize sensationalism over accuracy. As these stories go viral, their truthfulness becomes less important compared to views and clicks. This creates fertile ground where fake news thrives unchecked. It affects elections, public health decisions, and even personal relationships — all because someone didn't fact-check thoroughly enough. The consequences? A society increasingly divided along lines drawn out of thin air.\n\nThat's why at PMI, dedicated teams work tirelessly around the clock identifying potential hoaxes using advanced analytics tools while partnering closely with experts who can verify facts quickly but accurately. We also educate communities through interactive webinars, digital literacy programs tailored specifically towards different age groups including seniors prone to scams targeting them directly via phone calls masquerading as legitimate entities such as banks etc.. By equipping people with critical thinking skills alongside reliable resources about how journalistic integrity works today versus yesterday provides everyone involved access needed knowledge necessary discernment between real vs fabricated narratives presented daily both offline & online mediums alike . Furthermore ,we have developed innovative partnerships involving local schools teachers whom teach students research methods helping detect fallacies early thus preventing further dissemination once identified initially thereby limiting overall reach caused negative impact later downstream paths leading toward societal polarization eventually resulting into civil strife situations never seen previously throughout history worldwide due sheer volume alone no longer limited solely geographically anymore globally spanning continents entire planet earth essentially making global village concept somewhat obsolete nowadays given current technological advancements available everywhere regardless national boundaries existing currently amongst nations present already established international organizations working together collaboratively solving problems collectively tackling issues jointly seeking solutions universally applicable wherever possible whenever required irrespective location specificity associated primarily related mainly regional concerns stemming locally originating nationally however still remaining relevant internationally nonetheless maintainable consistently maintained period long term sustainably implemented practiced regularly ensuring continued effectiveness perpetually preserved permanently safeguarded forever protected always secure under constant vigilance exercised diligently enforced strictly adhered followed religiously observed meticulously monitored constantly updated continuously improved upon refined repeatedly revised enhanced progressively evolved gradually expanded broadened comprehensively understood deeply appreciated fully acknowledged wholeheartedly embraced enthusiastically celebrated widely accepted commonly recognized openly discussed freely shared confidentially kept secret privately held safely stored carefully guarded zealously defended passionately championed ardently advocated fervently promoted relentlessly pursued ceaselessly fought valiantly resisted vehemently opposed staunchly combatted stubbornly contested aggressively counteracted actively engaged effectively managed efficiently controlled responsibly handled professionally executed competently performed successfully completed triumphantly won decisively defeated conclusively resolved definitively settled finally determined absolutely decided definitely agreed entirely certain certainly sure surely reliably dependable steadfastly firmly solidified strongly bolstered robustly reinforced sturdily supported soundly backed well prepared adequately ready sufficiently sufficient reasonably rational logically coherently systematically methodologically scientifically precisely quantifiably measurably verifiable demonstrably provable indisputably undeniable beyond doubt unequivocally clear cut transparent evident self explanatory straightforward simple easily understandable readily accessible convenient handy portable lightweight compact easy carry small size manageable transportable mobile movable flexible versatile adaptable adjustable customizable modular interchangeable scalable expandable extensible configurable programmable automated robotic intelligent smart capable functional operational practical usable useful helpful beneficial advantageous profitable lucrative productive efficient effective economical affordable cost saving money wise budget conscious financially responsible environmentally friendly green eco-friendly energy conserving low carbon footprint waste reduction recycle reuse repurpose compost biodegradable decompose natural organic chemical free pesticide/herbicide free GMO free vegan vegetarian plant-based animal crueltyfree humane ethical fair trade certified labor practices safe food quality assurance standards regulations laws requirements guidelines policies procedures protocols documentation records evidence testimony witness accounts testimonies statements affidavits sworn declarations depositions transcripts court documents judgments rulings orders injunctions decrees mandates statutes acts bills resolutions ordinances codes charters bylaws rules manuals instructions booklets pamphlets leaflets flyers posters stickers magnets badges buttons ribbons medals awards certificates plaques trophies cups mugs plates glassware china dishes silverware utensils cookware kitchen appliances furniture decorations artwork paintings photographs videos films music audio recordings songs lyrics poems essays articles books chapters sections paragraphs sentences phrases clauses conjunctions prepositions pronouns nouns verbs adverbs adjectives determiners connectors coordinators subordinators punctuation marks symbols numbers letters characters digits numerals units measures quantities amounts proportions percentages fractions parts wholes components elements molecules atoms particles waves frequencies intensities speeds velocities distances times durations intervals moments lengths heights depths widths breadths thicknesses weights masses densities pressures temperatures volumes energies forces motions impulses accelerations trajectories courses actions processes events happenings incidents occurrences phenomena effects causes reasons results purposes intentions meanings significances interpretations understanding clarifications elucidations definitions descriptions summarizations abstracts generalizations particularisms specialties individualisms groupings classifications categories taxonomies divisions separations segregations partitions partitionings allocations assignments distributions distributes distributables distributionss divides divide distributed dividend division divisor diversification differencing differences differentiator differentials divergences deviation deviant deviance development evolution growth expansion proliferation multiplication multiplicand multiples multitude mutualisation mutualist mutualists mutualizing multiply multiplied products quotients quota quotas qualitative qualities quantity quanquantum quantumian quanta qwerty ubiquitious universal uniformitarian utilitarian utility utilizability utilisateur uses usersusceptibility susceptibilities suspicion suspects syllogism syntax synonyms synecdoche symphony synchronicity synthesis systems theory typology type types typing tyrannosaurus triceratops tripod triangle trigonometry tribulation treason trial treatises tremendum turbulence turnabout twins tympanum tumultuous union unique unity varieties variation variations variants vacuums vaccine validation validator validatevalve vanilla variegated variance varying variables vernacular verbosity ventilation vertex volcano vulcanologist vocabulary voxel vortex wafer waitress waterfall wavelet wayward weather warning welder welcome whisper whispers whitewash windmill windows windowp\n",
+        "generation_time": 64.67204093933105,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[USER_NAME]\nSubject: How Public Media is Combatting Misinformation in Your Community\n\nDear [RECEIVER_NAME],\n\nWe hope this email finds you well! We wanted to reach out to let you know about our exciting new project, which we believe will have a significant impact on your community. Our mission is to combat misinformation and promote fact-based news and information in your area.\n\nAs you may know, misinformation has become increasingly prevalent in recent years, particularly during times of political uncertainty and social unrest. This has led to a rise in conspiracy theories, false claims, and disinformation that can have serious consequences.\n\nPublic media plays a vital role in combating these issues by providing accurate and trustworthy news and information to the public. By partnering with us, you will be able to access a range of resources and programs designed to address the challenges facing your community.\n\nOur first project is focused on providing educational materials and resources to schools, including curriculum development, teacher training, and digital literacy workshops. This initiative is crucial because many students lack access to reliable information, and they are at risk of being misled by misinformation.\n\nIn addition, we plan to launch a community-focused program that provides regular updates and analysis on local events, such as elections, protests, and natural disasters. This will help citizens make informed decisions and stay informed about the issues affecting their communities.\n\nWe understand that your time is valuable, so we aim to provide clear, concise, and accurate information that is easy to digest. Our team is comprised of experienced journalists and fact-checkers who are dedicated to providing the highest quality reporting.\n\nWe invite you to join us in this important effort to combat misinformation and promote fact-based news and information in your community. If you would like to learn more about our project, please visit our website or contact us directly.\n\nThank you for your consideration. We look forward to hearing from you soon.\n\nBest regards,\n\n[Your Name]\n\n[Your Title]\n\n[Your Organization]\n",
+        "generation_time": 15.968719005584717,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Join us in fighting misinformation!\n\nDear [Recipient],\n\nDo you\n",
+        "generation_time": 32.31181788444519,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key themes 'media literacy', 'local impact', and 'trusted information'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Is the problem of misinformation presented within the context of community impact?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the solution approach describe concrete initiatives with specific tools or resources?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language markers such as 'concerned', 'reassuring', and 'determined'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style informative and community-focused?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the formality level semi-formal (professional but approachable)?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email follow the information flow pattern: problem → solution → community impact → engagement request?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email have exactly 4 paragraphs?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the opening include a friendly greeting with immediate topic relevance?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email include key phrases such as 'trusted source', 'community impact', 'media literacy', and 'local journalism'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email primarily use medium-length sentences (15-25 words) with clear transitions?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use bold headers for key programs and bulleted lists for initiatives?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 321.36795711517334,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.6,
+        "ranking_score": 0.6,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'media literacy', 'local impact', and 'trusted information'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem of misinformation presented within the context of community impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach describe concrete initiatives with specific tools or resources?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'concerned', 'reassuring', and 'determined'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style informative and community-focused?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level semi-formal (professional but approachable)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the information flow pattern: problem → solution → community impact → engagement request?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the opening include a friendly greeting with immediate topic relevance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases such as 'trusted source', 'community impact', 'media literacy', and 'local journalism'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email primarily use medium-length sentences (15-25 words) with clear transitions?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email use bold headers for key programs and bulleted lists for initiatives?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 4,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively includes key themes such as media literacy and community impact, maintains an informative and community-focused tone, uses a semi-formal style, follows the overall information flow pattern, and begins with a friendly greeting.",
+        "weaknesses": "The solution lacks concrete, specific initiatives with clear tools or resources, does not incorporate explicit emotional markers, exceeds the four-paragraph structure, omits certain key phrases (e.g., 'local journalism' and explicit 'trusted source'), primarily uses shorter sentences rather than medium-length ones, and does not include bold headers despite using a bulleted list.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 31.08351755142212,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.37142857142857144": [
+              "phi-3-mini-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'media literacy', 'local impact', and 'trusted information'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem of misinformation presented within the context of community impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach describe concrete initiatives with specific tools or resources?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'concerned', 'reassuring', and 'determined'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style informative and community-focused?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level semi-formal (professional but approachable)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the information flow pattern: problem → solution → community impact → engagement request?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the opening include a friendly greeting with immediate topic relevance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases such as 'trusted source', 'community impact', 'media literacy', and 'local journalism'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email primarily use medium-length sentences (15-25 words) with clear transitions?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email use bold headers for key programs and bulleted lists for initiatives?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively includes key themes such as media literacy and community impact, maintains an informative and community-focused tone, uses a semi-formal style, follows the overall information flow pattern, and begins with a friendly greeting.",
+          "weaknesses": "The solution lacks concrete, specific initiatives with clear tools or resources, does not incorporate explicit emotional markers, exceeds the four-paragraph structure, omits certain key phrases (e.g., 'local journalism' and explicit 'trusted source'), primarily uses shorter sentences rather than medium-length ones, and does not include bold headers despite using a bulleted list.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 31.08351755142212,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 4,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 93.25131344795227,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.45714285714285713,
+        "ranking_score": 0.45714285714285713,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'media literacy', 'local impact', and 'trusted information'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem of misinformation presented within the context of community impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach describe concrete initiatives with specific tools or resources?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'concerned', 'reassuring', and 'determined'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style informative and community-focused?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level semi-formal (professional but approachable)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the information flow pattern: problem → solution → community impact → engagement request?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening include a friendly greeting with immediate topic relevance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases such as 'trusted source', 'community impact', 'media literacy', and 'local journalism'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email primarily use medium-length sentences (15-25 words) with clear transitions?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use bold headers for key programs and bulleted lists for initiatives?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 4,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively addresses community impact (criteria 2, 5, 9) and lays out concrete initiatives with specific tools and resources (criteria 3). It also maintains a semi-formal and informative tone with medium-length sentences (criteria 6 and 11).",
+        "weaknesses": "The email falls short on including all specified key themes (missing explicit 'media literacy' and 'local journalism' in criteria 1 and 10), lacks the requested emotional language markers (criterion 4), does not fully follow the desired information flow pattern including an engagement request (criterion 7), does not confirm exactly 4 paragraphs (criterion 8), and does not use bold headers (criterion 12).",
+        "consistency_confidence": 1.0,
+        "average_response_time": 34.717321713765465,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.37142857142857144": [
+              "phi-3-mini-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'media literacy', 'local impact', and 'trusted information'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem of misinformation presented within the context of community impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach describe concrete initiatives with specific tools or resources?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'concerned', 'reassuring', and 'determined'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style informative and community-focused?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level semi-formal (professional but approachable)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the information flow pattern: problem → solution → community impact → engagement request?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening include a friendly greeting with immediate topic relevance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases such as 'trusted source', 'community impact', 'media literacy', and 'local journalism'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email primarily use medium-length sentences (15-25 words) with clear transitions?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use bold headers for key programs and bulleted lists for initiatives?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively addresses community impact (criteria 2, 5, 9) and lays out concrete initiatives with specific tools and resources (criteria 3). It also maintains a semi-formal and informative tone with medium-length sentences (criteria 6 and 11).",
+          "weaknesses": "The email falls short on including all specified key themes (missing explicit 'media literacy' and 'local journalism' in criteria 1 and 10), lacks the requested emotional language markers (criterion 4), does not fully follow the desired information flow pattern including an engagement request (criterion 7), does not confirm exactly 4 paragraphs (criterion 8), and does not use bold headers (criterion 12).",
+          "consistency_confidence": 1.0,
+          "average_response_time": 34.717321713765465,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.45714285714285713,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 4,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 104.15259122848511,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.37142857142857144,
+        "ranking_score": 0.37142857142857144,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'media literacy', 'local impact', and 'trusted information'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem of misinformation presented within the context of community impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach describe concrete initiatives with specific tools or resources?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'concerned', 'reassuring', and 'determined'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style informative and community-focused?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level semi-formal (professional but approachable)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the information flow pattern: problem → solution → community impact → engagement request?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening include a friendly greeting with immediate topic relevance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases such as 'trusted source', 'community impact', 'media literacy', and 'local journalism'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email primarily use medium-length sentences (15-25 words) with clear transitions?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use bold headers for key programs and bulleted lists for initiatives?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 3,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively addresses community impact (Criterion 2), maintains an informative, community-focused tone (Criterion 5), and achieves a semi-formal style (Criterion 6). It also includes a friendly greeting (Criterion 9) and generally uses medium-length sentences with clear transitions (Criterion 11).",
+        "weaknesses": "It omits key themes like 'media literacy', 'local impact', and 'trusted information' (Criterion 1), fails to present a concrete solution with specific initiatives (Criterion 3), does not use the specified emotional language markers (Criterion 4), does not complete the desired information flow including a full solution and engagement request (Criterion 7), consists of fewer than 4 paragraphs (Criterion 8), omits required key phrases (Criterion 10), and lacks the use of bold headers and bulleted lists (Criterion 12).",
+        "consistency_confidence": 1.0,
+        "average_response_time": 28.618392546971638,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.37142857142857144": [
+              "phi-3-mini-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'media literacy', 'local impact', and 'trusted information'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem of misinformation presented within the context of community impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach describe concrete initiatives with specific tools or resources?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'concerned', 'reassuring', and 'determined'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style informative and community-focused?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level semi-formal (professional but approachable)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the information flow pattern: problem → solution → community impact → engagement request?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening include a friendly greeting with immediate topic relevance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases such as 'trusted source', 'community impact', 'media literacy', and 'local journalism'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email primarily use medium-length sentences (15-25 words) with clear transitions?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use bold headers for key programs and bulleted lists for initiatives?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively addresses community impact (Criterion 2), maintains an informative, community-focused tone (Criterion 5), and achieves a semi-formal style (Criterion 6). It also includes a friendly greeting (Criterion 9) and generally uses medium-length sentences with clear transitions (Criterion 11).",
+          "weaknesses": "It omits key themes like 'media literacy', 'local impact', and 'trusted information' (Criterion 1), fails to present a concrete solution with specific initiatives (Criterion 3), does not use the specified emotional language markers (Criterion 4), does not complete the desired information flow including a full solution and engagement request (Criterion 7), consists of fewer than 4 paragraphs (Criterion 8), omits required key phrases (Criterion 10), and lacks the use of bold headers and bulleted lists (Criterion 12).",
+          "consistency_confidence": 1.0,
+          "average_response_time": 28.618392546971638,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.37142857142857144,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 3,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 85.85579037666321,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.37142857142857144,
+        "ranking_score": 0.37142857142857144,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'media literacy', 'local impact', and 'trusted information'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem of misinformation presented within the context of community impact?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach describe concrete initiatives with specific tools or resources?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'concerned', 'reassuring', and 'determined'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style informative and community-focused?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level semi-formal (professional but approachable)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the information flow pattern: problem → solution → community impact → engagement request?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the opening include a friendly greeting with immediate topic relevance?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases such as 'trusted source', 'community impact', 'media literacy', and 'local journalism'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email primarily use medium-length sentences (15-25 words) with clear transitions?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use bold headers for key programs and bulleted lists for initiatives?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 3,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively addresses community impact and maintains an informative, semi-formal tone with a friendly opening, structured into exactly four paragraphs and mostly medium-length sentences.",
+        "weaknesses": "It lacks explicit mention of key themes like media literacy and specific key phrases, does not provide concrete details of initiatives, omits emotional language markers and engagement request, and fails to use bold headers or bulleted lists as required.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 29.71160848935445,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.37142857142857144": [
+              "phi-3-mini-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'media literacy', 'local impact', and 'trusted information'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem of misinformation presented within the context of community impact?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach describe concrete initiatives with specific tools or resources?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'concerned', 'reassuring', and 'determined'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style informative and community-focused?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level semi-formal (professional but approachable)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the information flow pattern: problem → solution → community impact → engagement request?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the opening include a friendly greeting with immediate topic relevance?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases such as 'trusted source', 'community impact', 'media literacy', and 'local journalism'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email primarily use medium-length sentences (15-25 words) with clear transitions?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use bold headers for key programs and bulleted lists for initiatives?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively addresses community impact and maintains an informative, semi-formal tone with a friendly opening, structured into exactly four paragraphs and mostly medium-length sentences.",
+          "weaknesses": "It lacks explicit mention of key themes like media literacy and specific key phrases, does not provide concrete details of initiatives, omits emotional language markers and engagement request, and fails to use bold headers or bulleted lists as required.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 29.71160848935445,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.37142857142857144,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 3,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 89.13570404052734,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.0,
+        "ranking_score": 0.0,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'media literacy', 'local impact', and 'trusted information'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem of misinformation presented within the context of community impact?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach describe concrete initiatives with specific tools or resources?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'concerned', 'reassuring', and 'determined'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style informative and community-focused?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level semi-formal (professional but approachable)?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the information flow pattern: problem → solution → community impact → engagement request?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening include a friendly greeting with immediate topic relevance?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email include key phrases such as 'trusted source', 'community impact', 'media literacy', and 'local journalism'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email primarily use medium-length sentences (15-25 words) with clear transitions?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use bold headers for key programs and bulleted lists for initiatives?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email does include a subject line and a greeting, which is a minimal start for an email.",
+        "weaknesses": "The email is incomplete and fails to address all the required themes, context, structured content, emotional language, and specific formatting guidelines outlined in the checklist.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 20.40017096201579,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "phi-3-mini-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.37142857142857144": [
+              "phi-3-mini-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'media literacy', 'local impact', and 'trusted information'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem of misinformation presented within the context of community impact?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach describe concrete initiatives with specific tools or resources?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'concerned', 'reassuring', and 'determined'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style informative and community-focused?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level semi-formal (professional but approachable)?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the information flow pattern: problem → solution → community impact → engagement request?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening include a friendly greeting with immediate topic relevance?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email include key phrases such as 'trusted source', 'community impact', 'media literacy', and 'local journalism'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email primarily use medium-length sentences (15-25 words) with clear transitions?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use bold headers for key programs and bulleted lists for initiatives?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email does include a subject line and a greeting, which is a minimal start for an email.",
+          "weaknesses": "The email is incomplete and fails to address all the required themes, context, structured content, emotional language, and specific formatting guidelines outlined in the checklist.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 20.40017096201579,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.0,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 0,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 61.20134353637695,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 1,
+      "score": 0.6
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 2,
+      "score": 0.45714285714285713
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 3,
+      "score": 0.37142857142857144
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 4,
+      "score": 0.37142857142857144
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 5,
+      "score": 0.0
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 861.2038972377777,
+    "success": true,
+    "errors": []
+  }
+}

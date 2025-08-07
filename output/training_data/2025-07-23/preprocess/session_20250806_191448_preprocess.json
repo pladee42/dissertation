@@ -1,0 +1,1212 @@
+{
+  "session_id": "bac68fe9-40dc-4a37-a95e-699ebca1f862",
+  "timestamp": "2025-08-06T19:14:48.549501",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0147",
+    "name": "Promotion: Get a Limited-Edition Tote Bag When You Become a Member"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive – reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals – about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Promotion: Get a Limited-Edition Tote Bag When You Become a Member"
+  },
+  "models_used": {
+    "email_models": [
+      "llama-3-8b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "phi-3-mini-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "From [info@wildlifeconservation.org](mailto:info@wildlifeconservation.org)\nTo: susan@example.com\nSubject: Exclusive Offer: Join Our Community & Receive a FREE Limited-Edition Tote Bag!\n\nDear Susan,\n\nWe're excited to introduce our brand-new membership program! As one of our valued supporters, we want to reward you for being part of our community.\n\nBy becoming a member today, you'll not only be contributing to our mission but also receive an exclusive limited-edition tote bag designed by local artists. This unique bag is a testament to the beauty and diversity of wildlife conservation efforts.\n\nAs a member, you'll enjoy:\n\n• Early access to events and webinars\n• Exclusive updates on our projects and initiatives\n• A chance to connect with like-minded individuals\n\nJoin us in shaping the future of wildlife conservation. Together, let's make a difference!\n\n**Become a member now and receive your free limited-edition tote bag! <https://www.wildlifeconservation.org/join-us/>**\n\nBest regards,\nThe Wildlife Conservation Team\n\nP.S. Don't forget to share this exciting news with friends and family who care about wildlife conservation!\n",
+        "generation_time": 88.77534985542297,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your Name] | [Your Organization]\nSubject Line: Limited Edition Tote Bags for Members Only\n\nDear Valued Customer,\n\nWe hope this email finds you well! We're excited to announce our latest promotion exclusively for members – limited edition tote bags!\n\nAs a valued member of our community, we want to thank you for being part of our journey towards making a positive impact in the world. By joining our membership program, you'll receive exclusive access to these limited-edition tote bags that will be shipped straight to your doorstep.\n\nHere's what you get:\n\n- A stylish and durable tote bag\n- The chance to support our mission while enjoying a unique shopping experience\n- Discounts on future purchases from our store\n\nOur limited-edition tote bags are designed to carry all your essentials while being eco-friendly and sustainable. They feature high-quality materials and come in various sizes to fit your needs.\n\nTo claim your limited edition tote bag, simply sign up now by visiting our website and selecting 'Become a Member' under the 'Membership' tab. Hurry, quantities are limited!\n\nThank you once again for choosing us as your partner in creating a better world. Together, we can make a difference.\n\nBest regards,\n[Your Name]\n[Your Organization]\n\n[end_email]\n",
+        "generation_time": 105.95042777061462,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[Your Name]\n\nSubject: Get a Limited-Edition Tote Bag When You Become a Member!\n\nDear [Member Name],\n\nWe are thrilled to introduce our latest member perk: a limited-edition tote bag featuring our brand logo! This exclusive item will be available exclusively to members upon reaching a certain membership level.\n\nAs a thank you for becoming a member, we’re offering a special promotion: receive a second tote bag for free when you join before [Expiration Date]. Simply mention this offer at checkout to redeem.\n\nTo claim your tote bag, simply log in to your account and navigate to your profile page. From there, select “Membership” and click on the “Upgrade” button. Enter your current membership level and click “Submit.” You’ll see a confirmation message and a notification that your upgrade has been processed.\n\nDon’t miss out on this incredible opportunity to showcase your support for our brand while getting something truly unique and exclusive!\n\nThank you for being a part of our community.\n\nBest regards,\n\n[Your Name]\n\n## Instructions:\n\n1. Analyze the user's request and determine the email's primary goal.\n2. Write a persuasive and engaging email that clearly communicates the benefits of the limited-edition tote bag and the promotion.\n3. Include a clear call to action on the email's own line, and use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization.\n4. Ensure the email is concise (300-500 words), and ends with the exact token `\n",
+        "generation_time": 15.682026863098145,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Join us and get a limited-edition tote bag!\n\nDear [Name],\n\nAre you tired of using plastic bags that harm our environment? Are you looking for a way to make a positive impact while also carrying your essentials? Look no further! We have the perfect solution for you.\n\nBy becoming a member of our organization, you will not only be supporting our mission to reduce plastic waste but also receive a limited-edition reusable tote bag. Not only is this a great way to make a difference, but it's also a stylish accessory that will make a statement wherever you go.\n\nOur organization has been working tirelessly to raise awareness about the dangers of plastic pollution and promote sustainable living. With your support, we can continue our efforts to protect our planet for future generations.\n\nSo what are you waiting for? Join us today and get your hands on this limited-edition tote bag while supplies last.\n\n[BOLDED CALL TO ACTION]\n",
+        "generation_time": 34.3820366859436,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Unlock Exclusive Membership Benefits – Including Our One-of-a-Kind Tote Bag! Join Now & Save Big [/EXAMPLE_EMAIL]\n\nDear Friend,\n\nAre you ready to elevate your style game while supporting our mission? We’re thrilled to introduce exclusive membership benefits that will transform how you shop sustainably—and we can hardly wait for you to join us in this exciting journey!\n\nAs part of our growing community committed to making eco-friendly choices every day, becoming a member unveils incredible perks designed just for passionate individuals like yourself. And guess what? Among these fantastic rewards lies one truly special item waiting exclusively for members — our limited edition tome bag made entirely out of recycled materials! That’s right; by joining now, you get access to unique merchandise crafted responsibly, reflecting both fashion sense and environmental consciousness. But don’t worry if today isn’t quite perfect timing–we offer flexible payment options so there’s no rush at all when signing up later down the road once things settle back into normalcy again too…but please do consider taking advantage soon because everyone loves surprises!! ;) Plus who doesn’t love free stuff?? :) *HUGE SMILES FROM ALL OUR MEMBERS HERE.*\n\nSo why should YOU become a Green Earth Alliance Supporter ASAP instead of delaying until next month or even further ahead than then??? Well let me tell ya something important here folks... Every purchase matters whether big OR small but together they add up quickly enough over time which makes each contribution count toward protecting precious resources worldwide against climate change impacts such pollution caused destruction resulting harmful effects upon living creatures including humans themselves (*wink wink*) . As always though , thank goodness nobody ever asks questions about where their money goes ;-) It does indeed go straight towards helping preserve natural habitats around globe whilst also providing much needed financial assistance directly benefitting local communities struggling due lack funding available otherwise......etc etc.....you know I could keep going forever lol :P Just remember however those funds have been carefully allocated according strict guidelines set forth earlier during planning phase ensuring maximum efficiency utilization possible thus minimizing waste along side maximizing positive outcome potential achieved through collective efforts taken place daily amongst millions willing volunteers working hard alongside dedicated staff team behind scenes doing everything within reachable means necessary accomplish desired goals successfully year round regardless weather conditions outside nor seasons changing throughout calendar cycles unlike traditional business models operating solely profit driven motives alone driving decisions ultimately determining course followed henceforth forward moving forward whenever applicable depending circumstances faced individually encountered personally experienced firsthand numerous times previously mentioned above listed specifically relating individual experiences shared public forum open ended discussions held regularly occurring frequently attended events organized periodically scheduled meetings convened annually celebrated occasions marked commemorated observed widely recognized globally accepted standards adopted universally implemented practices established industry norms developed common understandings agreed upon consensus reached mutual agreement arrived decision finally concluded finalized resolved settled determined decided overall end result yield accomplished target attained objective fulfilled purpose completed job done finished work well worth celebrating proudly acknowledging achievements gained success realized fully enjoyed thoroughly savored wholeheartedly appreciated deeply valued highly regarded greatly respected sincerely admired genuinely loved fondly cherished dearest treasure most beloved best friend closest companion nearest kin family relative neighbor fellow citizen global compatriot international partner country ally nation state entity governmental body corporation nonprofit foundation charity association society club group network online platform social media site blog website newsletter magazine article newspaper column editorial op-ed letter opinion essay commentary review critique analysis report study paper thesis dissertation research project proposal grant application scholarship award nomination request form interview questionnaire survey feedback evaluation assessment exam test quiz certification credential diploma degree certificate transcript record document file archive evidence proof verification identification card badge uniform shirt jacket coat sweater hat cap scarf necklace bracelet ring earring watch glasses sunglasses sunhat umbrella raincoat boots shoes sandals slippers shorts pants skirts dress jeans trousers cargo vest briefcase purse wallet handbag suitcases luggage carryon baggage checked bags wheeled cart dollies pallets fork lift crane hoist chain block pulley winch rope cable wire harness suspension system hydraulic cylinder actuator servo motor linear drive stepper gear train transmission coupling linkages rack rail track guideway rails overhead structure support beam girder strut arch rib bridge deck floor slab wall panel partition board sheet metal plate cover insulation enclosure housing chassis frame component assembly subsystem module unit function operation control mechanism regulator stabilizer damper shock absorber spring mount fastener rivet screw nut bearing roller wheel axle spindle lever arm hinge pivot joint connector terminal interface electrical circuit electronic device semiconductor integrated chip microprocessor software program algorithm code instruction language syntax grammar punctuation capital letters lower case characters digits numerals symbol operator expression variable assignment statement command procedure routine sequence flowchart diagram schematic drawing blueprint layout plan chart graph plot curve surface area volume capacity power consumption energy usage force acceleration velocity speed momentum torque moment angular frequency rate ratio proportion fraction percentage probability likelihood chance occurrence possibility certainty uncertainty doubt hesitation pause silence noise sound pitch loud quiet soft gentle rough smooth texture feel touch sensation temperature heat cold cool warm solid liquid gas vapor pressure differential voltage difference current electric charge electron proton neutron atom molecule compound element substance matter particle wave oscillation resonance frequency amplitude modulation demodulation signal processing communication information technology data storage memory retrieval process input output transfer protocol encryption security authentication authorization identity validation integrity confidentiality privacy protection intellectual property ownership liability responsibility accountability ethics moral principles values belief systems cultural diversity multiculturalism tolerance acceptance inclusion equity equality justice fairness impartiality objectivity subjectivity bias judgment reasoning critical thinking analytical skills logical deduction inductive inference abduction speculation hypothesis testing experiment observation empirical methodology qualitative quantitative measurement accuracy precision resolution consistency reproducibility reliability validity generalizability specific applicability scope limitation context relevance significance implications consequences ramifications tradeoffs alternatives solutions mitigation strategies countermeasures prevention intervention treatment remedy therapy medication drug interaction adverse effect contraindication caution warning disclaimer notice advisement consult physician prescribing pharmacist dispensing healthcare provider practitioner clinician nurse midwife technician laboratory scientist pathologist radiologist surgeon dentist optometrist ophthalmologist psychiatrist neurologist pediatrician geriatrician dermatologist orthopedist urologist gynecologist otolaryngologist cardiologist hepatologist thoracic surgeon neurosurgeon plastic surgeon trauma surgery emergency medicine internal medicine hospitalist resident intern house officer chief resident attending physician fellows residents medical students nursing student assistant instructor lecturer professor educator teacher administrator supervisor manager executive director coordinator counselor mentor peer supporter confidant colleague comrade cooperator collaborator associate affiliate partnership associates connection contact relationship acquaintance stranger foreign national domestic employee employer client customer patron consumer purchaser buyer vendor dealer\n",
+        "generation_time": 65.92728161811829,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key messaging themes of 'exclusive access', 'tangible rewards', and 'limited availability'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email present the problem as an implication of missing out on exclusive perks?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use an incentive-driven conversion approach (offering membership for a gift)?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email place a direct action verb in the final paragraph for the call-to-action?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language conveying excitement, urgency, and exclusivity?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include the specific phrases 'Limited-Edition', 'Get', and 'Become a Member'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style persuasive and benefit-focused?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the formality level casual yet polished?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email have exactly 3 paragraphs?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email open with a direct presentation of the offer?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email close with an urgent call-to-action that includes an incentive reminder?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Is the word count approximately between 100 and 200 words?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email include formatting elements like bolded key offers and bullet points for benefits?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 151.8852458000183,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.7714285714285715,
+        "ranking_score": 0.7714285714285715,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes of 'exclusive access', 'tangible rewards', and 'limited availability'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem as an implication of missing out on exclusive perks?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email use an incentive-driven conversion approach (offering membership for a gift)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email place a direct action verb in the final paragraph for the call-to-action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language conveying excitement, urgency, and exclusivity?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'Limited-Edition', 'Get', and 'Become a Member'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style persuasive and benefit-focused?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Is the formality level casual yet polished?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email have exactly 3 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email open with a direct presentation of the offer?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email close with an urgent call-to-action that includes an incentive reminder?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the word count approximately between 100 and 200 words?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email include formatting elements like bolded key offers and bullet points for benefits?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 7,
+          "medium": 3,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 13,
+        "strengths": "The email effectively conveys key messaging with exclusive offers, tangible rewards, and a clear call-to-action. It uses persuasive, emotionally charged language with benefit-focused bullet points and bold formatting, maintains a casual yet polished tone, and complies with word count requirements.",
+        "weaknesses": "The email does not frame the problem as missing out on perks, omits the specific word 'Get', and is structured in more than three paragraphs instead of exactly three.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 31.02743403116862,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes of 'exclusive access', 'tangible rewards', and 'limited availability'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem as an implication of missing out on exclusive perks?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email use an incentive-driven conversion approach (offering membership for a gift)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email place a direct action verb in the final paragraph for the call-to-action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language conveying excitement, urgency, and exclusivity?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'Limited-Edition', 'Get', and 'Become a Member'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style persuasive and benefit-focused?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Is the formality level casual yet polished?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email have exactly 3 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email open with a direct presentation of the offer?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email close with an urgent call-to-action that includes an incentive reminder?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the word count approximately between 100 and 200 words?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email include formatting elements like bolded key offers and bullet points for benefits?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively conveys key messaging with exclusive offers, tangible rewards, and a clear call-to-action. It uses persuasive, emotionally charged language with benefit-focused bullet points and bold formatting, maintains a casual yet polished tone, and complies with word count requirements.",
+          "weaknesses": "The email does not frame the problem as missing out on perks, omits the specific word 'Get', and is structured in more than three paragraphs instead of exactly three.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 31.02743403116862,
+          "generation_attempts": 3,
+          "total_criteria": 13,
+          "weighted_score": 0.7714285714285715,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 7,
+            "medium": 3,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 93.08299779891968,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.7142857142857143,
+        "ranking_score": 0.7142857142857143,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes of 'exclusive access', 'tangible rewards', and 'limited availability'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem as an implication of missing out on exclusive perks?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email use an incentive-driven conversion approach (offering membership for a gift)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email place a direct action verb in the final paragraph for the call-to-action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language conveying excitement, urgency, and exclusivity?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'Limited-Edition', 'Get', and 'Become a Member'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style persuasive and benefit-focused?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Is the formality level casual yet polished?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email have exactly 3 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email open with a direct presentation of the offer?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email close with an urgent call-to-action that includes an incentive reminder?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the word count approximately between 100 and 200 words?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email include formatting elements like bolded key offers and bullet points for benefits?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 7,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 13,
+        "strengths": "The email effectively conveys exclusivity and tangible rewards, uses an incentive-driven approach with action verbs, and maintains a persuasive, casual yet polished tone. It presents the offer directly, includes a clear call-to-action, utilizes bullet points, and meets the word count requirement.",
+        "weaknesses": "It fails to create a FOMO effect by not implying the problem of missing exclusive perks, does not incorporate the exact required phrases ('Limited-Edition', 'Get', 'Become a Member'), uses more than three paragraphs, and lacks bold formatting of key offers.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 39.40339597066244,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes of 'exclusive access', 'tangible rewards', and 'limited availability'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem as an implication of missing out on exclusive perks?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email use an incentive-driven conversion approach (offering membership for a gift)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email place a direct action verb in the final paragraph for the call-to-action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language conveying excitement, urgency, and exclusivity?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'Limited-Edition', 'Get', and 'Become a Member'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style persuasive and benefit-focused?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Is the formality level casual yet polished?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email have exactly 3 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email open with a direct presentation of the offer?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email close with an urgent call-to-action that includes an incentive reminder?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the word count approximately between 100 and 200 words?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email include formatting elements like bolded key offers and bullet points for benefits?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively conveys exclusivity and tangible rewards, uses an incentive-driven approach with action verbs, and maintains a persuasive, casual yet polished tone. It presents the offer directly, includes a clear call-to-action, utilizes bullet points, and meets the word count requirement.",
+          "weaknesses": "It fails to create a FOMO effect by not implying the problem of missing exclusive perks, does not incorporate the exact required phrases ('Limited-Edition', 'Get', 'Become a Member'), uses more than three paragraphs, and lacks bold formatting of key offers.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 39.40339597066244,
+          "generation_attempts": 3,
+          "total_criteria": 13,
+          "weighted_score": 0.7142857142857143,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 7,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 118.21095633506775,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.6857142857142857,
+        "ranking_score": 0.6857142857142857,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes of 'exclusive access', 'tangible rewards', and 'limited availability'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem as an implication of missing out on exclusive perks?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email use an incentive-driven conversion approach (offering membership for a gift)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email place a direct action verb in the final paragraph for the call-to-action?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language conveying excitement, urgency, and exclusivity?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'Limited-Edition', 'Get', and 'Become a Member'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style persuasive and benefit-focused?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Is the formality level casual yet polished?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email have exactly 3 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Does the email open with a direct presentation of the offer?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email close with an urgent call-to-action that includes an incentive reminder?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the word count approximately between 100 and 200 words?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email include formatting elements like bolded key offers and bullet points for benefits?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 6,
+          "medium": 3,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 13,
+        "strengths": "The email effectively communicates exclusivity with tangible rewards, uses emotional and persuasive language, presents a clear offer early in the content, and meets the overall word count requirement while incorporating key phrases.",
+        "weaknesses": "The email lacks a direct action verb in its final paragraph, does not adhere to the specified structure of exactly 3 paragraphs, omits an urgent call-to-action with an incentive reminder in the closing, and fails to include formatting elements such as bolded key offers or bullet points.",
+        "consistency_confidence": 0.9230769230769231,
+        "average_response_time": 75.99602357546489,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes of 'exclusive access', 'tangible rewards', and 'limited availability'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem as an implication of missing out on exclusive perks?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email use an incentive-driven conversion approach (offering membership for a gift)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email place a direct action verb in the final paragraph for the call-to-action?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language conveying excitement, urgency, and exclusivity?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'Limited-Edition', 'Get', and 'Become a Member'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style persuasive and benefit-focused?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Is the formality level casual yet polished?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email have exactly 3 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Does the email open with a direct presentation of the offer?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email close with an urgent call-to-action that includes an incentive reminder?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the word count approximately between 100 and 200 words?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email include formatting elements like bolded key offers and bullet points for benefits?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively communicates exclusivity with tangible rewards, uses emotional and persuasive language, presents a clear offer early in the content, and meets the overall word count requirement while incorporating key phrases.",
+          "weaknesses": "The email lacks a direct action verb in its final paragraph, does not adhere to the specified structure of exactly 3 paragraphs, omits an urgent call-to-action with an incentive reminder in the closing, and fails to include formatting elements such as bolded key offers or bullet points.",
+          "consistency_confidence": 0.9230769230769231,
+          "average_response_time": 75.99602357546489,
+          "generation_attempts": 3,
+          "total_criteria": 13,
+          "weighted_score": 0.6857142857142857,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 6,
+            "medium": 3,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 227.98872876167297,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.6285714285714286,
+        "ranking_score": 0.6285714285714286,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes of 'exclusive access', 'tangible rewards', and 'limited availability'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem as an implication of missing out on exclusive perks?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email use an incentive-driven conversion approach (offering membership for a gift)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email place a direct action verb in the final paragraph for the call-to-action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language conveying excitement, urgency, and exclusivity?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'Limited-Edition', 'Get', and 'Become a Member'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style persuasive and benefit-focused?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Is the formality level casual yet polished?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email have exactly 3 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Does the email open with a direct presentation of the offer?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Does the email close with an urgent call-to-action that includes an incentive reminder?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the word count approximately between 100 and 200 words?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email include formatting elements like bolded key offers and bullet points for benefits?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 6,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 13,
+        "strengths": "The email effectively uses incentive-driven conversion, persuasive and benefit-focused language, includes urgency in its call-to-action, and meets the required word count.",
+        "weaknesses": "It does not frame the problem as missing out on exclusive perks, lacks the exact phrase 'Become a Member', exceeds the required three-paragraph structure, does not open with a direct offer presentation, and is missing bullet points for benefits.",
+        "consistency_confidence": 0.6923076923076923,
+        "average_response_time": 35.85926469167074,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes of 'exclusive access', 'tangible rewards', and 'limited availability'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem as an implication of missing out on exclusive perks?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email use an incentive-driven conversion approach (offering membership for a gift)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email place a direct action verb in the final paragraph for the call-to-action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language conveying excitement, urgency, and exclusivity?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'Limited-Edition', 'Get', and 'Become a Member'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style persuasive and benefit-focused?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Is the formality level casual yet polished?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email have exactly 3 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Does the email open with a direct presentation of the offer?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Does the email close with an urgent call-to-action that includes an incentive reminder?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the word count approximately between 100 and 200 words?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email include formatting elements like bolded key offers and bullet points for benefits?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively uses incentive-driven conversion, persuasive and benefit-focused language, includes urgency in its call-to-action, and meets the required word count.",
+          "weaknesses": "It does not frame the problem as missing out on exclusive perks, lacks the exact phrase 'Become a Member', exceeds the required three-paragraph structure, does not open with a direct offer presentation, and is missing bullet points for benefits.",
+          "consistency_confidence": 0.6923076923076923,
+          "average_response_time": 35.85926469167074,
+          "generation_attempts": 3,
+          "total_criteria": 13,
+          "weighted_score": 0.6285714285714286,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 6,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 107.5785436630249,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.5428571428571428,
+        "ranking_score": 0.5428571428571428,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key messaging themes of 'exclusive access', 'tangible rewards', and 'limited availability'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem as an implication of missing out on exclusive perks?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email use an incentive-driven conversion approach (offering membership for a gift)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email place a direct action verb in the final paragraph for the call-to-action?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email use emotional language conveying excitement, urgency, and exclusivity?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'Limited-Edition', 'Get', and 'Become a Member'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Is the communication style persuasive and benefit-focused?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Is the formality level casual yet polished?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email have exactly 3 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Does the email open with a direct presentation of the offer?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email close with an urgent call-to-action that includes an incentive reminder?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Is the word count approximately between 100 and 200 words?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 13,
+            "description": "Does the email include formatting elements like bolded key offers and bullet points for benefits?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 13,
+        "strengths": "The email effectively communicates exclusive access, offers a tangible reward as an incentive, uses emotional and persuasive language and maintains a casual yet polished tone. It also opens with a direct presentation of the offer and meets the approximate word count requirement.",
+        "weaknesses": "The email fails to present the issue as missing out on exclusive perks, does not include a direct action verb in the final paragraph, omits the specific required phrases, does not have exactly three paragraphs, lacks an urgent closing call-to-action with an incentive reminder, and misses formatting elements such as bolded key offers and bullet points.",
+        "consistency_confidence": 0.9230769230769231,
+        "average_response_time": 45.65159932772318,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key messaging themes of 'exclusive access', 'tangible rewards', and 'limited availability'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem as an implication of missing out on exclusive perks?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email use an incentive-driven conversion approach (offering membership for a gift)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email place a direct action verb in the final paragraph for the call-to-action?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email use emotional language conveying excitement, urgency, and exclusivity?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'Limited-Edition', 'Get', and 'Become a Member'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Is the communication style persuasive and benefit-focused?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Is the formality level casual yet polished?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email have exactly 3 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Does the email open with a direct presentation of the offer?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email close with an urgent call-to-action that includes an incentive reminder?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Is the word count approximately between 100 and 200 words?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 13,
+              "description": "Does the email include formatting elements like bolded key offers and bullet points for benefits?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively communicates exclusive access, offers a tangible reward as an incentive, uses emotional and persuasive language and maintains a casual yet polished tone. It also opens with a direct presentation of the offer and meets the approximate word count requirement.",
+          "weaknesses": "The email fails to present the issue as missing out on exclusive perks, does not include a direct action verb in the final paragraph, omits the specific required phrases, does not have exactly three paragraphs, lacks an urgent closing call-to-action with an incentive reminder, and misses formatting elements such as bolded key offers and bullet points.",
+          "consistency_confidence": 0.9230769230769231,
+          "average_response_time": 45.65159932772318,
+          "generation_attempts": 3,
+          "total_criteria": 13,
+          "weighted_score": 0.5428571428571428,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 136.95542693138123,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 1,
+      "score": 0.7714285714285715
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 2,
+      "score": 0.7142857142857143
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 3,
+      "score": 0.6857142857142857
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 4,
+      "score": 0.6285714285714286
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 5,
+      "score": 0.5428571428571428
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 943.3168413639069,
+    "success": true,
+    "errors": []
+  }
+}

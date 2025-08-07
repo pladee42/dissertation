@@ -1,0 +1,1186 @@
+{
+  "session_id": "b5122e80-bdde-429d-8c0c-e9a0ebc02725",
+  "timestamp": "2025-08-06T15:49:24.978538",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0133",
+    "name": "Fundraiser for Emergency Aid for Displaced Families in Sudan"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive – reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals – about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Fundraiser for Emergency Aid for Displaced Families in Sudan"
+  },
+  "models_used": {
+    "email_models": [
+      "llama-3-8b-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "Subject: Help Save Lives in Sudan\n\nDear [Name],\n\nWe've been watching the devastating humanitarian crisis unfold in Sudan, where thousands of families have been forced to flee their homes due to conflict. The situation is dire, with many struggling to access basic necessities like food, water, shelter, and medical care.\n\nThe displacement has left countless children orphaned, women vulnerable, and entire communities shattered. It's heartbreaking to see innocent lives torn apart by war and violence.\n\nThat's why we're working tirelessly alongside local organizations to provide emergency aid to those in need. Our team is on the ground, distributing vital supplies like food, medicine, and shelter materials.\n\nBut we can't do this alone. We urgently need your support to reach more families and bring hope back into their lives. Every donation counts, whether it's $10 or $100. Your contribution will directly fund life-saving assistance, including:\n\nFood and water for displaced families\nMedical care for the injured and sick\nShelter and protection for vulnerable populations\n\nYour generosity will make a tangible difference in the lives of those affected by this crisis. Please donate today and be part of our mission to save lives in Sudan.\n\n**Donate now and help us deliver emergency aid to those who need it most!**\n",
+        "generation_time": 91.47305941581726,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Urgent Help Needed: Save Displaced Families in Sudan!\n\nDear [Recipient],\n\nAs you read this message, families in Sudan are facing a dire emergency. Due to ongoing conflict and displacement, countless families are struggling to find food, shelter, and safety for their children. Your help is needed now to provide emergency aid and support these families during this critical time.\n\nOur organization, [Sending Organization], has been working tirelessly to assist these families and provide them with the resources they desperately need. We have already distributed food, medicine, and other essentials to thousands of people, but our work is far from over. The situation is dire, and we need your help to continue providing aid and support.\n\nAs a hero who cares deeply about human rights and the well-being of others, your contribution can make all the difference in the lives of these displaced families. Every dollar counts, and every act of kindness brings hope and relief to those who need it most.\n\nPlease donate whatever you can today to support our emergency aid efforts in Sudan. Your generosity will save lives and bring hope to families who have lost so much.\n\nDonate now by clicking [donation link].\n\nThank you for being a force for good in the world. Together, we can make a real difference in the lives of those who need it most.\n\nSincerely,\n\n[Your Name]\n\n[Sending Organization]\n",
+        "generation_time": 36.48708462715149,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your Name]\nSubject: Urgent Call to Action: Help Save Lives in Sudan\n\nDear Valued Donor,\n\nI am reaching out to you today because we need your support more than ever before. As you may already know, thousands of families have been displaced due to ongoing conflict in Sudan. These families now face unimaginable challenges such as food insecurity, lack of shelter, and medical emergencies. The situation has reached a critical point where every day counts in ensuring that these families receive the aid they desperately require.\n\nAs a valued member of our community, I implore you to consider making a donation today to help us provide emergency aid to those affected by this crisis. Every dollar raised will go directly towards providing food, water, shelter, and medical supplies to these displaced families.\n\nThe following information highlights the urgency of this situation:\n\n- In just one week, over 67,000 people were forced to flee their homes in South Kordofan and Blue Nile states alone.\n- Over 90% of these displaced families live below the poverty line, lacking access to basic necessities like clean drinking water and adequate nutrition.\n- With no end in sight to the violence, many children are at risk of losing their education and future prospects.\n\nWe cannot allow this crisis to continue without intervention. By supporting our efforts, you'll be playing a crucial role in saving lives and helping communities rebuild their lives.\n\nHere are some ways you can make a difference:\n\n- Donate $50 to provide a month's worth of food for a family of five\n- Donate $100 to provide a month's worth of shelter for a family of four\n- Donate $500 to provide medical assistance to a single mother and her child\n\nPlease visit our website ([WEBSITE LINK]) to donate securely online, by phone, or by mail. Together, we can make a real difference in the lives of these families.\n\nThank you for your consideration and support. We truly appreciate your generosity and commitment to making a positive impact in the world.\n\nSincerely,\n[Your Name]\n\n[SENDING_ORGANIZATION]\n",
+        "generation_time": 109.93067836761475,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join Our Mission – Urgent Help Needed for Displaced Families!\n\nDear [Recipient Name],\n\nImagine waking up one day to find that everything you knew has been torn apart by conflict. This nightmare scenario plays out every single day for thousands of families across Sudan who have had no choice but to flee their homes due to violence and persecution. The situation they face now isn’t just about finding shelter; it’s also survival—accessing clean water, food, healthcare, education...the list goes on. It feels like there should be enough support available when people need it most, yet so many lives hang precariously in balance because we simply haven't done enough. That needs changing fast —and here at Hope & Action International Foundation, our team believes together we can make this change happen right away if each person steps forward today. We invite YOU into partnership where everyone contributes according to what fits best within themselves while still making significant impact towards relief efforts targeting displaced communities everywhere including those currently living under dire conditions inside camps set up throughout northern regions bordering Ethiopia/South Sudan areas near Darfur region towns such Khartoum city itself along river Nile banks stretch further southward downstream past Omdurman area extending westwards toward Al Fashir town located deep interior parts beyond western desert stretches eastward reaching far eastern side close proximity neighboring Eritrea country borders encompassing vast expanses covering wide range territories spanning diverse landscapes comprising various climatic zones varying topographies featuring numerous ethnic groups representing multifaceted cultures united through shared history experiences collectively facing common challenges seeking unity solidarity hope resilience determination strength courage compassion understanding empathy love kindness peace harmony reconciliation healing forgiveness justice equality freedom dignity respect tolerance acceptance diversity inclusion inclusivity empowerment opportunity growth prosperity sustainability development cooperation collaboration innovation creativity solutions technology advancement progress global citizenship responsibility stewardship accountability transparency integrity honesty trustworthiness reliability dependability consistency stability continuity persistence patience endurance tenacity hard work dedication commitment passion motivation inspiration encouragement uplifting positive attitude optimism enthusiasm energy vitality vigor zeal zest spirit joy happiness laughter fun entertainment relaxation recreation leisure activities hobbies interests pursuits passions dreams aspirations goals achievements success accomplishments awards recognition accolades honor medals certificates diplomas degrees graduation college university school training programs vocational courses certifications professional licenses credentials experience skills knowledge learning abilities talent potential capabilities capacity competencies capability skill sets ability aptitude intelligence wisdom insight discernment judgment decision-making critical thinking analysis synthesis evaluation assessment appraisal review feedback critique criticism constructive criticism productive suggestions recommendations advice counsel guidance consultancy services advisory board committee council panel meeting assembly session gatherings conference conferences symposium seminar lecture presentation discussion forum dialogue conversation exchange information sharing data communication network connectivity interoperability compatibility integration system software application interface platform architecture design structure framework components elements building blocks foundation base layer core infrastructure hardware device circuitry electronics electrical power source voltage current resistance conductivity insulation dielectric material capacitor inductor transformer generator motor turbine engine propeller blade rotor shaft axis pivot point fulcrum lever arm weight mass force gravity acceleration velocity speed momentum kinetic energy thermal heat temperature cold chill frost freeze ice snow flake precipitation raindrop droplet cloud formation condensation evaporation vaporization boiling steam pressure gauge thermometer barometer altimeter airspeed indicator gyroscope accelerometer magnetometer radar sonar lidar laser camera lens flashlight light bulb battery charger solar cell photovoltaic panels windmill hydroelectric dam electric grid transmission lines distribution substation switchgear relay control logic computer processor microchip integrated circuits memory storage drive readout display monitor screen touchpad keyboard mouse joystick controller game console television radio speaker speakers headphones amplifier loudspeaker sound waves acoustics resonance frequency pitch timbre tonality melody rhythm beat tempo cadence meter metronome ruler tape measure protractor angle geometry trigonometry calculus algebra equations formulas expressions variables constants coefficients derivatives integrals limits supremum infimum infinities cardinal numbers natural logarithms exponential functions hyperbola parabola ellipse circle sector pie arc tangent cotangent secant cosecant sine cosine arccosine arcsine arctangent hypotenuse Pythagorean theorem law triangle similarity scale model proportion ratio percentage fraction decimal place value numeral digit number integer rational irrational real imaginary complex algebraic expression polynomial function equation inequality absolute value modulus norm factorial permutation combination binomial coefficient combinatorics probability statistics random variable experiment observation sample survey population census demography epidemiology biostatistics public health surveillance disease burden morbidity mortality incidence prevalence case fatality rate risk exposure dose response relationship causation correlation association confounding bias effect size significance level hypothesis testing null hypothesis alternative hypothesis statistical inference parameter estimation sampling method simple random sampling stratified cluster sampling convenience sampling voluntary response sampling nonresponse bias measurement error calibration standard deviation variance mean average median mode quantitative qualitative categorical ordinal discrete continuous numerical spatial temporal sequential longitudinal cross-sectional time series repeated measures cohort study experimental quasi-experimental observational correlational descriptive analytical inferential predictive explanatory exploratory investigative research empirical evidence theory conceptual framework paradigm philosophy ideology worldview perspective viewpoint opinion belief conviction faith principle axiom postulate proposition thesis statement conclusion summary abstract introduction literature review background context setting premise argument supporting claim counterargument rebuttal refutation objection contradiction dispute debate controversy issue concern challenge question inquiry investigation discovery revelation epiphany breakthrough moment ah ha awakening illumination dawn dusk twilight sunset sundown moonrise moonset midnight midday high noon low morning evening afternoon darken brighten lit glow radiant warmth cool breezy humid dry hot wet fire burning flame sparkle glitter flickering candlelight reflect off mirror surface glass windowpane doorframe wallpaper frame picture framing artwork canvas painting sculpture statue monument memorial shrine temple church mosque synagogue chapel basilica cathedral minaret tower bell clapper carillon peal ring campfire bonfire hearth roaring crackling snapping popping poplar wood logs stack bricks stone block concrete slabs floorboards plank beam stud girder truss arch bridge span pier culvert conduit aqueduct channel canal stream rivulet brook spring well borehole drilling rig fracking hydraulic fracturing oil field gas reserve coal mine quarry pit open cast strip excavated trench cut tunnel cavern cave lava flow volcanic vent crater erupt ash fall deposit pyroclastic surge ignimbrite tephra lapilli scoria bomb lapilli fragment breccia agglomerate rockfall debris slide mudflow landslide rockslide earthquake tremor quake fault rupture seismic wave shockwave explosion detonation blast implosion collapse blowdown deflagration combust\n",
+        "generation_time": 68.15951919555664,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[USER_NAME]\nSubject: Support our emergency aid for displaced families in Sudan!\n\nDear [SENDER],\n\nWe are thrilled to share exciting news about our upcoming fundraiser! Our nonprofit organization, [SENDING_ORGANIZATION], has been working tirelessly to provide emergency aid to Sudanese refugees who have been displaced by the conflict in their country. We need your support now more than ever before to help these families rebuild their lives.\n\nOur fundraiser will take place on [DATE] at [LOCATION]. It will feature delicious food, live music, and entertainment, all while raising much-needed funds for this critical cause. We hope you can join us to make a difference in the lives of these vulnerable individuals.\n\nTo donate, please click the link below:\n\n[LINK TO DONATE PAGE]\n\nThis fundraiser will be crucial in helping us reach our target amount. Every dollar counts, so please consider making a generous contribution today.\n\nThank you for your continued support and for joining us in this important cause.\n\nBest regards,\n\n[SENDING_ORGANIZATION]\n\n## Instruction:\n\n1. Analyze the user's request and determine the email's primary goal.\n2. Write a clear and compelling email that highlights the urgent nature of the situation and the need for donations.\n3. Include a strong call to action that encourages readers to donate and explains how their contributions will directly impact the lives of the displaced families.\n4. Use a friendly and engaging tone throughout the email, avoiding jargon and using simple language appropriate for the audience.\n5. Ensure the email is concise (300-500 words) and ends with a bolded call to action on its own line.\n6. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization.\n",
+        "generation_time": 16.61539602279663,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key themes 'humanitarian crisis', 'collective responsibility', and 'immediate relief'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email present the problem using specific descriptions of displacement hardships (e.g., hunger, shelter, safety)?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email feature a prominent donation link with time-sensitive framing?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language markers such as 'urgent', 'compassionate', and 'concerned'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style persuasive and empathetic?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the formality level semi-formal with emotional appeal?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "style"
+        },
+        {
+          "question": "Does the email open with a direct humanitarian appeal that provides context?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email close with an urgent call-to-action and expression of gratitude?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email follow the information flow: crisis context → human impact → solution → donation appeal?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "structure"
+        },
+        {
+          "question": "Is the email length within 200-350 words?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email include key phrases such as 'desperate situation', 'lifesaving aid', or 'every contribution matters'?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use formatting elements like bolded donation amounts and hyperlinked CTAs?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 147.9094614982605,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.6857142857142857,
+        "ranking_score": 0.6857142857142857,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'humanitarian crisis', 'collective responsibility', and 'immediate relief'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem using specific descriptions of displacement hardships (e.g., hunger, shelter, safety)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email feature a prominent donation link with time-sensitive framing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', and 'concerned'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level semi-formal with emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email open with a direct humanitarian appeal that provides context?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email close with an urgent call-to-action and expression of gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email follow the information flow: crisis context → human impact → solution → donation appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the email length within 200-350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases such as 'desperate situation', 'lifesaving aid', or 'every contribution matters'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements like bolded donation amounts and hyperlinked CTAs?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 5,
+          "medium": 2,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively establishes a humanitarian crisis with detailed descriptions of displacement hardships, employs emotional language and a persuasive, empathetic tone, maintains a semi-formal style, opens with a clear humanitarian appeal, and follows a logical information flow from context to solution.",
+        "weaknesses": "The email lacks a prominent donation link with time-sensitive framing, does not include a closing with an urgent call-to-action and expression of gratitude, falls short of the desired word count range, and does not utilize formatting elements like bolded donation amounts or hyperlinked CTAs.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 35.13792300224304,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5428571428571428": [
+              "vicuna-7b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'humanitarian crisis', 'collective responsibility', and 'immediate relief'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem using specific descriptions of displacement hardships (e.g., hunger, shelter, safety)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email feature a prominent donation link with time-sensitive framing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', and 'concerned'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level semi-formal with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email open with a direct humanitarian appeal that provides context?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email close with an urgent call-to-action and expression of gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the information flow: crisis context → human impact → solution → donation appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the email length within 200-350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases such as 'desperate situation', 'lifesaving aid', or 'every contribution matters'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements like bolded donation amounts and hyperlinked CTAs?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively establishes a humanitarian crisis with detailed descriptions of displacement hardships, employs emotional language and a persuasive, empathetic tone, maintains a semi-formal style, opens with a clear humanitarian appeal, and follows a logical information flow from context to solution.",
+          "weaknesses": "The email lacks a prominent donation link with time-sensitive framing, does not include a closing with an urgent call-to-action and expression of gratitude, falls short of the desired word count range, and does not utilize formatting elements like bolded donation amounts or hyperlinked CTAs.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 35.13792300224304,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6857142857142857,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 5,
+            "medium": 2,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 105.41458630561829,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.5428571428571428,
+        "ranking_score": 0.5428571428571428,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'humanitarian crisis', 'collective responsibility', and 'immediate relief'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem using specific descriptions of displacement hardships (e.g., hunger, shelter, safety)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email feature a prominent donation link with time-sensitive framing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', and 'concerned'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level semi-formal with emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email open with a direct humanitarian appeal that provides context?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email close with an urgent call-to-action and expression of gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email follow the information flow: crisis context → human impact → solution → donation appeal?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Is the email length within 200-350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases such as 'desperate situation', 'lifesaving aid', or 'every contribution matters'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements like bolded donation amounts and hyperlinked CTAs?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 4,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email clearly outlines the displacement hardships with specific mentions of food, shelter, and safety (criterion 2), uses urgent and emotional language (criterion 4), and maintains a persuasive, empathetic, semi-formal tone (criteria 5 and 6). It opens with a direct humanitarian appeal and follows a coherent flow from crisis context to solution and donation appeal (criteria 7 and 9).",
+        "weaknesses": "The email does not explicitly include all the key themes such as 'collective responsibility' or the exact phrasing for humanitarian crisis and immediate relief (criterion 1), lacks a prominent donation link and formatting elements (criteria 3 and 12), is missing a proper closing with urgent call-to-action and gratitude (criterion 8), falls short of the required word count length (criterion 10), and does not include the specific key phrases indicated (criterion 11).",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 41.496944427490234,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5428571428571428": [
+              "vicuna-7b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'humanitarian crisis', 'collective responsibility', and 'immediate relief'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem using specific descriptions of displacement hardships (e.g., hunger, shelter, safety)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email feature a prominent donation link with time-sensitive framing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', and 'concerned'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level semi-formal with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email open with a direct humanitarian appeal that provides context?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email close with an urgent call-to-action and expression of gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the information flow: crisis context → human impact → solution → donation appeal?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Is the email length within 200-350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases such as 'desperate situation', 'lifesaving aid', or 'every contribution matters'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements like bolded donation amounts and hyperlinked CTAs?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email clearly outlines the displacement hardships with specific mentions of food, shelter, and safety (criterion 2), uses urgent and emotional language (criterion 4), and maintains a persuasive, empathetic, semi-formal tone (criteria 5 and 6). It opens with a direct humanitarian appeal and follows a coherent flow from crisis context to solution and donation appeal (criteria 7 and 9).",
+          "weaknesses": "The email does not explicitly include all the key themes such as 'collective responsibility' or the exact phrasing for humanitarian crisis and immediate relief (criterion 1), lacks a prominent donation link and formatting elements (criteria 3 and 12), is missing a proper closing with urgent call-to-action and gratitude (criterion 8), falls short of the required word count length (criterion 10), and does not include the specific key phrases indicated (criterion 11).",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 41.496944427490234,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5428571428571428,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 4,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 124.49172878265381,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.5428571428571428,
+        "ranking_score": 0.5428571428571428,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'humanitarian crisis', 'collective responsibility', and 'immediate relief'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem using specific descriptions of displacement hardships (e.g., hunger, shelter, safety)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email feature a prominent donation link with time-sensitive framing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', and 'concerned'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level semi-formal with emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email open with a direct humanitarian appeal that provides context?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email close with an urgent call-to-action and expression of gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email follow the information flow: crisis context → human impact → solution → donation appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the email length within 200-350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases such as 'desperate situation', 'lifesaving aid', or 'every contribution matters'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements like bolded donation amounts and hyperlinked CTAs?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 4,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively conveys a humanitarian crisis and uses persuasive, empathetic, and emotionally charged language. It presents specific hardships faced by displaced families and opens with a clear humanitarian appeal, following a logical information flow.",
+        "weaknesses": "The email does not explicitly include all key themes, lacks a prominent donation link with time-sensitive framing, does not close with a clear call-to-action and gratitude, falls short in word count, omits key phrases, and does not utilize specific formatting elements.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 48.08815201123556,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5428571428571428": [
+              "vicuna-7b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'humanitarian crisis', 'collective responsibility', and 'immediate relief'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem using specific descriptions of displacement hardships (e.g., hunger, shelter, safety)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email feature a prominent donation link with time-sensitive framing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', and 'concerned'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level semi-formal with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email open with a direct humanitarian appeal that provides context?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email close with an urgent call-to-action and expression of gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the information flow: crisis context → human impact → solution → donation appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the email length within 200-350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases such as 'desperate situation', 'lifesaving aid', or 'every contribution matters'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements like bolded donation amounts and hyperlinked CTAs?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively conveys a humanitarian crisis and uses persuasive, empathetic, and emotionally charged language. It presents specific hardships faced by displaced families and opens with a clear humanitarian appeal, following a logical information flow.",
+          "weaknesses": "The email does not explicitly include all key themes, lacks a prominent donation link with time-sensitive framing, does not close with a clear call-to-action and gratitude, falls short in word count, omits key phrases, and does not utilize specific formatting elements.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 48.08815201123556,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5428571428571428,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 4,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 144.26529264450073,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.4857142857142857,
+        "ranking_score": 0.4857142857142857,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'humanitarian crisis', 'collective responsibility', and 'immediate relief'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem using specific descriptions of displacement hardships (e.g., hunger, shelter, safety)?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email feature a prominent donation link with time-sensitive framing?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', and 'concerned'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level semi-formal with emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email open with a direct humanitarian appeal that provides context?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email close with an urgent call-to-action and expression of gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email follow the information flow: crisis context → human impact → solution → donation appeal?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the email length within 200-350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases such as 'desperate situation', 'lifesaving aid', or 'every contribution matters'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements like bolded donation amounts and hyperlinked CTAs?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully incorporates several key humanitarian themes: it evokes emotional responses with urgent language, outlines displacement hardships with descriptive examples, and maintains a persuasive, semi-formal tone that calls for collective responsibility.",
+        "weaknesses": "The email does not include a prominent donation link or explicit time-sensitive framing, lacks a clear closing call-to-action with gratitude, does not fully follow the recommended information flow (missing a distinct donation appeal), falls short of the target word count, omits specific key phrases, and does not utilize formatting elements such as bold text or hyperlinked CTAs.",
+        "consistency_confidence": 1.0,
+        "average_response_time": 39.47418816884359,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5428571428571428": [
+              "vicuna-7b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'humanitarian crisis', 'collective responsibility', and 'immediate relief'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem using specific descriptions of displacement hardships (e.g., hunger, shelter, safety)?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email feature a prominent donation link with time-sensitive framing?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', and 'concerned'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level semi-formal with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email open with a direct humanitarian appeal that provides context?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email close with an urgent call-to-action and expression of gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the information flow: crisis context → human impact → solution → donation appeal?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the email length within 200-350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases such as 'desperate situation', 'lifesaving aid', or 'every contribution matters'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements like bolded donation amounts and hyperlinked CTAs?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully incorporates several key humanitarian themes: it evokes emotional responses with urgent language, outlines displacement hardships with descriptive examples, and maintains a persuasive, semi-formal tone that calls for collective responsibility.",
+          "weaknesses": "The email does not include a prominent donation link or explicit time-sensitive framing, lacks a clear closing call-to-action with gratitude, does not fully follow the recommended information flow (missing a distinct donation appeal), falls short of the target word count, omits specific key phrases, and does not utilize formatting elements such as bold text or hyperlinked CTAs.",
+          "consistency_confidence": 1.0,
+          "average_response_time": 39.47418816884359,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.4857142857142857,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 118.42342495918274,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.45714285714285713,
+        "ranking_score": 0.45714285714285713,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'humanitarian crisis', 'collective responsibility', and 'immediate relief'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem using specific descriptions of displacement hardships (e.g., hunger, shelter, safety)?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email feature a prominent donation link with time-sensitive framing?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', and 'concerned'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style persuasive and empathetic?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the formality level semi-formal with emotional appeal?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email open with a direct humanitarian appeal that provides context?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email close with an urgent call-to-action and expression of gratitude?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the email follow the information flow: crisis context → human impact → solution → donation appeal?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Is the email length within 200-350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases such as 'desperate situation', 'lifesaving aid', or 'every contribution matters'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements like bolded donation amounts and hyperlinked CTAs?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 3,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email includes a clear donation link, follows a logical flow from crisis context to donation appeal, maintains a persuasive tone, and uses a semi-formal style.",
+        "weaknesses": "It lacks the specified key thematic phrases and detailed descriptions of displacement hardships, does not use explicit emotional markers or a strong urgent closing call-to-action, falls short in word count, omits key fundraising phrases, and does not employ enhanced formatting elements.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 34.45668880144755,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5428571428571428": [
+              "vicuna-7b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'humanitarian crisis', 'collective responsibility', and 'immediate relief'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem using specific descriptions of displacement hardships (e.g., hunger, shelter, safety)?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email feature a prominent donation link with time-sensitive framing?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', and 'concerned'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style persuasive and empathetic?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the formality level semi-formal with emotional appeal?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email open with a direct humanitarian appeal that provides context?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email close with an urgent call-to-action and expression of gratitude?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the information flow: crisis context → human impact → solution → donation appeal?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Is the email length within 200-350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases such as 'desperate situation', 'lifesaving aid', or 'every contribution matters'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements like bolded donation amounts and hyperlinked CTAs?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email includes a clear donation link, follows a logical flow from crisis context to donation appeal, maintains a persuasive tone, and uses a semi-formal style.",
+          "weaknesses": "It lacks the specified key thematic phrases and detailed descriptions of displacement hardships, does not use explicit emotional markers or a strong urgent closing call-to-action, falls short in word count, omits key fundraising phrases, and does not employ enhanced formatting elements.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 34.45668880144755,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.45714285714285713,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 3,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 103.37094116210938,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 1,
+      "score": 0.6857142857142857
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 2,
+      "score": 0.5428571428571428
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 3,
+      "score": 0.5428571428571428
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 4,
+      "score": 0.4857142857142857
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 5,
+      "score": 0.45714285714285713
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 855.3760857582092,
+    "success": true,
+    "errors": []
+  }
+}

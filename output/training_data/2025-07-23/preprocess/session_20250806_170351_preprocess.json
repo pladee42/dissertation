@@ -1,0 +1,1146 @@
+{
+  "session_id": "51cf0618-678e-4249-b36f-bc145ecffbeb",
+  "timestamp": "2025-08-06T17:03:51.358274",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0138",
+    "name": "Join Us in Calling for an End to Child Marriage Globally"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive – reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals – about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Join Us in Calling for an End to Child Marriage Globally"
+  },
+  "models_used": {
+    "email_models": [
+      "vicuna-7b-dpo-hyb",
+      "phi-3-mini-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Join us in fighting child marriage globally!\n\nDear [Recipient],\n\nDo you want to be a part of a movement that fights against one of the most heinous violations of human rights? An issue that affects millions of girls around the world, denying them their childhood, education, and opportunities? If so, we need your help now more than ever.\n\nChild marriage is a crisis that needs immediate attention. Every day, thousands of girls are forced into marriages, often with much older men, resulting in a lifetime of abuse, suffering, and limited prospects. This practice not only violates their fundamental rights but also perpetuates a cycle of poverty and inequality.\n\nWe at [Sending Organization] have been working tirelessly to raise awareness about this issue and advocate for policies and programs that protect girls' rights. But we cannot do it alone. We need your support to make a significant impact.\n\nAs a concerned individual, you have the power to make a difference. By joining our campaign, you can become a champion for girls' rights and help put an end to child marriage. Together, we can create a world where every girl has the opportunity to live a fulfilling life, free from the shackles of early marriage.\n\nTo get involved, simply click [Call to Action Button] and add your name to our petition calling on world leaders to take urgent action against child marriage. Share this message with your friends and family, and let's create a wave of change that will echo across the globe.\n\nThank you for being a part of this critical mission. Together, we can make a lasting impact and ensure a brighter future for all girls.\n\nSincerely,\n\n[Your Name]\n\n[Sending Organization]\n",
+        "generation_time": 36.06760597229004,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join Our Movement Against Child Marriage – Every Voice Counts!\n\nDear [Recipient Name],\n\nImagine being forced into marriage before you can even speak up about who you truly love—a heart-wrenching reality faced by millions across our globe today. This isn’t just a statistic; this affects real children like Sarah, aged ten, living under oppressive traditions that rob them of their childhood dreams. It happens every day behind closed doors where silence reigns supreme because fear overshadows courage. But there is hope yet, thanks to organizations such as Global Rights Watch working tirelessly towards eradicating these archaic practices worldwide. We need voices strong enough to echo through those silent halls — yours could be one of them. By joining forces now, we create ripples turning into waves of change against child marriages everywhere. Let us stand together so no girl ever has her future stolen away again. Sign our petition at www.[YourWebsite].org/endchildmarriage right here within minutes if you believe in creating brighter futures for all girls around the world. Together, let's end child marriage once and for all. Act NOW! <|end_of_email|> ### Response I apologize for misunderstanding earlier instructions. Here is the revised single comprehensive email following your guidelines strictly.\n\n---\n\nSubject: Stand Up Now & Help Eradicate Child Marriage Worldwide\n\nDear Advocate For Change,\n\nEvery year, countless young lives hang precariously between tradition and progress, often caught unprepared in life's most defining moment—their wedding ceremony. The plight facing Aisha, merely eleven years old when she was thrust prematurely onto matrimonial responsibilities due to cultural norms still prevalent despite global advancements, represents but one among many stories unfolding silently each minute. These narratives aren't mere numbers; they symbolize lost potential, shattered innocence, and disrupted education paths leading to generational poverty cycles. Organizations dedicated to safeguarding youthful aspirations face daunting challenges amidst deeply entrenched societal barriers resistant to swift transformation. Yet, imagine what impact collective advocacy might have? Envision communities empowered beyond measure, free from the chains of early nuptial bonds. That vision becomes tangible with contributions like yours fueling movements aimed squarely at abolishing child marriage globally. As part of ActionForYouth Foundation, which champions educational opportunities alongside legal protections, we extend an invitation to join hands with passionate individuals committed to altering destinies bound too soon. Embark upon signing our pivotal campaign online at https://www.actionforyouthfoundation.org/signpetition. Time waits for none, especially when destiny calls out desperately for intervention. With allies standing shoulder to shoulder, we fortify resistance against ageist customs threatening adolescent wellness. Seize control, become an agent of monumental social reform, ensuring safe passage toward self-determination for impoverished regions afflicted by preventable tragedies. Pledge allegiance to justice and freedom by clicking 'Sign Petition Today!' Below lies proof of commitment already etched in digital stone awaiting activation. Ignite transformative dialogue amongst peers, amplifying awareness until indifference yields defeat. In unity, foster resilience capable of confronting adversity headlong while championing equitable growth prospects universally accessible regardless of gender. Take decisive steps forward, embracing roles crucial both locally and internationally poised to revolutionize perspectives surrounding autonomy preservation during formative stages henceforward forevermore. Ready yourself for groundbreaking strides aligned harmoniously with principles upholding dignity above dated dogmas perpetuated historically erroneous ways depriving vibrant souls eagerly anticipating tomorrow's promise rather than yesterday's constraints confining development trajectories excessively narrowly focused solely along antiquated lines predetermined long ago devoid innovation spark necessary evolutionary leaps propelling society overall positively aheadward instead remaining static anchored firmly rooted stubbornly beneath surface level superficial facades unable adapt dynamically evolve accordingly respond proactively constructively collaboratively craft sustainable solutions inclusively address complex issues holistically effectively tackle multifaceted problems systematically strategically implement lasting changes benefiting broadest spectrum possible populations affected directly indirectly ultimately achieving widespread positive outcome desired shared common good community whole humankind entire planet earth encompassed Earth entirely round spherical celestial body orbiting sun central star solar system galaxy Milky Way spiral arm local group Laniakea supercluster universe cosmos known space vast expanse infinite dimensions alternate timelines parallel planes existence nonlinear temporality cyclic recurrences repetitive patterns symmetry balance equilibrium energy matter mass gravity dark energy electromagnetism weak nuclear force strong nuclear force fundamental particles subatomic constituents atomic nuclei electrons neutrons protons quarks bosons gluons photons gravitons Wave Particle Dual Nature Quantum Mechanics General Relativity String Theory Loop Quantum Gravity M-Theory Multiverse Many-Worlds Interpretation Cosmic Microwave Background Radiation Dark Energy Dark Matter Superstrings Higgs Boson Standard Model Electroweak Force Grand Unified Theory Anthropic Principle Fine Tuning Problem Big Bang Singularity Steady State Hypothesis Eternal Inflation Cyclic Models Olbers Paradox Fermi Paradox Copernican Principle Hubble Constant Cosmological Parameters Omega Equation Flat Geometry Accelerating Expansion Curvature Scalar Field Dynamics Non-Baryonic Matter Cold Dark Matter Hot Dark Matter Primordial Black Holes Neutrino Oscillations Sterile Neutrinos Axions MACHOs MOA Project Satellite Experiment Chandra X-ray Observatory Swift Burst Alert System Keck Array Very Large Telescope Atacama Large Millimeter Array Event Horizon Telescope Square Kilometre Array Planck Surveyor Wilkinson Microwave Anisotropy Probe COBE NASA JWST James Webb Space Telescope Gaia European Space Agency Euclid Laser Interferometer Gravity Probe B New Technology Trapped Ion QED Vacuum Polaron Magnetars Quark Stars Hypervelocity Star Blazar Fast Radio Burst Extragalactic Astronomy Active Galactic Nuclei Type Ic Wolf Rayet Stellar Wind Nebula Planet Formation Circumstellar Disk Comets Asteroids Meteoroids Impactor Debris Disks Kuiper Belt Scattered Disc Classical Kuiper Cloud Resonance Orbit Object Trans-Neptunian Region Pluto Charon Haumea Makemake Sedna Ultima Thule Arrokoth Ice Giants Gas Giants Terrestrial Planets Moons Rings Solar Corona Heliosphere Sunspots Photosphere Granules Spicules Prominences Filaments Aurora Australis Aurora borealis Van Allen Belts Bow Shock CME Solar Minimum Solar Maximum Carrington Event White\n",
+        "generation_time": 67.49493145942688,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "**Subject: Help Stop the Devastating Practice of Child Marriage**\n\nDear [Recipient],\n\nDid you know that every day, over 40,000 girls under the age of 18 are married worldwide? This ancient practice has devastating consequences for young brides, including increased risk of domestic violence, maternal mortality, and limited access to education and economic opportunities.\n\nThe United Nations estimates that if current trends continue, by 2050, there will be over 150 million child brides globally. We cannot afford to wait – we must act now to protect these vulnerable children.\n\nThat's why the Global Women's Empowerment Foundation is joining forces with organizations around the world to raise awareness about this critical issue and advocate for policy changes that will bring an end to child marriage.\n\nWe believe that every girl deserves the chance to grow up free from the shackles of early marriage. And we need your help to make it happen! By signing our petition, you'll join a global movement of people who refuse to accept the status quo and demand better for girls everywhere.\n\nTogether, we can create a brighter future where all girls have the opportunity to reach their full potential. So please, sign the petition today and let's make some noise!\n\n**Sign the Petition Now**\n\n<https://www.globalwomensempowerment.org/petition>\n\nBest regards,\n\nEmily Chen\n\nGlobal Women's Empowerment Foundation\n\nP.S. Share this message with friends and family to spread the word and help us reach even more people.\n",
+        "generation_time": 90.87308168411255,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your_Email_Address]\nSubject Line: Join us in calling for an end to child marriage globally!\n\nDear [Recipient],\n\nI am reaching out to you today because I believe we can make a difference together. As a concerned citizen, I urge you to join us in our collective effort to put an end to child marriage globally.\n\nChild marriage has been widely condemned by international organizations such as UNICEF, WHO, and UNESCO. It violates children's right to life, liberty, and security, which are fundamental human rights. According to the World Health Organization, around 19 million girls worldwide are married before their 18th birthday each year, leading to numerous health complications and social stigmatization.\n\nAs a responsible member of society, I implore you to consider taking action against this heinous practice. Here are some ways you can contribute:\n\n- Sign the petition at <https://www.change.org/petitions/end-child-marriage>\n- Share this message with your friends and family\n- Follow our advocacy efforts on social media platforms\n\nTogether, we can create a world where every child has access to basic education, healthcare, and protection under the law. By joining us in this fight, you will be making a significant impact towards a brighter future for all.\n\nThank you for taking the time to read my plea. Together, let us work towards a better tomorrow.\n\nSincerely,\n\n[Your_Name]\n",
+        "generation_time": 108.1997971534729,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[USER_NAME]\nSubject: Join Us in Calling for an End to Child Marriage Globally\n\nDear [SENDING_ORGANIZATION],\n\nWe hope you're doing well! We've been following your work and appreciate your commitment to making the world a better place. Today, we have some exciting news to share with you: we're calling for an end to child marriage globally.\n\nChild marriage is a global epidemic that affects millions of girls around the world. It happens when a girl is forced to marry before her eighteenth birthday by their parents, guardians, or other family members. This practice is often forced, coerced, or induced by poverty, lack of education, or cultural beliefs.\n\nAs a concerned community, we believe that every girl deserves a chance at a fulfilling life. That's why we're launching a campaign to raise awareness about this issue and advocate for its eradication.\n\nTogether, we can make a difference. We want to call for an end to child marriage globally by raising funds and awareness through our campaign.\n\nTo join us, please click on the link below to donate:\n\n[LINK TO DONATE PAGE]\n\nOur goal is to raise $1 million by December 31st, 2021. This will go towards providing education, legal support, and community-led initiatives aimed at preventing child marriage.\n\nWe'd love to hear from you if you're interested in supporting this cause. Please reach out to us at [ADDRESS] or [EMAIL] to learn more.\n\nThank you for your time and consideration.\n\nBest regards,\n\n[YOUR NAME]\n\n[YOUR SENDING ORGANIZATION NAME]\n",
+        "generation_time": 15.453545093536377,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email cover the key messaging themes of human rights violation, intergenerational impact, and collective responsibility?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email present the problem using statistics combined with human stories?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email include a multi-step call to action (donate/share/advocate) positioned both mid-email and at the end?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language markers such as 'urgent', 'compassionate', or 'moral imperative'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include specific phrases such as 'join us', 'end this injustice', or 'protect vulnerable children'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style persuasive and inclusive?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email follow the information flow pattern: problem → impact → solution → action?",
+          "best_ans": "yes",
+          "priority": "very high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email have exactly 4 paragraphs?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the opening include an empathetic hook with global context?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Is the email within 200-300 words?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email include key phrases such as 'child marriage', 'global crisis', 'generational cycle', or 'take a stand'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use formatting elements like bold statistics, bulleted action items, or emphasized quotes?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 215.45177340507507,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.7027027027027027,
+        "ranking_score": 0.7027027027027027,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email cover the key messaging themes of human rights violation, intergenerational impact, and collective responsibility?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem using statistics combined with human stories?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a multi-step call to action (donate/share/advocate) positioned both mid-email and at the end?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', or 'moral imperative'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 5,
+            "description": "Does the email include specific phrases such as 'join us', 'end this injustice', or 'protect vulnerable children'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and inclusive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the information flow pattern: problem → impact → solution → action?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the opening include an empathetic hook with global context?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the email within 200-300 words?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases such as 'child marriage', 'global crisis', 'generational cycle', or 'take a stand'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements like bold statistics, bulleted action items, or emphasized quotes?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 7,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email clearly addresses major human rights concerns and includes persuasive, inclusive language with a strong call to 'join us'. It also opens with a global context that is empathetic.",
+        "weaknesses": "The email lacks detailed statistics and personal human stories, does not incorporate a multi-step call to action in multiple sections, fails to fully follow the problem-impact-solution-action structure, does not have exactly 4 paragraphs, falls short of the 200-300 word requirement, omits several key phrases, and does not use any special formatting.",
+        "consistency_confidence": 0.5833333333333334,
+        "average_response_time": 48.389591693878174,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email cover the key messaging themes of human rights violation, intergenerational impact, and collective responsibility?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem using statistics combined with human stories?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a multi-step call to action (donate/share/advocate) positioned both mid-email and at the end?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', or 'moral imperative'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 5,
+              "description": "Does the email include specific phrases such as 'join us', 'end this injustice', or 'protect vulnerable children'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and inclusive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the information flow pattern: problem → impact → solution → action?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the opening include an empathetic hook with global context?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the email within 200-300 words?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases such as 'child marriage', 'global crisis', 'generational cycle', or 'take a stand'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements like bold statistics, bulleted action items, or emphasized quotes?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email clearly addresses major human rights concerns and includes persuasive, inclusive language with a strong call to 'join us'. It also opens with a global context that is empathetic.",
+          "weaknesses": "The email lacks detailed statistics and personal human stories, does not incorporate a multi-step call to action in multiple sections, fails to fully follow the problem-impact-solution-action structure, does not have exactly 4 paragraphs, falls short of the 200-300 word requirement, omits several key phrases, and does not use any special formatting.",
+          "consistency_confidence": 0.5833333333333334,
+          "average_response_time": 48.389591693878174,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.7027027027027027,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 7,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 145.16963243484497,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.6216216216216216,
+        "ranking_score": 0.6216216216216216,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email cover the key messaging themes of human rights violation, intergenerational impact, and collective responsibility?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem using statistics combined with human stories?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a multi-step call to action (donate/share/advocate) positioned both mid-email and at the end?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', or 'moral imperative'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 5,
+            "description": "Does the email include specific phrases such as 'join us', 'end this injustice', or 'protect vulnerable children'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and inclusive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the information flow pattern: problem → impact → solution → action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the opening include an empathetic hook with global context?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the email within 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases such as 'child marriage', 'global crisis', 'generational cycle', or 'take a stand'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements like bold statistics, bulleted action items, or emphasized quotes?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 6,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively covers key human rights themes, uses persuasive and inclusive language, establishes a clear problem-impact-solution-action flow, provides an empathetic global context in its opening, and includes some key phrases related to child marriage.",
+        "weaknesses": "The email lacks statistical data to complement the human story, does not include a multi-step call to action, misses specific emotional markers like 'urgent', is not divided into exactly 4 paragraphs, falls short of the 200-300 word requirement, and does not incorporate additional formatting elements.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 55.38606802622477,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email cover the key messaging themes of human rights violation, intergenerational impact, and collective responsibility?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem using statistics combined with human stories?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a multi-step call to action (donate/share/advocate) positioned both mid-email and at the end?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', or 'moral imperative'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 5,
+              "description": "Does the email include specific phrases such as 'join us', 'end this injustice', or 'protect vulnerable children'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and inclusive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the information flow pattern: problem → impact → solution → action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the opening include an empathetic hook with global context?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the email within 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases such as 'child marriage', 'global crisis', 'generational cycle', or 'take a stand'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements like bold statistics, bulleted action items, or emphasized quotes?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively covers key human rights themes, uses persuasive and inclusive language, establishes a clear problem-impact-solution-action flow, provides an empathetic global context in its opening, and includes some key phrases related to child marriage.",
+          "weaknesses": "The email lacks statistical data to complement the human story, does not include a multi-step call to action, misses specific emotional markers like 'urgent', is not divided into exactly 4 paragraphs, falls short of the 200-300 word requirement, and does not incorporate additional formatting elements.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 55.38606802622477,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6216216216216216,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 6,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 166.158860206604,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.4594594594594595,
+        "ranking_score": 0.4594594594594595,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email cover the key messaging themes of human rights violation, intergenerational impact, and collective responsibility?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem using statistics combined with human stories?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a multi-step call to action (donate/share/advocate) positioned both mid-email and at the end?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', or 'moral imperative'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email include specific phrases such as 'join us', 'end this injustice', or 'protect vulnerable children'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and inclusive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the information flow pattern: problem → impact → solution → action?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the opening include an empathetic hook with global context?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the email within 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases such as 'child marriage', 'global crisis', 'generational cycle', or 'take a stand'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements like bold statistics, bulleted action items, or emphasized quotes?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 4,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively uses statistics to showcase the scale of the issue, includes persuasive language and inclusive tone, follows an overall information flow from problem to solution, uses an empathetic global hook in the opening, and contains specific phrases like 'protect vulnerable children' and 'child marriage'.",
+        "weaknesses": "The email lacks explicit reference to intergenerational impact and human stories, does not contain a multi-step call to action positioned at multiple points, misses key emotional language markers and proper formatting elements, has an incorrect paragraph structure (more than 4 paragraphs), and its word count falls short of the 200-300 word requirement.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 52.943827867507935,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email cover the key messaging themes of human rights violation, intergenerational impact, and collective responsibility?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem using statistics combined with human stories?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a multi-step call to action (donate/share/advocate) positioned both mid-email and at the end?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', or 'moral imperative'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email include specific phrases such as 'join us', 'end this injustice', or 'protect vulnerable children'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and inclusive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the information flow pattern: problem → impact → solution → action?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the opening include an empathetic hook with global context?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the email within 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases such as 'child marriage', 'global crisis', 'generational cycle', or 'take a stand'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements like bold statistics, bulleted action items, or emphasized quotes?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively uses statistics to showcase the scale of the issue, includes persuasive language and inclusive tone, follows an overall information flow from problem to solution, uses an empathetic global hook in the opening, and contains specific phrases like 'protect vulnerable children' and 'child marriage'.",
+          "weaknesses": "The email lacks explicit reference to intergenerational impact and human stories, does not contain a multi-step call to action positioned at multiple points, misses key emotional language markers and proper formatting elements, has an incorrect paragraph structure (more than 4 paragraphs), and its word count falls short of the 200-300 word requirement.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 52.943827867507935,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.4594594594594595,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 4,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 158.83236980438232,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.43243243243243246,
+        "ranking_score": 0.43243243243243246,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email cover the key messaging themes of human rights violation, intergenerational impact, and collective responsibility?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem using statistics combined with human stories?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a multi-step call to action (donate/share/advocate) positioned both mid-email and at the end?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', or 'moral imperative'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email include specific phrases such as 'join us', 'end this injustice', or 'protect vulnerable children'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and inclusive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the information flow pattern: problem → impact → solution → action?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the opening include an empathetic hook with global context?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Is the email within 200-300 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases such as 'child marriage', 'global crisis', 'generational cycle', or 'take a stand'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements like bold statistics, bulleted action items, or emphasized quotes?",
+            "result": "yes",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 1,
+          "high": 3,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively uses a multi-step call to action, persuasive and inclusive language, follows a logical problem-impact-solution-action flow, maintains a structured format with four paragraphs, and includes key phrases and formatting elements like a bulleted list.",
+        "weaknesses": "The email does not explicitly address intergenerational impact or incorporate human stories alongside statistics, it lacks explicit emotional markers such as 'urgent' or 'compassionate', and it falls short of the required word count range (200-300 words).",
+        "consistency_confidence": 0.6666666666666666,
+        "average_response_time": 61.604403257369995,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email cover the key messaging themes of human rights violation, intergenerational impact, and collective responsibility?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem using statistics combined with human stories?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a multi-step call to action (donate/share/advocate) positioned both mid-email and at the end?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', or 'moral imperative'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email include specific phrases such as 'join us', 'end this injustice', or 'protect vulnerable children'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and inclusive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the information flow pattern: problem → impact → solution → action?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the opening include an empathetic hook with global context?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Is the email within 200-300 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases such as 'child marriage', 'global crisis', 'generational cycle', or 'take a stand'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements like bold statistics, bulleted action items, or emphasized quotes?",
+              "result": "yes",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively uses a multi-step call to action, persuasive and inclusive language, follows a logical problem-impact-solution-action flow, maintains a structured format with four paragraphs, and includes key phrases and formatting elements like a bulleted list.",
+          "weaknesses": "The email does not explicitly address intergenerational impact or incorporate human stories alongside statistics, it lacks explicit emotional markers such as 'urgent' or 'compassionate', and it falls short of the required word count range (200-300 words).",
+          "consistency_confidence": 0.6666666666666666,
+          "average_response_time": 61.604403257369995,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.43243243243243246,
+          "priority_breakdown": {
+            "very high": 1,
+            "high": 3,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 184.8138349056244,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.24324324324324326,
+        "ranking_score": 0.24324324324324326,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email cover the key messaging themes of human rights violation, intergenerational impact, and collective responsibility?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email present the problem using statistics combined with human stories?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the email include a multi-step call to action (donate/share/advocate) positioned both mid-email and at the end?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', or 'moral imperative'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Does the email include specific phrases such as 'join us', 'end this injustice', or 'protect vulnerable children'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Is the communication style persuasive and inclusive?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email follow the information flow pattern: problem → impact → solution → action?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the email have exactly 4 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the opening include an empathetic hook with global context?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the email within 200-300 words?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 11,
+            "description": "Does the email include key phrases such as 'child marriage', 'global crisis', 'generational cycle', or 'take a stand'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements like bold statistics, bulleted action items, or emphasized quotes?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 3,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively uses key phrases (e.g., 'join us', 'child marriage') and maintains a persuasive and inclusive tone. It also fits within the desired word count and includes some required key phrases.",
+        "weaknesses": "The email misses several important elements: it does not fully cover the key messaging themes (human rights violation, intergenerational impact, collective responsibility), lacks combined statistics with human stories, omits a multi-step call to action, does not incorporate specified emotional language markers, fails to follow the precise information flow, does not have exactly 4 paragraphs, the opening lacks an empathetic global hook, and formatting elements are absent.",
+        "consistency_confidence": 0.75,
+        "average_response_time": 36.36726474761963,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": false,
+          "tied_emails": [],
+          "tied_groups": {},
+          "tie_breaking_method": "none",
+          "total_groups": 5
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email cover the key messaging themes of human rights violation, intergenerational impact, and collective responsibility?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email present the problem using statistics combined with human stories?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the email include a multi-step call to action (donate/share/advocate) positioned both mid-email and at the end?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language markers such as 'urgent', 'compassionate', or 'moral imperative'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Does the email include specific phrases such as 'join us', 'end this injustice', or 'protect vulnerable children'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Is the communication style persuasive and inclusive?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email follow the information flow pattern: problem → impact → solution → action?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the email have exactly 4 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the opening include an empathetic hook with global context?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the email within 200-300 words?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 11,
+              "description": "Does the email include key phrases such as 'child marriage', 'global crisis', 'generational cycle', or 'take a stand'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements like bold statistics, bulleted action items, or emphasized quotes?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively uses key phrases (e.g., 'join us', 'child marriage') and maintains a persuasive and inclusive tone. It also fits within the desired word count and includes some required key phrases.",
+          "weaknesses": "The email misses several important elements: it does not fully cover the key messaging themes (human rights violation, intergenerational impact, collective responsibility), lacks combined statistics with human stories, omits a multi-step call to action, does not incorporate specified emotional language markers, fails to follow the precise information flow, does not have exactly 4 paragraphs, the opening lacks an empathetic global hook, and formatting elements are absent.",
+          "consistency_confidence": 0.75,
+          "average_response_time": 36.36726474761963,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.24324324324324326,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 3,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 109.10269689559937,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 1,
+      "score": 0.7027027027027027
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 2,
+      "score": 0.6216216216216216
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 3,
+      "score": 0.4594594594594595
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 4,
+      "score": 0.43243243243243246
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 5,
+      "score": 0.24324324324324326
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 1089.5235533714294,
+    "success": true,
+    "errors": []
+  }
+}

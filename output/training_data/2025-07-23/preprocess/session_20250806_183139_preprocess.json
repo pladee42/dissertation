@@ -1,0 +1,1186 @@
+{
+  "session_id": "fd2d6fcc-c9bb-43de-9bcd-24937b88e4ad",
+  "timestamp": "2025-08-06T18:31:39.585186",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0144",
+    "name": "We're Hiring! Join Our Team of Award-Winning Journalists"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive – reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals – about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about We're Hiring! Join Our Team of Award-Winning Journalists"
+  },
+  "models_used": {
+    "email_models": [
+      "stablelm-2-1.6b-dpo-hyb",
+      "llama-3-8b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "phi-3-mini-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[Your_Email_Address]\nSubject Line: [YOUR_EMAIL_SUBJECT] - We're Hiring!\n\nDear [Recipient],\n\nAt [Your_Organization_Name], we're thrilled to announce our latest opportunity to join our team of award-winning journalists. As one of our valued members, you'll have the chance to work alongside some of the most respected names in journalism while contributing to a groundbreaking publication that aims to make a significant impact on society.\n\nOur mission at [Your_Organization_Name] is simple yet powerful: to deliver impactful stories that inspire change. With your expertise and dedication, you can be a part of this exciting journey and contribute to our vision of creating meaningful change through informed storytelling.\n\nHere's what we're looking for:\n\n- A passion for journalism\n- Excellent writing skills and experience\n- Strong research abilities\n- Ability to think critically and creatively\n- Familiarity with current events and trends\n\nTo apply, please send us your resume, cover letter, and three writing samples by [Deadline_Date]. Don't miss out on this incredible opportunity – submit your application today!\n\nThank you for considering joining our team. Together, let's create positive change.\n\nBest regards,\n\n[Your_Name]\n[Your_Position]\n[Your_Organization_Name]\n[Your_Email_Address]\n[Your_Phone_Number]\n",
+        "generation_time": 116.49457883834839,
+        "success": true
+      },
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "[example_email@example.com](mailto:example_email@example.com)\nPhone: 555-123-4567\nWebsite: [www.examplewebsite.com](http://www.examplewebsite.com)\n\nSubject: We're Hiring! Join Our Team of Award-Winning Journalists\n\nDear fellow journalism enthusiast,\n\nAre you passionate about storytelling? Do you want to be part of a team that's changing the face of media?\n\nWe're excited to announce that we're hiring talented journalists to join our award-winning team at The Daily Scoop!\n\nAs a journalist at The Daily Scoop, you'll have the opportunity to work on a wide range of stories, from in-depth investigations to breaking news coverage. You'll be working alongside some of the best journalists in the industry, and you'll have access to top-notch resources and training.\n\nOur team is dedicated to telling stories that matter, and we're looking for people who share our passion for quality journalism. If you're a motivated and creative individual who isn't afraid to take risks, we want to hear from you!\n\nHere are just a few reasons why you should consider joining our team:\n\n*   **Award-winning team**: We've won numerous awards for our reporting, including several Pulitzer Prizes.\n*   **Opportunities for growth**: We offer opportunities for advancement and professional development.\n*   **Collaborative environment**: Our team is supportive and collaborative, with a focus on teamwork and mutual respect.\n\nTo apply, please submit your resume, cover letter, and three writing samples to [jobs@thedailyscoop.com](mailto:jobs@thedailyscoop.com). We can't wait to hear from you!\n\n**Apply Now and Join Our Team of Award-Winning Journalists!**\n",
+        "generation_time": 99.48691248893738,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[USER_NAME]\nSubject: [SUBJECT_LINE]\n\nDear [HONORABLE_RESPONDER],\n\nWe're thrilled to share that we have an exciting opportunity for you to join our award-winning journalism team! We are seeking a talented journalist who can bring their passion for storytelling and commitment to excellence to our organization.\n\nAs an experienced journalist, you will be responsible for covering a wide range of topics, including news, features, politics, and culture. You will work closely with our editors and producers to develop compelling stories and create engaging content that resonates with our audience.\n\nOur ideal candidate should have a strong background in journalism, with a minimum of three years of experience. They should also have excellent writing skills, a passion for storytelling, and a commitment to producing high-quality journalism.\n\nTo apply, please submit your resume and cover letter to [SENDING_ADDRESS]. We encourage all qualified candidates to apply, regardless of their experience level.\n\nThank you for considering this role with our organization. If you have any questions or would like additional information, please do not hesitate to reach out to me at [CONTACT_INFO].\n\nBest regards,\n\n[YOUR_NAME]\n\n## Example:\n\n[EXAMPLE_EMAIL]\n\nEmail: [USER_NAME]\nSubject: [SUBJECT_LINE]\n\nDear [HONORABLE_RESPONDER],\n\nWe're excited to share that we have an incredible opportunity for you to join our team! As a part of our marketing department, you will be responsible for developing and executing successful marketing campaigns for our clients.\n\nYour responsibilities will include:\n\n1. Developing and executing marketing plans\n2. Managing budgets and tracking results\n3. Collaborating with internal teams and external partners\n4. Analyzing data and making data-driven decisions\n5. Providing regular updates to senior management\n6. Ensuring that all marketing materials align with our brand guidelines\n7. Maintaining relationships with clients and building long-term partnerships\n8. Conducting research and gathering insights to inform marketing strategies\n9. Attending industry events and conferences to stay up-to-date on trends and best practices\n\nThe ideal candidate will have a Bachelor's degree in Marketing, Communications, Business Administration, or related field, along with 2-5 years of relevant experience. They should also possess excellent communication skills, the ability to work collaboratively, and a keen eye for detail.\n\nPlease send your resume and cover letter to [SENDING_ADDRESS]. We look forward to hearing from you.\n\nThank you for considering this opportunity with our organization. If you have any questions or would like additional information, please do not hesitate to contact me at [CONTACT_INFO].\n\nBest regards,\n\n[YOUR_NAME]\n\n## Example:\n\n[EXAMPLE_EMAIL]\n\nEmail: [USER_NAME]\nSubject: [SUBJECT_LINE]\n\nDear [HONORABLE_RESPONDER],\n\nWe are thrilled to share that we have an amazing opportunity for you to join our team! As a social media manager, you will be responsible for managing our company's social media accounts, creating engaging content, and driving traffic to our website.\n\nYour responsibilities will include:\n\n1. Monitoring and analyzing social media performance metrics\n2. Creating and implementing social media strategies\n3. Developing and executing social media campaigns\n4. Collaborating with other departments to ensure consistency and cohesion across channels\n5. Responding to customer inquiries and complaints on social media\n6. Creating and maintaining social media profiles\n7. Maintaining relationships with key influencers and brands\n8. Participating in social media community management initiatives\n9. Attending industry events and conferences to stay up-to-date on trends and best practices\n\nThe ideal candidate will have a Bachelor's degree in Marketing, Communications, Business Administration, or related field, along with 2-5 years of relevant experience in social media management. They should also possess excellent communication skills, the ability to work collaboratively, and a keen eye for detail.\n\nPlease send your resume and cover letter to [SENDING_ADDRESS]. We encourage all qualified candidates to apply, regardless of their experience level.\n\nThank you for considering this opportunity with our organization. If you have any questions or would like additional information, please do not hesitate to contact me at [CONTACT_INFO].\n\nBest regards,\n\n[YOUR_NAME]\n",
+        "generation_time": 21.36358332633972,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Become Part of Our Award-Winning Team!\n\nDear [Recipient],\n\nAre you passionate about journalism? Do you want to work alongside some of the most talented reporters in the industry? We're hiring! Join our team of award-winning journalists today.\n\nAt [Sending Organization], we pride ourselves on producing high-quality, impactful journalism that informs and engages audiences around the world. As part of our team, you'll have the opportunity to work on groundbreaking projects, collaborate with top talent, and make a real difference in people's lives through your reporting.\n\nOur team has won numerous awards for excellence in journalism, including Pulitzer Prizes, Emmys, and Peabody Awards. We've covered everything from political scandals to environmental disasters, always striving for accuracy, fairness, and impact.\n\nNow, we need YOUR help. We're looking for talented individuals who share our commitment to quality journalism and want to be part of something truly special. Whether you're an experienced journalist or just starting out, we offer competitive salaries, comprehensive benefits, and opportunities for growth and advancement.\n\nSo why join our team? Here are just a few reasons:\n\n* Work alongside award-winning journalists who are passionate about their craft.\n* Collaborate on impactful projects that make a real difference in people's lives.\n* Receive competitive compensation and benefits packages.\n* Gain valuable experience and training opportunities.\n\nIf this sounds like the opportunity you've been waiting for, apply now by visiting our website at [Application Link]. Please submit your resume, cover letter, and three professional references.\n\nThank you for considering joining our team. We look forward to hearing from you soon!\n\nBest regards,\n\n[Your Name]\n\n[Sending Organization]\n",
+        "generation_time": 42.221656799316406,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Unleash Your Potential at [Your Company Name]: A Call for Top Talent in Journalism | Apply Now\n\nDear Aspiring Reporter,\n\nAre you passionate about uncovering stories that matter? At [Your Company Name], we believe every journalist has the power to make a difference through their work. We’re currently seeking talented individuals like yourself who share our commitment to excellence and integrity in journalism. If this sounds like something you would be interested in pursuing professionally, then let us introduce ourselves – because here lies an opportunity where talent meets purpose.\n\nAs one of the leading media organizations dedicated to delivering accurate news coverage across various platforms including print publications such as The New York Times Magazine & Washington Post Weekend Edition Sunday; digital outlets like Wired magazine online editorial team member; television networks ABC News Nightline host Tucker Carlson Show anchor Mike Pesca showrunner/producer Current TV executive producer along side others within industry giants CNN International BBC Worldwide Ltd.; radio stations NPR affiliates KCRW Santa Monica California Public Radio station LIVE!, XM Satellite Radio network hosts Starboard Media Group founder John Oliver comedic specials airwaves etc.. You could become part of these teams while helping shape public opinion around critical issues facing society today—from climate change solutions advocacy efforts towards promoting social justice causes worldwide education reform initiatives geopolitical developments international relations diplomacy strategies economic policies global healthcare systems environmental protection measures technological advancements innovation trends cultural diversity inclusion equality representation equitable access opportunities marginalized communities underprivileged populations disenfranchised groups minority ethnic background citizenship status immigration law enforcement agencies border security operations intelligence gathering surveillance programs counterterrorism activities cybersecurity threats privacy concerns civil liberties constitutional protections free speech freedom assembly right protest movements peaceful demonstrations nonviolent resistance activist campaign organizing events coordinating logistics planning fundraising raising awareness spreading information educating audiences mobilizing supporters rallying crowds lobbying policymakers influencing decision makers changing minds challenging norms breaking barriers building bridges fostering understanding creating dialogue facilitating reconciliation resolving conflicts mediating disputes negotiating settlement agreements drafting legislation proposing bills sponsoring resolutions introducing amendments filibustering voting procedures holding hearings conducting investigations reporting findings analyzing data interpreting statistics summarizing results evaluating impact assessing effectiveness monitoring compliance ensuring accountability implementing recommendations providing feedback soliciting input incorporating suggestions refining approaches optimizing processes streamlining workflows improving efficiency enhancing productivity increasing output maximizing profit generating revenue reducing costs minimizing expenses saving money conserving resources preserving natural habitats protecting ecosystems restoring balance sustaining harmony maintaining equilibrium balancing interests safeguarding assets securing investments managing finances allocating budgets overseeing projects supervising contractors administering personnel handling staff scheduling assigning tasks delegating responsibilities prioritizing objectives setting goals establishing benchmarks achieving milestones reaching targets accomplishing missions fulfilling obligations honoring promises upholding standards adhering regulations abiding by laws obeying rules following protocols conforming requirements meeting expectations satisfying demands addressing needs accommodating requests responding promptly attending meetings preparing presentations giving reports submitting documents completing assignments executing plans developing ideas formulating concepts designing products manufacturing goods producing services offering assistance answering questions clarifying doubts explaining reasons justifying actions defending positions supporting arguments opposing views expressing opinions stating facts making claims substantiating evidence proving hypotheses testing theories validating assumptions verifying accuracy confirming reliability checking consistency comparing contrasting perspectives considering alternatives exploring possibilities examining consequences anticipating effects predicting outcomes forecasting implications suggesting improvements recommending enhancements identifying problems diagnosing root causes finding remedies solving puzzles piecing together pieces putting everything together assembling components integrating elements combining parts connecting links linking relationships forming connections joining forces collaborating working alongside colleagues partnering up cooperating assisting each other sharing knowledge learning skills teaching techniques training methods practicing exercises applying principles using tools employing equipment utilizing technology leveraging advantages exploiting benefits capitalizing gains harnessing potential realizing value extracting worth tapping into yielding returns benefiting stakeholders contributing community members serving customers delighting clients pleasing patrons enthusing enthusiasts inspiring creativity igniting imagination fueling dreams empowering aspirations motivating ambition stimulating growth driving progress propelling forward moving ahead taking strides surging forth charging headlong accelerating momentum gaining speed picking up pace quickening velocity boosting acceleration escalating rate hastening tempo intensifying frequency elevating pitch rising volume amplifying loudness crescendo climbing height ascending altitude soaring skyward flying high floating above hovering suspended hanging perched poised ready prepared set up prepped configured setup operational active engaged involved committed invested employed recruited assigned appointed selected chosen confirmed approved authorized granted licensed certified qualified competent capable skilled proficient experienced adept trained educated informed aware conscious cognizant mindful observant alert sensitive empathetic caring concerned sympathetic supportive encouraging inspirational visionary leader guide mentor coach instruct teacher advise counsel consult advice give offer suggest propose recommended suggested proposed offered given presented made available supplied delivered handed received accepted agreed upon understood acknowledged recognized appreciated valued cherished treasured prized esteemed respected admired held dear loved regarded revered considered worthy trustworthy reliable dependable consistent constant steady stable regular routine daily ordinary normal usual average typical standard commonplace familiar customary traditional conventional formal professional business official corporate government institution state department office authority superior senior chief commander general officer major lieutenant colonel captain sergeant first sergeant master private soldier sailor marine petty officer yeoman apprentice journeyman craftsman worker laborer helper assistant associate trainee intern volunteer student scholar pupil learner child kid youngster youth adult elder old person aged individual self alone single lone solitary lonely isolated independent autonomous separate distinct unique particular special specific definite certain precise quantifiable measurable countable numerable determinate finite boundless infinite limitless endless eternal perpetual continuous flowing circulatory circular roundabout loophole looping circle circumference radius diameter length width breadth depth thickness thinness slim narrowness tighten squeezing compressibility squishiness pliability malleability flexibility elasticity stretchability extensibility tensility strength durability resilience hardness softness fragility brittleness fracture crack break shatter splinter snap burst rupture tear rip pull twist wrench turn screw fastener nut bolted thread spindle axle wheel pedal brake caliper disc rotor rubber band spring steel wire chain link rope cable cord cables strings nylon polyester acrylic fiberglass carbon kevlar aramid borosilicate glass ceramics silicon aluminum titanium magnesium zinc tin lead mercury gold silver platinum rhodium iridium osmium plutonium americium curium europium neodymium samarium dysprosium holmium erbium\n",
+        "generation_time": 75.25257539749146,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email cover the key themes of career opportunity, excellence in journalism, and impactful work?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email propose joining a high-performing team as the solution?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the call-to-action use direct imperative verbs and appear in the final paragraph with prominent links?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language that is enthusiastic, proud, and inviting?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style persuasive and engaging?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include the specific phrases 'Join our team', 'Award-winning', and 'Shape the future'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email have exactly 3 paragraphs?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the opening use an energetic headline with an exclamation?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the email follow the information flow: team prestige → open roles → application urgency?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Is the word count between 100-150 words?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email include the key phrases 'award-winning journalists', 'passionate about storytelling', and 'apply today'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use formatting elements like bold headlines and bulleted role listings?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 123.11254167556763,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.6764705882352942,
+        "ranking_score": 0.6764705882352942,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email cover the key themes of career opportunity, excellence in journalism, and impactful work?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email propose joining a high-performing team as the solution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the call-to-action use direct imperative verbs and appear in the final paragraph with prominent links?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is enthusiastic, proud, and inviting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style persuasive and engaging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'Join our team', 'Award-winning', and 'Shape the future'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 3 paragraphs?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the opening use an energetic headline with an exclamation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email follow the information flow: team prestige → open roles → application urgency?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the word count between 100-150 words?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases 'award-winning journalists', 'passionate about storytelling', and 'apply today'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements like bold headlines and bulleted role listings?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 7,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully communicates career opportunity with impactful language, effectively highlights excellence in journalism through phrases like 'award-winning journalists' and uses a persuasive, engaging style. It also meets the word count and structural requirements with an energetic subject line and logical information flow.",
+        "weaknesses": "The email lacks a direct imperative call-to-action with prominent links, does not incorporate all required key phrases (missing 'Shape the future', 'passionate about storytelling', and 'apply today'), and does not use bold headlines as a formatting element.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 48.099387407302856,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5": [
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email cover the key themes of career opportunity, excellence in journalism, and impactful work?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email propose joining a high-performing team as the solution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the call-to-action use direct imperative verbs and appear in the final paragraph with prominent links?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is enthusiastic, proud, and inviting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style persuasive and engaging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'Join our team', 'Award-winning', and 'Shape the future'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 3 paragraphs?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the opening use an energetic headline with an exclamation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the information flow: team prestige → open roles → application urgency?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the word count between 100-150 words?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases 'award-winning journalists', 'passionate about storytelling', and 'apply today'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements like bold headlines and bulleted role listings?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully communicates career opportunity with impactful language, effectively highlights excellence in journalism through phrases like 'award-winning journalists' and uses a persuasive, engaging style. It also meets the word count and structural requirements with an energetic subject line and logical information flow.",
+          "weaknesses": "The email lacks a direct imperative call-to-action with prominent links, does not incorporate all required key phrases (missing 'Shape the future', 'passionate about storytelling', and 'apply today'), and does not use bold headlines as a formatting element.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 48.099387407302856,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.6764705882352942,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 7,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 144.29870462417603,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.5882352941176471,
+        "ranking_score": 0.5882352941176471,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email cover the key themes of career opportunity, excellence in journalism, and impactful work?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email propose joining a high-performing team as the solution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the call-to-action use direct imperative verbs and appear in the final paragraph with prominent links?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is enthusiastic, proud, and inviting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style persuasive and engaging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'Join our team', 'Award-winning', and 'Shape the future'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 3 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the opening use an energetic headline with an exclamation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email follow the information flow: team prestige → open roles → application urgency?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the word count between 100-150 words?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases 'award-winning journalists', 'passionate about storytelling', and 'apply today'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements like bold headlines and bulleted role listings?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 6,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully conveys the career opportunity, excellence in journalism, and impactful work themes. It uses enthusiastic and persuasive language, features an energetic headline with an exclamation, follows the intended information flow, and meets the word count requirement.",
+        "weaknesses": "The call-to-action lacks direct imperative verbs and prominent links in the final paragraph. It also misses the specific phrase 'Shape the future', does not have exactly 3 paragraphs, omits 'apply today', and lacks formatting elements like bold headlines and bullet lists.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 52.20990220705668,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5": [
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email cover the key themes of career opportunity, excellence in journalism, and impactful work?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email propose joining a high-performing team as the solution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the call-to-action use direct imperative verbs and appear in the final paragraph with prominent links?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is enthusiastic, proud, and inviting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style persuasive and engaging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'Join our team', 'Award-winning', and 'Shape the future'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 3 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the opening use an energetic headline with an exclamation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the information flow: team prestige → open roles → application urgency?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the word count between 100-150 words?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases 'award-winning journalists', 'passionate about storytelling', and 'apply today'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements like bold headlines and bulleted role listings?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully conveys the career opportunity, excellence in journalism, and impactful work themes. It uses enthusiastic and persuasive language, features an energetic headline with an exclamation, follows the intended information flow, and meets the word count requirement.",
+          "weaknesses": "The call-to-action lacks direct imperative verbs and prominent links in the final paragraph. It also misses the specific phrase 'Shape the future', does not have exactly 3 paragraphs, omits 'apply today', and lacks formatting elements like bold headlines and bullet lists.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 52.20990220705668,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5882352941176471,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 6,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 156.63031005859375,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.5,
+        "ranking_score": 0.5,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email cover the key themes of career opportunity, excellence in journalism, and impactful work?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email propose joining a high-performing team as the solution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the call-to-action use direct imperative verbs and appear in the final paragraph with prominent links?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is enthusiastic, proud, and inviting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style persuasive and engaging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'Join our team', 'Award-winning', and 'Shape the future'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 3 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening use an energetic headline with an exclamation?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the email follow the information flow: team prestige → open roles → application urgency?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the word count between 100-150 words?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases 'award-winning journalists', 'passionate about storytelling', and 'apply today'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements like bold headlines and bulleted role listings?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively highlights career opportunity, team prestige, and excellence in journalism while employing enthusiastic and persuasive language. It also follows a logical flow and adheres to the required word count.",
+        "weaknesses": "The email lacks prominent call-to-action links, does not use all required key phrases (missing 'Shape the future' and 'apply today'), exceeds the specified three-paragraph structure, omits an energetic headline with an exclamation, and does not use formatting elements like bold headlines or bullet lists.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 77.61268226305644,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5": [
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email cover the key themes of career opportunity, excellence in journalism, and impactful work?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email propose joining a high-performing team as the solution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the call-to-action use direct imperative verbs and appear in the final paragraph with prominent links?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is enthusiastic, proud, and inviting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style persuasive and engaging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'Join our team', 'Award-winning', and 'Shape the future'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 3 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening use an energetic headline with an exclamation?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the information flow: team prestige → open roles → application urgency?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the word count between 100-150 words?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases 'award-winning journalists', 'passionate about storytelling', and 'apply today'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements like bold headlines and bulleted role listings?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively highlights career opportunity, team prestige, and excellence in journalism while employing enthusiastic and persuasive language. It also follows a logical flow and adheres to the required word count.",
+          "weaknesses": "The email lacks prominent call-to-action links, does not use all required key phrases (missing 'Shape the future' and 'apply today'), exceeds the specified three-paragraph structure, omits an energetic headline with an exclamation, and does not use formatting elements like bold headlines or bullet lists.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 77.61268226305644,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 232.83887577056885,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.5,
+        "ranking_score": 0.5,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email cover the key themes of career opportunity, excellence in journalism, and impactful work?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email propose joining a high-performing team as the solution?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the call-to-action use direct imperative verbs and appear in the final paragraph with prominent links?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is enthusiastic, proud, and inviting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style persuasive and engaging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'Join our team', 'Award-winning', and 'Shape the future'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 3 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the opening use an energetic headline with an exclamation?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email follow the information flow: team prestige → open roles → application urgency?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Is the word count between 100-150 words?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases 'award-winning journalists', 'passionate about storytelling', and 'apply today'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements like bold headlines and bulleted role listings?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 5,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively covers key themes of career opportunities and excellence (criteria 1, 2), uses enthusiastic and persuasive language (criteria 4, 5), opens with an energetic headline with an exclamation (criterion 8), and meets the required word count (criterion 10).",
+        "weaknesses": "The email lacks a clear call-to-action with imperative verbs and prominent links (criterion 3), omits specific key phrases like 'Shape the future', 'passionate about storytelling', and 'apply today' (criteria 6 and 11), does not adhere to the exact three-paragraph structure (criterion 7), fails to follow the prescribed information flow (criterion 9), and does not use formatting elements like bold headlines or bulleted listings (criterion 12).",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 54.42888204256693,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5": [
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email cover the key themes of career opportunity, excellence in journalism, and impactful work?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email propose joining a high-performing team as the solution?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the call-to-action use direct imperative verbs and appear in the final paragraph with prominent links?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is enthusiastic, proud, and inviting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style persuasive and engaging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'Join our team', 'Award-winning', and 'Shape the future'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 3 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the opening use an energetic headline with an exclamation?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the information flow: team prestige → open roles → application urgency?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Is the word count between 100-150 words?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases 'award-winning journalists', 'passionate about storytelling', and 'apply today'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements like bold headlines and bulleted role listings?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively covers key themes of career opportunities and excellence (criteria 1, 2), uses enthusiastic and persuasive language (criteria 4, 5), opens with an energetic headline with an exclamation (criterion 8), and meets the required word count (criterion 10).",
+          "weaknesses": "The email lacks a clear call-to-action with imperative verbs and prominent links (criterion 3), omits specific key phrases like 'Shape the future', 'passionate about storytelling', and 'apply today' (criteria 6 and 11), does not adhere to the exact three-paragraph structure (criterion 7), fails to follow the prescribed information flow (criterion 9), and does not use formatting elements like bold headlines or bulleted listings (criterion 12).",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 54.42888204256693,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.5,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 5,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 163.28730130195618,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.3235294117647059,
+        "ranking_score": 0.3235294117647059,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email cover the key themes of career opportunity, excellence in journalism, and impactful work?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Does the email propose joining a high-performing team as the solution?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the call-to-action use direct imperative verbs and appear in the final paragraph with prominent links?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language that is enthusiastic, proud, and inviting?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style persuasive and engaging?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'Join our team', 'Award-winning', and 'Shape the future'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 3 paragraphs?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the opening use an energetic headline with an exclamation?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the email follow the information flow: team prestige → open roles → application urgency?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the word count between 100-150 words?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases 'award-winning journalists', 'passionate about storytelling', and 'apply today'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements like bold headlines and bulleted role listings?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 3,
+          "medium": 1,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively covers key career opportunity themes, uses enthusiastic and persuasive language, maintains the structure with exactly 3 paragraphs, and fits within the desired word count.",
+        "weaknesses": "The email lacks a clear invitation to join a high-performing team, direct imperative call-to-action with links, required specific phrases, an energetic exclamation in the headline, a well-organized information flow, additional key phrases, and formatting elements.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 37.664958000183105,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "tinyllama-1.1b-dpo-hyb",
+            "vicuna-7b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.5": [
+              "tinyllama-1.1b-dpo-hyb",
+              "vicuna-7b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 4
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email cover the key themes of career opportunity, excellence in journalism, and impactful work?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Does the email propose joining a high-performing team as the solution?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the call-to-action use direct imperative verbs and appear in the final paragraph with prominent links?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language that is enthusiastic, proud, and inviting?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style persuasive and engaging?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'Join our team', 'Award-winning', and 'Shape the future'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 3 paragraphs?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the opening use an energetic headline with an exclamation?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the email follow the information flow: team prestige → open roles → application urgency?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the word count between 100-150 words?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases 'award-winning journalists', 'passionate about storytelling', and 'apply today'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements like bold headlines and bulleted role listings?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively covers key career opportunity themes, uses enthusiastic and persuasive language, maintains the structure with exactly 3 paragraphs, and fits within the desired word count.",
+          "weaknesses": "The email lacks a clear invitation to join a high-performing team, direct imperative call-to-action with links, required specific phrases, an energetic exclamation in the headline, a well-organized information flow, additional key phrases, and formatting elements.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 37.664958000183105,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.3235294117647059,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 3,
+            "medium": 1,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 112.99574685096741,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 1,
+      "score": 0.6764705882352942
+    },
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 2,
+      "score": 0.5882352941176471
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 3,
+      "score": 0.5
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 4,
+      "score": 0.5
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 5,
+      "score": 0.3235294117647059
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 1051.2396049499512,
+    "success": true,
+    "errors": []
+  }
+}

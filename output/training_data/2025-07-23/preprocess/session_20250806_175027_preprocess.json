@@ -1,0 +1,1196 @@
+{
+  "session_id": "d71d072d-9399-4229-a3ba-f41dc4deb08b",
+  "timestamp": "2025-08-06T17:50:27.531210",
+  "checklist_mode": "preprocess",
+  "mode_metadata": {
+    "prompt_length": "structured",
+    "processing_steps": 2,
+    "context_type": "extracted"
+  },
+  "topic": {
+    "uid": "T0141",
+    "name": "Your Support is Critical: Help Us Meet Our Spring Fund Drive Goal"
+  },
+  "input": {
+    "prompt": "## Instruction:\n\nYou are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.\n\nFirst, analyze the user's topic to determine the email's primary goal.\n\n*   **If the topic is a problem, a crisis, or a cause to fight for** (e.g., \"saving wildlife,\" \"defending human rights\"):\n    1.  Start with an urgent, emotional hook.\n    2.  Clearly describe the problem and the obstacle causing it.\n    3.  Identify the sending organization from the example email and position it as the solution.\n    4.  Frame the reader as a hero whose help is essential.\n    5.  Make a powerful and direct appeal for the reader to take action.\n\n*   **If the topic is an announcement, an event, or a piece of content** (e.g., \"our new podcast,\" \"upcoming festival\"):\n    1.  Start with a friendly and direct opening.\n    2.  Clearly and engagingly describe the announcement or event.\n    3.  Invite the reader to participate or learn more.\n\nFinally, ensure the email is concise **(300 - 500 words)** and ends with a **bolded call to action** on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization. \n\n**IMPORTANT:** Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token `<END_EMAIL>` immediately after the bolded call to action to mark completion.\n\nGive me the full email only, without any introductory text or ending text.\n\n## User's Request:\n\n*   **[TOPIC]:**\n\n## Example:\n\nDefender,\n\nPolar bear cubs could get the protection they need to survive thanks to a new bill. Tell your elected officials to support this legislation to save these bears!\nCritical habitat for polar bears is threatened by Big Oil's planned industrial invasion of the Arctic National Wildlife Refuge. These bears are already struggling to survive – reckless oil development could be the final nail in the coffin for the region's declining bear population.\nYour representatives need to hear from you right now. Urge them to support this legislation to keep imperiled polar bears safe!\n\nTAKE ACTION: Demand your elected officials protect vulnerable cubs by supporting the Polar Bear Cub Survival Act!\n\nFriend of Defenders, a newborn polar bear cub only weighs about one pound. These cubs are completely dependent on their mother for nutrition and warmth. They are not strong enough to survive outside of their den.\nBut polar bears are in serious trouble. Many populations are in freefall: The Southern Beaufort Sea population that depends on the security of the habitat provided by the Arctic Refuge now numbers as few as 900 individuals – about half as many bears as three decades ago.\nOil exploration on the Refuge's coastal plain is a direct threat to these bears' survival. The Refuge is where pregnant mother bears go to build maternal dens and give birth. Seismic exploration for oil alone could lead to bears being crushed in their dens as 90,000-pound earthquake-inducing thumper trucks cause the bears' snow caves to collapse.\nDon't let polar bears die for Big Oil's profits. Support legislation to keep these bears safe!\n\nThe Polar Bear Cub Survival Act, if passed, would create a buffer banning oil development around polar bear maternal denning habitat on the Arctic Refuge's coastal plain to ensure denning mothers and cubs are protected.\nCongress needs to do what the Trump administration won't. They need to protect one of the most imperiled polar bear populations in the world from dangerous plans to industrialize their critical denning habitat.\nThank you in advance for your dedication to protecting wildlife.\n\nSincerely,\n[Name]\n[Position]\n[Company]",
+    "user_query": "Email about Your Support is Critical: Help Us Meet Our Spring Fund Drive Goal"
+  },
+  "models_used": {
+    "email_models": [
+      "llama-3-8b-dpo-hyb",
+      "vicuna-7b-dpo-hyb",
+      "tinyllama-1.1b-dpo-hyb",
+      "stablelm-2-1.6b-dpo-hyb",
+      "phi-3-mini-dpo-hyb"
+    ],
+    "checklist_model": "deepseek-r1",
+    "judge_model": "o3-mini"
+  },
+  "outputs": {
+    "emails": [
+      {
+        "model": "llama-3-8b-dpo-hyb",
+        "content": "[example_email@example.com](mailto:example_email@example.com)\nPhone: 555-123-4567\nWebsite: [www.example_website.org](http://www.example_website.org)\n\nSubject: Your Support is Critical: Help Us Meet Our Spring Fund Drive Goal\n\nDear Friend,\n\nAs we approach the end of our Spring Fund Drive, I wanted to personally reach out and ask for your support. This critical period will determine whether we can meet our goals and continue providing vital services to those in need.\n\nOur organization relies heavily on donations from generous supporters like you to keep our programs running. Unfortunately, due to unforeseen circumstances, we're facing a significant shortfall this quarter. Without your help, we risk having to cut back on essential services that make a real difference in people's lives.\n\nThat's why I'm counting on you to join us in meeting our Spring Fund Drive goal. Every donation counts, no matter how big or small. Your contribution will go directly towards supporting our life-changing initiatives and ensuring that everyone has access to the resources they deserve.\n\nWill you consider making a gift today? Your generosity will bring hope and opportunity to those who need it most. Please click the link below to donate securely online or mail a check to the address listed above.\n\n**Donate Now and Help Us Reach Our Goal!**\n\n<https://secure.example_website.org/donate>\n\nThank you for being part of our community and for your unwavering commitment to our mission. Together, we can make a real difference!\n\nSincerely,\n[Your Name]\nDevelopment Director\n\nP.S. If you have already donated, thank you! Your support means the world to us. If not, please consider giving what you can today.\n\n[EXAMPLE_EMAIL]\n\n## Solution:\n\nEmail: [your_email@your_organization.org](mailto:your_email@your_organization.org)\nPhone: 555-901-2345\nWebsite: [www.your_organization.org](http://www.your_organization.org)\n\nSubject: Your Support is Critical: Help Us Meet Our Spring Fund Drive Goal\n\nDear Friend,\n\nAs we approach the end of our Spring Fund Drive, I wanted to personally reach out and ask for your support. This critical period will determine whether we can meet our goals and continue providing vital services to those in need.\n\nOur organization relies heavily on donations from generous supporters like you to keep our programs running. Unfortunately, due to unforeseen circumstances, we're facing a significant shortfall this quarter. Without your help, we risk having to cut back on essential services that make a real difference in people's lives.\n\nThat's why I'm counting on you to join us in meeting our Spring Fund Drive goal. Every donation counts, no matter how big or small. Your contribution will go directly towards supporting our life-changing initiatives and ensuring that everyone has access to the resources they deserve.\n\nWill you consider making a gift today? Your generosity will bring hope and opportunity to those who need it most. Please click the link below to donate securely online or mail a check to the address listed above.\n\n**Donate Now and Help Us Reach Our Goal!**\n\n<https://secure.your_organization.org/donate>\n\nThank you for being part of our community and for your unwavering commitment to our mission. Together, we can make a real difference!\n\nSincerely,\n[Your Name]\nDevelopment Director\n\nP.S. If you have already donated, thank you! Your support means the world to us. If not, please consider giving what you can today.\n",
+        "generation_time": 96.25684809684753,
+        "success": true
+      },
+      {
+        "model": "vicuna-7b-dpo-hyb",
+        "content": "Subject: Urgent Action Needed: Protect Endangered Wildlife\n\nDear [Recipient],\n\nThe fate of endangered species like the African elephant and the Siberian tiger hangs in the balance. Their habitats are being destroyed by deforestation and poaching, and their numbers are dwindling at an alarming rate. We must act now to protect these magnificent creatures before it's too late.\n\nThat's why we need your support today. As a dedicated conservationist and animal lover, you understand the importance of our work. By contributing to our spring fund drive, you can help us continue our vital efforts to save endangered species around the world.\n\nOur organization has been at the forefront of wildlife conservation for over 20 years, working tirelessly to protect animals and their habitats. But we cannot do it alone. With your help, we can make a real difference in the lives of countless animals.\n\nAs a hero who cares deeply about the planet and all its inhabitants, you know that this is a critical moment in history. The future of our planet depends on our ability to protect the natural world and the species that call it home.\n\nWe are asking you to make a donation of $50, $100, or even $250 to help us reach our spring fund drive goal. Every dollar counts, and every contribution brings us one step closer to a brighter future for endangered species.\n\nPlease make your tax-deductible donation today by clicking here: [DONATE\\_LINK]\n\nThank you for considering this urgent request. Together, we can make a difference and secure a better future for our planet and all its inhabitants.\n\nSincerely,\n\n[SENDER'S NAME]\n",
+        "generation_time": 35.53527569770813,
+        "success": true
+      },
+      {
+        "model": "tinyllama-1.1b-dpo-hyb",
+        "content": "[USER_NAME]\nSubject: [SUBJECT_LINE]\n\nDear [FRIEND_NAME],\n\nWe hope this email finds you well. As we approach our spring fund drive, we need your support more than ever. We are excited to share that we have reached our initial fundraising goal! With your help, we can continue providing life-changing services to those in need.\n\nOur mission is to empower individuals and communities to overcome adversity, build resilience, and achieve their goals. That's why we offer programs that address critical needs such as food insecurity, homelessness, mental health, and addiction recovery. We also provide resources for education, employment, and entrepreneurship.\n\nThrough your generous donations, we can continue to provide these vital services to those who need them most. You can make a difference by contributing to our fund drive today. Please click here to donate: [LINK TO DONATION PAGE].\n\nThank you for your continued support. We appreciate your partnership in making a positive impact in our community.\n\nSincerely,\n\n[YOUR_ORGANIZATION_NAME]\n\n## Call to Action:\n\n[BOLDED CALL TO ACTION]\n\nHelp us reach our fundraising goal and provide even more support to those in need. Donate now and make a difference today. Thank you for your support.\n\n### [END_EMAIL]\n",
+        "generation_time": 14.823702573776245,
+        "success": true
+      },
+      {
+        "model": "stablelm-2-1.6b-dpo-hyb",
+        "content": "[INSERT_YOUR_EMAIL_ADDRESS_HERE]\n\nSubject Line: Your Support is Crucial in Meeting Our Spring Fund Drive Goal!\n\nDear [Recipient],\n\nI hope this message finds you well. I am reaching out today because we need your support to meet our Spring Fund Drive goal. As an esteemed member of our community, we believe that every one of us has the power to make a difference.\n\nOur mission at [Insert Sending Organization Name] is simple yet powerful: to provide resources and opportunities for underserved communities across the globe. We strive to create lasting change by empowering individuals through education, mentorship, and financial stability.\n\nCurrently, we are facing unprecedented challenges due to the COVID-19 pandemic. Many organizations like ours have been forced to shut down operations or significantly reduce their services. This has left countless people struggling to find basic necessities such as food, shelter, and healthcare.\n\nThat's why we are launching our Spring Fund Drive to raise funds for our programs and initiatives. By supporting us during this time, you'll be helping us save lives, empower communities, and give hope where there was none before.\n\nHere's how you can contribute:\n\n1. Donate online via our secure platform\n2. Spread the word about our campaign on social media\n3. Share this email with friends and family who may be interested\n\nEvery dollar counts towards making a significant impact in the lives of those we serve. Together, we can overcome these challenging times and emerge stronger than ever before.\n\nAs a valued member of our community, we want to assure you that your contribution will go directly towards improving the lives of others. Whether it's a small donation or a larger commitment, every gift matters.\n\nPlease visit our website ([INSERT LINK HERE]) to learn more about our work and make a difference. If you have any questions or concerns, please don't hesitate to reach out to us at [INSERT EMAIL OR PHONE NUMBER].\n\nThank you for being a part of our journey. Together, let's make a positive impact in the world.\n\nSincerely,\n\n[Your Name]\n[Your Title/Position]\n[Insert Sending Organization Name]\n\nToken:\n",
+        "generation_time": 114.23705720901489,
+        "success": true
+      },
+      {
+        "model": "phi-3-mini-dpo-hyb",
+        "content": "Subject: Join us in our mission – Every contribution counts! [Body] Dear Friend, We hope this message finds you well. As we embrace springtime renewal around the globe, there’s one thing that remains constant—the need for support among those less fortunate than ourselves. At Global Aid Network, every day presents challenges like poverty, illness, hunger, homelessness, unemployment, education barriers, natural disasters, conflict zones, refugee crises, child exploitation & abuse... The list goes on. And while these problems may seem insurmountable at times, remember — each small act can lead to significant change when combined together by compassionate individuals just like yourself. You see them daily; they walk past their homes unaided because no hand extended could lift themselves up alone again today due simply lacking resources available within reach nearby communities where many still suffer silently beneath society’s radar screen waiting patiently hoping someone will notice eventually come along offer assistance needed most desperately required right now before another life slips through fingers never recovered back into sight once lost forever gone beyond redemption possible ever return hoped found sought tirelessly pursued relentlessly chased down track followed closely behind until finally reaching destination long journey undertaken endured overcome achieved triumphantly accomplished victory hard-fought earned deserving reward merited fully worthwhile effort expended invested time money energy love dedication faith commitment trust given received returned multiplied exponentially accelerated growth potential realized actualized success celebrated shared joyfully enjoyed collectively experienced community strengthened individually empowered globally impactful transformative effect felt deeply resonating across continents worldwide echoing loud clear resounding sound reverberating throughout history leaving indelible impression upon hearts minds souls etched permanently imprinted memories cherished treasured kept safe stored locked away secure guarded jealously protected fiercely defended zealously fought valiantly won glory honored respected remembered loved missed dearly yearned prayed fervently wished granted bestowed blessed favored chosen special selected worthy appreciated thanked acknowledged recognized praised commemorated celebrating accomplishments achievements milestones victories honorary awards medals trophies certificates plaques ribbons wreaths flowers bouquets candles light bulbs sparklers fireworks confetti balloons streamers banners flags decorations party atmosphere festivity cheer enthusiasm excitement anticipation thrill happiness elation delight satisfaction fulfillment gratitude appreciation thanks giving kind gesture thoughtful deed generous spirit altruistic benevolence philanthropy charity fundraising campaign efforts volunteering service work helping hands assisting others supporting fellow humans lifting spirits raising hopes inspiring dreams building futures creating opportunities enabling progress advancing development promoting prosperity fostering innovation nurturing creativity encouraging artistry cultivating talent developing skills training educating teaching learning sharing knowledge spreading wisdom passing down heritage preserving culture protecting environment conserving nature sustaining ecosystem maintaining balance restoring harmony healing mending repairing fixing improving optimizing efficiency maximizing productivity increasing output boosting performance elevating standards uplifting quality assurance ensuring excellence guaranteeing reliability delivering results achieving goals setting targets meeting objectives attaining benchmarks surpassing expectations exceeding quotas outperforming competition staying ahead winning championing titles securing accolades earning recognition gaining fame obtaining prestige acquiring distinction receiving award accepting prize claiming cash bonus checking check depositing bank account transferring funds withdrawing currency exchanging foreign exchange converting currencies investing capital generating wealth accumulating assets amassing fortune gathering riches hoarding jewels storing valuables safeguarding precious metals holding onto gold keeping coins counting silver stacking pennies saving dollars stashing euros hording pounds sterling concealing yen hiding francs secretly pocketing rubles squirreling bits shielding quarters nestling nickels rounding dimes clipping coupons scanning receipts filing papers organizing documents categorizing information indexing data logging records archiving files backing up systems encrypting passwords decrypting codes cracking ciphers solving puzzles answering questions responding affirmatively agreeably nodding solemnly shaking heads declining disagreeingly frowning disapprovingly smiling approvingly laughing gleefully crying sorrowfully sobbing sniffling whimpering sighing breathing taking deep breaths shallow breaths rapid heart beats slow pulse racing calming rhythms steady tempo even pace uniform flow smooth sailing cruising speedy velocity fast forward quickening acceleration braking stopping halt halting pause freezing solidifying cooling refreshing revitalizing energizing stimulating activating powering charging fueling ignition starting engine running motorcycle bike car truck bus train locomotive railroad railway tracks steel rails iron bridges concrete pavement blacktop tar roadway highway interstate freeway expressway parkway street intersection crosswalk pedestrian traffic signal stop sign yield sign green arrow red octagon yellow circle white square blue triangle purple star orange dot grey hexagonal pentagon triangular diamond rectangular quadrilateral polygon polygonal shape figure eight infinity loop Mobius strip Klein bottle torus helix spiral zigzag wave oscillation vibration frequency pitch melody music composition symphony opera aria concert recital concerto sonata movement allegro adagio presto largo vivace scherzo minuet galop mazurka polonaise foxtrot quadrille two step three steps four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty twentieth century industrial revolution technological age digital era internet cyberspace virtual reality augmented reality artificial intelligence machine learning robotics nanotechnology quantum computing space exploration aviation aeronautics astronautics astronomy astrophysics cosmology particle physics nuclear physics atomic physics molecular physics chemistry biochemistry genetics evolution Darwinism Lamarckian inheritance gene expression protein synthesis cell division mitosis meiosis fertilization embryogenesis differentiation morphogenesis ontogeny phylogeny speciation adaptation survival reproduction propagation proliferation expansion diversification variation selection mutation recombination chromosomes DNA RNA proteins nucleotides bases pairs codons anticodons peptide sequences amino acids residues side chains groups functional motifs domains superdomains structures complex assemblies subcellular compartments intracellular matrix extracellular matrix collagen fibers tendon ligament cartilage fat marrow synovial fluid joint capsule meniscus patella femoral condyles tibia fibula talus calcaneus navicular cuboid cuneiform sesamoid toe big toe little toe hallux proximal lateral distal medial intermediate central plantar palmar volar flexor digitorum brevis lumbrical muscles collateral arteries veins capillaries lymphatics nodes vessels circulatory system cardiac electrophysiology hemostasis clotting platelets aggregation blood pressure regulation diastolic systolic hypertension hypotension hyperglycemia normoglycemia prediabetes type 1 diabetes gestational diabetes polyuria oliguria ren\n",
+        "generation_time": 66.93044757843018,
+        "success": true
+      }
+    ],
+    "checklist": {
+      "model": "deepseek-r1",
+      "content": [
+        {
+          "question": "Does the email include the key themes 'funding deadline', 'organizational impact', and 'community support'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Is the problem presented as 'time-sensitive goal achievement'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the solution approach emphasize 'collective donor action'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "content"
+        },
+        {
+          "question": "Does the email use emotional language including 'urgent', 'critical', and 'appreciative'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Is the communication style persuasive and direct?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email include the specific phrases 'Your Support is Critical' and 'Help Us Meet Our Goal'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "style"
+        },
+        {
+          "question": "Does the email have exactly 3 paragraphs?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the opening immediately state the goal with urgency?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Does the closing include a direct call-to-action with gratitude?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "structure"
+        },
+        {
+          "question": "Is the word count between 200 and 350 words?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email include the key phrases 'Spring Fund Drive', 'meet our goal', and 'critical support'?",
+          "best_ans": "yes",
+          "priority": "high",
+          "category": "technical"
+        },
+        {
+          "question": "Does the email use formatting elements: goal amount bolded and deadline emphasis?",
+          "best_ans": "yes",
+          "priority": "medium",
+          "category": "technical"
+        }
+      ],
+      "generation_time": 414.99462509155273,
+      "success": true
+    },
+    "evaluations": [
+      {
+        "model": "o3-mini",
+        "email_model": "llama-3-8b-dpo-hyb",
+        "weighted_score": 0.7058823529411765,
+        "ranking_score": 0.7058823529411765,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'funding deadline', 'organizational impact', and 'community support'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented as 'time-sensitive goal achievement'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach emphasize 'collective donor action'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language including 'urgent', 'critical', and 'appreciative'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style persuasive and direct?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'Your Support is Critical' and 'Help Us Meet Our Goal'?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 3 paragraphs?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening immediately state the goal with urgency?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a direct call-to-action with gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the word count between 200 and 350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases 'Spring Fund Drive', 'meet our goal', and 'critical support'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements: goal amount bolded and deadline emphasis?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 8,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively communicates the fundraising event, leverages urgency through its deadline context, and uses persuasive language with a clear call for collective donor action. Its structure with exactly three paragraphs and the inclusion of key phrases in the subject line also support the intended message.",
+        "weaknesses": "The email lacks explicit use of emotional language such as 'urgent' and 'appreciative', does not include a closing with direct gratitude, falls short of the required word count, and misses some required key phrases and formatting elements like bolding the goal amount and emphasizing the deadline.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 49.3634078502655,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 1,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.2647058823529412": [
+              "vicuna-7b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'funding deadline', 'organizational impact', and 'community support'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented as 'time-sensitive goal achievement'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach emphasize 'collective donor action'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language including 'urgent', 'critical', and 'appreciative'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style persuasive and direct?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'Your Support is Critical' and 'Help Us Meet Our Goal'?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 3 paragraphs?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening immediately state the goal with urgency?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a direct call-to-action with gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the word count between 200 and 350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases 'Spring Fund Drive', 'meet our goal', and 'critical support'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements: goal amount bolded and deadline emphasis?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively communicates the fundraising event, leverages urgency through its deadline context, and uses persuasive language with a clear call for collective donor action. Its structure with exactly three paragraphs and the inclusion of key phrases in the subject line also support the intended message.",
+          "weaknesses": "The email lacks explicit use of emotional language such as 'urgent' and 'appreciative', does not include a closing with direct gratitude, falls short of the required word count, and misses some required key phrases and formatting elements like bolding the goal amount and emphasizing the deadline.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 49.3634078502655,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.7058823529411765,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 8,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 148.09103441238403,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "vicuna-7b-dpo-hyb",
+        "weighted_score": 0.2647058823529412,
+        "ranking_score": 0.2647058823529412,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'funding deadline', 'organizational impact', and 'community support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented as 'time-sensitive goal achievement'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach emphasize 'collective donor action'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language including 'urgent', 'critical', and 'appreciative'?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style persuasive and direct?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'Your Support is Critical' and 'Help Us Meet Our Goal'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 3 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening immediately state the goal with urgency?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a direct call-to-action with gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the word count between 200 and 350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases 'Spring Fund Drive', 'meet our goal', and 'critical support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements: goal amount bolded and deadline emphasis?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 3,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email opens with an urgent tone and uses persuasive, direct language to encourage collective donor action.",
+        "weaknesses": "It omits key elements such as a funding deadline, explicit time-sensitive goal achievement, required specific phrases, exact paragraph structure, sufficient word count, formatting elements, and a closing call-to-action with gratitude.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 44.622480710347496,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 2,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.2647058823529412": [
+              "vicuna-7b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'funding deadline', 'organizational impact', and 'community support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented as 'time-sensitive goal achievement'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach emphasize 'collective donor action'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language including 'urgent', 'critical', and 'appreciative'?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style persuasive and direct?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'Your Support is Critical' and 'Help Us Meet Our Goal'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 3 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening immediately state the goal with urgency?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a direct call-to-action with gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the word count between 200 and 350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases 'Spring Fund Drive', 'meet our goal', and 'critical support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements: goal amount bolded and deadline emphasis?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email opens with an urgent tone and uses persuasive, direct language to encourage collective donor action.",
+          "weaknesses": "It omits key elements such as a funding deadline, explicit time-sensitive goal achievement, required specific phrases, exact paragraph structure, sufficient word count, formatting elements, and a closing call-to-action with gratitude.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 44.622480710347496,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.2647058823529412,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 3,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 133.8679416179657,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "tinyllama-1.1b-dpo-hyb",
+        "weighted_score": 0.2647058823529412,
+        "ranking_score": 0.2647058823529412,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'funding deadline', 'organizational impact', and 'community support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented as 'time-sensitive goal achievement'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach emphasize 'collective donor action'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language including 'urgent', 'critical', and 'appreciative'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style persuasive and direct?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'Your Support is Critical' and 'Help Us Meet Our Goal'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 3 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening immediately state the goal with urgency?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a direct call-to-action with gratitude?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 10,
+            "description": "Is the word count between 200 and 350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases 'Spring Fund Drive', 'meet our goal', and 'critical support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements: goal amount bolded and deadline emphasis?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 3,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email successfully emphasizes collective donor action, uses a persuasive and direct style, and its closing includes a call-to-action paired with gratitude.",
+        "weaknesses": "The email falls short on several criteria: it lacks explicit mention of a funding deadline, time-sensitive goal achievement, the specific required emotional language and key phrases, an exact three-paragraph structure, an urgent opening, sufficient word count, and the demanded formatting elements.",
+        "consistency_confidence": 0.8333333333333334,
+        "average_response_time": 53.54513764381409,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 3,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.2647058823529412": [
+              "vicuna-7b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'funding deadline', 'organizational impact', and 'community support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented as 'time-sensitive goal achievement'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach emphasize 'collective donor action'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language including 'urgent', 'critical', and 'appreciative'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style persuasive and direct?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'Your Support is Critical' and 'Help Us Meet Our Goal'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 3 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening immediately state the goal with urgency?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a direct call-to-action with gratitude?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 10,
+              "description": "Is the word count between 200 and 350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases 'Spring Fund Drive', 'meet our goal', and 'critical support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements: goal amount bolded and deadline emphasis?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email successfully emphasizes collective donor action, uses a persuasive and direct style, and its closing includes a call-to-action paired with gratitude.",
+          "weaknesses": "The email falls short on several criteria: it lacks explicit mention of a funding deadline, time-sensitive goal achievement, the specific required emotional language and key phrases, an exact three-paragraph structure, an urgent opening, sufficient word count, and the demanded formatting elements.",
+          "consistency_confidence": 0.8333333333333334,
+          "average_response_time": 53.54513764381409,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.2647058823529412,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 3,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 160.6360170841217,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "stablelm-2-1.6b-dpo-hyb",
+        "weighted_score": 0.2647058823529412,
+        "ranking_score": 0.2647058823529412,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'funding deadline', 'organizational impact', and 'community support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented as 'time-sensitive goal achievement'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach emphasize 'collective donor action'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language including 'urgent', 'critical', and 'appreciative'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style persuasive and direct?",
+            "result": "yes",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'Your Support is Critical' and 'Help Us Meet Our Goal'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 3 paragraphs?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 8,
+            "description": "Does the opening immediately state the goal with urgency?",
+            "result": "no",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a direct call-to-action with gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the word count between 200 and 350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases 'Spring Fund Drive', 'meet our goal', and 'critical support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements: goal amount bolded and deadline emphasis?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 3,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email effectively emphasizes collective donor action, maintains a persuasive and direct communication style, and is structured into exactly three paragraphs.",
+        "weaknesses": "It does not include a clear funding deadline, lacks explicit time-sensitive messaging, fails to employ required emotional keywords, omits specific prescribed phrases, does not open with immediate urgency or close with a direct call-to-action with gratitude, does not meet the word count requirement, misses key phrases such as 'critical support', and lacks the specific formatting elements.",
+        "consistency_confidence": 0.75,
+        "average_response_time": 59.4143610795339,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 4,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.2647058823529412": [
+              "vicuna-7b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'funding deadline', 'organizational impact', and 'community support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented as 'time-sensitive goal achievement'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach emphasize 'collective donor action'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language including 'urgent', 'critical', and 'appreciative'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style persuasive and direct?",
+              "result": "yes",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'Your Support is Critical' and 'Help Us Meet Our Goal'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 3 paragraphs?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 8,
+              "description": "Does the opening immediately state the goal with urgency?",
+              "result": "no",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a direct call-to-action with gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the word count between 200 and 350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases 'Spring Fund Drive', 'meet our goal', and 'critical support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements: goal amount bolded and deadline emphasis?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email effectively emphasizes collective donor action, maintains a persuasive and direct communication style, and is structured into exactly three paragraphs.",
+          "weaknesses": "It does not include a clear funding deadline, lacks explicit time-sensitive messaging, fails to employ required emotional keywords, omits specific prescribed phrases, does not open with immediate urgency or close with a direct call-to-action with gratitude, does not meet the word count requirement, misses key phrases such as 'critical support', and lacks the specific formatting elements.",
+          "consistency_confidence": 0.75,
+          "average_response_time": 59.4143610795339,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.2647058823529412,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 3,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 178.24393916130066,
+          "evaluated_by": "o3-mini"
+        }
+      },
+      {
+        "model": "o3-mini",
+        "email_model": "phi-3-mini-dpo-hyb",
+        "weighted_score": 0.08823529411764706,
+        "ranking_score": 0.08823529411764706,
+        "binary_results": [
+          {
+            "id": 1,
+            "description": "Does the email include the key themes 'funding deadline', 'organizational impact', and 'community support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 2,
+            "description": "Is the problem presented as 'time-sensitive goal achievement'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 3,
+            "description": "Does the solution approach emphasize 'collective donor action'?",
+            "result": "yes",
+            "confidence": 0.6666666666666666
+          },
+          {
+            "id": 4,
+            "description": "Does the email use emotional language including 'urgent', 'critical', and 'appreciative'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 5,
+            "description": "Is the communication style persuasive and direct?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 6,
+            "description": "Does the email include the specific phrases 'Your Support is Critical' and 'Help Us Meet Our Goal'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 7,
+            "description": "Does the email have exactly 3 paragraphs?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 8,
+            "description": "Does the opening immediately state the goal with urgency?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 9,
+            "description": "Does the closing include a direct call-to-action with gratitude?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 10,
+            "description": "Is the word count between 200 and 350 words?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 11,
+            "description": "Does the email include the key phrases 'Spring Fund Drive', 'meet our goal', and 'critical support'?",
+            "result": "no",
+            "confidence": 1.0
+          },
+          {
+            "id": 12,
+            "description": "Does the email use formatting elements: goal amount bolded and deadline emphasis?",
+            "result": "no",
+            "confidence": 1.0
+          }
+        ],
+        "priority_breakdown": {
+          "very high": 0,
+          "high": 1,
+          "medium": 0,
+          "low": 0,
+          "very low": 0
+        },
+        "total_criteria": 12,
+        "strengths": "The email attempts to evoke an emotional appeal by discussing global challenges and the need for collective action, and uses a friendly tone by addressing the reader as 'Dear Friend'.",
+        "weaknesses": "The email fails to incorporate numerous specific high-priority elements: it lacks mention of a funding deadline, explicit organizational impact, community support, time-sensitive language, collective donor action, specific key phrases, a persuasive and direct tone, proper structural elements like exactly 3 paragraphs, an urgent opening, a call-to-action closing with gratitude, the required word count, and the demanded formatting elements.",
+        "consistency_confidence": 0.9166666666666666,
+        "average_response_time": 34.48437658945719,
+        "generation_attempts": 3,
+        "confidence_method": "consistency_sampling",
+        "rank": 5,
+        "tie_info": {
+          "tie_detected": true,
+          "tied_emails": [
+            "vicuna-7b-dpo-hyb",
+            "tinyllama-1.1b-dpo-hyb",
+            "stablelm-2-1.6b-dpo-hyb"
+          ],
+          "tied_groups": {
+            "0.2647058823529412": [
+              "vicuna-7b-dpo-hyb",
+              "tinyllama-1.1b-dpo-hyb",
+              "stablelm-2-1.6b-dpo-hyb"
+            ]
+          },
+          "tie_breaking_method": "consistency_confidence",
+          "total_groups": 3
+        },
+        "detailed_scores": {
+          "checklist_scores": [
+            {
+              "id": 1,
+              "description": "Does the email include the key themes 'funding deadline', 'organizational impact', and 'community support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 2,
+              "description": "Is the problem presented as 'time-sensitive goal achievement'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 3,
+              "description": "Does the solution approach emphasize 'collective donor action'?",
+              "result": "yes",
+              "confidence": 0.6666666666666666
+            },
+            {
+              "id": 4,
+              "description": "Does the email use emotional language including 'urgent', 'critical', and 'appreciative'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 5,
+              "description": "Is the communication style persuasive and direct?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 6,
+              "description": "Does the email include the specific phrases 'Your Support is Critical' and 'Help Us Meet Our Goal'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 7,
+              "description": "Does the email have exactly 3 paragraphs?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 8,
+              "description": "Does the opening immediately state the goal with urgency?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 9,
+              "description": "Does the closing include a direct call-to-action with gratitude?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 10,
+              "description": "Is the word count between 200 and 350 words?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 11,
+              "description": "Does the email include the key phrases 'Spring Fund Drive', 'meet our goal', and 'critical support'?",
+              "result": "no",
+              "confidence": 1.0
+            },
+            {
+              "id": 12,
+              "description": "Does the email use formatting elements: goal amount bolded and deadline emphasis?",
+              "result": "no",
+              "confidence": 1.0
+            }
+          ],
+          "strengths": "The email attempts to evoke an emotional appeal by discussing global challenges and the need for collective action, and uses a friendly tone by addressing the reader as 'Dear Friend'.",
+          "weaknesses": "The email fails to incorporate numerous specific high-priority elements: it lacks mention of a funding deadline, explicit organizational impact, community support, time-sensitive language, collective donor action, specific key phrases, a persuasive and direct tone, proper structural elements like exactly 3 paragraphs, an urgent opening, a call-to-action closing with gratitude, the required word count, and the demanded formatting elements.",
+          "consistency_confidence": 0.9166666666666666,
+          "average_response_time": 34.48437658945719,
+          "generation_attempts": 3,
+          "total_criteria": 12,
+          "weighted_score": 0.08823529411764706,
+          "priority_breakdown": {
+            "very high": 0,
+            "high": 1,
+            "medium": 0,
+            "low": 0,
+            "very low": 0
+          },
+          "evaluation_time": 103.45386457443237,
+          "evaluated_by": "o3-mini"
+        }
+      }
+    ]
+  },
+  "rankings": [
+    {
+      "model": "llama-3-8b-dpo-hyb",
+      "rank": 1,
+      "score": 0.7058823529411765
+    },
+    {
+      "model": "vicuna-7b-dpo-hyb",
+      "rank": 2,
+      "score": 0.2647058823529412
+    },
+    {
+      "model": "tinyllama-1.1b-dpo-hyb",
+      "rank": 3,
+      "score": 0.2647058823529412
+    },
+    {
+      "model": "stablelm-2-1.6b-dpo-hyb",
+      "rank": 4,
+      "score": 0.2647058823529412
+    },
+    {
+      "model": "phi-3-mini-dpo-hyb",
+      "rank": 5,
+      "score": 0.08823529411764706
+    }
+  ],
+  "pipeline_metadata": {
+    "total_time": 1255.2267429828644,
+    "success": true,
+    "errors": []
+  }
+}
