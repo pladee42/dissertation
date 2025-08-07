@@ -1,6 +1,6 @@
 \chapter{Methodology}
 
-This chapter presents the methodology employed in this research to evaluate the effectiveness of language models in automated email generation through a novel multi-agent AI system. The methodology is structured in three stages: Stage 1 (System Design and Setup) establishes the foundational framework, Stage 2 (Experimental Implementation) details the execution procedures, and Stage 3 (Enhancement and Analysis) describes the analytical approach and planned extensions including Direct Preference Optimization fine-tuning.
+This chapter presents the methodology employed in this research to evaluate the effectiveness of language models in automated email generation through a novel multi-agent AI system. The methodology follows a comprehensive five-section structure: Section 1 establishes the research design and multi-agent architecture, Section 2 details dataset development and model selection, Section 3 describes the evaluation framework development, Section 4 presents the Direct Preference Optimization implementation, and Section 5 outlines the final validation protocol. This structured approach ensures systematic progression from foundational design through experimental implementation to optimization and validation.
 
 \section{Research Design and Multi-Agent Architecture}
 \label{sec:research-design-architecture}
@@ -26,7 +26,7 @@ The \textbf{Judge Agent} provides performance assessment by applying generated c
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth]{figures/agent-diagram.png}
-    \caption{Multi-agent system architecture showing agent interactions, data flow, and reasoning model integration}
+    \caption[Multi-Agent System Architecture]{Multi-agent system architecture showing agent interactions, data flow, and reasoning model integration}
     \label{fig:system-architecture}
 \end{figure}
 
@@ -73,7 +73,7 @@ The four charity categories include: Healthcare and Medical Research (representi
 
 \begin{table}[H]
     \centering
-    \caption{Topic Dataset Distribution Across Charity Categories}
+    \caption[Topic Dataset Distribution]{Topic Dataset Distribution Across Charity Categories}
     \label{tab:topic-distribution}
     \begin{tabular}{|l|c|c|c|}
     \hline
@@ -110,7 +110,7 @@ A representative comparison illustrates these performance differences in practic
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.85\textwidth]{figures/traditional_vs_reasoning.png}
-    \caption{Agent Model Selection Comparison: Traditional vs Reasoning Models. Left panel shows traditional models incorrectly scoring a placeholder email at 100\%, while right panel demonstrates reasoning models correctly identifying invalid content with 0\% score and generating more detailed, contextually appropriate evaluation criteria}
+    \caption[Agent Model Selection Comparison]{Agent Model Selection Comparison: Traditional vs Reasoning Models. Left panel shows traditional models incorrectly scoring a placeholder email at 100\%, while right panel demonstrates reasoning models correctly identifying invalid content with 0\% score and generating more detailed, contextually appropriate evaluation criteria}
     \label{fig:agent-model-comparison}
 \end{figure}
 
@@ -148,7 +148,7 @@ Framework validation employed rigorous testing protocols that confirmed superior
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{figures/hybrid-checklist.png}
-    \caption{Hybrid Evaluation Framework Workflow showing two-step systematic analysis process and probability-based scoring integration}
+    \caption[Hybrid Evaluation Framework Workflow]{Hybrid Evaluation Framework Workflow showing two-step systematic analysis process and probability-based scoring integration}
     \label{fig:hybrid-framework-workflow}
 \end{figure}
 
@@ -209,7 +209,7 @@ Human-synthetic integration maintains methodological consistency through identic
 
 \begin{table}[htbp]
     \centering
-    \caption{DPO Preference Pair Generation Summary}
+    \caption[DPO Preference Pair Generation Summary]{DPO Preference Pair Generation Summary}
     \label{tab:dpo-data-preparation}
     \begin{tabular}{|l|c|c|c|c|}
     \hline
@@ -266,13 +266,13 @@ Generalizability assessment examines applicability beyond fundraising contexts w
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{figures/final_val.png}
-    \caption{Final Validation Protocol showing three-way comparison framework, unseen topic evaluation, and expert validation procedures}
+    \caption[Final Validation Protocol]{Final Validation Protocol showing three-way comparison framework, unseen topic evaluation, and expert validation procedures}
     \label{fig:final-validation-protocol}
 \end{figure}
 
 \begin{table}[H]
     \centering
-    \caption{Final Validation Statistical Framework}
+    \caption[Final Validation Statistical Framework]{Final Validation Statistical Framework}
     \label{tab:final-validation-framework}
     \begin{tabular}{|l|l|c|}
     \hline
