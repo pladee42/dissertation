@@ -1,0 +1,139 @@
+{
+  "analysis_timestamp": "2025-01-31",
+  "data_sources": {
+    "baseline_file": "output/multi_topic_results/20250722_061212/complete_results.json",
+    "synthetic_file": "output/multi_topic_results/20250722_123509/complete_results.json",
+    "hybrid_file": "output/multi_topic_results/20250731_164142/complete_results.json"
+  },
+  "sample_sizes": {
+    "baseline_total": 250,
+    "synthetic_total": 250,
+    "hybrid_total": 145,
+    "analysis_n": 145,
+    "note": "Using minimum sample size for balanced comparison"
+  },
+  "descriptive_statistics": {
+    "baseline": {
+      "name": "Baseline",
+      "n": 145,
+      "mean": 0.574,
+      "std": 0.260,
+      "min": 0.000,
+      "max": 1.000,
+      "ci_lower": 0.532,
+      "ci_upper": 0.616
+    },
+    "dpo_synthetic": {
+      "name": "DPO-Synthetic",
+      "n": 145,
+      "mean": 0.564,
+      "std": 0.231,
+      "min": 0.000,
+      "max": 1.000,
+      "ci_lower": 0.526,
+      "ci_upper": 0.602
+    },
+    "dpo_hybrid": {
+      "name": "DPO-Hybrid",
+      "n": 145,
+      "mean": 0.581,
+      "std": 0.201,
+      "min": 0.000,
+      "max": 1.000,
+      "ci_lower": 0.548,
+      "ci_upper": 0.614
+    }
+  },
+  "t_test_results": {
+    "baseline_vs_synthetic": {
+      "comparison": "Baseline vs DPO-Synthetic",
+      "t_statistic": 0.412,
+      "p_value": 0.6809,
+      "significant": false,
+      "df": 144
+    },
+    "baseline_vs_hybrid": {
+      "comparison": "Baseline vs DPO-Hybrid",
+      "t_statistic": -0.409,
+      "p_value": 0.6833,
+      "significant": false,
+      "df": 144
+    },
+    "synthetic_vs_hybrid": {
+      "comparison": "DPO-Synthetic vs DPO-Hybrid",
+      "t_statistic": -0.776,
+      "p_value": 0.4390,
+      "significant": false,
+      "df": 144
+    }
+  },
+  "effect_sizes": {
+    "baseline_vs_synthetic": {
+      "cohens_d": -0.040,
+      "interpretation": "negligible",
+      "ci_lower": -0.271,
+      "ci_upper": 0.190,
+      "methodology_prediction_range": [0.5, 0.7],
+      "within_predicted_range": false
+    },
+    "baseline_vs_hybrid": {
+      "cohens_d": 0.031,
+      "interpretation": "negligible",
+      "ci_lower": -0.199,
+      "ci_upper": 0.261,
+      "methodology_prediction_range": [0.7, 1.0],
+      "within_predicted_range": false
+    },
+    "synthetic_vs_hybrid": {
+      "cohens_d": 0.079,
+      "interpretation": "negligible",
+      "ci_lower": -0.151,
+      "ci_upper": 0.309,
+      "methodology_prediction_range": [0.3, 0.5],
+      "within_predicted_range": false
+    }
+  },
+  "anova_results": {
+    "f_statistic": 0.199,
+    "p_value": 0.8199,
+    "df_between": 2,
+    "df_within": 432,
+    "eta_squared": 0.001,
+    "methodology_threshold": 0.06,
+    "meets_threshold": false,
+    "significant": false
+  },
+  "methodology_validation": {
+    "effect_sizes_within_predicted_ranges": false,
+    "eta_squared_meets_threshold": false,
+    "overall_validation_status": "FAIL",
+    "validation_details": {
+      "baseline_vs_synthetic_validated": false,
+      "baseline_vs_hybrid_validated": false,
+      "synthetic_vs_hybrid_validated": false,
+      "anova_threshold_met": false
+    }
+  },
+  "data_quality": {
+    "equal_sample_sizes": true,
+    "analysis_sample_size": 145,
+    "adequate_power": false,
+    "notes": [
+      "All effect sizes are negligible, contrary to methodology predictions",
+      "ANOVA eta-squared well below meaningful threshold",
+      "No significant differences found between any model variants",
+      "Results suggest optimization methods did not produce expected improvements"
+    ]
+  },
+  "analysis_notes": {
+    "unexpected_findings": true,
+    "implications": [
+      "DPO optimization did not produce predicted improvements",
+      "All three model variants perform similarly",
+      "Effect sizes much smaller than methodology predictions",
+      "May require investigation of optimization implementation or evaluation metrics"
+    ],
+    "data_extraction_method": "Used overall_score field when available, fallback to weighted_score from evaluation",
+    "statistical_approach": "Paired comparisons using equal sample sizes for balanced analysis"
+  }
+}

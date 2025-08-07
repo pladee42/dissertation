@@ -1,0 +1,79 @@
+{
+  "analysis_timestamp": "2025-01-31",
+  "figure_descriptions": {
+    "effect_size_forest_plot": {
+      "filename": "effect_size_forest_plot.png",
+      "title": "Effect Size Forest Plot with 95% Confidence Intervals",
+      "description": "Forest plot showing Cohen's d effect sizes for all pairwise comparisons:\n        - Baseline vs DPO-Synthetic: d = -0.040 [-0.271, 0.190]\n        - Baseline vs DPO-Hybrid: d = 0.031 [-0.199, 0.261]\n        - DPO-Synthetic vs DPO-Hybrid: d = 0.079 [-0.151, 0.309]\n        All effect sizes are negligible (|d| < 0.2) with confidence intervals spanning zero.",
+      "key_values": {
+        "baseline_vs_synthetic_d": -0.04,
+        "baseline_vs_hybrid_d": 0.031,
+        "synthetic_vs_hybrid_d": 0.079
+      }
+    },
+    "effect_size_comparison": {
+      "filename": "effect_size_comparison.png",
+      "title": "Effect Size Comparison Across Model Variants",
+      "description": "Bar chart comparing absolute Cohen's d values:\n        - Baseline vs DPO-Synthetic: |d| = 0.040\n        - Baseline vs DPO-Hybrid: |d| = 0.031\n        - DPO-Synthetic vs DPO-Hybrid: |d| = 0.079\n        Horizontal lines show Cohen's thresholds: small (0.2), medium (0.5), large (0.8).\n        All observed effects fall well below the small effect threshold.",
+      "key_values": {
+        "max_effect_size": 0.079
+      }
+    },
+    "model_comparison_boxplot": {
+      "filename": "model_comparison_boxplot.png",
+      "title": "Model Performance Comparison",
+      "description": "Box plot comparing overall score distributions:\n        - Baseline: M = 0.574, SD = 0.260\n        - DPO-Synthetic: M = 0.564, SD = 0.231\n        - DPO-Hybrid: M = 0.581, SD = 0.201\n        Box plots show median, quartiles, and outliers. Red diamonds indicate means.\n        Substantial overlap between distributions indicates similar performance.",
+      "key_values": {
+        "baseline_mean": 0.574,
+        "synthetic_mean": 0.564,
+        "hybrid_mean": 0.581
+      }
+    },
+    "anova_summary": {
+      "filename": "anova_summary.png",
+      "title": "ANOVA Results Summary",
+      "description": "Two-panel plot showing ANOVA results:\n        Left panel: F-statistic = 0.199 (well below typical significance threshold)\n        Right panel: \u03b7\u00b2 = 0.001 vs methodology threshold (0.06)\n        Results indicate no meaningful differences between model variants.",
+      "key_values": {
+        "f_statistic": 0.199,
+        "eta_squared": 0.001,
+        "p_value": 0.8199
+      }
+    },
+    "means_comparison": {
+      "filename": "means_comparison.png",
+      "title": "Model Performance: Means with Standard Error",
+      "description": "Bar chart showing means with standard error bars:\n        - Baseline: 0.574 \u00b1 0.022\n        - DPO-Synthetic: 0.564 \u00b1 0.019\n        - DPO-Hybrid: 0.581 \u00b1 0.017\n        Overlapping error bars confirm no significant differences between models.",
+      "key_values": {
+        "baseline_se": 0.021594684385382062,
+        "synthetic_se": 0.01918604651162791,
+        "hybrid_se": 0.01669435215946844
+      }
+    },
+    "methodology_validation": {
+      "filename": "validation/methodology_validation.png",
+      "title": "Methodology Validation: Predicted vs Actual Effect Sizes",
+      "description": "Comparison of predicted versus actual effect sizes:\n        Baseline vs DPO-Synthetic: Predicted d = 0.6, Actual d = 0.040\n        Baseline vs DPO-Hybrid: Predicted d = 0.85, Actual d = 0.031\n        DPO-Synthetic vs DPO-Hybrid: Predicted d = 0.4, Actual d = 0.079\n        Large discrepancies indicate methodology validation failure.",
+      "key_values": {
+        "validation_status": "FAIL",
+        "largest_discrepancy": 0.819
+      }
+    }
+  },
+  "figures_generated": [
+    "effect_size_forest_plot",
+    "effect_size_comparison",
+    "model_comparison_boxplot",
+    "anova_summary",
+    "means_comparison",
+    "methodology_validation"
+  ],
+  "output_directory": "report/figures",
+  "validation_directory": "report/figures/validation",
+  "latex_code_generated": true,
+  "key_findings": {
+    "all_effects_negligible": true,
+    "methodology_validation_failed": true,
+    "figures_show_equivalence": true,
+    "ready_for_inclusion": true
+  }
+}

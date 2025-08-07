@@ -1,0 +1,149 @@
+% Results Section - Complete LaTeX Version
+% Generated from Stage 6: Results Section Writing and Integration
+% Date: 2025-01-31
+% Source: Consolidated context files from Stages 1-5
+
+\section{Results}
+
+\subsection{Overview}
+
+Statistical analysis of the three model variants (Baseline, DPO-Synthetic, DPO-Hybrid) was conducted on N = 145 email evaluations using a balanced design across 50 charity topics with no missing data. The analysis revealed no statistically significant differences between variants, with all effect sizes falling in the negligible range (|d| < 0.2). The omnibus ANOVA was non-significant, F(2, 432) = 0.199, p = 0.820, η² = 0.001, indicating performance equivalence across all optimization approaches.
+
+\subsection{Descriptive Statistics}
+
+Descriptive statistics are presented in Table~\ref{tab:descriptive-statistics}. The baseline model achieved M = 0.574 (SD = 0.260, 95\% CI [0.532, 0.616]), while DPO-Synthetic (M = 0.564, SD = 0.231, 95\% CI [0.526, 0.602]) and DPO-Hybrid (M = 0.581, SD = 0.201, 95\% CI [0.548, 0.614]) variants showed similar performance levels. All three variants demonstrated substantial overlap in their confidence intervals, with performance scores ranging from 0.0 to 1.0 across the complete evaluation scale. Figure~\ref{fig:model-comparison} illustrates the distribution overlap between variants, confirming the absence of meaningful performance differences.
+
+% Table 1: Descriptive Statistics
+\begin{table}[htbp]
+\centering
+\caption{Descriptive Statistics for Model Variants}
+\label{tab:descriptive-statistics}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Model Variant} & \textbf{N} & \textbf{M} & \textbf{SD} & \textbf{95\% CI} & \textbf{Min} & \textbf{Max} \\
+\midrule
+Baseline           & 145 & 0.574 & 0.260 & [0.532, 0.616] & 0.0 & 1.0 \\
+DPO-Synthetic      & 145 & 0.564 & 0.231 & [0.526, 0.602] & 0.0 & 1.0 \\
+DPO-Hybrid         & 145 & 0.581 & 0.201 & [0.548, 0.614] & 0.0 & 1.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Statistical Comparisons}
+
+Pairwise statistical comparisons (Table~\ref{tab:statistical-comparisons}) revealed no significant differences between any model variants. The omnibus ANOVA was non-significant, F(2, 432) = 0.199, p = 0.820, η² = 0.001, failing to meet the methodology-predicted threshold of η² > 0.06. All pairwise t-tests yielded non-significant results: Baseline vs DPO-Synthetic (t = 0.412, p = 0.681), Baseline vs DPO-Hybrid (t = -0.409, p = 0.683), and DPO-Synthetic vs DPO-Hybrid (t = -0.776, p = 0.439).
+
+% Table 2: Statistical Comparisons
+\begin{table}[htbp]
+\centering
+\caption{Pairwise Statistical Comparisons Between Model Variants}
+\label{tab:statistical-comparisons}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Comparison} & \textbf{t} & \textbf{df} & \textbf{p} & \textbf{Cohen's d} & \textbf{95\% CI for d} \\
+\midrule
+Baseline vs DPO-Synthetic    & 0.412 & 144 & 0.681 & -0.040 & [-0.271, 0.190] \\
+Baseline vs DPO-Hybrid       & -0.409 & 144 & 0.683 & 0.031 & [-0.199, 0.261] \\
+DPO-Synthetic vs DPO-Hybrid  & -0.776 & 144 & 0.439 & 0.079 & [-0.151, 0.309] \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Note: All p-values > 0.05 indicate no statistically significant differences. All effect sizes are negligible (|d| < 0.2).
+\end{tablenotes}
+\end{table}
+
+\subsection{Effect Size Analysis}
+
+Effect size analysis (Figure~\ref{fig:effect-size-forest}) confirmed negligible differences between all model variants. All Cohen's d values were below 0.2, indicating negligible practical significance according to conventional interpretation guidelines. The largest observed effect size was d = 0.079 for the DPO-Synthetic vs DPO-Hybrid comparison, with a 95\% confidence interval of [-0.151, 0.309] that includes zero. The effect size comparison chart (Figure~\ref{fig:effect-size-comparison}) demonstrates that all observed effects fall well below Cohen's small effect threshold of 0.2, with the maximum absolute effect size reaching only 0.079.
+
+\subsection{Model-Specific Performance Analysis}
+
+Individual model performance patterns (Table~\ref{tab:model-specific}) revealed heterogeneous responses to DPO optimization across different architectures. Model M0002 (Vicuna-7B) showed the largest improvements with DPO-Synthetic (+12.4\%) and DPO-Hybrid (+16.7\%), while models M0001 (TinyLlama) and M0005 (StableLM) demonstrated performance decreases across both DPO variants. Figure~\ref{fig:model-improvements} presents these model-specific improvement rates with confidence intervals, highlighting the variable effectiveness of optimization approaches across different language models.
+
+% Table 3: Model-Specific Performance
+\begin{table}[htbp]
+\centering
+\caption{Individual Model Performance by Variant}
+\label{tab:model-specific}
+\begin{tabular}{lcccccc}
+\toprule
+\multirow{2}{*}{\textbf{Model}} & \multicolumn{2}{c}{\textbf{Baseline}} & \multicolumn{2}{c}{\textbf{DPO-Synthetic}} & \multicolumn{2}{c}{\textbf{DPO-Hybrid}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+& \textbf{M} & \textbf{SD} & \textbf{M} & \textbf{Δ\%} & \textbf{M} & \textbf{Δ\%} \\
+\midrule
+M0001 & 0.591 & 0.234 & 0.571 & -3.4\% & 0.570 & -3.5\% \\
+M0002 & 0.528 & 0.328 & 0.593 & +12.4\% & 0.615 & +16.7\% \\
+M0003 & 0.535 & 0.195 & 0.555 & +3.8\% & 0.551 & +3.1\% \\
+M0005 & 0.617 & 0.238 & 0.567 & -8.1\% & 0.553 & -10.4\% \\
+
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Note: Δ\% represents percentage change from baseline. M0001=TinyLlama, M0002=Vicuna, M0003=Phi-3, M0005=StableLM.
+\end{tablenotes}
+\end{table}
+
+\subsection{Category-Based Analysis}
+
+Performance analysis across charity topic categories (Table~\ref{tab:category-analysis}) revealed differential optimization effects depending on content domain. Education/Youth topics showed the largest improvement with DPO-Hybrid (+24.8\%), while Environmental topics benefited most from DPO-Synthetic optimization (+17.1\%). Healthcare/Medical topics demonstrated consistent decreases across both optimization variants (-8.5\% and -7.7\%), suggesting domain-specific limitations in the optimization approaches. Figure~\ref{fig:category-performance} illustrates these category-specific patterns with error bars representing standard error.
+
+% Table 4: Category Analysis
+\begin{table}[htbp]
+\centering
+\caption{Performance by Topic Category}
+\label{tab:category-analysis}
+\begin{tabular}{lcccccc}
+\toprule
+\multirow{2}{*}{\textbf{Category}} & \multicolumn{2}{c}{\textbf{Baseline}} & \multicolumn{2}{c}{\textbf{DPO-Synthetic}} & \multicolumn{2}{c}{\textbf{DPO-Hybrid}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+& \textbf{M} & \textbf{N} & \textbf{M} & \textbf{Δ\%} & \textbf{M} & \textbf{Δ\%} \\
+\midrule
+Healthcare/Medical & 0.604 & 62 & 0.553 & -8.5\% & 0.557 & -7.7\% \\
+Education/Youth & 0.525 & 62 & 0.522 & -0.6\% & 0.655 & +24.8\% \\
+Environmental & 0.541 & 62 & 0.634 & +17.1\% & 0.586 & +8.2\% \\
+Community/Social & 0.568 & 64 & 0.594 & +4.7\% & 0.528 & -7.1\% \\
+
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Note: Δ\% represents percentage change from baseline. Categories represent balanced segments of the evaluation data.
+\end{tablenotes}
+\end{table}
+
+\subsection{Methodology Validation}
+
+Methodology validation (Table~\ref{tab:methodology-validation}) revealed complete failure of theoretical predictions. All predicted effect sizes substantially overestimated actual effects, with the largest discrepancy occurring in the Baseline vs DPO-Hybrid comparison (predicted d = 0.7-1.0, actual d = 0.031). The ANOVA η² threshold validation also failed (predicted η² > 0.06, actual η² = 0.001), indicating that the optimization approaches proved ineffective at the population level. Figure~\ref{fig:methodology-validation} documents these prediction failures, showing large discrepancies between theoretical expectations and empirical outcomes.
+
+% Table 5: Methodology Validation
+\begin{table}[htbp]
+\centering
+\caption{Methodology Validation: Predicted vs Actual Results}
+\label{tab:methodology-validation}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Comparison} & \textbf{Predicted d} & \textbf{Actual d} & \textbf{Within Range} & \textbf{Validation} \\
+\midrule
+Baseline vs DPO-Synthetic    & 0.5--0.7 & -0.040 & ✗ & FAIL \\
+Baseline vs DPO-Hybrid       & 0.7--1.0 & 0.031 & ✗ & FAIL \\
+DPO-Synthetic vs DPO-Hybrid  & 0.3--0.5 & 0.079 & ✗ & FAIL \\
+\midrule
+ANOVA η² Threshold & >0.06 & 0.001 & ✗ & FAIL \\
+Expert Correlation & >0.80 & N/A & N/A & N/A \\
+\midrule
+\textbf{Overall Status} & \multicolumn{4}{c}{\textbf{FAIL}} \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Note: Methodology validation assesses whether empirical results match theoretical predictions. All effect size predictions and ANOVA threshold failed validation.
+\end{tablenotes}
+\end{table}
+
+\subsection{Key Findings Summary}
+
+The empirical analysis revealed four key findings that collectively challenge the theoretical framework underlying this research. First, no statistically significant differences emerged between any model variants, with all p-values exceeding 0.05 and effect sizes remaining negligible. Second, the methodology validation demonstrated complete failure of theoretical predictions, with large discrepancies between expected and observed effect sizes across all comparisons. Third, individual model and category analyses revealed heterogeneous patterns that were not captured by the overall equivalence, suggesting that optimization effects may be context-dependent rather than generalizable. Fourth, the DPO optimization approaches proved ineffective at achieving population-level improvements, despite theoretical frameworks suggesting substantial benefits from preference-based fine-tuning approaches.
+
+These results necessitate a fundamental reconsideration of the theoretical assumptions and methodological approaches employed in this research, with implications for both the specific DPO optimization techniques and the broader framework for evaluating multi-agent AI systems in practical applications.

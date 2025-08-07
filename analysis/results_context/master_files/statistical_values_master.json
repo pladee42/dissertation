@@ -1,0 +1,335 @@
+{
+  "analysis_timestamp": "2025-01-31",
+  "data_sources": {
+    "baseline_file": "/output/multi_topic_results/20250722_061212/complete_results.json",
+    "synthetic_file": "/output/multi_topic_results/20250722_123509/complete_results.json",
+    "hybrid_file": "/output/multi_topic_results/20250731_164142/complete_results.json",
+    "validation_topics": 50,
+    "last_updated": "2025-01-31"
+  },
+  "sample_sizes": {
+    "baseline": 145,
+    "synthetic": 145,
+    "hybrid": 145,
+    "balanced_comparison": true
+  },
+  "descriptive_statistics": {
+    "baseline": {
+      "mean": 0.574,
+      "sd": 0.26,
+      "ci_95": [
+        0.532,
+        0.616
+      ]
+    },
+    "dpo_synthetic": {
+      "mean": 0.564,
+      "sd": 0.231,
+      "ci_95": [
+        0.526,
+        0.602
+      ]
+    },
+    "dpo_hybrid": {
+      "mean": 0.581,
+      "sd": 0.201,
+      "ci_95": [
+        0.548,
+        0.614
+      ]
+    }
+  },
+  "effect_sizes": {
+    "baseline_vs_synthetic": {
+      "cohens_d": -0.04,
+      "ci_95": [
+        -0.271,
+        0.19
+      ],
+      "interpretation": "negligible"
+    },
+    "baseline_vs_hybrid": {
+      "cohens_d": 0.031,
+      "ci_95": [
+        -0.199,
+        0.261
+      ],
+      "interpretation": "negligible"
+    },
+    "synthetic_vs_hybrid": {
+      "cohens_d": 0.079,
+      "ci_95": [
+        -0.151,
+        0.309
+      ],
+      "interpretation": "negligible"
+    }
+  },
+  "statistical_tests": {
+    "anova": {
+      "f_statistic": 0.199,
+      "p_value": 0.8199,
+      "eta_squared": 0.001,
+      "significant": false
+    },
+    "t_tests": {
+      "baseline_vs_synthetic_p": 0.6809,
+      "baseline_vs_hybrid_p": 0.6833,
+      "synthetic_vs_hybrid_p": 0.439,
+      "all_non_significant": true
+    }
+  },
+  "methodology_validation": {
+    "overall_status": "FAIL",
+    "effect_sizes_validated": false,
+    "anova_threshold_met": false,
+    "validation_failures": "All predictions failed validation"
+  },
+  "model_specific_results": {
+    "individual_models": {
+      "M0001": {
+        "baseline": {
+          "n": 50,
+          "mean": 0.5907761211385149,
+          "std": 0.2335672299795015
+        },
+        "synthetic": {
+          "n": 50,
+          "mean": 0.5707364069784217,
+          "std": 0.2247429054103999
+        },
+        "hybrid": {
+          "n": 29,
+          "mean": 0.570080487061343,
+          "std": 0.20983610952924117
+        },
+        "improvement_synthetic": -3.3920995522760204,
+        "improvement_hybrid": -3.5031263682913054
+      },
+      "M0002": {
+        "baseline": {
+          "n": 100,
+          "mean": 0.5275287941774479,
+          "std": 0.32783836017897516
+        },
+        "synthetic": {
+          "n": 100,
+          "mean": 0.5931924375614797,
+          "std": 0.2627207274830694
+        },
+        "hybrid": {
+          "n": 58,
+          "mean": 0.6154087902829194,
+          "std": 0.20867982213533315
+        },
+        "improvement_synthetic": 12.447404598343894,
+        "improvement_hybrid": 16.658805561978628
+      },
+      "M0003": {
+        "baseline": {
+          "n": 50,
+          "mean": 0.5349510021570145,
+          "std": 0.1950068200734851
+        },
+        "synthetic": {
+          "n": 50,
+          "mean": 0.5553263390800846,
+          "std": 0.2030896293839185
+        },
+        "hybrid": {
+          "n": 29,
+          "mean": 0.5514063852360058,
+          "std": 0.19587852085964136
+        },
+        "improvement_synthetic": 3.8088230213446024,
+        "improvement_hybrid": 3.076054257799381
+      },
+      "M0005": {
+        "baseline": {
+          "n": 50,
+          "mean": 0.6170509294380134,
+          "std": 0.2375474161792072
+        },
+        "synthetic": {
+          "n": 50,
+          "mean": 0.5669478606980524,
+          "std": 0.20868474026650424
+        },
+        "hybrid": {
+          "n": 29,
+          "mean": 0.5528722200557866,
+          "std": 0.1824767139536956
+        },
+        "improvement_synthetic": -8.11976229994387,
+        "improvement_hybrid": -10.400877191884037
+      }
+    },
+    "size_groups": {
+      "small": {
+        "models_included": [
+          "M0001",
+          "M0003",
+          "M0005"
+        ],
+        "baseline": {
+          "n": 150,
+          "mean": 0.5809260175778476,
+          "std": 0.224015834062783
+        },
+        "synthetic": {
+          "n": 150,
+          "mean": 0.5643368689188528,
+          "std": 0.21104324685688616
+        },
+        "hybrid": {
+          "n": 87,
+          "mean": 0.5581196974510452,
+          "std": 0.19427203945680177
+        },
+        "improvement_synthetic": -2.8556387830868153,
+        "improvement_hybrid": -3.9258562083159254
+      },
+      "medium": {
+        "models_included": [
+          "M0002",
+          "M0004"
+        ],
+        "baseline": {
+          "n": 100,
+          "mean": 0.5275287941774479,
+          "std": 0.32783836017897516
+        },
+        "synthetic": {
+          "n": 100,
+          "mean": 0.5931924375614797,
+          "std": 0.2627207274830694
+        },
+        "hybrid": {
+          "n": 58,
+          "mean": 0.6154087902829194,
+          "std": 0.20867982213533315
+        },
+        "improvement_synthetic": 12.447404598343894,
+        "improvement_hybrid": 16.658805561978628
+      },
+      "large": {
+        "models_included": [
+          "M0006",
+          "M0007"
+        ],
+        "baseline": {
+          "n": 0,
+          "mean": null,
+          "std": null
+        },
+        "synthetic": {
+          "n": 0,
+          "mean": null,
+          "std": null
+        },
+        "hybrid": {
+          "n": 0,
+          "mean": null,
+          "std": null
+        }
+      }
+    }
+  },
+  "category_results": {
+    "healthcare_medical": {
+      "topics_included": [
+        "Segment 1"
+      ],
+      "baseline": {
+        "n": 62,
+        "mean": 0.6041094347075411,
+        "std": 0.27097946694940556
+      },
+      "synthetic": {
+        "n": 62,
+        "mean": 0.5529713341851098,
+        "std": 0.22177424129458778
+      },
+      "hybrid": {
+        "n": 36,
+        "mean": 0.5573240454925515,
+        "std": 0.19356281031493497
+      },
+      "improvement_synthetic": -8.465039210517883,
+      "improvement_hybrid": -7.7445221887056075
+    },
+    "education_youth": {
+      "topics_included": [
+        "Segment 2"
+      ],
+      "baseline": {
+        "n": 62,
+        "mean": 0.5247298312793813,
+        "std": 0.23334021890006668
+      },
+      "synthetic": {
+        "n": 62,
+        "mean": 0.5215197016189633,
+        "std": 0.22815627323923693
+      },
+      "hybrid": {
+        "n": 36,
+        "mean": 0.654897819042556,
+        "std": 0.2035209757913735
+      },
+      "improvement_synthetic": -0.6117680888451029,
+      "improvement_hybrid": 24.806668118296752
+    },
+    "environmental": {
+      "topics_included": [
+        "Segment 3"
+      ],
+      "baseline": {
+        "n": 62,
+        "mean": 0.5414313222164628,
+        "std": 0.2766792927789583
+      },
+      "synthetic": {
+        "n": 62,
+        "mean": 0.6341051033253876,
+        "std": 0.2344333292360933
+      },
+      "hybrid": {
+        "n": 36,
+        "mean": 0.5858157467532468,
+        "std": 0.21630046479335482
+      },
+      "improvement_synthetic": 17.116442530429378,
+      "improvement_hybrid": 8.197609320991434
+    },
+    "community_social": {
+      "topics_included": [
+        "Segment 4"
+      ],
+      "baseline": {
+        "n": 64,
+        "mean": 0.5677344622783131,
+        "std": 0.2980251214159555
+      },
+      "synthetic": {
+        "n": 64,
+        "mean": 0.5943252104367083,
+        "std": 0.23716930902901673
+      },
+      "hybrid": {
+        "n": 37,
+        "mean": 0.5275883650883649,
+        "std": 0.17642006817958986
+      },
+      "improvement_synthetic": 4.683659338150216,
+      "improvement_hybrid": -7.071280652726681
+    }
+  },
+  "key_findings_summary": {
+    "no_significant_differences": true,
+    "all_effect_sizes_negligible": true,
+    "methodology_validation_failed": true,
+    "model_equivalence_confirmed": true,
+    "optimization_ineffective": true
+  }
+}

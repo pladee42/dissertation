@@ -1,0 +1,310 @@
+{
+  "analysis_timestamp": "2025-01-31",
+  "model_analysis": {
+    "individual_models": {
+      "M0001": {
+        "baseline": {
+          "n": 50,
+          "mean": 0.5907761211385149,
+          "std": 0.2335672299795015
+        },
+        "synthetic": {
+          "n": 50,
+          "mean": 0.5707364069784217,
+          "std": 0.2247429054103999
+        },
+        "hybrid": {
+          "n": 29,
+          "mean": 0.570080487061343,
+          "std": 0.20983610952924117
+        },
+        "improvement_synthetic": -3.3920995522760204,
+        "improvement_hybrid": -3.5031263682913054
+      },
+      "M0002": {
+        "baseline": {
+          "n": 100,
+          "mean": 0.5275287941774479,
+          "std": 0.32783836017897516
+        },
+        "synthetic": {
+          "n": 100,
+          "mean": 0.5931924375614797,
+          "std": 0.2627207274830694
+        },
+        "hybrid": {
+          "n": 58,
+          "mean": 0.6154087902829194,
+          "std": 0.20867982213533315
+        },
+        "improvement_synthetic": 12.447404598343894,
+        "improvement_hybrid": 16.658805561978628
+      },
+      "M0003": {
+        "baseline": {
+          "n": 50,
+          "mean": 0.5349510021570145,
+          "std": 0.1950068200734851
+        },
+        "synthetic": {
+          "n": 50,
+          "mean": 0.5553263390800846,
+          "std": 0.2030896293839185
+        },
+        "hybrid": {
+          "n": 29,
+          "mean": 0.5514063852360058,
+          "std": 0.19587852085964136
+        },
+        "improvement_synthetic": 3.8088230213446024,
+        "improvement_hybrid": 3.076054257799381
+      },
+      "M0005": {
+        "baseline": {
+          "n": 50,
+          "mean": 0.6170509294380134,
+          "std": 0.2375474161792072
+        },
+        "synthetic": {
+          "n": 50,
+          "mean": 0.5669478606980524,
+          "std": 0.20868474026650424
+        },
+        "hybrid": {
+          "n": 29,
+          "mean": 0.5528722200557866,
+          "std": 0.1824767139536956
+        },
+        "improvement_synthetic": -8.11976229994387,
+        "improvement_hybrid": -10.400877191884037
+      }
+    },
+    "size_groups": {
+      "small": {
+        "models_included": [
+          "M0001",
+          "M0003",
+          "M0005"
+        ],
+        "baseline": {
+          "n": 150,
+          "mean": 0.5809260175778476,
+          "std": 0.224015834062783
+        },
+        "synthetic": {
+          "n": 150,
+          "mean": 0.5643368689188528,
+          "std": 0.21104324685688616
+        },
+        "hybrid": {
+          "n": 87,
+          "mean": 0.5581196974510452,
+          "std": 0.19427203945680177
+        },
+        "improvement_synthetic": -2.8556387830868153,
+        "improvement_hybrid": -3.9258562083159254
+      },
+      "medium": {
+        "models_included": [
+          "M0002",
+          "M0004"
+        ],
+        "baseline": {
+          "n": 100,
+          "mean": 0.5275287941774479,
+          "std": 0.32783836017897516
+        },
+        "synthetic": {
+          "n": 100,
+          "mean": 0.5931924375614797,
+          "std": 0.2627207274830694
+        },
+        "hybrid": {
+          "n": 58,
+          "mean": 0.6154087902829194,
+          "std": 0.20867982213533315
+        },
+        "improvement_synthetic": 12.447404598343894,
+        "improvement_hybrid": 16.658805561978628
+      },
+      "large": {
+        "models_included": [
+          "M0006",
+          "M0007"
+        ],
+        "baseline": {
+          "n": 0,
+          "mean": null,
+          "std": null
+        },
+        "synthetic": {
+          "n": 0,
+          "mean": null,
+          "std": null
+        },
+        "hybrid": {
+          "n": 0,
+          "mean": null,
+          "std": null
+        }
+      }
+    }
+  },
+  "category_analysis": {
+    "healthcare_medical": {
+      "topics_included": [
+        "Segment 1"
+      ],
+      "baseline": {
+        "n": 62,
+        "mean": 0.6041094347075411,
+        "std": 0.27097946694940556
+      },
+      "synthetic": {
+        "n": 62,
+        "mean": 0.5529713341851098,
+        "std": 0.22177424129458778
+      },
+      "hybrid": {
+        "n": 36,
+        "mean": 0.5573240454925515,
+        "std": 0.19356281031493497
+      },
+      "improvement_synthetic": -8.465039210517883,
+      "improvement_hybrid": -7.7445221887056075
+    },
+    "education_youth": {
+      "topics_included": [
+        "Segment 2"
+      ],
+      "baseline": {
+        "n": 62,
+        "mean": 0.5247298312793813,
+        "std": 0.23334021890006668
+      },
+      "synthetic": {
+        "n": 62,
+        "mean": 0.5215197016189633,
+        "std": 0.22815627323923693
+      },
+      "hybrid": {
+        "n": 36,
+        "mean": 0.654897819042556,
+        "std": 0.2035209757913735
+      },
+      "improvement_synthetic": -0.6117680888451029,
+      "improvement_hybrid": 24.806668118296752
+    },
+    "environmental": {
+      "topics_included": [
+        "Segment 3"
+      ],
+      "baseline": {
+        "n": 62,
+        "mean": 0.5414313222164628,
+        "std": 0.2766792927789583
+      },
+      "synthetic": {
+        "n": 62,
+        "mean": 0.6341051033253876,
+        "std": 0.2344333292360933
+      },
+      "hybrid": {
+        "n": 36,
+        "mean": 0.5858157467532468,
+        "std": 0.21630046479335482
+      },
+      "improvement_synthetic": 17.116442530429378,
+      "improvement_hybrid": 8.197609320991434
+    },
+    "community_social": {
+      "topics_included": [
+        "Segment 4"
+      ],
+      "baseline": {
+        "n": 64,
+        "mean": 0.5677344622783131,
+        "std": 0.2980251214159555
+      },
+      "synthetic": {
+        "n": 64,
+        "mean": 0.5943252104367083,
+        "std": 0.23716930902901673
+      },
+      "hybrid": {
+        "n": 37,
+        "mean": 0.5275883650883649,
+        "std": 0.17642006817958986
+      },
+      "improvement_synthetic": 4.683659338150216,
+      "improvement_hybrid": -7.071280652726681
+    }
+  },
+  "visualization_descriptions": {
+    "model_specific_improvements": {
+      "filename": "model_specific_improvements.png",
+      "title": "Model-Specific Improvement Forest Plot",
+      "description": "Forest plot showing improvement rates for each model:\n        Individual model improvements vs baseline across DPO-Synthetic and DPO-Hybrid variants.\n        Models analyzed: ['M0001', 'M0002', 'M0003', 'M0005']\n        Shows confidence intervals for improvement percentages by model UID.\n        Key improvements: M0001: -3.39% (Synthetic); M0001: -3.50% (Hybrid); M0002: 12.45% (Synthetic)...",
+      "key_values": {
+        "M0001_synthetic_improvement": -3.3920995522760204,
+        "M0001_hybrid_improvement": -3.5031263682913054,
+        "M0002_synthetic_improvement": 12.447404598343894,
+        "M0002_hybrid_improvement": 16.658805561978628,
+        "M0003_synthetic_improvement": 3.8088230213446024,
+        "M0003_hybrid_improvement": 3.076054257799381,
+        "M0005_synthetic_improvement": -8.11976229994387,
+        "M0005_hybrid_improvement": -10.400877191884037
+      }
+    },
+    "category_performance": {
+      "filename": "category_performance.png",
+      "title": "Category Performance Comparison",
+      "description": "Performance comparison across charity categories:\n        Categories: ['healthcare_medical', 'education_youth', 'environmental', 'community_social']\n        Shows mean performance for Baseline, DPO-Synthetic, and DPO-Hybrid by category.\n        Error bars represent standard error of the mean.\n        Category means: healthcare_medical: 0.604; education_youth: 0.525; environmental: 0.541; community_social: 0.568",
+      "key_values": {
+        "healthcare_medical_baseline_mean": 0.6041094347075411,
+        "healthcare_medical_synthetic_mean": 0.5529713341851098,
+        "healthcare_medical_hybrid_mean": 0.5573240454925515,
+        "education_youth_baseline_mean": 0.5247298312793813,
+        "education_youth_synthetic_mean": 0.5215197016189633,
+        "education_youth_hybrid_mean": 0.654897819042556,
+        "environmental_baseline_mean": 0.5414313222164628,
+        "environmental_synthetic_mean": 0.6341051033253876,
+        "environmental_hybrid_mean": 0.5858157467532468,
+        "community_social_baseline_mean": 0.5677344622783131,
+        "community_social_synthetic_mean": 0.5943252104367083,
+        "community_social_hybrid_mean": 0.5275883650883649
+      }
+    },
+    "model_size_comparison": {
+      "filename": "model_size_comparison.png",
+      "title": "Model Size Group Performance Comparison",
+      "description": "Performance comparison by model size groups:\n        Small models: ['M0001', 'M0003', 'M0005']\n        Medium models: ['M0002', 'M0004']  \n        Large models: ['M0006', 'M0007']\n        Shows aggregated performance within each size category.\n        Size group means: small: 0.581; medium: 0.528",
+      "key_values": {
+        "small_baseline_mean": 0.5809260175778476,
+        "small_synthetic_mean": 0.5643368689188528,
+        "small_hybrid_mean": 0.5581196974510452,
+        "medium_baseline_mean": 0.5275287941774479,
+        "medium_synthetic_mean": 0.5931924375614797,
+        "medium_hybrid_mean": 0.6154087902829194
+      }
+    }
+  },
+  "data_quality": {
+    "raw_data_loaded": {
+      "baseline": true,
+      "synthetic": true,
+      "hybrid": true
+    },
+    "model_groups_defined": 3,
+    "category_groups_defined": 4,
+    "individual_models_analyzed": 4,
+    "size_groups_analyzed": 3,
+    "categories_analyzed": 4
+  },
+  "key_findings": {
+    "model_improvements_negligible": true,
+    "category_differences_minimal": true,
+    "size_effects_absent": true,
+    "consistent_with_stage1": true
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "analysis_timestamp": "2025-01-31",
+  "stage2_figures": {
+    "effect_size_forest_plot": {
+      "filename": "effect_size_forest_plot.png",
+      "title": "Effect Size Forest Plot with 95% Confidence Intervals",
+      "description": "Forest plot showing Cohen's d effect sizes for all pairwise comparisons:\n        - Baseline vs DPO-Synthetic: d = -0.040 [-0.271, 0.190]\n        - Baseline vs DPO-Hybrid: d = 0.031 [-0.199, 0.261]\n        - DPO-Synthetic vs DPO-Hybrid: d = 0.079 [-0.151, 0.309]\n        All effect sizes are negligible (|d| < 0.2) with confidence intervals spanning zero.",
+      "key_values": {
+        "baseline_vs_synthetic_d": -0.04,
+        "baseline_vs_hybrid_d": 0.031,
+        "synthetic_vs_hybrid_d": 0.079
+      }
+    },
+    "effect_size_comparison": {
+      "filename": "effect_size_comparison.png",
+      "title": "Effect Size Comparison Across Model Variants",
+      "description": "Bar chart comparing absolute Cohen's d values:\n        - Baseline vs DPO-Synthetic: |d| = 0.040\n        - Baseline vs DPO-Hybrid: |d| = 0.031\n        - DPO-Synthetic vs DPO-Hybrid: |d| = 0.079\n        Horizontal lines show Cohen's thresholds: small (0.2), medium (0.5), large (0.8).\n        All observed effects fall well below the small effect threshold.",
+      "key_values": {
+        "max_effect_size": 0.079
+      }
+    },
+    "model_comparison_boxplot": {
+      "filename": "model_comparison_boxplot.png",
+      "title": "Model Performance Comparison",
+      "description": "Box plot comparing overall score distributions:\n        - Baseline: M = 0.574, SD = 0.260\n        - DPO-Synthetic: M = 0.564, SD = 0.231\n        - DPO-Hybrid: M = 0.581, SD = 0.201\n        Box plots show median, quartiles, and outliers. Red diamonds indicate means.\n        Substantial overlap between distributions indicates similar performance.",
+      "key_values": {
+        "baseline_mean": 0.574,
+        "synthetic_mean": 0.564,
+        "hybrid_mean": 0.581
+      }
+    },
+    "anova_summary": {
+      "filename": "anova_summary.png",
+      "title": "ANOVA Results Summary",
+      "description": "Two-panel plot showing ANOVA results:\n        Left panel: F-statistic = 0.199 (well below typical significance threshold)\n        Right panel: \u03b7\u00b2 = 0.001 vs methodology threshold (0.06)\n        Results indicate no meaningful differences between model variants.",
+      "key_values": {
+        "f_statistic": 0.199,
+        "eta_squared": 0.001,
+        "p_value": 0.8199
+      }
+    },
+    "means_comparison": {
+      "filename": "means_comparison.png",
+      "title": "Model Performance: Means with Standard Error",
+      "description": "Bar chart showing means with standard error bars:\n        - Baseline: 0.574 \u00b1 0.022\n        - DPO-Synthetic: 0.564 \u00b1 0.019\n        - DPO-Hybrid: 0.581 \u00b1 0.017\n        Overlapping error bars confirm no significant differences between models.",
+      "key_values": {
+        "baseline_se": 0.021594684385382062,
+        "synthetic_se": 0.01918604651162791,
+        "hybrid_se": 0.01669435215946844
+      }
+    },
+    "methodology_validation": {
+      "filename": "validation/methodology_validation.png",
+      "title": "Methodology Validation: Predicted vs Actual Effect Sizes",
+      "description": "Comparison of predicted versus actual effect sizes:\n        Baseline vs DPO-Synthetic: Predicted d = 0.6, Actual d = 0.040\n        Baseline vs DPO-Hybrid: Predicted d = 0.85, Actual d = 0.031\n        DPO-Synthetic vs DPO-Hybrid: Predicted d = 0.4, Actual d = 0.079\n        Large discrepancies indicate methodology validation failure.",
+      "key_values": {
+        "validation_status": "FAIL",
+        "largest_discrepancy": 0.819
+      }
+    }
+  },
+  "stage3_figures": {
+    "model_specific_improvements": {
+      "filename": "model_specific_improvements.png",
+      "title": "Model-Specific Improvement Forest Plot",
+      "description": "Forest plot showing improvement rates for each model:\n        Individual model improvements vs baseline across DPO-Synthetic and DPO-Hybrid variants.\n        Models analyzed: ['M0001', 'M0002', 'M0003', 'M0005']\n        Shows confidence intervals for improvement percentages by model UID.\n        Key improvements: M0001: -3.39% (Synthetic); M0001: -3.50% (Hybrid); M0002: 12.45% (Synthetic)...",
+      "key_values": {
+        "M0001_synthetic_improvement": -3.3920995522760204,
+        "M0001_hybrid_improvement": -3.5031263682913054,
+        "M0002_synthetic_improvement": 12.447404598343894,
+        "M0002_hybrid_improvement": 16.658805561978628,
+        "M0003_synthetic_improvement": 3.8088230213446024,
+        "M0003_hybrid_improvement": 3.076054257799381,
+        "M0005_synthetic_improvement": -8.11976229994387,
+        "M0005_hybrid_improvement": -10.400877191884037
+      }
+    },
+    "category_performance": {
+      "filename": "category_performance.png",
+      "title": "Category Performance Comparison",
+      "description": "Performance comparison across charity categories:\n        Categories: ['healthcare_medical', 'education_youth', 'environmental', 'community_social']\n        Shows mean performance for Baseline, DPO-Synthetic, and DPO-Hybrid by category.\n        Error bars represent standard error of the mean.\n        Category means: healthcare_medical: 0.604; education_youth: 0.525; environmental: 0.541; community_social: 0.568",
+      "key_values": {
+        "healthcare_medical_baseline_mean": 0.6041094347075411,
+        "healthcare_medical_synthetic_mean": 0.5529713341851098,
+        "healthcare_medical_hybrid_mean": 0.5573240454925515,
+        "education_youth_baseline_mean": 0.5247298312793813,
+        "education_youth_synthetic_mean": 0.5215197016189633,
+        "education_youth_hybrid_mean": 0.654897819042556,
+        "environmental_baseline_mean": 0.5414313222164628,
+        "environmental_synthetic_mean": 0.6341051033253876,
+        "environmental_hybrid_mean": 0.5858157467532468,
+        "community_social_baseline_mean": 0.5677344622783131,
+        "community_social_synthetic_mean": 0.5943252104367083,
+        "community_social_hybrid_mean": 0.5275883650883649
+      }
+    },
+    "model_size_comparison": {
+      "filename": "model_size_comparison.png",
+      "title": "Model Size Group Performance Comparison",
+      "description": "Performance comparison by model size groups:\n        Small models: ['M0001', 'M0003', 'M0005']\n        Medium models: ['M0002', 'M0004']  \n        Large models: ['M0006', 'M0007']\n        Shows aggregated performance within each size category.\n        Size group means: small: 0.581; medium: 0.528",
+      "key_values": {
+        "small_baseline_mean": 0.5809260175778476,
+        "small_synthetic_mean": 0.5643368689188528,
+        "small_hybrid_mean": 0.5581196974510452,
+        "medium_baseline_mean": 0.5275287941774479,
+        "medium_synthetic_mean": 0.5931924375614797,
+        "medium_hybrid_mean": 0.6154087902829194
+      }
+    }
+  },
+  "total_figures": 9,
+  "figure_labels": {
+    "effect_size_forest_plot": {
+      "latex_label": "fig:effect-size-forest",
+      "filename": "effect_size_forest_plot.png",
+      "title": "Effect Size Forest Plot with 95% Confidence Intervals"
+    },
+    "effect_size_comparison": {
+      "latex_label": "fig:effect-size-comparison",
+      "filename": "effect_size_comparison.png",
+      "title": "Effect Size Comparison Across Model Variants"
+    },
+    "model_comparison_boxplot": {
+      "latex_label": "fig:model-comparison",
+      "filename": "model_comparison_boxplot.png",
+      "title": "Model Performance Comparison"
+    },
+    "anova_summary": {
+      "latex_label": "fig:anova-summary",
+      "filename": "anova_summary.png",
+      "title": "ANOVA Results Summary"
+    },
+    "means_comparison": {
+      "latex_label": "fig:means-comparison",
+      "filename": "means_comparison.png",
+      "title": "Model Performance: Means with Standard Error"
+    },
+    "methodology_validation": {
+      "latex_label": "fig:methodology-validation",
+      "filename": "validation/methodology_validation.png",
+      "title": "Methodology Validation: Predicted vs Actual Effect Sizes"
+    },
+    "model_specific_improvements": {
+      "latex_label": "fig:model-improvements",
+      "filename": "model_specific_improvements.png",
+      "title": "Model-Specific Improvement Forest Plot"
+    },
+    "category_performance": {
+      "latex_label": "fig:category-performance",
+      "filename": "category_performance.png",
+      "title": "Category Performance Comparison"
+    },
+    "model_size_comparison": {
+      "latex_label": "fig:size-comparison",
+      "filename": "model_size_comparison.png",
+      "title": "Model Size Group Performance Comparison"
+    }
+  }
+}
