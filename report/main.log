@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  8 AUG 2025 05:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  8 AUG 2025 06:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -405,7 +405,8 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 Package csquotes Info: Allocating character ".
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (./main.aux)
+
+No file main.aux.
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
@@ -426,7 +427,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
 LaTeX Font Info:    ... okay on input line 34.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -498,11 +498,10 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package color Info: Driver file: pdftex.def on input line 149.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/mathcolor.ltx))
 Package hyperref Info: Link coloring ON on input line 34.
- (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-<images/UOSLogo.png, id=309, 1505.625pt x 456.70625pt>
+<images/UOSLogo.png, id=4, 1505.625pt x 456.70625pt>
 File: images/UOSLogo.png Graphic file (type png)
 <use images/UOSLogo.png>
 Package pdftex.def Info: images/UOSLogo.png  used on input line 46.
@@ -526,45 +525,134 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has b
                    \relax 
 l.1 \chapter
             *{\Large \center Abstract} [1]
+
+Package natbib Warning: Citation `yan2025beyond_selftalk' on page ii undefined on input line 5.
+
+
+Package natbib Warning: Citation `guo2024llm_multiagent' on page ii undefined on input line 5.
+
+
+Package natbib Warning: Citation `zhang2019email_subject' on page ii undefined on input line 5.
+
+
+Package natbib Warning: Citation `chen2019gmail_smart_compose' on page ii undefined on input line 5.
+
+
+Package natbib Warning: Citation `rafailov2023dpo' on page ii undefined on input line 5.
+
+
+Package natbib Warning: Citation `muldrew2024active_preference' on page ii undefined on input line 5.
+
+
+Package natbib Warning: Citation `ye2024justice_prejudice' on page ii undefined on input line 5.
+
+
+Package natbib Warning: Citation `gu2024llm_judge_survey' on page ii undefined on input line 5.
+
 LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
- (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+)
+
+Package natbib Warning: Citation `ferrag2025llm_autonomous_agents' on page ii undefined on input line 5.
+
+
+Package natbib Warning: Citation `liu2024advances_foundation_agents' on page ii undefined on input line 5.
+
+
+Package natbib Warning: Citation `masterman2024landscape_emerging' on page ii undefined on input line 5.
+
+
+Package natbib Warning: Citation `sapkota2025ai_agents_agentic' on page ii undefined on input line 5.
+
+)
 
 [2
 
-] (./main.toc
-
-[3
-
-])
+]
+No file main.toc.
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
 
 
-[4] (./main.lof)
+[3
+
+]
+No file main.lof.
 \tf@lof=\write5
 \openout5 = `main.lof'.
 
 
 
-[5
+[4
 
-] (./main.lot)
+]
+No file main.lot.
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
 
 
-[6
+[5
 
 ] (./sections/introduction.tex
 Chapter 1.
+
+Package natbib Warning: Citation `guo2024llm_multiagent' on page 1 undefined on input line 5.
+
+
+Package natbib Warning: Citation `yan2025beyond_selftalk' on page 1 undefined on input line 5.
+
+
+Package natbib Warning: Citation `talebirad2023multiagent_collaboration' on page 1 undefined on input line 5.
+
+
+Package natbib Warning: Citation `krishnan2025ai_agents' on page 1 undefined on input line 5.
+
+
+Package natbib Warning: Citation `ma2024agentboard' on page 1 undefined on input line 5.
+
+
+Package natbib Warning: Citation `cemri2025multiagent_failure' on page 1 undefined on input line 5.
+
+
+Package natbib Warning: Citation `pauli2024persuasive_language' on page 1 undefined on input line 7.
+
+
+Package natbib Warning: Citation `murakami2023nlg_advertising' on page 1 undefined on input line 7.
+
+
+Package natbib Warning: Citation `zhang2019email_subject' on page 1 undefined on input line 7.
+
+
+Package natbib Warning: Citation `chen2019gmail_smart_compose' on page 1 undefined on input line 7.
+
+
+Package natbib Warning: Citation `chen2019gmail_smart_compose' on page 1 undefined on input line 11.
+
+
+Package natbib Warning: Citation `henderson2017smart_reply' on page 1 undefined on input line 11.
+
+
+Package natbib Warning: Citation `li2023generative_judge' on page 1 undefined on input line 11.
+
+
+Package natbib Warning: Citation `rafailov2023dpo' on page 1 undefined on input line 13.
+
+
+Package natbib Warning: Citation `wang2024asft' on page 1 undefined on input line 13.
+
+
+Package natbib Warning: Citation `muldrew2024active_preference' on page 1 undefined on input line 13.
+
+
+Package natbib Warning: Citation `gallego2024configurable_safety' on page 1 undefined on input line 13.
+
 
 
 [1
@@ -572,31 +660,302 @@ Chapter 1.
 
 ]
 
+Package natbib Warning: Citation `yehudai2025survey_llm_agents' on page 2 undefined on input line 17.
+
+
+Package natbib Warning: Citation `wang2024dynamic_evaluation' on page 2 undefined on input line 17.
+
+
+Package natbib Warning: Citation `schmidtova2024nlg_metrics' on page 2 undefined on input line 17.
+
+
+Package natbib Warning: Citation `liu2023geval' on page 2 undefined on input line 17.
+
+
+Package natbib Warning: Citation `li2023generative_judge' on page 2 undefined on input line 17.
+
+
+Package natbib Warning: Citation `rony2022rome' on page 2 undefined on input line 17.
+
+
+Package natbib Warning: Citation `maharana2023cococon' on page 2 undefined on input line 19.
+
+
+Package natbib Warning: Citation `ni2024mixeval_x' on page 2 undefined on input line 19.
+
+
+Package natbib Warning: Citation `maharana2023cococon' on page 2 undefined on input line 19.
+
+
+Package natbib Warning: Citation `ye2024justice_prejudice' on page 2 undefined on input line 19.
+
+
+Package natbib Warning: Citation `wang2025judging_bias_lrms' on page 2 undefined on input line 19.
+
+
+Package natbib Warning: Citation `ni2024mixeval_x' on page 2 undefined on input line 19.
+
+
+Package natbib Warning: Citation `li2024generation_to_judgment' on page 2 undefined on input line 21.
+
+
+Package natbib Warning: Citation `xu2025contextual_judge_bench' on page 2 undefined on input line 21.
+
+
+Package natbib Warning: Citation `xu2025contextual_judge_bench' on page 2 undefined on input line 21.
+
+
+Package natbib Warning: Citation `marjanovic2025deepseek_thoughtology' on page 2 undefined on input line 23.
+
+
+Package natbib Warning: Citation `sui2025stop_overthinking' on page 2 undefined on input line 23.
+
+
+Package natbib Warning: Citation `feng2024dpo_limitations' on page 2 undefined on input line 27.
+
+
+Package natbib Warning: Citation `deng2025preference_data_selection' on page 2 undefined on input line 27.
+
+
+Package natbib Warning: Citation `feng2024dpo_limitations' on page 2 undefined on input line 27.
+
+
+
 [2]
+
+Package natbib Warning: Citation `li2024generation_to_judgment' on page 3 undefined on input line 29.
+
+
+Package natbib Warning: Citation `gu2024llm_judge_survey' on page 3 undefined on input line 29.
+
+
+Package natbib Warning: Citation `ni2024mixeval_x' on page 3 undefined on input line 29.
+
+
+Package natbib Warning: Citation `gao2023automatic_assessment' on page 3 undefined on input line 29.
+
+
+Package natbib Warning: Citation `feng2024dpo_limitations' on page 3 undefined on input line 31.
+
+
+Package natbib Warning: Citation `karthik2024scalable_ranked_preference' on page 3 undefined on input line 31.
+
+
+Package natbib Warning: Citation `li2024generation_to_judgment' on page 3 undefined on input line 37.
+
+
+Package natbib Warning: Citation `rony2022rome' on page 3 undefined on input line 37.
+
+
 
 [3]
 
+Package natbib Warning: Citation `rafailov2023dpo' on page 4 undefined on input line 39.
+
+
+Package natbib Warning: Citation `feng2024dpo_limitations' on page 4 undefined on input line 39.
+
+
+Package natbib Warning: Citation `marjanovic2025deepseek_thoughtology' on page 4 undefined on input line 41.
+
+
+Package natbib Warning: Citation `xu2025contextual_judge_bench' on page 4 undefined on input line 41.
+
+
+Package natbib Warning: Citation `zhou2025ai_agent_communication' on page 4 undefined on input line 45.
+
+
+Package natbib Warning: Citation `ke2025mas_zero' on page 4 undefined on input line 45.
+
+
+Package natbib Warning: Citation `cheng2024exploring_llm_agents' on page 4 undefined on input line 47.
+
+
+Package natbib Warning: Citation `qiao2022reasoning_prompting' on page 4 undefined on input line 47.
+
+
+Package natbib Warning: Citation `hadji2024inference_time_dph' on page 4 undefined on input line 49.
+
+
+Package natbib Warning: Citation `xu2023re_reading_reasoning' on page 4 undefined on input line 49.
+
+
+Package natbib Warning: Citation `gao2024meta_reasoning_prompting' on page 4 undefined on input line 51.
+
+
+Package natbib Warning: Citation `shao2023synthetic_prompting' on page 4 undefined on input line 51.
+
+
+
 [4]
+
+Package natbib Warning: Citation `wang2025judging_bias_lrms' on page 5 undefined on input line 55.
+
+
+Package natbib Warning: Citation `ye2024justice_prejudice' on page 5 undefined on input line 55.
+
+
+Package natbib Warning: Citation `li2023generative_judge' on page 5 undefined on input line 57.
+
+
+Package natbib Warning: Citation `liu2023geval' on page 5 undefined on input line 57.
+
+
+Package natbib Warning: Citation `chan2023chateval' on page 5 undefined on input line 59.
+
+
+Package natbib Warning: Citation `chen2024meta_evaluation' on page 5 undefined on input line 59.
+
+
+Package natbib Warning: Citation `biderman2024reproducible_evaluation' on page 5 undefined on input line 61.
+
+
+Package natbib Warning: Citation `siegel2024core_bench' on page 5 undefined on input line 61.
+
+
+Package natbib Warning: Citation `zhang2023balancing_skills' on page 5 undefined on input line 65.
+
+
+Package natbib Warning: Citation `herel2023language_modeling' on page 5 undefined on input line 65.
+
+
 
 [5]
 
+Package natbib Warning: Citation `urlana2024llms_industrial' on page 6 undefined on input line 67.
+
+
+Package natbib Warning: Citation `pimentel2024beyond_metrics' on page 6 undefined on input line 67.
+
+
+Package natbib Warning: Citation `feng2024dpo_limitations' on page 6 undefined on input line 69.
+
+
+Package natbib Warning: Citation `deng2025preference_data_selection' on page 6 undefined on input line 69.
+
+
+Package natbib Warning: Citation `card2020statistical_power' on page 6 undefined on input line 71.
+
+
+Package natbib Warning: Citation `connolly2023task_specific' on page 6 undefined on input line 71.
+
+
+Package natbib Warning: Citation `kim2025pipa_evaluation' on page 6 undefined on input line 73.
+
+
+Package natbib Warning: Citation `siegel2024core_bench' on page 6 undefined on input line 73.
+
+
+Package natbib Warning: Citation `deng2025preference_data_selection' on page 6 undefined on input line 77.
+
+
+Package natbib Warning: Citation `feng2024dpo_limitations' on page 6 undefined on input line 77.
+
+
+
 [6]
+
+Package natbib Warning: Citation `ferrag2025llm_autonomous_agents' on page 7 undefined on input line 81.
+
+
+Package natbib Warning: Citation `liu2024advances_foundation_agents' on page 7 undefined on input line 81.
+
+
+Package natbib Warning: Citation `masterman2024landscape_emerging' on page 7 undefined on input line 81.
+
+
+Package natbib Warning: Citation `sapkota2025ai_agents_agentic' on page 7 undefined on input line 83.
+
+
+Package natbib Warning: Citation `feng2024dpo_limitations' on page 7 undefined on input line 87.
+
+
+Package natbib Warning: Citation `karthik2024scalable_ranked_preference' on page 7 undefined on input line 87.
+
+
+Package natbib Warning: Citation `bernard2024equator_deterministic' on page 7 undefined on input line 89.
+
+
+Package natbib Warning: Citation `zeng2023challenge_meta_reasoning' on page 7 undefined on input line 91.
+
+
 
 [7]
 
+Package natbib Warning: Citation `lee2025evaluating_reasoning_traces' on page 8 undefined on input line 95.
+
+
+Package natbib Warning: Citation `patil2025advancing_reasoning_llm' on page 8 undefined on input line 95.
+
+
+Package natbib Warning: Citation `xu2025contextual_judge_bench' on page 8 undefined on input line 97.
+
+
+Package natbib Warning: Citation `yehudai2025survey_llm_agents' on page 8 undefined on input line 99.
+
+
+Package natbib Warning: Citation `li2024generation_to_judgment' on page 8 undefined on input line 103.
+
+
+Package natbib Warning: Citation `xu2025contextual_judge_bench' on page 8 undefined on input line 103.
+
+
+
 [8]
 
-[9]) (./sections/literature.tex
+Package natbib Warning: Citation `ferrag2025llm_autonomous_agents' on page 9 undefined on input line 111.
+
+
+Package natbib Warning: Citation `masterman2024landscape_emerging' on page 9 undefined on input line 111.
+
+) (./sections/literature.tex
+
+[9]
 
 [10]
 Chapter 2.
+
+Package natbib Warning: Citation `guo2024llm_multiagent' on page 11 undefined on input line 6.
+
+
+Package natbib Warning: Citation `yan2025beyond_selftalk' on page 11 undefined on input line 6.
+
+
+Package natbib Warning: Citation `ma2024agentboard' on page 11 undefined on input line 8.
+
+
+Package natbib Warning: Citation `cemri2025multiagent_failure' on page 11 undefined on input line 10.
+
+
+Package natbib Warning: Citation `krishnan2025mcp_coordination' on page 11 undefined on input line 12.
+
+
+Package natbib Warning: Citation `zhu2025multiagentbench' on page 11 undefined on input line 14.
+
 
 
 [11
 
 ]
 
+Package natbib Warning: Citation `rafailov2023dpo' on page 12 undefined on input line 24.
+
+
+Package natbib Warning: Citation `feng2024dpo_limitations' on page 12 undefined on input line 26.
+
+
+
 [12]
+
+Package natbib Warning: Citation `deng2025preference_data_selection' on page 13 undefined on input line 28.
+
+
+Package natbib Warning: Citation `goyal2024scaling_laws_data_filtering' on page 13 undefined on input line 30.
+
+
+Package natbib Warning: Citation `peng2025omni_dpo' on page 13 undefined on input line 32.
+
+
 Overfull \hbox (0.31651pt too wide) in paragraph at lines 34--35
 \OT1/cmr/m/n/10.95 fewer than ap-prox-i-mately 425 pairs|precisely the range ex-am-ined in the present study|DPO
  []
@@ -605,14 +964,54 @@ Overfull \hbox (0.31651pt too wide) in paragraph at lines 34--35
 
 [13]
 
+Package natbib Warning: Citation `karthik2024scalable_ranked_preference' on page 14 undefined on input line 40.
+
+
+Package natbib Warning: Citation `li2023position_bias_portia' on page 14 undefined on input line 48.
+
+
+Package natbib Warning: Citation `li2023position_bias_portia' on page 14 undefined on input line 50.
+
+
+
 [14]
+
+Package natbib Warning: Citation `yang2025reasoning_bias_detector' on page 15 undefined on input line 52.
+
+
+Package natbib Warning: Citation `yang2025reasoning_bias_detector' on page 15 undefined on input line 54.
+
+
+Package natbib Warning: Citation `seth2025xai_metrics_gap' on page 15 undefined on input line 56.
+
+
+Package natbib Warning: Citation `seth2025xai_metrics_gap' on page 15 undefined on input line 58.
+
+
+Package natbib Warning: Citation `seth2025xai_metrics_gap' on page 15 undefined on input line 60.
+
+
 
 [15]
 
+Package natbib Warning: Citation `li2024llm_nlg_evaluation' on page 16 undefined on input line 68.
+
+
+Package natbib Warning: Citation `chakrabarty2025writing_quality' on page 16 undefined on input line 70.
+
+
+
 [16]
+
+Package natbib Warning: Citation `zhang2019email_subject' on page 17 undefined on input line 72.
+
+
 Overfull \hbox (21.81804pt too wide) in paragraph at lines 72--73
 []\OT1/cmr/m/n/10.95 The mea-sure-ment chal-lenges be-come more pro-nounced when con-sid-er-ing the multi-dimensional
  []
+
+
+Package natbib Warning: Citation `gehrmann2022nlg_evaluation_obstacles' on page 17 undefined on input line 74.
 
 
 Overfull \hbox (0.9083pt too wide) in paragraph at lines 76--77
@@ -623,234 +1022,890 @@ Overfull \hbox (0.9083pt too wide) in paragraph at lines 76--77
 
 [17]
 
+Package natbib Warning: Citation `ferrag2025comprehensive_ai_review' on page 18 undefined on input line 88.
+
+
+Package natbib Warning: Citation `ghosh2025ailuminate_benchmark' on page 18 undefined on input line 90.
+
+
+
 [18]) (./sections/methodology.tex
 
 [19]
-
-[20]
 Chapter 3.
 
+Package natbib Warning: Citation `murakami2023nlg_advertising' on page 20 undefined on input line 10.
 
-[21
+
+Package natbib Warning: Citation `zheng2023click_controllable' on page 20 undefined on input line 10.
+
+
+Package natbib Warning: Citation `guo2024llm_multiagent' on page 20 undefined on input line 14.
+
+
+Package natbib Warning: Citation `yan2025beyond_selftalk' on page 20 undefined on input line 14.
+
+
+Package natbib Warning: Citation `yehudai2025survey_llm_agents' on page 20 undefined on input line 14.
+
+
+Package natbib Warning: Citation `ma2024agentboard' on page 20 undefined on input line 14.
+
+
+
+[20
 
 ]
-<figures/agent-diagram.png, id=917, 1622.06pt x 1012.78375pt>
+<figures/agent-diagram.png, id=157, 1622.06pt x 1012.78375pt>
 File: figures/agent-diagram.png Graphic file (type png)
 <use figures/agent-diagram.png>
 Package pdftex.def Info: figures/agent-diagram.png  used on input line 28.
 (pdftex.def)             Requested size: 396.76001pt x 247.72466pt.
 
 
-[22 <./figures/agent-diagram.png>]
+[21 <./figures/agent-diagram.png>]
 
-[23]
+[22]
 Overfull \hbox (24.88167pt too wide) in paragraph at lines 78--90
  [][] 
  []
 
 
 
-[24]
+[23]
 Overfull \hbox (10.62767pt too wide) in paragraph at lines 96--97
 \OT1/cmr/m/n/10.95 constrained de-ploy-ment sce-nar-ios while main-tain-ing ad-e-quate gen-er-a-tion ca-pa-bil-ity for fundrais-
  []
 
 
 
-[25]
-<figures/traditional_vs_reasoning.png, id=936, 1499.6025pt x 833.1125pt>
+[24]
+<figures/traditional_vs_reasoning.png, id=186, 1499.6025pt x 833.1125pt>
 File: figures/traditional_vs_reasoning.png Graphic file (type png)
 <use figures/traditional_vs_reasoning.png>
 Package pdftex.def Info: figures/traditional_vs_reasoning.png  used on input line 112.
 (pdftex.def)             Requested size: 374.72302pt x 208.17592pt.
 
 
-[26 <./figures/traditional_vs_reasoning.png>]
-
-[27]
+[25 <./figures/traditional_vs_reasoning.png>]
 Overfull \hbox (3.50728pt too wide) in paragraph at lines 144--145
 []\OT1/cmr/m/n/10.95 The sec-ond phase trans-forms ex-tracted el-e-ments into struc-tured eval-u-a-tion cri-te-ria through
  []
 
-<figures/hybrid-checklist.png, id=946, 1033.8625pt x 913.4125pt>
+
+
+[26]
+<figures/hybrid-checklist.png, id=202, 1033.8625pt x 913.4125pt>
 File: figures/hybrid-checklist.png Graphic file (type png)
 <use figures/hybrid-checklist.png>
 Package pdftex.def Info: figures/hybrid-checklist.png  used on input line 150.
 (pdftex.def)             Requested size: 396.76001pt x 350.52899pt.
 
 
-[28 <./figures/hybrid-checklist.png>]
+[27 <./figures/hybrid-checklist.png>]
 Overfull \hbox (3.20604pt too wide) in paragraph at lines 178--179
 \OT1/cmr/m/n/10.95 The Di-rect Pref-er-ence Op-ti-miza-tion im-ple-men-ta-tion rep-re-sents the cul-mi-na-tion of the method-
  []
 
 
 
-[29]
+[28]
 
-[30]
+[29]
 Overfull \hbox (4.75435pt too wide) in paragraph at lines 208--209
 []\OT1/cmr/m/n/10.95 Human-synthetic in-te-gra-tion main-tains method-olog-i-cal con-sis-tency through iden-ti-cal train-
  []
 
 
 
-[31]
+[30]
 
-[32]
-<figures/final_val.png, id=970, 904.37875pt x 1059.96pt>
+[31]
+<figures/final_val.png, id=240, 904.37875pt x 1059.96pt>
 File: figures/final_val.png Graphic file (type png)
 <use figures/final_val.png>
 Package pdftex.def Info: figures/final_val.png  used on input line 268.
 (pdftex.def)             Requested size: 396.76001pt x 465.00908pt.
 
 
-[33]
-
-[34 <./figures/final_val.png>]) (./sections/results.tex
+[32 <./figures/final_val.png>]) (./sections/results.tex
 Overfull \hbox (1.83441pt too wide) in paragraph at lines 292--1
 []\OT1/cmr/m/n/10.95 The method-olog-i-cal in-no-va-tions in-clude the em-pir-i-cally val-i-dated Hy-brid eval-u-a-tion frame-
  []
 
 
 
-[35]
+[33]
 Chapter 4.
-<figures/model_comparison_boxplot.png, id=986, 715.2321pt x 428.0793pt>
+
+LaTeX Warning: Reference `fig:model-comparison' on page 34 undefined on input line 14.
+
+
+LaTeX Warning: Reference `fig:model-comparison' on page 34 undefined on input line 16.
+
+<figures/model_comparison_boxplot.png, id=252, 715.2321pt x 428.0793pt>
 File: figures/model_comparison_boxplot.png Graphic file (type png)
 <use figures/model_comparison_boxplot.png>
 Package pdftex.def Info: figures/model_comparison_boxplot.png  used on input line 20.
 (pdftex.def)             Requested size: 352.6793pt x 211.08667pt.
 
 
-[36
+[34
 
 ]
-<figures/anova_summary.png, id=994, 774.0117pt x 420.8523pt>
+
+LaTeX Warning: Reference `tab:statistical-comparisons' on page 35 undefined on input line 28.
+
+
+LaTeX Warning: Reference `fig:anova-summary' on page 35 undefined on input line 49.
+
+<figures/anova_summary.png, id=260, 774.0117pt x 420.8523pt>
 File: figures/anova_summary.png Graphic file (type png)
 <use figures/anova_summary.png>
 Package pdftex.def Info: figures/anova_summary.png  used on input line 53.
 (pdftex.def)             Requested size: 352.6793pt x 191.76422pt.
 
 
-[37 <./figures/model_comparison_boxplot.png>]
-<figures/effect_size_forest_plot.png, id=1001, 787.2612pt x 497.9403pt>
+[35 <./figures/model_comparison_boxplot.png>]
+
+LaTeX Warning: Reference `fig:effect-size-forest' on page 36 undefined on input line 66.
+
+<figures/effect_size_forest_plot.png, id=269, 787.2612pt x 497.9403pt>
 File: figures/effect_size_forest_plot.png Graphic file (type png)
 <use figures/effect_size_forest_plot.png>
 Package pdftex.def Info: figures/effect_size_forest_plot.png  used on input line 70.
 (pdftex.def)             Requested size: 352.6793pt x 223.06813pt.
 
 
-[38 <./figures/anova_summary.png>]
+[36 <./figures/anova_summary.png>]
 
-[39 <./figures/effect_size_forest_plot.png>]
-<figures/model_specific_improvements.png, id=1016, 859.5312pt x 570.4512pt>
+LaTeX Warning: Reference `tab:model-specific' on page 37 undefined on input line 79.
+
+
+
+[37 <./figures/effect_size_forest_plot.png>]
+
+LaTeX Warning: Reference `fig:model-improvements' on page 38 undefined on input line 107.
+
+
+LaTeX Warning: Reference `fig:size-comparison' on page 38 undefined on input line 107.
+
+<figures/model_specific_improvements.png, id=288, 859.5312pt x 570.4512pt>
 File: figures/model_specific_improvements.png Graphic file (type png)
 <use figures/model_specific_improvements.png>
 Package pdftex.def Info: figures/model_specific_improvements.png  used on input line 111.
 (pdftex.def)             Requested size: 352.6793pt x 234.06929pt.
-<figures/model_size_comparison.png, id=1017, 859.7721pt x 425.4294pt>
+<figures/model_size_comparison.png, id=289, 859.7721pt x 425.4294pt>
 File: figures/model_size_comparison.png Graphic file (type png)
 <use figures/model_size_comparison.png>
 Package pdftex.def Info: figures/model_size_comparison.png  used on input line 118.
 (pdftex.def)             Requested size: 352.6793pt x 174.51157pt.
 
 
-[40 <./figures/model_specific_improvements.png>]
+[38 <./figures/model_specific_improvements.png>]
+
+LaTeX Warning: Reference `tab:category-analysis' on page 39 undefined on input line 126.
+
+
 Overfull \hbox (4.48059pt too wide) in paragraph at lines 151--152
 []\OT1/cmr/m/n/10.95 Category-specific anal-y-sis re-vealed sub-stan-tial vari-a-tion in op-ti-miza-tion ef-fec-tive-ness across
  []
 
 
 
-[41 <./figures/model_size_comparison.png>]
+[39 <./figures/model_size_comparison.png>]
 Overfull \hbox (17.48027pt too wide) in paragraph at lines 165--180
  [][] 
  []
 
 
-LaTeX Warning: Reference `fig:methodology-validation' on page 42 undefined on input line 187.
+LaTeX Warning: Reference `fig:methodology-validation' on page 40 undefined on input line 187.
 
 ) (./sections/discussion.tex
 
-[42]
+[40]
 Chapter 5.
 
+LaTeX Warning: Reference `sec:results' on page 41 undefined on input line 7.
 
-[43
+
+LaTeX Warning: Reference `fig:anova-summary' on page 41 undefined on input line 7.
+
+
+LaTeX Warning: Reference `fig:effect-size-forest' on page 41 undefined on input line 11.
+
+
+Package natbib Warning: Citation `cui2023ultrafeedback' on page 41 undefined on input line 17.
+
+
+
+[41
 
 ]
 
-[44]
-
-LaTeX Warning: Reference `fig:methodology-validation' on page 45 undefined on input line 44.
+LaTeX Warning: Reference `tab:model-specific' on page 42 undefined on input line 32.
 
 
+LaTeX Warning: Reference `fig:model-improvements' on page 42 undefined on input line 32.
 
-[45{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
+
+[42]
+
+LaTeX Warning: Reference `tab:category-analysis' on page 43 undefined on input line 44.
+
+
+LaTeX Warning: Reference `fig:methodology-validation' on page 43 undefined on input line 44.
+
+
+
+[43{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+
+Package natbib Warning: Citation `rafailov2023dpo' on page 44 undefined on input line 59.
+
+
 Overfull \hbox (4.41975pt too wide) in paragraph at lines 63--64
 []\OT1/cmr/m/n/10.95 The multi-agent frame-work's demon-strated ro-bust-ness de-spite sub-stan-tial in-di-vid-ual model
  []
 
 
 
-[46]) (./sections/conclusion.tex
+[44]) (./sections/conclusion.tex
 
-[47]
+[45]
 Chapter 6.
+
+LaTeX Warning: Reference `sec:results' on page 46 undefined on input line 11.
+
+
+LaTeX Warning: Reference `fig:anova-summary' on page 46 undefined on input line 11.
+
+
+LaTeX Warning: Reference `tab:model-specific' on page 46 undefined on input line 15.
+
+
+LaTeX Warning: Reference `fig:model-improvements' on page 46 undefined on input line 15.
+
+
+LaTeX Warning: Reference `fig:size-comparison' on page 46 undefined on input line 15.
+
 
 Overfull \hbox (8.43655pt too wide) in paragraph at lines 15--16
 \OT1/cmr/m/n/10.95 with Model M0004 (Llama-3-8B) achiev-ing +41.3% im-prove-ment (DPO-Synthetic) and +38.6%
  []
 
 
-Overfull \hbox (3.1148pt too wide) in paragraph at lines 15--16
-\OT1/cmr/m/n/10.95 im-prove-ment (DPO-Hybrid), while other mod-els ex-hib-ited per-for-mance de-creases (Fig-ure [][]4.4[][]).
+Overfull \hbox (1.01595pt too wide) in paragraph at lines 15--16
+\OT1/cmr/m/n/10.95 im-prove-ment (DPO-Hybrid), while other mod-els ex-hib-ited per-for-mance de-creases (Fig-ure []).
  []
 
 
+LaTeX Warning: Reference `tab:category-analysis' on page 46 undefined on input line 19.
 
-[48
+
+LaTeX Warning: Reference `tab:methodology-validation' on page 46 undefined on input line 19.
+
+
+LaTeX Warning: Reference `fig:model-comparison' on page 46 undefined on input line 23.
+
+
+LaTeX Warning: Reference `tab:statistical-comparisons' on page 46 undefined on input line 23.
+
+
+
+[46
 
 ]
+
+LaTeX Warning: Reference `tab:model-specific' on page 47 undefined on input line 34.
+
+
+
+[47]
+
+[48]
+
+LaTeX Warning: Reference `fig:anova-summary' on page 49 undefined on input line 81.
+
+
+LaTeX Warning: Reference `fig:effect-size-forest' on page 49 undefined on input line 81.
+
+) (./main.bbl
 
 [49]
 
-[50]) (./main.bbl
+[50
+
+]
 
 [51]
-Underfull \hbox (badness 1297) in paragraph at lines 40--41
-[]\OT1/cmr/m/n/10.95 Feng, D., Qin, B., Huang, C., Zhang, Z. & Lei, W. (2024), `To-wards an-a-lyz-ing
+
+[52]
+Underfull \hbox (badness 1400) in paragraph at lines 175--176
+[]\OT1/cmr/m/n/10.95 Pauli, A. B., Au-gen-stein, I. and As-sent, I. (2024), `Mea-sur-ing and bench-mark-ing
  []
 
 
-
-[52
-
-]
 
 [53]
 
 [54]
 
-[55]
+[55])
 
-[56])
+[56]
 
-[57]
-
-[58
+[57
 
 
 ] (./sections/appendixA.tex
 Appendix A.
 
 
-[59
+[58
 
-])
+]
+Overfull \hbox (24.23206pt too wide) in paragraph at lines 60--61
+\OT1/cmr/m/n/10.95 The agent em-ploys de-ter-min-is-tic out-put pars-ing us-ing spe-cial-ized end to-kens. The `<END[]EMAIL>`
+ []
 
-[60] (./main.aux)
+
+
+[59]
+Overfull \hbox (4.60593pt too wide) in paragraph at lines 87--88
+[]\OT1/cmr/bx/n/10.95 Structural pat-terns\OT1/cmr/m/n/10.95 : Para-graph length, sen-tence struc-ture, open-ing/closing
+ []
+
+
+Overfull \hbox (1.92857pt too wide) in paragraph at lines 93--95
+\OT1/cmr/m/n/10.95 that are spe-cific to the ex-am-ple email's char-ac-ter-is-tics rather than generic fundrais-
+ []
+
+
+
+[60]
+
+[61]
+./sections/appendixA.tex:189: Missing $ inserted.
+<inserted text> 
+                $
+l.189 ...bleLM-2-1.6B}: `stabilityai/stablelm-2-1_
+                                                  6b-chat` (1.6B parameters)
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./sections/appendixA.tex:190: LaTeX Error: Command \end{itemize} invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.190 \end{itemize}
+                   
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./sections/appendixA.tex:190: Missing $ inserted.
+<inserted text> 
+                $
+l.190 \end{itemize}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+
+[62]
+
+[63]
+Overfull \hbox (23.8413pt too wide) in paragraph at lines 263--264
+[]\OT1/cmr/bx/n/10.95 Expandable Seg-ments\OT1/cmr/m/n/10.95 : `PY-TORCH[]CUDA[]ALLOC[]CONF=expandable[]segments:True` 
+ []
+
+
+
+[64]
+
+[65]
+
+Package natbib Warning: Citation `rafailov2023dpo' on page 66 undefined on input line 346.
+
+
+Package natbib Warning: Citation `rafailov2023dpo' on page 66 undefined on input line 351.
+
+
+
+[66]
+
+Package natbib Warning: Citation `liu2024understanding_reference_policies' on page 67 undefined on input line 396.
+
+
+Package natbib Warning: Citation `feng2024dpo_theoretical_analysis' on page 67 undefined on input line 409.
+
+
+
+[67]
+Overfull \hbox (65.96147pt too wide) in paragraph at lines 433--446
+ [][] 
+ []
+
+
+Overfull \hbox (65.96147pt too wide) in paragraph at lines 466--481
+ [][] 
+ []
+
+
+
+[68]
+
+[69]
+
+[70]
+./sections/appendixA.tex:606: Missing $ inserted.
+<inserted text> 
+                $
+l.606 ...: Shared cluster storage at `/shared/dpo_
+                                                  checkpoints/`
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./sections/appendixA.tex:607: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.607     \item
+                \textbf{Naming Convention}: `{model_id}_{variant}_{step}_{ti...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./sections/appendixA.tex:607: Missing $ inserted.
+<inserted text> 
+                $
+l.607     \item \textbf
+                       {Naming Convention}: `{model_id}_{variant}_{step}_{ti...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./sections/appendixA.tex:607: Missing $ inserted.
+<inserted text> 
+                $
+l.607 ...item \textbf{Naming Convention}: `{model_
+                                                  id}_{variant}_{step}_{time...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./sections/appendixA.tex:607: Extra }, or forgotten $.
+l.607 ...m \textbf{Naming Convention}: `{model_id}
+                                                  _{variant}_{step}_{timesta...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./sections/appendixA.tex:607: Double subscript.
+l.607 ...aming Convention}: `{model_id}_{variant}_
+                                                  {step}_{timestamp}.pt`
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+./sections/appendixA.tex:607: Double subscript.
+l.607 ...onvention}: `{model_id}_{variant}_{step}_
+                                                  {timestamp}.pt`
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+./sections/appendixA.tex:608: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.608     \item
+                \textbf{Retention Policy}: Keep last 3 checkpoints plus best...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./sections/appendixA.tex:608: Missing $ inserted.
+<inserted text> 
+                $
+l.608     \item \textbf
+                       {Retention Policy}: Keep last 3 checkpoints plus best...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+
+[71]
+./sections/appendixA.tex:610: Missing } inserted.
+<inserted text> 
+                }
+l.610 \end{itemize}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (4.35358pt too wide) in paragraph at lines 655--656
+[]\OT1/cmr/bx/n/10.95 Mixed Pre-ci-sion Train-ing\OT1/cmr/m/n/10.95 : Au-to-matic mixed pre-ci-sion (AMP) us-ing `torch.cuda.amp` 
+ []
+
+
+Overfull \hbox (17.25623pt too wide) in paragraph at lines 666--676
+ [][] 
+ []
+
+
+
+[72]
+
+LaTeX Warning: Reference `eq:dpo-loss' on page 73 undefined on input line 684.
+
+
+
+[73]
+
+[74]
+
+[75]
+
+[76]
+Overfull \hbox (4146.60536pt too wide) in paragraph at lines 916--916
+[]    \OT1/cmtt/m/n/10.95 "content": "Urgent: Wildlife Emergency in Australia\n\nDear Supporter,\n\nDevastating wildfires across Australia have left thousands of native animals homeless, injured, and fighting for survival. Koalas, kangaroos, and countless other species desperately need our help.\n\nWildlife Rescue Australia has been working around the clock to rescue and rehabilitate displaced animals, but we can't do it alone. Every dollar you donate directly funds emergency veterinary care, temporary shelters, and food for these vulnerable creatures.\n\nAs someone who cares about wildlife conservation, you have the power to make an immediate difference. These animals have already lost everything - we cannot let them lose their lives too.\n\n**Donate $25 now to help save Australia's wildlife**\n<END_EMAIL>",[] 
+ []
+
+
+Overfull \hbox (1329.74837pt too wide) in paragraph at lines 916--916
+[]    \OT1/cmtt/m/n/10.95 "content": "Australia Wildlife Help\n\nHi,\n\nThere are fires in Australia and animals need help. Many animals like koalas are hurt. We are trying to help them.\n\nIf you want to help animals, you can give money. Any amount helps animals get better.\n\nPlease help if you can.\n\nThank you\n<END_EMAIL>",[] 
+ []
+
+
+
+[77]
+Overfull \hbox (4181.09749pt too wide) in paragraph at lines 961--961
+[]    \OT1/cmtt/m/n/10.95 "content": "You're Invited: Exclusive Preview Screening\n\nDear [Name],\n\nWe're excited to invite you to an exclusive preview screening of our latest documentary, 'Voices of Change: Stories from the Frontlines'.\n\nThis powerful film explores the human stories behind social justice movements, featuring intimate interviews with activists, community leaders, and everyday heroes making extraordinary differences.\n\nThe screening takes place Thursday, March 15th at 7:00 PM at the Historic Liberty Theater. Following the film, join us for a panel discussion with the filmmakers and featured activists.\n\nAs a valued supporter of investigative journalism, your presence would mean so much to our team. Light refreshments will be provided.\n\n**RSVP by March 10th to secure your seat**\n<END_EMAIL>",[] 
+ []
+
+
+Overfull \hbox (1490.71162pt too wide) in paragraph at lines 961--961
+[]    \OT1/cmtt/m/n/10.95 "content": "Documentary Preview Event\n\nHello,\n\nWe made a new documentary and want to show it to people first. It's about social justice and activism.\n\nThe event is March 15th at 7 PM at Liberty Theater. There will be a discussion after.\n\nCome if you want to see it. Please let us know by March 10th.\n\nThanks\n<END_EMAIL>",[] 
+ []
+
+
+
+[78]
+Overfull \hbox (323.72801pt too wide) in paragraph at lines 1087--1087
+[]      \OT1/cmtt/m/n/10.95 "question": "Does the email include the key messaging themes: biodiversity loss, environmental justice, and community impact?",[] 
+ []
+
+
+Overfull \hbox (105.27788pt too wide) in paragraph at lines 1087--1087
+[]      \OT1/cmtt/m/n/10.95 "question": "Is the problem presented in a crisis-focused manner with specific threats?",[] 
+ []
+
+
+Overfull \hbox (145.51869pt too wide) in paragraph at lines 1087--1087
+[]      \OT1/cmtt/m/n/10.95 "question": "Does the solution approach emphasize collective action and resource mobilization?",[] 
+ []
+
+
+
+[79]
+Overfull \hbox (99.52919pt too wide) in paragraph at lines 1087--1087
+[]      \OT1/cmtt/m/n/10.95 "question": "Does the call-to-action use direct action requests with time sensitivity?",[] 
+ []
+
+
+Overfull \hbox (203.00557pt too wide) in paragraph at lines 1087--1087
+[]      \OT1/cmtt/m/n/10.95 "question": "Does the email use emotional language markers such as 'urgent', 'critical', or 'emergency'?",[] 
+ []
+
+
+Overfull \hbox (93.7805pt too wide) in paragraph at lines 1087--1087
+[]      \OT1/cmtt/m/n/10.95 "question": "Does the email include specific phrases like 'Help Us Stop' or 'Urgent'?",[] 
+ []
+
+
+Overfull \hbox (242.97543pt too wide) in paragraph at lines 1087--1087
+[]      \OT1/cmtt/m/n/10.95 "question": "Does the email follow the paragraph structure: problem \TS1/cmtt/m/n/10.95 ^^Y \OT1/cmtt/m/n/10.95 consequences \TS1/cmtt/m/n/10.95 ^^Y \OT1/cmtt/m/n/10.95 solution \TS1/cmtt/m/n/10.95 ^^Y \OT1/cmtt/m/n/10.95 call-to-action?",[] 
+ []
+
+
+
+[80]
+Overfull \hbox (24.79625pt too wide) in paragraph at lines 1087--1087
+[]      \OT1/cmtt/m/n/10.95 "question": "Does the closing include a personalized appeal with urgency?",[] 
+ []
+
+
+Overfull \hbox (24.79625pt too wide) in paragraph at lines 1087--1087
+[]      \OT1/cmtt/m/n/10.95 "question": "Is the email length within the medium range (200-400 words)?",[] 
+ []
+
+
+Overfull \hbox (323.72801pt too wide) in paragraph at lines 1087--1087
+[]      \OT1/cmtt/m/n/10.95 "question": "Does the email use key vocabulary such as 'illegal logging', 'Congo Basin', 'emergency', and 'critical habitat'?",[] 
+ []
+
+
+
+[81]
+
+[82]
+
+[83]
+Overfull \hbox (1140.04167pt too wide) in paragraph at lines 1192--1192
+[]    \OT1/cmtt/m/n/10.95 "strengths": "The email effectively presents a crisis with specific threats, incorporates emotional language and direct action through its urgent call-to-action, emphasizes collective action, and follows a logical, persuasive structure with an immediate crisis opening.",[] 
+ []
+
+
+Overfull \hbox (967.58104pt too wide) in paragraph at lines 1192--1192
+[]    \OT1/cmtt/m/n/10.95 "weaknesses": "The email lacks a clearly defined closing that provides a personalized, urgent appeal, appears to be shorter than the recommended medium range, and does not include all key vocabulary (missing terms like 'critical habitat').",[] 
+ []
+
+
+Overfull \hbox (363.96883pt too wide) in paragraph at lines 1192--1192
+[]    \OT1/cmtt/m/n/10.95 "overall_assessment": "Strong performance on high-priority criteria with room for improvement in structural and technical requirements."[] 
+ []
+
+
+
+[84]
+
+[85]
+
+Package natbib Warning: Citation `card2020statistical_power' on page 86 undefined on input line 1312.
+
+
+Package natbib Warning: Citation `harms2016bayes_anova' on page 86 undefined on input line 1312.
+
+
+
+[86]
+
+Package natbib Warning: Citation `madaan2024quantifying_variance' on page 87 undefined on input line 1314.
+
+
+Package natbib Warning: Citation `vallebueno2024word_embedding_variance' on page 87 undefined on input line 1314.
+
+
+Package natbib Warning: Citation `antonopoulos2024power_consumption_anova' on page 87 undefined on input line 1319.
+
+
+Package natbib Warning: Citation `vanderplas2014frequentist_bayesian' on page 87 undefined on input line 1336.
+
+
+
+[87]
+
+Package natbib Warning: Citation `otero2023statistical_significance_qrels' on page 88 undefined on input line 1353.
+
+
+Overfull \hbox (5.78468pt too wide) in paragraph at lines 1362--1363
+[]\OT1/cmr/bx/n/10.95 Model Iso-la-tion\OT1/cmr/m/n/10.95 : Each model vari-ant pro-cessed sep-a-rately with-out cross-contamination 
+ []
+
+
+Package natbib Warning: Citation `card2020statistical_power' on page 88 undefined on input line 1382.
+
+
+
+[88]
+
+Package natbib Warning: Citation `madaan2024quantifying_variance' on page 89 undefined on input line 1423.
+
+
+
+[89]
+
+Package natbib Warning: Citation `kalavasis2023statistical_indistinguishability' on page 90 undefined on input line 1470.
+
+
+Package natbib Warning: Citation `pozzoli2024stochastic_signal_detection' on page 90 undefined on input line 1475.
+
+
+Package natbib Warning: Citation `cai2022heterogeneous_treatment' on page 90 undefined on input line 1475.
+
+
+
+[90]
+
+Package natbib Warning: Citation `vandijcke2025metric_space_test' on page 91 undefined on input line 1479.
+
+
+Overfull \hbox (75.58337pt too wide) in paragraph at lines 1495--1505
+ [][] 
+ []
+
+
+Package natbib Warning: Citation `harms2016bayes_anova' on page 91 undefined on input line 1512.
+
+
+Package natbib Warning: Citation `lai2025accelerated_bayesian_inference' on page 91 undefined on input line 1512.
+
+
+
+[91]
+
+Package natbib Warning: Citation `altamirano2023bayesian_changepoint' on page 92 undefined on input line 1541.
+
+
+Package natbib Warning: Citation `vanderplas2014frequentist_bayesian' on page 92 undefined on input line 1572.
+
+
+
+[92]
+Overfull \hbox (12.13408pt too wide) in paragraph at lines 1578--1579
+[]\OT1/cmr/bx/n/10.95 Observed Mean Vec-tor\OT1/cmr/m/n/10.95 : $[\OML/cmm/m/it/10.95 ^^V[]; ^^V[]; ^^V[]\OT1/cmr/m/n/10.95 ] = [0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 557\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 569\OML/cmm/m/it/10.95 ; \OT1/cmr/m/n/10.95 0\OML/cmm/m/it/10.95 :\OT1/cmr/m/n/10.95 551]$ 
+ []
+
+
+
+[93]
+
+[94]
+
+[95]
+
+Package natbib Warning: Citation `kim2025reasoning_evaluators' on page 96 undefined on input line 1725.
+
+
+Package natbib Warning: Citation `lee2025reasoning_evaluation_survey' on page 96 undefined on input line 1725.
+
+
+Package natbib Warning: Citation `agashe2023llm_coordination' on page 96 undefined on input line 1727.
+
+
+Package natbib Warning: Citation `grötschla2025agentsnet' on page 96 undefined on input line 1727.
+
+
+
+[96]
+
+[97]
+
+Package natbib Warning: Citation `jin2025multiagent_scaling' on page 98 undefined on input line 1779.
+
+
+Package natbib Warning: Citation `agashe2023llm_coordination' on page 98 undefined on input line 1779.
+
+
+
+[98]
+
+Package natbib Warning: Citation `grötschla2025agentsnet' on page 99 undefined on input line 1834.
+
+
+
+[99]
+Overfull \hbox (0.58276pt too wide) in paragraph at lines 1923--1924
+[]\OT1/cmr/bx/n/10.95 Multi-Dimensional Eval-u-a-tion\OT1/cmr/m/n/10.95 : Sys-tem-atic as-sess-ment across Con-tent, Style, Struc-
+ []
+
+
+
+[100]
+
+Package natbib Warning: Citation `lee2025reasoning_evaluation_survey' on page 101 undefined on input line 1958.
+
+
+
+[101]
+Overfull \hbox (191.90413pt too wide) in paragraph at lines 1992--2003
+ [][] 
+ []
+
+
+
+[102]
+Overfull \hbox (3.5582pt too wide) in paragraph at lines 2092--2104
+ [][] 
+ []
+
+
+
+[103]
+
+[104]
+Overfull \hbox (55.63065pt too wide) in paragraph at lines 2152--2164
+ [][] 
+ []
+
+
+
+[105]
+Overfull \hbox (8.3465pt too wide) in paragraph at lines 2220--2222
+\OT1/cmr/m/n/10.95 across the three model vari-ants (Base-line, DPO-Synthetic, DPO-Hybrid) demon-strates method-
+ []
+
+
+Overfull \hbox (90.335pt too wide) in paragraph at lines 2227--2237
+ [][] 
+ []
+
+
+Overfull \hbox (2.30586pt too wide) in paragraph at lines 2239--2241
+[]\OT1/cmr/bx/n/10.95 Statistical Equiv-a-lence Sup-port: \OT1/cmr/m/n/10.95 The con-sis-tent re-li-a-bil-ity im-prove-ments across model
+ []
+
+
+
+[106])
+Runaway argument?
+{Reduced Bias**: Systematic bias mitigation ensures that observed equ\ETC.
+/Users/tan_waris/Library/CloudStorage/GoogleDrive-wratthapoom1@sheffield.ac.uk/My Drive/Dissertation/dissertation/report/main.tex:126: File ended while scanning use of \textbf .
+<inserted text> 
+                \par 
+l.126 \input{sections/appendixA.tex}
+                                    
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+
+/Users/tan_waris/Library/CloudStorage/GoogleDrive-wratthapoom1@sheffield.ac.uk/My Drive/Dissertation/dissertation/report/main.tex:127: LaTeX Error: \begin{enumerate} on input line 2242 ended by \end{appendices}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 \end{appendices}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Package natbib Warning: There were undefined citations.
+
+
+/Users/tan_waris/Library/CloudStorage/GoogleDrive-wratthapoom1@sheffield.ac.uk/My Drive/Dissertation/dissertation/report/main.tex:129: LaTeX Error: \begin{appendices} on input line 125 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 \end{document}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+
+[107] (./main.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -859,22 +1914,35 @@ L3 programming layer <2025-01-18>
 
 LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A33260015C9D2A9609FC41316399270D;18305.
- ) 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  1DAC3314FC6F1C650BBEE785FEE2FB71;24504.
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 125 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 15642 strings out of 473190
- 264451 string characters out of 5704335
- 767554 words of memory out of 5000000
- 38398 multiletter control sequences out of 15000+600000
- 570645 words of font info for 79 fonts, out of 8000000 for 9000
+ 15929 strings out of 473190
+ 270517 string characters out of 5704335
+ 756330 words of memory out of 5000000
+ 38426 multiletter control sequences out of 15000+600000
+ 571111 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,10n,93p,3194b,765s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (67 pages, 1813284 bytes).
+ 79i,16n,93p,3194b,1324s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (113 pages, 1972561 bytes).
 PDF statistics:
- 1261 PDF objects out of 1440 (max. 8388607)
- 1128 compressed objects within 12 object streams
- 239 named destinations out of 1000 (max. 500000)
- 659 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1122 PDF objects out of 1200 (max. 8388607)
+ 933 compressed objects within 10 object streams
+ 508 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
