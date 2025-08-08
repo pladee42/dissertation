@@ -1,45 +1,72 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Literature Review}{2}{chapter.2}%
-\contentsline {chapter}{\numberline {3}Methodology}{4}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Research Design and Multi-Agent Architecture}{4}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Multi-Agent Evaluation Framework}{4}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Three-Agent Architecture Design}{4}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Agent Interaction and Data Flow}{5}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Reasoning Model Selection Rationale}{6}{subsection.3.1.4}%
-\contentsline {section}{\numberline {3.2}Dataset Development and Model Selection}{6}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Human Email Foundation and AI-Generated Expansion}{6}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Validation Dataset Creation for Final Assessment}{7}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Topic Categories and Distribution}{7}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Email Generation Model Selection and Categorization}{8}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Agent Model Experimentation and Selection}{8}{subsection.3.2.5}%
-\contentsline {section}{\numberline {3.3}Evaluation Framework Development}{9}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Checklist Agent Prompting Strategy Optimization}{10}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Hybrid Prompting Strategy Validation}{10}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Hybrid Framework Implementation and Validation}{10}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Binary Checklist Scoring and Judge Agent Integration}{12}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}Framework Reliability and Quality Assurance Integration}{12}{subsection.3.3.5}%
-\contentsline {section}{\numberline {3.4}Direct Preference Optimization Implementation}{12}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Dual-Method DPO Approach Development}{13}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Preference Pair Generation and Data Preparation}{13}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}DPO-Synthetic Method Implementation}{13}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}DPO-Hybrid Method Implementation}{14}{subsection.3.4.4}%
-\contentsline {section}{\numberline {3.5}Final Validation Protocol}{14}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Three-Way Comparison Experimental Design}{14}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Unseen Topic Evaluation Methodology}{15}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Statistical Analysis Framework}{15}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}External Validation and Expert Assessment}{15}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Generalizability Assessment and Limitations}{16}{subsection.3.5.5}%
-\contentsline {chapter}{\numberline {4}Results}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Empirical Overview}{19}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Descriptive Statistics}{19}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Inferential Statistical Analysis}{20}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Effect Size Quantification}{21}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Model-Specific Performance Patterns}{22}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Domain-Specific Performance Analysis}{24}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Predictive Validity Assessment}{25}{section.4.7}%
-\contentsline {chapter}{\numberline {5}Discussion}{27}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Research Impact and Contributions}{27}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Future Research Directions}{27}{section.5.2}%
-\contentsline {chapter}{Appendices}{30}{section*.24}%
-\contentsline {chapter}{\numberline {A}Experimental Setup Details}{31}{appendix.1.A}%
+\contentsline {section}{\numberline {1.1}Multi-Agent Systems in Artificial Intelligence}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Email Generation and Preference Alignment}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Evaluation Challenges in Multi-Agent Systems}{2}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Research Gaps and Methodological Limitations}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Research Approach and Methodology Innovation}{4}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Methodology Overview and Technical Architecture}{4}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Technical Innovation: Hybrid Prompting Strategy Development}{5}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Model Selection Rationale and Experimental Design}{6}{subsection.1.5.3}%
+\contentsline {section}{\numberline {1.6}Research Implications}{7}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Model Selection and Resource Allocation Practices}{7}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}DPO Application Considerations and Training Data Constraints}{7}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Evaluation Framework Broader Applicability}{8}{subsection.1.6.3}%
+\contentsline {section}{\numberline {1.7}Research Contribution and Dissertation Overview}{8}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Dissertation Structure and Chapter Organization}{9}{subsection.1.7.1}%
+\contentsline {chapter}{\numberline {2}Literature Review}{11}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Methodology}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Research Design and Multi-Agent Architecture}{13}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Multi-Agent Evaluation Framework}{13}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Three-Agent Architecture Design}{13}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Agent Interaction and Data Flow}{14}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Reasoning Model Selection Rationale}{15}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Dataset Development and Model Selection}{15}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Human Email Foundation and AI-Generated Expansion}{15}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Validation Dataset Creation for Final Assessment}{16}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Topic Categories and Distribution}{16}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Email Generation Model Selection and Categorization}{17}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Agent Model Experimentation and Selection}{17}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}Evaluation Framework Development}{18}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Checklist Agent Prompting Strategy Optimization}{19}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Hybrid Prompting Strategy Validation}{19}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Hybrid Framework Implementation and Validation}{19}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Binary Checklist Scoring and Judge Agent Integration}{21}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Framework Reliability and Quality Assurance Integration}{21}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}Direct Preference Optimization Implementation}{21}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Dual-Method DPO Approach Development}{22}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Preference Pair Generation and Data Preparation}{22}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}DPO-Synthetic Method Implementation}{22}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}DPO-Hybrid Method Implementation}{23}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Final Validation Protocol}{23}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Three-Way Comparison Experimental Design}{23}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Unseen Topic Evaluation Methodology}{24}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Statistical Analysis Framework}{24}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}External Validation and Expert Assessment}{24}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Generalizability Assessment and Limitations}{25}{subsection.3.5.5}%
+\contentsline {chapter}{\numberline {4}Results}{28}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Empirical Overview}{28}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Descriptive Statistics}{28}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Inferential Statistical Analysis}{29}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Effect Size Quantification}{30}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Model-Specific Performance Patterns}{31}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Domain-Specific Performance Analysis}{33}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Predictive Validity Assessment}{34}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Discussion}{35}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Statistical Equivalence Analysis}{35}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Framework Robustness Evaluation}{36}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Theoretical Implications and Methodological Contributions}{38}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Conclusion}{40}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Summary of Key Findings}{40}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Primary Research Outcomes}{40}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Model-Specific Response Heterogeneity}{40}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Framework Robustness Validation}{40}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Methodological Innovation Outcomes}{40}{subsection.6.1.4}%
+\contentsline {section}{\numberline {6.2}Future Research Directions}{41}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Short-Term Research Extensions}{41}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Medium-Term Research Agenda}{41}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Technical and Methodological Advances}{42}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Long-Term Research Vision}{42}{subsection.6.2.4}%
+\contentsline {section}{\numberline {6.3}Final Remarks}{43}{section.6.3}%
+\contentsline {chapter}{Appendices}{49}{section*.22}%
+\contentsline {chapter}{\numberline {A}Experimental Setup Details}{50}{appendix.1.A}%
