@@ -1,6 +1,13 @@
 % LaTeX Figure Inclusions for Results Section
 % Generated from Stage 2 Visualization Analysis
 
+% Literature Review Figures - Stage 2 Enhancement
+% Note: The following figures are referenced in literature.tex and require creation:
+% - figures/multi_agent_dpo_architecture.pdf (Figure 2.1)
+% - figures/dpo_pipeline_flowchart.pdf (Figure 2.2) 
+% - figures/email_quality_improvement_timeline.pdf (Figure 2.3)
+% Table 2.1 is embedded directly in literature.tex as a LaTeX table
+
 % Effect Size Forest Plot
 \begin{figure}[htbp]
     \centering
@@ -13,7 +20,7 @@
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/model_comparison_boxplot.png}
-    \caption{Model Performance Comparison. Box plots showing overall score distributions for Baseline (M = 0.574), DPO-Synthetic (M = 0.564), and DPO-Hybrid (M = 0.581) models. Substantial overlap between distributions confirms statistically equivalent performance.}
+    \caption{Model Performance Comparison. Box plots showing overall score distributions for Baseline ($M = 0.574$), DPO-Synthetic ($M = 0.564$), and DPO-Hybrid ($M = 0.581$) models. Substantial overlap between distributions confirms statistically equivalent performance.}
     \label{fig:model-comparison}
 \end{figure}
 
@@ -21,7 +28,7 @@
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.9\textwidth]{figures/anova_summary.png}
-    \caption{ANOVA Results Summary. Left panel shows F-statistic (0.199) well below significance threshold. Right panel compares observed η² (0.001) against methodology threshold (0.06). Results confirm no meaningful differences between model variants.}
+    \caption{ANOVA Results Summary. Left panel shows $F$-statistic (0.199) well below significance threshold. Right panel compares observed $\eta^2$ (0.001) against methodology threshold (0.06). Results confirm no meaningful differences between model variants.}
     \label{fig:anova-summary}
 \end{figure}
 
@@ -37,7 +44,7 @@
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=0.8\textwidth]{figures/effect_size_comparison.png}
-    \caption{Effect Size Comparison Across Model Variants. Bar chart showing absolute Cohen's d values for all pairwise comparisons. Horizontal lines indicate Cohen's effect size thresholds. All observed effects fall well below the small effect threshold (0.2).}
+    \caption{Effect Size Comparison Across Model Variants. Bar chart showing absolute Cohen's $d$ values for all pairwise comparisons. Horizontal lines indicate Cohen's effect size thresholds. All observed effects fall well below the small effect threshold (0.2).}
     \label{fig:effect-size-comparison}
 \end{figure}
 
