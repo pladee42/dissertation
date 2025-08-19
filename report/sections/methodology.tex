@@ -1,6 +1,7 @@
 \chapter{Methodology}
+\label{sec:methodology}
 
-This chapter presents the methodology employed in this research to evaluate the effectiveness of language models in automated email generation through a novel multi-agent AI system. The methodology follows a comprehensive five-section structure: Section 1 establishes the research design and multi-agent architecture, Section 2 details dataset development and model selection, Section 3 describes the evaluation framework development, Section 4 presents the Direct Preference Optimization implementation, and Section 5 outlines the final validation protocol. This structured approach ensures systematic progression from foundational design through experimental implementation to optimization and validation.
+This chapter presents the methodology employed in this research to evaluate the effectiveness of language models in automated email generation through a novel multi-agent AI system. The methodology follows a comprehensive 5-stage structure: Stage 1 establishes the research design and multi-agent architecture, Stage 2 details dataset development and model selection, Stage 3 describes the evaluation framework development, Stage 4 presents the Direct Preference Optimization implementation, and Stage 5 outlines the final validation protocol. This structured approach ensures systematic progression from foundational design through experimental implementation to optimization and validation.
 
 \section{Research Design and Multi-Agent Architecture}
 \label{sec:research-design-architecture}
@@ -19,13 +20,145 @@ The system implements a specialized three-agent architecture where each agent pe
 
 The \textbf{Email Generator Agent} functions as the content creation component, generating fundraising emails based on standardized prompts and topic specifications. This agent interfaces with multiple language models sequentially, ensuring consistent input conditions while capturing each model's unique characteristics and performance capabilities.
 
+The agent employs a structured prompting strategy that guides language models through systematic email generation based on topic analysis and example-driven instruction. The prompt framework implements conditional logic that adapts generation strategy based on topic classification:
+
+\begin{promptbox}[title={Email Generation Agent Prompt Template}]
+\textbf{Instruction:}
+
+You are an expert email copywriter. Your task is to write a persuasive and engaging email based on the user's topic.
+
+First, analyze the user's topic to determine the email's primary goal.
+
+\begin{itemize}
+\item \textbf{If the topic is a problem, a crisis, or a cause to fight for} (e.g., ``saving wildlife,'' ``defending human rights''):
+\begin{enumerate}
+\item Start with an urgent, emotional hook.
+\item Clearly describe the problem and the obstacle causing it.
+\item Identify the sending organization from the example email and position it as the solution.
+\item Frame the reader as a hero whose help is essential.
+\item Make a powerful and direct appeal for the reader to take action.
+\end{enumerate}
+
+\item \textbf{If the topic is an announcement, an event, or a piece of content} (e.g., ``our new podcast,'' ``upcoming festival''):
+\begin{enumerate}
+\item Start with a friendly and direct opening.
+\item Clearly and engagingly describe the announcement or event.
+\item Invite the reader to participate or learn more.
+\end{enumerate}
+\end{itemize}
+
+Finally, ensure the email is concise \textbf{(300 - 500 words)} and ends with a \textbf{bolded call to action} on its own line. Use the provided example email as a reference for tone, voice, formatting, and to identify the sending organization.
+
+\textbf{IMPORTANT:} Generate exactly ONE complete email. Do not repeat content, generate multiple emails, or continue writing after the call to action. End your email with the exact token \texttt{<END\_EMAIL>} immediately after the bolded call to action to mark completion.
+
+Give me the full email only, without any introductory text or ending text.
+
+\textbf{User's Request:}
+\begin{itemize}
+\item \textbf{[TOPIC]:}
+\end{itemize}
+
+\textbf{Example:}
+[EXAMPLE\_EMAIL]
+\end{promptbox}
+
+The prompt enforces strict content constraints including length requirements (300-500 words), formatting specifications, and completion markers (\texttt{<END\_EMAIL>} tokens) to ensure consistent output processing across different language models.
+
 The \textbf{Checklist Creator Agent} develops evaluation criteria through structured assessment framework generation for each email. This agent employs reasoning-capable language models specifically selected for analytical performance in evaluation criteria development. The agent produces binary evaluation checklists with priority weighting, ensuring assessment criteria are both comprehensive and contextually relevant while maintaining consistency across different email characteristics.
+
+The Checklist Creator Agent implements a systematic prompt framework that guides reasoning models through comprehensive email analysis and criterion generation. The prompting strategy employs two-phase analytical instruction:
+
+\begin{promptbox}[title={Checklist Creator Agent Prompt Template (1/2)}][H]
+\textbf{Role \& Goal}
+
+You are an AI assistant that creates evaluation checklists for emails. Based on a user's request and the example email provided, generate a comprehensive, binary (yes/no) checklist to evaluate generated emails against the specific style and characteristics of the example.
+
+\textbf{Analysis Instructions}
+
+\textbf{Step 1: Analyze the Example Email}
+
+First, carefully examine the example email included in the user query to identify:
+\begin{itemize}
+\item \textbf{Tone characteristics}: Specific emotional language, urgency markers, formality level
+\item \textbf{Structural patterns}: Paragraph length, sentence structure, opening/closing style
+\item \textbf{Content elements}: Key messaging themes, problem presentation, solution approach
+\item \textbf{Technical aspects}: Email length (word count), formatting, contact information placement
+\item \textbf{Call-to-action style}: Frequency, placement, specific language used
+\end{itemize}
+
+\textbf{Step 2: Create Style-Specific Validation Criteria}
+
+Generate validation questions that are specific to the example email's characteristics rather than generic fundraising guidelines.
+
+\end{promptbox}
+
+\begin{promptbox}[title={Checklist Creator Agent Prompt Template (2/2)}]
+\textbf{Task}
+
+Analyze the \texttt{[USER\_QUERY]} and the example email within it. Generate a JSON array of 12-18 binary questions organized into categories to evaluate how well a generated email matches the example's style and characteristics.
+
+Each question object must contain:
+\begin{enumerate}
+\item \texttt{"question"}: A specific yes/no question based on the example email's characteristics.
+\item \texttt{"best\_ans"}: The ideal answer (``yes'' or ``no'').
+\item \texttt{"priority"}: Importance (``very low'', ``low'', ``medium'', ``high'', ``very high'').
+\item \texttt{"category"}: Question type (``content'', ``style'', ``structure'', ``technical'').
+\end{enumerate}
+
+\textbf{Question Categories}
+
+\begin{itemize}
+\item \textbf{Content (3-4 questions)}: Topic accuracy, key messaging, problem/solution presentation
+\item \textbf{Style (3-4 questions)}: Tone matching, emotional appeal, language patterns from example
+\item \textbf{Structure (2-3 questions)}: Format, paragraph organization, opening/closing style matching example
+\item \textbf{Technical (2-3 questions)}: Length constraints, contact information, formatting requirements
+\item \textbf{General (3-4 questions)}: Universal email quality questions (free of false information, doesn't look like scam/spam, well-organized)
+\end{itemize}
+
+\textbf{User Query}
+\begin{verbatim}
+[USER_QUERY]
+\end{verbatim}
+
+\textbf{Output Format}
+
+Respond ONLY with a valid JSON array. No other text.
+\end{promptbox}
+
+The framework generates structured evaluation checklists comprising 12-18 binary assessment criteria organized across four primary categories: content accuracy (3-4 questions), style matching (3-4 questions), structural alignment (2-3 questions), and technical compliance (2-3 questions). Each criterion includes priority weighting and optimal response specifications to support quantitative scoring integration.
 
 The \textbf{Judge Agent} provides performance assessment by applying generated checklists to evaluate email quality systematically. This agent utilizes advanced reasoning models selected for their consistency in evaluation tasks and analytical capabilities. The agent implements probability-based scoring methodology that integrates binary assessment outcomes with priority weighting, generating quantitative measures suitable for comparative analysis across models and topics.
 
-\begin{figure}[htbp]
+The Judge Agent employs systematic evaluation prompting that ensures consistent binary assessment across all evaluation criteria. The prompting framework implements structured evaluation instruction:
+
+\begin{promptbox}[title={Judge Agent Prompt Template}]
+\textbf{Role \& Goal}
+
+You are \textbf{JudgeAI}, an impartial evaluator in a 3-agent system. Your goal is to provide a detailed, multi-faceted evaluation of a generated email (\texttt{MODEL\_OUTPUT}) by assessing it against each criterion in the provided \texttt{CHECKLIST} with a binary ``yes'' or ``no''.
+
+\textbf{Inputs}
+\begin{itemize}
+\item \textbf{Generated Email}: \texttt{[MODEL\_OUTPUT]}
+\item \textbf{Evaluation Checklist}: \texttt{[CHECKLIST]} (This is a JSON array of questions)
+\end{itemize}
+
+\textbf{Evaluation Task}
+\begin{enumerate}
+\item \textbf{Per-Criterion Evaluation}: For each question in the \texttt{CHECKLIST}, determine if the \texttt{MODEL\_OUTPUT} meets the criterion. The result must be either ``yes'' or ``no''.
+\item \textbf{Summarize Findings}: Based on your evaluation, write concise \texttt{strengths} (for 'yes' answers) and \texttt{weaknesses} (for 'no' answers) summaries.
+\item \textbf{Format Output}: Construct the final JSON object as specified below. Do not include any numeric scores.
+\end{enumerate}
+
+\textbf{Output Format}
+
+CRITICAL: You must respond ONLY with a valid JSON object. No explanations or extra text. Start immediately with \texttt{\{} and end with \texttt{\}}.
+\end{promptbox}
+
+The agent outputs structured \texttt{JSON} evaluations that include individual criterion assessments, qualitative strength analysis, and systematic weakness identification. This standardized output format enables automated scoring calculation and statistical analysis across different email generation models and optimization approaches. The integration of systematic evaluation prompting ensures consistent methodological implementation across all experimental phases, establishing the foundation for reliable comparative assessment.
+
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{figures/agent-diagram.png}
+    \includegraphics[width=1.1\textwidth]{figures/agent-diagram.png}
     \caption[Multi-Agent System Architecture]{Multi-agent system architecture showing agent interactions, data flow, and reasoning model integration}
     \label{fig:system-architecture}
 \end{figure}
@@ -42,7 +175,7 @@ The selection of reasoning-capable models for the Checklist Creator and Judge Ag
 
 The multi-model orchestration strategy enables systematic evaluation of different language models while maintaining experimental control and consistency. This approach ensures that each model receives identical input conditions and evaluation procedures, supporting valid comparative analysis across the complete range of tested architectures and parameter scales.
 
-This architectural foundation establishes the framework for systematic model evaluation, leading to the next phase of research development: dataset creation and model selection based on empirical performance characteristics.
+This architectural foundation establishes the framework for systematic model evaluation, leading to the next phase of research development: dataset creation and model selection based on empirical performance characteristics. The following sections detail the technical implementation of this conceptual framework, including specific prompting strategies and operational procedures that enable systematic comparison of language model performance in fundraising email generation tasks.
 
 \section{Dataset Development and Model Selection}
 \label{sec:dataset-model-selection}
@@ -73,8 +206,7 @@ The four charity categories include: Healthcare and Medical Research (representi
 
 \begin{table}[H]
     \centering
-    \caption[Topic Dataset Distribution]{Topic Dataset Distribution Across Charity Categories}
-    \label{tab:topic-distribution}
+    \small
     \begin{tabular}{|l|c|c|c|}
     \hline
     \textbf{Category} & \textbf{Training Topics} & \textbf{Validation Topics} & \textbf{Total} \\
@@ -87,6 +219,8 @@ The four charity categories include: Healthcare and Medical Research (representi
     \textbf{Total Topics} & \textbf{100} & \textbf{50} & \textbf{150} \\
     \hline
     \end{tabular}
+    \caption[Topic Dataset Distribution]{Topic Dataset Distribution Across Charity Categories}
+    \label{tab:topic-distribution}
 \end{table}
 
 \subsection{Email Generation Model Selection and Categorization}
@@ -109,7 +243,7 @@ A representative comparison illustrates these performance differences in practic
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{figures/traditional_vs_reasoning.png}
+    \includegraphics[width=1.1\textwidth]{figures/traditional_vs_reasoning.png}
     \caption[Agent Model Selection Comparison]{Agent Model Selection Comparison: Traditional vs Reasoning Models. Left panel shows traditional models incorrectly scoring a placeholder email at 100\%, while right panel demonstrates reasoning models correctly identifying invalid content with 0\% score and generating more detailed, contextually appropriate evaluation criteria}
     \label{fig:agent-model-comparison}
 \end{figure}
@@ -136,6 +270,91 @@ Comprehensive experimental analysis provided compelling empirical evidence for t
 The Hybrid prompting strategy demonstrated superior reliability characteristics, achieving considerable reduction in assessment variance compared to Full-Prompt and Extract-Only approaches. The attention management benefits of structured information processing translated to enhanced statistical power for comparative analysis and increased confidence in evaluation results across different model applications.
 
 Computational efficiency analysis revealed that the Hybrid prompting strategy achieved significant reduction in processing overhead compared to Full-Prompt analysis while maintaining high evaluation quality. This efficiency gain, combined with improved reasoning model focus, enables practical implementation at scale while preserving the analytical depth necessary for reliable fundraising email assessment.
+
+The preprocessing component of the Hybrid framework implements specialized prompting that creates evaluation criteria from extracted characteristics rather than full content analysis. This approach reduces cognitive load while maintaining evaluation specificity:
+
+\begin{promptbox}[title={Example Analyzer Agent Prompt Template}]
+\textbf{Role \& Goal}
+
+You are an AI assistant that analyzes example emails to extract key characteristics for checklist generation. Your task is to analyze the provided example email and extract structured information about its style, tone, structure, and key features.
+
+\textbf{Task}
+
+Analyze the example email provided in the user query and extract key characteristics that can be used to generate validation criteria. Focus on identifying specific, measurable attributes.
+
+\textbf{Analysis Categories}
+
+Extract information in these categories:
+
+\textbf{Tone Characteristics}
+\begin{itemize}
+\item Emotional language markers (urgency, passion, formality level)
+\item Specific phrases that convey tone
+\item Communication style (direct, persuasive, informational)
+\end{itemize}
+
+\textbf{Structure Patterns}
+\begin{itemize}
+\item Email length (approximate word count)
+\item Paragraph structure and organization
+\item Opening and closing patterns
+\item Information flow and hierarchy
+\end{itemize}
+
+\textbf{Content Elements}
+\begin{itemize}
+\item Key messaging themes
+\item Problem presentation style
+\item Solution approach
+\item Call-to-action style and placement
+\end{itemize}
+
+\textbf{Language Features}
+\begin{itemize}
+\item Specific vocabulary used
+\item Sentence structure patterns
+\item Formatting elements (bold, emphasis)
+\item Technical vs accessible language
+\end{itemize}
+
+\textbf{User Query}
+\begin{verbatim}
+[USER_QUERY]
+\end{verbatim}
+
+\textbf{Output Format}
+
+Respond ONLY with a valid JSON object containing the extracted characteristics. No other text.
+
+\textbf{Example:}
+\begin{verbatim}
+{
+  "tone_characteristics": {
+    "emotional_language": ["urgent", "critical", "immediate"],
+    "communication_style": "passionate and direct",
+    "formality_level": "formal yet emotional"
+  },
+  "structure_patterns": {
+    "word_count": "approximately 300-500 words",
+    "paragraph_count": 3,
+    "opening_style": "direct address with immediate problem statement",
+    "closing_style": "call-to-action with personal sign-off"
+  },
+  "content_elements": {
+    "problem_presentation": "crisis-focused with specific threats",
+    "solution_approach": "legislative action required",
+    "cta_style": "bold, action-oriented commands"
+  },
+  "language_features": {
+    "key_phrases": ["time is running out", "take action now"],
+    "sentence_structure": "short, impactful sentences mixed with detailed explanations",
+    "accessibility": "avoids technical jargon"
+  }
+}
+\end{verbatim}
+\end{promptbox}
+
+The Example Analyzer Agent employs structured characteristic extraction that systematically analyzes example emails across four key dimensions: tone characteristics, structure patterns, content elements, and language features. This analytical approach produces standardized JSON-formatted characteristic data that captures essential email attributes including emotional language markers, structural organization, messaging themes, and communication style patterns. The systematic extraction methodology forms the foundation of the Hybrid framework's efficiency advantages, enabling targeted evaluation criterion generation based on specific example characteristics while preserving analytical rigor and evaluation consistency.
 
 \subsection{Hybrid Framework Implementation and Validation}
 
@@ -209,8 +428,6 @@ Human-synthetic integration maintains methodological consistency through identic
 
 \begin{table}[htbp]
     \centering
-    \caption[DPO Preference Pair Generation Summary]{DPO Preference Pair Generation Summary}
-    \label{tab:dpo-data-preparation}
     \begin{tabular}{|l|c|c|c|c|}
     \hline
     \textbf{Method} & \textbf{Topic Range} & \textbf{Source Emails} & \textbf{Pairs/Topic} & \textbf{Total Pairs} \\
@@ -224,6 +441,8 @@ Human-synthetic integration maintains methodological consistency through identic
     \multicolumn{4}{|l|}{\textbf{DPO-Hybrid Total:}} & \textbf{425} \\
     \hline
     \end{tabular}
+    \caption[DPO Preference Pair Generation Summary]{DPO Preference Pair Generation Summary}
+    \label{tab:dpo-data-preparation}
 \end{table}
 
 \section{Final Validation Protocol}
@@ -265,15 +484,13 @@ Generalizability assessment examines applicability beyond fundraising contexts w
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{figures/final_val.png}
+    \includegraphics[width=1.0\textwidth]{figures/final_validation_protocol.png}
     \caption[Final Validation Protocol]{Final Validation Protocol showing three-way comparison framework, unseen topic evaluation, and expert validation procedures}
     \label{fig:final-validation-protocol}
 \end{figure}
 
 \begin{table}[H]
     \centering
-    \caption[Final Validation Statistical Framework]{Final Validation Statistical Framework}
-    \label{tab:final-validation-framework}
     \begin{tabular}{|l|l|c|}
     \hline
     \textbf{Comparison} & \textbf{Method} & \textbf{Expected Effect Size} \\
@@ -285,6 +502,8 @@ Generalizability assessment examines applicability beyond fundraising contexts w
     Expert validation & Correlation analysis & $r > 0.80$ \\
     \hline
     \end{tabular}
+    \caption[Final Validation Statistical Framework]{Final Validation Statistical Framework}
+    \label{tab:final-validation-framework}
 \end{table}
 
 This comprehensive methodology provides a systematic framework for evaluating language model performance in automated email generation through a timeline-based approach that reflects the iterative research development process. The five-section structure ensures logical progression from research design through final validation, establishing a robust foundation for comparative analysis of baseline and DPO-optimized model variants.

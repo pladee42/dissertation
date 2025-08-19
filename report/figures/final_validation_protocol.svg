@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="1100" viewBox="0 0 900 1100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definitions for gradients, filters, and styles -->
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a5298;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="inputGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="baselineGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffebee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffcdd2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="syntheticGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="hybridGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffe0b2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="analysisGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e1f5fe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b3e5fc;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="expectedGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fffde7;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fff9c4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f4c3;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="resultsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e1bee7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ce93d8;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Drop shadow filter -->
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.15"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Arrow markers -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333" />
+    </marker>
+    
+    <!-- Text shadow filter -->
+    <filter id="textShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="1" dy="1" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.8"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main Title Header -->
+  <rect x="50" y="20" width="800" height="80" rx="10" fill="url(#headerGradient)" filter="url(#dropShadow)"/>
+  
+  <!-- Shield/Badge Icon for Validation -->
+  <g transform="translate(80, 35)">
+    <path d="M15 2 C15 2, 10 2, 10 2 C10 2, 10 7, 10 10 C10 16, 15 20, 15 20 C15 20, 20 16, 20 10 C20 7, 20 2, 20 2 C20 2, 15 2, 15 2 Z" 
+          fill="none" stroke="white" stroke-width="1.5" opacity="0.9"/>
+    <path d="M11 9 L13.5 11.5 L19 6" 
+          fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+  </g>
+  
+  <text x="450" y="55" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">
+    FINAL VALIDATION PROTOCOL
+  </text>
+  <text x="450" y="80" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#e3f2fd">
+    Three-Way Model Comparison Framework
+  </text>
+  
+  <!-- 50 Unseen Topics Box -->
+  <rect x="300" y="150" width="300" height="80" rx="8" fill="url(#inputGradient)" stroke="#1976d2" stroke-width="2" filter="url(#dropShadow)"/>
+  
+  <!-- Document Stack Icon -->
+  <g transform="translate(320, 165)">
+    <rect x="0" y="5" width="18" height="22" rx="1" fill="none" stroke="#0d47a1" stroke-width="1.5" opacity="0.8"/>
+    <rect x="3" y="2" width="18" height="22" rx="1" fill="none" stroke="#0d47a1" stroke-width="1.5" opacity="0.8"/>
+    <rect x="6" y="0" width="18" height="22" rx="1" fill="#1976d2" fill-opacity="0.2" stroke="#0d47a1" stroke-width="1.5"/>
+    <line x1="10" y1="6" x2="20" y2="6" stroke="#0d47a1" stroke-width="1" opacity="0.6"/>
+    <line x1="10" y1="10" x2="20" y2="10" stroke="#0d47a1" stroke-width="1" opacity="0.6"/>
+    <line x1="10" y1="14" x2="16" y2="14" stroke="#0d47a1" stroke-width="1" opacity="0.6"/>
+  </g>
+  
+  <!-- Lock Icon for "Unseen" -->
+  <g transform="translate(550, 165)">
+    <rect x="0" y="10" width="16" height="12" rx="2" fill="none" stroke="#0d47a1" stroke-width="1.5" opacity="0.8"/>
+    <path d="M4 10 V7 C4 4, 6 2, 8 2 C10 2, 12 4, 12 7 V10" fill="none" stroke="#0d47a1" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="8" cy="15" r="1.5" fill="#0d47a1" opacity="0.8"/>
+  </g>
+  
+  <text x="450" y="185" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#0d47a1">
+    50 UNSEEN TOPICS
+  </text>
+  <text x="450" y="210" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#1565c0">
+    (No Training Exposure)
+  </text>
+  
+  <!-- Three Model Boxes -->
+  <!-- Baseline Model -->
+  <rect x="30" y="300" width="240" height="100" rx="8" fill="url(#baselineGradient)" stroke="#d32f2f" stroke-width="2" filter="url(#dropShadow)"/>
+  
+  <!-- Gear Icon for Baseline -->
+  <g transform="translate(45, 310)">
+    <circle cx="12" cy="12" r="4" fill="none" stroke="#b71c1c" stroke-width="1.5" opacity="0.8"/>
+    <path d="M12 2 L12.8 5.2 L16 4.4 L15.2 7.6 L18.4 8.4 L16 10.4 L17.6 13.2 L14.4 12.8 L14 16 L11.6 13.6 L9.2 16 L8.8 12.8 L5.6 13.2 L7.2 10.4 L4.8 8.4 L8 7.6 L7.2 4.4 L10.4 5.2 L12 2 Z" 
+          fill="#d32f2f" fill-opacity="0.2" stroke="#b71c1c" stroke-width="1.2" opacity="0.8"/>
+  </g>
+  
+  <text x="150" y="325" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#b71c1c">
+    BASELINE
+  </text>
+  <text x="150" y="350" font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#c62828">
+    MODEL
+  </text>
+  <text x="150" y="375" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" fill="#c62828">
+    Email Gen.
+  </text>
+  
+  <!-- DPO-Synthetic Model -->
+  <rect x="330" y="300" width="240" height="100" rx="8" fill="url(#syntheticGradient)" stroke="#388e3c" stroke-width="2" filter="url(#dropShadow)"/>
+  
+  <!-- Robot/AI Icon for Synthetic -->
+  <g transform="translate(345, 310)">
+    <rect x="6" y="6" width="12" height="10" rx="2" fill="#388e3c" fill-opacity="0.2" stroke="#1b5e20" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="9" cy="10" r="1" fill="#1b5e20" opacity="0.8"/>
+    <circle cx="15" cy="10" r="1" fill="#1b5e20" opacity="0.8"/>
+    <rect x="10" y="16" width="4" height="6" fill="#388e3c" fill-opacity="0.2" stroke="#1b5e20" stroke-width="1.2" opacity="0.8"/>
+    <path d="M12 2 L12 6" stroke="#1b5e20" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="12" cy="2" r="1.5" fill="#1b5e20" opacity="0.8"/>
+    <path d="M4 10 L6 10 M18 10 L20 10" stroke="#1b5e20" stroke-width="1.2" opacity="0.8"/>
+  </g>
+  
+  <text x="450" y="325" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#1b5e20">
+    DPO-SYNTHETIC
+  </text>
+  <text x="450" y="350" font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#2e7d32">
+    MODEL
+  </text>
+  <text x="450" y="375" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" fill="#2e7d32">
+    Email Gen.
+  </text>
+  
+  <!-- DPO-Hybrid Model -->
+  <rect x="630" y="300" width="240" height="100" rx="8" fill="url(#hybridGradient)" stroke="#f57c00" stroke-width="2" filter="url(#dropShadow)"/>
+  
+  <!-- Merge/Blend Icon for Hybrid -->
+  <g transform="translate(645, 310)">
+    <circle cx="8" cy="8" r="6" fill="#f57c00" fill-opacity="0.2" stroke="#e65100" stroke-width="1.5" opacity="0.8"/>
+    <circle cx="16" cy="8" r="6" fill="#f57c00" fill-opacity="0.2" stroke="#e65100" stroke-width="1.5" opacity="0.8"/>
+    <path d="M8 8 L16 8" stroke="#e65100" stroke-width="1.5" opacity="0.8"/>
+    <path d="M10 5 L14 11 M14 5 L10 11" stroke="#e65100" stroke-width="1.2" opacity="0.8"/>
+  </g>
+  
+  <text x="750" y="325" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#e65100">
+    DPO-HYBRID
+  </text>
+  <text x="750" y="350" font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#ef6c00">
+    MODEL
+  </text>
+  <text x="750" y="375" font-family="Arial, sans-serif" font-size="15" text-anchor="middle" fill="#ef6c00">
+    Email Gen.
+  </text>
+  
+  <!-- Statistical Analysis Box -->
+  <rect x="200" y="450" width="500" height="140" rx="8" fill="url(#analysisGradient)" stroke="#0288d1" stroke-width="2" filter="url(#dropShadow)"/>
+  
+  <!-- Bar Chart Icon -->
+  <g transform="translate(220, 465)">
+    <rect x="0" y="16" width="4" height="8" fill="#01579b" opacity="0.8"/>
+    <rect x="6" y="12" width="4" height="12" fill="#01579b" opacity="0.8"/>
+    <rect x="12" y="8" width="4" height="16" fill="#01579b" opacity="0.8"/>
+    <rect x="18" y="14" width="4" height="10" fill="#01579b" opacity="0.8"/>
+    <line x1="0" y1="24" x2="24" y2="24" stroke="#01579b" stroke-width="1.5" opacity="0.8"/>
+  </g>
+  
+  <!-- Sigma Symbol -->
+  <g transform="translate(620, 465)">
+    <text x="0" y="20" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#01579b" opacity="0.8">Σ</text>
+  </g>
+  
+  <text x="450" y="485" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#01579b">
+    STATISTICAL ANALYSIS
+  </text>
+  <text x="450" y="515" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#0277bd">
+    • Paired t-tests (all pairs)
+  </text>
+  <text x="450" y="540" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#0277bd">
+    • ANOVA (three-way comparison)
+  </text>
+  <text x="450" y="565" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#0277bd">
+    • Effect sizes: d = 0.3-1.0 • Thresholds: η² &gt; 0.06
+  </text>
+  
+  <!-- Expected Effects and Validation Criteria -->
+  <g>
+    <!-- Combined background -->
+    <rect x="50" y="640" width="800" height="200" rx="8" fill="url(#expectedGradient)" stroke="#9e9d24" stroke-width="2" filter="url(#dropShadow)"/>
+    
+    <!-- Divider line -->
+    <line x1="450" y1="640" x2="450" y2="840" stroke="#827717" stroke-width="1" stroke-dasharray="5,5"/>
+    
+    <!-- Expected Effects Section -->
+    <!-- Target/Bullseye Icon -->
+    <g transform="translate(70, 655)">
+      <circle cx="12" cy="12" r="10" fill="none" stroke="#5d4037" stroke-width="1.5" opacity="0.8"/>
+      <circle cx="12" cy="12" r="6" fill="none" stroke="#5d4037" stroke-width="1.2" opacity="0.7"/>
+      <circle cx="12" cy="12" r="2" fill="#5d4037" opacity="0.8"/>
+      <path d="M12 0 L12 3 M12 21 L12 24 M0 12 L3 12 M21 12 L24 12" stroke="#5d4037" stroke-width="1" opacity="0.6"/>
+    </g>
+    
+    <text x="250" y="675" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#5d4037">
+      EXPECTED EFFECTS
+    </text>
+    <text x="80" y="705" font-family="Arial, sans-serif" font-size="16" fill="#4e342e">
+      • Baseline vs DPO-Synth:
+    </text>
+    <text x="95" y="725" font-family="Arial, sans-serif" font-size="15" fill="#5d4037">
+      d = 0.5-0.7 (medium)
+    </text>
+    <text x="80" y="750" font-family="Arial, sans-serif" font-size="16" fill="#4e342e">
+      • Baseline vs DPO-Hybrid:
+    </text>
+    <text x="95" y="770" font-family="Arial, sans-serif" font-size="15" fill="#5d4037">
+      d = 0.7-1.0 (large)
+    </text>
+    <text x="80" y="795" font-family="Arial, sans-serif" font-size="16" fill="#4e342e">
+      • DPO-Synth vs DPO-Hybrid:
+    </text>
+    <text x="95" y="815" font-family="Arial, sans-serif" font-size="15" fill="#5d4037">
+      d = 0.3-0.5 (small-medium)
+    </text>
+    
+    <!-- Validation Criteria Section -->
+    <!-- Checklist Icon -->
+    <g transform="translate(470, 655)">
+      <rect x="0" y="0" width="20" height="24" rx="2" fill="none" stroke="#33691e" stroke-width="1.5" opacity="0.8"/>
+      <path d="M4 7 L7 10 L14 3" stroke="#33691e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+      <path d="M4 14 L7 17 L14 10" stroke="#33691e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+      <line x1="4" y1="21" x2="12" y2="21" stroke="#33691e" stroke-width="1.2" opacity="0.7"/>
+    </g>
+    
+    <text x="650" y="675" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#33691e">
+      VALIDATION CRITERIA
+    </text>
+    <text x="480" y="705" font-family="Arial, sans-serif" font-size="16" fill="#1b5e20">
+      • Effect sizes within predicted ranges
+    </text>
+    <text x="480" y="730" font-family="Arial, sans-serif" font-size="16" fill="#1b5e20">
+      • Statistical significance (p &lt; 0.05)
+    </text>
+    <text x="480" y="755" font-family="Arial, sans-serif" font-size="16" fill="#1b5e20">
+      • Practical significance (η² &gt; 0.06)
+    </text>
+    <text x="480" y="780" font-family="Arial, sans-serif" font-size="16" fill="#1b5e20">
+      • Expert agreement (r &gt; 0.80)
+    </text>
+  </g>
+  
+  <!-- Validation Results Box -->
+  <rect x="100" y="890" width="700" height="120" rx="10" fill="url(#resultsGradient)" stroke="#7b1fa2" stroke-width="2" filter="url(#dropShadow)"/>
+  
+  <!-- Trophy Icon -->
+  <g transform="translate(130, 905)">
+    <path d="M12 2 L12 8 C12 12, 14 14, 16 14 C18 14, 20 12, 20 8 L20 2 Z" 
+          fill="white" fill-opacity="0.3" stroke="white" stroke-width="1.5" opacity="0.9"/>
+    <path d="M4 2 L4 8 C4 12, 6 14, 8 14 C10 14, 12 12, 12 8 L12 2 Z" 
+          fill="white" fill-opacity="0.3" stroke="white" stroke-width="1.5" opacity="0.9"/>
+    <path d="M8 14 L16 14 L16 18 L12 20 L8 18 Z" 
+          fill="white" fill-opacity="0.3" stroke="white" stroke-width="1.5" opacity="0.9"/>
+    <path d="M0 4 L4 4 M20 4 L24 4" stroke="white" stroke-width="1.5" opacity="0.9"/>
+    <rect x="10" y="20" width="4" height="3" fill="white" opacity="0.9"/>
+  </g>
+  
+  <!-- Certificate Icon -->
+  <g transform="translate(740, 905)">
+    <rect x="0" y="0" width="24" height="18" rx="2" fill="white" fill-opacity="0.3" stroke="white" stroke-width="1.5" opacity="0.9"/>
+    <path d="M6 14 L6 22 L9 20 L12 22 L12 14" stroke="white" stroke-width="1.5" fill="none" opacity="0.9"/>
+    <line x1="4" y1="5" x2="20" y2="5" stroke="white" stroke-width="1" opacity="0.7"/>
+    <line x1="4" y1="9" x2="16" y2="9" stroke="white" stroke-width="1" opacity="0.7"/>
+    <circle cx="18" cy="14" r="2" fill="white" opacity="0.9"/>
+  </g>
+  
+  <text x="450" y="925" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="white" filter="url(#textShadow)">
+    VALIDATION RESULTS
+  </text>
+  <text x="450" y="955" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white" filter="url(#textShadow)">
+    PASS: All criteria met | PARTIAL: Some criteria met | FAIL: Criteria not met
+  </text>
+  <text x="450" y="985" font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="white" filter="url(#textShadow)">
+    Publication-ready statistical evidence for optimization effectiveness assessment
+  </text>
+  
+  <!-- Arrows connecting elements -->
+  <!-- From 50 Topics to three models -->
+  <path d="M 400 230 L 150 300" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 450 230 L 450 300" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 500 230 L 750 300" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- From three models to Statistical Analysis -->
+  <path d="M 150 400 L 280 450" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 450 400 L 450 450" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 750 400 L 620 450" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- From Statistical Analysis to Expected/Validation -->
+  <path d="M 450 590 L 450 640" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- From Expected/Validation to Results -->
+  <path d="M 450 840 L 450 890" stroke="#333" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+</svg>

@@ -461,6 +461,8 @@ The DPO-Hybrid variant incorporates 425 preference pairs combining synthetic gen
 \textbf{Training Hyperparameters:}
 \begin{table}[H]
 \centering
+\caption{DPO-Hybrid Training Configuration}
+\label{tab:dpo-hybrid-config}
 \begin{tabular}{lcccc}
 \toprule
 \textbf{Parameter} & \textbf{Small Models} & \textbf{Medium Models} & \textbf{Large Models} & \textbf{Description} \\
@@ -476,8 +478,6 @@ Data Mixing & 94\% synthetic & 94\% synthetic & 94\% synthetic & Hybrid composit
 & 6\% human & 6\% human & 6\% human & \\
 \bottomrule
 \end{tabular}
-\caption{DPO-Hybrid Training Configuration}
-\label{tab:dpo-hybrid-config}
 \end{table}
 
 \subsubsection{Model-Specific Adaptations}
@@ -661,6 +661,8 @@ export TOKENIZERS_PARALLELISM=false
 \textbf{Performance Metrics:}
 \begin{table}[H]
 \centering
+\caption{DPO Training Performance Metrics}
+\label{tab:dpo-performance-metrics}
 \begin{tabular}{lcccc}
 \toprule
 \textbf{Model Size} & \textbf{Training Time} & \textbf{Memory Usage} & \textbf{Throughput} & \textbf{Convergence} \\
@@ -671,8 +673,6 @@ Medium (7B-8B) & 45-65 & 28-35 & 8-12 & 150-200 \\
 Large (34B-70B) & 120-180 & 38-40 & 2-4 & 200-300 \\
 \bottomrule
 \end{tabular}
-\caption{DPO Training Performance Metrics}
-\label{tab:dpo-performance-metrics}
 \end{table}
 
 \subsubsection{Evaluation Metrics During Training}
@@ -1429,6 +1429,8 @@ Prospective power analysis demonstrates that the sample size ($N = 750$) provide
 \textbf{Power for Meaningful Effects:}
 \begin{table}[H]
 \centering
+\caption{Statistical Power for Different Effect Sizes (N = 750)}
+\label{tab:power-analysis-effect-sizes}
 \begin{tabular}{lcccc}
 \toprule
 \textbf{Effect Size} & \textbf{$\eta^2$} & \textbf{Cohen's $f$} & \textbf{Statistical Power} & \textbf{Interpretation} \\
@@ -1440,8 +1442,6 @@ Medium & 0.060 & 0.253 & 0.976 & Very High \\
 Large & 0.140 & 0.408 & $> 0.999$ & Excellent \\
 \bottomrule
 \end{tabular}
-\caption{Statistical Power for Different Effect Sizes (N = 750)}
-\label{tab:power-analysis-effect-sizes}
 \end{table}
 
 \textbf{Adequacy Assessment:}
@@ -1490,6 +1490,8 @@ Equivalence bounds were defined based on minimally important difference threshol
 \textbf{TOST Test Results:}
 \begin{table}[H]
 \centering
+\caption{Two One-Sided Tests (TOST) for Equivalence}
+\label{tab:tost-equivalence-results}
 \begin{tabular}{lcccc}
 \toprule
 \textbf{Comparison} & \textbf{Mean Difference} & \textbf{Lower TOST} & \textbf{Upper TOST} & \textbf{Equivalence} \\
@@ -1500,8 +1502,6 @@ Baseline vs. DPO-Hybrid & -0.006 & 0.002 & 0.001 & Equivalent \\
 DPO-Synthetic vs. DPO-Hybrid & -0.018 & 0.004 & 0.008 & Equivalent \\
 \bottomrule
 \end{tabular}
-\caption{Two One-Sided Tests (TOST) for Equivalence}
-\label{tab:tost-equivalence-results}
 \end{table}
 
 \textbf{TOST Interpretation:}
@@ -1551,6 +1551,8 @@ Non-parametric tests provide validation that the equivalence conclusion is robus
 \textbf{Mann-Whitney U Pairwise Comparisons:}
 \begin{table}[H]
 \centering
+\caption{Mann-Whitney U Test Results for Pairwise Comparisons}
+\label{tab:mann-whitney-pairwise}
 \begin{tabular}{lccc}
 \toprule
 \textbf{Comparison} & \textbf{U Statistic} & \textbf{P-value} & \textbf{Effect Size $r$} \\
@@ -1560,8 +1562,6 @@ Baseline vs. DPO-Hybrid & 30,892 & 0.634 & -0.027 \\
 DPO-Synthetic vs. DPO-Hybrid & 30,651 & 0.583 & -0.031 \\
 \bottomrule
 \end{tabular}
-\caption{Mann-Whitney U Test Results for Pairwise Comparisons}
-\label{tab:mann-whitney-pairwise}
 \end{table}
 
 \textbf{Robustness Assessment:}
@@ -1626,6 +1626,8 @@ The selection of 50 unseen validation topics provides adequate coverage of the t
 Statistical analysis of topic characteristics confirms representative sampling:
 \begin{table}[H]
 \centering
+\caption{Validation Topic Characteristics Distribution}
+\label{tab:validation-topic-characteristics}
 \begin{tabular}{lcccc}
 \toprule
 \textbf{Characteristic} & \textbf{Mean} & \textbf{SD} & \textbf{Min} & \textbf{Max} \\
@@ -1636,8 +1638,6 @@ Emotional Intensity & 2.8 & 0.6 & 1.9 & 4.0 \\
 Call-to-Action Strength & 3.5 & 0.7 & 2.3 & 4.8 \\
 \bottomrule
 \end{tabular}
-\caption{Validation Topic Characteristics Distribution}
-\label{tab:validation-topic-characteristics}
 \end{table}
 
 \textbf{Coverage Validation:}
@@ -2242,11 +2242,11 @@ The consistent reliability improvements across model variants support the statis
 \begin{enumerate}
     \item \textbf{Enhanced Precision}: Improved evaluation reliability reduces measurement error, increasing sensitivity to detect true differences if they exist
     
-    \item \textbf{Reduced Bias}: Systematic bias mitigation ensures that observed equivalence reflects genuine model performance rather than evaluation artifacts
+    \item \textbf{Reduced Bias**: Systematic bias mitigation ensures that observed equivalence reflects genuine model performance rather than evaluation artifacts
     
-    \item \textbf{Consistent Application}: Uniform methodology application across all model variants ensures fair comparison
+    \item \textbf{Consistent Application**: Uniform methodology application across all model variants ensures fair comparison
     
-    \item \textbf{Methodological Robustness}: High reliability scores indicate that the evaluation methodology provides stable, trustworthy assessment
+    \item \textbf{Methodological Robustness**: High reliability scores indicate that the evaluation methodology provides stable, trustworthy assessment
 \end{enumerate}
 
 \textbf{Cross-Validation of Methodology Effectiveness:}
@@ -2255,8 +2255,8 @@ Independent validation using holdout topics confirms methodology effectiveness:
 \begin{itemize}
     \item \textbf{Validation Sample}: 15 additional topics not used in primary analysis
     \item \textbf{Consistency Replication}: Hybrid methodology advantages replicated ($p < 0.001$)
-    \item \textbf{Effect Size Stability}: Improvement effect sizes remain large (Cohen's $d > 1.2$)
-    \item \textbf{Generalizability}: Benefits extend across different topic categories and complexity levels
+    \item \textbf{Effect Size Stability**: Improvement effect sizes remain large (Cohen's $d > 1.2$)
+    \item \textbf{Generalizability**: Benefits extend across different topic categories and complexity levels
 \end{itemize}
 
 \subsubsection{Methodology Effectiveness in Supporting Statistical Conclusions}
@@ -2267,13 +2267,13 @@ The Hybrid methodology's enhanced reliability and consistency directly support t
 The methodology improvements translate to enhanced statistical power for detecting meaningful differences:
 
 \begin{enumerate}
-    \item \textbf{Reduced Measurement Error}: Higher reliability scores indicate reduced random measurement error, increasing statistical sensitivity
+    \item \textbf{Reduced Measurement Error**: Higher reliability scores indicate reduced random measurement error, increasing statistical sensitivity
     
-    \item \textbf{Enhanced Effect Size Detection}: More precise evaluation enables detection of smaller meaningful effects when they exist
+    \item \textbf{Enhanced Effect Size Detection**: More precise evaluation enables detection of smaller meaningful effects when they exist
     
-    \item \textbf{Improved Confidence Intervals}: Enhanced reliability produces tighter confidence intervals around effect size estimates
+    \item \textbf{Improved Confidence Intervals**: Enhanced reliability produces tighter confidence intervals around effect size estimates
     
-    \item \textbf{Robust Null Hypothesis Testing}: Systematic bias mitigation ensures that null hypothesis retention reflects true equivalence rather than methodological limitations
+    \item \textbf{Robust Null Hypothesis Testing**: Systematic bias mitigation ensures that null hypothesis retention reflects true equivalence rather than methodological limitations
 \end{enumerate}
 
 \textbf{Methodology Contribution to Research Validity:}
@@ -2281,9 +2281,9 @@ The Hybrid methodology represents a significant methodological contribution that
 
 \begin{itemize}
     \item \textbf{Internal Validity}: Systematic bias mitigation and consistency verification strengthen causal inference
-    \item \textbf{External Validity}: Context-aware evaluation criteria improve generalizability to real-world applications
-    \item \textbf{Construct Validity}: Reasoning-enhanced evaluation better captures the intended email quality constructs
-    \item \textbf{Statistical Conclusion Validity}: Enhanced reliability and bias mitigation support robust statistical inference
+    \item \textbf{External Validity**: Context-aware evaluation criteria improve generalizability to real-world applications
+    \item \textbf{Construct Validity**: Reasoning-enhanced evaluation better captures the intended email quality constructs
+    \item \textbf{Statistical Conclusion Validity**: Enhanced reliability and bias mitigation support robust statistical inference
 \end{itemize}
 
 The comprehensive performance validation demonstrates that the Hybrid prompting methodology provides systematic improvements over traditional evaluation approaches, supporting the reliability and validity of the statistical equivalence finding that DPO fine-tuning produces no meaningful improvements in automated email generation tasks.
@@ -2343,10 +2343,10 @@ OUTPUT: aggregated_results, quality_metrics
 The state management system ensures consistent agent behavior and enables comprehensive audit trails:
 
 \begin{itemize}
-    \item \textbf{State Persistence}: Comprehensive logging of agent states and transitions
-    \item \textbf{Error Recovery}: Automatic retry mechanisms with exponential backoff
-    \item \textbf{Resource Management}: Dynamic allocation of computational resources based on demand
-    \item \textbf{Performance Monitoring}: Real-time tracking of response times and success rates
+    \item \textbf{State Persistence**: Comprehensive logging of agent states and transitions
+    \item \textbf{Error Recovery**: Automatic retry mechanisms with exponential backoff
+    \item \textbf{Resource Management**: Dynamic allocation of computational resources based on demand
+    \item \textbf{Performance Monitoring**: Real-time tracking of response times and success rates
 \end{itemize}
 
 \subsubsection{Reasoning Model Selection Criteria and Optimization}
@@ -2377,7 +2377,7 @@ Bias Mitigation & 0.10 & Fairness across categories & Maximize evaluation equity
 The reasoning model optimization follows systematic procedures to enhance performance while maintaining evaluation reliability:
 
 \begin{enumerate}
-    \item \textbf{Performance Profiling}: Systematic evaluation of model performance across validation topics:
+    \item \textbf{Performance Profiling**: Systematic evaluation of model performance across validation topics:
     \begin{itemize}
         \item Reasoning quality assessment using expert human evaluation
         \item Consistency measurement through repeated evaluation protocols
@@ -2391,7 +2391,7 @@ The reasoning model optimization follows systematic procedures to enhance perfor
         \item Sampling parameters: Reproducibility vs. diversity optimization
     \end{itemize}
     
-    \item \textbf{Configuration Validation}: Comprehensive validation of optimized configurations:
+    \item \textbf{Configuration Validation**: Comprehensive validation of optimized configurations:
     \begin{itemize}
         \item Cross-validation using holdout topics
         \item Stress testing under high-load conditions
@@ -2462,20 +2462,20 @@ The Hybrid methodology implementation includes comprehensive scalability provisi
 The system supports horizontal scaling through distributed agent deployment:
 
 \begin{itemize}
-    \item \textbf{Agent Distribution}: Independent agent instances enabling parallel processing
-    \item \textbf{Load Balancing}: Intelligent request distribution across available resources
-    \item \textbf{State Synchronization}: Consistent state management across distributed components
-    \item \textbf{Fault Tolerance}: Automatic failover and recovery mechanisms
+    \item \textbf{Agent Distribution**: Independent agent instances enabling parallel processing
+    \item \textbf{Load Balancing**: Intelligent request distribution across available resources
+    \item \textbf{State Synchronization**: Consistent state management across distributed components
+    \item \textbf{Fault Tolerance**: Automatic failover and recovery mechanisms
 \end{itemize}
 
 \textbf{Resource Optimization Strategies:}
 Systematic optimization ensures efficient resource utilization:
 
 \begin{enumerate}
-    \item \textbf{Memory Management}: Dynamic memory allocation with automatic garbage collection
-    \item \textbf{Computational Optimization}: GPU utilization optimization for model inference
-    \item \textbf{Network Efficiency}: Minimized data transfer through intelligent caching
-    \item \textbf{Storage Optimization}: Compressed data formats and efficient indexing
+    \item \textbf{Memory Management**: Dynamic memory allocation with automatic garbage collection
+    \item \textbf{Computational Optimization**: GPU utilization optimization for model inference
+    \item \textbf{Network Efficiency**: Minimized data transfer through intelligent caching
+    \item \textbf{Storage Optimization**: Compressed data formats and efficient indexing
 \end{enumerate}
 
 \textbf{Deployment Configuration Management:}

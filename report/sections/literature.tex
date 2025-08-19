@@ -73,18 +73,6 @@ Substituting this relationship into the Bradley-Terry model yields the DPO objec
 \label{fig:dpo_pipeline}
 \end{figure}
 
-\subsection{Resource Constraints and Scaling Limitations Under Data Constraints}
-
-DPO's effectiveness depends critically upon sufficient high-quality preference data, with theoretical analysis demonstrating asymmetric gradient behaviour that becomes increasingly pronounced under data limitations, creating fundamental constraints on optimization performance \cite{feng2024dpo_limitations}. Empirical investigations reveal that dataset quality cannot compensate for insufficient quantity below 400-500 preference pairs, with carefully curated data failing to maintain performance gains below these thresholds \cite{deng2025preference_data_selection}. Scaling law analysis establishes that DPO utility follows predictable mathematical relationships with dataset size, exhibiting critical inflection points where performance plateaus regardless of data quality improvements \cite{goyal2024scaling_laws_data_filtering}.
-
-\subsection{Statistical Equivalence Under Data Constraints}
-
-Advanced DPO variants encounter analogous limitations under constrained dataset conditions, with sophisticated approaches including Omni-DPO \cite{peng2025omni_dpo} and Accelerated Preference Optimization \cite{he2024apo} providing minimal performance benefits below 400-500 preference pairs. When datasets contain fewer than approximately 425 pairs, DPO variants exhibit statistical performance equivalence obscuring algorithmic differences:
-
-$$\lim_{|D| \to D_{\text{critical}}} \text{Var}(\text{Performance}_{\text{variant}}) \to 0$$
-
-where $|D|$ represents dataset size and $D_{\text{critical}} \approx 400$--$500$ preference pairs represents the critical threshold for algorithmic differentiation. Synthetic data generation cannot adequately substitute for authentic preference pairs below critical thresholds \cite{karthik2024scalable_ranked_preference}, compounding evaluation challenges under resource constraints. These constraints directly contextualize the theoretical framework underpinning empirical investigations of DPO variants under limited data conditions, establishing critical thresholds where algorithmic differences become statistically indistinguishable \cite{lin2024limited_generalization}. This theoretical understanding provides the foundation for examining how DPO applications perform in domain-specific contexts requiring specialized evaluation approaches.
-
 \subsection{Domain-Specific Applications: Theoretical Challenges in Automated Email Generation}
 
 The mathematical foundations and resource constraints of DPO methodology intersect with domain-specific challenges in automated email generation, creating unique theoretical requirements that distinguish email communication from general text generation tasks.

@@ -20,8 +20,25 @@
 \usepackage{amsmath}
 \usepackage{amssymb}% http://ctan.org/pkg/amssymb
 \usepackage{pifont}% http://ctan.org/pkg/pifont
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage{listings}
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
+
+% Define custom prompt box style
+\newtcolorbox{promptbox}[1][]{
+    colback=gray!5,
+    colframe=gray!50,
+    boxrule=1pt,
+    left=5pt,
+    right=5pt,
+    top=5pt,
+    bottom=5pt,
+    fonttitle=\bfseries,
+    title={Prompt Template},
+    #1
+}
 
 % Configurations
 \titleformat{\chapter}[display]
