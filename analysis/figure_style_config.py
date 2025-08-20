@@ -18,20 +18,20 @@ def set_dissertation_style():
     
     # Custom style parameters for modern, minimal look
     style_params = {
-        # Font settings - professional sans-serif
+        # Font settings - professional sans-serif (INCREASED SIZES FOR BETTER READABILITY)
         'font.family': 'sans-serif',
         'font.sans-serif': ['Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'],
-        'font.size': 10,
-        'axes.labelsize': 11,
-        'axes.titlesize': 12,
-        'xtick.labelsize': 9,
-        'ytick.labelsize': 9,
-        'legend.fontsize': 9,
-        'legend.title_fontsize': 10,
+        'font.size': 12,                # Increased from 10
+        'axes.labelsize': 14,            # Increased from 11
+        'axes.titlesize': 16,            # Increased from 12
+        'xtick.labelsize': 11,           # Increased from 9
+        'ytick.labelsize': 11,           # Increased from 9
+        'legend.fontsize': 11,           # Increased from 9
+        'legend.title_fontsize': 12,     # Increased from 10
         
         # Figure settings
         'figure.dpi': 100,
-        'savefig.dpi': 300,
+        'savefig.dpi': 350,              # Increased from 300 for better quality
         'savefig.bbox': 'tight',
         'savefig.pad_inches': 0.1,
         'figure.figsize': (10, 6),
@@ -45,7 +45,7 @@ def set_dissertation_style():
         'axes.spines.bottom': True,
         'axes.edgecolor': '#CCCCCC',
         'axes.linewidth': 0.8,
-        'axes.labelcolor': '#333333',
+        'axes.labelcolor': '#000000',    # Changed to black for better contrast
         'axes.axisbelow': True,
         'axes.facecolor': 'white',
         
@@ -63,8 +63,8 @@ def set_dissertation_style():
         'ytick.minor.size': 2,
         'xtick.major.width': 0.8,
         'ytick.major.width': 0.8,
-        'xtick.color': '#666666',
-        'ytick.color': '#666666',
+        'xtick.color': '#333333',        # Darker for better readability
+        'ytick.color': '#333333',        # Darker for better readability
         'xtick.direction': 'out',
         'ytick.direction': 'out',
         
@@ -173,8 +173,8 @@ def apply_minimal_style(ax):
     ax.grid(True, alpha=0.2, linestyle='-', linewidth=0.5)
     ax.set_axisbelow(True)
     
-    # Clean tick marks
-    ax.tick_params(length=4, width=0.8, colors='#666666')
+    # Clean tick marks (darker for better readability)
+    ax.tick_params(length=4, width=0.8, colors='#333333')
     
     return ax
 
@@ -189,15 +189,15 @@ def format_axis_labels(ax, xlabel=None, ylabel=None, title=None):
         title: Plot title text
     """
     if xlabel:
-        ax.set_xlabel(xlabel, fontsize=11, color='#333333', fontweight='normal')
+        ax.set_xlabel(xlabel, fontsize=14, color='#000000', fontweight='normal')
     if ylabel:
-        ax.set_ylabel(ylabel, fontsize=11, color='#333333', fontweight='normal')
+        ax.set_ylabel(ylabel, fontsize=14, color='#000000', fontweight='normal')
     if title:
-        ax.set_title(title, fontsize=12, color='#333333', fontweight='medium', pad=15)
+        ax.set_title(title, fontsize=16, color='#000000', fontweight='medium', pad=15)
     
     return ax
 
-def add_value_labels(ax, bars, format_str='{:.3f}', offset=0.01, fontsize=8):
+def add_value_labels(ax, bars, format_str='{:.3f}', offset=0.01, fontsize=11):
     """
     Add value labels to bar chart with consistent formatting.
     
@@ -206,14 +206,14 @@ def add_value_labels(ax, bars, format_str='{:.3f}', offset=0.01, fontsize=8):
         bars: Bar container from ax.bar()
         format_str: Format string for values
         offset: Vertical offset for labels
-        fontsize: Font size for labels
+        fontsize: Font size for labels (default increased to 11)
     """
     for bar in bars:
         height = bar.get_height()
         if height != 0:  # Only label non-zero bars
             ax.text(bar.get_x() + bar.get_width()/2., height + offset,
                    format_str.format(height),
-                   ha='center', va='bottom', fontsize=fontsize, color='#666666')
+                   ha='center', va='bottom', fontsize=fontsize, color='#2C2C2C')
     
     return ax
 

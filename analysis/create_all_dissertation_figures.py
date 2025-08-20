@@ -39,8 +39,8 @@ def create_anova_summary(data):
     """
     print("Creating ANOVA Summary figure...")
     
-    # Single integrated panel with horizontal layout
-    fig, ax = plt.subplots(figsize=(12, 6))
+    # Single integrated panel with horizontal layout (larger figure)
+    fig, ax = plt.subplots(figsize=(14, 8))
     
     # Data preparation
     f_stat = data['inferential_statistics']['anova']['f_statistic']
@@ -71,38 +71,39 @@ def create_anova_summary(data):
     format_axis_labels(ax, xlabel='Statistical Value', 
                       title='ANOVA Results: Statistical Equivalence Across Model Variants')
     
-    # Add value annotations with better positioning
-    ax.text(f_stat + 0.05, 0, f'F = {f_stat:.3f}', va='center', fontsize=10, 
+    # Add value annotations with better positioning (larger fonts)
+    ax.text(f_stat + 0.05, 0, f'F = {f_stat:.3f}', va='center', fontsize=12, 
             color=COLORS['dark_gray'], fontweight='medium')
-    ax.text(f_critical + 0.05, 1, f'F = {f_critical:.2f}', va='center', fontsize=10,
+    ax.text(f_critical + 0.05, 1, f'F = {f_critical:.2f}', va='center', fontsize=12,
             color=COLORS['dark_gray'], fontweight='medium')
-    ax.text(eta_squared * 50 + 0.05, 2, f'η² = {eta_squared:.3f}', va='center', fontsize=10,
+    ax.text(eta_squared * 50 + 0.05, 2, f'η² = {eta_squared:.3f}', va='center', fontsize=12,
             color=COLORS['dark_gray'], fontweight='medium')
-    ax.text(eta_threshold * 50 + 0.05, 3, f'η² = {eta_threshold:.2f}', va='center', fontsize=10,
+    ax.text(eta_threshold * 50 + 0.05, 3, f'η² = {eta_threshold:.2f}', va='center', fontsize=12,
             color=COLORS['dark_gray'], fontweight='medium')
     
-    # Add significance and effect size indicators
-    ax.text(0.7, -0.6, f'p = {p_value:.3f} (non-significant)', 
-            fontsize=12, color=COLORS['highlight'], fontweight='medium',
+    # Add significance and effect size indicators (moved lower to avoid title overlap)
+    ax.text(0.7, -0.8, f'p = {p_value:.3f} (non-significant)', 
+            fontsize=14, color=COLORS['highlight'], fontweight='medium',
             bbox=dict(boxstyle='round,pad=0.5', facecolor=COLORS['light_gray'], 
                      alpha=0.8, edgecolor='none'))
     
-    ax.text(0.7, -0.9, 'Negligible practical effect', 
-            fontsize=11, color=COLORS['neutral'], style='italic')
+    ax.text(0.7, -1.1, 'Negligible practical effect', 
+            fontsize=13, color=COLORS['neutral'], style='italic')
     
     # Add reference lines
     ax.axvline(x=f_critical, color=COLORS['neutral'], linestyle='--', alpha=0.5, linewidth=1)
     ax.axvline(x=eta_threshold * 50, color=COLORS['neutral'], linestyle='--', alpha=0.5, linewidth=1)
     
-    # Set limits and styling
+    # Set limits and styling (extend bottom to accommodate moved text)
     ax.set_xlim(0, max(f_critical * 1.3, eta_threshold * 50 * 1.3))
+    ax.set_ylim(-1.5, 3.5)  # Extended bottom limit
     ax.invert_yaxis()  # Categories from top to bottom
     
     # Remove excessive grid lines
     ax.grid(axis='x', alpha=0.3)
     
     fig.savefig('../report/figures/anova_summary.png', 
-                dpi=300, bbox_inches='tight', facecolor='white')
+                dpi=350, bbox_inches='tight', facecolor='white')
     plt.close()
     print("✓ ANOVA Summary saved")
 
@@ -112,7 +113,7 @@ def create_means_comparison(data):
     """
     print("Creating Means Comparison figure...")
     
-    fig, ax = plt.subplots(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(12, 7))
     
     # Data
     variants = ['Baseline', 'DPO-Synthetic', 'DPO-Hybrid']
@@ -136,10 +137,10 @@ def create_means_comparison(data):
                   alpha=0.8, edgecolor='black', linewidth=1,
                   error_kw=dict(elinewidth=1.5, ecolor=COLORS['dark_gray'], capthick=1.5))
     
-    # Add value labels
+    # Add value labels (larger fonts)
     for i, (mean, se) in enumerate(zip(means, ses)):
         ax.text(i, mean + se + 0.01, f'{mean:.3f} ± {se:.3f}', 
-                ha='center', fontsize=10, color=COLORS['dark_gray'])
+                ha='center', fontsize=12, color=COLORS['dark_gray'])
     
     # Apply minimal style and formatting
     apply_minimal_style(ax)
@@ -153,11 +154,11 @@ def create_means_comparison(data):
     overall_mean = np.mean(means)
     ax.axhline(y=overall_mean, color=COLORS['highlight'], linestyle='--', alpha=0.6, linewidth=1.5)
     ax.text(2.5, overall_mean, f'Overall M = {overall_mean:.3f}', 
-            fontsize=9, va='bottom', color=COLORS['dark_gray'])
+            fontsize=11, va='bottom', color=COLORS['dark_gray'])
     
     plt.tight_layout()
     fig.savefig('../report/figures/means_comparison.png', 
-                dpi=300, bbox_inches='tight', facecolor='white')
+                dpi=350, bbox_inches='tight', facecolor='white')
     plt.close()
     print("✓ Means Comparison saved")
 
@@ -167,7 +168,7 @@ def create_effect_size_comparison(data):
     """
     print("Creating Effect Size Comparison figure...")
     
-    fig, ax = plt.subplots(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(12, 7))
     
     # Data
     comparisons = ['Baseline vs\nDPO-Synthetic', 'Baseline vs\nDPO-Hybrid', 
@@ -191,9 +192,9 @@ def create_effect_size_comparison(data):
     ax.axhline(y=0.8, color=COLORS['error'], linestyle='--', linewidth=1.5, alpha=0.7,
                label='Large effect (d = 0.8)')
     
-    # Add value labels
+    # Add value labels (larger fonts)
     for i, d in enumerate(effect_sizes):
-        ax.text(i, d + 0.005, f'd = {d:.3f}', ha='center', fontsize=10, color=COLORS['dark_gray'])
+        ax.text(i, d + 0.005, f'd = {d:.3f}', ha='center', fontsize=12, color=COLORS['dark_gray'])
     
     # Apply minimal style and formatting
     apply_minimal_style(ax)
@@ -204,14 +205,14 @@ def create_effect_size_comparison(data):
     ax.set_ylim(0, 1.0)
     ax.legend(loc='upper right', framealpha=0.9)
     
-    # Add interpretation with modern styling
+    # Add interpretation with modern styling (larger font)
     ax.text(1, 0.15, 'All effects below\nsmall threshold', 
-            ha='center', fontsize=11, style='italic', color=COLORS['highlight'],
+            ha='center', fontsize=13, style='italic', color=COLORS['highlight'],
             bbox=dict(boxstyle='round', facecolor=COLORS['light_gray'], alpha=0.8, edgecolor='none'))
     
     plt.tight_layout()
     fig.savefig('../report/figures/effect_size_comparison.png', 
-                dpi=300, bbox_inches='tight', facecolor='white')
+                dpi=350, bbox_inches='tight', facecolor='white')
     plt.close()
     print("✓ Effect Size Comparison saved")
 
@@ -221,15 +222,15 @@ def create_model_size_comparison(data):
     """
     print("Creating Model Size Comparison figure...")
     
-    fig, ax = plt.subplots(figsize=(12, 6))
+    fig, ax = plt.subplots(figsize=(14, 8))
     
     # Data from size groups
     small_data = data['model_specific_results']['size_groups']['small']
     medium_data = data['model_specific_results']['size_groups']['medium']
     
-    # Prepare data
-    size_groups = ['Small Models\n(M0001, M0003, M0005)', 
-                   'Medium Models\n(M0002, M0004)']
+    # Prepare data (simplified labels)
+    size_groups = ['Small Models\n(1.1B-1.6B)', 
+                   'Medium Models\n(7B-8B)']
     
     baseline_means = [small_data['baseline']['mean'], 
                      medium_data['baseline']['mean']]
@@ -256,7 +257,7 @@ def create_model_size_comparison(data):
             height = bar.get_height()
             if height is not None:
                 ax.text(bar.get_x() + bar.get_width()/2., height + 0.005,
-                       f'{height:.3f}', ha='center', fontsize=9, color=COLORS['dark_gray'])
+                       f'{height:.3f}', ha='center', fontsize=13, color=COLORS['dark_gray'])
     
     # Apply minimal style and formatting
     apply_minimal_style(ax)
@@ -276,11 +277,11 @@ def create_model_size_comparison(data):
         
         color = COLORS['success'] if improvement > 0 else COLORS['error']
         ax.text(i, 0.65, f'Δ = {improvement:.1f}%', ha='center',
-               color=color, fontweight='medium', fontsize=10)
+               color=color, fontweight='medium', fontsize=14)
     
     plt.tight_layout()
     fig.savefig('../report/figures/model_size_comparison.png', 
-                dpi=300, bbox_inches='tight', facecolor='white')
+                dpi=350, bbox_inches='tight', facecolor='white')
     plt.close()
     print("✓ Model Size Comparison saved")
 
@@ -290,11 +291,11 @@ def create_category_performance(data):
     """
     print("Creating Category Performance figure...")
     
-    fig, ax = plt.subplots(figsize=(12, 7))
+    fig, ax = plt.subplots(figsize=(14, 8))
     
-    # Categories
-    categories = ['Healthcare/\nMedical', 'Education/\nYouth', 
-                  'Environmental', 'Community/\nSocial']
+    # Categories (simplified)
+    categories = ['Healthcare', 'Education', 
+                  'Environmental', 'Community']
     
     # Extract data for each category
     cat_data = data['category_results']
@@ -337,7 +338,7 @@ def create_category_performance(data):
         for bar in bars:
             height = bar.get_height()
             ax.text(bar.get_x() + bar.get_width()/2., height + 0.005,
-                   f'{height:.3f}', ha='center', fontsize=8, rotation=0, color=COLORS['dark_gray'])
+                   f'{height:.3f}', ha='center', fontsize=11, rotation=0, color=COLORS['dark_gray'])
     
     # Add improvement percentages
     improvements_synthetic = [
@@ -364,7 +365,7 @@ def create_category_performance(data):
         if abs(best_val) > 10:  # Highlight large changes
             color = COLORS['success'] if best_val > 0 else COLORS['error']
             ax.text(i, 0.72, f'{best_variant}\n{best_val:+.1f}%', 
-                   ha='center', fontsize=9, color=color, fontweight='medium',
+                   ha='center', fontsize=11, color=color, fontweight='medium',
                    bbox=dict(boxstyle='round', facecolor=COLORS['light_gray'], alpha=0.8, edgecolor='none'))
     
     # Apply minimal style and formatting
@@ -378,7 +379,7 @@ def create_category_performance(data):
     
     plt.tight_layout()
     fig.savefig('../report/figures/category_performance.png', 
-                dpi=300, bbox_inches='tight', facecolor='white')
+                dpi=350, bbox_inches='tight', facecolor='white')
     plt.close()
     print("✓ Category Performance saved")
 
@@ -392,7 +393,7 @@ def create_methodology_validation(data):
     validation_dir = Path('../report/figures/validation')
     validation_dir.mkdir(parents=True, exist_ok=True)
     
-    fig, ax = plt.subplots(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(12, 7))
     
     # Data for comparisons
     comparisons = ['Baseline vs\nDPO-Synthetic', 'Baseline vs\nDPO-Hybrid', 
@@ -418,17 +419,17 @@ def create_methodology_validation(data):
     bars2 = ax.bar(x + width/2, actual, width, label='Actual',
                    color=COLORS['highlight'], alpha=0.8, edgecolor='black', linewidth=1)
     
-    # Add value labels
+    # Add value labels (larger fonts)
     for i, (pred, act) in enumerate(zip(predicted, actual)):
         ax.text(i - width/2, pred + 0.02, f'd = {pred:.2f}', 
-                ha='center', fontsize=9, color=COLORS['dark_gray'])
+                ha='center', fontsize=11, color=COLORS['dark_gray'])
         ax.text(i + width/2, act + 0.02, f'd = {act:.3f}', 
-                ha='center', fontsize=9, color=COLORS['dark_gray'])
+                ha='center', fontsize=11, color=COLORS['dark_gray'])
         
-        # Add error magnitude
+        # Add error magnitude (larger font)
         error = pred - act
         ax.text(i, 0.95, f'Error: {error:.2f}', ha='center', 
-                fontsize=9, color=COLORS['error'], fontweight='medium')
+                fontsize=11, color=COLORS['error'], fontweight='medium')
     
     # Add Cohen's d threshold line with modern styling
     ax.axhline(y=0.2, color=COLORS['success'], linestyle='--', linewidth=1.5, 
@@ -443,14 +444,14 @@ def create_methodology_validation(data):
     ax.set_ylim(0, 1.05)
     ax.legend(loc='upper right', framealpha=0.9)
     
-    # Add validation status with modern styling
-    ax.text(1, 0.5, 'VALIDATION FAILED', ha='center', fontsize=14,
+    # Add validation status with modern styling (larger font)
+    ax.text(1, 0.5, 'VALIDATION FAILED', ha='center', fontsize=16,
             color=COLORS['error'], fontweight='bold', rotation=15,
             bbox=dict(boxstyle='round', facecolor=COLORS['warning'], alpha=0.8, edgecolor='none'))
     
     plt.tight_layout()
     fig.savefig('../report/figures/validation/methodology_validation.png', 
-                dpi=300, bbox_inches='tight', facecolor='white')
+                dpi=350, bbox_inches='tight', facecolor='white')
     plt.close()
     print("✓ Methodology Validation saved")
 

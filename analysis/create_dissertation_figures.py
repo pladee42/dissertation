@@ -61,8 +61,8 @@ def create_model_comparison_boxplot(data):
     synthetic_scores = np.clip(synthetic_scores, 0, 1)
     hybrid_scores = np.clip(hybrid_scores, 0, 1)
     
-    # Create figure with enhanced styling
-    fig, ax = plt.subplots(figsize=(10, 6))
+    # Create figure with enhanced styling (larger for better readability)
+    fig, ax = plt.subplots(figsize=(12, 7))
     
     # Create violin plot with subtle styling
     violin_data = [baseline_scores, synthetic_scores, hybrid_scores]
@@ -94,8 +94,8 @@ def create_model_comparison_boxplot(data):
         data['descriptive_statistics']['dpo_synthetic']['mean'],
         data['descriptive_statistics']['dpo_hybrid']['mean']
     ]
-    ax.scatter(positions, means, s=60, c='white', edgecolors=COLORS['dark_gray'], 
-               linewidths=1.5, zorder=4, label='Mean')
+    ax.scatter(positions, means, s=80, c='white', edgecolors=COLORS['dark_gray'], 
+               linewidths=2, zorder=4, label='Mean')
     
     # Apply minimal styling
     apply_minimal_style(ax)
@@ -113,16 +113,18 @@ def create_model_comparison_boxplot(data):
         data['descriptive_statistics']['dpo_synthetic']['sd'],
         data['descriptive_statistics']['dpo_hybrid']['sd']
     ])):
-        ax.text(pos, -0.12, f'M={mean:.3f}\nSD={sd:.3f}', 
-                ha='center', fontsize=8, color=COLORS['neutral'],
+        ax.text(pos, -0.16, f'M={mean:.3f}\nSTD={sd:.3f}', 
+                ha='center', fontsize=11, color=COLORS['dark_gray'],
                 transform=ax.get_xaxis_transform())
     
     # Add legend with minimal styling
     ax.legend(loc='upper right', framealpha=0.9)
     
+    # Add extra bottom margin to prevent overlap
+    plt.subplots_adjust(bottom=0.15)
     plt.tight_layout()
     fig.savefig('../report/figures/model_comparison_boxplot.png', 
-                dpi=300, bbox_inches='tight', facecolor='white')
+                dpi=350, bbox_inches='tight', facecolor='white')
     plt.close()
     print("✓ Figure 1 saved to ../report/figures/model_comparison_boxplot.png")
 
@@ -174,11 +176,11 @@ def create_effect_size_forest_plot(data):
         ax.axvline(x=thresh, color=COLORS['neutral'], linestyle=':', 
                    linewidth=1, alpha=0.6, zorder=1)
     
-    # Add threshold labels at bottom
+    # Add threshold labels at bottom (larger fonts)
     ax.text(0.2, min(y_positions)-0.8, 'Small effect\nthreshold (d = 0.2)', 
-            fontsize=9, ha='center', color=COLORS['neutral'], alpha=0.8)
+            fontsize=11, ha='center', color=COLORS['neutral'], alpha=0.8)
     ax.text(-0.2, min(y_positions)-0.8, 'Small effect\nthreshold (d = -0.2)', 
-            fontsize=9, ha='center', color=COLORS['neutral'], alpha=0.8)
+            fontsize=11, ha='center', color=COLORS['neutral'], alpha=0.8)
     
     # Plot confidence intervals with elegant styling
     for i, (comp, d, ci_l, ci_u) in enumerate(zip(comparisons, effect_sizes, 
@@ -209,7 +211,7 @@ def create_effect_size_forest_plot(data):
         # Add effect size value with better positioning
         text_x = 0.35 if d >= 0 else -0.35
         ax.text(text_x, y_pos, f'd = {d:.3f}\n[{ci_l:.3f}, {ci_u:.3f}]', 
-                fontsize=9, va='center', ha='center', color=COLORS['dark_gray'],
+                fontsize=11, va='center', ha='center', color=COLORS['dark_gray'],
                 bbox=dict(boxstyle='round,pad=0.3', facecolor='white', 
                          alpha=0.8, edgecolor='none'))
     
@@ -218,21 +220,21 @@ def create_effect_size_forest_plot(data):
     format_axis_labels(ax, xlabel="Cohen's d Effect Size", 
                       title='Effect Size Analysis with 95% Confidence Intervals')
     
-    # Set y-axis with comparison labels
+    # Set y-axis with comparison labels (larger font)
     ax.set_yticks(y_positions)
-    ax.set_yticklabels(comparisons, fontsize=11)
+    ax.set_yticklabels(comparisons, fontsize=12)
     ax.set_xlim(-0.45, 0.45)
     ax.set_ylim(min(y_positions)-1.2, max(y_positions)+0.5)
     
-    # Add interpretation text with better styling
+    # Add interpretation text with better styling (larger font)
     ax.text(0, min(y_positions)-0.3, 'All effects negligible (|d| < 0.2)', 
-            fontsize=11, ha='center', style='italic', color=COLORS['highlight'],
+            fontsize=13, ha='center', style='italic', color=COLORS['highlight'],
             bbox=dict(boxstyle='round,pad=0.4', facecolor=COLORS['light_gray'], 
                      alpha=0.9, edgecolor='none'))
     
     plt.tight_layout()
     fig.savefig('../report/figures/effect_size_forest_plot.png', 
-                dpi=300, bbox_inches='tight', facecolor='white')
+                dpi=350, bbox_inches='tight', facecolor='white')
     plt.close()
     print("✓ Figure 2 saved to ../report/figures/effect_size_forest_plot.png")
 
@@ -294,10 +296,10 @@ def create_model_specific_improvements(data):
         
         ax.text(s_text_x, y_pos[i] - bar_height/2, f'{s_imp:.1f}%', 
                va='center', ha='left' if s_imp > 0 else 'right',
-               fontsize=9, color=COLORS['dark_gray'], fontweight='medium')
+               fontsize=11, color=COLORS['dark_gray'], fontweight='medium')
         ax.text(h_text_x, y_pos[i] + bar_height/2, f'{h_imp:.1f}%', 
                va='center', ha='left' if h_imp > 0 else 'right',
-               fontsize=9, color=COLORS['dark_gray'], fontweight='medium')
+               fontsize=11, color=COLORS['dark_gray'], fontweight='medium')
     
     # Add reference line at zero
     ax.axvline(x=0, color=COLORS['dark_gray'], linestyle='-', linewidth=2, alpha=0.8)
@@ -311,17 +313,17 @@ def create_model_specific_improvements(data):
     format_axis_labels(ax, xlabel='Performance Change from Baseline (%)', ylabel='Model Architecture',
                       title='Model-Specific Response to DPO Optimization')
     
-    # Set y-axis
+    # Set y-axis (larger font)
     ax.set_yticks(y_pos)
-    ax.set_yticklabels(models, fontsize=10)
+    ax.set_yticklabels(models, fontsize=12)
     ax.set_xlim(-20, 50)
     
-    # Add improvement/degradation indicators
-    ax.text(35, -0.8, 'Improvement →', fontsize=11, ha='center', 
+    # Add improvement/degradation indicators (larger fonts)
+    ax.text(35, -0.8, 'Improvement →', fontsize=13, ha='center', 
            color=COLORS['success'], fontweight='medium',
            bbox=dict(boxstyle='round,pad=0.3', facecolor=COLORS['success'], 
                     alpha=0.2, edgecolor='none'))
-    ax.text(-15, -0.8, '← Degradation', fontsize=11, ha='center', 
+    ax.text(-15, -0.8, '← Degradation', fontsize=13, ha='center', 
            color=COLORS['error'], fontweight='medium',
            bbox=dict(boxstyle='round,pad=0.3', facecolor=COLORS['error'], 
                     alpha=0.2, edgecolor='none'))
@@ -332,7 +334,7 @@ def create_model_specific_improvements(data):
                         fill=False, edgecolor=COLORS['highlight'], linewidth=2, 
                         linestyle='--', alpha=0.7)
     ax.add_patch(rect)
-    ax.text(-18, best_idx, 'Best Response', fontsize=9, 
+    ax.text(-18, best_idx, 'Best Response', fontsize=11, 
            va='center', color=COLORS['highlight'], style='italic', fontweight='medium')
     
     # Add legend with better positioning
@@ -344,7 +346,7 @@ def create_model_specific_improvements(data):
     
     plt.tight_layout()
     fig.savefig('../report/figures/model_specific_improvements.png', 
-                dpi=300, bbox_inches='tight', facecolor='white')
+                dpi=350, bbox_inches='tight', facecolor='white')
     plt.close()
     print("✓ Figure 3 saved to ../report/figures/model_specific_improvements.png")
 
