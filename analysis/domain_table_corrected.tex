@@ -1,0 +1,18 @@
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccccc}
+\toprule
+\multirow{2}{*}{\textbf{Category}} & \multicolumn{2}{c}{\textbf{Baseline}} & \multicolumn{2}{c}{\textbf{DPO-Synthetic}} & \multicolumn{2}{c}{\textbf{DPO-Hybrid}} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+& \textbf{M} & \textbf{N} & \textbf{M} & \textbf{Δ\%} & \textbf{M} & \textbf{Δ\%} \\
+\midrule
+Environmental/Wildlife & 0.605 & 50 & 0.542 & -10.5\% & 0.617 & +2.0\% \\
+Human Rights/Social & 0.537 & 105 & 0.568 & +5.7\% & 0.575 & +7.1\% \\
+Community/Charity & 0.520 & 50 & 0.625 & +20.2\% & 0.519 & -0.3\% \\
+Media/Broadcasting & 0.605 & 45 & 0.578 & -4.6\% & 0.582 & -3.9\% \\
+
+\bottomrule
+\end{tabular}
+\caption[Performance by Topic Category]{Performance by Topic Category. Domain-specific analysis presenting mean performance scores (M), sample sizes (N), and percentage changes from baseline (Δ\%) across four topic categories. Findings reveal differential optimization effectiveness depending on content domain.}
+\label{tab:category-analysis}
+\end{table}

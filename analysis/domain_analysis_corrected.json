@@ -1,0 +1,162 @@
+{
+  "topic_categories": {
+    "T0101": "Environmental/Wildlife Conservation",
+    "T0102": "Environmental/Wildlife Conservation",
+    "T0103": "Environmental/Wildlife Conservation",
+    "T0104": "Environmental/Wildlife Conservation",
+    "T0105": "Environmental/Wildlife Conservation",
+    "T0106": "Environmental/Wildlife Conservation",
+    "T0107": "Environmental/Wildlife Conservation",
+    "T0108": "Environmental/Wildlife Conservation",
+    "T0109": "Environmental/Wildlife Conservation",
+    "T0110": "Environmental/Wildlife Conservation",
+    "T0111": "Human Rights/Social Justice",
+    "T0112": "Human Rights/Social Justice",
+    "T0113": "Human Rights/Social Justice",
+    "T0114": "Human Rights/Social Justice",
+    "T0115": "Human Rights/Social Justice",
+    "T0116": "Human Rights/Social Justice",
+    "T0117": "Human Rights/Social Justice",
+    "T0118": "Human Rights/Social Justice",
+    "T0119": "Human Rights/Social Justice",
+    "T0120": "Human Rights/Social Justice",
+    "T0121": "Community/Charity Support",
+    "T0122": "Community/Charity Support",
+    "T0123": "Community/Charity Support",
+    "T0124": "Community/Charity Support",
+    "T0125": "Community/Charity Support",
+    "T0126": "Community/Charity Support",
+    "T0127": "Community/Charity Support",
+    "T0128": "Community/Charity Support",
+    "T0129": "Community/Charity Support",
+    "T0130": "Community/Charity Support",
+    "T0131": "Human Rights/Social Justice",
+    "T0132": "Human Rights/Social Justice",
+    "T0133": "Human Rights/Social Justice",
+    "T0134": "Human Rights/Social Justice",
+    "T0135": "Human Rights/Social Justice",
+    "T0136": "Human Rights/Social Justice",
+    "T0137": "Human Rights/Social Justice",
+    "T0138": "Human Rights/Social Justice",
+    "T0139": "Human Rights/Social Justice",
+    "T0140": "Human Rights/Social Justice",
+    "T0141": "Media/Broadcasting/News",
+    "T0142": "Media/Broadcasting/News",
+    "T0143": "Media/Broadcasting/News",
+    "T0144": "Human Rights/Social Justice",
+    "T0145": "Media/Broadcasting/News",
+    "T0146": "Media/Broadcasting/News",
+    "T0147": "Media/Broadcasting/News",
+    "T0148": "Media/Broadcasting/News",
+    "T0149": "Media/Broadcasting/News",
+    "T0150": "Media/Broadcasting/News"
+  },
+  "category_counts": {
+    "Community/Charity Support": 10,
+    "Human Rights/Social Justice": 21,
+    "Environmental/Wildlife Conservation": 10,
+    "Media/Broadcasting/News": 9
+  },
+  "category_analysis": {
+    "Environmental/Wildlife Conservation": {
+      "Baseline": {
+        "n": 50,
+        "mean": 0.6053764787911129,
+        "std": 0.26556232516099904,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "DPO-Synthetic": {
+        "n": 50,
+        "mean": 0.5419078012181461,
+        "std": 0.221650893466641,
+        "min": 0.0,
+        "max": 0.9411764705882353
+      },
+      "DPO-Hybrid": {
+        "n": 50,
+        "mean": 0.6174718773479385,
+        "std": 0.2061308048436689,
+        "min": 0.0,
+        "max": 0.9090909090909091
+      },
+      "DPO-Synthetic_change": -10.484166431392998,
+      "DPO-Hybrid_change": 1.997996119865631
+    },
+    "Human Rights/Social Justice": {
+      "Baseline": {
+        "n": 105,
+        "mean": 0.5369315911706471,
+        "std": 0.2650881491285267,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "DPO-Synthetic": {
+        "n": 105,
+        "mean": 0.5677389603094247,
+        "std": 0.23028803476807494,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "DPO-Hybrid": {
+        "n": 105,
+        "mean": 0.5747978498581512,
+        "std": 0.22836988005079867,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "DPO-Synthetic_change": 5.737671175504815,
+      "DPO-Hybrid_change": 7.052343224012203
+    },
+    "Community/Charity Support": {
+      "Baseline": {
+        "n": 50,
+        "mean": 0.520255602860866,
+        "std": 0.24919585050084136,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "DPO-Synthetic": {
+        "n": 50,
+        "mean": 0.6254332925336598,
+        "std": 0.23180829493477617,
+        "min": 0.1388888888888889,
+        "max": 0.9444444444444444
+      },
+      "DPO-Hybrid": {
+        "n": 50,
+        "mean": 0.5187746975246975,
+        "std": 0.1774757719925422,
+        "min": 0.2222222222222222,
+        "max": 0.9090909090909091
+      },
+      "DPO-Synthetic_change": 20.216541464315917,
+      "DPO-Hybrid_change": -0.28464956994697826
+    },
+    "Media/Broadcasting/News": {
+      "Baseline": {
+        "n": 45,
+        "mean": 0.6051635755312226,
+        "std": 0.30720123392627907,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "DPO-Synthetic": {
+        "n": 45,
+        "mean": 0.5775584127532449,
+        "std": 0.2511881355470737,
+        "min": 0.1282051282051282,
+        "max": 0.9473684210526315
+      },
+      "DPO-Hybrid": {
+        "n": 45,
+        "mean": 0.5816203356399434,
+        "std": 0.24600346882009405,
+        "min": 0.0,
+        "max": 1.0
+      },
+      "DPO-Synthetic_change": -4.561603489394645,
+      "DPO-Hybrid_change": -3.8903927538289973
+    }
+  }
+}
