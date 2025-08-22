@@ -200,9 +200,9 @@ This validation dataset enables definitive assessment of optimization effectiven
 
 \subsection{Topic Categories and Distribution}
 
-The complete 150-topic dataset (100 training + 50 validation) encompasses four primary charity categories designed to represent diverse fundraising contexts and communication challenges. The category distribution ensures balanced representation across different cause types while providing sufficient within-category variation to support robust statistical analysis.
+The complete 150-topic dataset (100 training + 50 validation) encompasses four primary charity categories designed to represent diverse fundraising contexts and communication challenges. The category distribution provides comprehensive representation across different cause types while ensuring sufficient within-category variation to support robust statistical analysis.
 
-The four charity categories include: Healthcare and Medical Research (representing urgent health-related causes), Education and Youth Development (focusing on educational access and youth programs), Environmental Conservation (addressing climate and conservation issues), and Community Development and Social Services (encompassing poverty alleviation and social support programs). Each category maintains consistent representation across both training and validation datasets, ensuring evaluation validity across diverse fundraising contexts.
+The four charity categories include: Environmental and Wildlife Conservation (representing conservation causes and wildlife protection), Human Rights and Social Justice (focusing on advocacy and civil rights), Community and Charity Support (encompassing fundraising and community programs), and Media and Broadcasting (addressing public media and educational content). Each category maintains proportional representation across both training and validation datasets, ensuring evaluation validity across diverse fundraising contexts.
 
 \begin{table}[H]
     \centering
@@ -211,10 +211,10 @@ The four charity categories include: Healthcare and Medical Research (representi
     \hline
     \textbf{Category} & \textbf{Training Topics} & \textbf{Validation Topics} & \textbf{Total} \\
     \hline
-    Healthcare \& Medical Research & 25 & 13 & 38 \\
-    Education \& Youth Development & 25 & 12 & 37 \\
-    Environmental Conservation & 25 & 13 & 38 \\
-    Community Development \& Social Services & 25 & 12 & 37 \\
+    Environmental \& Wildlife Conservation & 21 & 10 & 31 \\
+    Human Rights \& Social Justice & 37 & 21 & 58 \\
+    Community \& Charity Support & 24 & 10 & 34 \\
+    Media \& Broadcasting & 18 & 9 & 27 \\
     \hline
     \textbf{Total Topics} & \textbf{100} & \textbf{50} & \textbf{150} \\
     \hline
@@ -273,7 +273,7 @@ Computational efficiency analysis revealed that the Hybrid prompting strategy ac
 
 The preprocessing component of the Hybrid framework implements specialized prompting that creates evaluation criteria from extracted characteristics rather than full content analysis. This approach reduces cognitive load while maintaining evaluation specificity:
 
-\begin{promptbox}[title={Example Analyzer Agent Prompt Template}]
+\begin{promptbox}[title={Example Analyzer Agent Prompt Template (1/2)}]
 \textbf{Role \& Goal}
 
 You are an AI assistant that analyzes example emails to extract key characteristics for checklist generation. Your task is to analyze the provided example email and extract structured information about its style, tone, structure, and key features.
@@ -287,40 +287,38 @@ Analyze the example email provided in the user query and extract key characteris
 Extract information in these categories:
 
 \textbf{Tone Characteristics}
-\begin{itemize}
-\item Emotional language markers (urgency, passion, formality level)
-\item Specific phrases that convey tone
-\item Communication style (direct, persuasive, informational)
-\end{itemize}
+- Emotional language markers (urgency, passion, formality level)\\
+- Specific phrases that convey tone\\
+- Communication style (direct, persuasive, informational)
 
 \textbf{Structure Patterns}
-\begin{itemize}
-\item Email length (approximate word count)
-\item Paragraph structure and organization
-\item Opening and closing patterns
-\item Information flow and hierarchy
-\end{itemize}
+- Email length (approximate word count)\\
+- Paragraph structure and organization\\
+- Opening and closing patterns\\
+- Information flow and hierarchy
+
 
 \textbf{Content Elements}
-\begin{itemize}
-\item Key messaging themes
-\item Problem presentation style
-\item Solution approach
-\item Call-to-action style and placement
-\end{itemize}
+
+- Key messaging themes\\
+- Problem presentation style\\
+- Solution approach\\
+- Call-to-action style and placement
 
 \textbf{Language Features}
-\begin{itemize}
-\item Specific vocabulary used
-\item Sentence structure patterns
-\item Formatting elements (bold, emphasis)
-\item Technical vs accessible language
-\end{itemize}
+- Specific vocabulary used\\
+- Sentence structure patterns\\
+- Formatting elements (bold, emphasis)\\
+- Technical vs accessible language
 
 \textbf{User Query}
 \begin{verbatim}
 [USER_QUERY]
 \end{verbatim}
+
+\end{promptbox}
+
+\begin{promptbox}[title={Example Analyzer Agent Prompt Template (2/2)}]
 
 \textbf{Output Format}
 
@@ -347,7 +345,7 @@ Respond ONLY with a valid JSON object containing the extracted characteristics. 
   },
   "language_features": {
     "key_phrases": ["time is running out", "take action now"],
-    "sentence_structure": "short, impactful sentences mixed with detailed explanations",
+    "sentence_structure": "short with detailed explanations",
     "accessibility": "avoids technical jargon"
   }
 }
@@ -366,7 +364,7 @@ Framework validation employed rigorous testing protocols that confirmed superior
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\textwidth]{figures/hybrid-checklist.png}
+    \includegraphics[width=0.85\textwidth]{figures/hybrid-checklist.png}
     \caption[Hybrid Evaluation Framework Workflow]{Hybrid Evaluation Framework Workflow showing two-step systematic analysis process and probability-based scoring integration}
     \label{fig:hybrid-framework-workflow}
 \end{figure}

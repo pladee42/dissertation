@@ -51,12 +51,12 @@ Baseline vs DPO-Hybrid       & -0.626 & 498 & 0.532 & -0.056 & [-0.231, 0.119] \
 DPO-Synthetic vs DPO-Hybrid  & 0.125 & 498 & 0.901 & 0.011 & [-0.164, 0.187] \\
 \bottomrule
 \end{tabular}
-\caption[Pairwise Statistical Comparisons]{Pairwise Statistical Comparisons Between Model Variants. Independent samples t-tests comparing mean performance scores between optimization variants. t = t-statistic, df = degrees of freedom, p = p-value, CI = confidence interval. All comparisons yield non-significant differences (p > 0.05) with negligible effect sizes (|d| < 0.2).}
+\caption[Pairwise Statistical Comparisons]{Pairwise Statistical Comparisons Between Model Variants. Independent samples t-tests comparing mean performance scores between optimization variants. t = t-statistic, df = degrees of freedom, p = p-value, CI = confidence interval. All comparisons yield non-significant differences (p > 0.05) with negligible effect sizes ($|d| < 0.2$).}
 \label{tab:statistical-comparisons}
 \begin{tablenotes}
 \small
 \item \textbf{Abbreviations:} t = t-statistic; df = degrees of freedom; p = probability value; CI = confidence interval; d = Cohen's d effect size
-\item \textbf{Interpretation:} All p-values > 0.05 indicate no statistically significant differences. All effect sizes are negligible (|d| < 0.2).
+\item \textbf{Interpretation:} All p-values $>$ 0.05 indicate no statistically significant differences. All effect sizes are negligible ($|d| < 0.2$).
 \end{tablenotes}
 \end{table}
 
@@ -73,7 +73,7 @@ The F-statistic of 0.329 fell well below the critical threshold of F$_{crit}$ = 
 \section{Effect Size Quantification}
 \label{sec:effect-size-analysis}
 
-All pairwise comparisons produced uniformly negligible effect sizes, with Cohen's d values falling well below the conventional small effect threshold of |d| = 0.2. The largest effect was d = -0.065 for Baseline vs DPO-Synthetic, representing only 6.5\% of one standard deviation difference and approximately 32 times smaller than Cohen's small effect criterion.
+All pairwise comparisons produced uniformly negligible effect sizes, with Cohen's d values falling well below the conventional small effect threshold of $|d| = 0.2$. The largest effect was d = -0.065 for Baseline vs DPO-Synthetic, representing only 6.5\% of one standard deviation difference and approximately 32 times smaller than Cohen's small effect criterion.
 
 All effect size confidence intervals encompass zero, indicating no reliable directional preferences between optimization approaches. The Baseline vs DPO-Synthetic comparison produced d = -0.065 (95\% CI [-0.240, 0.111]), spanning a range that includes both small negative and positive effects. Baseline vs DPO-Hybrid yielded d = -0.056 (95\% CI [-0.231, 0.119]), while DPO-Synthetic vs DPO-Hybrid produced d = 0.011 (95\% CI [-0.164, 0.187]).
 
@@ -125,21 +125,21 @@ This architectural heterogeneity accounts for the overall statistical equivalenc
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.95\textwidth]{figures/model_specific_improvements.png}
-\caption[Model-Specific Improvement Forest Plot]{Model-Specific Improvement Forest Plot. Forest plot displaying improvement rates for each individual model across DPO-Synthetic and DPO-Hybrid variants compared to baseline. Model M0004 (Llama-3-8B) exhibits the largest improvements (+41.3\% Synthetic, +38.6\% Hybrid), while M0001 (TinyLlama), M0002 (Vicuna-7B), and M0005 (StableLM) display performance decreases. M0003 (Phi-3) exhibits modest improvements. Confidence intervals for improvement percentages illustrate differential optimization effectiveness across architectures.}
+\caption[Model-Specific Improvement Forest Plot]{Model-Specific Improvement Forest Plot. Forest plot displaying improvement rates for each individual model across DPO-Synthetic and DPO-Hybrid variants compared to baseline.}
 \label{fig:model-improvements}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.95\textwidth]{figures/model_size_comparison.png}
-\caption[Model Size Group Performance Comparison]{Model Size Group Performance Comparison. Performance comparison by model size groups presenting aggregated performance within small models (M0001, M0003, M0005) and medium models (M0002, M0004). Small models achieve baseline mean = 0.581, DPO-Synthetic mean = 0.564, DPO-Hybrid mean = 0.552. Medium models achieve baseline mean = 0.528, DPO-Synthetic mean = 0.593, DPO-Hybrid mean = 0.606. Size-dependent responses to optimization reveal architecture-specific effectiveness patterns across different model scales.}
+\includegraphics[width=0.9\textwidth]{figures/model_size_comparison.png}
+\caption[Model Size Group Performance Comparison]{Model Size Group Performance Comparison. Performance comparison by model size groups presenting aggregated performance within small models (M0001, M0003, M0005) and medium models (M0002, M0004).}
 \label{fig:size-comparison}
 \end{figure}
 
 \section{Domain-Specific Performance Analysis}
 \label{sec:category-analysis}
 
-Analysis across four charity topic categories uncovered substantial heterogeneity in optimization effectiveness, with improvements ranging from +17.5\% (Environmental topics with DPO-Synthetic) to performance decreases of -6.9\% (Healthcare/Medical with DPO-Synthetic), as presented in Table~\ref{tab:category-analysis}.
+Analysis across four charity topic categories uncovered substantial heterogeneity in optimization effectiveness, with improvements ranging from +20.2\% (Community/Charity topics with DPO-Synthetic) to performance decreases of -10.5\% (Environmental/Wildlife with DPO-Synthetic), as presented in Table~\ref{tab:category-analysis}.
 
 \begin{table}[H]
 \centering
@@ -149,10 +149,10 @@ Analysis across four charity topic categories uncovered substantial heterogeneit
 \cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
 & \textbf{M} & \textbf{N} & \textbf{M} & \textbf{$\Delta\%$} & \textbf{M} & \textbf{$\Delta\%$} \\
 \midrule
-Healthcare/Medical & 0.597 & 60 & 0.556 & -6.9\% & 0.625 & +4.6\% \\
-Education/Youth & 0.534 & 65 & 0.514 & -3.8\% & 0.543 & +1.6\% \\
-Environmental & 0.543 & 60 & 0.638 & +17.5\% & 0.569 & +4.8\% \\
-Community/Social & 0.565 & 65 & 0.599 & +6.0\% & 0.561 & -0.8\% \\
+Environmental/Wildlife & 0.605 & 50 & 0.542 & -10.5\% & 0.617 & +2.0\% \\
+Human Rights/Social & 0.537 & 105 & 0.568 & +5.7\% & 0.575 & +7.1\% \\
+Community/Charity & 0.520 & 50 & 0.625 & +20.2\% & 0.519 & -0.3\% \\
+Media/Broadcasting & 0.605 & 45 & 0.578 & -4.6\% & 0.582 & -3.9\% \\
 
 \bottomrule
 \end{tabular}
@@ -160,15 +160,15 @@ Community/Social & 0.565 & 65 & 0.599 & +6.0\% & 0.561 & -0.8\% \\
 \label{tab:category-analysis}
 \begin{tablenotes}
 \small
-\item \textbf{Categories:} Healthcare/Medical = medical treatments and health services; Education/Youth = educational programs and youth development; Environmental = environmental conservation and sustainability; Community/Social = community support and social services
+\item \textbf{Categories:} Environmental/Wildlife = wildlife conservation and environmental protection topics; Human Rights/Social = human rights advocacy and social justice initiatives; Community/Charity = community support and charitable fundraising programs; Media/Broadcasting = public media and broadcasting content
 \item \textbf{Abbreviations:} M = mean performance score; N = sample size; $\Delta\%$ = percentage change from baseline
-\item \textbf{Interpretation:} Categories represent balanced segments of evaluation data with equal representation across optimization variants
+\item \textbf{Interpretation:} Categories represent comprehensive segments of evaluation data with proportional representation across optimization variants
 \end{tablenotes}
 \end{table}
 
-These domain patterns suggest content-dependent optimization effectiveness. Environmental topics showed exceptional responsiveness to DPO-Synthetic (+17.5\%), potentially reflecting how the structured, factual nature of environmental communication aligns well with synthetic training data. Healthcare/Medical topics exhibited contrasting responses between optimization variants, decreasing with DPO-Synthetic (-6.9\%) but improving with DPO-Hybrid (+4.6\%). This suggests that medical domains benefit more from human-preference integration than from purely synthetic optimization.
+These domain patterns suggest content-dependent optimization effectiveness. Community/Charity topics showed exceptional responsiveness to DPO-Synthetic (+20.2\%), potentially reflecting how structured fundraising and community support narratives align well with synthetic training data patterns. Environmental/Wildlife topics exhibited contrasting responses between optimization variants, decreasing with DPO-Synthetic (-10.5\%) but showing slight improvement with DPO-Hybrid (+2.0\%). This suggests that environmental domains may benefit more from human-preference integration than from purely synthetic optimization.
 
-Education/Youth (-3.8\% Synthetic, +1.6\% Hybrid) and Community/Social (+6.0\% Synthetic, -0.8\% Hybrid) topics produced modest bidirectional effects. Despite these domain-specific variations, the overall statistical equivalence indicates that category-level heterogeneity was insufficient to overcome the population-level null effect, with domain-specific improvements offset by corresponding decreases across the complete evaluation framework.
+Human Rights/Social topics demonstrated consistent improvements across both variants (+5.7\% Synthetic, +7.1\% Hybrid), suggesting these advocacy-focused domains benefit from preference optimization regardless of data source. Media/Broadcasting topics showed consistent modest decreases (-4.6\% Synthetic, -3.9\% Hybrid), potentially reflecting the specialized nature of public media content that may not align well with general preference optimization approaches. Despite these domain-specific variations, the overall statistical equivalence indicates that category-level heterogeneity was insufficient to overcome the population-level null effect, with domain-specific improvements offset by corresponding decreases across the complete evaluation framework.
 
 
 \section{Predictive Validity Assessment}
