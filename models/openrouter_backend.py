@@ -1,9 +1,3 @@
-"""
-OpenRouter Backend for API-based model inference
-
-Simple HTTP client for OpenRouter API with compatibility interface matching vLLM backend
-"""
-
 import logging
 import requests
 import time
@@ -22,9 +16,6 @@ class OpenRouterBackend:
     def __init__(self, max_parallel: int = 4):
         """
         Initialize OpenRouter backend
-        
-        Args:
-            max_parallel: Maximum parallel requests (for compatibility)
         """
         self.max_parallel = max_parallel
         self.api_key = os.getenv('OPENROUTER_API_KEY')
@@ -56,19 +47,6 @@ class OpenRouterBackend:
                 guided_json: Optional[dict] = None) -> str:
         """
         Generate text using OpenRouter API
-        
-        Args:
-            prompt: Input prompt
-            model: Model name (mapped to OpenRouter model ID)
-            max_tokens: Maximum tokens to generate
-            temperature: Sampling temperature
-            top_p: Top-p (nucleus) sampling parameter
-            stop: Stop sequences
-            json_schema: JSON schema (not used in OpenRouter)
-            guided_json: Guided JSON (not used in OpenRouter)
-            
-        Returns:
-            Generated text
         """
         try:
             # Map model name to OpenRouter model ID
@@ -181,12 +159,6 @@ class OpenRouterBackend:
     def generate_parallel(self, requests_data: List[Dict]) -> List[str]:
         """
         Generate text in parallel (simplified sequential for now)
-        
-        Args:
-            requests_data: List of request dictionaries
-            
-        Returns:
-            List of generated text strings
         """
         results = []
         for req_data in requests_data:
@@ -213,16 +185,6 @@ class OpenRouterBackend:
                       stop: Optional[list] = None) -> List[str]:
         """
         Generate text for multiple prompts in batch
-        
-        Args:
-            prompts: List of input prompts
-            model: Model name
-            max_tokens: Maximum tokens to generate
-            temperature: Sampling temperature
-            stop: Stop sequences
-            
-        Returns:
-            List of generated text strings
         """
         results = []
         for prompt in prompts:

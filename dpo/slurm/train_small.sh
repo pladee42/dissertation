@@ -9,10 +9,6 @@
 #SBATCH --mail-user=wratthapoom1@sheffield.ac.uk
 #SBATCH --mail-type=ALL
 
-# A100 80GB optimized - Small models only (TinyLlama, StableLM)
-# Resource allocation: 1 GPU, 4 CPUs, 32GB RAM, 4 hours
-# Most efficient for small models (1.1B - 1.6B parameters)
-
 # Load required modules
 module load Anaconda3/2024.02-1
 module load CUDA/12.4.0

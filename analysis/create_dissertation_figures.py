@@ -271,22 +271,22 @@ def create_model_specific_improvements(data):
     y_pos = np.arange(len(models))
     bar_height = 0.35
     
-    # Create horizontal diverging bars with direction-based coloring
+    # Create horizontal diverging bars with consistent treatment type coloring
     synthetic_bars = []
     hybrid_bars = []
     
     for i, (s_imp, h_imp) in enumerate(zip(synthetic_improvements, hybrid_improvements)):
-        # DPO-Synthetic bars
-        s_color = COLORS['success'] if s_imp > 0 else COLORS['error']
+        # DPO-Synthetic bars - consistent orange color, vary opacity for improvement/degradation
+        s_alpha = 0.9 if s_imp > 0 else 0.5  # More opaque for improvements, lighter for degradations
         s_bar = ax.barh(y_pos[i] - bar_height/2, s_imp, bar_height, 
-                       color=s_color, alpha=0.8, edgecolor='white', linewidth=1,
+                       color=COLORS['synthetic'], alpha=s_alpha, edgecolor='white', linewidth=1,
                        label='DPO-Synthetic' if i == 0 else "")
         synthetic_bars.append(s_bar)
         
-        # DPO-Hybrid bars
-        h_color = COLORS['success'] if h_imp > 0 else COLORS['error']
+        # DPO-Hybrid bars - consistent green color, vary opacity for improvement/degradation
+        h_alpha = 0.9 if h_imp > 0 else 0.5  # More opaque for improvements, lighter for degradations
         h_bar = ax.barh(y_pos[i] + bar_height/2, h_imp, bar_height, 
-                       color=h_color, alpha=0.6, edgecolor='white', linewidth=1,
+                       color=COLORS['hybrid'], alpha=h_alpha, edgecolor='white', linewidth=1,
                        label='DPO-Hybrid' if i == 0 else "")
         hybrid_bars.append(h_bar)
         
@@ -337,12 +337,18 @@ def create_model_specific_improvements(data):
     ax.text(-18, best_idx, 'Best Response', fontsize=11, 
            va='center', color=COLORS['highlight'], style='italic', fontweight='medium')
     
-    # Add legend with better positioning
+    # Add legend with better positioning and opacity explanation
     legend_elements = [
-        plt.Rectangle((0,0),1,1, facecolor=COLORS['synthetic'], alpha=0.8, label='DPO-Synthetic'),
-        plt.Rectangle((0,0),1,1, facecolor=COLORS['hybrid'], alpha=0.6, label='DPO-Hybrid')
+        plt.Rectangle((0,0),1,1, facecolor=COLORS['synthetic'], alpha=0.9, label='DPO-Synthetic'),
+        plt.Rectangle((0,0),1,1, facecolor=COLORS['hybrid'], alpha=0.9, label='DPO-Hybrid')
     ]
     ax.legend(handles=legend_elements, loc='upper right', framealpha=0.9)
+    
+    # Add opacity explanation
+    ax.text(48, len(models)-0.2, 'Darker bars: improvements\nLighter bars: degradations', 
+           fontsize=10, ha='right', va='top', color=COLORS['dark_gray'],
+           bbox=dict(boxstyle='round,pad=0.3', facecolor='white', 
+                    alpha=0.8, edgecolor=COLORS['neutral']))
     
     plt.tight_layout()
     fig.savefig('../report/figures/model_specific_improvements.png', 

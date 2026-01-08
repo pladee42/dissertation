@@ -1,12 +1,3 @@
-"""
-vLLM Judge Agent
-
-This module provides email evaluation with:
-- vLLM backend integration
-- Template-based prompts
-- Simple retry logic
-"""
-
 import logging
 import time
 import json

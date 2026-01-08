@@ -8,19 +8,6 @@
 #SBATCH --mail-user=wratthapoom1@sheffield.ac.uk
 #SBATCH --mail-type=ALL
 
-# DPO Data Preparation Script
-# 
-# Usage:
-#   From dpo/ directory: sbatch slurm/prepare_data.sh [input_folder]
-#   From slurm/ directory: sbatch prepare_data.sh [input_folder]
-#
-# Examples:
-#   sbatch slurm/prepare_data.sh ../output/multi_topic_results/20250715_035107
-#   sbatch slurm/prepare_data.sh ../output/multi_topic_results/20250714_043247
-#
-# Default: Uses most recent data (20250715_035107)
-# Output: Creates timestamped JSONL file in outputs/datasets/
-
 # Load required modules
 module load Anaconda3/2024.02-1
 

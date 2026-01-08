@@ -146,20 +146,6 @@ class VLLMBackend:
                 guided_json: Optional[dict] = None) -> str:
         """
         Generate text using vLLM
-        
-        Args:
-            prompt: Input prompt
-            model: Model name
-            max_tokens: Maximum tokens to generate
-            temperature: Sampling temperature
-            top_p: Top-p sampling parameter
-            repetition_penalty: Repetition penalty to reduce repetitive generation
-            stop: Stop sequences
-            json_schema: JSON schema for guided decoding
-            guided_json: Guided JSON schema for structured output
-            
-        Returns:
-            Generated text
         """
         try:
             from vllm import SamplingParams
@@ -207,8 +193,6 @@ class VLLMBackend:
                 stop_tokens.extend(judgelm_stop_tokens)
             
             # Create sampling parameters
-            # Note: vLLM uses temperature to control sampling automatically
-            # temperature=0.0 -> deterministic, temperature>0.0 -> sampling enabled
             sampling_params_dict = {
                 'max_tokens': max_tokens,
                 'temperature': temperature,
@@ -271,17 +255,6 @@ class VLLMBackend:
     def generate_parallel(self, requests_data: List[Dict]) -> List[str]:
         """
         Generate text using vLLM in parallel
-        
-        Args:
-            requests_data: List of request dictionaries, each containing:
-                - prompt: Input prompt
-                - model: Model name (optional)
-                - max_tokens: Maximum tokens (optional)
-                - temperature: Sampling temperature (optional)
-                - stop: Stop sequences (optional)
-        
-        Returns:
-            List of generated text strings
         """
         logger.info(f"Starting parallel generation for {len(requests_data)} requests")
         
@@ -323,17 +296,6 @@ class VLLMBackend:
                       stop: Optional[list] = None) -> List[str]:
         """
         Generate text for multiple prompts in batch
-        
-        Args:
-            prompts: List of input prompts
-            model: Model name
-            max_tokens: Maximum tokens to generate
-            temperature: Sampling temperature
-            top_p: Top-p sampling parameter
-            stop: Stop sequences
-            
-        Returns:
-            List of generated text strings
         """
         try:
             from vllm import SamplingParams
@@ -381,7 +343,6 @@ class VLLMBackend:
                 stop_tokens.extend(judgelm_stop_tokens)
             
             # Add email-specific stop tokens to prevent repetition and over-generation
-            # Check if this is likely an email generation request based on prompt content
             if any(keyword in prompt.lower() for keyword in ['email', 'subject:', 'dear', 'sincerely', 'best regards']):
                 email_stop_tokens = [
                     "<END_EMAIL>",  # Primary email completion token
@@ -391,8 +352,6 @@ class VLLMBackend:
                 stop_tokens.extend(email_stop_tokens)
             
             # Create sampling parameters
-            # Note: vLLM uses temperature to control sampling automatically
-            # temperature=0.0 -> deterministic, temperature>0.0 -> sampling enabled
             sampling_params_dict = {
                 'max_tokens': max_tokens,
                 'temperature': temperature,

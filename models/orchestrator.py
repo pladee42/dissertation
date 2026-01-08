@@ -32,13 +32,6 @@ class ModelOrchestrator:
                  checklist_mode: str = "enhanced"):
         """
         Initialize with model configurations
-        
-        Args:
-            email_models: List of model names for email generation
-            checklist_model: Model name for checklist generation
-            judge_model: Model name for evaluation
-            max_concurrent: Maximum concurrent executions (simplified)
-            checklist_mode: Checklist generation mode
         """
         self.email_models = email_models
         self.checklist_model = checklist_model

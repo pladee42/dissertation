@@ -201,12 +201,12 @@ SETTINGS = {
     'email_max_tokens': 6144,
     
     # Agent-specific sampling parameters
-    'email_temperature': 0.5,      # Consistent but creative emails
-    'checklist_temperature': 0.2,  # Structured, focused checklists  
-    'judge_temperature': 0.2,      # Deterministic evaluations
-    'email_top_p': 0.85,           # Focused vocabulary for emails
-    'checklist_top_p': 0.7,        # Narrow for JSON structure
-    'judge_top_p': 0.6,            # Very focused for scoring
+    'email_temperature': 0.5,     
+    'checklist_temperature': 0.2,
+    'judge_temperature': 0.2,
+    'email_top_p': 0.85,
+    'checklist_top_p': 0.7,
+    'judge_top_p': 0.6,
     
     # Memory settings
     'memory_strategy': 'conservative',  # 'conservative' or 'performance'

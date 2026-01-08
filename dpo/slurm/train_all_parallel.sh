@@ -9,10 +9,6 @@
 #SBATCH --mail-user=wratthapoom1@sheffield.ac.uk
 #SBATCH --mail-type=ALL
 
-# A100 80GB optimized - Parallel training of all 5 models
-# Resource allocation: 5 GPUs, 20 CPUs, 160GB RAM, 6 hours
-# Trains all models simultaneously for fastest completion
-
 # Load required modules
 module load Anaconda3/2024.02-1
 module load CUDA/12.4.0

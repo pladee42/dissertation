@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Model Manager for DPO Training
-Handles model availability checking and downloading
-"""
-
 import os
 import yaml
 import logging
@@ -135,7 +129,6 @@ class ModelManager:
             tokenizer = AutoTokenizer.from_pretrained(model_id, **tokenizer_kwargs)
             
             # Download model weights WITHOUT loading into memory
-            # Use snapshot_download for memory-efficient downloading
             logger.info(f"Downloading model weights for {model_id}...")
             from huggingface_hub import snapshot_download
             
@@ -211,7 +204,7 @@ class ModelManager:
         }
 
 def main():
-    """CLI interface for model management"""
+    
     import argparse
     
     parser = argparse.ArgumentParser(description='Manage models for DPO training')

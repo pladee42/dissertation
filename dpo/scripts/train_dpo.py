@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-DPO Training Script
-Fine-tune language models using Direct Preference Optimization
-"""
-
 import argparse
 import json
 import yaml
@@ -56,7 +50,7 @@ def load_dpo_dataset(data_file: str, tokenizer) -> Dataset:
 def setup_model_and_tokenizer(config: Dict, cache_dir: str = "../downloaded_models"):
     """Setup model, tokenizer with quantization and LoRA"""
     
-    # Aggressive memory cleanup before loading new model
+    # memory cleanup before loading new model
     gc.collect()
     torch.cuda.empty_cache()
     torch.cuda.synchronize()

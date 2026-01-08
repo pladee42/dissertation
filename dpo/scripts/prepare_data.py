@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-DPO Data Preparation Script
-Converts multi_topic_results to DPO training format
-"""
-
 import argparse
 import json
 import os
@@ -103,7 +97,6 @@ def process_complete_results(results_file: str, config: Dict) -> List[Dict]:
         print(f"  Best email rank: {best_rank}")
         
         # Extract topic information for prompt (create once per topic)
-        # Check both 'topic_name' (from recovery script) and 'topic' (legacy format)
         topic_name = result.get('topic_name') or result.get('topic', 'Unknown Topic')
         
         # Handle different topic data formats
@@ -163,8 +156,6 @@ def process_complete_results(results_file: str, config: Dict) -> List[Dict]:
     
     print(f"\nTotal DPO samples created: {len(dpo_samples)}")
     return dpo_samples
-
-# Removed get_email_score function - now using ranks directly
 
 def save_dpo_dataset(samples: List[Dict], output_file: str, config: Dict):
     """Save DPO samples to JSONL format"""

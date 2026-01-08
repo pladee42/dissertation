@@ -9,10 +9,6 @@
 #SBATCH --mail-user=wratthapoom1@sheffield.ac.uk
 #SBATCH --mail-type=ALL
 
-# A100 80GB optimized - Medium models (Vicuna, Phi-3, Llama-3-8B)
-# Resource allocation: 1 GPU, 8 CPUs, 64GB RAM, 8 hours
-# Optimized for medium-sized models (4B - 8B parameters)
-
 # Load required modules
 module load Anaconda3/2024.02-1
 module load CUDA/12.4.0

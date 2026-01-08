@@ -1,12 +1,6 @@
-#!/usr/bin/env python3
-"""
-Quick script to check model availability
-"""
-
 import sys
 from pathlib import Path
 
-# Add the scripts directory to the path so we can import model_manager
 sys.path.insert(0, str(Path(__file__).parent))
 
 from model_manager import ModelManager

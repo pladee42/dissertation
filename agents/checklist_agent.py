@@ -1,12 +1,3 @@
-"""
-vLLM Checklist Generation Agent
-
-This module provides checklist generation with:
-- vLLM backend integration
-- Template-based prompts
-- Simple retry logic
-"""
-
 import logging
 import time
 import json
@@ -395,7 +386,6 @@ class ChecklistAgent:
                 )
                 
                 if result.strip():
-                    # Return the raw result for analysis - don't apply array-focused extraction
                     return result.strip()
                 else:
                     raise Exception("Empty response from backend")
@@ -495,7 +485,6 @@ class ChecklistAgent:
             response = response.strip()
             
             # Handle case where response is truncated JSON missing opening brace
-            # Pattern: starts with ["something"] or "key": value indicating middle of object
             if (response.startswith('[') or 
                 ('"' in response and ':' in response and not response.startswith('{'))):
                 logger.debug("Detected truncated JSON missing opening brace")

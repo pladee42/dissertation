@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Simple Comparison Runner - Base vs DPO Models
-Generate side-by-side outputs for easy comparison
-"""
-
 import os
 import sys
 import argparse

@@ -96,11 +96,7 @@ class EmailAgent:
             }
     
     def _generate_with_retry(self, prompt: str, topic: str) -> Tuple[str, bool]:
-        """Generate text with simple retry logic
-        
-        Returns:
-            Tuple[str, bool]: (email_content, is_fallback)
-        """
+        """Generate text with simple retry logic"""
         last_error = None
         
         for attempt in range(self.max_retries):

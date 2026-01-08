@@ -1,9 +1,3 @@
-"""
-Multi-Topic Orchestrator
-
-Extends ModelOrchestrator functionality to handle batch processing of multiple topics
-"""
-
 import logging
 import time
 import json
@@ -30,14 +24,6 @@ class MultiTopicOrchestrator:
                  checklist_mode: str = "enhanced"):
         """
         Initialize multi-topic orchestrator
-        
-        Args:
-            email_models: List of model names for email generation
-            checklist_model: Model name for checklist generation
-            judge_model: Model name for evaluation
-            max_concurrent: Maximum concurrent models per topic
-            max_concurrent_topics: Maximum concurrent topics
-            checklist_mode: Checklist generation mode
         """
         self.email_models = email_models
         self.checklist_model = checklist_model

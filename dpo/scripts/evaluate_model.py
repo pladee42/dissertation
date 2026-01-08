@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Model Evaluation Script
-Evaluate fine-tuned DPO model performance
-"""
-
 import argparse
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer

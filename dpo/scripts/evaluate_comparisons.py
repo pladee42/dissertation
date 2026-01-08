@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-Basic Evaluation Script for DPO Comparisons
-Simple metrics: output length, response time, basic quality checks
-"""
-
 import os
 import sys
 import json
