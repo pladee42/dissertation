@@ -10,8 +10,8 @@ Automated email generation faces significant challenges in achieving human-like 
 
 The study systematically compares three model variants:
 1.  **Baseline**: Pre-trained models (TinyLlama, Phi-3, etc.)
-2.  **DPO Synthetic**: Fine-tuned on 100% synthetic preference data
-3.  **DPO Hybrid**: Fine-tuned on a mix of synthetic and human preference data
+2.  **DPO Synthetic**: Fine-tuned on 100% synthetic preference data. [Models Collection](https://huggingface.co/collections/pladee42/dpo-synthetic-models)
+3.  **DPO Hybrid**: Fine-tuned on a mix of synthetic and human preference data. [Models Collection](https://huggingface.co/collections/pladee42/dpo-hybrid-models)
 
 ## Key Features
 
